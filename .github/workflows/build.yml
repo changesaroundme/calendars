@@ -12,13 +12,18 @@ on:
 permissions:
   contents: write
 
+# Never let two builds race each other's commit+push (cron + manual overlap).
+concurrency:
+  group: build-calendars
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
           cache: pip
@@ -44,6 +49,7 @@ jobs:
             echo "No calendar changes today."
           else
             git commit -m "Update calendars ($(date -u +%Y-%m-%d))"
+            git pull --rebase origin main
             git push
           fi
 
