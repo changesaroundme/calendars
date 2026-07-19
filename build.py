@@ -31,13 +31,13 @@ DOCS = ROOT / "docs"
 DATA = ROOT / "data"
 
 CALENDARS = {
-    "campo": ("CAMPO (Capital Area MPO)", campo),
-    "capmetro": ("CapMetro Board & Committees", capmetro),
+    "campo": ("CAM - CAMPO", campo),
+    "capmetro": ("CAM - CapMetro", capmetro),
 }
 
 USER_AGENT = (
     "cam-calendars/1.0 (+https://github.com/changesaroundme/calendars; "
-    "isherifwilson@gmail.com) public-meeting calendar builder"
+    "ian@changesaroundme.com) public-meeting calendar builder"
 )
 
 
@@ -50,7 +50,7 @@ def load_fixture(key: str):
         events = capmetro.parse_calendar_html(
             (ROOT / "fixtures" / "capmetro_calendar.html").read_text()
         )
-        return capmetro.merge_api(events, rows)
+        return capmetro.finalize(capmetro.merge_api(events, rows))
     raise KeyError(key)
 
 
@@ -82,26 +82,36 @@ def main() -> int:
                 previous_count = len(json.loads(snapshot_path.read_text()))
             except Exception:
                 pass
+        problems = []
         if not events:
-            unhealthy.append(f"{key}: 0 events parsed")
+            problems.append(f"{key}: 0 events parsed")
         elif previous_count and len(events) < previous_count / 2:
-            unhealthy.append(
+            problems.append(
                 f"{key}: event count fell from {previous_count} to {len(events)}"
             )
+        unhealthy.extend(problems)
 
         # --- write outputs ---
         if events:
-            snapshot = sorted((e.to_json() for e in events), key=lambda d: d["start"])
-            snapshot_path.write_text(json.dumps(snapshot, indent=1) + "\n")
+            # Always publish what we got (stale beats absent)...
             (DOCS / f"{key}.ics").write_text(
                 emit(events, calname, now), newline=""
             )
             all_events.extend(events)
+            # ...but only advance the snapshot baseline when healthy, so a
+            # shrink alarm keeps firing until the data actually recovers
+            # (otherwise the shrunken count becomes tomorrow's baseline and
+            # the alarm silences itself after one red run).
+            if not problems:
+                snapshot = sorted(
+                    (e.to_json() for e in events), key=lambda d: d["start"]
+                )
+                snapshot_path.write_text(json.dumps(snapshot, indent=1) + "\n")
         print(f"[{key}] {len(events)} events")
 
     if all_events:
         (DOCS / "all.ics").write_text(
-            emit(all_events, "Central Texas Public Meetings (all)", now), newline=""
+            emit(all_events, "CAM - All", now), newline=""
         )
         print(f"[all] {len(all_events)} events")
 

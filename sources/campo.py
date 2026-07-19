@@ -8,7 +8,7 @@ Source: https://www.campotexas.org/?post_type=tribe_events&ical=1&eventDisplay=l
 """
 from __future__ import annotations
 
-from datetime import date, datetime
+import re
 
 from icalendar import Calendar
 
@@ -17,21 +17,13 @@ from caltools.model import Event
 FEED_URL = "https://www.campotexas.org/?post_type=tribe_events&ical=1&eventDisplay=list"
 SOURCE = "campo"
 
-
-def classify(summary: str) -> tuple[str, str]:
-    """Return (status, kind) from a Tribe Events summary line.
-
-    CAMPO marks cancellations in the title ("... - Cancelled") rather than
-    with STATUS, so we translate that into a real STATUS while keeping the
-    title text (visible in every client) intact.
-    """
-    status = "CANCELLED" if "cancelled" in summary.lower() else "CONFIRMED"
-    kind = "hearing" if "hearing" in summary.lower() else "meeting"
-    return status, kind
+# CAMPO marks cancellations in the title ("... - Cancelled") rather than with
+# STATUS; translate to a real STATUS while keeping their title text intact.
+CANCEL_RE = re.compile(r"cancell?ed|postponed", re.IGNORECASE)
 
 
-def parse_feed(ics_text: str) -> list[Event]:
-    cal = Calendar.from_ical(ics_text)
+def parse_feed(ics_data: bytes | str) -> list[Event]:
+    cal = Calendar.from_ical(ics_data)
     events: list[Event] = []
     for component in cal.walk("VEVENT"):
         summary = str(component.get("SUMMARY", "")).strip()
@@ -39,17 +31,16 @@ def parse_feed(ics_text: str) -> list[Event]:
         dtend = component.get("DTEND").dt if component.get("DTEND") else None
         if dtstart is None or not summary:
             continue
-        status, kind = classify(summary)
         events.append(
             Event(
                 source=SOURCE,
-                summary=summary,
+                # Org prefix is display-only; identity comes from CAMPO's UID.
+                summary=f"CAMPO - {summary}",
                 start=dtstart,
                 end=dtend,
                 location=str(component.get("LOCATION", "")).strip(),
                 url=str(component.get("URL", "")).strip(),
-                kind=kind,
-                status=status,
+                status="CANCELLED" if CANCEL_RE.search(summary) else "CONFIRMED",
                 # Keep CAMPO's own UID: their feed is the system of record,
                 # and reusing it means someone subscribed to both feeds sees
                 # one event, not two.
@@ -62,4 +53,6 @@ def parse_feed(ics_text: str) -> list[Event]:
 def fetch(session) -> list[Event]:
     resp = session.get(FEED_URL, timeout=30)
     resp.raise_for_status()
-    return parse_feed(resp.text)
+    # Bytes, not resp.text: requests guesses ISO-8859-1 when the server omits
+    # a charset, which would mojibake UTF-8; icalendar handles bytes cleanly.
+    return parse_feed(resp.content)

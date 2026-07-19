@@ -8,10 +8,12 @@ from __future__ import annotations
 
 from datetime import date, datetime
 from typing import Iterable
+from zoneinfo import ZoneInfo
 
 from .model import Event
 
 CRLF = "\r\n"
+CENTRAL = ZoneInfo("America/Chicago")
 
 # America/Chicago with US DST rules (2nd Sunday March / 1st Sunday November).
 VTIMEZONE = """BEGIN:VTIMEZONE
@@ -50,18 +52,25 @@ def fold(line: str) -> str:
     if len(encoded) <= 75:
         return line
     parts = []
+    limit = 75  # continuation lines get a leading space, so cap them at 74
     while encoded:
-        cut = min(75, len(encoded))
+        cut = min(limit, len(encoded))
         # Never cut in the middle of a UTF-8 multibyte sequence.
         while cut < len(encoded) and (encoded[cut] & 0xC0) == 0x80:
             cut -= 1
         parts.append(encoded[:cut].decode("utf-8"))
         encoded = encoded[cut:]
+        limit = 74
     return (CRLF + " ").join(parts)
 
 
 def _dt(value: datetime | date, prop: str) -> str:
     if isinstance(value, datetime):
+        # A tz-aware datetime (e.g. UTC from a source feed) must be converted
+        # to Central wall time before being labeled TZID=America/Chicago;
+        # naive datetimes are already Central wall time by our convention.
+        if value.tzinfo is not None:
+            value = value.astimezone(CENTRAL)
         return f"{prop};TZID=America/Chicago:{value.strftime('%Y%m%dT%H%M%S')}"
     return f"{prop};VALUE=DATE:{value.strftime('%Y%m%d')}"
 
@@ -82,8 +91,6 @@ def event_block(ev: Event, dtstamp: str) -> list[str]:
         lines.append(f"DESCRIPTION:{escape(ev.description)}")
     if ev.status and ev.status != "CONFIRMED":
         lines.append(f"STATUS:{ev.status}")
-    if ev.kind and ev.kind != "meeting":
-        lines.append(f"CATEGORIES:{escape(ev.kind)}")
     lines.append("END:VEVENT")
     return lines
 

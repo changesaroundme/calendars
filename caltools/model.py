@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 import re
-from dataclasses import dataclass, field, asdict
+from dataclasses import dataclass, asdict
 from datetime import date, datetime
 from typing import Optional
 
@@ -15,8 +15,8 @@ def slugify(text: str) -> str:
 class Event:
     """One calendar entry, normalized from any source.
 
-    start/end are either both datetime (timed event, assumed America/Chicago
-    wall time) or both date (all-day event).
+    start/end are either both datetime (timed event, America/Chicago wall
+    time unless tz-aware) or both date (all-day event).
     """
 
     source: str                     # adapter key, e.g. "capmetro"
@@ -25,11 +25,9 @@ class Event:
     end: Optional[datetime | date] = None
     location: str = ""
     url: str = ""
-    kind: str = "meeting"           # meeting | hearing | comment-window | other
-    status: str = "CONFIRMED"       # CONFIRMED | CANCELLED | TENTATIVE
+    status: str = "CONFIRMED"       # CONFIRMED | CANCELLED
     uid: str = ""                   # stable id; generated if empty
     description: str = ""
-    extra: dict = field(default_factory=dict)  # source-specific breadcrumbs
 
     @property
     def all_day(self) -> bool:
@@ -38,13 +36,21 @@ class Event:
     def stable_uid(self) -> str:
         """Deterministic UID so re-scrapes update rather than duplicate.
 
-        Built from source + body + date only (not time/location), so an
-        event keeps its identity when details firm up or shift slightly.
+        Identity = source + body + date + start time (timed events only).
+        Time is included so two meetings of the same body on the same day
+        (e.g. a morning committee and an afternoon special session) remain
+        distinct events instead of silently collapsing into one.
         """
         if self.uid:
             return self.uid
-        d = self.start.strftime("%Y%m%d")
-        return f"{self.source}-{slugify(self.summary)}-{d}@calendars.changesaroundme.com"
+        if isinstance(self.start, datetime):
+            stamp = self.start.strftime("%Y%m%dT%H%M")
+        else:
+            stamp = self.start.strftime("%Y%m%d")
+        slug = slugify(self.summary)
+        if not slug.startswith(f"{self.source}-"):
+            slug = f"{self.source}-{slug}"
+        return f"{slug}-{stamp}@calendars.changesaroundme.com"
 
     def to_json(self) -> dict:
         d = asdict(self)

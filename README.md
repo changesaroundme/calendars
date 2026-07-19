@@ -1,7 +1,8 @@
 # calendars
 
-Subscribable `.ics` calendars of Central Texas public meetings (Austin-area and statewide bodies), rebuilt daily
-by GitHub Actions from official sources and served by GitHub Pages.
+Subscribable `.ics` calendars of Central Texas public meetings (Austin-area
+sources today; statewide bodies on the roadmap), rebuilt daily by GitHub
+Actions from official sources and served by GitHub Pages.
 
 **v1 sources**
 
@@ -28,12 +29,12 @@ by GitHub Actions from official sources and served by GitHub Pages.
 
 2. Enable Pages: **Settings → Pages → Deploy from a branch → `main` /docs**.
 
-3. Allow the workflow to push: **Settings → Actions → General →
-   Workflow permissions → Read and write permissions**.
-
-4. Kick off the first real build: **Actions → Build calendars → Run
+3. Kick off the first real build: **Actions → Build calendars → Run
    workflow**. This replaces the checked-in snapshot calendars with a fresh
-   live fetch. It then runs itself daily at 6:17 AM Central.
+   live fetch. It then runs itself daily at 6:17 AM CDT (5:17 AM CST —
+   Actions cron is fixed UTC). The workflow declares its own
+   `permissions: contents: write`, so no repository settings change is
+   needed for it to commit.
 
 Subscribe URLs will be:
 
@@ -71,10 +72,12 @@ build.py             orchestrates, health-checks, writes docs/ + data/
 
 Design notes worth keeping in mind:
 
-- **Stable UIDs.** An event's UID is derived from source + body name + date,
-  so re-scrapes *update* events in subscribers' calendars instead of
-  duplicating them, and a meeting keeps its identity as details firm up.
-  CAMPO events keep CAMPO's own UIDs (their feed is the system of record).
+- **Stable UIDs.** An event's UID is derived from source + body name + date
+  + start time, so re-scrapes *update* events in subscribers' calendars
+  instead of duplicating them, and two same-day meetings of one body stay
+  distinct. Display names (the "CapMetro - " prefix) are applied after the
+  UID is frozen, so renames never change identity. CAMPO events keep CAMPO's
+  own UIDs (their feed is the system of record).
 - **Health checks over silence.** A source yielding zero events, or shrinking
   more than half versus its last snapshot, turns the Actions run red — but
   calendars still publish. Scraper breakage should be loud, stale data
