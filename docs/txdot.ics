@@ -1,0 +1,188 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//changesaroundme//calendars//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CAM - TxDOT Commission
+X-WR-TIMEZONE:America/Chicago
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:txdot-texas-transportation-commission-20260129T1000@calendars.changesar
+ oundme.com
+DTSTAMP:20260719T212058Z
+DTSTART;TZID=America/Chicago:20260129T100000
+DTEND;TZID=America/Chicago:20260129T140000
+SUMMARY:TxDOT - Texas Transportation Commission
+LOCATION:Ric Williamson Hearing Room\, Dewitt C. Greer Building\, 125 E. 11
+ th St.\, Austin\, TX
+URL:https://www.txdot.gov/about/leadership/texas-transportation-commission/
+ meeting-dates-agendas.html
+DESCRIPTION:Agenda: https://www.txdot.gov/content/dam/docs/commission/2026/
+ 0129/agenda.pdf\nVideo: https://txdot.new.swagit.com/videos/373581\nMinute
+ s: https://www.txdot.gov/content/dam/docs/commission/2026/0129/minutes.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:txdot-texas-transportation-commission-20260226T1000@calendars.changesar
+ oundme.com
+DTSTAMP:20260719T212058Z
+DTSTART;TZID=America/Chicago:20260226T100000
+DTEND;TZID=America/Chicago:20260226T140000
+SUMMARY:TxDOT - Texas Transportation Commission
+LOCATION:Ric Williamson Hearing Room\, Dewitt C. Greer Building\, 125 E. 11
+ th St.\, Austin\, TX
+URL:https://www.txdot.gov/about/leadership/texas-transportation-commission/
+ meeting-dates-agendas.html
+DESCRIPTION:Agenda: https://www.txdot.gov/content/dam/docs/commission/2026/
+ 0226/agenda.pdf\nVideo: https://txdot.new.swagit.com/videos/376499\nMinute
+ s: https://www.txdot.gov/content/dam/docs/commission/2026/0226/02-26-minut
+ es.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:txdot-texas-transportation-commission-20260325T1000@calendars.changesar
+ oundme.com
+DTSTAMP:20260719T212058Z
+DTSTART;TZID=America/Chicago:20260325T100000
+DTEND;TZID=America/Chicago:20260325T140000
+SUMMARY:TxDOT - Texas Transportation Commission
+LOCATION:Ric Williamson Hearing Room\, Dewitt C. Greer Building\, 125 E. 11
+ th St.\, Austin\, TX
+URL:https://www.txdot.gov/about/leadership/texas-transportation-commission/
+ meeting-dates-agendas.html
+DESCRIPTION:Agenda: https://www.txdot.gov/content/dam/docs/commission/2026/
+ 0325/agenda.pdf\nVideo: https://txdot.new.swagit.com/videos/379277\nMinute
+ s: https://www.txdot.gov/content/dam/docs/commission/2026/0325/minutes.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:txdot-texas-transportation-commission-20260430T1000@calendars.changesar
+ oundme.com
+DTSTAMP:20260719T212058Z
+DTSTART;TZID=America/Chicago:20260430T100000
+DTEND;TZID=America/Chicago:20260430T140000
+SUMMARY:TxDOT - Texas Transportation Commission
+LOCATION:Ric Williamson Hearing Room\, Dewitt C. Greer Building\, 125 E. 11
+ th St.\, Austin\, TX
+URL:https://www.txdot.gov/about/leadership/texas-transportation-commission/
+ meeting-dates-agendas.html
+DESCRIPTION:Agenda: https://www.txdot.gov/content/dam/docs/commission/2026/
+ 0430/agenda.pdf\nVideo: https://txdot.new.swagit.com/videos/384441\nMinute
+ s: https://www.txdot.gov/content/dam/docs/commission/2026/0430/minutes.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:txdot-texas-transportation-commission-20260521T1000@calendars.changesar
+ oundme.com
+DTSTAMP:20260719T212058Z
+DTSTART;TZID=America/Chicago:20260521T100000
+DTEND;TZID=America/Chicago:20260521T140000
+SUMMARY:TxDOT - Texas Transportation Commission
+LOCATION:Ric Williamson Hearing Room\, Dewitt C. Greer Building\, 125 E. 11
+ th St.\, Austin\, TX
+URL:https://www.txdot.gov/about/leadership/texas-transportation-commission/
+ meeting-dates-agendas.html
+DESCRIPTION:Agenda: https://www.txdot.gov/content/dam/docs/commission/2026/
+ 0521/agenda.pdf\nVideo: https://txdot.new.swagit.com/videos/388812\nMinute
+ s: https://www.txdot.gov/content/dam/docs/commission/2026/0521/minutes.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:txdot-texas-transportation-commission-20260624T1000@calendars.changesar
+ oundme.com
+DTSTAMP:20260719T212058Z
+DTSTART;TZID=America/Chicago:20260624T100000
+DTEND;TZID=America/Chicago:20260624T140000
+SUMMARY:TxDOT - Texas Transportation Commission
+LOCATION:Ric Williamson Hearing Room\, Dewitt C. Greer Building\, 125 E. 11
+ th St.\, Austin\, TX
+URL:https://www.txdot.gov/about/leadership/texas-transportation-commission/
+ meeting-dates-agendas.html
+DESCRIPTION:Agenda: https://www.txdot.gov/content/dam/docs/commission/2026/
+ 0624/agenda.pdf\nVideo: https://txdot.new.swagit.com/videos/392148
+END:VEVENT
+BEGIN:VEVENT
+UID:txdot-texas-transportation-commission-20260730T1000@calendars.changesar
+ oundme.com
+DTSTAMP:20260719T212058Z
+DTSTART;TZID=America/Chicago:20260730T100000
+DTEND;TZID=America/Chicago:20260730T140000
+SUMMARY:TxDOT - Texas Transportation Commission
+LOCATION:Ric Williamson Hearing Room\, Dewitt C. Greer Building\, 125 E. 11
+ th St.\, Austin\, TX
+URL:https://www.txdot.gov/about/leadership/texas-transportation-commission/
+ meeting-dates-agendas.html
+END:VEVENT
+BEGIN:VEVENT
+UID:txdot-texas-transportation-commission-20260826T1000@calendars.changesar
+ oundme.com
+DTSTAMP:20260719T212058Z
+DTSTART;TZID=America/Chicago:20260826T100000
+DTEND;TZID=America/Chicago:20260826T140000
+SUMMARY:TxDOT - Texas Transportation Commission
+LOCATION:Ric Williamson Hearing Room\, Dewitt C. Greer Building\, 125 E. 11
+ th St.\, Austin\, TX
+URL:https://www.txdot.gov/about/leadership/texas-transportation-commission/
+ meeting-dates-agendas.html
+END:VEVENT
+BEGIN:VEVENT
+UID:txdot-texas-transportation-commission-20260924T1000@calendars.changesar
+ oundme.com
+DTSTAMP:20260719T212058Z
+DTSTART;TZID=America/Chicago:20260924T100000
+DTEND;TZID=America/Chicago:20260924T140000
+SUMMARY:TxDOT - Texas Transportation Commission
+LOCATION:Ric Williamson Hearing Room\, Dewitt C. Greer Building\, 125 E. 11
+ th St.\, Austin\, TX
+URL:https://www.txdot.gov/about/leadership/texas-transportation-commission/
+ meeting-dates-agendas.html
+END:VEVENT
+BEGIN:VEVENT
+UID:txdot-texas-transportation-commission-20261029T1000@calendars.changesar
+ oundme.com
+DTSTAMP:20260719T212058Z
+DTSTART;TZID=America/Chicago:20261029T100000
+DTEND;TZID=America/Chicago:20261029T140000
+SUMMARY:TxDOT - Texas Transportation Commission
+LOCATION:Ric Williamson Hearing Room\, Dewitt C. Greer Building\, 125 E. 11
+ th St.\, Austin\, TX
+URL:https://www.txdot.gov/about/leadership/texas-transportation-commission/
+ meeting-dates-agendas.html
+END:VEVENT
+BEGIN:VEVENT
+UID:txdot-texas-transportation-commission-20261120T1000@calendars.changesar
+ oundme.com
+DTSTAMP:20260719T212058Z
+DTSTART;TZID=America/Chicago:20261120T100000
+DTEND;TZID=America/Chicago:20261120T140000
+SUMMARY:TxDOT - Texas Transportation Commission
+LOCATION:Ric Williamson Hearing Room\, Dewitt C. Greer Building\, 125 E. 11
+ th St.\, Austin\, TX
+URL:https://www.txdot.gov/about/leadership/texas-transportation-commission/
+ meeting-dates-agendas.html
+END:VEVENT
+BEGIN:VEVENT
+UID:txdot-texas-transportation-commission-20261217T1000@calendars.changesar
+ oundme.com
+DTSTAMP:20260719T212058Z
+DTSTART;TZID=America/Chicago:20261217T100000
+DTEND;TZID=America/Chicago:20261217T140000
+SUMMARY:TxDOT - Texas Transportation Commission
+LOCATION:Ric Williamson Hearing Room\, Dewitt C. Greer Building\, 125 E. 11
+ th St.\, Austin\, TX
+URL:https://www.txdot.gov/about/leadership/texas-transportation-commission/
+ meeting-dates-agendas.html
+END:VEVENT
+END:VCALENDAR
