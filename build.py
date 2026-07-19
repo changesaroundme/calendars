@@ -30,11 +30,13 @@ ROOT = pathlib.Path(__file__).parent
 DOCS = ROOT / "docs"
 DATA = ROOT / "data"
 
+# key -> (display name, adapter module, default color for Apple clients)
 CALENDARS = {
-    "campo": ("CAM - CAMPO", campo),
-    "capmetro": ("CAM - CapMetro", capmetro),
-    "txdot": ("CAM - TxDOT Commission", txdot),
+    "campo": ("CAM - CAMPO", campo, "#2E7D32"),      # green
+    "capmetro": ("CAM - CapMetro", capmetro, "#E65100"),  # orange
+    "txdot": ("CAM - TxDOT Commission", txdot, "#6A1B9A"),  # purple
 }
+ALL_COLOR = "#0B66C3"  # blue
 
 USER_AGENT = (
     "cam-calendars/1.0 (+https://github.com/changesaroundme/calendars; "
@@ -71,7 +73,7 @@ def main() -> int:
     unhealthy: list[str] = []
     all_events = []
 
-    for key, (calname, module) in CALENDARS.items():
+    for key, (calname, module, color) in CALENDARS.items():
         try:
             events = load_fixture(key) if offline else module.fetch(session)
         except Exception as exc:
@@ -100,7 +102,7 @@ def main() -> int:
         if events:
             # Always publish what we got (stale beats absent)...
             (DOCS / f"{key}.ics").write_text(
-                emit(events, calname, now), newline=""
+                emit(events, calname, now, color=color), newline=""
             )
             all_events.extend(events)
             # ...but only advance the snapshot baseline when healthy, so a
@@ -116,7 +118,7 @@ def main() -> int:
 
     if all_events:
         (DOCS / "all.ics").write_text(
-            emit(all_events, "CAM - All", now), newline=""
+            emit(all_events, "CAM - All", now, color=ALL_COLOR), newline=""
         )
         print(f"[all] {len(all_events)} events")
 

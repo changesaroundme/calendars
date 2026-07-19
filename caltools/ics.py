@@ -95,8 +95,17 @@ def event_block(ev: Event, dtstamp: str) -> list[str]:
     return lines
 
 
-def emit(events: Iterable[Event], calname: str, generated_at: datetime) -> str:
-    """Render a complete .ics document. generated_at must be UTC."""
+def emit(
+    events: Iterable[Event],
+    calname: str,
+    generated_at: datetime,
+    color: str | None = None,
+) -> str:
+    """Render a complete .ics document. generated_at must be UTC.
+
+    color: optional "#RRGGBB" — Apple clients use it as the calendar's
+    default color at subscribe time; others ignore it harmlessly.
+    """
     dtstamp = generated_at.strftime("%Y%m%dT%H%M%SZ")
     lines = [
         "BEGIN:VCALENDAR",
@@ -106,8 +115,13 @@ def emit(events: Iterable[Event], calname: str, generated_at: datetime) -> str:
         "METHOD:PUBLISH",
         f"X-WR-CALNAME:{escape(calname)}",
         "X-WR-TIMEZONE:America/Chicago",
+        # Suggested re-poll cadence; honored by some clients (e.g. Outlook),
+        # ignored by others (Apple/Google poll on their own schedule).
         "REFRESH-INTERVAL;VALUE=DURATION:PT12H",
+        "X-PUBLISHED-TTL:PT12H",
     ]
+    if color:
+        lines.append(f"X-APPLE-CALENDAR-COLOR:{color}")
     lines.extend(VTIMEZONE.split("\n"))
     seen = set()
     for ev in sorted(events, key=lambda e: e.start.isoformat()):
