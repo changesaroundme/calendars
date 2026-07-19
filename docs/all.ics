@@ -24,43 +24,97 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
+UID:capmetro-board-of-directors-20260420@calendars.changesaroundme.com
+DTSTAMP:20260719T195442Z
+DTSTART;TZID=America/Chicago:20260420T120000
+DTEND;TZID=America/Chicago:20260420T140000
+SUMMARY:Board of Directors
+LOCATION:Rosa Parks Boardroom
+URL:https://capmetrotx.legistar.com/MeetingDetail.aspx?LEGID=3042&GID=848&G
+ =B1EEEA8D-7B10-4460-A710-92D6625C11F7
+DESCRIPTION:Agenda: https://capmetrotx.legistar1.com/capmetrotx/meetings/20
+ 26/4/3042_A_Board_of_Directors_26-04-20_Agenda.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:capmetro-finance-audit-and-administration-committee-20260506@calendars.
+ changesaroundme.com
+DTSTAMP:20260719T195442Z
+DTSTART;TZID=America/Chicago:20260506T110000
+DTEND;TZID=America/Chicago:20260506T130000
+SUMMARY:Finance\, Audit and Administration Committee
+LOCATION:Rosa Parks Boardroom
+URL:https://capmetrotx.legistar.com/MeetingDetail.aspx?LEGID=3043&GID=848&G
+ =B1EEEA8D-7B10-4460-A710-92D6625C11F7
+DESCRIPTION:Agenda: https://capmetrotx.legistar1.com/capmetrotx/meetings/20
+ 26/5/3043_A_Finance%2C_Audit_and_Administration_Committee_26-05-06_Agenda.p
+ df
+END:VEVENT
+BEGIN:VEVENT
+UID:capmetro-board-of-directors-20260506@calendars.changesaroundme.com
+DTSTAMP:20260719T195442Z
+DTSTART;TZID=America/Chicago:20260506T120000
+DTEND;TZID=America/Chicago:20260506T140000
+SUMMARY:Board of Directors
+LOCATION:Rosa Parks Boardroom
+URL:https://capmetrotx.legistar.com/MeetingDetail.aspx?LEGID=3075&GID=848&G
+ =B1EEEA8D-7B10-4460-A710-92D6625C11F7
+DESCRIPTION:Agenda: https://capmetrotx.legistar1.com/capmetrotx/meetings/20
+ 26/5/3075_A_Board_of_Directors_26-05-06_Agenda.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:capmetro-board-of-directors-20260518@calendars.changesaroundme.com
+DTSTAMP:20260719T195442Z
+DTSTART;TZID=America/Chicago:20260518T120000
+DTEND;TZID=America/Chicago:20260518T140000
+SUMMARY:Board of Directors
+LOCATION:Rosa Parks Boardroom
+URL:https://capmetrotx.legistar.com/MeetingDetail.aspx?LEGID=3045&GID=848&G
+ =B1EEEA8D-7B10-4460-A710-92D6625C11F7
+DESCRIPTION:Agenda: https://capmetrotx.legistar1.com/capmetrotx/meetings/20
+ 26/5/3045_A_Board_of_Directors_26-05-18_Agenda.pdf
+END:VEVENT
+BEGIN:VEVENT
 UID:capmetro-finance-audit-and-administration-committee-20260610@calendars.
  changesaroundme.com
-DTSTAMP:20260719T164742Z
+DTSTAMP:20260719T195442Z
 DTSTART;TZID=America/Chicago:20260610T100000
 DTEND;TZID=America/Chicago:20260610T120000
 SUMMARY:Finance\, Audit and Administration Committee
 LOCATION:Rosa Parks Boardroom
-URL:https://capmetrotx.legistar.com/MeetingDetail.aspx?ID=1240002
-DESCRIPTION:Agenda: https://capmetrotx.legistar.com/View.ashx?M=A&ID=124000
- 2
+URL:https://capmetrotx.legistar.com/MeetingDetail.aspx?LEGID=3047&GID=848&G
+ =B1EEEA8D-7B10-4460-A710-92D6625C11F7
+DESCRIPTION:Agenda: https://capmetrotx.legistar1.com/capmetrotx/meetings/20
+ 26/6/3047_A_Finance%2C_Audit_and_Administration_Committee_26-06-10_Agenda.p
+ df
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-operations-planning-and-safety-committee-20260610@calendars.ch
  angesaroundme.com
-DTSTAMP:20260719T164742Z
+DTSTAMP:20260719T195442Z
 DTSTART;TZID=America/Chicago:20260610T123000
 DTEND;TZID=America/Chicago:20260610T143000
 SUMMARY:Operations\, Planning and Safety Committee
 LOCATION:Rosa Parks Boardroom
-URL:https://capmetrotx.legistar.com/MeetingDetail.aspx?ID=1240003
-DESCRIPTION:Agenda: https://capmetrotx.legistar.com/View.ashx?M=A&ID=124000
- 3
+URL:https://capmetrotx.legistar.com/MeetingDetail.aspx?LEGID=3048&GID=848&G
+ =B1EEEA8D-7B10-4460-A710-92D6625C11F7
+DESCRIPTION:Agenda: https://capmetrotx.legistar1.com/capmetrotx/meetings/20
+ 26/6/3048_A_Operations%2C_Planning_and_Safety_Committee_26-06-10_Agenda.pdf
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260622@calendars.changesaroundme.com
-DTSTAMP:20260719T164742Z
+DTSTAMP:20260719T195442Z
 DTSTART;TZID=America/Chicago:20260622T120000
 DTEND;TZID=America/Chicago:20260622T140000
 SUMMARY:Board of Directors
 LOCATION:Rosa Parks Boardroom
-URL:https://capmetrotx.legistar.com/MeetingDetail.aspx?ID=1240001
-DESCRIPTION:Agenda: https://capmetrotx.legistar.com/View.ashx?M=A&ID=124000
- 1
+URL:https://capmetrotx.legistar.com/MeetingDetail.aspx?LEGID=3049&GID=848&G
+ =B1EEEA8D-7B10-4460-A710-92D6625C11F7
+DESCRIPTION:Agenda: https://capmetrotx.legistar1.com/capmetrotx/meetings/20
+ 26/6/3049_A_Board_of_Directors_26-06-22_Agenda.pdf
 END:VEVENT
 BEGIN:VEVENT
 UID:7718-1785110400-1785196799@www.campotexas.org
-DTSTAMP:20260719T164742Z
+DTSTAMP:20260719T195442Z
 DTSTART;VALUE=DATE:20260727
 DTEND;VALUE=DATE:20260728
 SUMMARY:Technical Advisory Committee - Cancelled
@@ -70,7 +124,7 @@ STATUS:CANCELLED
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260727@calendars.changesaroundme.com
-DTSTAMP:20260719T164742Z
+DTSTAMP:20260719T195442Z
 DTSTART;TZID=America/Chicago:20260727T120000
 DTEND;TZID=America/Chicago:20260727T140000
 SUMMARY:Board of Directors
@@ -79,7 +133,7 @@ URL:https://capmetrotx.legistar.com/Calendar.aspx
 END:VEVENT
 BEGIN:VEVENT
 UID:7706-1786370400-1786377600@www.campotexas.org
-DTSTAMP:20260719T164742Z
+DTSTAMP:20260719T195442Z
 DTSTART;TZID=America/Chicago:20260810T140000
 DTEND;TZID=America/Chicago:20260810T160000
 SUMMARY:Transportation Policy Board
@@ -89,7 +143,7 @@ URL:https://www.campotexas.org/event/transportation-policy-board-80/
 END:VEVENT
 BEGIN:VEVENT
 UID:7719-1787580000-1787587200@www.campotexas.org
-DTSTAMP:20260719T164742Z
+DTSTAMP:20260719T195442Z
 DTSTART;TZID=America/Chicago:20260824T140000
 DTEND;TZID=America/Chicago:20260824T160000
 SUMMARY:Technical Advisory Committee
@@ -98,7 +152,7 @@ URL:https://www.campotexas.org/event/technical-advisory-committee-103/
 END:VEVENT
 BEGIN:VEVENT
 UID:7707-1789394400-1789401600@www.campotexas.org
-DTSTAMP:20260719T164742Z
+DTSTAMP:20260719T195442Z
 DTSTART;TZID=America/Chicago:20260914T140000
 DTEND;TZID=America/Chicago:20260914T160000
 SUMMARY:Transportation Policy Board
@@ -108,7 +162,7 @@ URL:https://www.campotexas.org/event/transportation-policy-board-81/
 END:VEVENT
 BEGIN:VEVENT
 UID:7720-1790604000-1790611200@www.campotexas.org
-DTSTAMP:20260719T164742Z
+DTSTAMP:20260719T195442Z
 DTSTART;TZID=America/Chicago:20260928T140000
 DTEND;TZID=America/Chicago:20260928T160000
 SUMMARY:Technical Advisory Committee
@@ -117,7 +171,7 @@ URL:https://www.campotexas.org/event/technical-advisory-committee-104/
 END:VEVENT
 BEGIN:VEVENT
 UID:7708-1791208800-1791216000@www.campotexas.org
-DTSTAMP:20260719T164742Z
+DTSTAMP:20260719T195442Z
 DTSTART;TZID=America/Chicago:20261005T140000
 DTEND;TZID=America/Chicago:20261005T160000
 SUMMARY:Transportation Policy Board
@@ -127,7 +181,7 @@ URL:https://www.campotexas.org/event/transportation-policy-board-82/
 END:VEVENT
 BEGIN:VEVENT
 UID:7721-1793023200-1793030400@www.campotexas.org
-DTSTAMP:20260719T164742Z
+DTSTAMP:20260719T195442Z
 DTSTART;TZID=America/Chicago:20261026T140000
 DTEND;TZID=America/Chicago:20261026T160000
 SUMMARY:Technical Advisory Committee
@@ -136,7 +190,7 @@ URL:https://www.campotexas.org/event/technical-advisory-committee-105/
 END:VEVENT
 BEGIN:VEVENT
 UID:7709-1794232800-1794240000@www.campotexas.org
-DTSTAMP:20260719T164742Z
+DTSTAMP:20260719T195442Z
 DTSTART;TZID=America/Chicago:20261109T140000
 DTEND;TZID=America/Chicago:20261109T160000
 SUMMARY:Transportation Policy Board
@@ -146,7 +200,7 @@ URL:https://www.campotexas.org/event/transportation-policy-board-83/
 END:VEVENT
 BEGIN:VEVENT
 UID:7722-1794837600-1794844800@www.campotexas.org
-DTSTAMP:20260719T164742Z
+DTSTAMP:20260719T195442Z
 DTSTART;TZID=America/Chicago:20261116T140000
 DTEND;TZID=America/Chicago:20261116T160000
 SUMMARY:Technical Advisory Committee
@@ -155,7 +209,7 @@ URL:https://www.campotexas.org/event/technical-advisory-committee-106/
 END:VEVENT
 BEGIN:VEVENT
 UID:7710-1797256800-1797264000@www.campotexas.org
-DTSTAMP:20260719T164742Z
+DTSTAMP:20260719T195442Z
 DTSTART;TZID=America/Chicago:20261214T140000
 DTEND;TZID=America/Chicago:20261214T160000
 SUMMARY:Transportation Policy Board
@@ -165,7 +219,7 @@ URL:https://www.campotexas.org/event/transportation-policy-board-84/
 END:VEVENT
 BEGIN:VEVENT
 UID:7723-1797861600-1797868800@www.campotexas.org
-DTSTAMP:20260719T164742Z
+DTSTAMP:20260719T195442Z
 DTSTART;TZID=America/Chicago:20261221T140000
 DTEND;TZID=America/Chicago:20261221T160000
 SUMMARY:Technical Advisory Committee
