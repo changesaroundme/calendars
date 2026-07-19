@@ -1,6 +1,6 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//atx-gov-calendars//github//EN
+PRODID:-//changesaroundme//calendars//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:CapMetro Board & Committees
@@ -24,9 +24,9 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:capmetro-finance-audit-and-administration-committee-20260610@atx-gov-ca
- lendars
-DTSTAMP:20260719T155244Z
+UID:capmetro-finance-audit-and-administration-committee-20260610@calendars.
+ changesaroundme.com
+DTSTAMP:20260719T164742Z
 DTSTART;TZID=America/Chicago:20260610T100000
 DTEND;TZID=America/Chicago:20260610T120000
 SUMMARY:Finance\, Audit and Administration Committee
@@ -36,9 +36,9 @@ DESCRIPTION:Agenda: https://capmetrotx.legistar.com/View.ashx?M=A&ID=124000
  2
 END:VEVENT
 BEGIN:VEVENT
-UID:capmetro-operations-planning-and-safety-committee-20260610@atx-gov-cale
- ndars
-DTSTAMP:20260719T155244Z
+UID:capmetro-operations-planning-and-safety-committee-20260610@calendars.ch
+ angesaroundme.com
+DTSTAMP:20260719T164742Z
 DTSTART;TZID=America/Chicago:20260610T123000
 DTEND;TZID=America/Chicago:20260610T143000
 SUMMARY:Operations\, Planning and Safety Committee
@@ -48,8 +48,8 @@ DESCRIPTION:Agenda: https://capmetrotx.legistar.com/View.ashx?M=A&ID=124000
  3
 END:VEVENT
 BEGIN:VEVENT
-UID:capmetro-board-of-directors-20260622@atx-gov-calendars
-DTSTAMP:20260719T155244Z
+UID:capmetro-board-of-directors-20260622@calendars.changesaroundme.com
+DTSTAMP:20260719T164742Z
 DTSTART;TZID=America/Chicago:20260622T120000
 DTEND;TZID=America/Chicago:20260622T140000
 SUMMARY:Board of Directors
@@ -59,8 +59,8 @@ DESCRIPTION:Agenda: https://capmetrotx.legistar.com/View.ashx?M=A&ID=124000
  1
 END:VEVENT
 BEGIN:VEVENT
-UID:capmetro-board-of-directors-20260727@atx-gov-calendars
-DTSTAMP:20260719T155244Z
+UID:capmetro-board-of-directors-20260727@calendars.changesaroundme.com
+DTSTAMP:20260719T164742Z
 DTSTART;TZID=America/Chicago:20260727T120000
 DTEND;TZID=America/Chicago:20260727T140000
 SUMMARY:Board of Directors

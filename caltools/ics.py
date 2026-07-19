@@ -94,7 +94,7 @@ def emit(events: Iterable[Event], calname: str, generated_at: datetime) -> str:
     lines = [
         "BEGIN:VCALENDAR",
         "VERSION:2.0",
-        "PRODID:-//atx-gov-calendars//github//EN",
+        "PRODID:-//changesaroundme//calendars//EN",
         "CALSCALE:GREGORIAN",
         "METHOD:PUBLISH",
         f"X-WR-CALNAME:{escape(calname)}",

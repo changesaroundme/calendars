@@ -36,7 +36,7 @@ CALENDARS = {
 }
 
 USER_AGENT = (
-    "atx-gov-calendars/1.0 (+https://github.com/changesaroundme; "
+    "cam-calendars/1.0 (+https://github.com/changesaroundme/calendars; "
     "isherifwilson@gmail.com) public-meeting calendar builder"
 )
 
@@ -101,7 +101,7 @@ def main() -> int:
 
     if all_events:
         (DOCS / "all.ics").write_text(
-            emit(all_events, "Austin-Area Public Meetings (all)", now), newline=""
+            emit(all_events, "Central Texas Public Meetings (all)", now), newline=""
         )
         print(f"[all] {len(all_events)} events")
 

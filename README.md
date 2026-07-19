@@ -1,6 +1,6 @@
-# atx-gov-calendars
+# calendars
 
-Subscribable `.ics` calendars of Austin-area public meetings, rebuilt daily
+Subscribable `.ics` calendars of Central Texas public meetings (Austin-area and statewide bodies), rebuilt daily
 by GitHub Actions from official sources and served by GitHub Pages.
 
 **v1 sources**
@@ -18,11 +18,11 @@ by GitHub Actions from official sources and served by GitHub Pages.
 
 ## One-time setup
 
-1. Create a new GitHub repository (e.g. `atx-gov-calendars`) and push this
+1. Create a new GitHub repository named `calendars` and push this
    folder to its `main` branch:
 
    ```sh
-   git remote add origin https://github.com/YOURNAME/atx-gov-calendars.git
+   git remote add origin https://github.com/changesaroundme/calendars.git
    git push -u origin main
    ```
 
@@ -38,9 +38,9 @@ by GitHub Actions from official sources and served by GitHub Pages.
 Subscribe URLs will be:
 
 ```
-webcal://YOURNAME.github.io/atx-gov-calendars/all.ics
-webcal://YOURNAME.github.io/atx-gov-calendars/campo.ics
-webcal://YOURNAME.github.io/atx-gov-calendars/capmetro.ics
+webcal://changesaroundme.github.io/calendars/all.ics
+webcal://changesaroundme.github.io/calendars/campo.ics
+webcal://changesaroundme.github.io/calendars/capmetro.ics
 ```
 
 Link those from anywhere (e.g. an Obsidian Publish page). Calendar apps
@@ -93,8 +93,9 @@ in `CALENDARS` in `build.py`, add a fixture if practical. Candidate backlog,
 roughly easiest-first: TxDOT Transportation Commission (static HTML table),
 Texas SOS / UNT open-meetings snapshot (covers every TX state + regional
 body), Texas Senate committee hearings (ephemeral page — needs faster
-polling), Austin boards & commissions (static HTML), TxDOT comment windows
-(JS-rendered — needs endpoint discovery or headless fetch).
+polling), Austin boards & commissions (static HTML), TxDOT UTP comment windows
+(static HTML too — the comment-period table is server-rendered; earlier
+"JS-rendered" suspicion was a fetch-truncation artifact).
 
 Fixtures under `fixtures/` are point-in-time dev snapshots reconstructed from
 the live sources; the first CI run overwrites all published output with a

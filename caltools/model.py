@@ -44,7 +44,7 @@ class Event:
         if self.uid:
             return self.uid
         d = self.start.strftime("%Y%m%d")
-        return f"{self.source}-{slugify(self.summary)}-{d}@atx-gov-calendars"
+        return f"{self.source}-{slugify(self.summary)}-{d}@calendars.changesaroundme.com"
 
     def to_json(self) -> dict:
         d = asdict(self)
