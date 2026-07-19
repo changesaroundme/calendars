@@ -6,6 +6,8 @@ METHOD:PUBLISH
 X-WR-CALNAME:CAM - All
 X-WR-TIMEZONE:America/Chicago
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+X-APPLE-CALENDAR-COLOR:#0B66C3
 BEGIN:VTIMEZONE
 TZID:America/Chicago
 BEGIN:DAYLIGHT
@@ -26,7 +28,7 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:txdot-texas-transportation-commission-20260129T1000@calendars.changesar
  oundme.com
-DTSTAMP:20260719T212058Z
+DTSTAMP:20260719T212731Z
 DTSTART;TZID=America/Chicago:20260129T100000
 DTEND;TZID=America/Chicago:20260129T140000
 SUMMARY:TxDOT - Texas Transportation Commission
@@ -41,7 +43,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdot-texas-transportation-commission-20260226T1000@calendars.changesar
  oundme.com
-DTSTAMP:20260719T212058Z
+DTSTAMP:20260719T212731Z
 DTSTART;TZID=America/Chicago:20260226T100000
 DTEND;TZID=America/Chicago:20260226T140000
 SUMMARY:TxDOT - Texas Transportation Commission
@@ -57,7 +59,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdot-texas-transportation-commission-20260325T1000@calendars.changesar
  oundme.com
-DTSTAMP:20260719T212058Z
+DTSTAMP:20260719T212731Z
 DTSTART;TZID=America/Chicago:20260325T100000
 DTEND;TZID=America/Chicago:20260325T140000
 SUMMARY:TxDOT - Texas Transportation Commission
@@ -71,7 +73,7 @@ DESCRIPTION:Agenda: https://www.txdot.gov/content/dam/docs/commission/2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260420T1200@calendars.changesaroundme.com
-DTSTAMP:20260719T212058Z
+DTSTAMP:20260719T212731Z
 DTSTART;TZID=America/Chicago:20260420T120000
 DTEND;TZID=America/Chicago:20260420T140000
 SUMMARY:CapMetro - Board of Directors
@@ -84,7 +86,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdot-texas-transportation-commission-20260430T1000@calendars.changesar
  oundme.com
-DTSTAMP:20260719T212058Z
+DTSTAMP:20260719T212731Z
 DTSTART;TZID=America/Chicago:20260430T100000
 DTEND;TZID=America/Chicago:20260430T140000
 SUMMARY:TxDOT - Texas Transportation Commission
@@ -99,7 +101,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-finance-audit-and-administration-committee-20260506T1100@calen
  dars.changesaroundme.com
-DTSTAMP:20260719T212058Z
+DTSTAMP:20260719T212731Z
 DTSTART;TZID=America/Chicago:20260506T110000
 DTEND;TZID=America/Chicago:20260506T130000
 SUMMARY:CapMetro - Finance\, Audit and Administration Committee
@@ -112,7 +114,7 @@ DESCRIPTION:Agenda: https://capmetrotx.legistar1.com/capmetrotx/meetings/20
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260506T1200@calendars.changesaroundme.com
-DTSTAMP:20260719T212058Z
+DTSTAMP:20260719T212731Z
 DTSTART;TZID=America/Chicago:20260506T120000
 DTEND;TZID=America/Chicago:20260506T140000
 SUMMARY:CapMetro - Board of Directors
@@ -124,7 +126,7 @@ DESCRIPTION:Agenda: https://capmetrotx.legistar1.com/capmetrotx/meetings/20
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260518T1200@calendars.changesaroundme.com
-DTSTAMP:20260719T212058Z
+DTSTAMP:20260719T212731Z
 DTSTART;TZID=America/Chicago:20260518T120000
 DTEND;TZID=America/Chicago:20260518T140000
 SUMMARY:CapMetro - Board of Directors
@@ -137,7 +139,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdot-texas-transportation-commission-20260521T1000@calendars.changesar
  oundme.com
-DTSTAMP:20260719T212058Z
+DTSTAMP:20260719T212731Z
 DTSTART;TZID=America/Chicago:20260521T100000
 DTEND;TZID=America/Chicago:20260521T140000
 SUMMARY:TxDOT - Texas Transportation Commission
@@ -152,7 +154,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-finance-audit-and-administration-committee-20260610T1000@calen
  dars.changesaroundme.com
-DTSTAMP:20260719T212058Z
+DTSTAMP:20260719T212731Z
 DTSTART;TZID=America/Chicago:20260610T100000
 DTEND;TZID=America/Chicago:20260610T120000
 SUMMARY:CapMetro - Finance\, Audit and Administration Committee
@@ -166,7 +168,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-operations-planning-and-safety-committee-20260610T1230@calenda
  rs.changesaroundme.com
-DTSTAMP:20260719T212058Z
+DTSTAMP:20260719T212731Z
 DTSTART;TZID=America/Chicago:20260610T123000
 DTEND;TZID=America/Chicago:20260610T143000
 SUMMARY:CapMetro - Operations\, Planning and Safety Committee
@@ -179,7 +181,7 @@ DESCRIPTION:Agenda: https://capmetrotx.legistar1.com/capmetrotx/meetings/20
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260622T1200@calendars.changesaroundme.com
-DTSTAMP:20260719T212058Z
+DTSTAMP:20260719T212731Z
 DTSTART;TZID=America/Chicago:20260622T120000
 DTEND;TZID=America/Chicago:20260622T140000
 SUMMARY:CapMetro - Board of Directors
@@ -192,7 +194,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdot-texas-transportation-commission-20260624T1000@calendars.changesar
  oundme.com
-DTSTAMP:20260719T212058Z
+DTSTAMP:20260719T212731Z
 DTSTART;TZID=America/Chicago:20260624T100000
 DTEND;TZID=America/Chicago:20260624T140000
 SUMMARY:TxDOT - Texas Transportation Commission
@@ -205,7 +207,7 @@ DESCRIPTION:Agenda: https://www.txdot.gov/content/dam/docs/commission/2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:7718-1785110400-1785196799@www.campotexas.org
-DTSTAMP:20260719T212058Z
+DTSTAMP:20260719T212731Z
 DTSTART;VALUE=DATE:20260727
 DTEND;VALUE=DATE:20260728
 SUMMARY:CAMPO - Technical Advisory Committee - Cancelled
@@ -215,7 +217,7 @@ STATUS:CANCELLED
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260727T1200@calendars.changesaroundme.com
-DTSTAMP:20260719T212058Z
+DTSTAMP:20260719T212731Z
 DTSTART;TZID=America/Chicago:20260727T120000
 DTEND;TZID=America/Chicago:20260727T140000
 SUMMARY:CapMetro - Board of Directors
@@ -225,7 +227,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdot-texas-transportation-commission-20260730T1000@calendars.changesar
  oundme.com
-DTSTAMP:20260719T212058Z
+DTSTAMP:20260719T212731Z
 DTSTART;TZID=America/Chicago:20260730T100000
 DTEND;TZID=America/Chicago:20260730T140000
 SUMMARY:TxDOT - Texas Transportation Commission
@@ -236,7 +238,7 @@ URL:https://www.txdot.gov/about/leadership/texas-transportation-commission/
 END:VEVENT
 BEGIN:VEVENT
 UID:7706-1786370400-1786377600@www.campotexas.org
-DTSTAMP:20260719T212058Z
+DTSTAMP:20260719T212731Z
 DTSTART;TZID=America/Chicago:20260810T140000
 DTEND;TZID=America/Chicago:20260810T160000
 SUMMARY:CAMPO - Transportation Policy Board
@@ -246,7 +248,7 @@ URL:https://www.campotexas.org/event/transportation-policy-board-80/
 END:VEVENT
 BEGIN:VEVENT
 UID:7719-1787580000-1787587200@www.campotexas.org
-DTSTAMP:20260719T212058Z
+DTSTAMP:20260719T212731Z
 DTSTART;TZID=America/Chicago:20260824T140000
 DTEND;TZID=America/Chicago:20260824T160000
 SUMMARY:CAMPO - Technical Advisory Committee
@@ -256,7 +258,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdot-texas-transportation-commission-20260826T1000@calendars.changesar
  oundme.com
-DTSTAMP:20260719T212058Z
+DTSTAMP:20260719T212731Z
 DTSTART;TZID=America/Chicago:20260826T100000
 DTEND;TZID=America/Chicago:20260826T140000
 SUMMARY:TxDOT - Texas Transportation Commission
@@ -267,7 +269,7 @@ URL:https://www.txdot.gov/about/leadership/texas-transportation-commission/
 END:VEVENT
 BEGIN:VEVENT
 UID:7707-1789394400-1789401600@www.campotexas.org
-DTSTAMP:20260719T212058Z
+DTSTAMP:20260719T212731Z
 DTSTART;TZID=America/Chicago:20260914T140000
 DTEND;TZID=America/Chicago:20260914T160000
 SUMMARY:CAMPO - Transportation Policy Board
@@ -278,7 +280,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdot-texas-transportation-commission-20260924T1000@calendars.changesar
  oundme.com
-DTSTAMP:20260719T212058Z
+DTSTAMP:20260719T212731Z
 DTSTART;TZID=America/Chicago:20260924T100000
 DTEND;TZID=America/Chicago:20260924T140000
 SUMMARY:TxDOT - Texas Transportation Commission
@@ -289,7 +291,7 @@ URL:https://www.txdot.gov/about/leadership/texas-transportation-commission/
 END:VEVENT
 BEGIN:VEVENT
 UID:7720-1790604000-1790611200@www.campotexas.org
-DTSTAMP:20260719T212058Z
+DTSTAMP:20260719T212731Z
 DTSTART;TZID=America/Chicago:20260928T140000
 DTEND;TZID=America/Chicago:20260928T160000
 SUMMARY:CAMPO - Technical Advisory Committee
@@ -298,7 +300,7 @@ URL:https://www.campotexas.org/event/technical-advisory-committee-104/
 END:VEVENT
 BEGIN:VEVENT
 UID:7708-1791208800-1791216000@www.campotexas.org
-DTSTAMP:20260719T212058Z
+DTSTAMP:20260719T212731Z
 DTSTART;TZID=America/Chicago:20261005T140000
 DTEND;TZID=America/Chicago:20261005T160000
 SUMMARY:CAMPO - Transportation Policy Board
@@ -308,7 +310,7 @@ URL:https://www.campotexas.org/event/transportation-policy-board-82/
 END:VEVENT
 BEGIN:VEVENT
 UID:7721-1793023200-1793030400@www.campotexas.org
-DTSTAMP:20260719T212058Z
+DTSTAMP:20260719T212731Z
 DTSTART;TZID=America/Chicago:20261026T140000
 DTEND;TZID=America/Chicago:20261026T160000
 SUMMARY:CAMPO - Technical Advisory Committee
@@ -318,7 +320,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdot-texas-transportation-commission-20261029T1000@calendars.changesar
  oundme.com
-DTSTAMP:20260719T212058Z
+DTSTAMP:20260719T212731Z
 DTSTART;TZID=America/Chicago:20261029T100000
 DTEND;TZID=America/Chicago:20261029T140000
 SUMMARY:TxDOT - Texas Transportation Commission
@@ -329,7 +331,7 @@ URL:https://www.txdot.gov/about/leadership/texas-transportation-commission/
 END:VEVENT
 BEGIN:VEVENT
 UID:7709-1794232800-1794240000@www.campotexas.org
-DTSTAMP:20260719T212058Z
+DTSTAMP:20260719T212731Z
 DTSTART;TZID=America/Chicago:20261109T140000
 DTEND;TZID=America/Chicago:20261109T160000
 SUMMARY:CAMPO - Transportation Policy Board
@@ -339,7 +341,7 @@ URL:https://www.campotexas.org/event/transportation-policy-board-83/
 END:VEVENT
 BEGIN:VEVENT
 UID:7722-1794837600-1794844800@www.campotexas.org
-DTSTAMP:20260719T212058Z
+DTSTAMP:20260719T212731Z
 DTSTART;TZID=America/Chicago:20261116T140000
 DTEND;TZID=America/Chicago:20261116T160000
 SUMMARY:CAMPO - Technical Advisory Committee
@@ -349,7 +351,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdot-texas-transportation-commission-20261120T1000@calendars.changesar
  oundme.com
-DTSTAMP:20260719T212058Z
+DTSTAMP:20260719T212731Z
 DTSTART;TZID=America/Chicago:20261120T100000
 DTEND;TZID=America/Chicago:20261120T140000
 SUMMARY:TxDOT - Texas Transportation Commission
@@ -360,7 +362,7 @@ URL:https://www.txdot.gov/about/leadership/texas-transportation-commission/
 END:VEVENT
 BEGIN:VEVENT
 UID:7710-1797256800-1797264000@www.campotexas.org
-DTSTAMP:20260719T212058Z
+DTSTAMP:20260719T212731Z
 DTSTART;TZID=America/Chicago:20261214T140000
 DTEND;TZID=America/Chicago:20261214T160000
 SUMMARY:CAMPO - Transportation Policy Board
@@ -371,7 +373,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdot-texas-transportation-commission-20261217T1000@calendars.changesar
  oundme.com
-DTSTAMP:20260719T212058Z
+DTSTAMP:20260719T212731Z
 DTSTART;TZID=America/Chicago:20261217T100000
 DTEND;TZID=America/Chicago:20261217T140000
 SUMMARY:TxDOT - Texas Transportation Commission
@@ -382,7 +384,7 @@ URL:https://www.txdot.gov/about/leadership/texas-transportation-commission/
 END:VEVENT
 BEGIN:VEVENT
 UID:7723-1797861600-1797868800@www.campotexas.org
-DTSTAMP:20260719T212058Z
+DTSTAMP:20260719T212731Z
 DTSTART;TZID=America/Chicago:20261221T140000
 DTEND;TZID=America/Chicago:20261221T160000
 SUMMARY:CAMPO - Technical Advisory Committee
