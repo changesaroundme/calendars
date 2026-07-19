@@ -1,0 +1,165 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//changesaroundme//calendars//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CAM - LCRA
+X-WR-TIMEZONE:America/Chicago
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+X-APPLE-CALENDAR-COLOR:#00838F
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:lcra-board-committees-20260818@calendars.changesaroundme.com
+DTSTAMP:20260719T215343Z
+DTSTART;VALUE=DATE:20260818
+SUMMARY:LCRA - Board Committees
+LOCATION:Austin\, TX
+URL:https://www.lcra.org/about/leadership/board-agendas/
+DESCRIPTION:All-day placeholder: LCRA publishes dates a year out\; the exac
+ t time and room post with the agenda (~1 week ahead): https://www.lcra.org
+ /about/leadership/board-agendas/
+END:VEVENT
+BEGIN:VEVENT
+UID:lcra-board-of-directors-20260819@calendars.changesaroundme.com
+DTSTAMP:20260719T215343Z
+DTSTART;VALUE=DATE:20260819
+SUMMARY:LCRA - Board of Directors
+LOCATION:Austin\, TX
+URL:https://www.lcra.org/about/leadership/board-agendas/
+DESCRIPTION:All-day placeholder: LCRA publishes dates a year out\; the exac
+ t time and room post with the agenda (~1 week ahead): https://www.lcra.org
+ /about/leadership/board-agendas/
+END:VEVENT
+BEGIN:VEVENT
+UID:lcra-transmission-services-corp-board-20260819@calendars.changesaroundm
+ e.com
+DTSTAMP:20260719T215343Z
+DTSTART;VALUE=DATE:20260819
+SUMMARY:LCRA - Transmission Services Corp. Board
+LOCATION:Austin\, TX
+URL:https://www.lcra.org/about/leadership/board-agendas/
+DESCRIPTION:All-day placeholder: LCRA publishes dates a year out\; the exac
+ t time and room post with the agenda (~1 week ahead): https://www.lcra.org
+ /about/leadership/board-agendas/
+END:VEVENT
+BEGIN:VEVENT
+UID:lcra-board-committee-meetings-20260923@calendars.changesaroundme.com
+DTSTAMP:20260719T215343Z
+DTSTART;VALUE=DATE:20260923
+SUMMARY:LCRA - Board & Committee Meetings
+LOCATION:Austin\, TX
+URL:https://www.lcra.org/about/leadership/board-agendas/
+DESCRIPTION:All-day placeholder: LCRA publishes dates a year out\; the exac
+ t time and room post with the agenda (~1 week ahead): https://www.lcra.org
+ /about/leadership/board-agendas/
+END:VEVENT
+BEGIN:VEVENT
+UID:lcra-transmission-services-corp-board-20260923@calendars.changesaroundm
+ e.com
+DTSTAMP:20260719T215343Z
+DTSTART;VALUE=DATE:20260923
+SUMMARY:LCRA - Transmission Services Corp. Board
+LOCATION:Austin\, TX
+URL:https://www.lcra.org/about/leadership/board-agendas/
+DESCRIPTION:All-day placeholder: LCRA publishes dates a year out\; the exac
+ t time and room post with the agenda (~1 week ahead): https://www.lcra.org
+ /about/leadership/board-agendas/
+END:VEVENT
+BEGIN:VEVENT
+UID:lcra-board-committees-20261020@calendars.changesaroundme.com
+DTSTAMP:20260719T215343Z
+DTSTART;VALUE=DATE:20261020
+SUMMARY:LCRA - Board Committees
+LOCATION:Austin\, TX
+URL:https://www.lcra.org/about/leadership/board-agendas/
+DESCRIPTION:All-day placeholder: LCRA publishes dates a year out\; the exac
+ t time and room post with the agenda (~1 week ahead): https://www.lcra.org
+ /about/leadership/board-agendas/
+END:VEVENT
+BEGIN:VEVENT
+UID:lcra-board-of-directors-20261021@calendars.changesaroundme.com
+DTSTAMP:20260719T215343Z
+DTSTART;VALUE=DATE:20261021
+SUMMARY:LCRA - Board of Directors
+LOCATION:Austin\, TX
+URL:https://www.lcra.org/about/leadership/board-agendas/
+DESCRIPTION:All-day placeholder: LCRA publishes dates a year out\; the exac
+ t time and room post with the agenda (~1 week ahead): https://www.lcra.org
+ /about/leadership/board-agendas/
+END:VEVENT
+BEGIN:VEVENT
+UID:lcra-transmission-services-corp-board-20261021@calendars.changesaroundm
+ e.com
+DTSTAMP:20260719T215343Z
+DTSTART;VALUE=DATE:20261021
+SUMMARY:LCRA - Transmission Services Corp. Board
+LOCATION:Austin\, TX
+URL:https://www.lcra.org/about/leadership/board-agendas/
+DESCRIPTION:All-day placeholder: LCRA publishes dates a year out\; the exac
+ t time and room post with the agenda (~1 week ahead): https://www.lcra.org
+ /about/leadership/board-agendas/
+END:VEVENT
+BEGIN:VEVENT
+UID:lcra-board-committee-meetings-20261110@calendars.changesaroundme.com
+DTSTAMP:20260719T215343Z
+DTSTART;VALUE=DATE:20261110
+SUMMARY:LCRA - Board & Committee Meetings
+LOCATION:Austin\, TX
+URL:https://www.lcra.org/about/leadership/board-agendas/
+DESCRIPTION:All-day placeholder: LCRA publishes dates a year out\; the exac
+ t time and room post with the agenda (~1 week ahead): https://www.lcra.org
+ /about/leadership/board-agendas/
+END:VEVENT
+BEGIN:VEVENT
+UID:lcra-transmission-services-corp-board-20261110@calendars.changesaroundm
+ e.com
+DTSTAMP:20260719T215343Z
+DTSTART;VALUE=DATE:20261110
+SUMMARY:LCRA - Transmission Services Corp. Board
+LOCATION:Austin\, TX
+URL:https://www.lcra.org/about/leadership/board-agendas/
+DESCRIPTION:All-day placeholder: LCRA publishes dates a year out\; the exac
+ t time and room post with the agenda (~1 week ahead): https://www.lcra.org
+ /about/leadership/board-agendas/
+END:VEVENT
+BEGIN:VEVENT
+UID:lcra-board-committee-meetings-20261208@calendars.changesaroundme.com
+DTSTAMP:20260719T215343Z
+DTSTART;VALUE=DATE:20261208
+SUMMARY:LCRA - Board & Committee Meetings
+LOCATION:Austin\, TX
+URL:https://www.lcra.org/about/leadership/board-agendas/
+DESCRIPTION:All-day placeholder: LCRA publishes dates a year out\; the exac
+ t time and room post with the agenda (~1 week ahead): https://www.lcra.org
+ /about/leadership/board-agendas/
+END:VEVENT
+BEGIN:VEVENT
+UID:lcra-transmission-services-corp-board-20261208@calendars.changesaroundm
+ e.com
+DTSTAMP:20260719T215343Z
+DTSTART;VALUE=DATE:20261208
+SUMMARY:LCRA - Transmission Services Corp. Board
+LOCATION:Austin\, TX
+URL:https://www.lcra.org/about/leadership/board-agendas/
+DESCRIPTION:All-day placeholder: LCRA publishes dates a year out\; the exac
+ t time and room post with the agenda (~1 week ahead): https://www.lcra.org
+ /about/leadership/board-agendas/
+END:VEVENT
+END:VCALENDAR
