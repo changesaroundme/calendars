@@ -10,10 +10,11 @@ Actions from official sources and served by GitHub Pages.
 |---|---|---|
 | CAMPO | ICS ingest | Their published Tribe Events iCal feed |
 | CapMetro | HTML scrape + API merge | Legistar `Calendar.aspx` (early dates) + Legistar Web API (agenda links) |
+| TxDOT Commission | HTML scrape | Commission meeting-dates page (full year of dates; agendas ~8 days out) |
 
 **Outputs** (in `docs/`, served by Pages)
 
-- `campo.ics`, `capmetro.ics` — one calendar per organization
+- `campo.ics`, `capmetro.ics`, `txdot.ics` — one calendar per organization
 - `all.ics` — everything combined
 - `index.html` — landing page with subscribe links
 
@@ -47,6 +48,21 @@ webcal://changesaroundme.github.io/calendars/capmetro.ics
 Link those from anywhere (e.g. an Obsidian Publish page). Calendar apps
 re-poll subscriptions on their own schedule — typically every few hours to
 daily, which matches the daily rebuild.
+
+## Day-to-day: pushing changes
+
+The Actions bot commits refreshed calendars after every push and every
+morning, so your local clone is almost always slightly behind the remote.
+The rhythm that always works:
+
+```sh
+git add -A
+git commit -m "what changed"
+git pull --rebase   # replay your commit on top of the bot's
+git push
+```
+
+(Committing first matters — rebase refuses to run over uncommitted changes.)
 
 ## Local development
 
@@ -93,12 +109,11 @@ Design notes worth keeping in mind:
 
 Write `sources/neworg.py` with a `fetch(session) -> list[Event]`, register it
 in `CALENDARS` in `build.py`, add a fixture if practical. Candidate backlog,
-roughly easiest-first: TxDOT Transportation Commission (static HTML table),
-Texas SOS / UNT open-meetings snapshot (covers every TX state + regional
-body), Texas Senate committee hearings (ephemeral page — needs faster
-polling), Austin boards & commissions (static HTML), TxDOT UTP comment windows
-(static HTML too — the comment-period table is server-rendered; earlier
-"JS-rendered" suspicion was a fetch-truncation artifact).
+roughly easiest-first: Texas SOS / UNT open-meetings snapshot (covers every
+TX state + regional body), Texas Senate committee hearings (ephemeral page —
+needs faster polling), Austin boards & commissions (static HTML), TxDOT UTP
+comment windows (static HTML; the comment-period table is server-rendered —
+an earlier "JS-rendered" suspicion was a fetch-truncation artifact).
 
 Fixtures under `fixtures/` are point-in-time dev snapshots reconstructed from
 the live sources; the first CI run overwrites all published output with a

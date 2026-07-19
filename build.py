@@ -24,7 +24,7 @@ from datetime import datetime, timezone
 import requests
 
 from caltools.ics import emit
-from sources import campo, capmetro
+from sources import campo, capmetro, txdot
 
 ROOT = pathlib.Path(__file__).parent
 DOCS = ROOT / "docs"
@@ -33,6 +33,7 @@ DATA = ROOT / "data"
 CALENDARS = {
     "campo": ("CAM - CAMPO", campo),
     "capmetro": ("CAM - CapMetro", capmetro),
+    "txdot": ("CAM - TxDOT Commission", txdot),
 }
 
 USER_AGENT = (
@@ -51,6 +52,10 @@ def load_fixture(key: str):
             (ROOT / "fixtures" / "capmetro_calendar.html").read_text()
         )
         return capmetro.finalize(capmetro.merge_api(events, rows))
+    if key == "txdot":
+        return txdot.finalize(
+            txdot.parse_page((ROOT / "fixtures" / "txdot.html").read_text())
+        )
     raise KeyError(key)
 
 
