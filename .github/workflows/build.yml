@@ -1,0 +1,54 @@
+name: Build calendars
+
+on:
+  schedule:
+    # 11:17 UTC = 6:17 AM Central (CDT). Odd minute on purpose — be a polite
+    # scraper and don't pile onto the :00 thundering herd.
+    - cron: "17 11 * * *"
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build calendars
+        id: build
+        # Capture failure instead of aborting: we still commit whatever was
+        # built, THEN fail the job so the red X flags an unhealthy source.
+        run: |
+          set +e
+          python build.py
+          echo "exitcode=$?" >> "$GITHUB_OUTPUT"
+
+      - name: Commit updated calendars
+        run: |
+          git config user.name "calendar-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data docs
+          if git diff --cached --quiet; then
+            echo "No calendar changes today."
+          else
+            git commit -m "Update calendars ($(date -u +%Y-%m-%d))"
+            git push
+          fi
+
+      - name: Fail if build was unhealthy
+        if: steps.build.outputs.exitcode != '0'
+        run: |
+          echo "One or more sources were unhealthy — see build log above."
+          exit 1

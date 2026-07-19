@@ -1,0 +1,32 @@
+[
+ {
+  "EventBodyName": "Finance, Audit and Administration Committee",
+  "EventDate": "2026-06-10T00:00:00",
+  "EventTime": "10:00 AM",
+  "EventLocation": "Rosa Parks Boardroom",
+  "EventAgendaFile": "https://capmetrotx.legistar.com/View.ashx?M=A&ID=1240002",
+  "EventInSiteURL": "https://capmetrotx.legistar.com/MeetingDetail.aspx?ID=1240002",
+  "EventAgendaStatusName": "Final",
+  "EventMinutesStatusName": "Final"
+ },
+ {
+  "EventBodyName": "Operations, Planning and Safety Committee",
+  "EventDate": "2026-06-10T00:00:00",
+  "EventTime": "12:30 PM",
+  "EventLocation": "Rosa Parks Boardroom",
+  "EventAgendaFile": "https://capmetrotx.legistar.com/View.ashx?M=A&ID=1240003",
+  "EventInSiteURL": "https://capmetrotx.legistar.com/MeetingDetail.aspx?ID=1240003",
+  "EventAgendaStatusName": "Final",
+  "EventMinutesStatusName": "Final"
+ },
+ {
+  "EventBodyName": "Board of Directors",
+  "EventDate": "2026-06-22T00:00:00",
+  "EventTime": "12:00 PM",
+  "EventLocation": "Rosa Parks Boardroom",
+  "EventAgendaFile": "https://capmetrotx.legistar.com/View.ashx?M=A&ID=1240001",
+  "EventInSiteURL": "https://capmetrotx.legistar.com/MeetingDetail.aspx?ID=1240001",
+  "EventAgendaStatusName": "Final",
+  "EventMinutesStatusName": "Final"
+ }
+]

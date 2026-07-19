@@ -1,0 +1,70 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//atx-gov-calendars//github//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CapMetro Board & Committees
+X-WR-TIMEZONE:America/Chicago
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:capmetro-finance-audit-and-administration-committee-20260610@atx-gov-ca
+ lendars
+DTSTAMP:20260719T155244Z
+DTSTART;TZID=America/Chicago:20260610T100000
+DTEND;TZID=America/Chicago:20260610T120000
+SUMMARY:Finance\, Audit and Administration Committee
+LOCATION:Rosa Parks Boardroom
+URL:https://capmetrotx.legistar.com/MeetingDetail.aspx?ID=1240002
+DESCRIPTION:Agenda: https://capmetrotx.legistar.com/View.ashx?M=A&ID=124000
+ 2
+END:VEVENT
+BEGIN:VEVENT
+UID:capmetro-operations-planning-and-safety-committee-20260610@atx-gov-cale
+ ndars
+DTSTAMP:20260719T155244Z
+DTSTART;TZID=America/Chicago:20260610T123000
+DTEND;TZID=America/Chicago:20260610T143000
+SUMMARY:Operations\, Planning and Safety Committee
+LOCATION:Rosa Parks Boardroom
+URL:https://capmetrotx.legistar.com/MeetingDetail.aspx?ID=1240003
+DESCRIPTION:Agenda: https://capmetrotx.legistar.com/View.ashx?M=A&ID=124000
+ 3
+END:VEVENT
+BEGIN:VEVENT
+UID:capmetro-board-of-directors-20260622@atx-gov-calendars
+DTSTAMP:20260719T155244Z
+DTSTART;TZID=America/Chicago:20260622T120000
+DTEND;TZID=America/Chicago:20260622T140000
+SUMMARY:Board of Directors
+LOCATION:Rosa Parks Boardroom
+URL:https://capmetrotx.legistar.com/MeetingDetail.aspx?ID=1240001
+DESCRIPTION:Agenda: https://capmetrotx.legistar.com/View.ashx?M=A&ID=124000
+ 1
+END:VEVENT
+BEGIN:VEVENT
+UID:capmetro-board-of-directors-20260727@atx-gov-calendars
+DTSTAMP:20260719T155244Z
+DTSTART;TZID=America/Chicago:20260727T120000
+DTEND;TZID=America/Chicago:20260727T140000
+SUMMARY:Board of Directors
+LOCATION:Rosa Parks Boardroom
+URL:https://capmetrotx.legistar.com/Calendar.aspx
+END:VEVENT
+END:VCALENDAR

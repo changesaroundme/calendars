@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Austin-Area Public Meeting Calendars</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+         max-width: 42rem; margin: 3rem auto; padding: 0 1.25rem; line-height: 1.55; }
+  h1 { font-size: 1.5rem; }
+  .cal { border: 1px solid color-mix(in srgb, currentColor 25%, transparent);
+         border-radius: 10px; padding: 1rem 1.25rem; margin: 1rem 0; }
+  .cal h2 { margin: 0 0 .25rem; font-size: 1.1rem; }
+  .cal p { margin: .25rem 0 .6rem; opacity: .8; font-size: .92rem; }
+  a.button { display: inline-block; margin-right: .75rem; font-size: .92rem; }
+  footer { margin-top: 2rem; font-size: .85rem; opacity: .7; }
+</style>
+</head>
+<body>
+<h1>Austin-Area Public Meeting Calendars</h1>
+<p>Subscribable calendars of public meetings, rebuilt daily from official
+sources. "Subscribe" adds a live feed to your calendar app; "Download"
+grabs a one-time snapshot.</p>
+
+<div id="calendars">
+  <div class="cal" data-file="all.ics">
+    <h2>Everything (combined)</h2>
+    <p>All organizations below, in one feed.</p>
+  </div>
+  <div class="cal" data-file="campo.ics">
+    <h2>CAMPO</h2>
+    <p>Capital Area MPO — Transportation Policy Board and Technical Advisory
+    Committee. Mirrored from CAMPO's own published feed.</p>
+  </div>
+  <div class="cal" data-file="capmetro.ics">
+    <h2>CapMetro</h2>
+    <p>Board of Directors and committees, from CapMetro's Legistar calendar
+    and API.</p>
+  </div>
+</div>
+
+<footer>Built by <a href="https://github.com/">atx-gov-calendars</a>.
+Sources are official public postings; always confirm details for anything
+you're planning around, especially agendas and last-minute changes.</footer>
+
+<script>
+  // Build absolute subscribe/download links for wherever this page is hosted,
+  // so nothing here hard-codes a username or repo name.
+  const base = location.href.replace(/[^/]*$/, "");
+  document.querySelectorAll(".cal").forEach(el => {
+    const file = el.dataset.file;
+    const https = base + file;
+    const webcal = https.replace(/^https?:/, "webcal:");
+    el.insertAdjacentHTML("beforeend",
+      `<a class="button" href="${webcal}">&#128197; Subscribe</a>` +
+      `<a class="button" href="${https}" download>&#11015;&#65039; Download</a>`);
+  });
+</script>
+</body>
+</html>

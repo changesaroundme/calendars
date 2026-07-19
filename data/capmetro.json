@@ -1,0 +1,58 @@
+[
+ {
+  "source": "capmetro",
+  "summary": "Finance, Audit and Administration Committee",
+  "start": "2026-06-10T10:00:00",
+  "end": "2026-06-10T12:00:00",
+  "location": "Rosa Parks Boardroom",
+  "url": "https://capmetrotx.legistar.com/MeetingDetail.aspx?ID=1240002",
+  "kind": "meeting",
+  "status": "CONFIRMED",
+  "uid": "capmetro-finance-audit-and-administration-committee-20260610@atx-gov-calendars",
+  "description": "Agenda: https://capmetrotx.legistar.com/View.ashx?M=A&ID=1240002",
+  "extra": {},
+  "all_day": false
+ },
+ {
+  "source": "capmetro",
+  "summary": "Operations, Planning and Safety Committee",
+  "start": "2026-06-10T12:30:00",
+  "end": "2026-06-10T14:30:00",
+  "location": "Rosa Parks Boardroom",
+  "url": "https://capmetrotx.legistar.com/MeetingDetail.aspx?ID=1240003",
+  "kind": "meeting",
+  "status": "CONFIRMED",
+  "uid": "capmetro-operations-planning-and-safety-committee-20260610@atx-gov-calendars",
+  "description": "Agenda: https://capmetrotx.legistar.com/View.ashx?M=A&ID=1240003",
+  "extra": {},
+  "all_day": false
+ },
+ {
+  "source": "capmetro",
+  "summary": "Board of Directors",
+  "start": "2026-06-22T12:00:00",
+  "end": "2026-06-22T14:00:00",
+  "location": "Rosa Parks Boardroom",
+  "url": "https://capmetrotx.legistar.com/MeetingDetail.aspx?ID=1240001",
+  "kind": "meeting",
+  "status": "CONFIRMED",
+  "uid": "capmetro-board-of-directors-20260622@atx-gov-calendars",
+  "description": "Agenda: https://capmetrotx.legistar.com/View.ashx?M=A&ID=1240001",
+  "extra": {},
+  "all_day": false
+ },
+ {
+  "source": "capmetro",
+  "summary": "Board of Directors",
+  "start": "2026-07-27T12:00:00",
+  "end": "2026-07-27T14:00:00",
+  "location": "Rosa Parks Boardroom",
+  "url": "https://capmetrotx.legistar.com/Calendar.aspx",
+  "kind": "meeting",
+  "status": "CONFIRMED",
+  "uid": "capmetro-board-of-directors-20260727@atx-gov-calendars",
+  "description": "",
+  "extra": {},
+  "all_day": false
+ }
+]
