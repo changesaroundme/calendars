@@ -24,7 +24,7 @@ from datetime import datetime, timezone
 import requests
 
 from caltools.ics import emit
-from sources import campo, capmetro, txdot
+from sources import campo, capmetro, lcra, txdot
 
 ROOT = pathlib.Path(__file__).parent
 DOCS = ROOT / "docs"
@@ -35,6 +35,7 @@ CALENDARS = {
     "campo": ("CAM - CAMPO", campo, "#2E7D32"),      # green
     "capmetro": ("CAM - CapMetro", capmetro, "#E65100"),  # orange
     "txdot": ("CAM - TxDOT Commission", txdot, "#6A1B9A"),  # purple
+    "lcra": ("CAM - LCRA", lcra, "#00838F"),  # cyan
 }
 ALL_COLOR = "#0B66C3"  # blue
 
@@ -57,6 +58,13 @@ def load_fixture(key: str):
     if key == "txdot":
         return txdot.finalize(
             txdot.parse_page((ROOT / "fixtures" / "txdot.html").read_text())
+        )
+    if key == "lcra":
+        return lcra.finalize(
+            lcra.parse_page(
+                (ROOT / "fixtures" / "lcra_schedule.html").read_text(),
+                default_year=2026,
+            )
         )
     raise KeyError(key)
 

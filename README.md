@@ -11,10 +11,11 @@ Actions from official sources and served by GitHub Pages.
 | CAMPO | ICS ingest | Their published Tribe Events iCal feed |
 | CapMetro | HTML scrape + API merge | Legistar `Calendar.aspx` (early dates) + Legistar Web API (agenda links) |
 | TxDOT Commission | HTML scrape | Commission meeting-dates page (full year of dates; agendas ~8 days out) |
+| LCRA | HTML scrape | Annual schedule tables (dates only → all-day events; times post with agendas) |
 
 **Outputs** (in `docs/`, served by Pages)
 
-- `campo.ics`, `capmetro.ics`, `txdot.ics` — one calendar per organization
+- `campo.ics`, `capmetro.ics`, `txdot.ics`, `lcra.ics` — one calendar per organization
 - `all.ics` — everything combined
 - `index.html` — landing page with subscribe links
 
