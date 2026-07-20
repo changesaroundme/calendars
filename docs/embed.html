@@ -145,13 +145,20 @@ function orgOf(summary) {
   return ORGS.find(o => o.match.test(summary)) || null;
 }
 
+/* --- URL params: ?view=list|month  ?orgs=campo,txdot (preselect filter) --- */
+const params = new URLSearchParams(location.search);
+const orgsParam = (params.get("orgs") || "").split(",").map(s => s.trim()).filter(Boolean);
+if (orgsParam.length) {
+  for (const org of ORGS) if (!orgsParam.includes(org.key)) hidden.add(org.key);
+}
+
 /* --- Legend / filter chips --- */
 const css = getComputedStyle(document.documentElement);
 const legend = document.getElementById("legend");
 for (const org of ORGS) {
   const b = document.createElement("button");
   b.type = "button";
-  b.setAttribute("aria-pressed", "true");
+  b.setAttribute("aria-pressed", String(!hidden.has(org.key)));
   b.innerHTML = `<span class="swatch" style="background:${css.getPropertyValue(`--org-${org.key}`)}"></span>${org.label}`;
   b.addEventListener("click", () => {
     const on = hidden.has(org.key);
@@ -164,9 +171,12 @@ for (const org of ORGS) {
 
 /* --- Calendar --- */
 let parsed = [];
-const narrow = matchMedia("(max-width: 640px)").matches;
+// Inside an iframe, innerWidth IS the container width — decide by it, not
+// the device. Month view needs ~760px to breathe; below that, list.
+const narrow = window.innerWidth < 760;
+const viewParam = { list: "listMonth", month: "dayGridMonth" }[params.get("view")];
 const calendar = new FullCalendar.Calendar(document.getElementById("cal"), {
-  initialView: narrow ? "listMonth" : "dayGridMonth",
+  initialView: viewParam || (narrow ? "listMonth" : "dayGridMonth"),
   headerToolbar: { left: "prev,next today", center: "title",
                    right: "dayGridMonth,listMonth" },
   buttonText: { today: "today", dayGridMonth: "month", listMonth: "list" },
@@ -174,6 +184,18 @@ const calendar = new FullCalendar.Calendar(document.getElementById("cal"), {
   dayMaxEventRows: 4,
   displayEventEnd: false,
   eventDisplay: "block",  // chips for timed events too, not default dots
+  views: { dayGridMonth: { displayEventTime: false } },  // times live in tooltip/list
+  eventContent: (arg) => {
+    // Month cells are tight: drop the org prefix there (color + legend + a
+    // tooltip carry identity); list view keeps the full name.
+    if (arg.view.type === "dayGridMonth") {
+      const el = document.createElement("div");
+      el.className = "fc-event-title";
+      el.textContent = arg.event.title.replace(/^[A-Za-z]+ - /, "");
+      return { domNodes: [el] };
+    }
+    return true;  // default rendering elsewhere
+  },
   events: (info, success, failure) => {
     const deliver = () => success(
       parsed
