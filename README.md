@@ -1,5 +1,14 @@
 # calendars
 
+> [!WARNING]
+> **Vibe-coded — take with a grain of salt.** This project was built with
+> heavy AI assistance and light human review, and it aggregates public
+> meeting information on a best-effort basis. Entries can be wrong, stale,
+> or missing entirely. Always confirm details against the official source
+> (every event links to its origin) before making plans around it, and do
+> not rely on these calendars for anything safety-critical, legal-deadline,
+> or financial.
+
 Subscribable `.ics` calendars of Central Texas public meetings (Austin-area
 sources today; statewide bodies on the roadmap), rebuilt daily by GitHub
 Actions from official sources and served by GitHub Pages.
