@@ -1,18 +1,6 @@
 [
  {
   "source": "capmetro",
-  "summary": "CapMetro - Board of Directors",
-  "start": "2026-04-20T12:00:00",
-  "end": "2026-04-20T14:00:00",
-  "location": "Rosa Parks Boardroom",
-  "url": "https://capmetrotx.legistar.com/MeetingDetail.aspx?LEGID=3042&GID=848&G=B1EEEA8D-7B10-4460-A710-92D6625C11F7",
-  "status": "CONFIRMED",
-  "uid": "capmetro-board-of-directors-20260420T1200@calendars.changesaroundme.com",
-  "description": "Agenda: https://capmetrotx.legistar1.com/capmetrotx/meetings/2026/4/3042_A_Board_of_Directors_26-04-20_Agenda.pdf",
-  "all_day": false
- },
- {
-  "source": "capmetro",
   "summary": "CapMetro - Finance, Audit and Administration Committee",
   "start": "2026-05-06T11:00:00",
   "end": "2026-05-06T13:00:00",
