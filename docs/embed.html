@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Central Texas Public Meetings — Calendar</title>
+<script src="./vendor/fullcalendar.min.js"></script>
+<style>
+  :root {
+    color-scheme: light;
+    --surface-1: #fcfcfb;
+    --text-primary: #0b0b0b;
+    --text-secondary: #52514e;
+    --border: #e4e2dd;
+    /* Validated categorical palette (slots 1-5, fixed order — see repo README) */
+    --org-campo:    #2a78d6;  /* blue */
+    --org-capmetro: #008300;  /* green */
+    --org-txdot:    #e87ba4;  /* magenta */
+    --org-lcra:     #eda100;  /* yellow */
+    --org-ctrma:    #1baf7a;  /* aqua */
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --surface-1: #1a1a19;
+      --text-primary: #ffffff;
+      --text-secondary: #c3c2b7;
+      --border: #3a3a37;
+      --org-campo:    #3987e5;
+      --org-capmetro: #008300;
+      --org-txdot:    #d55181;
+      --org-lcra:     #c98500;
+      --org-ctrma:    #199e70;
+    }
+  }
+  html, body { margin: 0; padding: 0; background: var(--surface-1); }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+         color: var(--text-primary); padding: 10px 12px; }
+  .toolbar-row { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center;
+                 margin-bottom: 8px; }
+  .legend { display: flex; flex-wrap: wrap; gap: 6px; }
+  .legend button { display: inline-flex; align-items: center; gap: 6px;
+    font: inherit; font-size: 12.5px; color: var(--text-primary);
+    background: transparent; border: 1px solid var(--border); border-radius: 999px;
+    padding: 3px 10px; cursor: pointer; }
+  .legend button[aria-pressed="false"] { opacity: .38; }
+  .legend .swatch { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+  .tz-note { font-size: 11.5px; color: var(--text-secondary); margin-left: auto; }
+
+  /* FullCalendar theming */
+  #cal { max-width: 980px; margin: 0 auto; }
+  .fc { --fc-page-bg-color: var(--surface-1); --fc-border-color: var(--border);
+        --fc-neutral-text-color: var(--text-secondary);
+        --fc-today-bg-color: color-mix(in srgb, var(--org-campo) 9%, transparent);
+        font-size: 13px; }
+  .fc .fc-toolbar-title { font-size: 1.05rem; }
+  .fc .fc-button { background: transparent; border: 1px solid var(--border);
+        color: var(--text-primary); box-shadow: none !important; }
+  .fc .fc-button:hover { background: color-mix(in srgb, currentColor 8%, transparent); }
+  .fc .fc-button-primary:not(:disabled).fc-button-active {
+        background: color-mix(in srgb, currentColor 14%, transparent);
+        border-color: var(--text-secondary); color: var(--text-primary); }
+  /* Event chips: colored accent + tint; text stays in text tokens (never white-on-hue) */
+  .fc .ev { border: 0; border-left: 4px solid var(--org, var(--text-secondary));
+        border-radius: 4px;
+        background: color-mix(in srgb, var(--org, var(--text-secondary)) 16%, var(--surface-1));
+        color: var(--text-primary); padding: 1px 4px; cursor: pointer; }
+  .fc .ev .fc-event-title, .fc .ev .fc-event-time { color: var(--text-primary); }
+  .fc .ev.cancelled { text-decoration: line-through; opacity: .55; }
+  .fc .fc-list-event { cursor: pointer; }
+  .fc .fc-list-event-dot { border-color: var(--org, var(--text-secondary)) !important; }
+  .fc .fc-list-event.cancelled td { text-decoration: line-through; opacity: .55; }
+  footer { max-width: 980px; margin: 10px auto 0; font-size: 11.5px;
+           color: var(--text-secondary); line-height: 1.45; }
+  footer a { color: inherit; }
+</style>
+</head>
+<body>
+<div class="toolbar-row">
+  <div class="legend" id="legend" role="group" aria-label="Filter by organization"></div>
+  <span class="tz-note">All times US Central</span>
+</div>
+<div id="cal"></div>
+<footer>
+  Aggregated automatically from official postings and rebuilt daily; entries can
+  be wrong, stale, or missing. Confirm anything you're planning around with the
+  linked source (click an event). Subscribe to these calendars at
+  <a href="./index.html" target="_blank" rel="noopener">the feeds page</a>.
+</footer>
+
+<script>
+"use strict";
+/* Org registry: fixed slot order = the palette's CVD-safe order. */
+const ORGS = [
+  { key: "campo",    label: "CAMPO",    match: /^CAMPO\b/ },
+  { key: "capmetro", label: "CapMetro", match: /^CapMetro\b/ },
+  { key: "txdot",    label: "TxDOT",    match: /^TxDOT\b/ },
+  { key: "lcra",     label: "LCRA",     match: /^LCRA\b/ },
+  { key: "ctrma",    label: "CTRMA",    match: /^CTRMA\b/ },
+];
+const hidden = new Set();
+
+/* --- Minimal ICS parser for our own emitter's output --- */
+function unfold(text) {
+  return text.replace(/\r\n[ \t]/g, "").split(/\r\n|\n/);
+}
+function unescapeText(v) {
+  return v.replace(/\\n/gi, "\n").replace(/\\([,;\\])/g, "$1");
+}
+function parseICS(text) {
+  const events = [];
+  let cur = null;
+  for (const line of unfold(text)) {
+    if (line === "BEGIN:VEVENT") { cur = {}; continue; }
+    if (line === "END:VEVENT") { if (cur) events.push(cur); cur = null; continue; }
+    if (!cur) continue;
+    const i = line.indexOf(":");
+    if (i < 0) continue;
+    const [name, ...params] = line.slice(0, i).split(";");
+    const value = line.slice(i + 1);
+    switch (name) {
+      case "DTSTART": case "DTEND": {
+        const isDate = params.includes("VALUE=DATE");
+        cur[name] = { value, isDate };
+        break;
+      }
+      case "SUMMARY": cur.summary = unescapeText(value); break;
+      case "LOCATION": cur.location = unescapeText(value); break;
+      case "DESCRIPTION": cur.description = unescapeText(value); break;
+      case "URL": cur.url = value; break;
+      case "UID": cur.uid = value; break;
+      case "STATUS": cur.status = value; break;
+    }
+  }
+  return events;
+}
+function toISO(dt) {
+  // 20260729T090000 -> 2026-07-29T09:00:00 (naive = Central wall time)
+  const v = dt.value;
+  return dt.isDate
+    ? `${v.slice(0,4)}-${v.slice(4,6)}-${v.slice(6,8)}`
+    : `${v.slice(0,4)}-${v.slice(4,6)}-${v.slice(6,8)}T${v.slice(9,11)}:${v.slice(11,13)}:${v.slice(13,15)}`;
+}
+function orgOf(summary) {
+  return ORGS.find(o => o.match.test(summary)) || null;
+}
+
+/* --- Legend / filter chips --- */
+const css = getComputedStyle(document.documentElement);
+const legend = document.getElementById("legend");
+for (const org of ORGS) {
+  const b = document.createElement("button");
+  b.type = "button";
+  b.setAttribute("aria-pressed", "true");
+  b.innerHTML = `<span class="swatch" style="background:${css.getPropertyValue(`--org-${org.key}`)}"></span>${org.label}`;
+  b.addEventListener("click", () => {
+    const on = hidden.has(org.key);
+    if (on) hidden.delete(org.key); else hidden.add(org.key);
+    b.setAttribute("aria-pressed", String(on));
+    calendar.refetchEvents();
+  });
+  legend.appendChild(b);
+}
+
+/* --- Calendar --- */
+let parsed = [];
+const narrow = matchMedia("(max-width: 640px)").matches;
+const calendar = new FullCalendar.Calendar(document.getElementById("cal"), {
+  initialView: narrow ? "listMonth" : "dayGridMonth",
+  headerToolbar: { left: "prev,next today", center: "title",
+                   right: "dayGridMonth,listMonth" },
+  buttonText: { today: "today", dayGridMonth: "month", listMonth: "list" },
+  height: "auto",
+  dayMaxEventRows: 4,
+  displayEventEnd: false,
+  eventDisplay: "block",  // chips for timed events too, not default dots
+  events: (info, success, failure) => {
+    const deliver = () => success(
+      parsed
+        .filter(e => { const o = orgOf(e.summary || ""); return !o || !hidden.has(o.key); })
+        .map(e => ({
+          id: e.uid,
+          title: e.summary || "(untitled)",
+          start: toISO(e.DTSTART),
+          end: e.DTEND ? toISO(e.DTEND) : undefined,
+          allDay: e.DTSTART.isDate,
+          url: e.url || undefined,
+          classNames: ["ev", e.status === "CANCELLED" ? "cancelled" : ""].filter(Boolean),
+          extendedProps: { org: orgOf(e.summary || "")?.key, location: e.location, status: e.status },
+        }))
+    );
+    if (parsed.length) return deliver();
+    fetch("./all.ics", { cache: "no-cache" })
+      .then(r => { if (!r.ok) throw new Error(r.status); return r.text(); })
+      .then(t => { parsed = parseICS(t); deliver(); })
+      .catch(failure);
+  },
+  eventDidMount: (arg) => {
+    const org = arg.event.extendedProps.org;
+    if (org) arg.el.style.setProperty("--org", css.getPropertyValue(`--org-${org}`));
+    const bits = [arg.event.title];
+    if (arg.event.extendedProps.location) bits.push(arg.event.extendedProps.location);
+    if (arg.event.extendedProps.status === "CANCELLED") bits.push("CANCELLED");
+    arg.el.title = bits.join("\n");
+  },
+  eventClick: (arg) => {
+    arg.jsEvent.preventDefault();
+    if (arg.event.url) window.open(arg.event.url, "_blank", "noopener");
+  },
+});
+calendar.render();
+</script>
+</body>
+</html>

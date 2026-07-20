@@ -32,13 +32,13 @@ DATA = ROOT / "data"
 
 # key -> (display name, adapter module, default color for Apple clients)
 CALENDARS = {
-    "campo": ("CAM - CAMPO", campo, "#2E7D32"),      # green
-    "capmetro": ("CAM - CapMetro", capmetro, "#E65100"),  # orange
-    "txdot": ("CAM - TxDOT Commission", txdot, "#6A1B9A"),  # purple
-    "lcra": ("CAM - LCRA", lcra, "#00838F"),  # cyan
-    "ctrma": ("CAM - CTRMA", ctrma, "#C62828"),  # red
+    "campo": ("CAM - CAMPO", campo, "#2A78D6"),      # blue (slot 1)
+    "capmetro": ("CAM - CapMetro", capmetro, "#008300"),  # green (slot 2)
+    "txdot": ("CAM - TxDOT Commission", txdot, "#E87BA4"),  # magenta (slot 3)
+    "lcra": ("CAM - LCRA", lcra, "#EDA100"),  # yellow (slot 4)
+    "ctrma": ("CAM - CTRMA", ctrma, "#1BAF7A"),  # aqua (slot 5)
 }
-ALL_COLOR = "#0B66C3"  # blue
+ALL_COLOR = "#4A3AA7"  # violet (validated slot 7; distinct from the org slots)
 
 USER_AGENT = (
     "cam-calendars/1.0 (+https://github.com/changesaroundme/calendars; "
