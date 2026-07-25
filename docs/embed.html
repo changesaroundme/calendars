@@ -92,14 +92,17 @@
 
 <script>
 "use strict";
-/* Org registry: fixed slot order = the palette's CVD-safe order. */
+/* Org registry: fixed slot order = the palette's CVD-safe order.
+   Identity comes from the UID (summaries may omit the org name — e.g.
+   Austin events read just "City Council"); CAMPO keeps its own UIDs, so
+   it matches on their domain. */
 const ORGS = [
-  { key: "campo",    label: "CAMPO",    match: /^CAMPO\b/ },
-  { key: "capmetro", label: "CapMetro", match: /^CapMetro\b/ },
-  { key: "txdot",    label: "TxDOT",    match: /^TxDOT\b/ },
-  { key: "lcra",     label: "LCRA",     match: /^LCRA\b/ },
-  { key: "ctrma",    label: "CTRMA",    match: /^CTRMA\b/ },
-  { key: "austin",   label: "Austin",   match: /^Austin\b/ },
+  { key: "campo",    label: "CAMPO",    match: u => u.endsWith("@www.campotexas.org") },
+  { key: "capmetro", label: "CapMetro", match: u => u.startsWith("capmetro-") },
+  { key: "txdot",    label: "TxDOT",    match: u => u.startsWith("txdot-") },
+  { key: "lcra",     label: "LCRA",     match: u => u.startsWith("lcra-") },
+  { key: "ctrma",    label: "CTRMA",    match: u => u.startsWith("ctrma-") },
+  { key: "austin",   label: "Austin",   match: u => u.startsWith("austin-") },
 ];
 const hidden = new Set();
 
@@ -144,8 +147,8 @@ function toISO(dt) {
     ? `${v.slice(0,4)}-${v.slice(4,6)}-${v.slice(6,8)}`
     : `${v.slice(0,4)}-${v.slice(4,6)}-${v.slice(6,8)}T${v.slice(9,11)}:${v.slice(11,13)}:${v.slice(13,15)}`;
 }
-function orgOf(summary) {
-  return ORGS.find(o => o.match.test(summary)) || null;
+function orgOf(uid) {
+  return ORGS.find(o => o.match(uid || "")) || null;
 }
 
 /* --- URL params: ?view=list|month  ?orgs=campo,txdot (preselect filter) --- */
@@ -202,7 +205,7 @@ const calendar = new FullCalendar.Calendar(document.getElementById("cal"), {
   events: (info, success, failure) => {
     const deliver = () => success(
       parsed
-        .filter(e => { const o = orgOf(e.summary || ""); return !o || !hidden.has(o.key); })
+        .filter(e => { const o = orgOf(e.uid); return !o || !hidden.has(o.key); })
         .map(e => ({
           id: e.uid,
           title: e.summary || "(untitled)",
@@ -211,7 +214,7 @@ const calendar = new FullCalendar.Calendar(document.getElementById("cal"), {
           allDay: e.DTSTART.isDate,
           url: e.url || undefined,
           classNames: ["ev", e.status === "CANCELLED" ? "cancelled" : ""].filter(Boolean),
-          extendedProps: { org: orgOf(e.summary || "")?.key, location: e.location, status: e.status },
+          extendedProps: { org: orgOf(e.uid)?.key, location: e.location, status: e.status },
         }))
     );
     if (parsed.length) return deliver();

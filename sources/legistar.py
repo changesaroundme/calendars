@@ -48,8 +48,16 @@ class Legistar:
     source: str          # adapter key, e.g. "capmetro"
     client: str          # Web API client slug, e.g. "capmetrotx"
     host: str            # InSite host, e.g. "capmetrotx.legistar.com"
-    prefix: str          # display prefix, e.g. "CapMetro"
+    prefix: str          # display prefix, e.g. "CapMetro"; "" = no prefix
     meeting_length: timedelta = timedelta(hours=2)
+    # Display renames applied AFTER the UID is frozen (raw body name is the
+    # identity; these are presentation only), e.g.
+    # {"Budget Meeting of the Austin City Council": "City Council - Budget Meeting"}
+    display_names: dict = None
+    # Location cleanups: if a location starts with a key, replace it with the
+    # canonical value (sources often publish just a room name or junk-suffixed
+    # venue), e.g. {"Rosa Parks Boardroom": "Rosa Parks Boardroom, ..."}
+    location_fixes: dict = None
 
     @property
     def calendar_url(self) -> str:
@@ -191,8 +199,15 @@ class Legistar:
                 ev.kind = "work-session"
             elif "budget" in low:
                 ev.kind = "budget"
-            if not ev.summary.startswith(self.prefix):
+            if self.display_names:
+                ev.summary = self.display_names.get(ev.summary, ev.summary)
+            if self.prefix and not ev.summary.startswith(self.prefix):
                 ev.summary = f"{self.prefix} - {ev.summary}"
+            if self.location_fixes:
+                for pfx, canonical in self.location_fixes.items():
+                    if ev.location.startswith(pfx):
+                        ev.location = canonical
+                        break
         return events
 
     def fetch(self, session) -> list[Event]:

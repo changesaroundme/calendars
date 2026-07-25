@@ -14,6 +14,12 @@ ADAPTER = Legistar(
     client="capmetrotx",
     host="capmetrotx.legistar.com",
     prefix="CapMetro",
+    # Their Legistar publishes only the room name; give subscribers a real
+    # address (CapMetro HQ boardroom).
+    location_fixes={
+        "Rosa Parks Boardroom":
+            "Rosa Parks Boardroom, CapMetro HQ, 2910 E. 5th St., Austin, TX 78702",
+    },
 )
 
 fetch = ADAPTER.fetch  # build.py calls module.fetch; everything else via ADAPTER

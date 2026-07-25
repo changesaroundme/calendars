@@ -38,7 +38,14 @@ def parse_feed(ics_data: bytes | str) -> list[Event]:
                 summary=f"CAMPO - {summary}",
                 start=dtstart,
                 end=dtend,
-                location=str(component.get("LOCATION", "")).strip(),
+                # Their feed's TAC entries carry a junk "TX" location; the
+                # real venue (per KB Organizations/Overview) is CAMPO's
+                # offices. TPB entries already carry a full address.
+                location=(
+                    "CAMPO Offices, 5330 Bluffstone Ln, Austin, TX 78759"
+                    if str(component.get("LOCATION", "")).strip() in ("", "TX")
+                    else str(component.get("LOCATION", "")).strip()
+                ),
                 url=str(component.get("URL", "")).strip(),
                 status="CANCELLED" if CANCEL_RE.search(summary) else "CONFIRMED",
                 kind="hearing" if "hearing" in summary.lower() else "regular",

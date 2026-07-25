@@ -85,11 +85,11 @@ def load_fixture(key: str):
             (ROOT / "fixtures" / "austin_board.html").read_text(),
             "Planning Commission",
             "https://www.austintexas.gov/boards-commissions/meetings/40_1",
+            # no fallbacks: exercises the Meeting Details auto-extraction
         )
-        annual = austin.annual_council_events(
-            austin.parse_council_pdf(austin.ANNUAL_PDF_FIXTURE.read_bytes()),
-            council,
-        )
+        records = austin.parse_council_pdf(austin.ANNUAL_PDF_FIXTURE.read_bytes())
+        council = austin.apply_budget_flags(council, records)
+        annual = austin.annual_council_events(records, council)
         return council + annual + boards
     raise KeyError(key)
 

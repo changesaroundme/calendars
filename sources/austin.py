@@ -24,7 +24,7 @@ from __future__ import annotations
 import io
 import pathlib
 import re
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 
 import pdfplumber
 from bs4 import BeautifulSoup
@@ -33,33 +33,49 @@ from caltools.model import Event, slugify
 from sources.legistar import CANCEL_RE, Legistar
 
 SOURCE = "austin"
-PREFIX = "Austin"
+
+CITY_HALL = "Austin City Hall, 301 W. 2nd St., Austin, TX 78701"
 
 COUNCIL = Legistar(
     source=SOURCE,
     client="austintexas",
     host="austintexas.legistar.com",
-    prefix=PREFIX,
+    prefix="",  # "Austin" is assumed for this calendar; no org prefix
+    display_names={
+        "Budget Meeting of the Austin City Council": "City Council - Budget Meeting",
+        "City Council Work Session": "City Council - Work Session",
+    },
+    # InSite's location cell sometimes carries junk suffixes; canonicalize.
+    location_fixes={"Austin City Hall": CITY_HALL},
 )
 
-# (Board name, schedule page, meeting-documents page)
+# (Board name, schedule page, meeting-documents page,
+#  typical start time "HH:MM" or None, typical location or None)
+# Typical times/locations come from each board's regular schedule; events
+# built from them say "confirm on the agenda". None = all-day placeholder.
 BOARDS = [
     ("Planning Commission",
      "https://www.austintexas.gov/boards-commissions/board/planning-commission",
-     "https://www.austintexas.gov/boards-commissions/meetings/40_1"),
+     "https://www.austintexas.gov/boards-commissions/meetings/40_1",
+     "18:00", f"Council Chambers Room 1001, {CITY_HALL}"),
     ("Urban Transportation Commission",
      "https://www.austintexas.gov/boards-commissions/board/urban-transportation-commission",
-     "https://www.austintexas.gov/boards-commissions/meetings/50_1"),
+     "https://www.austintexas.gov/boards-commissions/meetings/50_1",
+     None, None),
     ("Design Commission",
      "https://www.austintexas.gov/boards-commissions/board/design-commission",
-     "https://www.austintexas.gov/boards-commissions/meetings/22_1"),
+     "https://www.austintexas.gov/boards-commissions/meetings/22_1",
+     None, None),
     ("Airport Advisory Commission",
      "https://www.austintexas.gov/boards-commissions/board/airport-advisory-commission",
-     "https://www.austintexas.gov/boards-commissions/meetings/7_1"),
+     "https://www.austintexas.gov/boards-commissions/meetings/7_1",
+     None, None),
     ("Austin Integrated Water Resource Planning Community Task Force",
      "https://www.austintexas.gov/boards-commissions/board/austin-integrated-water-resource-planning-community-task-force",
-     "https://www.austintexas.gov/boards-commissions/meetings/132_1"),
+     "https://www.austintexas.gov/boards-commissions/meetings/132_1",
+     None, None),
 ]
+BOARD_MEETING_HOURS = 3  # boards run long; assumed length for timed entries
 
 # "January 13, 2026" with an optional annotation ("- Special Called",
 # "(Cancelled)", or bare trailing text).
@@ -87,8 +103,54 @@ def _schedule_lists(soup: BeautifulSoup):
             yield lst
 
 
-def parse_board_page(html: str, board: str, docs_url: str) -> list[Event]:
+TIME_HINT_RE = re.compile(r"\b(\d{1,2})(?::(\d{2}))?\s*([ap])\.?\s*m\b", re.IGNORECASE)
+SKIP_LOC_RE = re.compile(
+    r"of the month|agenda|check|confirm|monday|tuesday|wednesday|thursday|friday",
+    re.IGNORECASE,
+)
+
+
+def parse_meeting_details(soup) -> tuple[str | None, str | None]:
+    """Auto-extract (typical time "HH:MM", typical location) from the board
+    page's collapsed "Meeting Details" accordion.
+
+    The accordion is display-hidden in a browser but present in the raw HTML,
+    e.g.: <dt>Meeting Details</dt><dd><ul>
+      <li>Second and fourth Tuesday of the month</li>
+      <li>Usually 6 p.m. - unless designated otherwise on agenda</li>
+      <li>City Hall, Council Chamber (unless listed otherwise)</li> ...
+    Because this is re-read on every daily fetch, a board changing its
+    regular time or venue flows into the calendar automatically.
+    """
+    for el in soup.find_all(string=re.compile(r"Meeting Details")):
+        dt = el.find_parent("dt")
+        dd = dt.find_next_sibling("dd") if dt else None
+        if dd is None:
+            continue
+        t = loc = None
+        for txt in (li.get_text(" ", strip=True) for li in dd.find_all("li")):
+            m = TIME_HINT_RE.search(txt)
+            if m and t is None:
+                h = int(m.group(1)) % 12 + (12 if m.group(3).lower() == "p" else 0)
+                t = f"{h:02d}:{int(m.group(2) or 0):02d}"
+                continue
+            if loc is None and not SKIP_LOC_RE.search(txt):
+                loc = re.sub(r"\s*\([^)]*\)\s*", " ", txt).strip(" ,")
+        if loc and "city hall" in loc.lower() and "301" not in loc:
+            loc = f"{loc}, 301 W. 2nd St., Austin, TX 78701"
+        if t or loc:
+            return t, loc
+    return None, None
+
+
+def parse_board_page(html: str, board: str, docs_url: str,
+                     typical_time: str | None = None,
+                     typical_location: str | None = None) -> list[Event]:
     soup = BeautifulSoup(html, "html.parser")
+    # Auto-detected details win; configured values are the fallback.
+    auto_time, auto_loc = parse_meeting_details(soup)
+    typical_time = auto_time or typical_time
+    typical_location = auto_loc or typical_location
     events: list[Event] = []
     seen: set[str] = set()
     for li in (li for lst in _schedule_lists(soup)
@@ -101,30 +163,36 @@ def parse_board_page(html: str, board: str, docs_url: str) -> list[Event]:
             d = datetime.strptime(f"{month} {day} {year}", "%B %d %Y").date()
         except ValueError:
             continue
-        # Identity from board + date only; annotations must not change UID.
+        # Identity from board + date only; annotations and the configured
+        # typical time must never change the UID.
         uid = f"{SOURCE}-{slugify(board)}-{d.strftime('%Y%m%d')}@calendars.changesaroundme.com"
         if uid in seen:
             continue
         seen.add(uid)
         note = (note or "").strip()
-        # Same prefix rule as legistar.finalize: don't double an org name
-        # that's already part of the body name.
-        base = board if board.startswith(PREFIX) else f"{PREFIX} - {board}"
-        summary = base + (f" ({note})" if note else "")
+        summary = board + (f" ({note})" if note else "")
         kind = "special" if re.search(r"special", note, re.IGNORECASE) else "regular"
+        if typical_time:
+            h, mnt = map(int, typical_time.split(":"))
+            start = datetime(d.year, d.month, d.day, h, mnt)
+            end = start + timedelta(hours=BOARD_MEETING_HOURS)
+            desc = ("Typical start time from the board's regular schedule — "
+                    f"confirm on the posted agenda: {docs_url}")
+        else:
+            start, end = d, None
+            desc = ("All-day entry: this board's typical start time isn't "
+                    f"configured yet; agendas post ~a week ahead: {docs_url}")
         events.append(
             Event(
                 source=SOURCE,
                 summary=summary,
-                start=d,
-                location="",
+                start=start,
+                end=end,
+                location=typical_location or "",
                 url=docs_url,
                 status="CANCELLED" if CANCEL_RE.search(note) else "CONFIRMED",
                 kind=kind,
-                description=(
-                    "All-day placeholder: time and agenda post to the board's "
-                    f"meeting page ~a week ahead: {docs_url}"
-                ),
+                description=desc,
                 uid=uid,
             )
         )
@@ -229,8 +297,9 @@ def annual_council_events(records, legistar_events: list[Event]) -> list[Event]:
         events.append(
             Event(
                 source=SOURCE,
-                summary="Austin - City Council",
+                summary="City Council - Budget Meeting" if budget else "City Council",
                 start=day,
+                location=CITY_HALL,
                 url=COUNCIL_MEETINGS_URL,
                 kind="budget" if budget else "regular",
                 description=(
@@ -242,6 +311,24 @@ def annual_council_events(records, legistar_events: list[Event]) -> list[Event]:
             )
         )
     return events
+
+
+def apply_budget_flags(council: list[Event], records) -> list[Event]:
+    """Retitle timed Legistar council meetings that fall on budget** dates.
+
+    InSite sometimes names a budget-focused meeting plainly "City Council";
+    the annual calendar knows better. Display-only — UIDs already frozen.
+    """
+    budget_days = {d.strftime("%Y%m%d") for d, col, b in records
+                   if col == "council" and b}
+    day_re = re.compile(r"^austin-city-council-(\d{8})T")
+    for ev in council:
+        m = day_re.match(ev.uid)
+        if m and m.group(1) in budget_days:
+            ev.kind = "budget"
+            if ev.summary == "City Council":
+                ev.summary = "City Council - Budget Meeting"
+    return council
 
 
 def fetch_annual(session) -> bytes:
@@ -267,11 +354,11 @@ def health_problems() -> list[str]:
 
 def fetch_boards(session) -> list[Event]:
     events: list[Event] = []
-    for board, page_url, docs_url in BOARDS:
+    for board, page_url, docs_url, t_time, t_loc in BOARDS:
         try:
             resp = session.get(page_url, timeout=30)
             resp.raise_for_status()
-            found = parse_board_page(resp.text, board, docs_url)
+            found = parse_board_page(resp.text, board, docs_url, t_time, t_loc)
             if not found:
                 _problems.append(f"austin: 0 dates parsed for board '{board}'")
             events.extend(found)
@@ -285,6 +372,7 @@ def fetch(session) -> list[Event]:
     council = COUNCIL.fetch(session)
     try:
         records = parse_council_pdf(fetch_annual(session))
+        council = apply_budget_flags(council, records)
         annual = annual_council_events(records, council)
         if len(annual) < 5:
             _problems.append(

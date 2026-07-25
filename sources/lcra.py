@@ -53,11 +53,17 @@ def _mk(summary: str, year: int, month: int, day: int, city: str) -> Event | Non
         d = date(year, month, day)
     except ValueError:
         return None
+    # Full venue per KB Organizations/Overview; the schedule table only
+    # says "Austin".
+    if city == "Austin":
+        location = "Board Room, Hancock Building, 3700 Lake Austin Blvd, Austin, TX 78703"
+    else:
+        location = f"{city}, TX" if city and city != "–" else ""
     return Event(
         source=SOURCE,
         summary=summary,
         start=d,
-        location=f"{city}, TX" if city and city != "–" else "",
+        location=location,
         url=AGENDAS_URL,
         description=NOTE,
     )
