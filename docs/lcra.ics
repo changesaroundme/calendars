@@ -27,7 +27,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:lcra-board-committees-20260818@calendars.changesaroundme.com
-DTSTAMP:20260725T145233Z
+DTSTAMP:20260725T154759Z
 DTSTART;VALUE=DATE:20260818
 SUMMARY:LCRA - Board Committees
 LOCATION:Austin\, TX
@@ -35,10 +35,11 @@ URL:https://www.lcra.org/about/leadership/board-agendas/
 DESCRIPTION:All-day placeholder: LCRA publishes dates a year out\; the exac
  t time and room post with the agenda (~1 week ahead): https://www.lcra.org
  /about/leadership/board-agendas/
+CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:lcra-board-of-directors-20260819@calendars.changesaroundme.com
-DTSTAMP:20260725T145233Z
+DTSTAMP:20260725T154759Z
 DTSTART;VALUE=DATE:20260819
 SUMMARY:LCRA - Board of Directors
 LOCATION:Austin\, TX
@@ -46,11 +47,12 @@ URL:https://www.lcra.org/about/leadership/board-agendas/
 DESCRIPTION:All-day placeholder: LCRA publishes dates a year out\; the exac
  t time and room post with the agenda (~1 week ahead): https://www.lcra.org
  /about/leadership/board-agendas/
+CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:lcra-transmission-services-corp-board-20260819@calendars.changesaroundm
  e.com
-DTSTAMP:20260725T145233Z
+DTSTAMP:20260725T154759Z
 DTSTART;VALUE=DATE:20260819
 SUMMARY:LCRA - Transmission Services Corp. Board
 LOCATION:Austin\, TX
@@ -58,10 +60,11 @@ URL:https://www.lcra.org/about/leadership/board-agendas/
 DESCRIPTION:All-day placeholder: LCRA publishes dates a year out\; the exac
  t time and room post with the agenda (~1 week ahead): https://www.lcra.org
  /about/leadership/board-agendas/
+CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:lcra-board-committee-meetings-20260923@calendars.changesaroundme.com
-DTSTAMP:20260725T145233Z
+DTSTAMP:20260725T154759Z
 DTSTART;VALUE=DATE:20260923
 SUMMARY:LCRA - Board & Committee Meetings
 LOCATION:Austin\, TX
@@ -69,11 +72,12 @@ URL:https://www.lcra.org/about/leadership/board-agendas/
 DESCRIPTION:All-day placeholder: LCRA publishes dates a year out\; the exac
  t time and room post with the agenda (~1 week ahead): https://www.lcra.org
  /about/leadership/board-agendas/
+CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:lcra-transmission-services-corp-board-20260923@calendars.changesaroundm
  e.com
-DTSTAMP:20260725T145233Z
+DTSTAMP:20260725T154759Z
 DTSTART;VALUE=DATE:20260923
 SUMMARY:LCRA - Transmission Services Corp. Board
 LOCATION:Austin\, TX
@@ -81,10 +85,11 @@ URL:https://www.lcra.org/about/leadership/board-agendas/
 DESCRIPTION:All-day placeholder: LCRA publishes dates a year out\; the exac
  t time and room post with the agenda (~1 week ahead): https://www.lcra.org
  /about/leadership/board-agendas/
+CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:lcra-board-committees-20261020@calendars.changesaroundme.com
-DTSTAMP:20260725T145233Z
+DTSTAMP:20260725T154759Z
 DTSTART;VALUE=DATE:20261020
 SUMMARY:LCRA - Board Committees
 LOCATION:Austin\, TX
@@ -92,10 +97,11 @@ URL:https://www.lcra.org/about/leadership/board-agendas/
 DESCRIPTION:All-day placeholder: LCRA publishes dates a year out\; the exac
  t time and room post with the agenda (~1 week ahead): https://www.lcra.org
  /about/leadership/board-agendas/
+CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:lcra-board-of-directors-20261021@calendars.changesaroundme.com
-DTSTAMP:20260725T145233Z
+DTSTAMP:20260725T154759Z
 DTSTART;VALUE=DATE:20261021
 SUMMARY:LCRA - Board of Directors
 LOCATION:Austin\, TX
@@ -103,11 +109,12 @@ URL:https://www.lcra.org/about/leadership/board-agendas/
 DESCRIPTION:All-day placeholder: LCRA publishes dates a year out\; the exac
  t time and room post with the agenda (~1 week ahead): https://www.lcra.org
  /about/leadership/board-agendas/
+CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:lcra-transmission-services-corp-board-20261021@calendars.changesaroundm
  e.com
-DTSTAMP:20260725T145233Z
+DTSTAMP:20260725T154759Z
 DTSTART;VALUE=DATE:20261021
 SUMMARY:LCRA - Transmission Services Corp. Board
 LOCATION:Austin\, TX
@@ -115,10 +122,11 @@ URL:https://www.lcra.org/about/leadership/board-agendas/
 DESCRIPTION:All-day placeholder: LCRA publishes dates a year out\; the exac
  t time and room post with the agenda (~1 week ahead): https://www.lcra.org
  /about/leadership/board-agendas/
+CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:lcra-board-committee-meetings-20261110@calendars.changesaroundme.com
-DTSTAMP:20260725T145233Z
+DTSTAMP:20260725T154759Z
 DTSTART;VALUE=DATE:20261110
 SUMMARY:LCRA - Board & Committee Meetings
 LOCATION:Austin\, TX
@@ -126,11 +134,12 @@ URL:https://www.lcra.org/about/leadership/board-agendas/
 DESCRIPTION:All-day placeholder: LCRA publishes dates a year out\; the exac
  t time and room post with the agenda (~1 week ahead): https://www.lcra.org
  /about/leadership/board-agendas/
+CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:lcra-transmission-services-corp-board-20261110@calendars.changesaroundm
  e.com
-DTSTAMP:20260725T145233Z
+DTSTAMP:20260725T154759Z
 DTSTART;VALUE=DATE:20261110
 SUMMARY:LCRA - Transmission Services Corp. Board
 LOCATION:Austin\, TX
@@ -138,10 +147,11 @@ URL:https://www.lcra.org/about/leadership/board-agendas/
 DESCRIPTION:All-day placeholder: LCRA publishes dates a year out\; the exac
  t time and room post with the agenda (~1 week ahead): https://www.lcra.org
  /about/leadership/board-agendas/
+CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:lcra-board-committee-meetings-20261208@calendars.changesaroundme.com
-DTSTAMP:20260725T145233Z
+DTSTAMP:20260725T154759Z
 DTSTART;VALUE=DATE:20261208
 SUMMARY:LCRA - Board & Committee Meetings
 LOCATION:Austin\, TX
@@ -149,11 +159,12 @@ URL:https://www.lcra.org/about/leadership/board-agendas/
 DESCRIPTION:All-day placeholder: LCRA publishes dates a year out\; the exac
  t time and room post with the agenda (~1 week ahead): https://www.lcra.org
  /about/leadership/board-agendas/
+CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:lcra-transmission-services-corp-board-20261208@calendars.changesaroundm
  e.com
-DTSTAMP:20260725T145233Z
+DTSTAMP:20260725T154759Z
 DTSTART;VALUE=DATE:20261208
 SUMMARY:LCRA - Transmission Services Corp. Board
 LOCATION:Austin\, TX
@@ -161,5 +172,6 @@ URL:https://www.lcra.org/about/leadership/board-agendas/
 DESCRIPTION:All-day placeholder: LCRA publishes dates a year out\; the exac
  t time and room post with the agenda (~1 week ahead): https://www.lcra.org
  /about/leadership/board-agendas/
+CATEGORIES:regular
 END:VEVENT
 END:VCALENDAR

@@ -28,7 +28,7 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:capmetro-finance-audit-and-administration-committee-20260506T1100@calen
  dars.changesaroundme.com
-DTSTAMP:20260725T145233Z
+DTSTAMP:20260725T154759Z
 DTSTART;TZID=America/Chicago:20260506T110000
 DTEND;TZID=America/Chicago:20260506T130000
 SUMMARY:CapMetro - Finance\, Audit and Administration Committee
@@ -38,10 +38,11 @@ URL:https://capmetrotx.legistar.com/MeetingDetail.aspx?LEGID=3043&GID=848&G
 DESCRIPTION:Agenda: https://capmetrotx.legistar1.com/capmetrotx/meetings/20
  26/5/3043_A_Finance%2C_Audit_and_Administration_Committee_26-05-06_Agenda.
  pdf
+CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260506T1200@calendars.changesaroundme.com
-DTSTAMP:20260725T145233Z
+DTSTAMP:20260725T154759Z
 DTSTART;TZID=America/Chicago:20260506T120000
 DTEND;TZID=America/Chicago:20260506T140000
 SUMMARY:CapMetro - Board of Directors
@@ -50,10 +51,11 @@ URL:https://capmetrotx.legistar.com/MeetingDetail.aspx?LEGID=3075&GID=848&G
  =B1EEEA8D-7B10-4460-A710-92D6625C11F7
 DESCRIPTION:Agenda: https://capmetrotx.legistar1.com/capmetrotx/meetings/20
  26/5/3075_A_Board_of_Directors_26-05-06_Agenda.pdf
+CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260518T1200@calendars.changesaroundme.com
-DTSTAMP:20260725T145233Z
+DTSTAMP:20260725T154759Z
 DTSTART;TZID=America/Chicago:20260518T120000
 DTEND;TZID=America/Chicago:20260518T140000
 SUMMARY:CapMetro - Board of Directors
@@ -62,11 +64,12 @@ URL:https://capmetrotx.legistar.com/MeetingDetail.aspx?LEGID=3045&GID=848&G
  =B1EEEA8D-7B10-4460-A710-92D6625C11F7
 DESCRIPTION:Agenda: https://capmetrotx.legistar1.com/capmetrotx/meetings/20
  26/5/3045_A_Board_of_Directors_26-05-18_Agenda.pdf
+CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-finance-audit-and-administration-committee-20260610T1000@calen
  dars.changesaroundme.com
-DTSTAMP:20260725T145233Z
+DTSTAMP:20260725T154759Z
 DTSTART;TZID=America/Chicago:20260610T100000
 DTEND;TZID=America/Chicago:20260610T120000
 SUMMARY:CapMetro - Finance\, Audit and Administration Committee
@@ -76,11 +79,12 @@ URL:https://capmetrotx.legistar.com/MeetingDetail.aspx?LEGID=3047&GID=848&G
 DESCRIPTION:Agenda: https://capmetrotx.legistar1.com/capmetrotx/meetings/20
  26/6/3047_A_Finance%2C_Audit_and_Administration_Committee_26-06-10_Agenda.
  pdf
+CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-operations-planning-and-safety-committee-20260610T1230@calenda
  rs.changesaroundme.com
-DTSTAMP:20260725T145233Z
+DTSTAMP:20260725T154759Z
 DTSTART;TZID=America/Chicago:20260610T123000
 DTEND;TZID=America/Chicago:20260610T143000
 SUMMARY:CapMetro - Operations\, Planning and Safety Committee
@@ -90,10 +94,11 @@ URL:https://capmetrotx.legistar.com/MeetingDetail.aspx?LEGID=3048&GID=848&G
 DESCRIPTION:Agenda: https://capmetrotx.legistar1.com/capmetrotx/meetings/20
  26/6/3048_A_Operations%2C_Planning_and_Safety_Committee_26-06-10_Agenda.pd
  f
+CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260622T1200@calendars.changesaroundme.com
-DTSTAMP:20260725T145233Z
+DTSTAMP:20260725T154759Z
 DTSTART;TZID=America/Chicago:20260622T120000
 DTEND;TZID=America/Chicago:20260622T140000
 SUMMARY:CapMetro - Board of Directors
@@ -102,10 +107,11 @@ URL:https://capmetrotx.legistar.com/MeetingDetail.aspx?LEGID=3049&GID=848&G
  =B1EEEA8D-7B10-4460-A710-92D6625C11F7
 DESCRIPTION:Agenda: https://capmetrotx.legistar1.com/capmetrotx/meetings/20
  26/6/3049_A_Board_of_Directors_26-06-22_Agenda.pdf
+CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260727T1200@calendars.changesaroundme.com
-DTSTAMP:20260725T145233Z
+DTSTAMP:20260725T154759Z
 DTSTART;TZID=America/Chicago:20260727T120000
 DTEND;TZID=America/Chicago:20260727T140000
 SUMMARY:CapMetro - Board of Directors
@@ -114,5 +120,6 @@ URL:https://capmetrotx.legistar.com/MeetingDetail.aspx?LEGID=3057&GID=848&G
  =B1EEEA8D-7B10-4460-A710-92D6625C11F7
 DESCRIPTION:Agenda: https://capmetrotx.legistar1.com/capmetrotx/meetings/20
  26/7/3057_A_Board_of_Directors_26-07-27_Agenda.pdf
+CATEGORIES:regular
 END:VEVENT
 END:VCALENDAR

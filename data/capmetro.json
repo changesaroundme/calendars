@@ -7,6 +7,7 @@
   "location": "Rosa Parks Boardroom",
   "url": "https://capmetrotx.legistar.com/MeetingDetail.aspx?LEGID=3043&GID=848&G=B1EEEA8D-7B10-4460-A710-92D6625C11F7",
   "status": "CONFIRMED",
+  "kind": "regular",
   "uid": "capmetro-finance-audit-and-administration-committee-20260506T1100@calendars.changesaroundme.com",
   "description": "Agenda: https://capmetrotx.legistar1.com/capmetrotx/meetings/2026/5/3043_A_Finance%2C_Audit_and_Administration_Committee_26-05-06_Agenda.pdf",
   "all_day": false
@@ -19,6 +20,7 @@
   "location": "Rosa Parks Boardroom",
   "url": "https://capmetrotx.legistar.com/MeetingDetail.aspx?LEGID=3075&GID=848&G=B1EEEA8D-7B10-4460-A710-92D6625C11F7",
   "status": "CONFIRMED",
+  "kind": "regular",
   "uid": "capmetro-board-of-directors-20260506T1200@calendars.changesaroundme.com",
   "description": "Agenda: https://capmetrotx.legistar1.com/capmetrotx/meetings/2026/5/3075_A_Board_of_Directors_26-05-06_Agenda.pdf",
   "all_day": false
@@ -31,6 +33,7 @@
   "location": "Rosa Parks Boardroom",
   "url": "https://capmetrotx.legistar.com/MeetingDetail.aspx?LEGID=3045&GID=848&G=B1EEEA8D-7B10-4460-A710-92D6625C11F7",
   "status": "CONFIRMED",
+  "kind": "regular",
   "uid": "capmetro-board-of-directors-20260518T1200@calendars.changesaroundme.com",
   "description": "Agenda: https://capmetrotx.legistar1.com/capmetrotx/meetings/2026/5/3045_A_Board_of_Directors_26-05-18_Agenda.pdf",
   "all_day": false
@@ -43,6 +46,7 @@
   "location": "Rosa Parks Boardroom",
   "url": "https://capmetrotx.legistar.com/MeetingDetail.aspx?LEGID=3047&GID=848&G=B1EEEA8D-7B10-4460-A710-92D6625C11F7",
   "status": "CONFIRMED",
+  "kind": "regular",
   "uid": "capmetro-finance-audit-and-administration-committee-20260610T1000@calendars.changesaroundme.com",
   "description": "Agenda: https://capmetrotx.legistar1.com/capmetrotx/meetings/2026/6/3047_A_Finance%2C_Audit_and_Administration_Committee_26-06-10_Agenda.pdf",
   "all_day": false
@@ -55,6 +59,7 @@
   "location": "Rosa Parks Boardroom",
   "url": "https://capmetrotx.legistar.com/MeetingDetail.aspx?LEGID=3048&GID=848&G=B1EEEA8D-7B10-4460-A710-92D6625C11F7",
   "status": "CONFIRMED",
+  "kind": "regular",
   "uid": "capmetro-operations-planning-and-safety-committee-20260610T1230@calendars.changesaroundme.com",
   "description": "Agenda: https://capmetrotx.legistar1.com/capmetrotx/meetings/2026/6/3048_A_Operations%2C_Planning_and_Safety_Committee_26-06-10_Agenda.pdf",
   "all_day": false
@@ -67,6 +72,7 @@
   "location": "Rosa Parks Boardroom",
   "url": "https://capmetrotx.legistar.com/MeetingDetail.aspx?LEGID=3049&GID=848&G=B1EEEA8D-7B10-4460-A710-92D6625C11F7",
   "status": "CONFIRMED",
+  "kind": "regular",
   "uid": "capmetro-board-of-directors-20260622T1200@calendars.changesaroundme.com",
   "description": "Agenda: https://capmetrotx.legistar1.com/capmetrotx/meetings/2026/6/3049_A_Board_of_Directors_26-06-22_Agenda.pdf",
   "all_day": false
@@ -79,6 +85,7 @@
   "location": "Rosa Parks Boardroom",
   "url": "https://capmetrotx.legistar.com/MeetingDetail.aspx?LEGID=3057&GID=848&G=B1EEEA8D-7B10-4460-A710-92D6625C11F7",
   "status": "CONFIRMED",
+  "kind": "regular",
   "uid": "capmetro-board-of-directors-20260727T1200@calendars.changesaroundme.com",
   "description": "Agenda: https://capmetrotx.legistar1.com/capmetrotx/meetings/2026/7/3057_A_Board_of_Directors_26-07-27_Agenda.pdf",
   "all_day": false
