@@ -24,7 +24,7 @@ from datetime import datetime, timezone
 import requests
 
 from caltools.ics import emit
-from sources import austin, campo, capmetro, ctrma, lcra, txdot
+from sources import atp, austin, campo, capmetro, ctrma, lcra, txdot
 
 ROOT = pathlib.Path(__file__).parent
 DOCS = ROOT / "docs"
@@ -34,12 +34,13 @@ DATA = ROOT / "data"
 CALENDARS = {
     "campo": ("CAM - CAMPO", campo, "#2A78D6"),      # blue (slot 1)
     "capmetro": ("CAM - CapMetro", capmetro, "#008300"),  # green (slot 2)
-    "txdot": ("CAM - TxDOT Commission", txdot, "#E87BA4"),  # magenta (slot 3)
+    "txdot": ("CAM - TTC", txdot, "#E87BA4"),  # magenta (slot 3)
     "lcra": ("CAM - LCRA", lcra, "#EDA100"),  # yellow (slot 4)
     "ctrma": ("CAM - CTRMA", ctrma, "#1BAF7A"),  # aqua (slot 5)
     "austin": ("CAM - City of Austin", austin, "#EB6834"),  # orange (slot 6)
+    "atp": ("CAM - ATP", atp, "#4A3AA7"),  # violet (slot 7)
 }
-ALL_COLOR = "#4A3AA7"  # violet (validated slot 7; distinct from the org slots)
+ALL_COLOR = "#E34948"  # red (validated slot 8; distinct from the org slots)
 
 USER_AGENT = (
     "cam-calendars/1.0 (+https://github.com/changesaroundme/calendars; "
@@ -51,6 +52,8 @@ def load_fixture(key: str):
     if key == "campo":
         text = (ROOT / "fixtures" / "campo.ics").read_text()
         return campo.parse_feed(text)
+    if key == "atp":
+        return atp.parse_feed((ROOT / "fixtures" / "atp.ics").read_bytes())
     if key == "capmetro":
         rows = json.loads((ROOT / "fixtures" / "capmetro.json").read_text())
         events = capmetro.ADAPTER.parse_calendar_html(
