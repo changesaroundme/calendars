@@ -58,6 +58,10 @@ class Legistar:
     # canonical value (sources often publish just a room name or junk-suffixed
     # venue), e.g. {"Rosa Parks Boardroom": "Rosa Parks Boardroom, ..."}
     location_fixes: dict = None
+    # Optional display rename RULE (str -> str), applied after display_names —
+    # for patterns rather than exact names (e.g. Austin: any body ending in
+    # "Committee" is a council committee -> "City Council - <name>").
+    display_transform: object = None
 
     @property
     def calendar_url(self) -> str:
@@ -199,8 +203,12 @@ class Legistar:
                 ev.kind = "work-session"
             elif "budget" in low:
                 ev.kind = "budget"
+            elif "special called" in low:
+                ev.kind = "special"
             if self.display_names:
                 ev.summary = self.display_names.get(ev.summary, ev.summary)
+            if self.display_transform:
+                ev.summary = self.display_transform(ev.summary)
             if self.prefix and not ev.summary.startswith(self.prefix):
                 ev.summary = f"{self.prefix} - {ev.summary}"
             if self.location_fixes:

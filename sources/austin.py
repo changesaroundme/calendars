@@ -44,7 +44,18 @@ COUNCIL = Legistar(
     display_names={
         "Budget Meeting of the Austin City Council": "City Council - Budget Meeting",
         "City Council Work Session": "City Council - Work Session",
+        "City Council Budget Work Session": "City Council - Budget Work Session",
+        "City Council Special Called Meeting": "City Council - Special Called Meeting",
     },
+    # Every Legistar body ending in "Committee" is a committee OF the council
+    # (verified against the full bodies list 2026-07-25); corporations, TIF
+    # zones, etc. don't match and keep their own names. Rule, not list, so
+    # future committees are prefixed automatically.
+    display_transform=lambda s: (
+        f"City Council - {s}"
+        if s.endswith("Committee") and not s.startswith("City Council")
+        else s
+    ),
     # InSite's location cell sometimes carries junk suffixes; canonicalize.
     location_fixes={"Austin City Hall": CITY_HALL},
 )
