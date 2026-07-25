@@ -24,6 +24,7 @@ from datetime import datetime, timedelta
 from bs4 import BeautifulSoup
 
 from caltools.model import Event
+from sources.legistar import CANCEL_RE, NAME_SUFFIX_RE
 
 SOURCE = "ctrma"
 PAGE_URL = "https://www.mobilityauthority.com/board-meetings/upcoming/"
@@ -56,7 +57,12 @@ def parse_page(html: str) -> list[Event]:
         caption = card.select_one(".caption")
         tval = _parse_time(caption.get_text(" ", strip=True)) if caption else None
         link = card.select_one("h3 a") or card.find("a")
-        title = link.get_text(" ", strip=True) if link else "Board Meeting"
+        raw_title = link.get_text(" ", strip=True) if link else "Board Meeting"
+        # CTRMA marks cancellations in the title ("... – Cancelled"). Strip
+        # the marker so the event keeps its identity (UID) and carry the
+        # cancellation as a real STATUS so clients render strikethrough.
+        title = NAME_SUFFIX_RE.sub("", raw_title).strip()
+        status = "CANCELLED" if CANCEL_RE.search(raw_title) else "CONFIRMED"
         if tval is not None:
             start = datetime(year, month, day, tval.hour, tval.minute)
             end = start + MEETING_LENGTH
@@ -70,6 +76,7 @@ def parse_page(html: str) -> list[Event]:
                 end=end,
                 location=LOCATION,
                 url=(link.get("href") or PAGE_URL) if link else PAGE_URL,
+                status=status,
             )
         )
     return events
