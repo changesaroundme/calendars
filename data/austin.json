@@ -40,6 +40,19 @@
  },
  {
   "source": "austin",
+  "summary": "Austin - City Council",
+  "start": "2026-01-22",
+  "end": null,
+  "location": "",
+  "url": "https://www.austintexas.gov/council/meetings",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-city-council-20260122@calendars.changesaroundme.com",
+  "description": "From the published annual council calendar (dates subject to change). Time and agenda appear ~a week ahead: https://www.austintexas.gov/council/meetings",
+  "all_day": true
+ },
+ {
+  "source": "austin",
   "summary": "Austin - Design Commission (Cancelled)",
   "start": "2026-01-26",
   "end": null,
@@ -88,6 +101,19 @@
   "kind": "regular",
   "uid": "austin-urban-transportation-commission-20260203@calendars.changesaroundme.com",
   "description": "All-day placeholder: time and agenda post to the board's meeting page ~a week ahead: https://www.austintexas.gov/boards-commissions/meetings/50_1",
+  "all_day": true
+ },
+ {
+  "source": "austin",
+  "summary": "Austin - City Council",
+  "start": "2026-02-05",
+  "end": null,
+  "location": "",
+  "url": "https://www.austintexas.gov/council/meetings",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-city-council-20260205@calendars.changesaroundme.com",
+  "description": "From the published annual council calendar (dates subject to change). Time and agenda appear ~a week ahead: https://www.austintexas.gov/council/meetings",
   "all_day": true
  },
  {
@@ -157,6 +183,19 @@
  },
  {
   "source": "austin",
+  "summary": "Austin - City Council",
+  "start": "2026-02-26",
+  "end": null,
+  "location": "",
+  "url": "https://www.austintexas.gov/council/meetings",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-city-council-20260226@calendars.changesaroundme.com",
+  "description": "From the published annual council calendar (dates subject to change). Time and agenda appear ~a week ahead: https://www.austintexas.gov/council/meetings",
+  "all_day": true
+ },
+ {
+  "source": "austin",
   "summary": "Austin - Urban Transportation Commission (Cancelled)",
   "start": "2026-03-03",
   "end": null,
@@ -192,6 +231,19 @@
   "kind": "regular",
   "uid": "austin-airport-advisory-commission-20260311@calendars.changesaroundme.com",
   "description": "All-day placeholder: time and agenda post to the board's meeting page ~a week ahead: https://www.austintexas.gov/boards-commissions/meetings/7_1",
+  "all_day": true
+ },
+ {
+  "source": "austin",
+  "summary": "Austin - City Council",
+  "start": "2026-03-12",
+  "end": null,
+  "location": "",
+  "url": "https://www.austintexas.gov/council/meetings",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-city-council-20260312@calendars.changesaroundme.com",
+  "description": "From the published annual council calendar (dates subject to change). Time and agenda appear ~a week ahead: https://www.austintexas.gov/council/meetings",
   "all_day": true
  },
  {
@@ -235,6 +287,19 @@
  },
  {
   "source": "austin",
+  "summary": "Austin - City Council",
+  "start": "2026-03-26",
+  "end": null,
+  "location": "",
+  "url": "https://www.austintexas.gov/council/meetings",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-city-council-20260326@calendars.changesaroundme.com",
+  "description": "From the published annual council calendar (dates subject to change). Time and agenda appear ~a week ahead: https://www.austintexas.gov/council/meetings",
+  "all_day": true
+ },
+ {
+  "source": "austin",
   "summary": "Austin - Planning Commission (Special Called)",
   "start": "2026-03-31",
   "end": null,
@@ -274,6 +339,19 @@
  },
  {
   "source": "austin",
+  "summary": "Austin - City Council",
+  "start": "2026-04-09",
+  "end": null,
+  "location": "",
+  "url": "https://www.austintexas.gov/council/meetings",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-city-council-20260409@calendars.changesaroundme.com",
+  "description": "From the published annual council calendar (dates subject to change). Time and agenda appear ~a week ahead: https://www.austintexas.gov/council/meetings",
+  "all_day": true
+ },
+ {
+  "source": "austin",
   "summary": "Austin - Planning Commission",
   "start": "2026-04-14",
   "end": null,
@@ -296,6 +374,19 @@
   "kind": "regular",
   "uid": "austin-austin-integrated-water-resource-planning-community-task-force-20260414@calendars.changesaroundme.com",
   "description": "All-day placeholder: time and agenda post to the board's meeting page ~a week ahead: https://www.austintexas.gov/boards-commissions/meetings/132_1",
+  "all_day": true
+ },
+ {
+  "source": "austin",
+  "summary": "Austin - City Council",
+  "start": "2026-04-23",
+  "end": null,
+  "location": "",
+  "url": "https://www.austintexas.gov/council/meetings",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-city-council-20260423@calendars.changesaroundme.com",
+  "description": "From the published annual council calendar (dates subject to change). Time and agenda appear ~a week ahead: https://www.austintexas.gov/council/meetings",
   "all_day": true
  },
  {
@@ -911,6 +1002,19 @@
  },
  {
   "source": "austin",
+  "summary": "Austin - City Council",
+  "start": "2026-08-04",
+  "end": null,
+  "location": "",
+  "url": "https://www.austintexas.gov/council/meetings",
+  "status": "CONFIRMED",
+  "kind": "budget",
+  "uid": "austin-city-council-20260804@calendars.changesaroundme.com",
+  "description": "From the published annual council calendar (dates subject to change). Time and agenda appear ~a week ahead: https://www.austintexas.gov/council/meetings",
+  "all_day": true
+ },
+ {
+  "source": "austin",
   "summary": "Austin - Urban Transportation Commission",
   "start": "2026-08-04",
   "end": null,
@@ -920,6 +1024,19 @@
   "kind": "regular",
   "uid": "austin-urban-transportation-commission-20260804@calendars.changesaroundme.com",
   "description": "All-day placeholder: time and agenda post to the board's meeting page ~a week ahead: https://www.austintexas.gov/boards-commissions/meetings/50_1",
+  "all_day": true
+ },
+ {
+  "source": "austin",
+  "summary": "Austin - City Council",
+  "start": "2026-08-06",
+  "end": null,
+  "location": "",
+  "url": "https://www.austintexas.gov/council/meetings",
+  "status": "CONFIRMED",
+  "kind": "budget",
+  "uid": "austin-city-council-20260806@calendars.changesaroundme.com",
+  "description": "From the published annual council calendar (dates subject to change). Time and agenda appear ~a week ahead: https://www.austintexas.gov/council/meetings",
   "all_day": true
  },
  {
@@ -950,6 +1067,19 @@
  },
  {
   "source": "austin",
+  "summary": "Austin - City Council",
+  "start": "2026-08-12",
+  "end": null,
+  "location": "",
+  "url": "https://www.austintexas.gov/council/meetings",
+  "status": "CONFIRMED",
+  "kind": "budget",
+  "uid": "austin-city-council-20260812@calendars.changesaroundme.com",
+  "description": "From the published annual council calendar (dates subject to change). Time and agenda appear ~a week ahead: https://www.austintexas.gov/council/meetings",
+  "all_day": true
+ },
+ {
+  "source": "austin",
   "summary": "Austin - Airport Advisory Commission",
   "start": "2026-08-12",
   "end": null,
@@ -959,6 +1089,45 @@
   "kind": "regular",
   "uid": "austin-airport-advisory-commission-20260812@calendars.changesaroundme.com",
   "description": "All-day placeholder: time and agenda post to the board's meeting page ~a week ahead: https://www.austintexas.gov/boards-commissions/meetings/7_1",
+  "all_day": true
+ },
+ {
+  "source": "austin",
+  "summary": "Austin - City Council",
+  "start": "2026-08-13",
+  "end": null,
+  "location": "",
+  "url": "https://www.austintexas.gov/council/meetings",
+  "status": "CONFIRMED",
+  "kind": "budget",
+  "uid": "austin-city-council-20260813@calendars.changesaroundme.com",
+  "description": "From the published annual council calendar (dates subject to change). Time and agenda appear ~a week ahead: https://www.austintexas.gov/council/meetings",
+  "all_day": true
+ },
+ {
+  "source": "austin",
+  "summary": "Austin - City Council",
+  "start": "2026-08-14",
+  "end": null,
+  "location": "",
+  "url": "https://www.austintexas.gov/council/meetings",
+  "status": "CONFIRMED",
+  "kind": "budget",
+  "uid": "austin-city-council-20260814@calendars.changesaroundme.com",
+  "description": "From the published annual council calendar (dates subject to change). Time and agenda appear ~a week ahead: https://www.austintexas.gov/council/meetings",
+  "all_day": true
+ },
+ {
+  "source": "austin",
+  "summary": "Austin - City Council",
+  "start": "2026-08-17",
+  "end": null,
+  "location": "",
+  "url": "https://www.austintexas.gov/council/meetings",
+  "status": "CONFIRMED",
+  "kind": "budget",
+  "uid": "austin-city-council-20260817@calendars.changesaroundme.com",
+  "description": "From the published annual council calendar (dates subject to change). Time and agenda appear ~a week ahead: https://www.austintexas.gov/council/meetings",
   "all_day": true
  },
  {
@@ -985,6 +1154,19 @@
   "kind": "regular",
   "uid": "austin-planning-commission-20260825@calendars.changesaroundme.com",
   "description": "All-day placeholder: time and agenda post to the board's meeting page ~a week ahead: https://www.austintexas.gov/boards-commissions/meetings/40_1",
+  "all_day": true
+ },
+ {
+  "source": "austin",
+  "summary": "Austin - City Council",
+  "start": "2026-08-27",
+  "end": null,
+  "location": "",
+  "url": "https://www.austintexas.gov/council/meetings",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-city-council-20260827@calendars.changesaroundme.com",
+  "description": "From the published annual council calendar (dates subject to change). Time and agenda appear ~a week ahead: https://www.austintexas.gov/council/meetings",
   "all_day": true
  },
  {
@@ -1028,6 +1210,19 @@
  },
  {
   "source": "austin",
+  "summary": "Austin - City Council",
+  "start": "2026-09-10",
+  "end": null,
+  "location": "",
+  "url": "https://www.austintexas.gov/council/meetings",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-city-council-20260910@calendars.changesaroundme.com",
+  "description": "From the published annual council calendar (dates subject to change). Time and agenda appear ~a week ahead: https://www.austintexas.gov/council/meetings",
+  "all_day": true
+ },
+ {
+  "source": "austin",
   "summary": "Austin - Planning Commission",
   "start": "2026-09-22",
   "end": null,
@@ -1037,6 +1232,19 @@
   "kind": "regular",
   "uid": "austin-planning-commission-20260922@calendars.changesaroundme.com",
   "description": "All-day placeholder: time and agenda post to the board's meeting page ~a week ahead: https://www.austintexas.gov/boards-commissions/meetings/40_1",
+  "all_day": true
+ },
+ {
+  "source": "austin",
+  "summary": "Austin - City Council",
+  "start": "2026-09-24",
+  "end": null,
+  "location": "",
+  "url": "https://www.austintexas.gov/council/meetings",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-city-council-20260924@calendars.changesaroundme.com",
+  "description": "From the published annual council calendar (dates subject to change). Time and agenda appear ~a week ahead: https://www.austintexas.gov/council/meetings",
   "all_day": true
  },
  {
@@ -1063,6 +1271,19 @@
   "kind": "regular",
   "uid": "austin-urban-transportation-commission-20261006@calendars.changesaroundme.com",
   "description": "All-day placeholder: time and agenda post to the board's meeting page ~a week ahead: https://www.austintexas.gov/boards-commissions/meetings/50_1",
+  "all_day": true
+ },
+ {
+  "source": "austin",
+  "summary": "Austin - City Council",
+  "start": "2026-10-08",
+  "end": null,
+  "location": "",
+  "url": "https://www.austintexas.gov/council/meetings",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-city-council-20261008@calendars.changesaroundme.com",
+  "description": "From the published annual council calendar (dates subject to change). Time and agenda appear ~a week ahead: https://www.austintexas.gov/council/meetings",
   "all_day": true
  },
  {
@@ -1106,6 +1327,19 @@
  },
  {
   "source": "austin",
+  "summary": "Austin - City Council",
+  "start": "2026-10-22",
+  "end": null,
+  "location": "",
+  "url": "https://www.austintexas.gov/council/meetings",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-city-council-20261022@calendars.changesaroundme.com",
+  "description": "From the published annual council calendar (dates subject to change). Time and agenda appear ~a week ahead: https://www.austintexas.gov/council/meetings",
+  "all_day": true
+ },
+ {
+  "source": "austin",
   "summary": "Austin - Design Commission",
   "start": "2026-10-26",
   "end": null,
@@ -1128,6 +1362,19 @@
   "kind": "regular",
   "uid": "austin-planning-commission-20261027@calendars.changesaroundme.com",
   "description": "All-day placeholder: time and agenda post to the board's meeting page ~a week ahead: https://www.austintexas.gov/boards-commissions/meetings/40_1",
+  "all_day": true
+ },
+ {
+  "source": "austin",
+  "summary": "Austin - City Council",
+  "start": "2026-11-05",
+  "end": null,
+  "location": "",
+  "url": "https://www.austintexas.gov/council/meetings",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-city-council-20261105@calendars.changesaroundme.com",
+  "description": "From the published annual council calendar (dates subject to change). Time and agenda appear ~a week ahead: https://www.austintexas.gov/council/meetings",
   "all_day": true
  },
  {
@@ -1197,6 +1444,19 @@
  },
  {
   "source": "austin",
+  "summary": "Austin - City Council",
+  "start": "2026-11-19",
+  "end": null,
+  "location": "",
+  "url": "https://www.austintexas.gov/council/meetings",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-city-council-20261119@calendars.changesaroundme.com",
+  "description": "From the published annual council calendar (dates subject to change). Time and agenda appear ~a week ahead: https://www.austintexas.gov/council/meetings",
+  "all_day": true
+ },
+ {
+  "source": "austin",
   "summary": "Austin - Urban Transportation Commission",
   "start": "2026-12-01",
   "end": null,
@@ -1206,6 +1466,19 @@
   "kind": "regular",
   "uid": "austin-urban-transportation-commission-20261201@calendars.changesaroundme.com",
   "description": "All-day placeholder: time and agenda post to the board's meeting page ~a week ahead: https://www.austintexas.gov/boards-commissions/meetings/50_1",
+  "all_day": true
+ },
+ {
+  "source": "austin",
+  "summary": "Austin - City Council",
+  "start": "2026-12-03",
+  "end": null,
+  "location": "",
+  "url": "https://www.austintexas.gov/council/meetings",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-city-council-20261203@calendars.changesaroundme.com",
+  "description": "From the published annual council calendar (dates subject to change). Time and agenda appear ~a week ahead: https://www.austintexas.gov/council/meetings",
   "all_day": true
  },
  {

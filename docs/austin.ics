@@ -28,7 +28,7 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:austin-urban-transportation-commission-20260106@calendars.changesaround
  me.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260106
 SUMMARY:Austin - Urban Transportation Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/50_1
@@ -39,7 +39,7 @@ CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:austin-planning-commission-20260113@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260113
 SUMMARY:Austin - Planning Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/40_1
@@ -51,7 +51,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-airport-advisory-commission-20260114@calendars.changesaroundme.c
  om
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260114
 SUMMARY:Austin - Airport Advisory Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/7_1
@@ -61,8 +61,19 @@ DESCRIPTION:All-day placeholder: time and agenda post to the board's meetin
 CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
+UID:austin-city-council-20260122@calendars.changesaroundme.com
+DTSTAMP:20260725T155405Z
+DTSTART;VALUE=DATE:20260122
+SUMMARY:Austin - City Council
+URL:https://www.austintexas.gov/council/meetings
+DESCRIPTION:From the published annual council calendar (dates subject to ch
+ ange). Time and agenda appear ~a week ahead: https://www.austintexas.gov/c
+ ouncil/meetings
+CATEGORIES:regular
+END:VEVENT
+BEGIN:VEVENT
 UID:austin-design-commission-20260126@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260126
 SUMMARY:Austin - Design Commission (Cancelled)
 URL:https://www.austintexas.gov/boards-commissions/meetings/22_1
@@ -74,7 +85,7 @@ CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:austin-planning-commission-20260127@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260127
 SUMMARY:Austin - Planning Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/40_1
@@ -85,7 +96,7 @@ CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:austin-design-commission-20260202@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260202
 SUMMARY:Austin - Design Commission (Special Called)
 URL:https://www.austintexas.gov/boards-commissions/meetings/22_1
@@ -97,7 +108,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-urban-transportation-commission-20260203@calendars.changesaround
  me.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260203
 SUMMARY:Austin - Urban Transportation Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/50_1
@@ -107,8 +118,19 @@ DESCRIPTION:All-day placeholder: time and agenda post to the board's meetin
 CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
+UID:austin-city-council-20260205@calendars.changesaroundme.com
+DTSTAMP:20260725T155405Z
+DTSTART;VALUE=DATE:20260205
+SUMMARY:Austin - City Council
+URL:https://www.austintexas.gov/council/meetings
+DESCRIPTION:From the published annual council calendar (dates subject to ch
+ ange). Time and agenda appear ~a week ahead: https://www.austintexas.gov/c
+ ouncil/meetings
+CATEGORIES:regular
+END:VEVENT
+BEGIN:VEVENT
 UID:austin-planning-commission-20260210@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260210
 SUMMARY:Austin - Planning Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/40_1
@@ -120,7 +142,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-austin-integrated-water-resource-planning-community-task-force-2
  0260210@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260210
 SUMMARY:Austin Integrated Water Resource Planning Community Task Force (Can
  celled)
@@ -134,7 +156,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-airport-advisory-commission-20260211@calendars.changesaroundme.c
  om
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260211
 SUMMARY:Austin - Airport Advisory Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/7_1
@@ -145,7 +167,7 @@ CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:austin-design-commission-20260223@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260223
 SUMMARY:Austin - Design Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/22_1
@@ -156,7 +178,7 @@ CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:austin-planning-commission-20260224@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260224
 SUMMARY:Austin - Planning Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/40_1
@@ -166,9 +188,20 @@ DESCRIPTION:All-day placeholder: time and agenda post to the board's meetin
 CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
+UID:austin-city-council-20260226@calendars.changesaroundme.com
+DTSTAMP:20260725T155405Z
+DTSTART;VALUE=DATE:20260226
+SUMMARY:Austin - City Council
+URL:https://www.austintexas.gov/council/meetings
+DESCRIPTION:From the published annual council calendar (dates subject to ch
+ ange). Time and agenda appear ~a week ahead: https://www.austintexas.gov/c
+ ouncil/meetings
+CATEGORIES:regular
+END:VEVENT
+BEGIN:VEVENT
 UID:austin-urban-transportation-commission-20260303@calendars.changesaround
  me.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260303
 SUMMARY:Austin - Urban Transportation Commission (Cancelled)
 URL:https://www.austintexas.gov/boards-commissions/meetings/50_1
@@ -180,7 +213,7 @@ CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:austin-planning-commission-20260310@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260310
 SUMMARY:Austin - Planning Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/40_1
@@ -192,7 +225,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-airport-advisory-commission-20260311@calendars.changesaroundme.c
  om
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260311
 SUMMARY:Austin - Airport Advisory Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/7_1
@@ -202,9 +235,20 @@ DESCRIPTION:All-day placeholder: time and agenda post to the board's meetin
 CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
+UID:austin-city-council-20260312@calendars.changesaroundme.com
+DTSTAMP:20260725T155405Z
+DTSTART;VALUE=DATE:20260312
+SUMMARY:Austin - City Council
+URL:https://www.austintexas.gov/council/meetings
+DESCRIPTION:From the published annual council calendar (dates subject to ch
+ ange). Time and agenda appear ~a week ahead: https://www.austintexas.gov/c
+ ouncil/meetings
+CATEGORIES:regular
+END:VEVENT
+BEGIN:VEVENT
 UID:austin-urban-transportation-commission-20260316@calendars.changesaround
  me.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260316
 SUMMARY:Austin - Urban Transportation Commission (Special Called)
 URL:https://www.austintexas.gov/boards-commissions/meetings/50_1
@@ -215,7 +259,7 @@ CATEGORIES:special
 END:VEVENT
 BEGIN:VEVENT
 UID:austin-design-commission-20260323@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260323
 SUMMARY:Austin - Design Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/22_1
@@ -226,7 +270,7 @@ CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:austin-planning-commission-20260324@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260324
 SUMMARY:Austin - Planning Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/40_1
@@ -236,8 +280,19 @@ DESCRIPTION:All-day placeholder: time and agenda post to the board's meetin
 CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
+UID:austin-city-council-20260326@calendars.changesaroundme.com
+DTSTAMP:20260725T155405Z
+DTSTART;VALUE=DATE:20260326
+SUMMARY:Austin - City Council
+URL:https://www.austintexas.gov/council/meetings
+DESCRIPTION:From the published annual council calendar (dates subject to ch
+ ange). Time and agenda appear ~a week ahead: https://www.austintexas.gov/c
+ ouncil/meetings
+CATEGORIES:regular
+END:VEVENT
+BEGIN:VEVENT
 UID:austin-planning-commission-20260331@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260331
 SUMMARY:Austin - Planning Commission (Special Called)
 URL:https://www.austintexas.gov/boards-commissions/meetings/40_1
@@ -249,7 +304,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-urban-transportation-commission-20260407@calendars.changesaround
  me.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260407
 SUMMARY:Austin - Urban Transportation Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/50_1
@@ -261,7 +316,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-airport-advisory-commission-20260408@calendars.changesaroundme.c
  om
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260408
 SUMMARY:Austin - Airport Advisory Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/7_1
@@ -271,8 +326,19 @@ DESCRIPTION:All-day placeholder: time and agenda post to the board's meetin
 CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
+UID:austin-city-council-20260409@calendars.changesaroundme.com
+DTSTAMP:20260725T155405Z
+DTSTART;VALUE=DATE:20260409
+SUMMARY:Austin - City Council
+URL:https://www.austintexas.gov/council/meetings
+DESCRIPTION:From the published annual council calendar (dates subject to ch
+ ange). Time and agenda appear ~a week ahead: https://www.austintexas.gov/c
+ ouncil/meetings
+CATEGORIES:regular
+END:VEVENT
+BEGIN:VEVENT
 UID:austin-planning-commission-20260414@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260414
 SUMMARY:Austin - Planning Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/40_1
@@ -284,7 +350,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-austin-integrated-water-resource-planning-community-task-force-2
  0260414@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260414
 SUMMARY:Austin Integrated Water Resource Planning Community Task Force
 URL:https://www.austintexas.gov/boards-commissions/meetings/132_1
@@ -294,8 +360,19 @@ DESCRIPTION:All-day placeholder: time and agenda post to the board's meetin
 CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
+UID:austin-city-council-20260423@calendars.changesaroundme.com
+DTSTAMP:20260725T155405Z
+DTSTART;VALUE=DATE:20260423
+SUMMARY:Austin - City Council
+URL:https://www.austintexas.gov/council/meetings
+DESCRIPTION:From the published annual council calendar (dates subject to ch
+ ange). Time and agenda appear ~a week ahead: https://www.austintexas.gov/c
+ ouncil/meetings
+CATEGORIES:regular
+END:VEVENT
+BEGIN:VEVENT
 UID:austin-design-commission-20260427@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260427
 SUMMARY:Austin - Design Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/22_1
@@ -306,7 +383,7 @@ CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:austin-planning-commission-20260428@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260428
 SUMMARY:Austin - Planning Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/40_1
@@ -317,7 +394,7 @@ CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:austin-mobility-committee-20260429T1100@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;TZID=America/Chicago:20260429T110000
 DTEND;TZID=America/Chicago:20260429T130000
 SUMMARY:Austin - Mobility Committee
@@ -331,7 +408,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-public-safety-committee-20260429T1101@calendars.changesaroundme.
  com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;TZID=America/Chicago:20260429T110100
 DTEND;TZID=America/Chicago:20260429T130100
 SUMMARY:Austin - Public Safety Committee
@@ -344,7 +421,7 @@ CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:austin-design-commission-20260504@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260504
 SUMMARY:Austin - Design Commission (Special Called)
 URL:https://www.austintexas.gov/boards-commissions/meetings/22_1
@@ -356,7 +433,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-urban-transportation-commission-20260505@calendars.changesaround
  me.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260505
 SUMMARY:Austin - Urban Transportation Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/50_1
@@ -368,7 +445,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-city-council-work-session-20260505T0900@calendars.changesaroundm
  e.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;TZID=America/Chicago:20260505T090000
 DTEND;TZID=America/Chicago:20260505T110000
 SUMMARY:Austin - City Council Work Session
@@ -382,7 +459,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-public-health-committee-20260506T1000@calendars.changesaroundme.
  com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;TZID=America/Chicago:20260506T100000
 DTEND;TZID=America/Chicago:20260506T120000
 SUMMARY:Austin - Public Health Committee  
@@ -395,7 +472,7 @@ CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:austin-city-council-20260507T1000@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;TZID=America/Chicago:20260507T100000
 DTEND;TZID=America/Chicago:20260507T120000
 SUMMARY:Austin - City Council
@@ -409,7 +486,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-housing-finance-corporation-20260507T1030@calendars.changesaroun
  dme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;TZID=America/Chicago:20260507T103000
 DTEND;TZID=America/Chicago:20260507T123000
 SUMMARY:Austin Housing Finance Corporation
@@ -423,7 +500,7 @@ CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:austin-planning-commission-20260512@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260512
 SUMMARY:Austin - Planning Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/40_1
@@ -435,7 +512,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-public-safety-committee-20260512T0900@calendars.changesaroundme.
  com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;TZID=America/Chicago:20260512T090000
 DTEND;TZID=America/Chicago:20260512T110000
 SUMMARY:Austin - Public Safety Committee
@@ -449,7 +526,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-airport-advisory-commission-20260513@calendars.changesaroundme.c
  om
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260513
 SUMMARY:Austin - Airport Advisory Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/7_1
@@ -460,7 +537,7 @@ CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:austin-mobility-committee-20260514T1300@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;TZID=America/Chicago:20260514T130000
 DTEND;TZID=America/Chicago:20260514T150000
 SUMMARY:Austin - Mobility Committee
@@ -474,7 +551,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-economic-opportunity-committee-20260515T1000@calendars.changesar
  oundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;TZID=America/Chicago:20260515T100000
 DTEND;TZID=America/Chicago:20260515T120000
 SUMMARY:Austin - Economic Opportunity Committee
@@ -487,7 +564,7 @@ CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:austin-design-commission-20260518@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260518
 SUMMARY:Austin - Design Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/22_1
@@ -499,7 +576,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-climate-water-environment-and-parks-committee-20260518T0930@cale
  ndars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;TZID=America/Chicago:20260518T093000
 DTEND;TZID=America/Chicago:20260518T113000
 SUMMARY:Austin - Climate\, Water\, Environment\, and Parks Committee
@@ -514,7 +591,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-city-council-work-session-20260519T0900@calendars.changesaroundm
  e.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;TZID=America/Chicago:20260519T090000
 DTEND;TZID=America/Chicago:20260519T110000
 SUMMARY:Austin - City Council Work Session
@@ -528,7 +605,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-energy-utility-oversight-committee-20260519T0900@calendars.chang
  esaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;TZID=America/Chicago:20260519T090000
 DTEND;TZID=America/Chicago:20260519T110000
 SUMMARY:Austin Energy Utility Oversight Committee  
@@ -543,7 +620,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-audit-and-finance-committee-20260520T0930@calendars.changesaroun
  dme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;TZID=America/Chicago:20260520T093000
 DTEND;TZID=America/Chicago:20260520T113000
 SUMMARY:Austin - Audit and Finance Committee
@@ -555,7 +632,7 @@ CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:austin-city-council-20260521T1000@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;TZID=America/Chicago:20260521T100000
 DTEND;TZID=America/Chicago:20260521T120000
 SUMMARY:Austin - City Council
@@ -568,7 +645,7 @@ CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:austin-planning-commission-20260526@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260526
 SUMMARY:Austin - Planning Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/40_1
@@ -580,7 +657,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-city-council-work-session-20260526T0900@calendars.changesaroundm
  e.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;TZID=America/Chicago:20260526T090000
 DTEND;TZID=America/Chicago:20260526T110000
 SUMMARY:Austin - City Council Work Session
@@ -591,7 +668,7 @@ CATEGORIES:work-session
 END:VEVENT
 BEGIN:VEVENT
 UID:austin-city-council-20260528T1000@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;TZID=America/Chicago:20260528T100000
 DTEND;TZID=America/Chicago:20260528T120000
 SUMMARY:Austin - City Council
@@ -605,7 +682,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-housing-finance-corporation-20260528T1030@calendars.changesaroun
  dme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;TZID=America/Chicago:20260528T103000
 DTEND;TZID=America/Chicago:20260528T123000
 SUMMARY:Austin Housing Finance Corporation
@@ -620,7 +697,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-public-safety-committee-20260601T1400@calendars.changesaroundme.
  com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;TZID=America/Chicago:20260601T140000
 DTEND;TZID=America/Chicago:20260601T160000
 SUMMARY:Austin - Public Safety Committee
@@ -634,7 +711,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-urban-transportation-commission-20260602@calendars.changesaround
  me.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260602
 SUMMARY:Austin - Urban Transportation Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/50_1
@@ -646,7 +723,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-housing-and-planning-committee-20260602T1300@calendars.changesar
  oundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;TZID=America/Chicago:20260602T130000
 DTEND;TZID=America/Chicago:20260602T150000
 SUMMARY:Austin - Housing and Planning Committee  
@@ -660,7 +737,7 @@ CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:austin-planning-commission-20260609@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260609
 SUMMARY:Austin - Planning Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/40_1
@@ -672,7 +749,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-austin-integrated-water-resource-planning-community-task-force-2
  0260609@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260609
 SUMMARY:Austin Integrated Water Resource Planning Community Task Force
 URL:https://www.austintexas.gov/boards-commissions/meetings/132_1
@@ -684,7 +761,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-airport-advisory-commission-20260610@calendars.changesaroundme.c
  om
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260610
 SUMMARY:Austin - Airport Advisory Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/7_1
@@ -695,7 +772,7 @@ CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:austin-design-commission-20260622@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260622
 SUMMARY:Austin - Design Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/22_1
@@ -706,7 +783,7 @@ CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:austin-planning-commission-20260623@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260623
 SUMMARY:Austin - Planning Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/40_1
@@ -718,7 +795,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-urban-transportation-commission-20260707@calendars.changesaround
  me.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260707
 SUMMARY:Austin - Urban Transportation Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/50_1
@@ -730,7 +807,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-airport-advisory-commission-20260708@calendars.changesaroundme.c
  om
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260708
 SUMMARY:Austin - Airport Advisory Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/7_1
@@ -741,7 +818,7 @@ CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:austin-planning-commission-20260714@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260714
 SUMMARY:Austin - Planning Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/40_1
@@ -753,7 +830,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-climate-water-environment-and-parks-committee-20260715T0930@cale
  ndars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;TZID=America/Chicago:20260715T093000
 DTEND;TZID=America/Chicago:20260715T113000
 SUMMARY:Austin - Climate\, Water\, Environment\, and Parks Committee
@@ -767,7 +844,7 @@ CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:austin-city-council-20260716T1000@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;TZID=America/Chicago:20260716T100000
 DTEND;TZID=America/Chicago:20260716T120000
 SUMMARY:Austin - City Council
@@ -781,7 +858,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-audit-and-finance-committee-20260720T0930@calendars.changesaroun
  dme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;TZID=America/Chicago:20260720T093000
 DTEND;TZID=America/Chicago:20260720T113000
 SUMMARY:Austin - Audit and Finance Committee
@@ -794,7 +871,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-city-council-work-session-20260721T0900@calendars.changesaroundm
  e.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;TZID=America/Chicago:20260721T090000
 DTEND;TZID=America/Chicago:20260721T110000
 SUMMARY:Austin - City Council Work Session
@@ -808,7 +885,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-energy-utility-oversight-committee-20260721T0900@calendars.chang
  esaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;TZID=America/Chicago:20260721T090000
 DTEND;TZID=America/Chicago:20260721T110000
 SUMMARY:Austin Energy Utility Oversight Committee
@@ -822,7 +899,7 @@ CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:austin-city-council-20260722T1000@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;TZID=America/Chicago:20260722T100000
 DTEND;TZID=America/Chicago:20260722T120000
 SUMMARY:Austin - City Council
@@ -835,7 +912,7 @@ CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:austin-city-council-20260723T1000@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;TZID=America/Chicago:20260723T100000
 DTEND;TZID=America/Chicago:20260723T120000
 SUMMARY:Austin - City Council
@@ -849,7 +926,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-housing-finance-corporation-20260723T1030@calendars.changesaroun
  dme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;TZID=America/Chicago:20260723T103000
 DTEND;TZID=America/Chicago:20260723T123000
 SUMMARY:Austin Housing Finance Corporation
@@ -863,7 +940,7 @@ CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:austin-planning-commission-20260728@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260728
 SUMMARY:Austin - Planning Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/40_1
@@ -874,7 +951,7 @@ CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:austin-city-council-20260728T1000@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;TZID=America/Chicago:20260728T100000
 DTEND;TZID=America/Chicago:20260728T120000
 SUMMARY:Austin - City Council
@@ -887,7 +964,7 @@ CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:austin-city-council-20260730T1000@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;TZID=America/Chicago:20260730T100000
 DTEND;TZID=America/Chicago:20260730T120000
 SUMMARY:Austin - City Council
@@ -899,9 +976,20 @@ DESCRIPTION:Agenda: https://austintexas.legistar1.com/austintexas/meetings/
 CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
+UID:austin-city-council-20260804@calendars.changesaroundme.com
+DTSTAMP:20260725T155405Z
+DTSTART;VALUE=DATE:20260804
+SUMMARY:Austin - City Council
+URL:https://www.austintexas.gov/council/meetings
+DESCRIPTION:From the published annual council calendar (dates subject to ch
+ ange). Time and agenda appear ~a week ahead: https://www.austintexas.gov/c
+ ouncil/meetings
+CATEGORIES:budget
+END:VEVENT
+BEGIN:VEVENT
 UID:austin-urban-transportation-commission-20260804@calendars.changesaround
  me.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260804
 SUMMARY:Austin - Urban Transportation Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/50_1
@@ -911,8 +999,19 @@ DESCRIPTION:All-day placeholder: time and agenda post to the board's meetin
 CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
+UID:austin-city-council-20260806@calendars.changesaroundme.com
+DTSTAMP:20260725T155405Z
+DTSTART;VALUE=DATE:20260806
+SUMMARY:Austin - City Council
+URL:https://www.austintexas.gov/council/meetings
+DESCRIPTION:From the published annual council calendar (dates subject to ch
+ ange). Time and agenda appear ~a week ahead: https://www.austintexas.gov/c
+ ouncil/meetings
+CATEGORIES:budget
+END:VEVENT
+BEGIN:VEVENT
 UID:austin-planning-commission-20260811@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260811
 SUMMARY:Austin - Planning Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/40_1
@@ -924,7 +1023,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-austin-integrated-water-resource-planning-community-task-force-2
  0260811@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260811
 SUMMARY:Austin Integrated Water Resource Planning Community Task Force
 URL:https://www.austintexas.gov/boards-commissions/meetings/132_1
@@ -934,9 +1033,20 @@ DESCRIPTION:All-day placeholder: time and agenda post to the board's meetin
 CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
+UID:austin-city-council-20260812@calendars.changesaroundme.com
+DTSTAMP:20260725T155405Z
+DTSTART;VALUE=DATE:20260812
+SUMMARY:Austin - City Council
+URL:https://www.austintexas.gov/council/meetings
+DESCRIPTION:From the published annual council calendar (dates subject to ch
+ ange). Time and agenda appear ~a week ahead: https://www.austintexas.gov/c
+ ouncil/meetings
+CATEGORIES:budget
+END:VEVENT
+BEGIN:VEVENT
 UID:austin-airport-advisory-commission-20260812@calendars.changesaroundme.c
  om
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260812
 SUMMARY:Austin - Airport Advisory Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/7_1
@@ -946,8 +1056,41 @@ DESCRIPTION:All-day placeholder: time and agenda post to the board's meetin
 CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
+UID:austin-city-council-20260813@calendars.changesaroundme.com
+DTSTAMP:20260725T155405Z
+DTSTART;VALUE=DATE:20260813
+SUMMARY:Austin - City Council
+URL:https://www.austintexas.gov/council/meetings
+DESCRIPTION:From the published annual council calendar (dates subject to ch
+ ange). Time and agenda appear ~a week ahead: https://www.austintexas.gov/c
+ ouncil/meetings
+CATEGORIES:budget
+END:VEVENT
+BEGIN:VEVENT
+UID:austin-city-council-20260814@calendars.changesaroundme.com
+DTSTAMP:20260725T155405Z
+DTSTART;VALUE=DATE:20260814
+SUMMARY:Austin - City Council
+URL:https://www.austintexas.gov/council/meetings
+DESCRIPTION:From the published annual council calendar (dates subject to ch
+ ange). Time and agenda appear ~a week ahead: https://www.austintexas.gov/c
+ ouncil/meetings
+CATEGORIES:budget
+END:VEVENT
+BEGIN:VEVENT
+UID:austin-city-council-20260817@calendars.changesaroundme.com
+DTSTAMP:20260725T155405Z
+DTSTART;VALUE=DATE:20260817
+SUMMARY:Austin - City Council
+URL:https://www.austintexas.gov/council/meetings
+DESCRIPTION:From the published annual council calendar (dates subject to ch
+ ange). Time and agenda appear ~a week ahead: https://www.austintexas.gov/c
+ ouncil/meetings
+CATEGORIES:budget
+END:VEVENT
+BEGIN:VEVENT
 UID:austin-design-commission-20260824@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260824
 SUMMARY:Austin - Design Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/22_1
@@ -958,7 +1101,7 @@ CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:austin-planning-commission-20260825@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260825
 SUMMARY:Austin - Planning Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/40_1
@@ -968,9 +1111,20 @@ DESCRIPTION:All-day placeholder: time and agenda post to the board's meetin
 CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
+UID:austin-city-council-20260827@calendars.changesaroundme.com
+DTSTAMP:20260725T155405Z
+DTSTART;VALUE=DATE:20260827
+SUMMARY:Austin - City Council
+URL:https://www.austintexas.gov/council/meetings
+DESCRIPTION:From the published annual council calendar (dates subject to ch
+ ange). Time and agenda appear ~a week ahead: https://www.austintexas.gov/c
+ ouncil/meetings
+CATEGORIES:regular
+END:VEVENT
+BEGIN:VEVENT
 UID:austin-urban-transportation-commission-20260901@calendars.changesaround
  me.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260901
 SUMMARY:Austin - Urban Transportation Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/50_1
@@ -981,7 +1135,7 @@ CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:austin-planning-commission-20260908@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260908
 SUMMARY:Austin - Planning Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/40_1
@@ -993,7 +1147,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-airport-advisory-commission-20260909@calendars.changesaroundme.c
  om
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260909
 SUMMARY:Austin - Airport Advisory Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/7_1
@@ -1003,8 +1157,19 @@ DESCRIPTION:All-day placeholder: time and agenda post to the board's meetin
 CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
+UID:austin-city-council-20260910@calendars.changesaroundme.com
+DTSTAMP:20260725T155405Z
+DTSTART;VALUE=DATE:20260910
+SUMMARY:Austin - City Council
+URL:https://www.austintexas.gov/council/meetings
+DESCRIPTION:From the published annual council calendar (dates subject to ch
+ ange). Time and agenda appear ~a week ahead: https://www.austintexas.gov/c
+ ouncil/meetings
+CATEGORIES:regular
+END:VEVENT
+BEGIN:VEVENT
 UID:austin-planning-commission-20260922@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260922
 SUMMARY:Austin - Planning Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/40_1
@@ -1014,8 +1179,19 @@ DESCRIPTION:All-day placeholder: time and agenda post to the board's meetin
 CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
+UID:austin-city-council-20260924@calendars.changesaroundme.com
+DTSTAMP:20260725T155405Z
+DTSTART;VALUE=DATE:20260924
+SUMMARY:Austin - City Council
+URL:https://www.austintexas.gov/council/meetings
+DESCRIPTION:From the published annual council calendar (dates subject to ch
+ ange). Time and agenda appear ~a week ahead: https://www.austintexas.gov/c
+ ouncil/meetings
+CATEGORIES:regular
+END:VEVENT
+BEGIN:VEVENT
 UID:austin-design-commission-20260928@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20260928
 SUMMARY:Austin - Design Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/22_1
@@ -1027,7 +1203,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-urban-transportation-commission-20261006@calendars.changesaround
  me.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20261006
 SUMMARY:Austin - Urban Transportation Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/50_1
@@ -1037,8 +1213,19 @@ DESCRIPTION:All-day placeholder: time and agenda post to the board's meetin
 CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
+UID:austin-city-council-20261008@calendars.changesaroundme.com
+DTSTAMP:20260725T155405Z
+DTSTART;VALUE=DATE:20261008
+SUMMARY:Austin - City Council
+URL:https://www.austintexas.gov/council/meetings
+DESCRIPTION:From the published annual council calendar (dates subject to ch
+ ange). Time and agenda appear ~a week ahead: https://www.austintexas.gov/c
+ ouncil/meetings
+CATEGORIES:regular
+END:VEVENT
+BEGIN:VEVENT
 UID:austin-planning-commission-20261013@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20261013
 SUMMARY:Austin - Planning Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/40_1
@@ -1050,7 +1237,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-austin-integrated-water-resource-planning-community-task-force-2
  0261013@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20261013
 SUMMARY:Austin Integrated Water Resource Planning Community Task Force
 URL:https://www.austintexas.gov/boards-commissions/meetings/132_1
@@ -1062,7 +1249,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-airport-advisory-commission-20261014@calendars.changesaroundme.c
  om
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20261014
 SUMMARY:Austin - Airport Advisory Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/7_1
@@ -1072,8 +1259,19 @@ DESCRIPTION:All-day placeholder: time and agenda post to the board's meetin
 CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
+UID:austin-city-council-20261022@calendars.changesaroundme.com
+DTSTAMP:20260725T155405Z
+DTSTART;VALUE=DATE:20261022
+SUMMARY:Austin - City Council
+URL:https://www.austintexas.gov/council/meetings
+DESCRIPTION:From the published annual council calendar (dates subject to ch
+ ange). Time and agenda appear ~a week ahead: https://www.austintexas.gov/c
+ ouncil/meetings
+CATEGORIES:regular
+END:VEVENT
+BEGIN:VEVENT
 UID:austin-design-commission-20261026@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20261026
 SUMMARY:Austin - Design Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/22_1
@@ -1084,7 +1282,7 @@ CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:austin-planning-commission-20261027@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20261027
 SUMMARY:Austin - Planning Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/40_1
@@ -1094,8 +1292,19 @@ DESCRIPTION:All-day placeholder: time and agenda post to the board's meetin
 CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
+UID:austin-city-council-20261105@calendars.changesaroundme.com
+DTSTAMP:20260725T155405Z
+DTSTART;VALUE=DATE:20261105
+SUMMARY:Austin - City Council
+URL:https://www.austintexas.gov/council/meetings
+DESCRIPTION:From the published annual council calendar (dates subject to ch
+ ange). Time and agenda appear ~a week ahead: https://www.austintexas.gov/c
+ ouncil/meetings
+CATEGORIES:regular
+END:VEVENT
+BEGIN:VEVENT
 UID:austin-planning-commission-20261110@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20261110
 SUMMARY:Austin - Planning Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/40_1
@@ -1107,7 +1316,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-urban-transportation-commission-20261110@calendars.changesaround
  me.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20261110
 SUMMARY:Austin - Urban Transportation Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/50_1
@@ -1118,7 +1327,7 @@ CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:austin-design-commission-20261116@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20261116
 SUMMARY:Austin - Design Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/22_1
@@ -1129,7 +1338,7 @@ CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:austin-planning-commission-20261117@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20261117
 SUMMARY:Austin - Planning Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/40_1
@@ -1141,7 +1350,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-airport-advisory-commission-20261118@calendars.changesaroundme.c
  om
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20261118
 SUMMARY:Austin - Airport Advisory Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/7_1
@@ -1151,9 +1360,20 @@ DESCRIPTION:All-day placeholder: time and agenda post to the board's meetin
 CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
+UID:austin-city-council-20261119@calendars.changesaroundme.com
+DTSTAMP:20260725T155405Z
+DTSTART;VALUE=DATE:20261119
+SUMMARY:Austin - City Council
+URL:https://www.austintexas.gov/council/meetings
+DESCRIPTION:From the published annual council calendar (dates subject to ch
+ ange). Time and agenda appear ~a week ahead: https://www.austintexas.gov/c
+ ouncil/meetings
+CATEGORIES:regular
+END:VEVENT
+BEGIN:VEVENT
 UID:austin-urban-transportation-commission-20261201@calendars.changesaround
  me.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20261201
 SUMMARY:Austin - Urban Transportation Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/50_1
@@ -1163,8 +1383,19 @@ DESCRIPTION:All-day placeholder: time and agenda post to the board's meetin
 CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
+UID:austin-city-council-20261203@calendars.changesaroundme.com
+DTSTAMP:20260725T155405Z
+DTSTART;VALUE=DATE:20261203
+SUMMARY:Austin - City Council
+URL:https://www.austintexas.gov/council/meetings
+DESCRIPTION:From the published annual council calendar (dates subject to ch
+ ange). Time and agenda appear ~a week ahead: https://www.austintexas.gov/c
+ ouncil/meetings
+CATEGORIES:regular
+END:VEVENT
+BEGIN:VEVENT
 UID:austin-planning-commission-20261208@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20261208
 SUMMARY:Austin - Planning Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/40_1
@@ -1176,7 +1407,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-austin-integrated-water-resource-planning-community-task-force-2
  0261208@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20261208
 SUMMARY:Austin Integrated Water Resource Planning Community Task Force
 URL:https://www.austintexas.gov/boards-commissions/meetings/132_1
@@ -1188,7 +1419,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:austin-airport-advisory-commission-20261209@calendars.changesaroundme.c
  om
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20261209
 SUMMARY:Austin - Airport Advisory Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/7_1
@@ -1199,7 +1430,7 @@ CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:austin-design-commission-20261214@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20261214
 SUMMARY:Austin - Design Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/22_1
@@ -1210,7 +1441,7 @@ CATEGORIES:regular
 END:VEVENT
 BEGIN:VEVENT
 UID:austin-planning-commission-20261215@calendars.changesaroundme.com
-DTSTAMP:20260725T154759Z
+DTSTAMP:20260725T155405Z
 DTSTART;VALUE=DATE:20261215
 SUMMARY:Austin - Planning Commission
 URL:https://www.austintexas.gov/boards-commissions/meetings/40_1
