@@ -86,7 +86,11 @@ def load_fixture(key: str):
             "Planning Commission",
             "https://www.austintexas.gov/boards-commissions/meetings/40_1",
         )
-        return council + boards
+        annual = austin.annual_council_events(
+            austin.parse_council_pdf(austin.ANNUAL_PDF_FIXTURE.read_bytes()),
+            council,
+        )
+        return council + annual + boards
     raise KeyError(key)
 
 

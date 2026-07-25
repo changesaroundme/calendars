@@ -21,9 +21,12 @@ site).
 """
 from __future__ import annotations
 
+import io
+import pathlib
 import re
-from datetime import datetime
+from datetime import date, datetime
 
+import pdfplumber
 from bs4 import BeautifulSoup
 
 from caltools.model import Event, slugify
@@ -128,6 +131,131 @@ def parse_board_page(html: str, board: str, docs_url: str) -> list[Event]:
     return events
 
 
+# ---------------------------------------------------------------------------
+# Annual council schedule PDF (the year-ahead when/where for City Council).
+#
+# The city publishes a "202X City Council Meeting Calendar" PDF in EDIMS with
+# three columns: Work Session | Council Meetings | Cancelled Dates, where **
+# marks budget-focused meetings. Plain text extraction interleaves the
+# columns, so we parse POSITIONALLY: bucket each date by its x-coordinate
+# under the nearest column header. Verified against the real 2026 document.
+#
+# NOTE: the EDIMS document id changes each year — update ANNUAL_PDF_URL when
+# the city posts the next calendar (linked from austintexas.gov/council/
+# meetings). If the live fetch fails, the bundled fixture copy keeps the
+# schedule flowing and a health problem flags the staleness.
+# ---------------------------------------------------------------------------
+ANNUAL_PDF_URL = "https://services.austintexas.gov/edims/document.cfm?id=462100"
+ANNUAL_PDF_FIXTURE = (
+    pathlib.Path(__file__).parent.parent / "fixtures" / "austin-council-2026.pdf"
+)
+COUNCIL_MEETINGS_URL = "https://www.austintexas.gov/council/meetings"
+
+MONTHS_FULL = {m: i + 1 for i, m in enumerate(
+    ["January", "February", "March", "April", "May", "June", "July", "August",
+     "September", "October", "November", "December"])}
+PDF_DATE_RE = re.compile(r"^(\w+) (\d{1,2})(?:-(\d{1,2}))?,? (\d{4})(\*\*)?$")
+
+
+def parse_council_pdf(data: bytes) -> list[tuple[date, str, bool]]:
+    """Return (day, column, budget_flag) for every date in the schedule pages.
+
+    column is one of "work-session" | "council" | "cancelled".
+    """
+    records: list[tuple[date, str, bool]] = []
+    with pdfplumber.open(io.BytesIO(data)) as pdf:
+        for page in pdf.pages:
+            words = page.extract_words()
+            hdr = next((w for w in words if w["text"] == "Work"), None)
+            if hdr is None:
+                continue  # calendar-grid page, not a schedule page
+            anchors = {}
+            for w in words:
+                if abs(w["top"] - hdr["top"]) > 3:
+                    continue
+                if w["text"] == "Work":
+                    anchors["work-session"] = w["x0"]
+                elif w["text"] == "Council":
+                    anchors["council"] = w["x0"]
+                elif w["text"].startswith("Cancelled"):
+                    anchors["cancelled"] = w["x0"]
+            if len(anchors) < 3:
+                continue
+            rows: dict[int, list] = {}
+            for w in words:
+                if w["top"] <= hdr["top"] + 3:
+                    continue
+                rows.setdefault(round(w["top"] / 4), []).append(w)
+            for _, ws in sorted(rows.items()):
+                ws.sort(key=lambda w: w["x0"])
+                i = 0
+                while i < len(ws):
+                    if ws[i]["text"] in MONTHS_FULL:
+                        m = PDF_DATE_RE.match(" ".join(t["text"] for t in ws[i:i + 3]))
+                        if m:
+                            month, d1 = m.group(1), int(m.group(2))
+                            d2 = int(m.group(3)) if m.group(3) else d1
+                            year, budget = int(m.group(4)), bool(m.group(5))
+                            col = min(anchors, key=lambda k: abs(anchors[k] - ws[i]["x0"]))
+                            for day in range(d1, d2 + 1):
+                                records.append((date(year, MONTHS_FULL[month], day), col, budget))
+                            i += 3
+                            continue
+                    i += 1
+    return records
+
+
+def annual_council_events(records, legistar_events: list[Event]) -> list[Event]:
+    """All-day placeholders for Council-column dates, yielding to Legistar.
+
+    Once a timed City Council (or budget-meeting) event exists in Legistar
+    for a date, the placeholder is skipped — the meeting has "graduated" to
+    a timed entry with an agenda. Only the Council Meetings column is
+    emitted for now (work sessions / cancelled dates are parsed and could
+    be enabled later).
+    """
+    council_day_re = re.compile(
+        r"^austin-(city-council|budget-meeting-of-the-austin-city-council)-(\d{8})T"
+    )
+    covered = {m.group(2) for e in legistar_events
+               if (m := council_day_re.match(e.stable_uid()))}
+    events: list[Event] = []
+    for day, col, budget in records:
+        if col != "council":
+            continue
+        d8 = day.strftime("%Y%m%d")
+        if d8 in covered:
+            continue
+        events.append(
+            Event(
+                source=SOURCE,
+                summary="Austin - City Council",
+                start=day,
+                url=COUNCIL_MEETINGS_URL,
+                kind="budget" if budget else "regular",
+                description=(
+                    "From the published annual council calendar (dates subject "
+                    "to change). Time and agenda appear ~a week ahead: "
+                    f"{COUNCIL_MEETINGS_URL}"
+                ),
+                uid=f"{SOURCE}-city-council-{d8}@calendars.changesaroundme.com",
+            )
+        )
+    return events
+
+
+def fetch_annual(session) -> bytes:
+    try:
+        resp = session.get(ANNUAL_PDF_URL, timeout=30)
+        resp.raise_for_status()
+        if resp.content[:5] == b"%PDF-":
+            return resp.content
+        raise ValueError("EDIMS response is not a PDF")
+    except Exception as exc:
+        _problems.append(f"austin: annual PDF fetch failed, using bundled copy ({exc})")
+        return ANNUAL_PDF_FIXTURE.read_bytes()
+
+
 # Reset by fetch(); read by build.py's health check so a single dead board
 # turns CI red instead of silently shrinking coverage behind a green run.
 _problems: list[str] = []
@@ -154,4 +282,15 @@ def fetch_boards(session) -> list[Event]:
 
 def fetch(session) -> list[Event]:
     _problems.clear()
-    return COUNCIL.fetch(session) + fetch_boards(session)
+    council = COUNCIL.fetch(session)
+    try:
+        records = parse_council_pdf(fetch_annual(session))
+        annual = annual_council_events(records, council)
+        if len(annual) < 5:
+            _problems.append(
+                f"austin: annual council schedule looks thin ({len(annual)} events)"
+            )
+    except Exception as exc:
+        _problems.append(f"austin: annual council schedule failed: {exc}")
+        annual = []
+    return council + annual + fetch_boards(session)
