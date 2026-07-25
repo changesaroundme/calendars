@@ -26,6 +26,10 @@ class Event:
     location: str = ""
     url: str = ""
     status: str = "CONFIRMED"       # CONFIRMED | CANCELLED
+    # Meeting type, org-agnostic: regular | work-session | special | budget
+    # | hearing | comment-window | engagement. Assigned per-body by each
+    # adapter; powers CATEGORIES in the ICS and future type filtering.
+    kind: str = "regular"
     uid: str = ""                   # stable id; generated if empty
     description: str = ""
 

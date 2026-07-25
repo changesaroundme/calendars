@@ -18,6 +18,7 @@
     --org-txdot:    #e87ba4;  /* magenta */
     --org-lcra:     #eda100;  /* yellow */
     --org-ctrma:    #1baf7a;  /* aqua */
+    --org-austin:   #eb6834;  /* orange */
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -31,6 +32,7 @@
       --org-txdot:    #d55181;
       --org-lcra:     #c98500;
       --org-ctrma:    #199e70;
+      --org-austin:   #d95926;
     }
   }
   html, body { margin: 0; padding: 0; background: var(--surface-1); }
@@ -97,6 +99,7 @@ const ORGS = [
   { key: "txdot",    label: "TxDOT",    match: /^TxDOT\b/ },
   { key: "lcra",     label: "LCRA",     match: /^LCRA\b/ },
   { key: "ctrma",    label: "CTRMA",    match: /^CTRMA\b/ },
+  { key: "austin",   label: "Austin",   match: /^Austin\b/ },
 ];
 const hidden = new Set();
 

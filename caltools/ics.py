@@ -91,6 +91,8 @@ def event_block(ev: Event, dtstamp: str) -> list[str]:
         lines.append(f"DESCRIPTION:{escape(ev.description)}")
     if ev.status and ev.status != "CONFIRMED":
         lines.append(f"STATUS:{ev.status}")
+    if ev.kind:
+        lines.append(f"CATEGORIES:{escape(ev.kind)}")
     lines.append("END:VEVENT")
     return lines
 

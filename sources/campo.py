@@ -41,6 +41,7 @@ def parse_feed(ics_data: bytes | str) -> list[Event]:
                 location=str(component.get("LOCATION", "")).strip(),
                 url=str(component.get("URL", "")).strip(),
                 status="CANCELLED" if CANCEL_RE.search(summary) else "CONFIRMED",
+                kind="hearing" if "hearing" in summary.lower() else "regular",
                 # Keep CAMPO's own UID: their feed is the system of record,
                 # and reusing it means someone subscribed to both feeds sees
                 # one event, not two.

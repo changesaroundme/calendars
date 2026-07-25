@@ -24,7 +24,7 @@ from datetime import datetime, timezone
 import requests
 
 from caltools.ics import emit
-from sources import campo, capmetro, ctrma, lcra, txdot
+from sources import austin, campo, capmetro, ctrma, lcra, txdot
 
 ROOT = pathlib.Path(__file__).parent
 DOCS = ROOT / "docs"
@@ -37,6 +37,7 @@ CALENDARS = {
     "txdot": ("CAM - TxDOT Commission", txdot, "#E87BA4"),  # magenta (slot 3)
     "lcra": ("CAM - LCRA", lcra, "#EDA100"),  # yellow (slot 4)
     "ctrma": ("CAM - CTRMA", ctrma, "#1BAF7A"),  # aqua (slot 5)
+    "austin": ("CAM - City of Austin", austin, "#EB6834"),  # orange (slot 6)
 }
 ALL_COLOR = "#4A3AA7"  # violet (validated slot 7; distinct from the org slots)
 
@@ -52,10 +53,10 @@ def load_fixture(key: str):
         return campo.parse_feed(text)
     if key == "capmetro":
         rows = json.loads((ROOT / "fixtures" / "capmetro.json").read_text())
-        events = capmetro.parse_calendar_html(
+        events = capmetro.ADAPTER.parse_calendar_html(
             (ROOT / "fixtures" / "capmetro_calendar.html").read_text()
         )
-        return capmetro.finalize(capmetro.merge_api(events, rows))
+        return capmetro.ADAPTER.finalize(capmetro.ADAPTER.merge_api(events, rows))
     if key == "txdot":
         return txdot.finalize(
             txdot.parse_page((ROOT / "fixtures" / "txdot.html").read_text())
@@ -71,6 +72,21 @@ def load_fixture(key: str):
         return ctrma.finalize(
             ctrma.parse_page((ROOT / "fixtures" / "ctrma_meetings.html").read_text())
         )
+    if key == "austin":
+        council = austin.COUNCIL.finalize(
+            austin.COUNCIL.merge_api(
+                austin.COUNCIL.parse_calendar_html(
+                    (ROOT / "fixtures" / "austin_legistar.html").read_text()
+                ),
+                json.loads((ROOT / "fixtures" / "austin_api.json").read_text()),
+            )
+        )
+        boards = austin.parse_board_page(
+            (ROOT / "fixtures" / "austin_board.html").read_text(),
+            "Planning Commission",
+            "https://www.austintexas.gov/boards-commissions/meetings/40_1",
+        )
+        return council + boards
     raise KeyError(key)
 
 
@@ -102,7 +118,7 @@ def main() -> int:
                 previous_count = len(json.loads(snapshot_path.read_text()))
             except Exception:
                 pass
-        problems = []
+        problems = list(getattr(module, "health_problems", lambda: [])())
         if not events:
             problems.append(f"{key}: 0 events parsed")
         elif previous_count and len(events) < previous_count / 2:

@@ -1,0 +1,29 @@
+[
+ {
+  "EventBodyName": "City Council Work Session",
+  "EventDate": "2026-07-21T00:00:00",
+  "EventTime": "9:00 AM",
+  "EventLocation": "Austin City Hall",
+  "EventAgendaFile": "https://austintexas.legistar.com/View.ashx?M=A&ID=1180003",
+  "EventInSiteURL": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4085&GID=684&G=4BED8896",
+  "EventAgendaStatusName": "Final"
+ },
+ {
+  "EventBodyName": "City Council",
+  "EventDate": "2026-07-23T00:00:00",
+  "EventTime": "10:00 AM",
+  "EventLocation": "Austin City Hall",
+  "EventAgendaFile": "https://austintexas.legistar.com/View.ashx?M=A&ID=1180001",
+  "EventInSiteURL": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4074&GID=684&G=4BED8896",
+  "EventAgendaStatusName": "Final"
+ },
+ {
+  "EventBodyName": "Austin Housing Finance Corporation",
+  "EventDate": "2026-07-23T00:00:00",
+  "EventTime": "10:30 AM",
+  "EventLocation": "Austin City Hall",
+  "EventAgendaFile": "https://austintexas.legistar.com/View.ashx?M=A&ID=1180002",
+  "EventInSiteURL": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4214&GID=684&G=4BED8896",
+  "EventAgendaStatusName": "Final"
+ }
+]
