@@ -9,11 +9,15 @@
 > not rely on these calendars for anything safety-critical, legal-deadline,
 > or financial.
 
-Subscribable `.ics` calendars of Central Texas public meetings (Austin-area
-sources today; statewide bodies on the roadmap), rebuilt daily by GitHub
-Actions from official sources and served by GitHub Pages.
+Subscribable `.ics` calendars of Central Texas public meetings, rebuilt
+daily by GitHub Actions from official sources and served by GitHub Pages.
+The build runs every morning at 6:17 AM Central and on every push.
 
-**v1 sources**
+**Live site: <https://changesaroundme.github.io/calendars/>** — subscribe
+links for every feed, plus a browsable combined calendar at
+[`embed.html`](https://changesaroundme.github.io/calendars/embed.html).
+
+**Sources**
 
 | Source | Adapter type | Where the data comes from |
 |---|---|---|
@@ -24,44 +28,15 @@ Actions from official sources and served by GitHub Pages.
 | CTRMA | HTML scrape | Upcoming-meeting cards on their board-meetings page (date, time, detail link) |
 | City of Austin | Legistar (shared module) + annual PDF + board pages | Council/committees via `austintexas` Legistar; year schedule from the EDIMS PDF; boards & commissions from full-year date lists on austintexas.gov |
 | ATP | ICS ingest | Austin Transit Partnership's published Tribe iCal feed (Board + Community Advisory Committee) |
-| TxDOT Events | HTML tables scrape | Public-involvement pages (UTP): dated events + comment windows; advisory committees (BPAC, PTAC): "\<year\> meeting agendas and materials" tables (all caption-labeled) |
+| TxDOT Events | HTML tables scrape | Public-involvement pages (UTP): dated events + comment windows; advisory committees (BPAC, PTAC) |
+| One-off events | Hand-curated | `events/curated.yaml` — see below |
+| SOS open meetings | *Shadow mode* | UNT mirror of Texas SOS filings, watchlist-filtered and archived to `data/openmeetings.json`; observation only until the enrichment pass ships |
 
 **Outputs** (in `docs/`, served by Pages)
 
 - `campo.ics`, `capmetro.ics`, `txdot.ics`, `lcra.ics`, `ctrma.ics`, `austin.ics`, `atp.ics`, `txdotev.ics` — one calendar per organization
 - `all.ics` — everything combined
-- `index.html` — landing page with subscribe links
-
-## One-time setup
-
-1. Create a new GitHub repository named `calendars` and push this
-   folder to its `main` branch:
-
-   ```sh
-   git remote add origin https://github.com/changesaroundme/calendars.git
-   git push -u origin main
-   ```
-
-2. Enable Pages: **Settings → Pages → Deploy from a branch → `main` /docs**.
-
-3. Kick off the first real build: **Actions → Build calendars → Run
-   workflow**. This replaces the checked-in snapshot calendars with a fresh
-   live fetch. It then runs itself daily at 6:17 AM CDT (5:17 AM CST —
-   Actions cron is fixed UTC). The workflow declares its own
-   `permissions: contents: write`, so no repository settings change is
-   needed for it to commit.
-
-Subscribe URLs will be:
-
-```
-webcal://changesaroundme.github.io/calendars/all.ics
-webcal://changesaroundme.github.io/calendars/campo.ics
-webcal://changesaroundme.github.io/calendars/capmetro.ics
-```
-
-Link those from anywhere (e.g. an Obsidian Publish page). Calendar apps
-re-poll subscriptions on their own schedule — typically every few hours to
-daily, which matches the daily rebuild.
+- `index.html` — landing page with subscribe links; `embed.html` — filterable month/list view for embedding
 
 ## Day-to-day: pushing changes
 
@@ -100,14 +75,17 @@ when a meeting appeared, moved, or was cancelled.
 
 ```
 sources/<org>.py     fetch(session) + fetch_offline() → list[Event]
+sources/curated.py   loads events/curated.yaml into org feeds
+sources/openmeetings.py  SOS filings watcher (shadow mode)
 caltools/model.py    Event dataclass + stable UIDs
 caltools/ics.py      RFC 5545 emitter (folding, escaping, VTIMEZONE)
 build.py             orchestrates, health-checks, writes docs/ + data/
 ```
 
 Every adapter exposes two entry points: `fetch(session)` does the live
-scrape; `fetch_offline()` builds the same output from `fixtures/`, keeping
-each parser's fixture wiring next to the parser it exercises.
+scrape; `fetch_offline()` builds the same output from `fixtures/`
+(point-in-time snapshots of real markup), keeping each parser's fixture
+wiring next to the parser it exercises.
 
 Design notes worth keeping in mind:
 
@@ -115,18 +93,24 @@ Design notes worth keeping in mind:
   + start time, so re-scrapes *update* events in subscribers' calendars
   instead of duplicating them, and two same-day meetings of one body stay
   distinct. Display names (the "CapMetro - " prefix) are applied after the
-  UID is frozen, so renames never change identity. CAMPO events keep CAMPO's
-  own UIDs (their feed is the system of record).
-- **Health checks over silence.** A source yielding zero events, or shrinking
-  more than half versus its last snapshot, turns the Actions run red — but
-  calendars still publish. Scraper breakage should be loud, stale data
-  shouldn't take down what still works.
+  UID is frozen, so renames never change identity. CAMPO and ATP events
+  keep their feeds' own UIDs (those feeds are the system of record).
+- **Health checks over silence.** A source yielding zero events, shrinking
+  more than half versus its last snapshot, or containing no future events
+  turns the Actions run red — but calendars still publish, with `all.ics`
+  backfilled from the last-good snapshot for any source that failed
+  outright. Scraper breakage should be loud; stale data shouldn't take
+  down what still works.
+- **Cancellations.** Marked in titles by some sources ("… - Cancelled"),
+  in a status field by others; adapters strip the marker from the name
+  (identity survives) and set `STATUS:CANCELLED` so capable clients render
+  the event struck-through. Cancelled events are kept, never deleted.
 - **Legistar API lag (observed 2026-07-18).** CapMetro's Web API only lists
   meetings once agendas publish; the Calendar.aspx page shows them earlier.
   Hence the two-layer adapter. Worth rechecking for any future Legistar org.
-- **Cancellations.** CAMPO marks them in the title ("… - Cancelled"); the
-  adapter also sets `STATUS:CANCELLED` so capable clients render them
-  struck-through.
+- **Server markup ≠ DevTools markup (observed 2026-07-26).** TxDOT's CMS
+  builds table captions client-side; fixtures must be captured from a raw
+  same-origin fetch, not the rendered DOM.
 
 ## One-off events (events/curated.yaml)
 
@@ -146,13 +130,11 @@ with a message naming it, while valid entries still publish.
 
 Write `sources/neworg.py` with `fetch(session) -> list[Event]` and a
 `fetch_offline() -> list[Event]` that builds from a checked-in fixture,
-then register the module in `CALENDARS` in `build.py`. Candidate backlog,
-roughly easiest-first: Texas SOS / UNT open-meetings snapshot (covers every
-TX state + regional body), Texas Senate committee hearings (ephemeral page —
-needs faster polling), Austin boards & commissions (static HTML), TxDOT UTP
-comment windows (static HTML; the comment-period table is server-rendered —
-an earlier "JS-rendered" suspicion was a fetch-truncation artifact).
-
-Fixtures under `fixtures/` are point-in-time dev snapshots reconstructed from
-the live sources; the first CI run overwrites all published output with a
-fresh fetch.
+then register the module in `CALENDARS` in `build.py`. Current backlog,
+roughly in order: promote the SOS open-meetings watcher from shadow mode
+to enrichment (times/addresses/agendas/cancellations onto existing
+events), un-park the ERCOT adapter (branch `add-ercot`, awaiting a
+committee filter), Texas Senate committee hearings (ephemeral page —
+needs faster-than-daily polling), PUCT (needs a content filter first),
+Speak Up Austin engagement events, and a custom domain
+(`calendars.changesaroundme.com`) before the URLs spread widely.
