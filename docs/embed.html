@@ -126,7 +126,7 @@ const ORGS = [
   { key: "txdot",    label: "TTC",      match: u => u.startsWith("txdot-") },
   { key: "lcra",     label: "LCRA",     match: u => u.startsWith("lcra-") },
   { key: "ctrma",    label: "CTRMA",    match: u => u.startsWith("ctrma-") },
-  { key: "austin",   label: "Austin",   match: u => u.startsWith("austin-") },
+  { key: "austin",   label: "CoA",      match: u => u.startsWith("austin-") },
   { key: "atp",      label: "ATP",      match: u => u.endsWith("@www.atptx.org") },
 ];
 const hidden = new Set();
@@ -209,17 +209,22 @@ let parsed = [];
 // Inside an iframe, innerWidth IS the container width — decide by it, not
 // the device. Month view needs ~760px to breathe; below that, list.
 const narrow = window.innerWidth < 760;
-const viewParam = { list: "listMonth", month: "dayGridMonth" }[params.get("view")];
+const viewParam = { list: "listUpcoming", month: "dayGridMonth" }[params.get("view")];
 const calendar = new FullCalendar.Calendar(document.getElementById("cal"), {
-  initialView: viewParam || (narrow ? "listMonth" : "dayGridMonth"),
+  views: {
+    // List = rolling 60-day window STARTING TODAY (not the calendar month),
+    // so the embed opens on what's next rather than the month's past events.
+    listUpcoming: { type: "list", duration: { days: 60 } },
+    dayGridMonth: { displayEventTime: false },  // times live in tooltip/list
+  },
+  initialView: viewParam || (narrow ? "listUpcoming" : "dayGridMonth"),
   headerToolbar: { left: "prev,next today", center: "title",
-                   right: "dayGridMonth,listMonth" },
-  buttonText: { today: "today", dayGridMonth: "month", listMonth: "list" },
+                   right: "dayGridMonth,listUpcoming" },
+  buttonText: { today: "today", dayGridMonth: "month", listUpcoming: "list" },
   height: "100%",  // fill the flex slot; list scrolls internally
   dayMaxEventRows: 4,
   displayEventEnd: false,
   eventDisplay: "block",  // chips for timed events too, not default dots
-  views: { dayGridMonth: { displayEventTime: false } },  // times live in tooltip/list
   eventContent: (arg) => {
     // Month cells are tight: drop the org prefix there (color + legend + a
     // tooltip carry identity); list view keeps the full name.
