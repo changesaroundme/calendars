@@ -17,6 +17,7 @@ Source: https://www.lcra.org/about/leadership/board-meeting-schedule/
 """
 from __future__ import annotations
 
+import pathlib
 import re
 from datetime import date, datetime
 
@@ -25,6 +26,7 @@ from bs4 import BeautifulSoup
 from caltools.model import Event
 
 SOURCE = "lcra"
+FIXTURES = pathlib.Path(__file__).resolve().parent.parent / "fixtures"
 SCHEDULE_URL = "https://www.lcra.org/about/leadership/board-meeting-schedule/"
 AGENDAS_URL = "https://www.lcra.org/about/leadership/board-agendas/"
 NOTE = (
@@ -138,3 +140,11 @@ def fetch(session) -> list[Event]:
     resp = session.get(SCHEDULE_URL, timeout=30)
     resp.raise_for_status()
     return finalize(parse_page(resp.text))
+
+
+def fetch_offline() -> list[Event]:
+    """Build from fixtures/ (no network) — the --offline contract."""
+    # Fixture captured in 2026; pin the year so the fixture stays stable.
+    return finalize(
+        parse_page((FIXTURES / "lcra_schedule.html").read_text(), default_year=2026)
+    )

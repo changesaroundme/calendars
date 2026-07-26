@@ -87,6 +87,11 @@ python build.py --offline   # build from fixtures/, no network
 python build.py             # live fetch (from your machine)
 ```
 
+An `--offline` build writes to `dist-offline/` (gitignored) and never
+touches the published `docs/` or the `data/` health baselines — so a dev
+run can't accidentally commit fixture data over the live calendars. CI
+runs the offline build after every publish as a parser-regression check.
+
 `data/*.json` are normalized snapshots committed on every build, so `git log`
 doubles as a change history of the underlying schedules — you can see exactly
 when a meeting appeared, moved, or was cancelled.
@@ -94,11 +99,15 @@ when a meeting appeared, moved, or was cancelled.
 ## How it works
 
 ```
-sources/<org>.py     fetch() → list[Event]        (one adapter per org)
+sources/<org>.py     fetch(session) + fetch_offline() → list[Event]
 caltools/model.py    Event dataclass + stable UIDs
 caltools/ics.py      RFC 5545 emitter (folding, escaping, VTIMEZONE)
 build.py             orchestrates, health-checks, writes docs/ + data/
 ```
+
+Every adapter exposes two entry points: `fetch(session)` does the live
+scrape; `fetch_offline()` builds the same output from `fixtures/`, keeping
+each parser's fixture wiring next to the parser it exercises.
 
 Design notes worth keeping in mind:
 
@@ -121,8 +130,9 @@ Design notes worth keeping in mind:
 
 ## Adding a source
 
-Write `sources/neworg.py` with a `fetch(session) -> list[Event]`, register it
-in `CALENDARS` in `build.py`, add a fixture if practical. Candidate backlog,
+Write `sources/neworg.py` with `fetch(session) -> list[Event]` and a
+`fetch_offline() -> list[Event]` that builds from a checked-in fixture,
+then register the module in `CALENDARS` in `build.py`. Candidate backlog,
 roughly easiest-first: Texas SOS / UNT open-meetings snapshot (covers every
 TX state + regional body), Texas Senate committee hearings (ephemeral page —
 needs faster polling), Austin boards & commissions (static HTML), TxDOT UTP

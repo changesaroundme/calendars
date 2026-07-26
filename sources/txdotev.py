@@ -31,6 +31,7 @@ year fills it in.
 """
 from __future__ import annotations
 
+import pathlib
 import re
 from datetime import date, datetime, timedelta
 
@@ -309,4 +310,27 @@ def fetch(session) -> list[Event]:
         resp = session.get(url, timeout=30)
         resp.raise_for_status()
         events.extend(parse_committee_page(resp.text, abbrev, name, url))
+    return events
+
+
+FIXTURES = pathlib.Path(__file__).resolve().parent.parent / "fixtures"
+# Committee fixtures were captured in 2026; pin min_year so they stay stable.
+FIXTURE_MIN_YEAR = 2026
+
+
+def fetch_offline() -> list[Event]:
+    """Build from fixtures/ (no network) — the --offline contract."""
+    _problems.clear()
+    events = parse_page(
+        (FIXTURES / "txdotev_utp.html").read_text(),
+        "UTP",
+        "https://www.txdot.gov/projects/planning/utp/utp-public-involvement.html",
+    )
+    for abbrev, name, url in COMMITTEES:
+        events.extend(
+            parse_committee_page(
+                (FIXTURES / f"txdotev_{abbrev.lower()}.html").read_text(),
+                abbrev, name, url, min_year=FIXTURE_MIN_YEAR,
+            )
+        )
     return events

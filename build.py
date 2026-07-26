@@ -3,11 +3,17 @@
 
 Usage:
   python build.py             # live fetch (normal mode; what CI runs)
-  python build.py --offline   # build from fixtures/ (no network; for dev)
+  python build.py --offline   # build from fixtures/ (no network; for dev
+                              # and the CI parser-regression check)
 
-Outputs land in docs/ (served by GitHub Pages) plus JSON snapshots in data/
-so every change to the underlying schedules shows up in git history as a
-readable diff.
+Live outputs land in docs/ (served by GitHub Pages) plus JSON snapshots in
+data/ so every change to the underlying schedules shows up in git history
+as a readable diff. Offline outputs land in dist-offline/ (gitignored) —
+an offline run NEVER touches the published docs/ or the data/ baselines,
+so a dev build can't accidentally ship fixture data to subscribers.
+
+Each source module implements fetch(session) for live and fetch_offline()
+for fixture builds; the fixture wiring lives with the parser it exercises.
 
 Health checks: a source that yields zero events, or that shrinks by more
 than half versus its last snapshot, marks the build unhealthy (exit 1) —
@@ -52,69 +58,6 @@ USER_AGENT = (
 )
 
 
-def load_fixture(key: str):
-    if key == "campo":
-        text = (ROOT / "fixtures" / "campo.ics").read_text()
-        return campo.parse_feed(text)
-    if key == "atp":
-        return atp.parse_feed((ROOT / "fixtures" / "atp.ics").read_bytes())
-    if key == "txdotev":
-        events = txdotev.parse_page(
-            (ROOT / "fixtures" / "txdotev_utp.html").read_text(),
-            "UTP",
-            "https://www.txdot.gov/projects/planning/utp/utp-public-involvement.html",
-        )
-        for abbrev, name, url in txdotev.COMMITTEES:
-            fixture = ROOT / "fixtures" / f"txdotev_{abbrev.lower()}.html"
-            events.extend(
-                txdotev.parse_committee_page(
-                    fixture.read_text(), abbrev, name, url, min_year=2026
-                )
-            )
-        return events
-    if key == "capmetro":
-        rows = json.loads((ROOT / "fixtures" / "capmetro.json").read_text())
-        events = capmetro.ADAPTER.parse_calendar_html(
-            (ROOT / "fixtures" / "capmetro_calendar.html").read_text()
-        )
-        return capmetro.ADAPTER.finalize(capmetro.ADAPTER.merge_api(events, rows))
-    if key == "txdot":
-        return txdot.finalize(
-            txdot.parse_page((ROOT / "fixtures" / "txdot.html").read_text())
-        )
-    if key == "lcra":
-        return lcra.finalize(
-            lcra.parse_page(
-                (ROOT / "fixtures" / "lcra_schedule.html").read_text(),
-                default_year=2026,
-            )
-        )
-    if key == "ctrma":
-        return ctrma.finalize(
-            ctrma.parse_page((ROOT / "fixtures" / "ctrma_meetings.html").read_text())
-        )
-    if key == "austin":
-        council = austin.COUNCIL.finalize(
-            austin.COUNCIL.merge_api(
-                austin.COUNCIL.parse_calendar_html(
-                    (ROOT / "fixtures" / "austin_legistar.html").read_text()
-                ),
-                json.loads((ROOT / "fixtures" / "austin_api.json").read_text()),
-            )
-        )
-        boards = austin.parse_board_page(
-            (ROOT / "fixtures" / "austin_board.html").read_text(),
-            "Planning Commission",
-            "https://www.austintexas.gov/boards-commissions/meetings/40_1",
-            # no fallbacks: exercises the Meeting Details auto-extraction
-        )
-        records = austin.parse_council_pdf(austin.ANNUAL_PDF_FIXTURE.read_bytes())
-        council = austin.apply_budget_flags(council, records)
-        annual = austin.annual_council_events(records, council)
-        return council + annual + boards
-    raise KeyError(key)
-
-
 def snapshot_events(path: pathlib.Path) -> list[Event]:
     """Last-good events from a data/*.json snapshot, or [] if unreadable."""
     try:
@@ -142,18 +85,20 @@ def main() -> int:
     session = requests.Session()
     session.headers["User-Agent"] = USER_AGENT
 
-    DOCS.mkdir(exist_ok=True)
-    DATA.mkdir(exist_ok=True)
+    docs = (ROOT / "dist-offline" / "docs") if offline else DOCS
+    data = (ROOT / "dist-offline" / "data") if offline else DATA
+    docs.mkdir(parents=True, exist_ok=True)
+    data.mkdir(parents=True, exist_ok=True)
 
     unhealthy: list[str] = []
     all_events = []
 
-    today = datetime.now(timezone.utc).date()
+    today = now.date()
 
     for key, (calname, module, color) in CALENDARS.items():
-        snapshot_path = DATA / f"{key}.json"
+        snapshot_path = data / f"{key}.json"
         try:
-            events = load_fixture(key) if offline else module.fetch(session)
+            events = module.fetch_offline() if offline else module.fetch(session)
         except Exception as exc:
             print(f"[{key}] ERROR: fetch failed: {exc}")
             unhealthy.append(f"{key}: fetch failed ({exc})")
@@ -183,7 +128,9 @@ def main() -> int:
                 )
             # Catches the "count looks fine but everything is past" class:
             # stale annual PDFs, prior-year tables, default-year drift.
-            if not has_future_events(events, today):
+            # Live-only: fixtures are point-in-time snapshots whose dates
+            # age past naturally, and that's not a parser regression.
+            if not offline and not has_future_events(events, today):
                 problems.append(
                     f"{key}: no future events (all {len(events)} are in the past)"
                 )
@@ -192,7 +139,7 @@ def main() -> int:
         # --- write outputs ---
         if events:
             # Always publish what we got (stale beats absent)...
-            (DOCS / f"{key}.ics").write_text(
+            (docs / f"{key}.ics").write_text(
                 emit(events, calname, now, color=color), newline=""
             )
             all_events.extend(events)
@@ -215,7 +162,7 @@ def main() -> int:
         print(f"[{key}] {len(events)} events")
 
     if all_events:
-        (DOCS / "all.ics").write_text(
+        (docs / "all.ics").write_text(
             emit(all_events, "CAM - All", now, color=ALL_COLOR), newline=""
         )
         print(f"[all] {len(all_events)} events")

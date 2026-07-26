@@ -396,3 +396,33 @@ def fetch(session) -> list[Event]:
         _problems.append(f"austin: annual council schedule failed: {exc}")
         annual = []
     return council + annual + fetch_boards(session)
+
+
+def fetch_offline() -> list[Event]:
+    """Build from fixtures/ (no network) — the --offline contract.
+
+    Mirrors fetch(): Legistar page+API merge, budget flags + annual
+    placeholders from the checked-in PDF, then one board page (with no
+    typical-time fallbacks, so the Meeting Details auto-extraction is
+    exercised).
+    """
+    import json
+
+    fixtures = ANNUAL_PDF_FIXTURE.parent
+    council = COUNCIL.finalize(
+        COUNCIL.merge_api(
+            COUNCIL.parse_calendar_html(
+                (fixtures / "austin_legistar.html").read_text()
+            ),
+            json.loads((fixtures / "austin_api.json").read_text()),
+        )
+    )
+    records = parse_council_pdf(ANNUAL_PDF_FIXTURE.read_bytes())
+    council = apply_budget_flags(council, records)
+    annual = annual_council_events(records, council)
+    boards = parse_board_page(
+        (fixtures / "austin_board.html").read_text(),
+        "Planning Commission",
+        "https://www.austintexas.gov/boards-commissions/meetings/40_1",
+    )
+    return council + annual + boards

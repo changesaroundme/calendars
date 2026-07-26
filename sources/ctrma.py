@@ -19,6 +19,7 @@ year-end), not /board-meetings/, which only teases the next two meetings.
 """
 from __future__ import annotations
 
+import pathlib
 from datetime import datetime, timedelta
 
 from bs4 import BeautifulSoup
@@ -27,6 +28,7 @@ from caltools.model import Event
 from sources.legistar import CANCEL_RE, NAME_SUFFIX_RE
 
 SOURCE = "ctrma"
+FIXTURES = pathlib.Path(__file__).resolve().parent.parent / "fixtures"
 PAGE_URL = "https://www.mobilityauthority.com/board-meetings/upcoming/"
 LOCATION = "3300 N. IH 35, Suite 300, Austin, TX 78705"
 MEETING_LENGTH = timedelta(hours=2)
@@ -95,3 +97,8 @@ def fetch(session) -> list[Event]:
     resp = session.get(PAGE_URL, timeout=30)
     resp.raise_for_status()
     return finalize(parse_page(resp.text))
+
+
+def fetch_offline() -> list[Event]:
+    """Build from fixtures/ (no network) — the --offline contract."""
+    return finalize(parse_page((FIXTURES / "ctrma_meetings.html").read_text()))

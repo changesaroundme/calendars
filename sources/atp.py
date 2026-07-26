@@ -6,13 +6,14 @@ other events they post). We re-ingest it, keep their UIDs (their feed is the
 system of record), and prefix the display names.
 
 Note (observed 2026-07-25): the feed listed only CAC meetings — the board
-meets "third Wednesday, but not every month" per [[Organizations]], so board
+meets "third Wednesday, but not every month" per [[Organiations]], so board
 entries appear whenever ATP schedules one; nothing extra to do here.
 
 Source: https://www.atptx.org/?post_type=tribe_events&ical=1&eventDisplay=list
 """
 from __future__ import annotations
 
+import pathlib
 from icalendar import Calendar
 
 from caltools.model import Event
@@ -20,6 +21,7 @@ from sources.legistar import CANCEL_RE
 
 FEED_URL = "https://www.atptx.org/?post_type=tribe_events&ical=1&eventDisplay=list"
 SOURCE = "atp"
+FIXTURES = pathlib.Path(__file__).resolve().parent.parent / "fixtures"
 DEFAULT_LOCATION = "ATP Office, 203 Colorado St, Austin, TX 78701"
 
 
@@ -53,3 +55,8 @@ def fetch(session) -> list[Event]:
     resp.raise_for_status()
     # Bytes, not resp.text: avoids charset-guess mojibake.
     return parse_feed(resp.content)
+
+
+def fetch_offline() -> list[Event]:
+    """Build from fixtures/ (no network) — the --offline contract."""
+    return parse_feed((FIXTURES / "atp.ics").read_bytes())

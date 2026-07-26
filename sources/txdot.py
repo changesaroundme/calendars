@@ -10,6 +10,7 @@ far longer lead time, which is the point of the calendar.
 """
 from __future__ import annotations
 
+import pathlib
 import re
 from datetime import datetime, timedelta
 
@@ -18,6 +19,7 @@ from bs4 import BeautifulSoup
 from caltools.model import Event
 
 SOURCE = "txdot"
+FIXTURES = pathlib.Path(__file__).resolve().parent.parent / "fixtures"
 PAGE_URL = (
     "https://www.txdot.gov/about/leadership/"
     "texas-transportation-commission/meeting-dates-agendas.html"
@@ -114,3 +116,8 @@ def fetch(session) -> list[Event]:
     resp = session.get(PAGE_URL, timeout=30)
     resp.raise_for_status()
     return finalize(parse_page(resp.text))
+
+
+def fetch_offline() -> list[Event]:
+    """Build from fixtures/ (no network) — the --offline contract."""
+    return finalize(parse_page((FIXTURES / "txdot.html").read_text()))

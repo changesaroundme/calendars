@@ -8,6 +8,7 @@ Source: https://www.campotexas.org/?post_type=tribe_events&ical=1&eventDisplay=l
 """
 from __future__ import annotations
 
+import pathlib
 import re
 
 from icalendar import Calendar
@@ -16,6 +17,7 @@ from caltools.model import Event
 
 FEED_URL = "https://www.campotexas.org/?post_type=tribe_events&ical=1&eventDisplay=list"
 SOURCE = "campo"
+FIXTURES = pathlib.Path(__file__).resolve().parent.parent / "fixtures"
 
 # CAMPO marks cancellations in the title ("... - Cancelled") rather than with
 # STATUS; translate to a real STATUS while keeping their title text intact.
@@ -64,3 +66,8 @@ def fetch(session) -> list[Event]:
     # Bytes, not resp.text: requests guesses ISO-8859-1 when the server omits
     # a charset, which would mojibake UTF-8; icalendar handles bytes cleanly.
     return parse_feed(resp.content)
+
+
+def fetch_offline() -> list[Event]:
+    """Build from fixtures/ (no network) — the --offline contract."""
+    return parse_feed((FIXTURES / "campo.ics").read_text())
