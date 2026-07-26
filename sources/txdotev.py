@@ -104,6 +104,21 @@ def _table_caption(table) -> str:
     return ""
 
 
+def _fmt_date(d: date) -> str:
+    """House date style: `3 Aug 2026` (day, month abbreviation, 4-digit year)."""
+    return d.strftime("%-d %b %Y")
+
+
+def _fmt_deadline(t, end: date, cell_text: str) -> str:
+    """`4pm CDT 3 Aug 2026` — time (if posted) + zone + house-style date."""
+    if not t:
+        return _fmt_date(end)
+    h12 = t[0] % 12 or 12
+    minutes = f":{t[1]:02d}" if t[1] else ""
+    zone = m.group(0) if (m := re.search(r"\bC[DS]T\b", cell_text)) else "CT"
+    return f"{h12}{minutes}{'pm' if t[0] >= 12 else 'am'} {zone} {_fmt_date(end)}"
+
+
 def _kind_of(topic: str) -> str:
     low = topic.lower()
     if "hearing" in low:
@@ -130,19 +145,17 @@ def parse_page(html: str, context: str, page_url: str) -> list[Event]:
                 if not (start and end):
                     continue
                 t = _time_of(cells[1])
-                deadline = (f"{end.strftime('%b %-d')}, "
-                            f"{t[0] % 12 or 12}:{t[1]:02d} "
-                            f"{'p.m.' if t[0] >= 12 else 'a.m.'}") if t else end.strftime("%b %-d")
                 events.append(
                     Event(
                         source=SOURCE,
-                        summary=f"TxDOT - {cap} (closes {deadline})",
+                        summary=f"TxDOT - {cap}",
                         start=start,
                         end=end + timedelta(days=1),  # DTEND exclusive
                         url=page_url,
                         kind="comment-window",
                         description=(
-                            f"Public comment window: {cells[0]} through {cells[1]}. "
+                            f"Public comment window: {_fmt_date(start)} through "
+                            f"{_fmt_deadline(t, end, cells[1])}\n\n"
                             f"Details and how to comment: {page_url}"
                         ),
                         uid=(f"{SOURCE}-{slugify(cap)}-{start.strftime('%Y%m%d')}"

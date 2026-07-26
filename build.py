@@ -32,7 +32,7 @@ import requests
 from caltools.ics import emit
 from caltools.model import Event
 from sources import (atp, austin, campo, capmetro, ctrma, curated, lcra,
-                     txdot, txdotev)
+                     openmeetings, txdot, txdotev)
 
 ROOT = pathlib.Path(__file__).parent
 DOCS = ROOT / "docs"
@@ -93,6 +93,7 @@ def main() -> int:
 
     unhealthy: list[str] = []
     all_events = []
+    events_by_key: dict[str, list[Event]] = {}
 
     today = now.date()
 
@@ -105,6 +106,7 @@ def main() -> int:
         try:
             events = module.fetch_offline() if offline else module.fetch(session)
             events = events + curated.events_for(key)
+            events_by_key[key] = events
         except Exception as exc:
             print(f"[{key}] ERROR: fetch failed: {exc}")
             unhealthy.append(f"{key}: fetch failed ({exc})")
@@ -172,6 +174,14 @@ def main() -> int:
             emit(all_events, "CAM - All", now, color=ALL_COLOR), newline=""
         )
         print(f"[all] {len(all_events)} events")
+
+    # --- SOS open-meetings, SHADOW MODE: archive + log, never publish. ---
+    # Non-fatal during observation; promote to a health check when the
+    # enrichment pass ships.
+    try:
+        openmeetings.shadow(session, data, offline, events_by_key)
+    except Exception as exc:
+        print(f"[openmeetings] shadow error (non-fatal during observation): {exc}")
 
     if unhealthy:
         print("BUILD UNHEALTHY:\n  - " + "\n  - ".join(unhealthy))
