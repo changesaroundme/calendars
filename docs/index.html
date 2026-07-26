@@ -34,12 +34,14 @@ on these calendars for anything safety-critical, legal-deadline, or
 financial.</footer>
 
 <script>
-  // Host-independent links (survives a future custom-domain move).
+  // Host-independent link (survives a future custom-domain move). No
+  // download link on purpose: a downloaded .ics is a frozen snapshot that
+  // silently goes stale — subscribing is the point.
   const base = location.href.replace(/[^/]*$/, "");
   const webcal = (base + "all.ics").replace(/^https?:/, "webcal:");
   document.getElementById("quick").innerHTML =
     `Quick subscribe to everything: <a class="button" href="${webcal}">&#128197; ` +
-    `Subscribe to the combined feed</a> <a class="button" href="${base}all.ics" download>&#11015;&#65039; Download</a>`;
+    `Subscribe to the combined feed</a>`;
 </script>
 </body>
 </html>
