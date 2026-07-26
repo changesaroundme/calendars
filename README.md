@@ -13,8 +13,10 @@ Subscribable `.ics` calendars of Central Texas public meetings, rebuilt
 daily by GitHub Actions from official sources and served by GitHub Pages.
 The build runs every morning at 6:17 AM Central and on every push.
 
-**Live site: <https://changesaroundme.github.io/calendars/>** — subscribe
-links for every feed, plus a browsable combined calendar at
+**Subscribe: <https://changesaroundme.com/calendar>** — the canonical feed
+directory. The data itself is served from
+<https://changesaroundme.github.io/calendars/>, including the browsable
+combined calendar at
 [`embed.html`](https://changesaroundme.github.io/calendars/embed.html).
 
 **Sources**
@@ -36,7 +38,7 @@ links for every feed, plus a browsable combined calendar at
 
 - `campo.ics`, `capmetro.ics`, `txdot.ics`, `lcra.ics`, `ctrma.ics`, `austin.ics`, `atp.ics`, `txdotev.ics` — one calendar per organization
 - `all.ics` — everything combined
-- `index.html` — landing page with subscribe links; `embed.html` — filterable month/list view for embedding
+- `index.html` — stub pointing to the canonical directory on changesaroundme.com; `embed.html` — filterable month/list view for embedding
 
 ## Day-to-day: pushing changes
 

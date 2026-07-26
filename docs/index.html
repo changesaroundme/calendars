@@ -9,75 +9,21 @@
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
          max-width: 42rem; margin: 3rem auto; padding: 0 1.25rem; line-height: 1.55; }
   h1 { font-size: 1.5rem; }
-  .cal { border: 1px solid color-mix(in srgb, currentColor 25%, transparent);
-         border-radius: 10px; padding: 1rem 1.25rem; margin: 1rem 0; }
-  .cal h2 { margin: 0 0 .25rem; font-size: 1.1rem; }
-  .cal p { margin: .25rem 0 .6rem; opacity: .8; font-size: .92rem; }
-  a.button { display: inline-block; margin-right: .75rem; font-size: .92rem; }
+  a.button { display: inline-block; margin-right: .75rem; }
   footer { margin-top: 2rem; font-size: .85rem; opacity: .7; }
 </style>
 </head>
 <body>
 <h1>Central Texas Public Meeting Calendars</h1>
-<p style="margin-top:-0.5em; color: color-mix(in srgb, currentColor 65%, transparent);">
-A <a href="https://changesaroundme.com" style="color:inherit;">Changes Around Me</a> project.</p>
 <p>Subscribable calendars of Central Texas public meetings, rebuilt daily
-from official sources. "Subscribe" adds a live feed to your calendar app; "Download"
-grabs a one-time snapshot.</p>
-<p><small>Tip: in Apple Calendar, set the subscription's <b>Auto-refresh</b>
-to "Every day" (the default is weekly) so schedule changes reach you
-promptly. Google Calendar refreshes on its own schedule, roughly daily.</small></p>
+from official sources. This is the data host — the full directory of
+per-organization feeds, with descriptions and subscribe links, lives at
+<b><a href="https://changesaroundme.com/calendar">changesaroundme.com/calendar</a></b>.</p>
+
 <p><b><a href="./embed.html">&#128197; Browse the combined calendar</a></b> —
 month and list views, filterable by organization.</p>
 
-<div id="calendars">
-  <div class="cal" data-file="all.ics">
-    <h2>Everything (combined)</h2>
-    <p>All organizations below, in one feed.</p>
-  </div>
-  <div class="cal" data-file="campo.ics">
-    <h2>CAMPO</h2>
-    <p>Capital Area MPO — Transportation Policy Board and Technical Advisory
-    Committee. Mirrored from CAMPO's own published feed.</p>
-  </div>
-  <div class="cal" data-file="capmetro.ics">
-    <h2>CapMetro</h2>
-    <p>Board of Directors and committees, from CapMetro's Legistar calendar
-    and API.</p>
-  </div>
-  <div class="cal" data-file="txdot.ics">
-    <h2>TTC (Texas Transportation Commission)</h2>
-    <p>The commission overseeing TxDOT, from its published schedule —
-    dates post a year ahead; agenda links appear ~8 days out.</p>
-  </div>
-  <div class="cal" data-file="lcra.ics">
-    <h2>LCRA</h2>
-    <p>LCRA Board, committees, and Transmission Services Corp. — all-day
-    entries from their annual schedule; exact times post with agendas.</p>
-  </div>
-  <div class="cal" data-file="ctrma.ics">
-    <h2>CTRMA</h2>
-    <p>Central Texas Regional Mobility Authority board meetings, from their
-    upcoming-meetings page.</p>
-  </div>
-  <div class="cal" data-file="austin.ics">
-    <h2>City of Austin</h2>
-    <p>City Council and committees (timed, with agendas, ~weeks ahead) plus
-    tracked boards &amp; commissions (full-year dates; times post with
-    agendas).</p>
-  </div>
-  <div class="cal" data-file="atp.ics">
-    <h2>ATP</h2>
-    <p>Austin Transit Partnership — Board and Community Advisory Committee,
-    mirrored from ATP's own published feed.</p>
-  </div>
-  <div class="cal" data-file="txdotev.ics">
-    <h2>TxDOT Events</h2>
-    <p>TxDOT beyond the commission: public involvement events and comment
-    windows from planning pages (currently the UTP), plus advisory-committee
-    meetings (Bicycle &amp; Pedestrian, Public Transportation).</p>
-  </div>
-</div>
+<p id="quick"></p>
 
 <footer>A <a href="https://changesaroundme.com">Changes Around Me</a> project
 (<a href="https://github.com/changesaroundme/calendars">source</a>), built
@@ -88,17 +34,12 @@ on these calendars for anything safety-critical, legal-deadline, or
 financial.</footer>
 
 <script>
-  // Build absolute subscribe/download links for wherever this page is hosted,
-  // so nothing here hard-codes a username or repo name.
+  // Host-independent links (survives a future custom-domain move).
   const base = location.href.replace(/[^/]*$/, "");
-  document.querySelectorAll(".cal").forEach(el => {
-    const file = el.dataset.file;
-    const https = base + file;
-    const webcal = https.replace(/^https?:/, "webcal:");
-    el.insertAdjacentHTML("beforeend",
-      `<a class="button" href="${webcal}">&#128197; Subscribe</a>` +
-      `<a class="button" href="${https}" download>&#11015;&#65039; Download</a>`);
-  });
+  const webcal = (base + "all.ics").replace(/^https?:/, "webcal:");
+  document.getElementById("quick").innerHTML =
+    `Quick subscribe to everything: <a class="button" href="${webcal}">&#128197; ` +
+    `Subscribe to the combined feed</a> <a class="button" href="${base}all.ics" download>&#11015;&#65039; Download</a>`;
 </script>
 </body>
 </html>
