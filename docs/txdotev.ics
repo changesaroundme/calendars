@@ -1,0 +1,190 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//changesaroundme//calendars//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CAM - TxDOT Events
+X-WR-TIMEZONE:America/Chicago
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+X-APPLE-CALENDAR-COLOR:#E34948
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:txdotev-public-transportation-advisory-committee-20260122T1000@calendar
+ s.changesaroundme.com
+DTSTAMP:20260726T173621Z
+DTSTART;TZID=America/Chicago:20260122T100000
+DTEND;TZID=America/Chicago:20260122T120000
+SUMMARY:TxDOT PTAC - Meeting
+LOCATION:TxDOT Stassney Campus Auditorium\, 6230 E. Stassney Ln.\, Austin\,
+  TX 78744 (Teams option available)
+URL:https://www.txdot.gov/about/advisory-committees/public-transportation-a
+ dvisory-committee.html
+DESCRIPTION:Posted location: Hybrid 6230 E Stassney Lane\, Austin\, TX 7874
+ 4
+CATEGORIES:regular
+END:VEVENT
+BEGIN:VEVENT
+UID:txdotev-bicycle-and-pedestrian-advisory-committee-20260130T0930@calenda
+ rs.changesaroundme.com
+DTSTAMP:20260726T173621Z
+DTSTART;TZID=America/Chicago:20260130T093000
+DTEND;TZID=America/Chicago:20260130T113000
+SUMMARY:TxDOT BPAC - Meeting
+LOCATION:Virtual (Teams)
+URL:https://www.txdot.gov/about/advisory-committees/bicycle-pedestrian-advi
+ sory-committee.html
+DESCRIPTION:Posted location: Teams virtual meeting has surpassed\nJan 30\, 
+ 2026 Agenda: https://www.txdot.gov/content/dam/docs/division/ptn/bpac/2026
+ /0130/bpac-013026-agenda.docx
+CATEGORIES:regular
+END:VEVENT
+BEGIN:VEVENT
+UID:txdotev-public-transportation-advisory-committee-20260209T1000@calendar
+ s.changesaroundme.com
+DTSTAMP:20260726T173621Z
+DTSTART;TZID=America/Chicago:20260209T100000
+DTEND;TZID=America/Chicago:20260209T120000
+SUMMARY:TxDOT PTAC - Meeting
+LOCATION:Virtual (Teams)
+URL:https://www.txdot.gov/about/advisory-committees/public-transportation-a
+ dvisory-committee.html
+DESCRIPTION:Posted location: Virtual\nFeb. 9\, 2026 agenda: https://www.txd
+ ot.gov/content/dam/docs/division/ptn/ptac/2026/ptac-agenda-2-9-26.pdf\nFeb
+ . 9\, 2026 handouts: https://www.txdot.gov/content/dam/docs/division/ptn/p
+ tac/2026/ptac-packet-2-9-26.pdf
+CATEGORIES:regular
+END:VEVENT
+BEGIN:VEVENT
+UID:txdotev-bicycle-and-pedestrian-advisory-committee-20260424T0930@calenda
+ rs.changesaroundme.com
+DTSTAMP:20260726T173621Z
+DTSTART;TZID=America/Chicago:20260424T093000
+DTEND;TZID=America/Chicago:20260424T113000
+SUMMARY:TxDOT BPAC - Meeting
+LOCATION:TxDOT Stassney Campus Auditorium\, 6230 E. Stassney Ln.\, Austin\,
+  TX 78744 (Teams option available)
+URL:https://www.txdot.gov/about/advisory-committees/bicycle-pedestrian-advi
+ sory-committee.html
+DESCRIPTION:Posted location: 6230 E. Stassney Lane\, Austin\, Tx Auditorium
+ \, Teams virtual meeting\nTeams virtual meeting: https://teams.microsoft.c
+ om/meet/21585295196693?p=96XDjoKGlYwRnq8RLx\nApril 24\, 2026\, Agenda: htt
+ ps://www.txdot.gov/content/dam/docs/division/ptn/bpac/2026/bpac-0424-agend
+ a.docx
+CATEGORIES:regular
+END:VEVENT
+BEGIN:VEVENT
+UID:txdotev-public-transportation-advisory-committee-20260506T1000@calendar
+ s.changesaroundme.com
+DTSTAMP:20260726T173621Z
+DTSTART;TZID=America/Chicago:20260506T100000
+DTEND;TZID=America/Chicago:20260506T120000
+SUMMARY:TxDOT PTAC - Meeting
+LOCATION:TxDOT Stassney Campus Auditorium\, 6230 E. Stassney Ln.\, Austin\,
+  TX 78744 (Teams option available)
+URL:https://www.txdot.gov/about/advisory-committees/public-transportation-a
+ dvisory-committee.html
+DESCRIPTION:Posted location: Hybrid 6230 E Stassney Lane\, Austin\, TX 7874
+ 4 Virtual\nVirtual: https://teams.microsoft.com/meet/29870380635343?p=vjef
+ A51QvOXODSu3jz
+CATEGORIES:regular
+END:VEVENT
+BEGIN:VEVENT
+UID:txdotev-utp-virtual-public-meeting-20260701@calendars.changesaroundme.c
+ om
+DTSTAMP:20260726T173621Z
+DTSTART;TZID=America/Chicago:20260701T140000
+DTEND;TZID=America/Chicago:20260701T160000
+SUMMARY:TxDOT - UTP: Virtual public meeting
+URL:https://www.txdot.gov/projects/planning/utp/utp-public-involvement.html
+DESCRIPTION:Public Meeting Presentation: https://ftp.txdot.gov/pub/txdot/ge
+ t-involved/tpp/utp/07012026-utp2027-july-public-meeting.pptx\nPublic Meeti
+ ng Recording: https://onlinexperiences.com/scripts/Server.nxp?LASCmd=AI:4\
+ ;F:QS!10100&ShowUUID=B528BCFA-EB93-4D47-91B5-AF15D4A5848D
+CATEGORIES:engagement
+END:VEVENT
+BEGIN:VEVENT
+UID:txdotev-draft-2027-utp-comment-period-20260703@calendars.changesaroundm
+ e.com
+DTSTAMP:20260726T173621Z
+DTSTART;VALUE=DATE:20260703
+DTEND;VALUE=DATE:20260804
+SUMMARY:TxDOT - Draft 2027 UTP comment period (closes Aug 3\, 4:00 p.m.)
+URL:https://www.txdot.gov/projects/planning/utp/utp-public-involvement.html
+DESCRIPTION:Public comment window: July 3\, 2026 through August 3\, 2026 at
+  4 p.m. CDT. Details and how to comment: https://www.txdot.gov/projects/pl
+ anning/utp/utp-public-involvement.html
+CATEGORIES:comment-window
+END:VEVENT
+BEGIN:VEVENT
+UID:txdotev-utp-virtual-public-hearing-20260729@calendars.changesaroundme.c
+ om
+DTSTAMP:20260726T173621Z
+DTSTART;TZID=America/Chicago:20260729T140000
+DTEND;TZID=America/Chicago:20260729T160000
+SUMMARY:TxDOT - UTP: Virtual public hearing
+URL:https://www.txdot.gov/projects/planning/utp/utp-public-involvement.html
+DESCRIPTION:Watch the Livestream HERE: https://onlinexperiences.com/scripts
+ /Server.nxp?LASCmd=AI:4\;F:QS!10100&ShowUUID=ACB265E4-C066-4B8A-AA1A-75662
+ 88A30EB
+CATEGORIES:hearing
+END:VEVENT
+BEGIN:VEVENT
+UID:txdotev-bicycle-and-pedestrian-advisory-committee-20260731T0930@calenda
+ rs.changesaroundme.com
+DTSTAMP:20260726T173621Z
+DTSTART;TZID=America/Chicago:20260731T093000
+DTEND;TZID=America/Chicago:20260731T113000
+SUMMARY:TxDOT BPAC - Meeting
+LOCATION:Virtual (Teams)
+URL:https://www.txdot.gov/about/advisory-committees/bicycle-pedestrian-advi
+ sory-committee.html
+DESCRIPTION:Posted location: Teams virtual link will be provided
+CATEGORIES:regular
+END:VEVENT
+BEGIN:VEVENT
+UID:txdotev-public-transportation-advisory-committee-20260813T1000@calendar
+ s.changesaroundme.com
+DTSTAMP:20260726T173621Z
+DTSTART;TZID=America/Chicago:20260813T100000
+DTEND;TZID=America/Chicago:20260813T120000
+SUMMARY:TxDOT PTAC - Meeting
+LOCATION:TxDOT Stassney Campus Auditorium\, 6230 E. Stassney Ln.\, Austin\,
+  TX 78744 (Teams option available)
+URL:https://www.txdot.gov/about/advisory-committees/public-transportation-a
+ dvisory-committee.html
+DESCRIPTION:Posted location: Hybrid 6230 E Stassney Lane\, Austin\, TX 7874
+ 4 Virtual
+CATEGORIES:regular
+END:VEVENT
+BEGIN:VEVENT
+UID:txdotev-bicycle-and-pedestrian-advisory-committee-20261106T0930@calenda
+ rs.changesaroundme.com
+DTSTAMP:20260726T173621Z
+DTSTART;TZID=America/Chicago:20261106T093000
+DTEND;TZID=America/Chicago:20261106T113000
+SUMMARY:TxDOT BPAC - Meeting
+LOCATION:TxDOT Stassney Campus Auditorium\, 6230 E. Stassney Ln.\, Austin\,
+  TX 78744
+URL:https://www.txdot.gov/about/advisory-committees/bicycle-pedestrian-advi
+ sory-committee.html
+DESCRIPTION:Posted location: 6230 E. Stassney Lane Austin\, TX Auditorium
+CATEGORIES:regular
+END:VEVENT
+END:VCALENDAR
