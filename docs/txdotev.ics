@@ -28,7 +28,7 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:txdotev-public-transportation-advisory-committee-20260122T1000@calendar
  s.changesaroundme.com
-DTSTAMP:20260726T193822Z
+DTSTAMP:20260726T221937Z
 DTSTART;TZID=America/Chicago:20260122T100000
 DTEND;TZID=America/Chicago:20260122T120000
 SUMMARY:TxDOT PTAC - Meeting
@@ -43,7 +43,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-bicycle-and-pedestrian-advisory-committee-20260130T0930@calenda
  rs.changesaroundme.com
-DTSTAMP:20260726T193822Z
+DTSTAMP:20260726T221937Z
 DTSTART;TZID=America/Chicago:20260130T093000
 DTEND;TZID=America/Chicago:20260130T113000
 SUMMARY:TxDOT BPAC - Meeting
@@ -58,7 +58,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-public-transportation-advisory-committee-20260209T1000@calendar
  s.changesaroundme.com
-DTSTAMP:20260726T193822Z
+DTSTAMP:20260726T221937Z
 DTSTART;TZID=America/Chicago:20260209T100000
 DTEND;TZID=America/Chicago:20260209T120000
 SUMMARY:TxDOT PTAC - Meeting
@@ -74,7 +74,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-bicycle-and-pedestrian-advisory-committee-20260424T0930@calenda
  rs.changesaroundme.com
-DTSTAMP:20260726T193822Z
+DTSTAMP:20260726T221937Z
 DTSTART;TZID=America/Chicago:20260424T093000
 DTEND;TZID=America/Chicago:20260424T113000
 SUMMARY:TxDOT BPAC - Meeting
@@ -92,7 +92,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-public-transportation-advisory-committee-20260506T1000@calendar
  s.changesaroundme.com
-DTSTAMP:20260726T193822Z
+DTSTAMP:20260726T221937Z
 DTSTART;TZID=America/Chicago:20260506T100000
 DTEND;TZID=America/Chicago:20260506T120000
 SUMMARY:TxDOT PTAC - Meeting
@@ -108,7 +108,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-utp-virtual-public-meeting-20260701@calendars.changesaroundme.c
  om
-DTSTAMP:20260726T193822Z
+DTSTAMP:20260726T221937Z
 DTSTART;TZID=America/Chicago:20260701T140000
 DTEND;TZID=America/Chicago:20260701T160000
 SUMMARY:TxDOT - UTP: Virtual public meeting
@@ -122,20 +122,20 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-draft-2027-utp-comment-period-20260703@calendars.changesaroundm
  e.com
-DTSTAMP:20260726T193822Z
+DTSTAMP:20260726T221937Z
 DTSTART;VALUE=DATE:20260703
 DTEND;VALUE=DATE:20260804
-SUMMARY:TxDOT - Draft 2027 UTP comment period (closes Aug 3\, 4:00 p.m.)
+SUMMARY:TxDOT - Draft 2027 UTP comment period
 URL:https://www.txdot.gov/projects/planning/utp/utp-public-involvement.html
-DESCRIPTION:Public comment window: July 3\, 2026 through August 3\, 2026 at
-  4 p.m. CDT. Details and how to comment: https://www.txdot.gov/projects/pl
- anning/utp/utp-public-involvement.html
+DESCRIPTION:Public comment window: 3 Jul 2026 through 4pm CDT 3 Aug 2026\n\
+ nDetails and how to comment: https://www.txdot.gov/projects/planning/utp/u
+ tp-public-involvement.html
 CATEGORIES:comment-window
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-utp-virtual-public-hearing-20260729@calendars.changesaroundme.c
  om
-DTSTAMP:20260726T193822Z
+DTSTAMP:20260726T221937Z
 DTSTART;TZID=America/Chicago:20260729T140000
 DTEND;TZID=America/Chicago:20260729T160000
 SUMMARY:TxDOT - UTP: Virtual public hearing
@@ -148,7 +148,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-bicycle-and-pedestrian-advisory-committee-20260731T0930@calenda
  rs.changesaroundme.com
-DTSTAMP:20260726T193822Z
+DTSTAMP:20260726T221937Z
 DTSTART;TZID=America/Chicago:20260731T093000
 DTEND;TZID=America/Chicago:20260731T113000
 SUMMARY:TxDOT BPAC - Meeting
@@ -161,7 +161,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-public-transportation-advisory-committee-20260813T1000@calendar
  s.changesaroundme.com
-DTSTAMP:20260726T193822Z
+DTSTAMP:20260726T221937Z
 DTSTART;TZID=America/Chicago:20260813T100000
 DTEND;TZID=America/Chicago:20260813T120000
 SUMMARY:TxDOT PTAC - Meeting
@@ -176,7 +176,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-bicycle-and-pedestrian-advisory-committee-20261106T0930@calenda
  rs.changesaroundme.com
-DTSTAMP:20260726T193822Z
+DTSTAMP:20260726T221937Z
 DTSTART;TZID=America/Chicago:20261106T093000
 DTEND;TZID=America/Chicago:20261106T113000
 SUMMARY:TxDOT BPAC - Meeting

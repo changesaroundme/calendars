@@ -79,7 +79,7 @@
  },
  {
   "source": "txdotev",
-  "summary": "TxDOT - Draft 2027 UTP comment period (closes Aug 3, 4:00 p.m.)",
+  "summary": "TxDOT - Draft 2027 UTP comment period",
   "start": "2026-07-03",
   "end": "2026-08-04",
   "location": "",
@@ -87,7 +87,7 @@
   "status": "CONFIRMED",
   "kind": "comment-window",
   "uid": "txdotev-draft-2027-utp-comment-period-20260703@calendars.changesaroundme.com",
-  "description": "Public comment window: July 3, 2026 through August 3, 2026 at 4 p.m. CDT. Details and how to comment: https://www.txdot.gov/projects/planning/utp/utp-public-involvement.html",
+  "description": "Public comment window: 3 Jul 2026 through 4pm CDT 3 Aug 2026\n\nDetails and how to comment: https://www.txdot.gov/projects/planning/utp/utp-public-involvement.html",
   "all_day": true
  },
  {
