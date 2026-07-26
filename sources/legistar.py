@@ -28,8 +28,8 @@ TIME_RE = re.compile(r"^\d{1,2}:\d{2}\s*[AP]M$", re.IGNORECASE)
 # InSite marks cancellations in the time column and/or appends to the name.
 CANCEL_RE = re.compile(r"cancell?ed|postponed|deferred|rescheduled", re.IGNORECASE)
 NAME_SUFFIX_RE = re.compile(
-    r"\s*[-–(]\s*(cancell?ed|postponed|deferred|rescheduled)\)?\s*$", re.IGNORECASE
-)
+    r"\s*[-–—(]\s*(cancell?ed|postponed|deferred|rescheduled)\)?\s*$", re.IGNORECASE
+)  # hyphen, en dash, em dash, or paren before the marker
 
 
 def parse_time(text: str) -> datetime | None:
@@ -96,7 +96,10 @@ class Legistar:
             name = NAME_SUFFIX_RE.sub("", raw_name).strip()
             status = "CANCELLED" if CANCEL_RE.search(raw_name) else "CONFIRMED"
 
-            meeting_date = datetime.strptime(cells[date_idx], "%m/%d/%Y")
+            try:
+                meeting_date = datetime.strptime(cells[date_idx], "%m/%d/%Y")
+            except ValueError:
+                continue  # impossible date on one row shouldn't kill the source
             time_idx, tval = next(
                 ((i, parse_time(c)) for i, c in enumerate(cells[date_idx + 1:], date_idx + 1)
                  if TIME_RE.match(c.replace("\xa0", " ").strip())),
@@ -150,10 +153,16 @@ class Legistar:
         has exactly one meeting that day, fall back to that one — a
         reschedule shouldn't produce a phantom duplicate.
         """
-        by_key: dict[tuple[str, str, str], Event] = {
-            (slugify(e.summary), e.start.strftime("%Y%m%d"), _time_key(e)): e
-            for e in events
-        }
+        by_key: dict[tuple[str, str, str], Event] = {}
+        for e in events:
+            k = (slugify(e.summary), e.start.strftime("%Y%m%d"), _time_key(e))
+            prev = by_key.get(k)
+            # Same body/day/time scraped twice (e.g. a cancelled posting plus
+            # a re-posted one): prefer the CONFIRMED row — the meeting is
+            # happening in some form. Ties keep the first, matching emit()'s
+            # first-wins dedupe so both layers collapse pairs the same way.
+            if prev is None or (prev.status == "CANCELLED" and e.status != "CANCELLED"):
+                by_key[k] = e
 
         def _enrich(ev: Event, insite: str, agenda: str) -> None:
             if insite:

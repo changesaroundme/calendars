@@ -85,8 +85,9 @@ def _parse_table(table, is_tsc: bool, default_year: int) -> list[Event]:
         month = MONTHS[texts[0].lower()]
         body_cells = cells[1:]
         city = texts[-1] if len(texts) > 1 else ""
-        if any("no meeting" in t.lower() for t in texts):
-            continue
+        # No explicit "No meeting" skip: a cell saying "No meeting" has no
+        # digits, so _days() yields nothing for it — but the OTHER cells in
+        # the row still parse (committees can skip a month the board meets).
         if is_tsc:
             for day in _days(texts[1] if len(texts) > 1 else ""):
                 ev = _mk("Transmission Services Corp. Board", year, month, day, city)

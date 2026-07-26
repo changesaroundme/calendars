@@ -56,6 +56,31 @@ class Event:
             slug = f"{self.source}-{slug}"
         return f"{slug}-{stamp}@calendars.changesaroundme.com"
 
+    @classmethod
+    def from_json(cls, d: dict) -> "Event":
+        """Rehydrate an event from a data/*.json snapshot entry (see to_json).
+
+        Used to backfill all.ics from the last-good snapshot when a source's
+        live fetch fails — "stale beats absent" for the combined feed too.
+        """
+        def _parse(v):
+            if not v:
+                return None
+            return datetime.fromisoformat(v) if "T" in v else date.fromisoformat(v)
+
+        return cls(
+            source=d["source"],
+            summary=d["summary"],
+            start=_parse(d["start"]),
+            end=_parse(d.get("end")),
+            location=d.get("location", ""),
+            url=d.get("url", ""),
+            status=d.get("status", "CONFIRMED"),
+            kind=d.get("kind", "regular"),
+            uid=d.get("uid", ""),
+            description=d.get("description", ""),
+        )
+
     def to_json(self) -> dict:
         d = asdict(self)
         d["start"] = self.start.isoformat()

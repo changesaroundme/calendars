@@ -42,6 +42,7 @@ def escape(value: str) -> str:
         .replace(";", "\\;")
         .replace(",", "\\,")
         .replace("\r\n", "\\n")
+        .replace("\r", "\\n")  # a bare CR would corrupt CRLF line framing
         .replace("\n", "\\n")
     )
 

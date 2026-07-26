@@ -44,13 +44,18 @@ def _parse_date_cell(text: str) -> datetime | None:
         return None
     d, t = m.group(1), m.group(2)
     fmt = "%m/%d/%y" if len(d.split("/")[-1]) == 2 else "%m/%d/%Y"
-    day = datetime.strptime(d, fmt)
+    try:
+        day = datetime.strptime(d, fmt)
+    except ValueError:
+        return None  # impossible date on one row shouldn't kill the source
     if t:
-        try:
-            tv = datetime.strptime(t.replace(" ", "").upper() + "M", "%I:%M%p")
-            return day.replace(hour=tv.hour, minute=tv.minute)
-        except ValueError:
-            pass
+        cleaned = t.replace(" ", "").upper() + "M"
+        for tfmt in ("%I:%M%p", "%I%p"):  # "10:00 a.m." and "10 a.m."
+            try:
+                tv = datetime.strptime(cleaned, tfmt)
+                return day.replace(hour=tv.hour, minute=tv.minute)
+            except ValueError:
+                continue
     return day
 
 

@@ -19,11 +19,12 @@ from __future__ import annotations
 import json
 import pathlib
 import sys
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 
 import requests
 
 from caltools.ics import emit
+from caltools.model import Event
 from sources import atp, austin, campo, capmetro, ctrma, lcra, txdot, txdotev
 
 ROOT = pathlib.Path(__file__).parent
@@ -114,6 +115,27 @@ def load_fixture(key: str):
     raise KeyError(key)
 
 
+def snapshot_events(path: pathlib.Path) -> list[Event]:
+    """Last-good events from a data/*.json snapshot, or [] if unreadable."""
+    try:
+        return [Event.from_json(d) for d in json.loads(path.read_text())]
+    except Exception:
+        return []
+
+
+def has_future_events(events: list[Event], today: date) -> bool:
+    """True if any event is still relevant (ends, or starts, today or later).
+
+    Uses end when present so an in-progress comment window counts.
+    """
+    for e in events:
+        latest = e.end or e.start
+        d = latest.date() if isinstance(latest, datetime) else latest
+        if d >= today:
+            return True
+    return False
+
+
 def main() -> int:
     offline = "--offline" in sys.argv
     now = datetime.now(timezone.utc)
@@ -126,16 +148,25 @@ def main() -> int:
     unhealthy: list[str] = []
     all_events = []
 
+    today = datetime.now(timezone.utc).date()
+
     for key, (calname, module, color) in CALENDARS.items():
+        snapshot_path = DATA / f"{key}.json"
         try:
             events = load_fixture(key) if offline else module.fetch(session)
         except Exception as exc:
             print(f"[{key}] ERROR: fetch failed: {exc}")
             unhealthy.append(f"{key}: fetch failed ({exc})")
+            # Per-org .ics goes stale-but-present (never rewritten); give
+            # all.ics the same courtesy by backfilling from the last-good
+            # snapshot, so combined-feed subscribers don't lose the org.
+            stale = snapshot_events(snapshot_path)
+            if stale:
+                print(f"[{key}] backfilling all.ics with {len(stale)} snapshot events")
+                all_events.extend(stale)
             continue
 
         # --- health checks ---
-        snapshot_path = DATA / f"{key}.json"
         previous_count = None
         if snapshot_path.exists():
             try:
@@ -145,10 +176,17 @@ def main() -> int:
         problems = list(getattr(module, "health_problems", lambda: [])())
         if not events:
             problems.append(f"{key}: 0 events parsed")
-        elif previous_count and len(events) < previous_count / 2:
-            problems.append(
-                f"{key}: event count fell from {previous_count} to {len(events)}"
-            )
+        else:
+            if previous_count and len(events) < previous_count / 2:
+                problems.append(
+                    f"{key}: event count fell from {previous_count} to {len(events)}"
+                )
+            # Catches the "count looks fine but everything is past" class:
+            # stale annual PDFs, prior-year tables, default-year drift.
+            if not has_future_events(events, today):
+                problems.append(
+                    f"{key}: no future events (all {len(events)} are in the past)"
+                )
         unhealthy.extend(problems)
 
         # --- write outputs ---
@@ -167,6 +205,13 @@ def main() -> int:
                     (e.to_json() for e in events), key=lambda d: d["start"]
                 )
                 snapshot_path.write_text(json.dumps(snapshot, indent=1) + "\n")
+        else:
+            # Parsed to zero (already flagged unhealthy above): keep the org
+            # present in all.ics from the last-good snapshot.
+            stale = snapshot_events(snapshot_path)
+            if stale:
+                print(f"[{key}] backfilling all.ics with {len(stale)} snapshot events")
+                all_events.extend(stale)
         print(f"[{key}] {len(events)} events")
 
     if all_events:

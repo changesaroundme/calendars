@@ -53,6 +53,7 @@
     --org-ctrma:    #199e70;
     --org-austin:   #d95926;
     --org-atp:      #9085e9;
+    --org-txdotev:  #e66767;
   }
   /* Fill the iframe and scroll INTERNALLY: legend/toolbar/footer stay
      pinned; only the event list scrolls. Prevents double scrollbars in
@@ -139,7 +140,9 @@ function unfold(text) {
   return text.replace(/\r\n[ \t]/g, "").split(/\r\n|\n/);
 }
 function unescapeText(v) {
-  return v.replace(/\\n/gi, "\n").replace(/\\([,;\\])/g, "$1");
+  // Single pass: two sequential replaces would let a literal backslash's
+  // escape (\\) bleed into a following "n" and become a bogus newline.
+  return v.replace(/\\([\\;,nN])/g, (m, c) => (c === "n" || c === "N") ? "\n" : c);
 }
 function parseICS(text) {
   const events = [];

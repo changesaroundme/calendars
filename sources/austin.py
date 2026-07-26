@@ -294,7 +294,10 @@ def annual_council_events(records, legistar_events: list[Event]) -> list[Event]:
     be enabled later).
     """
     council_day_re = re.compile(
-        r"^austin-(city-council|budget-meeting-of-the-austin-city-council)-(\d{8})T"
+        # (?=T|@) covers both timed and all-day Legistar rows — a row whose
+        # time didn't parse (e.g. "Cancelled" in the time column) is all-day
+        # but still covers that date, so no contradictory placeholder ships.
+        r"^austin-(city-council|budget-meeting-of-the-austin-city-council)-(\d{8})(?=T|@)"
     )
     covered = {m.group(2) for e in legistar_events
                if (m := council_day_re.match(e.stable_uid()))}
@@ -332,7 +335,7 @@ def apply_budget_flags(council: list[Event], records) -> list[Event]:
     """
     budget_days = {d.strftime("%Y%m%d") for d, col, b in records
                    if col == "council" and b}
-    day_re = re.compile(r"^austin-city-council-(\d{8})T")
+    day_re = re.compile(r"^austin-city-council-(\d{8})(?=T|@)")
     for ev in council:
         m = day_re.match(ev.uid)
         if m and m.group(1) in budget_days:

@@ -77,7 +77,10 @@ def _long_date(text: str) -> date | None:
     m = LONG_DATE_RE.search(text)
     if not m:
         return None
-    return date(int(m.group(3)), MONTHS[m.group(1)], int(m.group(2)))
+    try:
+        return date(int(m.group(3)), MONTHS[m.group(1)], int(m.group(2)))
+    except ValueError:  # "February 30" typo shouldn't kill the source
+        return None
 
 
 def _table_caption(table) -> str:
@@ -110,10 +113,12 @@ def _kind_of(topic: str) -> str:
 def parse_page(html: str, context: str, page_url: str) -> list[Event]:
     soup = BeautifulSoup(html, "html.parser")
     events: list[Event] = []
+    matched_tables = 0
     for table in soup.find_all("table"):
         cap = _table_caption(table)
 
         if re.search(r"comment period", cap, re.IGNORECASE):
+            matched_tables += 1
             # One row: start date | end date + time.
             for row in table.find_all("tr"):
                 cells = [c.get_text(" ", strip=True) for c in row.find_all("td")]
@@ -146,6 +151,7 @@ def parse_page(html: str, context: str, page_url: str) -> list[Event]:
             continue
 
         if re.search(r"involvement events", cap, re.IGNORECASE):
+            matched_tables += 1
             for row in table.find_all("tr"):
                 cells = row.find_all("td")
                 if len(cells) < 2:
@@ -155,7 +161,10 @@ def parse_page(html: str, context: str, page_url: str) -> list[Event]:
                 dm = NUM_DATE_RE.search(when)
                 if not dm or not topic:
                     continue
-                d = date(int(dm.group(3)), int(dm.group(1)), int(dm.group(2)))
+                try:
+                    d = date(int(dm.group(3)), int(dm.group(1)), int(dm.group(2)))
+                except ValueError:
+                    continue  # impossible date on one row shouldn't kill the source
                 t = _time_of(when)
                 start = datetime(d.year, d.month, d.day, t[0], t[1]) if t else d
                 links = "\n".join(
@@ -176,6 +185,11 @@ def parse_page(html: str, context: str, page_url: str) -> list[Event]:
                              f"{d.strftime('%Y%m%d')}@calendars.changesaroundme.com"),
                     )
                 )
+    if not matched_tables:
+        _problems.append(
+            f"txdotev: no involvement/comment tables on {context} page "
+            "(page redesign?)"
+        )
     return events
 
 
@@ -216,6 +230,7 @@ def parse_committee_page(
     soup = BeautifulSoup(html, "html.parser")
     events: list[Event] = []
     saw_table = False
+    current_tables = 0
     for table in soup.find_all("table"):
         cap = _table_caption(table)
         ym = CAPTION_YEAR_RE.search(cap)
@@ -225,6 +240,7 @@ def parse_committee_page(
         year = int(ym.group(1))
         if year < min_year:
             continue  # archive table for a past year
+        current_tables += 1
         for row in table.find_all("tr"):
             cells = row.find_all("td")
             if len(cells) < 3:
@@ -234,7 +250,10 @@ def parse_committee_page(
             month = MONTHS3.get(dm.group(1)[:3].lower()) if dm else None
             if not month:
                 continue
-            d = date(int(dm.group(3) or year), month, int(dm.group(2)))
+            try:
+                d = date(int(dm.group(3) or year), month, int(dm.group(2)))
+            except ValueError:
+                continue  # impossible date on one row shouldn't kill the source
             t = _time_of(texts[1])
             start = datetime(d.year, d.month, d.day, t[0], t[1]) if t else d
             links = []
@@ -267,6 +286,14 @@ def parse_committee_page(
         _problems.append(
             f"txdotev: no '<year> meeting agendas' table on {abbrev} page "
             "(page redesign?)"
+        )
+    elif current_tables and not events:
+        # A current-or-later-year table exists but nothing in it parsed —
+        # likely a row-format change. (All tables being past-year is NOT
+        # flagged: that's the normal early-January state before the new
+        # year's table posts.)
+        _problems.append(
+            f"txdotev: {abbrev} current-year table has no parseable rows"
         )
     return events
 
