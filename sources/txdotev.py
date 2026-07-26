@@ -14,6 +14,14 @@ The tables are server-rendered; the comment-period one just sits deep
 enough in the page that summarizing fetch tools truncate it — raw HTML has
 it (hard-won lesson, see Calendar Maintenance page).
 
+SERVER vs DOM markup (second hard-won lesson, 2026-07-26): the server HTML
+has NO <caption> and no <thead> — tables sit inside a
+div.table-ultimate-wrap whose <h2 class="tableTitle"> carries the label,
+with header cells as plain <td>. TxDOT's client-side table JS then rebuilds
+the table, moving the title into a <caption> (what you see in DevTools).
+_table_caption() accepts both shapes; header rows self-skip because their
+cells never match the date regexes.
+
 Also watches TxDOT advisory-committee pages (COMMITTEES below), which use a
 third caption shape: "<year> meeting agendas and materials" with
 Date | Time | Location | Agenda | Handout columns. Only current-and-later
@@ -72,6 +80,26 @@ def _long_date(text: str) -> date | None:
     return date(int(m.group(3)), MONTHS[m.group(1)], int(m.group(2)))
 
 
+def _table_caption(table) -> str:
+    """Label of a TxDOT CMS table, from either markup shape.
+
+    DOM shape (after their client JS runs): <caption> inside the table.
+    Server shape (what requests sees): <h2 class="tableTitle"> inside the
+    enclosing div.table-ultimate-wrap. Past-year tables on some pages have
+    an empty tableTitle — returns "" for those, which no caption regex
+    matches.
+    """
+    cap = table.find("caption")
+    if cap and cap.get_text(strip=True):
+        return cap.get_text(" ", strip=True)
+    wrap = table.find_parent(class_="table-ultimate-wrap")
+    if wrap:
+        title = wrap.find(class_="tableTitle")
+        if title:
+            return title.get_text(" ", strip=True)
+    return ""
+
+
 def _kind_of(topic: str) -> str:
     low = topic.lower()
     if "hearing" in low:
@@ -83,8 +111,7 @@ def parse_page(html: str, context: str, page_url: str) -> list[Event]:
     soup = BeautifulSoup(html, "html.parser")
     events: list[Event] = []
     for table in soup.find_all("table"):
-        caption = table.find("caption")
-        cap = caption.get_text(" ", strip=True) if caption else ""
+        cap = _table_caption(table)
 
         if re.search(r"comment period", cap, re.IGNORECASE):
             # One row: start date | end date + time.
@@ -190,8 +217,7 @@ def parse_committee_page(
     events: list[Event] = []
     saw_table = False
     for table in soup.find_all("table"):
-        caption = table.find("caption")
-        cap = caption.get_text(" ", strip=True) if caption else ""
+        cap = _table_caption(table)
         ym = CAPTION_YEAR_RE.search(cap)
         if not ym:
             continue
