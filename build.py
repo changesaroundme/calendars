@@ -31,7 +31,8 @@ import requests
 
 from caltools.ics import emit
 from caltools.model import Event
-from sources import atp, austin, campo, capmetro, ctrma, lcra, txdot, txdotev
+from sources import (atp, austin, campo, capmetro, ctrma, curated, lcra,
+                     txdot, txdotev)
 
 ROOT = pathlib.Path(__file__).parent
 DOCS = ROOT / "docs"
@@ -95,10 +96,15 @@ def main() -> int:
 
     today = now.date()
 
+    # Hand-curated one-offs (events/curated.yaml) merge into org feeds below.
+    curated.load(set(CALENDARS))
+    unhealthy.extend(curated.health_problems())
+
     for key, (calname, module, color) in CALENDARS.items():
         snapshot_path = data / f"{key}.json"
         try:
             events = module.fetch_offline() if offline else module.fetch(session)
+            events = events + curated.events_for(key)
         except Exception as exc:
             print(f"[{key}] ERROR: fetch failed: {exc}")
             unhealthy.append(f"{key}: fetch failed ({exc})")

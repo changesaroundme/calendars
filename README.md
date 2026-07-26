@@ -128,6 +128,20 @@ Design notes worth keeping in mind:
   adapter also sets `STATUS:CANCELLED` so capable clients render them
   struck-through.
 
+## One-off events (events/curated.yaml)
+
+Not every meeting deserves a scraper. The rule of thumb: **adapter** when
+the page outlives the event cycle with stable structure (annual schedules,
+standing committees); **curated entry** otherwise (project open houses,
+one-off hearings, pop-up comment windows — pages that die with the event).
+
+Add entries to `events/curated.yaml` by hand (field docs are in the file),
+or drop links in `events/inbox.md` for a Claude session to extract, then
+review the git diff and push. Each entry names an existing org calendar
+via `org:` and merges into it — no separate feed. `python build.py
+--offline` validates the file locally; a malformed entry turns CI red
+with a message naming it, while valid entries still publish.
+
 ## Adding a source
 
 Write `sources/neworg.py` with `fetch(session) -> list[Event]` and a
