@@ -20,6 +20,7 @@
     --org-ctrma:    #1baf7a;  /* aqua */
     --org-austin:   #eb6834;  /* orange */
     --org-atp:      #4a3aa7;  /* violet */
+    --org-txdotev:  #e34948;  /* red */
   }
   /* Dark values apply via OS setting (unless ?theme=light) or ?theme=dark. */
   @media (prefers-color-scheme: dark) {
@@ -36,6 +37,7 @@
       --org-ctrma:    #199e70;
       --org-austin:   #d95926;
       --org-atp:      #9085e9;
+      --org-txdotev:  #e66767;
     }
   }
   :root[data-theme="dark"] {
@@ -128,6 +130,7 @@ const ORGS = [
   { key: "ctrma",    label: "CTRMA",    match: u => u.startsWith("ctrma-") },
   { key: "austin",   label: "CoA",      match: u => u.startsWith("austin-") },
   { key: "atp",      label: "ATP",      match: u => u.endsWith("@www.atptx.org") },
+  { key: "txdotev",  label: "TxDOT",    match: u => u.startsWith("txdotev-") },
 ];
 const hidden = new Set();
 

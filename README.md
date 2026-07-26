@@ -24,10 +24,11 @@ Actions from official sources and served by GitHub Pages.
 | CTRMA | HTML scrape | Upcoming-meeting cards on their board-meetings page (date, time, detail link) |
 | City of Austin | Legistar (shared module) + annual PDF + board pages | Council/committees via `austintexas` Legistar; year schedule from the EDIMS PDF; boards & commissions from full-year date lists on austintexas.gov |
 | ATP | ICS ingest | Austin Transit Partnership's published Tribe iCal feed (Board + Community Advisory Committee) |
+| TxDOT Events | HTML tables scrape | Public-involvement pages (UTP): dated events + comment windows; advisory committees (BPAC, PTAC): "\<year\> meeting agendas and materials" tables (all caption-labeled) |
 
 **Outputs** (in `docs/`, served by Pages)
 
-- `campo.ics`, `capmetro.ics`, `txdot.ics`, `lcra.ics`, `ctrma.ics`, `austin.ics`, `atp.ics` — one calendar per organization
+- `campo.ics`, `capmetro.ics`, `txdot.ics`, `lcra.ics`, `ctrma.ics`, `austin.ics`, `atp.ics`, `txdotev.ics` — one calendar per organization
 - `all.ics` — everything combined
 - `index.html` — landing page with subscribe links
 

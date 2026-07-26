@@ -24,7 +24,7 @@ from datetime import datetime, timezone
 import requests
 
 from caltools.ics import emit
-from sources import atp, austin, campo, capmetro, ctrma, lcra, txdot
+from sources import atp, austin, campo, capmetro, ctrma, lcra, txdot, txdotev
 
 ROOT = pathlib.Path(__file__).parent
 DOCS = ROOT / "docs"
@@ -39,8 +39,11 @@ CALENDARS = {
     "ctrma": ("CAM - CTRMA", ctrma, "#1BAF7A"),  # aqua (slot 5)
     "austin": ("CAM - City of Austin", austin, "#EB6834"),  # orange (slot 6)
     "atp": ("CAM - ATP", atp, "#4A3AA7"),  # violet (slot 7)
+    "txdotev": ("CAM - TxDOT Events", txdotev, "#E34948"),  # red (slot 8)
 }
-ALL_COLOR = "#E34948"  # red (validated slot 8; distinct from the org slots)
+# All 8 validated categorical slots are now assigned to orgs; the combined
+# feed gets a neutral (it never appears next to org colors in the embed).
+ALL_COLOR = "#6E6E6E"
 
 USER_AGENT = (
     "cam-calendars/1.0 (+https://github.com/changesaroundme/calendars; "
@@ -54,6 +57,20 @@ def load_fixture(key: str):
         return campo.parse_feed(text)
     if key == "atp":
         return atp.parse_feed((ROOT / "fixtures" / "atp.ics").read_bytes())
+    if key == "txdotev":
+        events = txdotev.parse_page(
+            (ROOT / "fixtures" / "txdotev_utp.html").read_text(),
+            "UTP",
+            "https://www.txdot.gov/projects/planning/utp/utp-public-involvement.html",
+        )
+        for abbrev, name, url in txdotev.COMMITTEES:
+            fixture = ROOT / "fixtures" / f"txdotev_{abbrev.lower()}.html"
+            events.extend(
+                txdotev.parse_committee_page(
+                    fixture.read_text(), abbrev, name, url, min_year=2026
+                )
+            )
+        return events
     if key == "capmetro":
         rows = json.loads((ROOT / "fixtures" / "capmetro.json").read_text())
         events = capmetro.ADAPTER.parse_calendar_html(
