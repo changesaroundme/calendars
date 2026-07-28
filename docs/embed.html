@@ -93,14 +93,11 @@
         background: color-mix(in srgb, var(--org, var(--text-secondary)) 16%, var(--surface-1));
         color: var(--text-primary); padding: 1px 4px; cursor: pointer; }
   .fc .ev .fc-event-title, .fc .ev .fc-event-time { color: var(--text-primary); }
-  /* Wrap instead of truncate. In an Obsidian Publish column a month cell is
-     ~100px wide -- about 12 characters -- so FullCalendar's default
-     nowrap+clip was eating most of every title. Both rules are needed:
-     .fc-daygrid-event carries the nowrap, .fc-event-title carries the clip. */
-  .fc .fc-daygrid-event { white-space: normal; }
-  .fc .ev .fc-event-title { white-space: normal; overflow: visible;
-        overflow-wrap: anywhere; line-height: 1.25; }
   .fc .ev.cancelled { text-decoration: line-through; opacity: .55; }
+  /* TENTATIVE = the source stopped listing it without saying it was
+     cancelled. Dashed edge, not strikethrough: it may still happen. */
+  .fc .ev.tentative { border-left-style: dashed; opacity: .72; }
+  .fc .fc-list-event.tentative td { opacity: .72; font-style: italic; }
   .fc .fc-list-event { cursor: pointer; }
   .fc .fc-list-event-dot { border-color: var(--org, var(--text-secondary)) !important; }
   .fc .fc-list-event.cancelled td { text-decoration: line-through; opacity: .55; }
@@ -173,6 +170,7 @@ function parseICS(text) {
       case "DESCRIPTION": cur.description = unescapeText(value); break;
       case "URL": cur.url = value; break;
       case "UID": cur.uid = value; break;
+      case "X-CAM-ORG": cur.org = value; break;
       case "STATUS": cur.status = value; break;
     }
   }
@@ -185,8 +183,12 @@ function toISO(dt) {
     ? `${v.slice(0,4)}-${v.slice(4,6)}-${v.slice(6,8)}`
     : `${v.slice(0,4)}-${v.slice(4,6)}-${v.slice(6,8)}T${v.slice(9,11)}:${v.slice(11,13)}:${v.slice(13,15)}`;
 }
-function orgOf(uid) {
-  return ORGS.find(o => o.match(uid || "")) || null;
+function orgOf(ev) {
+  // Prefer the explicit X-CAM-ORG stamp. The UID matching below is the
+  // fallback for feeds emitted before the stamp existed -- including the
+  // copy a subscriber's client may still have cached.
+  if (ev.org) return ORGS.find(o => o.key === ev.org) || null;
+  return ORGS.find(o => o.match(ev.uid || "")) || null;
 }
 
 /* --- URL params: ?view=list|month  ?orgs=campo,txdot  ?theme=dark|light --- */
@@ -235,9 +237,7 @@ const calendar = new FullCalendar.Calendar(document.getElementById("cal"), {
                    right: "dayGridMonth,listUpcoming" },
   buttonText: { today: "today", dayGridMonth: "month", listUpcoming: "list" },
   height: "100%",  // fill the flex slot; list scrolls internally
-  // true = fit as many as the cell height allows, rest go to the built-in
-  // "+N more" popover. A fixed number would overflow now that chips wrap.
-  dayMaxEventRows: true,
+  dayMaxEventRows: 4,
   displayEventEnd: false,
   eventDisplay: "block",  // chips for timed events too, not default dots
   eventContent: (arg) => {
@@ -254,7 +254,7 @@ const calendar = new FullCalendar.Calendar(document.getElementById("cal"), {
   events: (info, success, failure) => {
     const deliver = () => success(
       parsed
-        .filter(e => { const o = orgOf(e.uid); return !o || !hidden.has(o.key); })
+        .filter(e => { const o = orgOf(e); return !o || !hidden.has(o.key); })
         .map(e => ({
           id: e.uid,
           title: e.summary || "(untitled)",
@@ -262,8 +262,10 @@ const calendar = new FullCalendar.Calendar(document.getElementById("cal"), {
           end: e.DTEND ? toISO(e.DTEND) : undefined,
           allDay: e.DTSTART.isDate,
           url: e.url || undefined,
-          classNames: ["ev", e.status === "CANCELLED" ? "cancelled" : ""].filter(Boolean),
-          extendedProps: { org: orgOf(e.uid)?.key, location: e.location, status: e.status },
+          classNames: ["ev",
+            e.status === "CANCELLED" ? "cancelled" : "",
+            e.status === "TENTATIVE" ? "tentative" : ""].filter(Boolean),
+          extendedProps: { org: orgOf(e)?.key, location: e.location, status: e.status },
         }))
     );
     if (parsed.length) return deliver();
@@ -278,6 +280,8 @@ const calendar = new FullCalendar.Calendar(document.getElementById("cal"), {
     const bits = [arg.event.title];
     if (arg.event.extendedProps.location) bits.push(arg.event.extendedProps.location);
     if (arg.event.extendedProps.status === "CANCELLED") bits.push("CANCELLED");
+    if (arg.event.extendedProps.status === "TENTATIVE")
+      bits.push("TENTATIVE - no longer listed by the source; may not happen");
     arg.el.title = bits.join("\n");
   },
   eventClick: (arg) => {

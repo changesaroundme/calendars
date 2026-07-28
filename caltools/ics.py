@@ -94,6 +94,13 @@ def event_block(ev: Event, dtstamp: str) -> list[str]:
         lines.append(f"STATUS:{ev.status}")
     if ev.kind:
         lines.append(f"CATEGORIES:{escape(ev.kind)}")
+    if ev.source:
+        # Which org feed this event belongs to. Without it, all.ics is not
+        # self-describing: splitting it back into per-org calendars would
+        # depend on UID-prefix heuristics that live only in embed.html (and
+        # that CAMPO and ATP break, since they keep their source's UIDs).
+        # X- rather than a second CATEGORIES value so no client shows it.
+        lines.append(f"X-CAM-ORG:{escape(ev.source)}")
     lines.append("END:VEVENT")
     return lines
 
