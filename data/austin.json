@@ -40,6 +40,19 @@
  },
  {
   "source": "austin",
+  "summary": "City Council - Audit and Finance Committee",
+  "start": "2026-01-14T09:30:00",
+  "end": "2026-01-14T11:30:00",
+  "location": "",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1372321&GUID=9A1B32F7-32BA-401C-A204-C1D70793F07A&Options=info|&Search=",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-audit-and-finance-committee-20260114T0930@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
+ },
+ {
+  "source": "austin",
   "summary": "Airport Advisory Commission",
   "start": "2026-01-14T15:00:00",
   "end": "2026-01-14T18:00:00",
@@ -49,6 +62,45 @@
   "kind": "regular",
   "uid": "austin-airport-advisory-commission-20260114@calendars.changesaroundme.com",
   "description": "Typical start time from the board's regular schedule \u2014 confirm on the posted agenda: https://www.austintexas.gov/boards-commissions/meetings/7_1",
+  "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "City Council - Mobility Committee",
+  "start": "2026-01-15T13:00:00",
+  "end": "2026-01-15T15:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1372358&GUID=D37FC7FF-2B61-4EAE-91A4-F3EA4B151822&Options=info|&Search=",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-mobility-committee-20260115T1300@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "City Council - Work Session",
+  "start": "2026-01-20T09:00:00",
+  "end": "2026-01-20T11:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1367699&GUID=2F31BC2C-D47D-4F7C-B50F-D229E6CA2381&Options=info|&Search=",
+  "status": "CONFIRMED",
+  "kind": "work-session",
+  "uid": "austin-city-council-work-session-20260120T0900@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "City Council - Austin Energy Utility Oversight Committee",
+  "start": "2026-01-20T09:00:00",
+  "end": "2026-01-20T11:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1371827&GUID=9013FE3C-A1AA-4512-9B6D-5277F634739F&Options=info|&Search=",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-energy-utility-oversight-committee-20260120T0900@calendars.changesaroundme.com",
+  "description": "",
   "all_day": false
  },
  {
@@ -67,15 +119,15 @@
  {
   "source": "austin",
   "summary": "City Council",
-  "start": "2026-01-22",
-  "end": null,
+  "start": "2026-01-22T10:00:00",
+  "end": "2026-01-22T12:00:00",
   "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
-  "url": "https://www.austintexas.gov/council/meetings",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1356021&GUID=DA24029F-479B-472C-9BAB-438213D9038D&Options=info|&Search=",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "austin-city-council-20260122@calendars.changesaroundme.com",
-  "description": "From the published annual council calendar (dates subject to change). Time and agenda appear ~a week ahead: https://www.austintexas.gov/council/meetings",
-  "all_day": true
+  "uid": "austin-city-council-20260122T1000@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
  },
  {
   "source": "austin",
@@ -92,6 +144,19 @@
  },
  {
   "source": "austin",
+  "summary": "City Council - Housing and Planning Committee",
+  "start": "2026-01-27T10:00:00",
+  "end": "2026-01-27T12:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1372319&GUID=377D29B2-FD19-4038-96BC-A9F42B3D6E1B&Options=info|&Search=",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-housing-and-planning-committee-20260127T1000@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
+ },
+ {
+  "source": "austin",
   "summary": "Planning Commission",
   "start": "2026-01-27T18:00:00",
   "end": "2026-01-27T21:00:00",
@@ -101,6 +166,32 @@
   "kind": "regular",
   "uid": "austin-planning-commission-20260127@calendars.changesaroundme.com",
   "description": "Typical start time from the board's regular schedule \u2014 confirm on the posted agenda: https://www.austintexas.gov/boards-commissions/meetings/40_1",
+  "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "City Council - Climate, Water, Environment, and Parks Committee",
+  "start": "2026-01-28T09:30:00",
+  "end": "2026-01-28T11:30:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1372359&GUID=E07C8B9E-AC25-44BD-B86A-699CCA7F6D95&Options=info|&Search=",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-climate-water-environment-and-parks-committee-20260128T0930@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "City Council - Public Safety Committee",
+  "start": "2026-02-02T14:00:00",
+  "end": "2026-02-02T16:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1378204&GUID=20BE1068-74BB-4980-9853-46ACCE77A8B1&Options=info|&Search=",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-public-safety-committee-20260202T1400@calendars.changesaroundme.com",
+  "description": "",
   "all_day": false
  },
  {
@@ -131,6 +222,32 @@
  },
  {
   "source": "austin",
+  "summary": "City Council - Work Session",
+  "start": "2026-02-03T09:00:00",
+  "end": "2026-02-03T11:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1367700&GUID=C8C5A6F0-F734-4951-ABCE-C68F4460AF9B&Options=info|&Search=",
+  "status": "CONFIRMED",
+  "kind": "work-session",
+  "uid": "austin-city-council-work-session-20260203T0900@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "City Council - Audit and Finance Committee",
+  "start": "2026-02-03T13:00:00",
+  "end": "2026-02-03T15:00:00",
+  "location": "Special Called Meeting",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1381443&GUID=99EB3A11-DBFA-4F90-BDC7-5110E36F9CF0&Options=info|&Search=",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-audit-and-finance-committee-20260203T1300@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
+ },
+ {
+  "source": "austin",
   "summary": "Urban Transportation Commission",
   "start": "2026-02-03T17:00:00",
   "end": "2026-02-03T20:00:00",
@@ -144,16 +261,29 @@
  },
  {
   "source": "austin",
-  "summary": "City Council",
-  "start": "2026-02-05",
-  "end": null,
+  "summary": "City Council - Public Health Committee",
+  "start": "2026-02-04T10:00:00",
+  "end": "2026-02-04T12:00:00",
   "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
-  "url": "https://www.austintexas.gov/council/meetings",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1378205&GUID=F66FBAAF-4362-49B9-A11B-D165D34CA03A&Options=info|&Search=",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "austin-city-council-20260205@calendars.changesaroundme.com",
-  "description": "From the published annual council calendar (dates subject to change). Time and agenda appear ~a week ahead: https://www.austintexas.gov/council/meetings",
-  "all_day": true
+  "uid": "austin-public-health-committee-20260204T1000@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "City Council",
+  "start": "2026-02-05T10:00:00",
+  "end": "2026-02-05T12:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1362206&GUID=69CE3BD8-A463-46EC-8FDB-4EF3508E6CA5&Options=info|&Search=",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-city-council-20260205T1000@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
  },
  {
   "source": "austin",
@@ -167,6 +297,19 @@
   "uid": "austin-austin-integrated-water-resource-planning-community-task-force-20260210@calendars.changesaroundme.com",
   "description": "All-day entry: this board's typical start time isn't configured yet; agendas post ~a week ahead: https://www.austintexas.gov/boards-commissions/meetings/132_1",
   "all_day": true
+ },
+ {
+  "source": "austin",
+  "summary": "City Council - Housing and Planning Committee",
+  "start": "2026-02-10T13:00:00",
+  "end": "2026-02-10T15:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1378313&GUID=B3C123C8-7D84-4C24-9863-78C36591887F&Options=info|&Search=",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-housing-and-planning-committee-20260210T1300@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
  },
  {
   "source": "austin",
@@ -192,6 +335,19 @@
   "kind": "regular",
   "uid": "austin-airport-advisory-commission-20260211@calendars.changesaroundme.com",
   "description": "Typical start time from the board's regular schedule \u2014 confirm on the posted agenda: https://www.austintexas.gov/boards-commissions/meetings/7_1",
+  "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "City Council - Mobility Committee",
+  "start": "2026-02-12T13:00:00",
+  "end": "2026-02-12T15:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1378206&GUID=CB9FC6B9-EC6C-48FB-BE70-CD20F8261FDB&Options=info|&Search=",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-mobility-committee-20260212T1300@calendars.changesaroundme.com",
+  "description": "",
   "all_day": false
  },
  {
@@ -222,6 +378,19 @@
  },
  {
   "source": "austin",
+  "summary": "City Council - Work Session",
+  "start": "2026-02-24T09:00:00",
+  "end": "2026-02-24T11:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1367701&GUID=35FF419B-A703-43A5-BBFE-543C9B2D1250&Options=info|&Search=",
+  "status": "CONFIRMED",
+  "kind": "work-session",
+  "uid": "austin-city-council-work-session-20260224T0900@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
+ },
+ {
+  "source": "austin",
   "summary": "Planning Commission",
   "start": "2026-02-24T18:00:00",
   "end": "2026-02-24T21:00:00",
@@ -235,16 +404,29 @@
  },
  {
   "source": "austin",
-  "summary": "City Council",
-  "start": "2026-02-26",
-  "end": null,
+  "summary": "City Council - Climate, Water, Environment, and Parks Committee",
+  "start": "2026-02-25T09:30:00",
+  "end": "2026-02-25T11:30:00",
   "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
-  "url": "https://www.austintexas.gov/council/meetings",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1378207&GUID=77440796-79EB-4ED1-8B62-353D11C82D63&Options=info|&Search=",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "austin-city-council-20260226@calendars.changesaroundme.com",
-  "description": "From the published annual council calendar (dates subject to change). Time and agenda appear ~a week ahead: https://www.austintexas.gov/council/meetings",
-  "all_day": true
+  "uid": "austin-climate-water-environment-and-parks-committee-20260225T0930@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "City Council",
+  "start": "2026-02-26T10:00:00",
+  "end": "2026-02-26T12:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1362224&GUID=05D75118-6728-467E-9A66-85EC4109A6F2&Options=info|&Search=",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-city-council-20260226T1000@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
  },
  {
   "source": "austin",
@@ -270,6 +452,45 @@
   "kind": "regular",
   "uid": "austin-urban-transportation-commission-20260303@calendars.changesaroundme.com",
   "description": "Typical start time from the board's regular schedule \u2014 confirm on the posted agenda: https://www.austintexas.gov/boards-commissions/meetings/50_1",
+  "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "City Council - Audit and Finance Committee",
+  "start": "2026-03-04T09:30:00",
+  "end": "2026-03-04T11:30:00",
+  "location": "",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1389395&GUID=30E18377-442F-4C4E-AC1E-5F5E2D915894&Options=info|&Search=",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-audit-and-finance-committee-20260304T0930@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "City Council - Public Health Committee",
+  "start": "2026-03-04T13:00:00",
+  "end": "2026-03-04T15:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1389396&GUID=82910990-CF2A-4BAD-863A-3F915B203905&Options=info|&Search=",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-public-health-committee-20260304T1300@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "City Council - Mobility Committee",
+  "start": "2026-03-05T13:00:00",
+  "end": "2026-03-05T15:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1389397&GUID=96268610-C582-483A-846D-100CB9C68382&Options=info|&Search=",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-mobility-committee-20260305T1300@calendars.changesaroundme.com",
+  "description": "",
   "all_day": false
  },
  {
@@ -301,15 +522,28 @@
  {
   "source": "austin",
   "summary": "City Council",
-  "start": "2026-03-12",
-  "end": null,
+  "start": "2026-03-12T10:00:00",
+  "end": "2026-03-12T12:00:00",
   "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
-  "url": "https://www.austintexas.gov/council/meetings",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1367833&GUID=A2921958-CE9D-4156-B2F7-6B2649FDBC10&Options=info|&Search=",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "austin-city-council-20260312@calendars.changesaroundme.com",
-  "description": "From the published annual council calendar (dates subject to change). Time and agenda appear ~a week ahead: https://www.austintexas.gov/council/meetings",
-  "all_day": true
+  "uid": "austin-city-council-20260312T1000@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "Austin Housing Finance Corporation",
+  "start": "2026-03-12T10:30:00",
+  "end": "2026-03-12T12:30:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1396912&GUID=32E8A0E9-431E-4FB1-9AF5-E9F8EB64EC61&Options=info|&Search=",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-housing-finance-corporation-20260312T1030@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
  },
  {
   "source": "austin",
@@ -339,6 +573,19 @@
  },
  {
   "source": "austin",
+  "summary": "City Council - Economic Opportunity Committee",
+  "start": "2026-03-20T10:00:00",
+  "end": "2026-03-20T12:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1389400&GUID=22DD4C7F-716D-4EFD-A8D4-1699D19C47FC&Options=info|&Search=",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-economic-opportunity-committee-20260320T1000@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
+ },
+ {
+  "source": "austin",
   "summary": "Design Commission",
   "start": "2026-03-23T18:00:00",
   "end": "2026-03-23T21:00:00",
@@ -348,6 +595,32 @@
   "kind": "regular",
   "uid": "austin-design-commission-20260323@calendars.changesaroundme.com",
   "description": "Typical start time from the board's regular schedule \u2014 confirm on the posted agenda: https://www.austintexas.gov/boards-commissions/meetings/22_1",
+  "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "City Council - Work Session",
+  "start": "2026-03-24T09:00:00",
+  "end": "2026-03-24T11:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1367834&GUID=AC3F91B0-2347-43A2-AF82-11B9FDBA5DF2&Options=info|&Search=",
+  "status": "CONFIRMED",
+  "kind": "work-session",
+  "uid": "austin-city-council-work-session-20260324T0900@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "City Council - Austin Energy Utility Oversight Committee",
+  "start": "2026-03-24T09:00:00",
+  "end": "2026-03-24T11:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1389398&GUID=14B476BD-DD37-4F09-8988-9A53F09819E8&Options=info|&Search=",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-energy-utility-oversight-committee-20260324T0900@calendars.changesaroundme.com",
+  "description": "",
   "all_day": false
  },
  {
@@ -365,16 +638,42 @@
  },
  {
   "source": "austin",
-  "summary": "City Council",
-  "start": "2026-03-26",
-  "end": null,
+  "summary": "City Council - Climate, Water, Environment, and Parks Committee",
+  "start": "2026-03-25T09:30:00",
+  "end": "2026-03-25T11:30:00",
   "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
-  "url": "https://www.austintexas.gov/council/meetings",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1389399&GUID=C01E2A11-E17F-4B2C-A92E-30E10E8A5BB6&Options=info|&Search=",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "austin-city-council-20260326@calendars.changesaroundme.com",
-  "description": "From the published annual council calendar (dates subject to change). Time and agenda appear ~a week ahead: https://www.austintexas.gov/council/meetings",
-  "all_day": true
+  "uid": "austin-climate-water-environment-and-parks-committee-20260325T0930@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "City Council",
+  "start": "2026-03-26T10:00:00",
+  "end": "2026-03-26T12:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1367835&GUID=65989DA6-13BB-4EBD-8148-3AF5B4EBF807&Options=info|&Search=",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-city-council-20260326T1000@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "Austin Housing Finance Corporation",
+  "start": "2026-03-26T10:30:00",
+  "end": "2026-03-26T12:30:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1400081&GUID=76FC6836-2378-42E6-BBDE-ABE3FCE084B8&Options=info|&Search=",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-housing-finance-corporation-20260326T1030@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
  },
  {
   "source": "austin",
@@ -391,6 +690,45 @@
  },
  {
   "source": "austin",
+  "summary": "City Council - Public Health Committee",
+  "start": "2026-04-01T10:00:00",
+  "end": "2026-04-01T12:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1400370&GUID=85BF9E87-5D84-4201-9CCB-374259036783&Options=info|&Search=",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-public-health-committee-20260401T1000@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "City Council - Mobility Committee",
+  "start": "2026-04-02T13:00:00",
+  "end": "2026-04-02T15:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1400371&GUID=83309D5C-3A0E-4C72-A637-260B47FB8032&Options=info|&Search=",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-mobility-committee-20260402T1300@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "City Council - Public Safety Committee",
+  "start": "2026-04-06T14:00:00",
+  "end": "2026-04-06T16:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1400372&GUID=5DB39A3A-608A-4C8B-A2B5-ABB47A1F410A&Options=info|&Search=",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-public-safety-committee-20260406T1400@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
+ },
+ {
+  "source": "austin",
   "summary": "Pedestrian Advisory Council",
   "start": "2026-04-06T18:00:00",
   "end": "2026-04-06T21:00:00",
@@ -400,6 +738,19 @@
   "kind": "regular",
   "uid": "austin-pedestrian-advisory-council-20260406@calendars.changesaroundme.com",
   "description": "Typical start time from the board's regular schedule \u2014 confirm on the posted agenda: https://www.austintexas.gov/boards-commissions/meetings/121_1",
+  "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "City Council - Work Session",
+  "start": "2026-04-07T09:00:00",
+  "end": "2026-04-07T11:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1367836&GUID=AB2F147B-920E-41AF-899E-607564478FFA&Options=info|&Search=",
+  "status": "CONFIRMED",
+  "kind": "work-session",
+  "uid": "austin-city-council-work-session-20260407T0900@calendars.changesaroundme.com",
+  "description": "",
   "all_day": false
  },
  {
@@ -431,15 +782,28 @@
  {
   "source": "austin",
   "summary": "City Council",
-  "start": "2026-04-09",
-  "end": null,
+  "start": "2026-04-09T10:00:00",
+  "end": "2026-04-09T12:00:00",
   "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
-  "url": "https://www.austintexas.gov/council/meetings",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1362247&GUID=E88FC106-FB9A-490E-8D98-56E7BEA33687&Options=info|&Search=",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "austin-city-council-20260409@calendars.changesaroundme.com",
-  "description": "From the published annual council calendar (dates subject to change). Time and agenda appear ~a week ahead: https://www.austintexas.gov/council/meetings",
-  "all_day": true
+  "uid": "austin-city-council-20260409T1000@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "Austin Housing Finance Corporation",
+  "start": "2026-04-09T10:30:00",
+  "end": "2026-04-09T12:30:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1403082&GUID=9332A402-130D-435F-9274-EA4AD3DDAF9D&Options=info|&Search=",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-housing-finance-corporation-20260409T1030@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
  },
  {
   "source": "austin",
@@ -456,6 +820,19 @@
  },
  {
   "source": "austin",
+  "summary": "City Council - Housing and Planning Committee",
+  "start": "2026-04-14T13:00:00",
+  "end": "2026-04-14T15:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1400373&GUID=8D2A6236-1BEE-4AB3-904A-5CFE51BD0599&Options=info|&Search=",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-housing-and-planning-committee-20260414T1300@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
+ },
+ {
+  "source": "austin",
   "summary": "Planning Commission",
   "start": "2026-04-14T18:00:00",
   "end": "2026-04-14T21:00:00",
@@ -465,6 +842,32 @@
   "kind": "regular",
   "uid": "austin-planning-commission-20260414@calendars.changesaroundme.com",
   "description": "Typical start time from the board's regular schedule \u2014 confirm on the posted agenda: https://www.austintexas.gov/boards-commissions/meetings/40_1",
+  "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "City Council - Audit and Finance Committee",
+  "start": "2026-04-15T09:30:00",
+  "end": "2026-04-15T11:30:00",
+  "location": "",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1400376&GUID=034CDD76-5422-4539-8A8C-FD23A1CDD522&Options=info|&Search=",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-audit-and-finance-committee-20260415T0930@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "City Council - Work Session",
+  "start": "2026-04-21T09:00:00",
+  "end": "2026-04-21T11:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1367838&GUID=794A5384-F31D-4383-BBBA-E94FCAE746A0&Options=info|&Search=",
+  "status": "CONFIRMED",
+  "kind": "work-session",
+  "uid": "austin-city-council-work-session-20260421T0900@calendars.changesaroundme.com",
+  "description": "",
   "all_day": false
  },
  {
@@ -482,16 +885,42 @@
  },
  {
   "source": "austin",
-  "summary": "City Council",
-  "start": "2026-04-23",
-  "end": null,
+  "summary": "City Council - Climate, Water, Environment, and Parks Committee",
+  "start": "2026-04-22T09:30:00",
+  "end": "2026-04-22T11:30:00",
   "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
-  "url": "https://www.austintexas.gov/council/meetings",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1400377&GUID=618D06B5-4F80-4CF5-81A9-D836E8DC3B75&Options=info|&Search=",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "austin-city-council-20260423@calendars.changesaroundme.com",
-  "description": "From the published annual council calendar (dates subject to change). Time and agenda appear ~a week ahead: https://www.austintexas.gov/council/meetings",
-  "all_day": true
+  "uid": "austin-climate-water-environment-and-parks-committee-20260422T0930@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "City Council",
+  "start": "2026-04-23T10:00:00",
+  "end": "2026-04-23T12:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1362248&GUID=E7C7B5C5-3C23-4F44-AC2A-3638F86C71B1&Options=info|&Search=",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-city-council-20260423T1000@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "Austin Housing Finance Corporation",
+  "start": "2026-04-23T10:30:00",
+  "end": "2026-04-23T12:30:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1405780&GUID=9953B528-8B33-4761-9F4E-65C4F837599C&Options=info|&Search=",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-housing-finance-corporation-20260423T1030@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
  },
  {
   "source": "austin",
@@ -599,7 +1028,7 @@
  },
  {
   "source": "austin",
-  "summary": "Public Health Committee  ",
+  "summary": "City Council - Public Health Committee",
   "start": "2026-05-06T10:00:00",
   "end": "2026-05-06T12:00:00",
   "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
@@ -742,7 +1171,7 @@
  },
  {
   "source": "austin",
-  "summary": "Austin Energy Utility Oversight Committee  ",
+  "summary": "City Council - Austin Energy Utility Oversight Committee",
   "start": "2026-05-19T09:00:00",
   "end": "2026-05-19T11:00:00",
   "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
@@ -872,7 +1301,7 @@
  },
  {
   "source": "austin",
-  "summary": "Housing and Planning Committee  ",
+  "summary": "City Council - Housing and Planning Committee",
   "start": "2026-06-02T13:00:00",
   "end": "2026-06-02T15:00:00",
   "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
@@ -1184,6 +1613,19 @@
  },
  {
   "source": "austin",
+  "summary": "City Council - Public Safety Committee",
+  "start": "2026-08-03T14:00:00",
+  "end": "2026-08-03T16:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/Calendar.aspx",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-public-safety-committee-20260803T1400@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
+ },
+ {
+  "source": "austin",
   "summary": "Pedestrian Advisory Council",
   "start": "2026-08-03T18:00:00",
   "end": "2026-08-03T21:00:00",
@@ -1198,15 +1640,15 @@
  {
   "source": "austin",
   "summary": "City Council - Budget Meeting",
-  "start": "2026-08-04",
-  "end": null,
+  "start": "2026-08-04T10:00:00",
+  "end": "2026-08-04T12:00:00",
   "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
-  "url": "https://www.austintexas.gov/council/meetings",
+  "url": "https://austintexas.legistar.com/Calendar.aspx",
   "status": "CONFIRMED",
   "kind": "budget",
-  "uid": "austin-city-council-20260804@calendars.changesaroundme.com",
-  "description": "From the published annual council calendar (dates subject to change). Time and agenda appear ~a week ahead: https://www.austintexas.gov/council/meetings",
-  "all_day": true
+  "uid": "austin-city-council-20260804T1000@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
  },
  {
   "source": "austin",
