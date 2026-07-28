@@ -93,9 +93,10 @@ BOARDS = [
      "https://www.austintexas.gov/boards-commissions/meetings/132_1",
      None, None),
     # Council advisory councils: schedule page under /council/, agendas on a
-    # /boards-commissions/meetings/ page. Neither page carries a "Meeting
-    # Details" accordion, so the time/venue below are the ones that ship —
-    # they mirror the Organizations page and are checked at year rollover.
+    # /boards-commissions/meetings/ page. Both pages DO state their time and
+    # venue, but as an <h3> + <ul> rather than the <dt>/<dd> accordion that
+    # parse_meeting_details reads — so the values below are what ship.
+    # Verified against the live markup 2026-07-28; recheck at year rollover.
     ("Bicycle Advisory Council",
      "https://www.austintexas.gov/council/bicycle-advisory-council",
      "https://www.austintexas.gov/boards-commissions/meetings/110_1",
