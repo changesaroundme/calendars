@@ -112,9 +112,14 @@ Design notes worth keeping in mind:
   next month's meetings. CapMetro turned the build red with "no future events"
   the day after its 7/27 board meeting while 8/24 through 12/14 were already
   scheduled and simply hidden. The adapter now replays the page as an ASP.NET
-  postback with the period set to "This Year", and falls back to the default
-  view if the postback fails or comes back with fewer rows. Side effect, kept
-  on purpose: the feeds now also carry the year's past meetings.
+  postback with the period set to "All Years", and falls back to the default
+  view if the postback fails or comes back with fewer rows. Legistar caps the
+  grid at the 100 most recent rows, so "All Years" self-bounds — measured on
+  capmetrotx as 100 rows spanning Feb 2024 to Dec 2026. "This Year" would have
+  emptied out every 1 January and taken the year's history with it; letting
+  each source carry its own past is why this project keeps no archive of its
+  own. Published feeds are trimmed to `PUBLISH_HISTORY` (12 months) in
+  `build.py`, since subscribers re-download the whole `.ics` on every poll.
 - **Legistar API lag (observed 2026-07-18).** CapMetro's Web API only lists
   meetings once agendas publish; the Calendar.aspx page shows them earlier.
   Hence the two-layer adapter. Worth rechecking for any future Legistar org.

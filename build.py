@@ -25,7 +25,7 @@ from __future__ import annotations
 import json
 import pathlib
 import sys
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 
 import requests
 
@@ -67,17 +67,22 @@ def snapshot_events(path: pathlib.Path) -> list[Event]:
         return []
 
 
-def has_future_events(events: list[Event], today: date) -> bool:
-    """True if any event is still relevant (ends, or starts, today or later).
+# How much past a published feed carries. Sources supply their own history
+# now -- Legistar's "All Years" view reaches back to 2024, CTRMA's past
+# accordions to 2003 -- and subscribers re-download the whole .ics on every
+# poll, so cap what actually ships. data/*.json keeps whatever was scraped.
+PUBLISH_HISTORY = timedelta(days=365)
 
-    Uses end when present so an in-progress comment window counts.
-    """
-    for e in events:
-        latest = e.end or e.start
-        d = latest.date() if isinstance(latest, datetime) else latest
-        if d >= today:
-            return True
-    return False
+
+def event_day(e: Event) -> date:
+    """The last day an event touches. Uses end so a comment window counts."""
+    latest = e.end or e.start
+    return latest.date() if isinstance(latest, datetime) else latest
+
+
+def has_future_events(events: list[Event], today: date) -> bool:
+    """True if any event is still relevant (ends, or starts, today or later)."""
+    return any(event_day(e) >= today for e in events)
 
 
 def main() -> int:
@@ -149,12 +154,16 @@ def main() -> int:
         unhealthy.extend(problems)
 
         # --- write outputs ---
-        if events:
+        # Publish a bounded window; the snapshot below keeps everything the
+        # source gave us, so git history stays complete either way.
+        cutoff = today - PUBLISH_HISTORY
+        publishable = [e for e in events if event_day(e) >= cutoff]
+        if publishable:
             # Always publish what we got (stale beats absent)...
             (docs / f"{key}.ics").write_text(
-                emit(events, calname, now, color=color), newline=""
+                emit(publishable, calname, now, color=color), newline=""
             )
-            all_events.extend(events)
+            all_events.extend(publishable)
             # ...but only advance the snapshot baseline when healthy, so a
             # shrink alarm keeps firing until the data actually recovers
             # (otherwise the shrunken count becomes tomorrow's baseline and
@@ -171,7 +180,9 @@ def main() -> int:
             if stale:
                 print(f"[{key}] backfilling all.ics with {len(stale)} snapshot events")
                 all_events.extend(stale)
-        print(f"[{key}] {len(events)} events")
+        trimmed = len(events) - len(publishable)
+        print(f"[{key}] {len(events)} events"
+              + (f" ({trimmed} older than the publish window)" if trimmed else ""))
 
     if all_events:
         (docs / "all.ics").write_text(

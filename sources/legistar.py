@@ -38,7 +38,13 @@ NAME_SUFFIX_RE = re.compile(
 # record, its own last meeting, while the API had nothing upcoming either).
 # The period is a Telerik RadComboBox driven by an ASP.NET postback rather
 # than a query parameter, so widening it means replaying the form.
-CALENDAR_PERIOD = "This Year"
+#
+# "All Years" rather than "This Year": Legistar caps the grid at the 100
+# most recent rows, so this self-bounds -- measured 2026-07-28 on capmetrotx
+# as 100 rows spanning Feb 2024 to Dec 2026. "This Year" would empty out
+# every 1 January and take the year's history with it; letting the source
+# carry its own past is why this project needs no archive of its own.
+CALENDAR_PERIOD = "All Years"
 PERIOD_FIELD = "ctl00$ContentPlaceHolder1$lstYears"
 PERIOD_STATE_FIELD = "ctl00_ContentPlaceHolder1_lstYears_ClientState"
 
