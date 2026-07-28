@@ -114,7 +114,7 @@ BOARD_MEETING_HOURS = 3  # boards run long; assumed length for timed entries
 # meeting) — swallow it so the date still parses.
 DATE_LI_RE = re.compile(
     r"^(January|February|March|April|May|June|July|August|September|October"
-    r"|November|December)\s+(\d{1,2}),?\s+(20\d{2})\*?"
+    r"|November|December)\s+(\d{1,2}),?\s+(20\d{2})\s*\*?"
     r"(?:(?:\s*[-–—(]\s*|\s+)(.*?))?[)\s]*$"
 )
 
