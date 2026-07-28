@@ -18,6 +18,11 @@ One combined "Austin" calendar from two very different sources:
 The tracked board list is deliberately explicit — add a tuple to BOARDS to
 follow another one (find its numeric meetings-page id on the city clerk
 site).
+
+Note that BOARDS also carries the two council advisory councils (BAC, PAC).
+Their schedule pages live under /council/ rather than /boards-commissions/,
+but they publish the same <li> date list and their agendas still land on a
+/boards-commissions/meetings/ page — same parser, just a different URL.
 """
 from __future__ import annotations
 
@@ -35,6 +40,8 @@ from sources.legistar import CANCEL_RE, Legistar
 SOURCE = "austin"
 
 CITY_HALL = "Austin City Hall, 301 W. 2nd St., Austin, TX 78701"
+PDC_1401 = ("Permitting and Development Center, Room 1401, "
+            "6310 Wilhelmina Delco Dr., Austin, TX 78752")
 
 COUNCIL = Legistar(
     source=SOURCE,
@@ -85,14 +92,28 @@ BOARDS = [
      "https://www.austintexas.gov/boards-commissions/board/austin-integrated-water-resource-planning-community-task-force",
      "https://www.austintexas.gov/boards-commissions/meetings/132_1",
      None, None),
+    # Council advisory councils: schedule page under /council/, agendas on a
+    # /boards-commissions/meetings/ page. Neither page carries a "Meeting
+    # Details" accordion, so the time/venue below are the ones that ship —
+    # they mirror the Organizations page and are checked at year rollover.
+    ("Bicycle Advisory Council",
+     "https://www.austintexas.gov/council/bicycle-advisory-council",
+     "https://www.austintexas.gov/boards-commissions/meetings/110_1",
+     "18:00", PDC_1401),
+    ("Pedestrian Advisory Council",
+     "https://www.austintexas.gov/council/pedestrian-advisory-council",
+     "https://www.austintexas.gov/boards-commissions/meetings/121_1",
+     "18:00", PDC_1401),
 ]
 BOARD_MEETING_HOURS = 3  # boards run long; assumed length for timed entries
 
 # "January 13, 2026" with an optional annotation ("- Special Called",
-# "(Cancelled)", or bare trailing text).
+# "(Cancelled)", or bare trailing text). A bare trailing "*" is a footnote
+# marker, not an annotation (BAC/PAC use it for their combined September
+# meeting) — swallow it so the date still parses.
 DATE_LI_RE = re.compile(
     r"^(January|February|March|April|May|June|July|August|September|October"
-    r"|November|December)\s+(\d{1,2}),?\s+(20\d{2})"
+    r"|November|December)\s+(\d{1,2}),?\s+(20\d{2})\*?"
     r"(?:(?:\s*[-–—(]\s*|\s+)(.*?))?[)\s]*$"
 )
 

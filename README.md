@@ -28,7 +28,7 @@ combined calendar at
 | TxDOT Commission | HTML scrape | Commission meeting-dates page (full year of dates; agendas ~8 days out) |
 | LCRA | HTML scrape | Annual schedule tables (dates only → all-day events; times post with agendas) |
 | CTRMA | HTML scrape | Upcoming-meeting cards on their board-meetings page (date, time, detail link) |
-| City of Austin | Legistar (shared module) + annual PDF + board pages | Council/committees via `austintexas` Legistar; year schedule from the EDIMS PDF; boards & commissions from full-year date lists on austintexas.gov |
+| City of Austin | Legistar (shared module) + annual PDF + board pages | Council/committees via `austintexas` Legistar; year schedule from the EDIMS PDF; boards & commissions plus the Bicycle and Pedestrian Advisory Councils from full-year date lists on austintexas.gov |
 | ATP | ICS ingest | Austin Transit Partnership's published Tribe iCal feed (Board + Community Advisory Committee) |
 | TxDOT Events | HTML tables scrape | Public-involvement pages (UTP): dated events + comment windows; advisory committees (BPAC, PTAC) |
 | One-off events | Hand-curated | `events/curated.yaml` — see below |
