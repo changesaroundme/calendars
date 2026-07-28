@@ -28,7 +28,7 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:txdotev-public-transportation-advisory-committee-20260122T1000@calendar
  s.changesaroundme.com
-DTSTAMP:20260728T165557Z
+DTSTAMP:20260728T171400Z
 DTSTART;TZID=America/Chicago:20260122T100000
 DTEND;TZID=America/Chicago:20260122T120000
 SUMMARY:TxDOT PTAC - Meeting
@@ -39,11 +39,12 @@ URL:https://www.txdot.gov/about/advisory-committees/public-transportation-a
 DESCRIPTION:Posted location: Hybrid 6230 E Stassney Lane\, Austin\, TX 7874
  4
 CATEGORIES:regular
+X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-bicycle-and-pedestrian-advisory-committee-20260130T0930@calenda
  rs.changesaroundme.com
-DTSTAMP:20260728T165557Z
+DTSTAMP:20260728T171400Z
 DTSTART;TZID=America/Chicago:20260130T093000
 DTEND;TZID=America/Chicago:20260130T113000
 SUMMARY:TxDOT BPAC - Meeting
@@ -54,11 +55,12 @@ DESCRIPTION:Posted location: Teams virtual meeting has surpassed\nJan 30\,
  2026 Agenda: https://www.txdot.gov/content/dam/docs/division/ptn/bpac/2026
  /0130/bpac-013026-agenda.docx
 CATEGORIES:regular
+X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-public-transportation-advisory-committee-20260209T1000@calendar
  s.changesaroundme.com
-DTSTAMP:20260728T165557Z
+DTSTAMP:20260728T171400Z
 DTSTART;TZID=America/Chicago:20260209T100000
 DTEND;TZID=America/Chicago:20260209T120000
 SUMMARY:TxDOT PTAC - Meeting
@@ -70,11 +72,12 @@ DESCRIPTION:Posted location: Virtual\nFeb. 9\, 2026 agenda: https://www.txd
  . 9\, 2026 handouts: https://www.txdot.gov/content/dam/docs/division/ptn/p
  tac/2026/ptac-packet-2-9-26.pdf
 CATEGORIES:regular
+X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-bicycle-and-pedestrian-advisory-committee-20260424T0930@calenda
  rs.changesaroundme.com
-DTSTAMP:20260728T165557Z
+DTSTAMP:20260728T171400Z
 DTSTART;TZID=America/Chicago:20260424T093000
 DTEND;TZID=America/Chicago:20260424T113000
 SUMMARY:TxDOT BPAC - Meeting
@@ -88,11 +91,12 @@ DESCRIPTION:Posted location: 6230 E. Stassney Lane\, Austin\, Tx Auditorium
  ps://www.txdot.gov/content/dam/docs/division/ptn/bpac/2026/bpac-0424-agend
  a.docx
 CATEGORIES:regular
+X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-public-transportation-advisory-committee-20260506T1000@calendar
  s.changesaroundme.com
-DTSTAMP:20260728T165557Z
+DTSTAMP:20260728T171400Z
 DTSTART;TZID=America/Chicago:20260506T100000
 DTEND;TZID=America/Chicago:20260506T120000
 SUMMARY:TxDOT PTAC - Meeting
@@ -104,11 +108,12 @@ DESCRIPTION:Posted location: Hybrid 6230 E Stassney Lane\, Austin\, TX 7874
  4 Virtual\nVirtual: https://teams.microsoft.com/meet/29870380635343?p=vjef
  A51QvOXODSu3jz
 CATEGORIES:regular
+X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-utp-virtual-public-meeting-20260701@calendars.changesaroundme.c
  om
-DTSTAMP:20260728T165557Z
+DTSTAMP:20260728T171400Z
 DTSTART;TZID=America/Chicago:20260701T140000
 DTEND;TZID=America/Chicago:20260701T160000
 SUMMARY:TxDOT - UTP: Virtual public meeting
@@ -118,11 +123,12 @@ DESCRIPTION:Public Meeting Presentation: https://ftp.txdot.gov/pub/txdot/ge
  ng Recording: https://onlinexperiences.com/scripts/Server.nxp?LASCmd=AI:4\
  ;F:QS!10100&ShowUUID=B528BCFA-EB93-4D47-91B5-AF15D4A5848D
 CATEGORIES:engagement
+X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-draft-2027-utp-comment-period-20260703@calendars.changesaroundm
  e.com
-DTSTAMP:20260728T165557Z
+DTSTAMP:20260728T171400Z
 DTSTART;VALUE=DATE:20260703
 DTEND;VALUE=DATE:20260804
 SUMMARY:TxDOT - Draft 2027 UTP comment period
@@ -131,11 +137,12 @@ DESCRIPTION:Public comment window: 3 Jul 2026 through 4pm CDT 3 Aug 2026\n\
  nDetails and how to comment: https://www.txdot.gov/projects/planning/utp/u
  tp-public-involvement.html
 CATEGORIES:comment-window
+X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-utp-virtual-public-hearing-20260729@calendars.changesaroundme.c
  om
-DTSTAMP:20260728T165557Z
+DTSTAMP:20260728T171400Z
 DTSTART;TZID=America/Chicago:20260729T140000
 DTEND;TZID=America/Chicago:20260729T160000
 SUMMARY:TxDOT - UTP: Virtual public hearing
@@ -144,11 +151,12 @@ DESCRIPTION:Watch the Livestream HERE: https://onlinexperiences.com/scripts
  /Server.nxp?LASCmd=AI:4\;F:QS!10100&ShowUUID=ACB265E4-C066-4B8A-AA1A-75662
  88A30EB
 CATEGORIES:hearing
+X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-bicycle-and-pedestrian-advisory-committee-20260731T0930@calenda
  rs.changesaroundme.com
-DTSTAMP:20260728T165557Z
+DTSTAMP:20260728T171400Z
 DTSTART;TZID=America/Chicago:20260731T093000
 DTEND;TZID=America/Chicago:20260731T113000
 SUMMARY:TxDOT BPAC - Meeting
@@ -157,11 +165,12 @@ URL:https://www.txdot.gov/about/advisory-committees/bicycle-pedestrian-advi
  sory-committee.html
 DESCRIPTION:Posted location: Teams virtual link will be provided
 CATEGORIES:regular
+X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-public-transportation-advisory-committee-20260813T1000@calendar
  s.changesaroundme.com
-DTSTAMP:20260728T165557Z
+DTSTAMP:20260728T171400Z
 DTSTART;TZID=America/Chicago:20260813T100000
 DTEND;TZID=America/Chicago:20260813T120000
 SUMMARY:TxDOT PTAC - Meeting
@@ -172,11 +181,12 @@ URL:https://www.txdot.gov/about/advisory-committees/public-transportation-a
 DESCRIPTION:Posted location: Hybrid 6230 E Stassney Lane\, Austin\, TX 7874
  4 Virtual
 CATEGORIES:regular
+X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-bicycle-and-pedestrian-advisory-committee-20261106T0930@calenda
  rs.changesaroundme.com
-DTSTAMP:20260728T165557Z
+DTSTAMP:20260728T171400Z
 DTSTART;TZID=America/Chicago:20261106T093000
 DTEND;TZID=America/Chicago:20261106T113000
 SUMMARY:TxDOT BPAC - Meeting
@@ -186,5 +196,6 @@ URL:https://www.txdot.gov/about/advisory-committees/bicycle-pedestrian-advi
  sory-committee.html
 DESCRIPTION:Posted location: 6230 E. Stassney Lane Austin\, TX Auditorium
 CATEGORIES:regular
+X-CAM-ORG:txdotev
 END:VEVENT
 END:VCALENDAR
