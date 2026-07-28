@@ -28,7 +28,7 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:capmetro-finance-audit-and-administration-committee-20260114T1000@calen
  dars.changesaroundme.com
-DTSTAMP:20260728T171400Z
+DTSTAMP:20260728T182601Z
 DTSTART;TZID=America/Chicago:20260114T100000
 DTEND;TZID=America/Chicago:20260114T120000
 SUMMARY:CapMetro - Finance\, Audit and Administration Committee
@@ -41,7 +41,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-operations-planning-and-safety-committee-20260114T1230@calenda
  rs.changesaroundme.com
-DTSTAMP:20260728T171400Z
+DTSTAMP:20260728T182601Z
 DTSTART;TZID=America/Chicago:20260114T123000
 DTEND;TZID=America/Chicago:20260114T143000
 SUMMARY:CapMetro - Operations\, Planning and Safety Committee
@@ -53,7 +53,7 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260126T1200@calendars.changesaroundme.com
-DTSTAMP:20260728T171400Z
+DTSTAMP:20260728T182601Z
 DTSTART;TZID=America/Chicago:20260126T120000
 DTEND;TZID=America/Chicago:20260126T140000
 SUMMARY:CapMetro - Board of Directors
@@ -66,7 +66,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-finance-audit-and-administration-committee-20260211T1000@calen
  dars.changesaroundme.com
-DTSTAMP:20260728T171400Z
+DTSTAMP:20260728T182601Z
 DTSTART;TZID=America/Chicago:20260211T100000
 DTEND;TZID=America/Chicago:20260211T120000
 SUMMARY:CapMetro - Finance\, Audit and Administration Committee
@@ -78,7 +78,7 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260211T1200@calendars.changesaroundme.com
-DTSTAMP:20260728T171400Z
+DTSTAMP:20260728T182601Z
 DTSTART;TZID=America/Chicago:20260211T120000
 DTEND;TZID=America/Chicago:20260211T140000
 SUMMARY:CapMetro - Board of Directors
@@ -91,7 +91,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-operations-planning-and-safety-committee-20260211T1230@calenda
  rs.changesaroundme.com
-DTSTAMP:20260728T171400Z
+DTSTAMP:20260728T182601Z
 DTSTART;TZID=America/Chicago:20260211T123000
 DTEND;TZID=America/Chicago:20260211T143000
 SUMMARY:CapMetro - Operations\, Planning and Safety Committee
@@ -103,7 +103,7 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260223T1200@calendars.changesaroundme.com
-DTSTAMP:20260728T171400Z
+DTSTAMP:20260728T182601Z
 DTSTART;TZID=America/Chicago:20260223T120000
 DTEND;TZID=America/Chicago:20260223T140000
 SUMMARY:CapMetro - Board of Directors
@@ -116,7 +116,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-finance-audit-and-administration-committee-20260311T1100@calen
  dars.changesaroundme.com
-DTSTAMP:20260728T171400Z
+DTSTAMP:20260728T182601Z
 DTSTART;TZID=America/Chicago:20260311T110000
 DTEND;TZID=America/Chicago:20260311T130000
 SUMMARY:CapMetro - Finance\, Audit and Administration Committee
@@ -128,7 +128,7 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260311T1200@calendars.changesaroundme.com
-DTSTAMP:20260728T171400Z
+DTSTAMP:20260728T182601Z
 DTSTART;TZID=America/Chicago:20260311T120000
 DTEND;TZID=America/Chicago:20260311T140000
 SUMMARY:CapMetro - Board of Directors
@@ -141,7 +141,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-operations-planning-and-safety-committee-20260311T1230@calenda
  rs.changesaroundme.com
-DTSTAMP:20260728T171400Z
+DTSTAMP:20260728T182601Z
 DTSTART;TZID=America/Chicago:20260311T123000
 DTEND;TZID=America/Chicago:20260311T143000
 SUMMARY:CapMetro - Operations\, Planning and Safety Committee
@@ -153,7 +153,7 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260323T1200@calendars.changesaroundme.com
-DTSTAMP:20260728T171400Z
+DTSTAMP:20260728T182601Z
 DTSTART;TZID=America/Chicago:20260323T120000
 DTEND;TZID=America/Chicago:20260323T140000
 SUMMARY:CapMetro - Board of Directors
@@ -165,7 +165,7 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260408T1200@calendars.changesaroundme.com
-DTSTAMP:20260728T171400Z
+DTSTAMP:20260728T182601Z
 DTSTART;TZID=America/Chicago:20260408T120000
 DTEND;TZID=America/Chicago:20260408T140000
 SUMMARY:CapMetro - Board of Directors
@@ -177,7 +177,7 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260420T1200@calendars.changesaroundme.com
-DTSTAMP:20260728T171400Z
+DTSTAMP:20260728T182601Z
 DTSTART;TZID=America/Chicago:20260420T120000
 DTEND;TZID=America/Chicago:20260420T140000
 SUMMARY:CapMetro - Board of Directors
@@ -190,7 +190,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-finance-audit-and-administration-committee-20260506T1100@calen
  dars.changesaroundme.com
-DTSTAMP:20260728T171400Z
+DTSTAMP:20260728T182601Z
 DTSTART;TZID=America/Chicago:20260506T110000
 DTEND;TZID=America/Chicago:20260506T130000
 SUMMARY:CapMetro - Finance\, Audit and Administration Committee
@@ -206,7 +206,7 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260506T1200@calendars.changesaroundme.com
-DTSTAMP:20260728T171400Z
+DTSTAMP:20260728T182601Z
 DTSTART;TZID=America/Chicago:20260506T120000
 DTEND;TZID=America/Chicago:20260506T140000
 SUMMARY:CapMetro - Board of Directors
@@ -221,7 +221,7 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260518T1200@calendars.changesaroundme.com
-DTSTAMP:20260728T171400Z
+DTSTAMP:20260728T182601Z
 DTSTART;TZID=America/Chicago:20260518T120000
 DTEND;TZID=America/Chicago:20260518T140000
 SUMMARY:CapMetro - Board of Directors
@@ -237,7 +237,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-finance-audit-and-administration-committee-20260610T1000@calen
  dars.changesaroundme.com
-DTSTAMP:20260728T171400Z
+DTSTAMP:20260728T182601Z
 DTSTART;TZID=America/Chicago:20260610T100000
 DTEND;TZID=America/Chicago:20260610T120000
 SUMMARY:CapMetro - Finance\, Audit and Administration Committee
@@ -254,7 +254,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-operations-planning-and-safety-committee-20260610T1230@calenda
  rs.changesaroundme.com
-DTSTAMP:20260728T171400Z
+DTSTAMP:20260728T182601Z
 DTSTART;TZID=America/Chicago:20260610T123000
 DTEND;TZID=America/Chicago:20260610T143000
 SUMMARY:CapMetro - Operations\, Planning and Safety Committee
@@ -270,7 +270,7 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260622T1200@calendars.changesaroundme.com
-DTSTAMP:20260728T171400Z
+DTSTAMP:20260728T182601Z
 DTSTART;TZID=America/Chicago:20260622T120000
 DTEND;TZID=America/Chicago:20260622T140000
 SUMMARY:CapMetro - Board of Directors
@@ -285,7 +285,7 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260727T1200@calendars.changesaroundme.com
-DTSTAMP:20260728T171400Z
+DTSTAMP:20260728T182601Z
 DTSTART;TZID=America/Chicago:20260727T120000
 DTEND;TZID=America/Chicago:20260727T140000
 SUMMARY:CapMetro - Board of Directors
@@ -300,7 +300,7 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260824T1200@calendars.changesaroundme.com
-DTSTAMP:20260728T171400Z
+DTSTAMP:20260728T182601Z
 DTSTART;TZID=America/Chicago:20260824T120000
 DTEND;TZID=America/Chicago:20260824T140000
 SUMMARY:CapMetro - Board of Directors
@@ -313,7 +313,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-finance-audit-and-administration-committee-20260916T1000@calen
  dars.changesaroundme.com
-DTSTAMP:20260728T171400Z
+DTSTAMP:20260728T182601Z
 DTSTART;TZID=America/Chicago:20260916T100000
 DTEND;TZID=America/Chicago:20260916T120000
 SUMMARY:CapMetro - Finance\, Audit and Administration Committee
@@ -326,7 +326,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-operations-planning-and-safety-committee-20260916T1230@calenda
  rs.changesaroundme.com
-DTSTAMP:20260728T171400Z
+DTSTAMP:20260728T182601Z
 DTSTART;TZID=America/Chicago:20260916T123000
 DTEND;TZID=America/Chicago:20260916T143000
 SUMMARY:CapMetro - Operations\, Planning and Safety Committee
@@ -338,7 +338,7 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260928T1200@calendars.changesaroundme.com
-DTSTAMP:20260728T171400Z
+DTSTAMP:20260728T182601Z
 DTSTART;TZID=America/Chicago:20260928T120000
 DTEND;TZID=America/Chicago:20260928T140000
 SUMMARY:CapMetro - Board of Directors
@@ -351,7 +351,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-finance-audit-and-administration-committee-20261014T1000@calen
  dars.changesaroundme.com
-DTSTAMP:20260728T171400Z
+DTSTAMP:20260728T182601Z
 DTSTART;TZID=America/Chicago:20261014T100000
 DTEND;TZID=America/Chicago:20261014T120000
 SUMMARY:CapMetro - Finance\, Audit and Administration Committee
@@ -364,7 +364,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-operations-planning-and-safety-committee-20261014T1230@calenda
  rs.changesaroundme.com
-DTSTAMP:20260728T171400Z
+DTSTAMP:20260728T182601Z
 DTSTART;TZID=America/Chicago:20261014T123000
 DTEND;TZID=America/Chicago:20261014T143000
 SUMMARY:CapMetro - Operations\, Planning and Safety Committee
@@ -376,7 +376,7 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20261026T1200@calendars.changesaroundme.com
-DTSTAMP:20260728T171400Z
+DTSTAMP:20260728T182601Z
 DTSTART;TZID=America/Chicago:20261026T120000
 DTEND;TZID=America/Chicago:20261026T140000
 SUMMARY:CapMetro - Board of Directors
@@ -388,7 +388,7 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20261116T1200@calendars.changesaroundme.com
-DTSTAMP:20260728T171400Z
+DTSTAMP:20260728T182601Z
 DTSTART;TZID=America/Chicago:20261116T120000
 DTEND;TZID=America/Chicago:20261116T140000
 SUMMARY:CapMetro - Board of Directors
@@ -401,7 +401,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-finance-audit-and-administration-committee-20261202T1000@calen
  dars.changesaroundme.com
-DTSTAMP:20260728T171400Z
+DTSTAMP:20260728T182601Z
 DTSTART;TZID=America/Chicago:20261202T100000
 DTEND;TZID=America/Chicago:20261202T120000
 SUMMARY:CapMetro - Finance\, Audit and Administration Committee
@@ -414,7 +414,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-operations-planning-and-safety-committee-20261202T1230@calenda
  rs.changesaroundme.com
-DTSTAMP:20260728T171400Z
+DTSTAMP:20260728T182601Z
 DTSTART;TZID=America/Chicago:20261202T123000
 DTEND;TZID=America/Chicago:20261202T143000
 SUMMARY:CapMetro - Operations\, Planning and Safety Committee
@@ -426,7 +426,7 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20261214T1200@calendars.changesaroundme.com
-DTSTAMP:20260728T171400Z
+DTSTAMP:20260728T182601Z
 DTSTART;TZID=America/Chicago:20261214T120000
 DTEND;TZID=America/Chicago:20261214T140000
 SUMMARY:CapMetro - Board of Directors
