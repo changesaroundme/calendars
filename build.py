@@ -29,7 +29,7 @@ from datetime import date, datetime, timezone
 
 import requests
 
-from caltools.ics import emit
+from caltools.ics import CENTRAL, emit
 from caltools.model import Event
 from sources import (atp, austin, campo, capmetro, ctrma, curated, lcra,
                      openmeetings, txdot, txdotev)
@@ -95,7 +95,11 @@ def main() -> int:
     all_events = []
     events_by_key: dict[str, list[Event]] = {}
 
-    today = now.date()
+    # Central, not UTC. `now` stays UTC because DTSTAMP requires it, but
+    # "is this meeting still upcoming" is a question about local wall-clock
+    # days: now.date() flips over at 7pm Central, so an evening build
+    # counted a meeting held earlier that same day as already past.
+    today = now.astimezone(CENTRAL).date()
 
     # Hand-curated one-offs (events/curated.yaml) merge into org feeds below.
     curated.load(set(CALENDARS))

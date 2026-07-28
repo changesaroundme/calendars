@@ -107,6 +107,14 @@ Design notes worth keeping in mind:
   in a status field by others; adapters strip the marker from the name
   (identity survives) and set `STATUS:CANCELLED` so capable clients render
   the event struck-through. Cancelled events are kept, never deleted.
+- **Legistar shows one month by default (observed 2026-07-28).** `Calendar.aspx`
+  opens on a "This Month" period filter, so a plain GET structurally cannot see
+  next month's meetings. CapMetro turned the build red with "no future events"
+  the day after its 7/27 board meeting while 8/24 through 12/14 were already
+  scheduled and simply hidden. The adapter now replays the page as an ASP.NET
+  postback with the period set to "This Year", and falls back to the default
+  view if the postback fails or comes back with fewer rows. Side effect, kept
+  on purpose: the feeds now also carry the year's past meetings.
 - **Legistar API lag (observed 2026-07-18).** CapMetro's Web API only lists
   meetings once agendas publish; the Calendar.aspx page shows them earlier.
   Hence the two-layer adapter. Worth rechecking for any future Legistar org.

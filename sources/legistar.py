@@ -15,6 +15,7 @@ stable UID, so an event stays itself as it graduates from "scheduled" to
 """
 from __future__ import annotations
 
+import json
 import re
 from dataclasses import dataclass
 from datetime import datetime, timedelta
@@ -30,6 +31,16 @@ CANCEL_RE = re.compile(r"cancell?ed|postponed|deferred|rescheduled", re.IGNORECA
 NAME_SUFFIX_RE = re.compile(
     r"\s*[-–—(]\s*(cancell?ed|postponed|deferred|rescheduled)\)?\s*$", re.IGNORECASE
 )  # hyphen, en dash, em dash, or paren before the marker
+
+# Calendar.aspx opens on a "This Month" filter, so a bare GET structurally
+# cannot see a meeting scheduled for next month -- exactly the early notice
+# this project exists for (observed 2026-07-28: CapMetro's page showed one
+# record, its own last meeting, while the API had nothing upcoming either).
+# The period is a Telerik RadComboBox driven by an ASP.NET postback rather
+# than a query parameter, so widening it means replaying the form.
+CALENDAR_PERIOD = "This Year"
+PERIOD_FIELD = "ctl00$ContentPlaceHolder1$lstYears"
+PERIOD_STATE_FIELD = "ctl00_ContentPlaceHolder1_lstYears_ClientState"
 
 
 def parse_time(text: str) -> datetime | None:
@@ -227,10 +238,58 @@ class Legistar:
                         break
         return events
 
+    def widen_calendar_html(self, session, html: str) -> str | None:
+        """Replay Calendar.aspx as a postback with the period set to a year.
+
+        Returns the widened page, or None when the form is not shaped the
+        way we expect or the postback fails -- callers keep the default
+        view, so the worst case is exactly the behaviour we had before.
+        """
+        if PERIOD_FIELD not in html:
+            return None  # not the Legistar template we know; leave it alone
+        soup = BeautifulSoup(html, "html.parser")
+        form = {
+            i["name"]: i.get("value", "")
+            for i in soup.find_all("input", {"type": "hidden"})
+            if i.get("name")
+        }
+        if "__VIEWSTATE" not in form:
+            return None
+        form["__EVENTTARGET"] = PERIOD_FIELD
+        form["__EVENTARGUMENT"] = ""
+        form[PERIOD_FIELD] = CALENDAR_PERIOD
+        # The combo posts its own widget state alongside the plain value;
+        # the server reads "text", so both have to agree.
+        form[PERIOD_STATE_FIELD] = json.dumps({
+            "logEntries": [], "value": "", "text": CALENDAR_PERIOD,
+            "enabled": True, "checkedIndices": [],
+            "checkedItemsTextOverflows": False,
+        })
+        try:
+            resp = session.post(self.calendar_url, data=form, timeout=30)
+            resp.raise_for_status()
+        except Exception as exc:
+            print(f"[{self.source}] WARNING: calendar widen failed: {exc}")
+            return None
+        return resp.text
+
     def fetch(self, session) -> list[Event]:
         resp = session.get(self.calendar_url, timeout=30)
         resp.raise_for_status()
         events = self.parse_calendar_html(resp.text)
+        # Try for the whole year, but never accept a view that sees less
+        # than the default did -- a failed postback often still renders a
+        # valid-looking page, and silently shrinking coverage is worse than
+        # not widening at all.
+        widened = self.widen_calendar_html(session, resp.text)
+        if widened is not None:
+            wider = self.parse_calendar_html(widened)
+            if len(wider) >= len(events):
+                events = wider
+            else:
+                print(f"[{self.source}] WARNING: {CALENDAR_PERIOD} view "
+                      f"returned {len(wider)} rows vs {len(events)} for the "
+                      "default view; keeping the default")
         since = datetime.now() - timedelta(days=90)
         try:
             rows = self.api_events(session, since)
