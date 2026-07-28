@@ -93,6 +93,13 @@
         background: color-mix(in srgb, var(--org, var(--text-secondary)) 16%, var(--surface-1));
         color: var(--text-primary); padding: 1px 4px; cursor: pointer; }
   .fc .ev .fc-event-title, .fc .ev .fc-event-time { color: var(--text-primary); }
+  /* Wrap instead of truncate. In an Obsidian Publish column a month cell is
+     ~100px wide -- about 12 characters -- so FullCalendar's default
+     nowrap+clip was eating most of every title. Both rules are needed:
+     .fc-daygrid-event carries the nowrap, .fc-event-title carries the clip. */
+  .fc .fc-daygrid-event { white-space: normal; }
+  .fc .ev .fc-event-title { white-space: normal; overflow: visible;
+        overflow-wrap: anywhere; line-height: 1.25; }
   .fc .ev.cancelled { text-decoration: line-through; opacity: .55; }
   .fc .fc-list-event { cursor: pointer; }
   .fc .fc-list-event-dot { border-color: var(--org, var(--text-secondary)) !important; }
@@ -228,7 +235,9 @@ const calendar = new FullCalendar.Calendar(document.getElementById("cal"), {
                    right: "dayGridMonth,listUpcoming" },
   buttonText: { today: "today", dayGridMonth: "month", listUpcoming: "list" },
   height: "100%",  // fill the flex slot; list scrolls internally
-  dayMaxEventRows: 4,
+  // true = fit as many as the cell height allows, rest go to the built-in
+  // "+N more" popover. A fixed number would overflow now that chips wrap.
+  dayMaxEventRows: true,
   displayEventEnd: false,
   eventDisplay: "block",  // chips for timed events too, not default dots
   eventContent: (arg) => {
