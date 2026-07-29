@@ -32,7 +32,7 @@ import requests
 from caltools.ics import CENTRAL, emit
 from caltools.model import Event
 from sources import (atp, austin, campo, capmetro, ctrma, curated, lcra,
-                     openmeetings, txdot, txdotev)
+                     legislature, openmeetings, txdot, txdotev)
 
 ROOT = pathlib.Path(__file__).parent
 DOCS = ROOT / "docs"
@@ -48,6 +48,11 @@ CALENDARS = {
     "austin": ("CAM - City of Austin", austin, "#EB6834"),  # orange (slot 6)
     "atp": ("CAM - ATP", atp, "#4A3AA7"),  # violet (slot 7)
     "txdotev": ("CAM - TxDOT Events", txdotev, "#E34948"),  # red (slot 8)
+    # 9th org, and the validated palette only has 8 CVD-safe slots. Neutral
+    # grey until the palette rethink (categorise by event or agency type)
+    # noted on the Calendar Maintenance page happens -- better an obviously
+    # unassigned colour than a 9th hue that collides with one of the 8.
+    "legislature": ("CAM - Texas Legislature", legislature, "#6E6E6E"),
 }
 # All 8 validated categorical slots are now assigned to orgs; the combined
 # feeds get a neutral (they never appear next to org colors in the embed).
@@ -173,7 +178,10 @@ def main() -> int:
             except Exception:
                 pass
         problems = list(getattr(module, "health_problems", lambda: [])())
-        if not events:
+        if not events and not getattr(module, "CURATED_ONLY", False):
+            # Curated-only feeds are legitimately empty between entries;
+            # alarming there would guarantee a red build the day the last
+            # hand-entered event is pruned.
             problems.append(f"{key}: 0 events parsed")
         else:
             if previous_count and len(events) < previous_count / 2:

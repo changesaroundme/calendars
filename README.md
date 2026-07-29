@@ -31,12 +31,13 @@ combined calendar at
 | City of Austin | Legistar (shared module) + annual PDF + board pages | Council/committees via `austintexas` Legistar; year schedule from the EDIMS PDF; boards & commissions plus the Bicycle and Pedestrian Advisory Councils from full-year date lists on austintexas.gov |
 | ATP | ICS ingest | Austin Transit Partnership's published Tribe iCal feed (Board + Community Advisory Committee) |
 | TxDOT Events | HTML tables scrape | Public-involvement pages (UTP): dated events + comment windows; advisory committees (BPAC, PTAC) |
+| Texas Legislature | *Curated only* | No scraper: committee notices come down at end of day, so a daily build can't catch same-day postings. `sources/legislature.py` exists so `events/curated.yaml` entries have a feed to land in |
 | One-off events | Hand-curated | `events/curated.yaml` — see below |
 | SOS open meetings | *Shadow mode* | UNT mirror of Texas SOS filings, watchlist-filtered and archived to `data/openmeetings.json`; observation only until the enrichment pass ships |
 
 **Outputs** (in `docs/`, served by Pages)
 
-- `campo.ics`, `capmetro.ics`, `txdot.ics`, `lcra.ics`, `ctrma.ics`, `austin.ics`, `atp.ics`, `txdotev.ics` — one calendar per organization
+- `campo.ics`, `capmetro.ics`, `txdot.ics`, `lcra.ics`, `ctrma.ics`, `austin.ics`, `atp.ics`, `txdotev.ics`, `legislature.ics` — one calendar per organization
 - `all.ics` — everything combined (never filtered; existing subscribers rely on it)
 - `meetings.ics` — everything except `ENGAGEMENT_KINDS`; `engagement.ics` — only those.
   The two are disjoint and their union is `all.ics`. Widen the set in

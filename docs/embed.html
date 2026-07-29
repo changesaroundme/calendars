@@ -21,6 +21,7 @@
     --org-austin:   #eb6834;  /* orange */
     --org-atp:      #4a3aa7;  /* violet */
     --org-txdotev:  #e34948;  /* red */
+  --org-legislature: #6e6e6e;  /* neutral: 9th org, palette has 8 slots */
   }
   /* Dark values apply via OS setting (unless ?theme=light) or ?theme=dark. */
   @media (prefers-color-scheme: dark) {
@@ -38,6 +39,8 @@
       --org-austin:   #d95926;
       --org-atp:      #9085e9;
       --org-txdotev:  #e66767;
+    --org-legislature: #9a9a92;
+      --org-legislature: #9a9a92;
     }
   }
   :root[data-theme="dark"] {
@@ -135,6 +138,8 @@ const ORGS = [
   { key: "austin",   label: "CoA",      match: u => u.startsWith("austin-") },
   { key: "atp",      label: "ATP",      match: u => u.endsWith("@www.atptx.org") },
   { key: "txdotev",  label: "TxDOT",    match: u => u.startsWith("txdotev-") },
+  { key: "legislature", label: "Legislature",
+    match: u => u.startsWith("legislature-") },
 ];
 const hidden = new Set();
 
@@ -190,12 +195,18 @@ function orgOf(ev) {
   return ORGS.find(o => o.match(ev.uid || "")) || null;
 }
 
-/* --- URL params: ?view=list|month  ?orgs=campo,txdot  ?theme=dark|light --- */
+/* --- URL params: ?view=list|month  ?orgs=campo,txdot  ?theme=dark|light
+       ?feed=all|meetings|engagement --- */
 const params = new URLSearchParams(location.search);
 const themeParam = params.get("theme");
 if (themeParam === "dark" || themeParam === "light") {
   document.documentElement.dataset.theme = themeParam;
 }
+// Which combined feed to render. Defaults to all.ics so an existing embed
+// with no ?feed= keeps behaving exactly as it did.
+const FEEDS = { all: "all.ics", meetings: "meetings.ics",
+                engagement: "engagement.ics" };
+const FEED = FEEDS[params.get("feed")] || FEEDS.all;
 const orgsParam = (params.get("orgs") || "").split(",").map(s => s.trim()).filter(Boolean);
 if (orgsParam.length) {
   for (const org of ORGS) if (!orgsParam.includes(org.key)) hidden.add(org.key);
@@ -268,7 +279,7 @@ const calendar = new FullCalendar.Calendar(document.getElementById("cal"), {
         }))
     );
     if (parsed.length) return deliver();
-    fetch("./all.ics", { cache: "no-cache" })
+    fetch("./" + FEED, { cache: "no-cache" })
       .then(r => { if (!r.ok) throw new Error(r.status); return r.text(); })
       .then(t => { parsed = parseICS(t); deliver(); })
       .catch(failure);
