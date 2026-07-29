@@ -21,6 +21,7 @@
     --org-austin:   #eb6834;  /* orange */
     --org-atp:      #4a3aa7;  /* violet */
     --org-txdotev:  #e34948;  /* red */
+    --org-legislature: #6e6e6e;  /* neutral until the palette rethink */
   }
   /* Dark values apply via OS setting (unless ?theme=light) or ?theme=dark. */
   @media (prefers-color-scheme: dark) {
@@ -38,6 +39,7 @@
       --org-austin:   #d95926;
       --org-atp:      #9085e9;
       --org-txdotev:  #e66767;
+      --org-legislature: #9a9a91;
     }
   }
   :root[data-theme="dark"] {
@@ -54,6 +56,7 @@
     --org-austin:   #d95926;
     --org-atp:      #9085e9;
     --org-txdotev:  #e66767;
+    --org-legislature: #9a9a91;
   }
   /* Fill the iframe and scroll INTERNALLY: legend/toolbar/footer stay
      pinned; only the event list scrolls. Prevents double scrollbars in
@@ -138,6 +141,7 @@ const ORGS = [
   { key: "austin",   label: "CoA",      match: u => u.startsWith("austin-") },
   { key: "atp",      label: "ATP",      match: u => u.endsWith("@www.atptx.org") },
   { key: "txdotev",  label: "TxDOT",    match: u => u.startsWith("txdotev-") },
+  { key: "legislature", label: "TxLege", match: u => u.startsWith("legislature-") },
 ];
 const hidden = new Set();
 
@@ -173,6 +177,7 @@ function parseICS(text) {
       case "URL": cur.url = value; break;
       case "UID": cur.uid = value; break;
       case "X-CAM-ORG": cur.org = value; break;
+      case "CATEGORIES": cur.kind = unescapeText(value); break;
       case "STATUS": cur.status = value; break;
     }
   }
@@ -205,8 +210,15 @@ function displayTitle(ev) {
   return t;
 }
 
-/* --- URL params: ?view=list|month  ?orgs=campo,txdot  ?theme=dark|light --- */
+/* --- URL params: ?view=list|month  ?orgs=campo,txdot  ?theme=dark|light
+       ?feed=all|engagement|meetings|<org>   (which .ics to load)
+       ?kinds=comment-window,hearing         (filter by event kind) --- */
 const params = new URLSearchParams(location.search);
+const FEEDS = new Set(["all", "engagement", "meetings",
+                       ...["campo","capmetro","txdot","lcra","ctrma","austin",
+                           "atp","txdotev","legislature"]]);
+const feedFile = FEEDS.has(params.get("feed")) ? params.get("feed") : "all";
+const kindsParam = (params.get("kinds") || "").split(",").map(s => s.trim()).filter(Boolean);
 const themeParam = params.get("theme");
 if (themeParam === "dark" || themeParam === "light") {
   document.documentElement.dataset.theme = themeParam;
@@ -275,6 +287,7 @@ const calendar = new FullCalendar.Calendar(document.getElementById("cal"), {
   events: (info, success, failure) => {
     const deliver = () => success(
       parsed
+        .filter(e => !kindsParam.length || kindsParam.includes(e.kind || "regular"))
         .filter(e => { const o = orgOf(e); return !o || !hidden.has(o.key); })
         .map(e => ({
           id: e.uid,
@@ -289,7 +302,7 @@ const calendar = new FullCalendar.Calendar(document.getElementById("cal"), {
         }))
     );
     if (parsed.length) return deliver();
-    fetch("./all.ics", { cache: "no-cache" })
+    fetch(`./${feedFile}.ics`, { cache: "no-cache" })
       .then(r => { if (!r.ok) throw new Error(r.status); return r.text(); })
       .then(t => { parsed = parseICS(t); deliver(); })
       .catch(failure);
