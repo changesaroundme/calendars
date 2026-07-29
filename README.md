@@ -37,7 +37,10 @@ combined calendar at
 **Outputs** (in `docs/`, served by Pages)
 
 - `campo.ics`, `capmetro.ics`, `txdot.ics`, `lcra.ics`, `ctrma.ics`, `austin.ics`, `atp.ics`, `txdotev.ics` — one calendar per organization
-- `all.ics` — everything combined
+- `all.ics` — everything combined (never filtered; existing subscribers rely on it)
+- `meetings.ics` — everything except `ENGAGEMENT_KINDS`; `engagement.ics` — only those.
+  The two are disjoint and their union is `all.ics`. Widen the set in
+  `build.py` to reclassify; never rename a feed, it breaks subscribers.
 - `index.html` — stub pointing to the canonical directory on changesaroundme.com; `embed.html` — filterable month/list view for embedding
 
 ## Day-to-day: pushing changes

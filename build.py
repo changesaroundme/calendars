@@ -50,8 +50,24 @@ CALENDARS = {
     "txdotev": ("CAM - TxDOT Events", txdotev, "#E34948"),  # red (slot 8)
 }
 # All 8 validated categorical slots are now assigned to orgs; the combined
-# feed gets a neutral (it never appears next to org colors in the embed).
+# feeds get a neutral (they never appear next to org colors in the embed).
 ALL_COLOR = "#6E6E6E"
+
+# Kinds that are public-comment windows rather than meetings you attend.
+# Widening this set is the only change needed to broaden the engagement
+# feed: it is named for the concept, not for today's single kind, so it
+# never has to be renamed -- renaming a feed breaks every subscriber.
+ENGAGEMENT_KINDS = {"comment-window"}
+
+# Combined feeds derived from all_events by filtering on kind. all.ics is
+# deliberately NOT one of these: it keeps carrying everything, so nobody
+# already subscribed to it silently loses events.
+DERIVED_FEEDS = {
+    "engagement": ("CAM - Public Engagement",
+                   lambda e: e.kind in ENGAGEMENT_KINDS),
+    "meetings": ("CAM - Meetings",
+                 lambda e: e.kind not in ENGAGEMENT_KINDS),
+}
 
 USER_AGENT = (
     "cam-calendars/1.0 (+https://github.com/changesaroundme/calendars; "
@@ -218,6 +234,12 @@ def main() -> int:
             emit(all_events, "CAM - All", now, color=ALL_COLOR), newline=""
         )
         print(f"[all] {len(all_events)} events")
+        for name, (calname, keep) in DERIVED_FEEDS.items():
+            subset = [e for e in all_events if keep(e)]
+            (docs / f"{name}.ics").write_text(
+                emit(subset, calname, now, color=ALL_COLOR), newline=""
+            )
+            print(f"[{name}] {len(subset)} events")
 
     # --- SOS open-meetings, SHADOW MODE: archive + log, never publish. ---
     # Non-fatal during observation; promote to a health check when the

@@ -37,3 +37,56 @@
 #   location: "Austin High School Cafeteria, 1715 W. Cesar Chavez St., Austin, TX"
 #   url: https://my35capex.com/events/example
 #   kind: engagement
+
+# --- added 2026-07-28 -------------------------------------------------------
+
+- summary: "TxDOT - I-14 Extension Public Meeting (Temple)"
+  start: 2026-08-05 17:00
+  org: txdotev
+  location: "Frank W. Mayborn Civic & Convention Center, Main Hall, 3303 N. 3rd Street, Temple, TX 76501"
+  url: https://www.txdot.gov/projects/hearings-meetings/waco/2026/i14-extension-080526.html
+  kind: engagement
+  description: |
+    Open house, drop in any time 5-7pm CDT. One of two in-person meetings on
+    the same proposals; the other is in Belton on 6 Aug 2026.
+
+    Proposed I-35 improvements from south of Loop 121 in Belton to Loop
+    363/US 190/SH 36 in Temple ("Segment 1"), part of extending I-14 from its
+    current terminus in Belton to BU 190 in Rogers.
+
+    A pre-recorded video of the same presentation goes up on the project page
+    by 5pm on 5 Aug 2026. Written comments must be postmarked or received by
+    21 Aug 2026 to enter the official record.
+
+- summary: "TxDOT - I-14 Extension Public Meeting (Belton)"
+  start: 2026-08-06 17:00
+  org: txdotev
+  location: "Huntington Bank Expo (Cadence Bank Center), Assembly Hall, 301 W. Loop 121, Belton, TX 76513"
+  url: https://www.txdot.gov/projects/hearings-meetings/waco/2026/i14-extension-080526.html
+  kind: engagement
+  description: |
+    Open house, drop in any time 5-7pm CDT. Same proposals as the Temple
+    meeting on 5 Aug 2026 - attend whichever is more convenient.
+
+    Proposed I-35 improvements from south of Loop 121 in Belton to Loop
+    363/US 190/SH 36 in Temple ("Segment 1"), part of extending I-14 from its
+    current terminus in Belton to BU 190 in Rogers.
+
+    Written comments must be postmarked or received by 21 Aug 2026 to enter
+    the official record.
+
+- summary: "TxDOT - Texas Triangle Multimodal Strategic Plan Webinar"
+  start: 2026-07-30 12:00
+  org: txdotev
+  location: "Virtual (Microsoft Teams)"
+  url: https://www.txdot.gov/projects/projects-studies/statewide/ttmsp.html
+  kind: engagement
+  description: |
+    Virtual webinar, 12pm CDT. Registration required - a Teams invitation is
+    sent to the address you register with:
+    https://forms.office.com/Pages/ResponsePage.aspx?id=dqTbOQlcY0yR2s56OrUiTehB7aaighdMu7NupziNqitUOFlWMzRRMU9EWjgyWTUxWEswWFMzQ08yWC4u
+
+    TxDOT is seeking input from transportation and mobility advocates on the
+    Texas Triangle Multimodal Strategic Plan - current transportation
+    challenges, emerging mobility trends, and connections between communities
+    across the Dallas-Fort Worth / Houston / San Antonio / Austin mega-region.
