@@ -1,0 +1,428 @@
+<!-- Full snapshot of senate.texas.gov/events.php (captured 2026-07-29
+     via same-origin fetch = raw server HTML). Includes the desktop AND
+     mobile events tables (only .cmte_events must be parsed, or every
+     hearing doubles), the press-conferences table, cancelled rows, and
+     REVISED notes. Dev fixture only. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" id="viewportjs">
+	<title>Hearings and Events | The Texas State Senate</title>
+	<meta property="og:title" content="The Texas State Senate Hearings and Events |">
+	<meta property="og:image" content="https://senate.texas.gov/_assets/img/og_image.jpg">
+	<meta property="og:url" content="http://senate.texas.gov/events.php">
+	<meta property="og:description" content="This is the official website for the Senate of the State of Texas; providing news, information, and broadcasts of the Texas Senate.">
+	<meta name="description" content="This is the official website for the Senate of the State of Texas; providing news, information, and broadcasts of the Texas Senate.">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="The Texas State Senate Hearings and Events |">
+	<meta name="twitter:description" content="This is the official website for the Senate of the State of Texas; providing news, information, and broadcasts of the Texas Senate.">
+	<meta name="twitter:image" content="https://senate.texas.gov/_assets/img/og_image.jpg">
+	<meta name="twitter:url" content="http://senate.texas.gov/events.php">
+	<link rel="shortcut icon" type="image/x-icon" href="_assets/img/favicon.ico">
+	<link rel="icon" type="image/png" href="_assets/img/favicon.png">
+	<link type="text/css" href="_assets/css/jquery-ui.min.css" rel="stylesheet">
+	<link type="text/css" href="_assets/css/jquery-ui.structure.min.css" rel="stylesheet">
+	<link type="text/css" href="_assets/css/jquery-ui.theme.min.css" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="57x57" href="_assets/img/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="_assets/img/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="_assets/img/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="_assets/img/apple-icon-144x144.png">
+	<link type="text/css" media="screen and (min-width: 741px)" href="_assets/css/global.css" rel="stylesheet">
+	<script src="_assets/js/jquery-1.11.1.min.js"></script>
+	<script src="_assets/js/jquery-ui.min.js"></script> 
+	<script src="_assets/js/global.js"></script>
+	<script src="_assets/js/main_menu.js" defer></script>
+	<link type="text/css" media="screen and (max-width: 740px)" href="_assets/css/mobile.css" rel="stylesheet">
+	<link type="text/css" media="print" href="_assets/css/print.css" rel="stylesheet"> 
+	<noscript><style>#galleriaFP {display:none;}</style></noscript>
+	<noscript><style>.galleriaDIV {display:none;}</style></noscript>
+</head>
+<body>
+	<noscript><div id="js_warning">ATTENTION: Your browser appears to have scripting disabled. Some aspects of this website require that JavaScript be enabled to function properly.<br>To ensure full functionality, please enable JavaScript in your browser, or enable scripting for this website.</div></noscript>
+	
+	<div class="container">
+		<header role="banner">
+			<a href="#main-content" class="skip-link">Skip to main content</a>
+			<div class="langcontainer"><div class="lang-ada" role="toolbar" aria-label="Language Selection" aria-orientation="horizontal">LANGUAGE: <a href="?lang=en">ENGLISH</a> <span aria-hidden="true" role="separator">/</span> <a href="?lang=es">ESPAÑOL</a></div></div>
+			<a class="header-img" href="index.php"><img class="senseal" src="_assets/img/header_senseal_24.png" alt="Homepage"></a>
+			<img class="bannerbg-img" src="_assets/img/header_title_24_89.png" alt="Welcome to the Official Website for the Texas Senate" title="Welcome to the Official Website for the Texas Senate">
+		</header>
+		<div class="mobileheader" role="banner">
+			<a href="#main-content" class="skip-link">Skip to main content</a>
+			<div class="langcontainer"><div class="lang-ada" role="toolbar" aria-label="Language Selection" aria-orientation="horizontal">LANGUAGE: <a href="?lang=en">ENGLISH</a> <span aria-hidden="true" role="separator">/</span> <a href="?lang=es">ESPAÑOL</a></div></div>
+			<div class="mh1"><a href="index.php"><img class="sensealmobile" src="_assets/img/header_senseal_24.png" alt="Homepage"></a></div>
+			<div class="mh2"><span class="sm">Welcome to the official website for the</span><br><span class="mhtxt">Texas Senate</span></div>
+			<nav role="navigation" aria-label="mobile primary" class="mobile" id="NAV_accordion">
+				<button type="button" class="accordion_button" aria-expanded="false" aria-label="open the menu" aria-controls="mobilenav-new"><span aria-hidden="true">&equiv;</span></button>
+						<ul aria-label="mobile main menu" id="mobilenav-new">
+							<li><a href="ltgov.php">Lt. Governor</a></li>
+							<li><a href="members.php">Senators</a></li>
+							<li><a href="sos.php">Secretary</a></li>
+							<li><a href="committees.php">Committees</a></li>
+							<li><a href="av-live.php">News &amp; Media</a></li>
+							<li><a href="vcenter.php">Visitors</a></li>
+							<!--<li><a href="kids.php">For Kids</a></li>-->
+						</ul>
+			</nav>
+		</div>
+		<div aria-hidden="true" class="rwb">&nbsp;</div>
+		<nav role="navigation" aria-label="primary" class="menubar_main">
+			<ul class="nav_main">
+				<li><a role="button" class="main_menu_button" id="main_menu_01" href="ltgov.php">Lt. Governor</a></li>
+				<li class="submenu_ctrl" data-expanded="false"><button class="main_menu_button" id="main_menu_02" aria-haspopup="true" aria-expanded="false" aria-controls="submenu_02">Senators</button><span aria-hidden="true" class="menu_arrow"></span>
+					<ul class="nav_sub" id="submenu_02" aria-labelledby="main_menu_02" aria-hidden="true">
+						<li class="nav_sub"><a class="nav_sub_a" href="members.php">Members</a></li>
+						<li class="nav_sub"><a class="nav_sub_a" href="directory.php">Full Directory</a></li>
+						<li class="nav_sub"><a class="nav_sub_a" href="facts.php">Facts &amp; Figures</a></li>
+						<li class="nav_sub"><a class="nav_sub_a" href="seniority.php">Seniority</a></li>
+						<li class="nav_sub"><a class="nav_sub_a menu_wh" rel="external" href="https://wrm.capitol.texas.gov/home">Who Represents Me?</a></li>
+						<li class="nav_sub"><a class="nav_sub_a" href="_assets/pdf/89FloorChart.pdf">89th Seating Chart</a></li>
+					</ul>
+				</li>
+				<li class="submenu_ctrl" data-expanded="false"><button class="main_menu_button" id="main_menu_03" aria-haspopup="true" aria-expanded="false" aria-controls="submenu_03">Secretary</button><span aria-hidden="true" class="menu_arrow"></span>
+					<ul class="nav_sub" id="submenu_03" aria-labelledby="main_menu_03" aria-hidden="true">
+						<li class="nav_sub"><a class="nav_sub_a" href="sos.php">Patsy Spaw</a></li>
+						<li class="nav_sub"><a class="nav_sub_a" href="hr.php">Human Resources</a></li>
+						<li class="nav_sub"><a class="nav_sub_a" href="src.php">Research Center</a></li>
+						<li class="nav_sub"><a class="nav_sub_a" href="agenda.php">Agenda</a></li>
+						<li class="nav_sub"><a class="nav_sub_a" target="_blank" href="https://room-schedules.senate.texas.gov/schedules">Room Schedule</a></li>
+						<li class="nav_sub"><a class="nav_sub_a" href="https://journals.senate.texas.gov/sjrnl/home.htm">Journal</a></li>
+						<li class="nav_sub"><a class="nav_sub_a" href="https://capitol.texas.gov/MnuLegislation.aspx">Bill Information</a></li>
+						<li class="nav_sub"><a class="nav_sub_a" href="rules.php">Rules</a></li>
+						<li class="nav_sub"><a class="nav_sub_a" href="media-credentials.php">Media Credentials</a></li>
+						<li class="nav_sub"><a class="nav_sub_a" href="coi.php">Court of Impeachment</a></li>
+					</ul>
+				</li>
+				<li class="submenu_ctrl" data-expanded="false"><button class="main_menu_button" id="main_menu_04" aria-haspopup="true" aria-expanded="false" aria-controls="submenu_04">Committees</button><span aria-hidden="true" class="menu_arrow"></span>
+					<ul class="nav_sub" id="submenu_04" aria-labelledby="main_menu_04" aria-hidden="true">
+						<li class="nav_sub"><a class="nav_sub_a" href="committees.php">Directory</a></li>
+						<li class="nav_sub"><a class="nav_sub_a" href="events.php">Hearings &amp; Events</a></li>
+						<li class="nav_sub"><a class="nav_sub_a" href="cmte-archives.php">Archives</a></li>
+						<li class="nav_sub"><a class="nav_sub_a menu_wh" rel="external" href="https://capitol.texas.gov/MnuCommittees.aspx" aria-label="TLO Committee Portal">Texas Legislature Online</a></li>
+					</ul>
+				</li>
+				<li class="submenu_ctrl" data-expanded="false"><button class="main_menu_button" id="main_menu_05" aria-haspopup="true" aria-expanded="false" aria-controls="submenu_05">News &amp; Media</button><span aria-hidden="true" class="menu_arrow"></span>
+					<ul class="nav_sub" id="submenu_05" aria-labelledby="main_menu_05" aria-hidden="true">
+						<li class="nav_sub"><a class="nav_sub_a" href="av-live.php">Live Video</a></li>
+						<li class="nav_sub"><a class="nav_sub_a" href="av-archive.php">Audio/Video Archive</a></li>
+						<li class="nav_sub"><a class="nav_sub_a" href="newsroom.php">Texas Senate News</a></li>
+						<li class="nav_sub"><a class="nav_sub_a" href="podcast.php">Podcast</a></li>
+					</ul>
+				</li>
+				<li class="submenu_ctrl" data-expanded="false"><button class="main_menu_button" id="main_menu_06" aria-haspopup="true" aria-expanded="false" aria-controls="submenu_06">Visitors</button><span aria-hidden="true" class="menu_arrow"></span>
+					<ul class="nav_sub" id="submenu_06" aria-labelledby="main_menu_06" aria-hidden="true">
+						<li class="nav_sub"><a class="nav_sub_a" href="vcenter.php">Visitors - Home</a></li>
+						<li class="nav_sub"><a class="nav_sub_a" href="accessibility.php">Accessibility Policy</a></li>
+						<li class="nav_sub"><a class="nav_sub_a" href="FAQ.php">FAQ</a></li>
+						<li class="nav_sub"><a class="nav_sub_a" href="photos.php">Capitol Photos</a></li>
+						<li class="nav_sub"><a class="nav_sub_a menu_wh" rel="external" href="https://tspb.texas.gov/plan/events/tcapcal.html">Capitol Events</a></li>
+						<!--<li class="nav_sub"><a class="nav_sub_a" href="_assets/pdf/86th_Citizens_hdbk.pdf">Citizen Handbook</a></li>-->
+						<li class="nav_sub"><a class="nav_sub_a" href="links.php">Related Links</a></li>
+					</ul>
+				</li>
+				<!--<li><a role="button" class="main_menu_button" id="main_menu_07" href="kids.php">For Kids</a></li>-->
+			</ul>
+		</nav>
+		<main role="main" id="main-content" class="mainbody">
+			<!-- START ENGLISH CONTENT  -->
+<div class="onecolumn">
+	<h1 class="pgtitle">Senate Committee Hearings and Events</h1>
+	<nav aria-label="Committees main menu" class="pgmenu_main ui-corner-all">
+<ul>
+		<li><a id="pgmenu_i1" class="pgmenu_a" href="committees.php">Committees Directory</a></li> 
+		<li><a id="pgmenu_i2" class="pgmenu_a" href="events.php">Hearings and Events</a></li> 
+		<li><a id="pgmenu_i3" class="pgmenu_a" href="cmte-archives.php">Committee Archives</a></li>
+		<li><a id="pgmenu_i4" class="pgmenu_a" href="cmte-noa.php">Notice of Assistance at Public Meetings</a></li> 
+		<li><a id="pgmenu_i5" class="pgmenu_a menu_wh" rel="external" href="https://capitol.texas.gov/MnuCommittees.aspx">Texas Legislature Online</a></li>
+		<li><a id="pgmenu_i6" class="pgmenu_a menu_wh" href="_assets/pdf/2026-Texas-Senate-Committees.pdf">Committee Assignments</a></li>
+		</ul>
+	</nav>
+	<div class="twocol1">
+	<div id="cmtes_top" class="ui-corner-all">
+		<p>Senate committee hearings and other Capitol events are posted to this page soon after they are announced, and removed at the end of the day. You are invited to revisit this page often for the most current version. For links to individual Senate committee websites, please visit the Senate's <a href="committees.php">Committee portal</a>.</p>
+		<p>For live, streaming video broadcasts of committee hearings and other events within the Capitol complex you may visit the <a href="av-live.php">Senate Live Video Broadcasts page</a>. Official Senate hearings and events are archived and can be accessed from the <a href="av-archive.php">Senate Audio/Video Archives page</a> or from the individual <a href="committees.php">committee pages</a>.</p>
+		<p>Events listed on this page will be carried live on the Senate Live Broadcasts page <span>unless otherwise noted</span>. Due to technical limitations, most out-of-town committee hearings and all "desk meetings" held on the Senate floor can not be carried live. For such events, audio recordings will be posted to the main <a href="av-archive.php">Audio/Video Archives</a>, as well as the relevant <a href="committees.php">committee pages</a>, as soon as possible.</p>
+		<p>A complete Senate room reservation schedule may be be found at:<br><a href="https://room-schedules.senate.texas.gov/schedules">https://room-schedules.senate.texas.gov/schedules</a>.</p>
+	</div>
+	</div>
+	<div class="twocol2">
+	<div id="noa-sm" class="ui-corner-all">
+		<h2 class="gen_header">Notice of Assistance at Public Meetings</h2>
+		<p>Persons with disabilities who plan to attend these meetings and who may need assistance, such as a sign language interpreter, are requested to contact the senate committee coordinator at (512) 463-0070, <span>72-hours prior</span> to the meeting so appropriate arrangements can be made.</p>
+		<p>The Texas Senate has an assistive listening system available to the public in the Senate Chamber and Senate committee hearing rooms. Personal listening devices may be checked out in the Secretary of the Senate's office, Room 2E.22 of the Capitol Building.</p>
+		<p>For more information on the listening devices, please contact the Senate Committee Coordinator at (512) 463-0070 (Senate TDD (800) 735-2989).</p>
+		<p>For ADA questions or compliance issues please contact Delicia Sams, Senate ADA Coordinator at 512-463-0400.</p>
+	</div>
+	</div>
+	
+	<div id="cmtes_evtpg" class="ui-corner-all">
+		<h2 class="cmte_header">Legislative Committee Hearings</h2>
+		<div id="cmtes_events1" class="ui-corner-all">
+			<table class="cmte_events">
+				<tr>
+					<th scope="col">Date</th>
+					<th scope="col">Time</th>
+					<th scope="col">Committee</th>
+					<th scope="col">Location</th>
+					<th scope="col"><span class="shrinkmore">BROADCAST</span><br>Status*</th>
+					<th scope="col">Notes</th>
+				</tr>
+									<tr>
+						<td class="evt_date"><span>Wednesday</span><br>July 29, 2026</td>
+						<td class="evt_time"><a aria-label="Hearing notice for July 29, 2026 Senate Committee on Business and Commerce" target="_blank" href="https://capitol.texas.gov/tlodocs/89R/schedules/html/C5102026072909001.HTM">9:00 AM</a></td>
+						<td><a href="cmte.php?c=510">Senate Committee on Business and Commerce</a></td>
+						<td class="evt_loca">Capitol Extension, E1.012</td>
+						<td class="evt_stat_en"><a href="av-live.php?lang=en">IN PROGRESS</a></td>
+						<td class="evt_note"><span class="evt_note">REVISED</span></td>
+					</tr>					<tr>
+						<td class="evt_date"><span>Wednesday</span><br>July 29, 2026</td>
+						<td class="evt_time"><a aria-label="Hearing notice for July 29, 2026 Senate Committee on Higher Education" target="_blank" href="https://capitol.texas.gov/tlodocs/89R/schedules/html/C5602026072909001.HTM">9:00 AM</a></td>
+						<td><a href="cmte.php?c=560">Senate Committee on Higher Education</a></td>
+						<td class="evt_loca">Capitol Extension, E1.028</td>
+						<td class="evt_stat_en"><a href="av-live.php?lang=en">IN PROGRESS</a></td>
+						<td class="evt_note">&mdash; &mdash;</td>
+					</tr>					<tr class="cancelled">
+						<td class="evt_date"><span>Wednesday</span><br>July 29, 2026</td>
+						<td class="evt_time"><a aria-label="Hearing notice for July 29, 2026 Senate Committee on Transportation" target="_blank" href="https://capitol.texas.gov/tlodocs/89R/schedules/html/C6402026072912001.HTM">12:00 PM</a></td>
+						<td><a href="cmte.php?c=640">Senate Committee on Transportation</a></td>
+						<td class="evt_loca">Capitol Extension, E1.016</td>
+						<td class="evt_stat_en">&mdash; &mdash;</td>
+						<td class="evt_note"><span class="evt_note">CANCELLED</span></td>
+					</tr>					<tr class="cancelled">
+						<td class="evt_date"><span>Tuesday</span><br>August 4, 2026</td>
+						<td class="evt_time"><a aria-label="Hearing notice for August 4, 2026 Senate Select Committee on Veteran Affairs" target="_blank" href="https://capitol.texas.gov/tlodocs/89R/schedules/html/C6582026080409001.HTM">9:00 AM</a></td>
+						<td><a href="cmte.php?c=658">Senate Select Committee on Veteran Affairs</a></td>
+						<td class="evt_loca">Capitol Extension, E1.028</td>
+						<td class="evt_stat_en">&mdash; &mdash;</td>
+						<td class="evt_note"><span class="evt_note">CANCELLED</span></td>
+					</tr>					<tr>
+						<td class="evt_date"><span>Tuesday</span><br>August 11, 2026</td>
+						<td class="evt_time"><a aria-label="Hearing notice for August 11, 2026 Senate Committee on Natural Resources" target="_blank" href="https://capitol.texas.gov/tlodocs/89R/schedules/html/C5802026081109001.HTM">9:00 AM</a></td>
+						<td><a href="cmte.php?c=580">Senate Committee on Natural Resources</a></td>
+						<td class="evt_loca">Capitol Extension, E1.012</td>
+						<td class="evt_stat_en">(not currently broadcasting)</td>
+						<td class="evt_note">&mdash; &mdash;</td>
+					</tr>					<tr>
+						<td class="evt_date"><span>Wednesday</span><br>August 12, 2026</td>
+						<td class="evt_time"><a aria-label="Hearing notice for August 12, 2026 Senate Select Committee on Homeland and Border Security" target="_blank" href="https://capitol.texas.gov/tlodocs/89R/schedules/html/C5942026081209001.HTM">9:00 AM</a></td>
+						<td><a href="cmte.php?c=594">Senate Select Committee on Homeland and Border Security</a></td>
+						<td class="evt_loca">Capitol Extension, E1.016</td>
+						<td class="evt_stat_en">(not currently broadcasting)</td>
+						<td class="evt_note">&mdash; &mdash;</td>
+					</tr>					<tr>
+						<td class="evt_date"><span>Thursday</span><br>August 13, 2026</td>
+						<td class="evt_time"><a aria-label="Hearing notice for August 13, 2026 Senate Select Committee on Homeland and Border Security" target="_blank" href="https://capitol.texas.gov/tlodocs/89R/schedules/html/C5942026081309001.HTM">9:00 AM</a></td>
+						<td><a href="cmte.php?c=594">Senate Select Committee on Homeland and Border Security</a></td>
+						<td class="evt_loca">Capitol Extension, E1.016</td>
+						<td class="evt_stat_en">(not currently broadcasting)</td>
+						<td class="evt_note">&mdash; &mdash;</td>
+					</tr>					<tr class="cancelled">
+						<td class="evt_date"><span>Tuesday</span><br>August 25, 2026</td>
+						<td class="evt_time"><a aria-label="Hearing notice for August 25, 2026 Senate Select Committee on Veteran Affairs" target="_blank" href="https://capitol.texas.gov/tlodocs/89R/schedules/html/C6582026082509001.HTM">9:00 AM</a></td>
+						<td><a href="cmte.php?c=658">Senate Select Committee on Veteran Affairs</a></td>
+						<td class="evt_loca">Capitol Extension, E1.012</td>
+						<td class="evt_stat_en">&mdash; &mdash;</td>
+						<td class="evt_note"><span class="evt_note">CANCELLED</span></td>
+					</tr>					<tr>
+						<td class="evt_date"><span>Tuesday</span><br>August 25, 2026</td>
+						<td class="evt_time"><a aria-label="Hearing notice for August 25, 2026 Senate Committee on Transportation" target="_blank" href="https://capitol.texas.gov/tlodocs/89R/schedules/html/C6402026082509001.HTM">9:00 AM</a></td>
+						<td><a href="cmte.php?c=640">Senate Committee on Transportation</a></td>
+						<td class="evt_loca">Capitol Extension, E1.016</td>
+						<td class="evt_stat_en">(not currently broadcasting)</td>
+						<td class="evt_note">&mdash; &mdash;</td>
+					</tr>					<tr>
+						<td class="evt_date"><span>Wednesday</span><br>August 26, 2026</td>
+						<td class="evt_time"><a aria-label="Hearing notice for August 26, 2026 Senate Select Committee on Veteran Affairs" target="_blank" href="https://capitol.texas.gov/tlodocs/89R/schedules/html/C6582026082609001.HTM">9:00 AM</a></td>
+						<td><a href="cmte.php?c=658">Senate Select Committee on Veteran Affairs</a></td>
+						<td class="evt_loca">Capitol Extension, E1.012</td>
+						<td class="evt_stat_en">(not currently broadcasting)</td>
+						<td class="evt_note"><span class="evt_note">REVISED</span></td>
+					</tr>					<tr>
+						<td class="evt_date"><span>Tuesday</span><br>September 1, 2026</td>
+						<td class="evt_time"><a aria-label="Hearing notice for September 1, 2026 Senate Committee on Water, Agriculture, and Rural Affairs" target="_blank" href="https://capitol.texas.gov/tlodocs/89R/schedules/html/C7002026090109001.HTM">9:00 AM</a></td>
+						<td><a href="cmte.php?c=700">Senate Committee on Water, Agriculture, and Rural Affairs</a></td>
+						<td class="evt_loca">Capitol Extension, E1.012</td>
+						<td class="evt_stat_en">(not currently broadcasting)</td>
+						<td class="evt_note">&mdash; &mdash;</td>
+					</tr>					<tr class="cancelled">
+						<td class="evt_date"><span>Tuesday</span><br>September 1, 2026</td>
+						<td class="evt_time"><a aria-label="Hearing notice for September 1, 2026 Senate Select Committee on Veteran Affairs" target="_blank" href="https://capitol.texas.gov/tlodocs/89R/schedules/html/C6582026090109001.HTM">9:00 AM</a></td>
+						<td><a href="cmte.php?c=658">Senate Select Committee on Veteran Affairs</a></td>
+						<td class="evt_loca">Capitol Extension, E1.028</td>
+						<td class="evt_stat_en">&mdash; &mdash;</td>
+						<td class="evt_note"><span class="evt_note">CANCELLED</span></td>
+					</tr>					<tr>
+						<td class="evt_date"><span>Tuesday</span><br>September 1, 2026</td>
+						<td class="evt_time"><a aria-label="Hearing notice for September 1, 2026 Senate Committee on Local Government" target="_blank" href="https://capitol.texas.gov/tlodocs/89R/schedules/html/C5562026090111001.HTM">11:00 AM</a></td>
+						<td><a href="cmte.php?c=556">Senate Committee on Local Government</a></td>
+						<td class="evt_loca">Capitol Extension, E1.016</td>
+						<td class="evt_stat_en">(not currently broadcasting)</td>
+						<td class="evt_note">&mdash; &mdash;</td>
+					</tr>					<tr>
+						<td class="evt_date"><span>Wednesday</span><br>September 2, 2026</td>
+						<td class="evt_time"><a aria-label="Hearing notice for September 2, 2026 Senate Committee on Finance" target="_blank" href="https://capitol.texas.gov/tlodocs/89R/schedules/html/C5402026090210001.HTM">10:00 AM</a></td>
+						<td><a href="cmte.php?c=540">Senate Committee on Finance</a></td>
+						<td class="evt_loca">Capitol Extension, E1.036</td>
+						<td class="evt_stat_en">(not currently broadcasting)</td>
+						<td class="evt_note"><span class="evt_note">REVISED</span></td>
+					</tr>					<tr>
+						<td class="evt_date"><span>Thursday</span><br>September 3, 2026</td>
+						<td class="evt_time"><a aria-label="Hearing notice for September 3, 2026 Senate Committee on Economic Development" target="_blank" href="https://capitol.texas.gov/tlodocs/89R/schedules/html/C5252026090309001.HTM">9:00 AM</a></td>
+						<td><a href="cmte.php?c=525">Senate Committee on Economic Development</a></td>
+						<td class="evt_loca">Capitol Extension, E1.016</td>
+						<td class="evt_stat_en">(not currently broadcasting)</td>
+						<td class="evt_note">&mdash; &mdash;</td>
+					</tr>					<tr>
+						<td class="evt_date"><span>Monday</span><br>September 21, 2026</td>
+						<td class="evt_time"><a aria-label="Hearing notice for September 21, 2026 Senate Committee on Natural Resources" target="_blank" href="https://capitol.texas.gov/tlodocs/89R/schedules/html/C5802026092109001.HTM">9:00 AM</a></td>
+						<td><a href="cmte.php?c=580">Senate Committee on Natural Resources</a></td>
+						<td class="evt_loca">Capitol Extension, E1.012</td>
+						<td class="evt_stat_en">(not currently broadcasting)</td>
+						<td class="evt_note">&mdash; &mdash;</td>
+					</tr>					<tr>
+						<td class="evt_date"><span>Wednesday</span><br>September 30, 2026</td>
+						<td class="evt_time"><a aria-label="Hearing notice for September 30, 2026 Senate Committee on Business and Commerce" target="_blank" href="https://capitol.texas.gov/tlodocs/89R/schedules/html/C5102026093009001.HTM">9:00 AM</a></td>
+						<td><a href="cmte.php?c=510">Senate Committee on Business and Commerce</a></td>
+						<td class="evt_loca">Capitol Extension, E1.012</td>
+						<td class="evt_stat_en">(not currently broadcasting)</td>
+						<td class="evt_note">&mdash; &mdash;</td>
+					</tr>
+			</table>
+			<table class="cmte_events_mobile">
+				<tr>
+					<th scope="col">Date/Time</th>
+					<th scope="col">Committee</th>
+					<th scope="col">Location/Notes</th>
+				</tr>
+									<tr>
+						<td class="evt_date"><span>Wednesday</span><br>July 29, 2026<p class="time"><a aria-label="Hearing notice for July 29, 2026 Senate Committee on Business and Commerce" target="_blank" href="https://capitol.texas.gov/tlodocs/89R/schedules/html/C5102026072909001.HTM">9:00 AM</a></p></td>
+						<td><span><a href="cmte.php?c=510">Senate Committee on Business and Commerce</a></span><p class="status"><a href="av-live.php?lang=en">IN PROGRESS</a></p></td>
+						<td class="evt_loca">Capitol Extension, E1.012<p class="notes"><span class="evt_note">REVISED</span></p></td>
+					</tr>					<tr>
+						<td class="evt_date"><span>Wednesday</span><br>July 29, 2026<p class="time"><a aria-label="Hearing notice for July 29, 2026 Senate Committee on Higher Education" target="_blank" href="https://capitol.texas.gov/tlodocs/89R/schedules/html/C5602026072909001.HTM">9:00 AM</a></p></td>
+						<td><span><a href="cmte.php?c=560">Senate Committee on Higher Education</a></span><p class="status"><a href="av-live.php?lang=en">IN PROGRESS</a></p></td>
+						<td class="evt_loca">Capitol Extension, E1.028<p class="notes">&mdash; &mdash;</p></td>
+					</tr>					<tr class="cancelled">
+						<td class="evt_date"><span>Wednesday</span><br>July 29, 2026<p class="time"><a aria-label="Hearing notice for July 29, 2026 Senate Committee on Transportation" target="_blank" href="https://capitol.texas.gov/tlodocs/89R/schedules/html/C6402026072912001.HTM">12:00 PM</a></p></td>
+						<td><span><a href="cmte.php?c=640">Senate Committee on Transportation</a></span><p class="status">&mdash; &mdash;</p></td>
+						<td class="evt_loca">Capitol Extension, E1.016<p class="notes"><span class="evt_note">CANCELLED</span></p></td>
+					</tr>					<tr class="cancelled">
+						<td class="evt_date"><span>Tuesday</span><br>August 4, 2026<p class="time"><a aria-label="Hearing notice for August 4, 2026 Senate Select Committee on Veteran Affairs" target="_blank" href="https://capitol.texas.gov/tlodocs/89R/schedules/html/C6582026080409001.HTM">9:00 AM</a></p></td>
+						<td><span><a href="cmte.php?c=658">Senate Select Committee on Veteran Affairs</a></span><p class="status">&mdash; &mdash;</p></td>
+						<td class="evt_loca">Capitol Extension, E1.028<p class="notes"><span class="evt_note">CANCELLED</span></p></td>
+					</tr>					<tr>
+						<td class="evt_date"><span>Tuesday</span><br>August 11, 2026<p class="time"><a aria-label="Hearing notice for August 11, 2026 Senate Committee on Natural Resources" target="_blank" href="https://capitol.texas.gov/tlodocs/89R/schedules/html/C5802026081109001.HTM">9:00 AM</a></p></td>
+						<td><span><a href="cmte.php?c=580">Senate Committee on Natural Resources</a></span><p class="status">(not currently broadcasting)</p></td>
+						<td class="evt_loca">Capitol Extension, E1.012<p class="notes">&mdash; &mdash;</p></td>
+					</tr>					<tr>
+						<td class="evt_date"><span>Wednesday</span><br>August 12, 2026<p class="time"><a aria-label="Hearing notice for August 12, 2026 Senate Select Committee on Homeland and Border Security" target="_blank" href="https://capitol.texas.gov/tlodocs/89R/schedules/html/C5942026081209001.HTM">9:00 AM</a></p></td>
+						<td><span><a href="cmte.php?c=594">Senate Select Committee on Homeland and Border Security</a></span><p class="status">(not currently broadcasting)</p></td>
+						<td class="evt_loca">Capitol Extension, E1.016<p class="notes">&mdash; &mdash;</p></td>
+					</tr>					<tr>
+						<td class="evt_date"><span>Thursday</span><br>August 13, 2026<p class="time"><a aria-label="Hearing notice for August 13, 2026 Senate Select Committee on Homeland and Border Security" target="_blank" href="https://capitol.texas.gov/tlodocs/89R/schedules/html/C5942026081309001.HTM">9:00 AM</a></p></td>
+						<td><span><a href="cmte.php?c=594">Senate Select Committee on Homeland and Border Security</a></span><p class="status">(not currently broadcasting)</p></td>
+						<td class="evt_loca">Capitol Extension, E1.016<p class="notes">&mdash; &mdash;</p></td>
+					</tr>					<tr class="cancelled">
+						<td class="evt_date"><span>Tuesday</span><br>August 25, 2026<p class="time"><a aria-label="Hearing notice for August 25, 2026 Senate Select Committee on Veteran Affairs" target="_blank" href="https://capitol.texas.gov/tlodocs/89R/schedules/html/C6582026082509001.HTM">9:00 AM</a></p></td>
+						<td><span><a href="cmte.php?c=658">Senate Select Committee on Veteran Affairs</a></span><p class="status">&mdash; &mdash;</p></td>
+						<td class="evt_loca">Capitol Extension, E1.012<p class="notes"><span class="evt_note">CANCELLED</span></p></td>
+					</tr>					<tr>
+						<td class="evt_date"><span>Tuesday</span><br>August 25, 2026<p class="time"><a aria-label="Hearing notice for August 25, 2026 Senate Committee on Transportation" target="_blank" href="https://capitol.texas.gov/tlodocs/89R/schedules/html/C6402026082509001.HTM">9:00 AM</a></p></td>
+						<td><span><a href="cmte.php?c=640">Senate Committee on Transportation</a></span><p class="status">(not currently broadcasting)</p></td>
+						<td class="evt_loca">Capitol Extension, E1.016<p class="notes">&mdash; &mdash;</p></td>
+					</tr>					<tr>
+						<td class="evt_date"><span>Wednesday</span><br>August 26, 2026<p class="time"><a aria-label="Hearing notice for August 26, 2026 Senate Select Committee on Veteran Affairs" target="_blank" href="https://capitol.texas.gov/tlodocs/89R/schedules/html/C6582026082609001.HTM">9:00 AM</a></p></td>
+						<td><span><a href="cmte.php?c=658">Senate Select Committee on Veteran Affairs</a></span><p class="status">(not currently broadcasting)</p></td>
+						<td class="evt_loca">Capitol Extension, E1.012<p class="notes"><span class="evt_note">REVISED</span></p></td>
+					</tr>					<tr>
+						<td class="evt_date"><span>Tuesday</span><br>September 1, 2026<p class="time"><a aria-label="Hearing notice for September 1, 2026 Senate Committee on Water, Agriculture, and Rural Affairs" target="_blank" href="https://capitol.texas.gov/tlodocs/89R/schedules/html/C7002026090109001.HTM">9:00 AM</a></p></td>
+						<td><span><a href="cmte.php?c=700">Senate Committee on Water, Agriculture, and Rural Affairs</a></span><p class="status">(not currently broadcasting)</p></td>
+						<td class="evt_loca">Capitol Extension, E1.012<p class="notes">&mdash; &mdash;</p></td>
+					</tr>					<tr class="cancelled">
+						<td class="evt_date"><span>Tuesday</span><br>September 1, 2026<p class="time"><a aria-label="Hearing notice for September 1, 2026 Senate Select Committee on Veteran Affairs" target="_blank" href="https://capitol.texas.gov/tlodocs/89R/schedules/html/C6582026090109001.HTM">9:00 AM</a></p></td>
+						<td><span><a href="cmte.php?c=658">Senate Select Committee on Veteran Affairs</a></span><p class="status">&mdash; &mdash;</p></td>
+						<td class="evt_loca">Capitol Extension, E1.028<p class="notes"><span class="evt_note">CANCELLED</span></p></td>
+					</tr>					<tr>
+						<td class="evt_date"><span>Tuesday</span><br>September 1, 2026<p class="time"><a aria-label="Hearing notice for September 1, 2026 Senate Committee on Local Government" target="_blank" href="https://capitol.texas.gov/tlodocs/89R/schedules/html/C5562026090111001.HTM">11:00 AM</a></p></td>
+						<td><span><a href="cmte.php?c=556">Senate Committee on Local Government</a></span><p class="status">(not currently broadcasting)</p></td>
+						<td class="evt_loca">Capitol Extension, E1.016<p class="notes">&mdash; &mdash;</p></td>
+					</tr>					<tr>
+						<td class="evt_date"><span>Wednesday</span><br>September 2, 2026<p class="time"><a aria-label="Hearing notice for September 2, 2026 Senate Committee on Finance" target="_blank" href="https://capitol.texas.gov/tlodocs/89R/schedules/html/C5402026090210001.HTM">10:00 AM</a></p></td>
+						<td><span><a href="cmte.php?c=540">Senate Committee on Finance</a></span><p class="status">(not currently broadcasting)</p></td>
+						<td class="evt_loca">Capitol Extension, E1.036<p class="notes"><span class="evt_note">REVISED</span></p></td>
+					</tr>					<tr>
+						<td class="evt_date"><span>Thursday</span><br>September 3, 2026<p class="time"><a aria-label="Hearing notice for September 3, 2026 Senate Committee on Economic Development" target="_blank" href="https://capitol.texas.gov/tlodocs/89R/schedules/html/C5252026090309001.HTM">9:00 AM</a></p></td>
+						<td><span><a href="cmte.php?c=525">Senate Committee on Economic Development</a></span><p class="status">(not currently broadcasting)</p></td>
+						<td class="evt_loca">Capitol Extension, E1.016<p class="notes">&mdash; &mdash;</p></td>
+					</tr>					<tr>
+						<td class="evt_date"><span>Monday</span><br>September 21, 2026<p class="time"><a aria-label="Hearing notice for September 21, 2026 Senate Committee on Natural Resources" target="_blank" href="https://capitol.texas.gov/tlodocs/89R/schedules/html/C5802026092109001.HTM">9:00 AM</a></p></td>
+						<td><span><a href="cmte.php?c=580">Senate Committee on Natural Resources</a></span><p class="status">(not currently broadcasting)</p></td>
+						<td class="evt_loca">Capitol Extension, E1.012<p class="notes">&mdash; &mdash;</p></td>
+					</tr>					<tr>
+						<td class="evt_date"><span>Wednesday</span><br>September 30, 2026<p class="time"><a aria-label="Hearing notice for September 30, 2026 Senate Committee on Business and Commerce" target="_blank" href="https://capitol.texas.gov/tlodocs/89R/schedules/html/C5102026093009001.HTM">9:00 AM</a></p></td>
+						<td><span><a href="cmte.php?c=510">Senate Committee on Business and Commerce</a></span><p class="status">(not currently broadcasting)</p></td>
+						<td class="evt_loca">Capitol Extension, E1.012<p class="notes">&mdash; &mdash;</p></td>
+					</tr>
+			</table>
+		</div>
+		<h2 class="cmte_header">Press conferences and other Capitol events</h2>
+		<div id="cmtes_events2" class="ui-corner-all">
+			<table class="cmte_events">
+				<tr>
+					<th scope="col">Date</th>
+					<th scope="col">Time</th>
+					<th scope="col">Event</th>
+					<th scope="col">Location</th>
+					<th scope="col"><span class="shrinkmore">BROADCAST</span><br>Status*</th>
+					<th scope="col">Notes</th>
+				</tr>
+				<tr><td colspan="6" class="evt_noevents">There are currently no press conferences or other Capitol events scheduled for broadcast.</td></tr>
+			</table>
+			<table class="cmte_events_mobile">
+				<tr>
+					<th scope="col">Date/Time</th>
+					<th scope="col">Event</th>
+					<th scope="col">Location/Notes</th>
+				</tr>
+				<tr><td colspan="3" class="evt_noevents">There are currently no press conferences or other Capitol events scheduled for broadcast.</td></tr>
+			</table>
+		</div>
+	</div>
+	<div id="noa-sm-mob" class="ui-corner-all">
+		<h2 class="gen_header">Notice of Assistance at Public Meetings</h2>
+		<p>Persons with disabilities who plan to attend these meetings and who may need assistance, such as a sign language interpreter, are requested to contact the senate committee coordinator at (512) 463-0070, <span>72-hours prior</span> to the meeting so appropriate arrangements can be made.</p>
+		<p>The Texas Senate has an assistive listening system available to the public in the Senate Chamber and Senate committee hearing rooms. Personal listening devices may be checked out in the Secretary of the Senate's office, Room 2E.22 of the Capitol Building.</p>
+		<p>For more information on the listening devices, please contact the Senate Committee Coordinator at (512) 463-0070 (Senate TDD (800) 735-2989).</p>
+		<p>For ADA questions or compliance issues please contact Delicia Sams, Senate ADA Coordinator at 512-463-0400.</p>
+	</div>
+</div>
+<div class="onecolumn">
+	<div class="evh_bot ui-state-error ui-corner-all">* Live broadcasts are publicly available from the <a href="av-live.php">Senate Live Broadcasts page</a>. These events are also available on the internal Capitol Complex cable television system. Events marked as <span class="evt_note">"NOT LIVE"</span> cannot be carried live due to technical limitations. In most cases, these events will be audio-recorded and posted to the <a href="av-archive.php">Senate Audio/Video Archives page</a> as soon as possible.</div>
+	<div class="nav_top"><a href="#main-content"><img src="_assets/img/nav_top.png" alt="^" title="Top"></a></div>
+</div>
+<script>
+setTimeout(function() {
+  location.reload();
+}, 120000);
+$( document ).ready(function() {
+	if ($(window).width() > 740){
+		$('.twocol1').height($('.twocol2').height());
+		$('#cmtes_top').height($('#noa-sm').height() + 3);
+	}
+	$("tr:even").css("background-color", "#bcd0d1");
+	$("tr:even td").css("border-right", "1px solid #fbf9f0");
+	$("tr:even td.evt_note").css("border-right", "1px solid #bcd0d1");
+});
+</script>
+<!--   END ENGLISH CONTENT -->
+		<script>$( document ).ready(function() { $('#pgmenu_i2').css({"font-weight" : "bold", "text-decoration" : "underline" }); });</script> 
+		</main>
+		<div aria-hidden="true" class="rwb">&nbsp;</div>
+		<footer class="flex" role="contentinfo">
+			<div class="Lfoot"><a class="footer-flex" href="accessibility.php?lang=en">Accessibility Policy</a> <span role="separator" aria-hidden="true">|</span> <!--Technical questions and feedback may be directed to the --><a class="footer-flex" href="adminForm.php?lang=en">Web Administrator contact form</a></div>
+			<div class="Rfoot"><form role="search" method="get" action="https://search.tlc.texas.gov/texas_senate/index.html"><label class="searchlabel" for="sensearch">SITE SEARCH:</label> <input aria-label="SITE SEARCH" id="sensearch" type="text" name="query" maxlength="255" class="t"> <input id="sensearchbtn" type="submit" name="btnG" value="SEARCH" aria-label="SEARCH"></form></div>
+		</footer>
+	</div>
+</body>
+</html>

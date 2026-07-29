@@ -178,10 +178,12 @@ def main() -> int:
             except Exception:
                 pass
         problems = list(getattr(module, "health_problems", lambda: [])())
-        if not events and not getattr(module, "CURATED_ONLY", False):
-            # Curated-only feeds are legitimately empty between entries;
-            # alarming there would guarantee a red build the day the last
-            # hand-entered event is pruned.
+        # SPORADIC sources (legislature: hearings come in bursts) are
+        # legitimately empty — or past-only — between events; alarming
+        # there would guarantee red builds in every quiet stretch.
+        sporadic = getattr(module, "SPORADIC", False) or getattr(
+            module, "CURATED_ONLY", False)
+        if not events and not sporadic:
             problems.append(f"{key}: 0 events parsed")
         else:
             if previous_count and len(events) < previous_count / 2:
@@ -192,7 +194,9 @@ def main() -> int:
             # stale annual PDFs, prior-year tables, default-year drift.
             # Live-only: fixtures are point-in-time snapshots whose dates
             # age past naturally, and that's not a parser regression.
-            if not offline and not has_future_events(events, today):
+            # Sporadic sources skip this too — past-only is their normal
+            # state whenever the retained history outlives a hearing lull.
+            if not offline and not sporadic and not has_future_events(events, today):
                 problems.append(
                     f"{key}: no future events (all {len(events)} are in the past)"
                 )
