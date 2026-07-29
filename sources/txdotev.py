@@ -52,6 +52,49 @@ COMMITTEES = [
      "https://www.txdot.gov/about/advisory-committees/"
      "public-transportation-advisory-committee.html"),
 ]
+# Statewide index of every TxDOT hearing, meeting and notice: one
+# server-rendered table (Area | Date | Format | Description), each row linking
+# to its own event page. Rows here are NOT limited to the pages in PAGES /
+# COMMITTEES above -- this is the discovery mechanism for one-off project
+# meetings that would otherwise have to be spotted by hand.
+#
+# NOTE: adding a page to PAGES or COMMITTEES also suppresses matching rows
+# from this index (see _index_suppressed) so the same meeting isn't published
+# twice by two parsers. The richer parser wins because it knows times.
+HEARINGS_INDEX = "https://www.txdot.gov/projects/hearings-meetings.html"
+
+# The district lives in the row's link path, which is the only reliable
+# geographic signal: the Area column holds 169 distinct town and county
+# names, so a US 281 meeting in the Austin district reads "Blanco".
+HM_PATH_RE = re.compile(r"/projects/hearings-meetings/([^/]+)/")
+HEARINGS_DISTRICTS = {"austin", "statewide", "transportation-planning",
+                      "public-transportation"}
+# Everything filed under `austin` is in reach by definition. The other three
+# segments are organisational, not geographic, and carry events from all over
+# Texas (FTA workshops in Lubbock, aviation hearings in Amarillo) -- for
+# those, keep only rows the Area column calls statewide. Preferred over an
+# allowlist of Central Texas towns, which would need endless maintenance.
+LOCAL_DISTRICTS = {"austin"}
+# ...and in those segments, the Area values worth keeping. "Austin" matters
+# as well as "Statewide": BPAC/PTAC meetings are filed under
+# public-transportation with Area "Austin", and dropping them on area would
+# hide them from the suppression logic that is supposed to handle them.
+REACHABLE_AREAS = {"statewide", "austin"}
+
+# "Notice of availability of FONSI", "notice and opportunity to comment" and
+# friends. Deliberately skipped: the row's single date is of unverified
+# meaning (publication? deadline?), and a calendar entry that misstates a
+# legal comment deadline is worse than no entry. Doing them properly means
+# reading the detail page for a real window -- a later enrichment pass.
+INDEX_SKIP_FORMATS = {"notice"}
+
+# Trailing clause describing how to attend rather than what the event is.
+MODALITY_RE = re.compile(
+    r"(virtual|in-person|hybrid|online|open house|webinar|public (meeting|hearing))",
+    re.IGNORECASE,
+)
+INDEX_DATE_RE = re.compile(r"^\s*(\d{1,2})/(\d{1,2})/(\d{2})\s*$")
+
 EVENT_LENGTH = timedelta(hours=2)
 STASSNEY = "TxDOT Stassney Campus Auditorium, 6230 E. Stassney Ln., Austin, TX 78744"
 
@@ -124,6 +167,117 @@ def _kind_of(topic: str) -> str:
     if "hearing" in low:
         return "hearing"
     return "engagement"
+
+
+def _split_modality(desc: str) -> tuple[str, str]:
+    """Split "Foo Project - virtual public meeting" into (topic, how).
+
+    The trailing clause says how to attend, not what the event is; it reads
+    as noise in a calendar title but is worth keeping in the body. Only the
+    LAST dash-segment is considered, and only if it looks like modality --
+    project names contain dashes too ("I-35", "US 281 - Blanco").
+    """
+    # Whitespace REQUIRED before the dash. Without it this splits inside
+    # "in-person", "I-35" and "US 281 - Blanco", truncating titles mid-word.
+    # A space after is optional: TxDOT writes "Boulevard -open house" too.
+    parts = re.split(r"\s+[-\u2013]\s*", desc)
+    if len(parts) > 1 and MODALITY_RE.search(parts[-1]):
+        return " - ".join(parts[:-1]).strip(), parts[-1].strip()
+    return desc.strip(), ""
+
+
+def _index_suppressed(href: str, desc: str, day: date,
+                      owned_urls: set[str], owned_body_days: set) -> bool:
+    """True when a richer parser in this module already owns this meeting.
+
+    Two ways that happens, because the index links inconsistently: UTP rows
+    point at the very page PAGES scrapes, while BPAC/PTAC rows point at
+    their own per-event detail pages and can only be recognised by name.
+
+    The committee test deliberately requires the other parser to have
+    ACTUALLY produced an event that day. If a committee page redesigns and
+    its parser goes quiet, these rows come through as degraded all-day
+    entries instead of vanishing silently -- suppression only ever yields to
+    a parser that demonstrably has the event.
+    """
+    if href in owned_urls:
+        return True
+    low = desc.lower()
+    return any(name.lower() in low and (name.lower(), day) in owned_body_days
+               for _, name, _ in COMMITTEES)
+
+
+def parse_hearings_index(html: str, owned_urls: set[str] | None = None,
+                         owned_body_days: set | None = None) -> list[Event]:
+    """Rows of the statewide hearings/meetings index, filtered to our patch.
+
+    Emitted all-day: the index carries a date but never a time, and putting
+    a made-up start time on a public meeting misleads whoever turns up. A
+    later pass can read the detail page and upgrade the event -- which is
+    why the UID is frozen from TxDOT's own link path rather than the
+    summary. That path is a key they maintain; the description is long
+    editable prose that would churn the UID on every copyedit.
+    """
+    owned_urls = owned_urls or set()
+    owned_body_days = owned_body_days or set()
+    soup = BeautifulSoup(html, "html.parser")
+    events: list[Event] = []
+    rows = seen_rows = 0
+    for tr in soup.find_all("tr"):
+        cells = [c.get_text(" ", strip=True) for c in tr.find_all("td")]
+        if len(cells) < 4:
+            continue
+        area, datetxt, fmt, desc = cells[0], cells[1], cells[2], cells[3]
+        m = INDEX_DATE_RE.match(datetxt)
+        if not m:
+            continue  # header row, or a shape we don't understand
+        seen_rows += 1
+        link = tr.find("a", href=True)
+        if not link:
+            continue
+        href = link["href"]
+        path = HM_PATH_RE.search(href)
+        district = path.group(1) if path else "other"
+        if district not in HEARINGS_DISTRICTS:
+            continue
+        if district not in LOCAL_DISTRICTS and area.strip().lower() not in REACHABLE_AREAS:
+            continue
+        if fmt.strip().lower() in INDEX_SKIP_FORMATS:
+            continue
+        try:
+            day = date(2000 + int(m.group(3)), int(m.group(1)), int(m.group(2)))
+        except ValueError:
+            continue
+        if _index_suppressed(href, desc, day, owned_urls, owned_body_days):
+            continue
+        rows += 1
+        topic, how = _split_modality(desc)
+        # One page can be many rows -- the I-14 corridor study runs the same
+        # meeting in six towns -- so the area disambiguates them. Statewide
+        # items gain nothing from it.
+        where = "" if area.strip().lower() == "statewide" else f" ({area.strip()})"
+        url = href if href.startswith("http") else f"https://www.txdot.gov{href}"
+        body = [f"{how}." if how else "",
+                "Time and venue are not listed on TxDOT's schedule index — "
+                f"see the event page for details: {url}"]
+        events.append(Event(
+            source=SOURCE,
+            summary=f"TxDOT - {topic}{where}",
+            start=day,
+            location=area.strip(),
+            url=url,
+            kind=_kind_of(desc),
+            description="\n\n".join(x for x in body if x),
+            uid=(f"{SOURCE}-hm-"
+                 f"{slugify(href.rsplit('/', 1)[-1].removesuffix('.html'))}"
+                 f"-{day:%Y%m%d}@calendars.changesaroundme.com"),
+        ))
+    if seen_rows and not rows:
+        _problems.append(
+            f"{SOURCE}: hearings index parsed {seen_rows} rows but none "
+            f"matched {sorted(HEARINGS_DISTRICTS)} — path segments renamed?"
+        )
+    return events
 
 
 def parse_page(html: str, context: str, page_url: str) -> list[Event]:
@@ -312,9 +466,15 @@ def parse_committee_page(
     return events
 
 
+def _start_day(e: Event) -> date:
+    return e.start.date() if isinstance(e.start, datetime) else e.start
+
+
 def fetch(session) -> list[Event]:
     _problems.clear()
     events: list[Event] = []
+    owned_urls = {u for _, u in PAGES} | {u for _, _, u in COMMITTEES}
+    owned_body_days: set[tuple[str, date]] = set()
     for context, url in PAGES:
         resp = session.get(url, timeout=30)
         resp.raise_for_status()
@@ -322,7 +482,14 @@ def fetch(session) -> list[Event]:
     for abbrev, name, url in COMMITTEES:
         resp = session.get(url, timeout=30)
         resp.raise_for_status()
-        events.extend(parse_committee_page(resp.text, abbrev, name, url))
+        found = parse_committee_page(resp.text, abbrev, name, url)
+        events.extend(found)
+        owned_body_days |= {(name.lower(), _start_day(e)) for e in found}
+    # Discovery pass last: it needs to know what the parsers above already
+    # produced so the same meeting isn't published twice.
+    resp = session.get(HEARINGS_INDEX, timeout=30)
+    resp.raise_for_status()
+    events.extend(parse_hearings_index(resp.text, owned_urls, owned_body_days))
     return events
 
 
@@ -346,4 +513,13 @@ def fetch_offline() -> list[Event]:
                 abbrev, name, url, min_year=FIXTURE_MIN_YEAR,
             )
         )
+    owned_urls = {u for _, u in PAGES} | {u for _, _, u in COMMITTEES}
+    owned_body_days = {(name.lower(), _start_day(e))
+                       for _, name, _ in COMMITTEES for e in events
+                       if name.lower() in e.summary.lower()
+                       or slugify(name) in e.stable_uid()}
+    events.extend(parse_hearings_index(
+        (FIXTURES / "txdotev_hearings_index.html").read_text(),
+        owned_urls, owned_body_days,
+    ))
     return events
