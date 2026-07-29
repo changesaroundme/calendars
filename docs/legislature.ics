@@ -28,7 +28,7 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:legislature-texas-senate-business-commerce-765-kv-lines-and-grid-reliab
  ility-20260729T0900@calendars.changesaroundme.com
-DTSTAMP:20260729T143904Z
+DTSTAMP:20260729T150453Z
 DTSTART;TZID=America/Chicago:20260729T090000
 DTEND;TZID=America/Chicago:20260729T110000
 SUMMARY:Texas Senate - Business & Commerce: 765-kV lines and grid reliabili
