@@ -74,10 +74,31 @@ def snapshot_events(path: pathlib.Path) -> list[Event]:
 PUBLISH_HISTORY = timedelta(days=365)
 
 
+def start_day(e: Event) -> date:
+    """The calendar day an event begins on."""
+    return e.start.date() if isinstance(e.start, datetime) else e.start
+
+
 def event_day(e: Event) -> date:
     """The last day an event touches. Uses end so a comment window counts."""
     latest = e.end or e.start
     return latest.date() if isinstance(latest, datetime) else latest
+
+
+def publish_horizon(today: date) -> date:
+    """Far edge of the published window: the end of NEXT calendar year.
+
+    A year boundary rather than a rolling count, because sources publish
+    their annual schedules late in the preceding year -- a rolling window
+    would clip a freshly-posted schedule at exactly the moment it appears,
+    which is the moment it is most useful.
+
+    Anything past it is either a data-entry artifact in the source (Austin's
+    Legistar carried a lone "City Council" row dated 1/14/2030 when this
+    shipped) or a parser that produced a wild year. Neither belongs in a
+    subscriber's calendar; both stay in data/*.json.
+    """
+    return date(today.year + 1, 12, 31)
 
 
 def has_future_events(events: list[Event], today: date) -> bool:
@@ -156,8 +177,13 @@ def main() -> int:
         # --- write outputs ---
         # Publish a bounded window; the snapshot below keeps everything the
         # source gave us, so git history stays complete either way.
-        cutoff = today - PUBLISH_HISTORY
-        publishable = [e for e in events if event_day(e) >= cutoff]
+        # Bounded at both ends: not finished too long ago, not starting too
+        # far out. event_day for the near edge so an in-progress comment
+        # window still counts; start_day for the far edge so one that opens
+        # inside the horizon isn't dropped for ending just past it.
+        cutoff, horizon = today - PUBLISH_HISTORY, publish_horizon(today)
+        publishable = [e for e in events
+                       if event_day(e) >= cutoff and start_day(e) <= horizon]
         if publishable:
             # Always publish what we got (stale beats absent)...
             (docs / f"{key}.ics").write_text(
@@ -180,9 +206,12 @@ def main() -> int:
             if stale:
                 print(f"[{key}] backfilling all.ics with {len(stale)} snapshot events")
                 all_events.extend(stale)
-        trimmed = len(events) - len(publishable)
+        old_n = sum(1 for e in events if event_day(e) < cutoff)
+        far_n = sum(1 for e in events if start_day(e) > horizon)
+        notes = ([f"{old_n} older than the window"] if old_n else []) + \
+                ([f"{far_n} beyond {horizon.year}"] if far_n else [])
         print(f"[{key}] {len(events)} events"
-              + (f" ({trimmed} older than the publish window)" if trimmed else ""))
+              + (f" ({', '.join(notes)})" if notes else ""))
 
     if all_events:
         (docs / "all.ics").write_text(

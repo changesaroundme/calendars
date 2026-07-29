@@ -118,8 +118,13 @@ Design notes worth keeping in mind:
   capmetrotx as 100 rows spanning Feb 2024 to Dec 2026. "This Year" would have
   emptied out every 1 January and taken the year's history with it; letting
   each source carry its own past is why this project keeps no archive of its
-  own. Published feeds are trimmed to `PUBLISH_HISTORY` (12 months) in
-  `build.py`, since subscribers re-download the whole `.ics` on every poll.
+  own. Published feeds are bounded at both ends in `build.py`: back to
+  `PUBLISH_HISTORY` (12 months), since subscribers re-download the whole
+  `.ics` on every poll, and forward to the end of *next* calendar year. The
+  far edge is a year boundary rather than a rolling count so a newly-posted
+  annual schedule is never clipped at the moment it appears; it also drops
+  source data-entry artifacts, e.g. the lone Austin "City Council" row dated
+  1/14/2030. `data/*.json` keeps everything either way.
 - **Legistar API lag (observed 2026-07-18).** CapMetro's Web API only lists
   meetings once agendas publish; the Calendar.aspx page shows them earlier.
   Hence the two-layer adapter. Worth rechecking for any future Legistar org.
