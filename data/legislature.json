@@ -1,6 +1,19 @@
 [
  {
   "source": "legislature",
+  "summary": "Texas Senate - Business and Commerce",
+  "start": "2026-07-29T09:00:00",
+  "end": "2026-07-29T12:00:00",
+  "location": "Room E1.012, Texas Capitol Extension, 1100 Congress Ave., Austin, TX 78701",
+  "url": "https://capitol.texas.gov/tlodocs/89R/schedules/html/C5102026072909001.HTM",
+  "status": "CONFIRMED",
+  "kind": "hearing",
+  "uid": "legislature-senate-committee-on-business-and-commerce-20260729T0900@calendars.changesaroundme.com",
+  "description": "Hearing notice (topics, testimony rules): https://capitol.texas.gov/tlodocs/89R/schedules/html/C5102026072909001.HTM\nNotice was marked REVISED \u2014 recheck the link for changes.\nLive/archived broadcasts: https://senate.texas.gov/av-live.php",
+  "all_day": false
+ },
+ {
+  "source": "legislature",
   "summary": "Texas Senate - Business & Commerce: 765-kV lines and grid reliability",
   "start": "2026-07-29T09:00:00",
   "end": "2026-07-29T11:00:00",
@@ -10,6 +23,97 @@
   "kind": "hearing",
   "uid": "legislature-texas-senate-business-commerce-765-kv-lines-and-grid-reliability-20260729T0900@calendars.changesaroundme.com",
   "description": "Senate Committee on Business & Commerce, chaired by Sen. Charles\nSchwertner. Invited and public testimony on two interim charges:\n\nManaging the Impacts of 765-kV Transmission Lines on Private Property\nRights - reviewing the proposed route plans and their effect on homes,\nbusinesses and communities; whether current regulatory processes and\ntimelines adequately protect landowner rights; and recommendations for\ntransmission planning, permitting and siting.\n\nAssessing the State of the Texas Electric Grid - SB 6 rulemaking\nincluding large load interconnection and transmission cost allocation,\nERCOT load forecast confidence, the Texas Energy Fund and post-Uri\nreforms, and whether the ERCOT market remains competitive.\n\nPublic testimony is limited to 2 minutes per witness. Written testimony\nneeds 15 copies to the committee clerk plus a digital copy by email.\nRegistration closes at 11am on the day of the hearing.\n\nNotice was marked REVISION - check the link for any later change.\n",
+  "all_day": false
+ },
+ {
+  "source": "legislature",
+  "summary": "Texas Senate - Transportation",
+  "start": "2026-07-29T12:00:00",
+  "end": "2026-07-29T15:00:00",
+  "location": "Room E1.016, Texas Capitol Extension, 1100 Congress Ave., Austin, TX 78701",
+  "url": "https://capitol.texas.gov/tlodocs/89R/schedules/html/C6402026072912001.HTM",
+  "status": "CANCELLED",
+  "kind": "hearing",
+  "uid": "legislature-senate-committee-on-transportation-20260729T1200@calendars.changesaroundme.com",
+  "description": "Hearing notice (topics, testimony rules): https://capitol.texas.gov/tlodocs/89R/schedules/html/C6402026072912001.HTM\nLive/archived broadcasts: https://senate.texas.gov/av-live.php",
+  "all_day": false
+ },
+ {
+  "source": "legislature",
+  "summary": "Texas Senate - Natural Resources",
+  "start": "2026-08-11T09:00:00",
+  "end": "2026-08-11T12:00:00",
+  "location": "Room E1.012, Texas Capitol Extension, 1100 Congress Ave., Austin, TX 78701",
+  "url": "https://capitol.texas.gov/tlodocs/89R/schedules/html/C5802026081109001.HTM",
+  "status": "CONFIRMED",
+  "kind": "hearing",
+  "uid": "legislature-senate-committee-on-natural-resources-20260811T0900@calendars.changesaroundme.com",
+  "description": "Hearing notice (topics, testimony rules): https://capitol.texas.gov/tlodocs/89R/schedules/html/C5802026081109001.HTM\nLive/archived broadcasts: https://senate.texas.gov/av-live.php",
+  "all_day": false
+ },
+ {
+  "source": "legislature",
+  "summary": "Texas Senate - Transportation",
+  "start": "2026-08-25T09:00:00",
+  "end": "2026-08-25T12:00:00",
+  "location": "Room E1.016, Texas Capitol Extension, 1100 Congress Ave., Austin, TX 78701",
+  "url": "https://capitol.texas.gov/tlodocs/89R/schedules/html/C6402026082509001.HTM",
+  "status": "CONFIRMED",
+  "kind": "hearing",
+  "uid": "legislature-senate-committee-on-transportation-20260825T0900@calendars.changesaroundme.com",
+  "description": "Hearing notice (topics, testimony rules): https://capitol.texas.gov/tlodocs/89R/schedules/html/C6402026082509001.HTM\nLive/archived broadcasts: https://senate.texas.gov/av-live.php",
+  "all_day": false
+ },
+ {
+  "source": "legislature",
+  "summary": "Texas Senate - Water, Agriculture, and Rural Affairs",
+  "start": "2026-09-01T09:00:00",
+  "end": "2026-09-01T12:00:00",
+  "location": "Room E1.012, Texas Capitol Extension, 1100 Congress Ave., Austin, TX 78701",
+  "url": "https://capitol.texas.gov/tlodocs/89R/schedules/html/C7002026090109001.HTM",
+  "status": "CONFIRMED",
+  "kind": "hearing",
+  "uid": "legislature-senate-committee-on-water-agriculture-and-rural-affairs-20260901T0900@calendars.changesaroundme.com",
+  "description": "Hearing notice (topics, testimony rules): https://capitol.texas.gov/tlodocs/89R/schedules/html/C7002026090109001.HTM\nLive/archived broadcasts: https://senate.texas.gov/av-live.php",
+  "all_day": false
+ },
+ {
+  "source": "legislature",
+  "summary": "Texas Senate - Local Government",
+  "start": "2026-09-01T11:00:00",
+  "end": "2026-09-01T14:00:00",
+  "location": "Room E1.016, Texas Capitol Extension, 1100 Congress Ave., Austin, TX 78701",
+  "url": "https://capitol.texas.gov/tlodocs/89R/schedules/html/C5562026090111001.HTM",
+  "status": "CONFIRMED",
+  "kind": "hearing",
+  "uid": "legislature-senate-committee-on-local-government-20260901T1100@calendars.changesaroundme.com",
+  "description": "Hearing notice (topics, testimony rules): https://capitol.texas.gov/tlodocs/89R/schedules/html/C5562026090111001.HTM\nLive/archived broadcasts: https://senate.texas.gov/av-live.php",
+  "all_day": false
+ },
+ {
+  "source": "legislature",
+  "summary": "Texas Senate - Natural Resources",
+  "start": "2026-09-21T09:00:00",
+  "end": "2026-09-21T12:00:00",
+  "location": "Room E1.012, Texas Capitol Extension, 1100 Congress Ave., Austin, TX 78701",
+  "url": "https://capitol.texas.gov/tlodocs/89R/schedules/html/C5802026092109001.HTM",
+  "status": "CONFIRMED",
+  "kind": "hearing",
+  "uid": "legislature-senate-committee-on-natural-resources-20260921T0900@calendars.changesaroundme.com",
+  "description": "Hearing notice (topics, testimony rules): https://capitol.texas.gov/tlodocs/89R/schedules/html/C5802026092109001.HTM\nLive/archived broadcasts: https://senate.texas.gov/av-live.php",
+  "all_day": false
+ },
+ {
+  "source": "legislature",
+  "summary": "Texas Senate - Business and Commerce",
+  "start": "2026-09-30T09:00:00",
+  "end": "2026-09-30T12:00:00",
+  "location": "Room E1.012, Texas Capitol Extension, 1100 Congress Ave., Austin, TX 78701",
+  "url": "https://capitol.texas.gov/tlodocs/89R/schedules/html/C5102026093009001.HTM",
+  "status": "CONFIRMED",
+  "kind": "hearing",
+  "uid": "legislature-senate-committee-on-business-and-commerce-20260930T0900@calendars.changesaroundme.com",
+  "description": "Hearing notice (topics, testimony rules): https://capitol.texas.gov/tlodocs/89R/schedules/html/C5102026093009001.HTM\nLive/archived broadcasts: https://senate.texas.gov/av-live.php",
   "all_day": false
  }
 ]
