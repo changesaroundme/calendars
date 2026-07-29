@@ -21,7 +21,6 @@
     --org-austin:   #eb6834;  /* orange */
     --org-atp:      #4a3aa7;  /* violet */
     --org-txdotev:  #e34948;  /* red */
-  --org-legislature: #6e6e6e;  /* neutral: 9th org, palette has 8 slots */
   }
   /* Dark values apply via OS setting (unless ?theme=light) or ?theme=dark. */
   @media (prefers-color-scheme: dark) {
@@ -39,8 +38,6 @@
       --org-austin:   #d95926;
       --org-atp:      #9085e9;
       --org-txdotev:  #e66767;
-    --org-legislature: #9a9a92;
-      --org-legislature: #9a9a92;
     }
   }
   :root[data-theme="dark"] {
@@ -97,10 +94,13 @@
         color: var(--text-primary); padding: 1px 4px; cursor: pointer; }
   .fc .ev .fc-event-title, .fc .ev .fc-event-time { color: var(--text-primary); }
   .fc .ev.cancelled { text-decoration: line-through; opacity: .55; }
-  /* TENTATIVE = the source stopped listing it without saying it was
-     cancelled. Dashed edge, not strikethrough: it may still happen. */
-  .fc .ev.tentative { border-left-style: dashed; opacity: .72; }
-  .fc .fc-list-event.tentative td { opacity: .72; font-style: italic; }
+  /* Org label on every event: color alone can't distinguish 8+ orgs (and
+     shouldn't have to). Hue-hinted but mixed toward the text color so it
+     stays readable on the tinted chip in both themes. */
+  .orgtag { font-weight: 700; font-size: .88em; letter-spacing: .02em;
+    color: color-mix(in srgb, var(--org, var(--text-secondary)) 55%, var(--text-primary));
+    margin-right: 4px; white-space: nowrap; }
+  .evline { display: inline; }
   .fc .fc-list-event { cursor: pointer; }
   .fc .fc-list-event-dot { border-color: var(--org, var(--text-secondary)) !important; }
   .fc .fc-list-event.cancelled td { text-decoration: line-through; opacity: .55; }
@@ -138,8 +138,6 @@ const ORGS = [
   { key: "austin",   label: "CoA",      match: u => u.startsWith("austin-") },
   { key: "atp",      label: "ATP",      match: u => u.endsWith("@www.atptx.org") },
   { key: "txdotev",  label: "TxDOT",    match: u => u.startsWith("txdotev-") },
-  { key: "legislature", label: "Legislature",
-    match: u => u.startsWith("legislature-") },
 ];
 const hidden = new Set();
 
@@ -194,19 +192,25 @@ function orgOf(ev) {
   if (ev.org) return ORGS.find(o => o.key === ev.org) || null;
   return ORGS.find(o => o.match(ev.uid || "")) || null;
 }
+function displayTitle(ev) {
+  // The org is shown as its own tag, so drop a leading org name from the
+  // title ("CAMPO - TPB" -> tag CAMPO + "TPB"; "TxDOT BPAC - Meeting" ->
+  // tag TxDOT + "BPAC - Meeting"). Titles without one (CoA) pass through.
+  const o = orgOf(ev);
+  let t = ev.summary || "(untitled)";
+  if (o) {
+    if (t.startsWith(o.label + " - ")) t = t.slice(o.label.length + 3);
+    else if (t.startsWith(o.label + " ")) t = t.slice(o.label.length + 1);
+  }
+  return t;
+}
 
-/* --- URL params: ?view=list|month  ?orgs=campo,txdot  ?theme=dark|light
-       ?feed=all|meetings|engagement --- */
+/* --- URL params: ?view=list|month  ?orgs=campo,txdot  ?theme=dark|light --- */
 const params = new URLSearchParams(location.search);
 const themeParam = params.get("theme");
 if (themeParam === "dark" || themeParam === "light") {
   document.documentElement.dataset.theme = themeParam;
 }
-// Which combined feed to render. Defaults to all.ics so an existing embed
-// with no ?feed= keeps behaving exactly as it did.
-const FEEDS = { all: "all.ics", meetings: "meetings.ics",
-                engagement: "engagement.ics" };
-const FEED = FEEDS[params.get("feed")] || FEEDS.all;
 const orgsParam = (params.get("orgs") || "").split(",").map(s => s.trim()).filter(Boolean);
 if (orgsParam.length) {
   for (const org of ORGS) if (!orgsParam.includes(org.key)) hidden.add(org.key);
@@ -251,15 +255,22 @@ const calendar = new FullCalendar.Calendar(document.getElementById("cal"), {
   displayEventEnd: false,
   eventDisplay: "block",  // chips for timed events too, not default dots
   eventContent: (arg) => {
-    // Month cells are tight: drop the org prefix there (color + legend + a
-    // tooltip carry identity); list view keeps the full name.
-    if (arg.view.type === "dayGridMonth") {
-      const el = document.createElement("div");
-      el.className = "fc-event-title";
-      el.textContent = arg.event.title.replace(/^[A-Za-z]+ - /, "");
-      return { domNodes: [el] };
+    // Every event carries its org label in text — with 8+ orgs, color
+    // alone can't (and shouldn't have to) identify them.
+    const el = document.createElement("div");
+    el.className = "evline";
+    const label = arg.event.extendedProps.orgLabel;
+    if (label) {
+      const tag = document.createElement("span");
+      tag.className = "orgtag";
+      tag.textContent = label;
+      el.appendChild(tag);
     }
-    return true;  // default rendering elsewhere
+    const title = document.createElement("span");
+    title.className = "fc-event-title";
+    title.textContent = arg.event.title;
+    el.appendChild(title);
+    return { domNodes: [el] };
   },
   events: (info, success, failure) => {
     const deliver = () => success(
@@ -267,19 +278,18 @@ const calendar = new FullCalendar.Calendar(document.getElementById("cal"), {
         .filter(e => { const o = orgOf(e); return !o || !hidden.has(o.key); })
         .map(e => ({
           id: e.uid,
-          title: e.summary || "(untitled)",
+          title: displayTitle(e),
           start: toISO(e.DTSTART),
           end: e.DTEND ? toISO(e.DTEND) : undefined,
           allDay: e.DTSTART.isDate,
           url: e.url || undefined,
-          classNames: ["ev",
-            e.status === "CANCELLED" ? "cancelled" : "",
-            e.status === "TENTATIVE" ? "tentative" : ""].filter(Boolean),
-          extendedProps: { org: orgOf(e)?.key, location: e.location, status: e.status },
+          classNames: ["ev", e.status === "CANCELLED" ? "cancelled" : ""].filter(Boolean),
+          extendedProps: { org: orgOf(e)?.key, orgLabel: orgOf(e)?.label,
+                           location: e.location, status: e.status },
         }))
     );
     if (parsed.length) return deliver();
-    fetch("./" + FEED, { cache: "no-cache" })
+    fetch("./all.ics", { cache: "no-cache" })
       .then(r => { if (!r.ok) throw new Error(r.status); return r.text(); })
       .then(t => { parsed = parseICS(t); deliver(); })
       .catch(failure);
@@ -287,11 +297,10 @@ const calendar = new FullCalendar.Calendar(document.getElementById("cal"), {
   eventDidMount: (arg) => {
     const org = arg.event.extendedProps.org;
     if (org) arg.el.style.setProperty("--org", css.getPropertyValue(`--org-${org}`));
-    const bits = [arg.event.title];
+    const label = arg.event.extendedProps.orgLabel;
+    const bits = [(label ? label + " — " : "") + arg.event.title];
     if (arg.event.extendedProps.location) bits.push(arg.event.extendedProps.location);
     if (arg.event.extendedProps.status === "CANCELLED") bits.push("CANCELLED");
-    if (arg.event.extendedProps.status === "TENTATIVE")
-      bits.push("TENTATIVE - no longer listed by the source; may not happen");
     arg.el.title = bits.join("\n");
   },
   eventClick: (arg) => {
