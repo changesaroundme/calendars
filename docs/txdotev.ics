@@ -28,7 +28,7 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:txdotev-public-transportation-advisory-committee-20260122T1000@calendar
  s.changesaroundme.com
-DTSTAMP:20260729T023118Z
+DTSTAMP:20260729T024814Z
 DTSTART;TZID=America/Chicago:20260122T100000
 DTEND;TZID=America/Chicago:20260122T120000
 SUMMARY:TxDOT PTAC - Meeting
@@ -44,7 +44,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-bicycle-and-pedestrian-advisory-committee-20260130T0930@calenda
  rs.changesaroundme.com
-DTSTAMP:20260729T023118Z
+DTSTAMP:20260729T024814Z
 DTSTART;TZID=America/Chicago:20260130T093000
 DTEND;TZID=America/Chicago:20260130T113000
 SUMMARY:TxDOT BPAC - Meeting
@@ -60,7 +60,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-public-transportation-advisory-committee-20260209T1000@calendar
  s.changesaroundme.com
-DTSTAMP:20260729T023118Z
+DTSTAMP:20260729T024814Z
 DTSTART;TZID=America/Chicago:20260209T100000
 DTEND;TZID=America/Chicago:20260209T120000
 SUMMARY:TxDOT PTAC - Meeting
@@ -77,7 +77,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-bicycle-and-pedestrian-advisory-committee-20260424T0930@calenda
  rs.changesaroundme.com
-DTSTAMP:20260729T023118Z
+DTSTAMP:20260729T024814Z
 DTSTART;TZID=America/Chicago:20260424T093000
 DTEND;TZID=America/Chicago:20260424T113000
 SUMMARY:TxDOT BPAC - Meeting
@@ -96,7 +96,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-public-transportation-advisory-committee-20260506T1000@calendar
  s.changesaroundme.com
-DTSTAMP:20260729T023118Z
+DTSTAMP:20260729T024814Z
 DTSTART;TZID=America/Chicago:20260506T100000
 DTEND;TZID=America/Chicago:20260506T120000
 SUMMARY:TxDOT PTAC - Meeting
@@ -113,7 +113,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-utp-virtual-public-meeting-20260701@calendars.changesaroundme.c
  om
-DTSTAMP:20260729T023118Z
+DTSTAMP:20260729T024814Z
 DTSTART;TZID=America/Chicago:20260701T140000
 DTEND;TZID=America/Chicago:20260701T160000
 SUMMARY:TxDOT - UTP: Virtual public meeting
@@ -128,7 +128,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-draft-2027-utp-comment-period-20260703@calendars.changesaroundm
  e.com
-DTSTAMP:20260729T023118Z
+DTSTAMP:20260729T024814Z
 DTSTART;VALUE=DATE:20260703
 DTEND;VALUE=DATE:20260804
 SUMMARY:TxDOT - Draft 2027 UTP comment period
@@ -142,7 +142,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-utp-virtual-public-hearing-20260729@calendars.changesaroundme.c
  om
-DTSTAMP:20260729T023118Z
+DTSTAMP:20260729T024814Z
 DTSTART;TZID=America/Chicago:20260729T140000
 DTEND;TZID=America/Chicago:20260729T160000
 SUMMARY:TxDOT - UTP: Virtual public hearing
@@ -154,9 +154,29 @@ CATEGORIES:hearing
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
+UID:txdotev-txdot-texas-triangle-multimodal-strategic-plan-webinar-20260730
+ T1200@calendars.changesaroundme.com
+DTSTAMP:20260729T024814Z
+DTSTART;TZID=America/Chicago:20260730T120000
+DTEND;TZID=America/Chicago:20260730T140000
+SUMMARY:TxDOT - Texas Triangle Multimodal Strategic Plan Webinar
+LOCATION:Virtual (Microsoft Teams)
+URL:https://www.txdot.gov/projects/projects-studies/statewide/ttmsp.html
+DESCRIPTION:Virtual webinar\, 12pm CDT. Registration required - a Teams inv
+ itation is\nsent to the address you register with:\nhttps://forms.office.c
+ om/Pages/ResponsePage.aspx?id=dqTbOQlcY0yR2s56OrUiTehB7aaighdMu7NupziNqitU
+ OFlWMzRRMU9EWjgyWTUxWEswWFMzQ08yWC4u\n\nTxDOT is seeking input from transp
+ ortation and mobility advocates on the\nTexas Triangle Multimodal Strategi
+ c Plan - current transportation\nchallenges\, emerging mobility trends\, a
+ nd connections between communities\nacross the Dallas-Fort Worth / Houston
+  / San Antonio / Austin mega-region.\n
+CATEGORIES:engagement
+X-CAM-ORG:txdotev
+END:VEVENT
+BEGIN:VEVENT
 UID:txdotev-bicycle-and-pedestrian-advisory-committee-20260731T0930@calenda
  rs.changesaroundme.com
-DTSTAMP:20260729T023118Z
+DTSTAMP:20260729T024814Z
 DTSTART;TZID=America/Chicago:20260731T093000
 DTEND;TZID=America/Chicago:20260731T113000
 SUMMARY:TxDOT BPAC - Meeting
@@ -168,9 +188,51 @@ CATEGORIES:regular
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
+UID:txdotev-txdot-i-14-extension-public-meeting-temple-20260805T1700@calend
+ ars.changesaroundme.com
+DTSTAMP:20260729T024814Z
+DTSTART;TZID=America/Chicago:20260805T170000
+DTEND;TZID=America/Chicago:20260805T190000
+SUMMARY:TxDOT - I-14 Extension Public Meeting (Temple)
+LOCATION:Frank W. Mayborn Civic & Convention Center\, Main Hall\, 3303 N. 3
+ rd Street\, Temple\, TX 76501
+URL:https://www.txdot.gov/projects/hearings-meetings/waco/2026/i14-extensio
+ n-080526.html
+DESCRIPTION:Open house\, drop in any time 5-7pm CDT. One of two in-person m
+ eetings on\nthe same proposals\; the other is in Belton on 6 Aug 2026.\n\n
+ Proposed I-35 improvements from south of Loop 121 in Belton to Loop\n363/U
+ S 190/SH 36 in Temple ("Segment 1")\, part of extending I-14 from its\ncur
+ rent terminus in Belton to BU 190 in Rogers.\n\nA pre-recorded video of th
+ e same presentation goes up on the project page\nby 5pm on 5 Aug 2026. Wri
+ tten comments must be postmarked or received by\n21 Aug 2026 to enter the 
+ official record.\n
+CATEGORIES:engagement
+X-CAM-ORG:txdotev
+END:VEVENT
+BEGIN:VEVENT
+UID:txdotev-txdot-i-14-extension-public-meeting-belton-20260806T1700@calend
+ ars.changesaroundme.com
+DTSTAMP:20260729T024814Z
+DTSTART;TZID=America/Chicago:20260806T170000
+DTEND;TZID=America/Chicago:20260806T190000
+SUMMARY:TxDOT - I-14 Extension Public Meeting (Belton)
+LOCATION:Huntington Bank Expo (Cadence Bank Center)\, Assembly Hall\, 301 W
+ . Loop 121\, Belton\, TX 76513
+URL:https://www.txdot.gov/projects/hearings-meetings/waco/2026/i14-extensio
+ n-080526.html
+DESCRIPTION:Open house\, drop in any time 5-7pm CDT. Same proposals as the 
+ Temple\nmeeting on 5 Aug 2026 - attend whichever is more convenient.\n\nPr
+ oposed I-35 improvements from south of Loop 121 in Belton to Loop\n363/US 
+ 190/SH 36 in Temple ("Segment 1")\, part of extending I-14 from its\ncurre
+ nt terminus in Belton to BU 190 in Rogers.\n\nWritten comments must be pos
+ tmarked or received by 21 Aug 2026 to enter\nthe official record.\n
+CATEGORIES:engagement
+X-CAM-ORG:txdotev
+END:VEVENT
+BEGIN:VEVENT
 UID:txdotev-public-transportation-advisory-committee-20260813T1000@calendar
  s.changesaroundme.com
-DTSTAMP:20260729T023118Z
+DTSTAMP:20260729T024814Z
 DTSTART;TZID=America/Chicago:20260813T100000
 DTEND;TZID=America/Chicago:20260813T120000
 SUMMARY:TxDOT PTAC - Meeting
@@ -186,7 +248,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-bicycle-and-pedestrian-advisory-committee-20261106T0930@calenda
  rs.changesaroundme.com
-DTSTAMP:20260729T023118Z
+DTSTAMP:20260729T024814Z
 DTSTART;TZID=America/Chicago:20261106T093000
 DTEND;TZID=America/Chicago:20261106T113000
 SUMMARY:TxDOT BPAC - Meeting

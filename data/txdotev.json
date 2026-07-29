@@ -105,6 +105,19 @@
  },
  {
   "source": "txdotev",
+  "summary": "TxDOT - Texas Triangle Multimodal Strategic Plan Webinar",
+  "start": "2026-07-30T12:00:00",
+  "end": "2026-07-30T14:00:00",
+  "location": "Virtual (Microsoft Teams)",
+  "url": "https://www.txdot.gov/projects/projects-studies/statewide/ttmsp.html",
+  "status": "CONFIRMED",
+  "kind": "engagement",
+  "uid": "txdotev-txdot-texas-triangle-multimodal-strategic-plan-webinar-20260730T1200@calendars.changesaroundme.com",
+  "description": "Virtual webinar, 12pm CDT. Registration required - a Teams invitation is\nsent to the address you register with:\nhttps://forms.office.com/Pages/ResponsePage.aspx?id=dqTbOQlcY0yR2s56OrUiTehB7aaighdMu7NupziNqitUOFlWMzRRMU9EWjgyWTUxWEswWFMzQ08yWC4u\n\nTxDOT is seeking input from transportation and mobility advocates on the\nTexas Triangle Multimodal Strategic Plan - current transportation\nchallenges, emerging mobility trends, and connections between communities\nacross the Dallas-Fort Worth / Houston / San Antonio / Austin mega-region.\n",
+  "all_day": false
+ },
+ {
+  "source": "txdotev",
   "summary": "TxDOT BPAC - Meeting",
   "start": "2026-07-31T09:30:00",
   "end": "2026-07-31T11:30:00",
@@ -114,6 +127,32 @@
   "kind": "regular",
   "uid": "txdotev-bicycle-and-pedestrian-advisory-committee-20260731T0930@calendars.changesaroundme.com",
   "description": "Posted location: Teams virtual link will be provided",
+  "all_day": false
+ },
+ {
+  "source": "txdotev",
+  "summary": "TxDOT - I-14 Extension Public Meeting (Temple)",
+  "start": "2026-08-05T17:00:00",
+  "end": "2026-08-05T19:00:00",
+  "location": "Frank W. Mayborn Civic & Convention Center, Main Hall, 3303 N. 3rd Street, Temple, TX 76501",
+  "url": "https://www.txdot.gov/projects/hearings-meetings/waco/2026/i14-extension-080526.html",
+  "status": "CONFIRMED",
+  "kind": "engagement",
+  "uid": "txdotev-txdot-i-14-extension-public-meeting-temple-20260805T1700@calendars.changesaroundme.com",
+  "description": "Open house, drop in any time 5-7pm CDT. One of two in-person meetings on\nthe same proposals; the other is in Belton on 6 Aug 2026.\n\nProposed I-35 improvements from south of Loop 121 in Belton to Loop\n363/US 190/SH 36 in Temple (\"Segment 1\"), part of extending I-14 from its\ncurrent terminus in Belton to BU 190 in Rogers.\n\nA pre-recorded video of the same presentation goes up on the project page\nby 5pm on 5 Aug 2026. Written comments must be postmarked or received by\n21 Aug 2026 to enter the official record.\n",
+  "all_day": false
+ },
+ {
+  "source": "txdotev",
+  "summary": "TxDOT - I-14 Extension Public Meeting (Belton)",
+  "start": "2026-08-06T17:00:00",
+  "end": "2026-08-06T19:00:00",
+  "location": "Huntington Bank Expo (Cadence Bank Center), Assembly Hall, 301 W. Loop 121, Belton, TX 76513",
+  "url": "https://www.txdot.gov/projects/hearings-meetings/waco/2026/i14-extension-080526.html",
+  "status": "CONFIRMED",
+  "kind": "engagement",
+  "uid": "txdotev-txdot-i-14-extension-public-meeting-belton-20260806T1700@calendars.changesaroundme.com",
+  "description": "Open house, drop in any time 5-7pm CDT. Same proposals as the Temple\nmeeting on 5 Aug 2026 - attend whichever is more convenient.\n\nProposed I-35 improvements from south of Loop 121 in Belton to Loop\n363/US 190/SH 36 in Temple (\"Segment 1\"), part of extending I-14 from its\ncurrent terminus in Belton to BU 190 in Rogers.\n\nWritten comments must be postmarked or received by 21 Aug 2026 to enter\nthe official record.\n",
   "all_day": false
  },
  {
