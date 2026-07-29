@@ -104,6 +104,16 @@
     color: color-mix(in srgb, var(--org, var(--text-secondary)) 55%, var(--text-primary));
     margin-right: 4px; white-space: nowrap; }
   .evline { display: inline; }
+  /* Month cells: the org tag always survives; the title truncates with an
+     ellipsis instead of overflowing the cell. Full title lives in the
+     tooltip and the list view — this embed showcases the feeds, it isn't
+     the primary reading surface. (Wrapping was tried and reverted: ragged
+     multi-line chips crowd out the +N-more links.) */
+  .fc .ev { overflow: hidden; }
+  .fc-daygrid-event .evline { display: flex; align-items: baseline; min-width: 0; }
+  .fc-daygrid-event .evline .orgtag { flex: none; }
+  .fc-daygrid-event .evline .fc-event-title { flex: 1 1 auto; min-width: 0;
+    overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
   .fc .fc-list-event { cursor: pointer; }
   .fc .fc-list-event-dot { border-color: var(--org, var(--text-secondary)) !important; }
   .fc .fc-list-event.cancelled td { text-decoration: line-through; opacity: .55; }
