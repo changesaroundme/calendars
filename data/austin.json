@@ -2055,6 +2055,19 @@
  },
  {
   "source": "austin",
+  "summary": "C\u00e9sar Ch\u00e1vez Street Renaming - Community Meeting",
+  "start": "2026-08-11T17:00:00",
+  "end": "2026-08-11T19:00:00",
+  "location": "Central Library, 710 W. C\u00e9sar Ch\u00e1vez St., Austin, TX 78701",
+  "url": "https://www.speakupaustin.org/r31038",
+  "status": "CONFIRMED",
+  "kind": "engagement",
+  "uid": "austin-c-sar-ch-vez-street-renaming-community-meeting-20260811T1700@calendars.changesaroundme.com",
+  "description": "First of three community meetings on potentially renaming C\u00e9sar Ch\u00e1vez\nStreet (MOPAC to Hwy 183). Learn the street's naming history and the\ncosts of a change for the City and area businesses; share your input.\n\nOthers in the series: 2pm CDT 15 Aug 2026 (Sanchez Elementary) and a\nvirtual session 6pm CDT 18 Aug 2026. Online survey at the link.\n",
+  "all_day": false
+ },
+ {
+  "source": "austin",
   "summary": "Planning Commission",
   "start": "2026-08-11T18:00:00",
   "end": "2026-08-11T21:00:00",
@@ -2120,6 +2133,19 @@
  },
  {
   "source": "austin",
+  "summary": "C\u00e9sar Ch\u00e1vez Street Renaming - Community Meeting",
+  "start": "2026-08-15T14:00:00",
+  "end": "2026-08-15T16:00:00",
+  "location": "Sanchez Elementary School, 73 San Marcos St., Austin, TX 78702",
+  "url": "https://www.speakupaustin.org/r31038",
+  "status": "CONFIRMED",
+  "kind": "engagement",
+  "uid": "austin-c-sar-ch-vez-street-renaming-community-meeting-20260815T1400@calendars.changesaroundme.com",
+  "description": "Second of three community meetings on potentially renaming C\u00e9sar Ch\u00e1vez\nStreet (MOPAC to Hwy 183). Learn the street's naming history and the\ncosts of a change for the City and area businesses; share your input.\n\nOthers in the series: 5pm CDT 11 Aug 2026 (Central Library) and a\nvirtual session 6pm CDT 18 Aug 2026. Online survey at the link.\n",
+  "all_day": false
+ },
+ {
+  "source": "austin",
   "summary": "City Council - Budget Meeting",
   "start": "2026-08-17",
   "end": null,
@@ -2130,6 +2156,19 @@
   "uid": "austin-city-council-20260817@calendars.changesaroundme.com",
   "description": "From the published annual council calendar (dates subject to change). Time and agenda appear ~a week ahead: https://www.austintexas.gov/council/meetings",
   "all_day": true
+ },
+ {
+  "source": "austin",
+  "summary": "C\u00e9sar Ch\u00e1vez Street Renaming - Virtual Community Meeting",
+  "start": "2026-08-18T18:00:00",
+  "end": "2026-08-18T20:00:00",
+  "location": "Virtual (Zoom webinar)",
+  "url": "https://www.speakupaustin.org/r31038",
+  "status": "CONFIRMED",
+  "kind": "engagement",
+  "uid": "austin-c-sar-ch-vez-street-renaming-virtual-community-meeting-20260818T1800@calendars.changesaroundme.com",
+  "description": "Third of three community meetings on potentially renaming C\u00e9sar Ch\u00e1vez\nStreet (MOPAC to Hwy 183) \u2014 virtual session. Register:\nhttps://zoom.us/meeting/register/jfd_MPZpTnKHHKEO7tT7Ww\n\nIn-person sessions: 5pm CDT 11 Aug 2026 (Central Library) and 2pm CDT\n15 Aug 2026 (Sanchez Elementary). Online survey at the link.\n",
+  "all_day": false
  },
  {
   "source": "austin",
