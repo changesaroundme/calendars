@@ -28,25 +28,36 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-business-and-commerce-20260729T0900@cal
  endars.changesaroundme.com
-DTSTAMP:20260730T165834Z
+DTSTAMP:20260730T222210Z
 DTSTART;TZID=America/Chicago:20260729T090000
-DTEND;TZID=America/Chicago:20260729T120000
-SUMMARY:Texas Senate - Business and Commerce
-LOCATION:Room E1.012\, Texas Capitol Extension\, 1100 Congress Ave.\, Austi
- n\, TX 78701
+DTEND;TZID=America/Chicago:20260729T110000
+SUMMARY:Texas Senate - Business & Commerce: 765-kV lines and grid reliabili
+ ty
+LOCATION:Room E1.012 (Hearing Room)\, Texas Capitol Extension\, 1100 Congre
+ ss Ave.\, Austin\, TX 78701
 URL:https://capitol.texas.gov/tlodocs/89R/schedules/html/C5102026072909001.
  HTM
-DESCRIPTION:Hearing notice (topics\, testimony rules): https://capitol.texa
- s.gov/tlodocs/89R/schedules/html/C5102026072909001.HTM\nNotice was marked 
- REVISED — recheck the link for changes.\nLive/archived broadcasts: https
- ://senate.texas.gov/av-live.php
+DESCRIPTION:Senate Committee on Business & Commerce\, chaired by Sen. Charl
+ es\nSchwertner. Invited and public testimony on two interim charges:\n\nMa
+ naging the Impacts of 765-kV Transmission Lines on Private Property\nRight
+ s - reviewing the proposed route plans and their effect on homes\,\nbusine
+ sses and communities\; whether current regulatory processes and\ntimelines
+  adequately protect landowner rights\; and recommendations for\ntransmissi
+ on planning\, permitting and siting.\n\nAssessing the State of the Texas E
+ lectric Grid - SB 6 rulemaking\nincluding large load interconnection and t
+ ransmission cost allocation\,\nERCOT load forecast confidence\, the Texas 
+ Energy Fund and post-Uri\nreforms\, and whether the ERCOT market remains c
+ ompetitive.\n\nPublic testimony is limited to 2 minutes per witness. Writt
+ en testimony\nneeds 15 copies to the committee clerk plus a digital copy b
+ y email.\nRegistration closes at 11am on the day of the hearing.\n\nNotice
+  was marked REVISION - check the link for any later change.\n
 CATEGORIES:hearing
 X-CAM-ORG:legislature
 END:VEVENT
 BEGIN:VEVENT
 UID:legislature-texas-senate-business-commerce-765-kv-lines-and-grid-reliab
  ility-20260729T0900@calendars.changesaroundme.com
-DTSTAMP:20260730T165834Z
+DTSTAMP:20260730T222210Z
 DTSTART;TZID=America/Chicago:20260729T090000
 DTEND;TZID=America/Chicago:20260729T110000
 SUMMARY:Texas Senate - Business & Commerce: 765-kV lines and grid reliabili
@@ -75,7 +86,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-transportation-20260729T1200@calendars.
  changesaroundme.com
-DTSTAMP:20260730T165834Z
+DTSTAMP:20260730T222210Z
 DTSTART;TZID=America/Chicago:20260729T120000
 DTEND;TZID=America/Chicago:20260729T150000
 SUMMARY:Texas Senate - Transportation
@@ -93,7 +104,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-natural-resources-20260811T0900@calenda
  rs.changesaroundme.com
-DTSTAMP:20260730T165834Z
+DTSTAMP:20260730T222210Z
 DTSTART;TZID=America/Chicago:20260811T090000
 DTEND;TZID=America/Chicago:20260811T120000
 SUMMARY:Texas Senate - Natural Resources
@@ -110,7 +121,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-transportation-20260825T0900@calendars.
  changesaroundme.com
-DTSTAMP:20260730T165834Z
+DTSTAMP:20260730T222210Z
 DTSTART;TZID=America/Chicago:20260825T090000
 DTEND;TZID=America/Chicago:20260825T120000
 SUMMARY:Texas Senate - Transportation
@@ -127,7 +138,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-water-agriculture-and-rural-affairs-202
  60901T0900@calendars.changesaroundme.com
-DTSTAMP:20260730T165834Z
+DTSTAMP:20260730T222210Z
 DTSTART;TZID=America/Chicago:20260901T090000
 DTEND;TZID=America/Chicago:20260901T120000
 SUMMARY:Texas Senate - Water\, Agriculture\, and Rural Affairs
@@ -144,7 +155,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-local-government-20260901T1100@calendar
  s.changesaroundme.com
-DTSTAMP:20260730T165834Z
+DTSTAMP:20260730T222210Z
 DTSTART;TZID=America/Chicago:20260901T110000
 DTEND;TZID=America/Chicago:20260901T140000
 SUMMARY:Texas Senate - Local Government
@@ -161,7 +172,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-natural-resources-20260921T0900@calenda
  rs.changesaroundme.com
-DTSTAMP:20260730T165834Z
+DTSTAMP:20260730T222210Z
 DTSTART;TZID=America/Chicago:20260921T090000
 DTEND;TZID=America/Chicago:20260921T120000
 SUMMARY:Texas Senate - Natural Resources
@@ -178,7 +189,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-business-and-commerce-20260930T0900@cal
  endars.changesaroundme.com
-DTSTAMP:20260730T165834Z
+DTSTAMP:20260730T222210Z
 DTSTART;TZID=America/Chicago:20260930T090000
 DTEND;TZID=America/Chicago:20260930T120000
 SUMMARY:Texas Senate - Business and Commerce
