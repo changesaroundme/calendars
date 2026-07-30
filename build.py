@@ -156,7 +156,25 @@ def main() -> int:
         snapshot_path = data / f"{key}.json"
         try:
             events = module.fetch_offline() if offline else module.fetch(session)
-            events = events + curated.events_for(key)
+            hand = curated.events_for(key)
+            # Same start + same org but a DIFFERENT uid: probably the same
+            # meeting entered twice (scraper + yaml). Detection only — never
+            # auto-merged: two committees genuinely can meet at the same
+            # time, and a wrong merge silently deletes a real meeting. The
+            # human resolves it by pinning `uid:` in curated.yaml (adopting
+            # the scraped identity) or removing the entry.
+            fetched_uids = {e.stable_uid() for e in events}
+            fetched_starts = {e.start for e in events}
+            for ev in hand:
+                if ev.start in fetched_starts and ev.stable_uid() not in fetched_uids:
+                    print(f"[{key}] WARNING: curated entry {ev.summary!r} shares "
+                          "a start time with a scraped event but not its uid — "
+                          "possible duplicate; pin `uid:` in curated.yaml or "
+                          "remove the entry")
+            # Curated first: on a uid tie (a pinned `uid:`), emit()'s
+            # first-wins dedupe lets the hand-written entry override the
+            # scraped copy — deliberate human data beats generic scrape.
+            events = hand + events
             events_by_key[key] = events
         except Exception as exc:
             print(f"[{key}] ERROR: fetch failed: {exc}")

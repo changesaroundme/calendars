@@ -27,6 +27,10 @@
 #              NOTE: renaming a summary therefore creates a NEW event for
 #              subscribers. To rename without churn, first copy the old uid
 #              from data/<org>.json into an explicit `uid:` line.
+#              ALSO the dedupe mechanism: if a scraper covers the same
+#              meeting (build log warns "possible duplicate"), pin this to
+#              the scraped event's uid (find it in data/<org>.json) — the
+#              curated entry then REPLACES the scraped copy everywhere.
 #
 # Housekeeping: past events can be pruned whenever; deleting one removes it
 # from the published calendars but it stays in git history.
@@ -95,6 +99,9 @@
 - summary: "Texas Senate - Business & Commerce: 765-kV lines and grid reliability"
   start: 2026-07-29 09:00
   org: legislature
+  # uid pinned to the scraper's copy of this same hearing (captured by the
+  # 7/29 push-triggered build): one identity, and this richer entry wins.
+  uid: legislature-senate-committee-on-business-and-commerce-20260729T0900@calendars.changesaroundme.com
   location: "Room E1.012 (Hearing Room), Texas Capitol Extension, 1100 Congress Ave., Austin, TX 78701"
   url: https://capitol.texas.gov/tlodocs/89R/schedules/html/C5102026072909001.HTM
   kind: hearing
