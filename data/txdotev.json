@@ -581,7 +581,7 @@
   "status": "CONFIRMED",
   "kind": "hearing",
   "uid": "txdotev-utp-virtual-public-hearing-20260729@calendars.changesaroundme.com",
-  "description": "Watch the Livestream HERE: https://onlinexperiences.com/scripts/Server.nxp?LASCmd=AI:4;F:QS!10100&ShowUUID=ACB265E4-C066-4B8A-AA1A-7566288A30EB",
+  "description": "Public Hearing Presentation: https://ftp.txdot.gov/pub/txdot/get-involved/tpp/utp/07292026-2027utp-public-hearing.pptx\nPublic Hearing Recording: https://onlinexperiences.com/scripts/Server.nxp?LASCmd=AI:4;F:QS!10100&ShowUUID=ACB265E4-C066-4B8A-AA1A-7566288A30EB",
   "all_day": false
  },
  {
@@ -620,7 +620,7 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "txdotev-bicycle-and-pedestrian-advisory-committee-20260731T0930@calendars.changesaroundme.com",
-  "description": "Posted location: Teams virtual link will be provided",
+  "description": "Posted location: Teams virtual meeting Meeting ID: 256 571 076 754 263 Passcode: qE2XE9cr\nTeams virtual meeting: https://nam11.safelinks.protection.outlook.com/ap/t-59584e83/?url=https%3A%2F%2Fteams.microsoft.com%2Fmeet%2F256571076754263%3Fp%3DxqU89Gh9vsiheboQat&data=05%7C02%7CRobbi.Smith%40txdot.gov%7Ceae310bfe0ce40663dc308dee9d99104%7C39dba4765c094c6391dace7a3ab5224d%7C0%7C0%7C639205318179407663%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=FaU%2BVSQImJgcpscDfuLGcjwYrhG2BUNnB5mP3iEIM9E%3D&reserved=0",
   "all_day": false
  },
  {
@@ -661,6 +661,19 @@
   "uid": "txdotev-txdot-i-14-extension-public-meeting-belton-20260806T1700@calendars.changesaroundme.com",
   "description": "Open house, drop in any time 5-7pm CDT. Same proposals as the Temple\nmeeting on 5 Aug 2026 - attend whichever is more convenient.\n\nProposed I-35 improvements from south of Loop 121 in Belton to Loop\n363/US 190/SH 36 in Temple (\"Segment 1\"), part of extending I-14 from its\ncurrent terminus in Belton to BU 190 in Rogers.\n\nWritten comments must be postmarked or received by 21 Aug 2026 to enter\nthe official record.\n",
   "all_day": false
+ },
+ {
+  "source": "txdotev",
+  "summary": "TxDOT - I-35 Georgetown to Round Rock (Georgetown)",
+  "start": "2026-08-13",
+  "end": null,
+  "location": "Georgetown",
+  "url": "https://www.txdot.gov/projects/hearings-meetings/austin/2026/i35-georgetown-to-round-rock-081326.html",
+  "status": "CONFIRMED",
+  "kind": "engagement",
+  "uid": "txdotev-hm-i35-georgetown-to-round-rock-081326-20260813@calendars.changesaroundme.com",
+  "description": "in-person public meeting with virtual option.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 see the event page for details: https://www.txdot.gov/projects/hearings-meetings/austin/2026/i35-georgetown-to-round-rock-081326.html",
+  "all_day": true
  },
  {
   "source": "txdotev",
