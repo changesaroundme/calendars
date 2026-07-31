@@ -280,6 +280,122 @@ def parse_hearings_index(html: str, owned_urls: set[str] | None = None,
     return events
 
 
+# --- hearings-index detail-page enrichment ---------------------------------
+# The index gives a date but never a time; each row links to a detail page
+# (standard AEM template: h3 schedule headers + a "Meeting details" table)
+# that usually does. UIDs were frozen from the link path in anticipation, so
+# upgrading all-day -> timed never churns identity. Conservative by rule:
+# only an explicit time RANGE upgrades the event ("from 4 to 7 p.m.",
+# "4 - 7 p.m."); a lone "by 4 p.m." is a deadline, not a start time, and a
+# page whose ranges are ambiguous for the event's date stays all-day.
+RANGE_RE = re.compile(
+    r"(?:from\s+)?(\d{1,2})(?::(\d{2}))?\s*(?:([ap])\.?\s*m\.?\s*)?"
+    r"(?:to|\u2013|\u2014|-)\s*(\d{1,2})(?::(\d{2}))?\s*([ap])\.?\s*m\b",
+    re.IGNORECASE)
+TX_ZIP_RE = re.compile(r"TX\s+\d{5}")
+ORDINAL_FIX_RE = re.compile(r"(\d)\s+(st|nd|rd|th)\b")
+
+
+def _ranges_for_day(soup, day: date) -> list[tuple[int, int, int, int, str]]:
+    """Distinct (h1,m1,h2,m2, block_text) ranges in blocks mentioning day."""
+    seen: dict[tuple, str] = {}
+    for el in soup.find_all(["h2", "h3", "td", "p", "li"]):
+        text = el.get_text(" ", strip=True)
+        if _long_date(text) != day:
+            continue
+        m = RANGE_RE.search(text)
+        if not m:
+            continue
+        h2 = int(m.group(4)) % 12 + (12 if m.group(6).lower() == "p" else 0)
+        mer1 = (m.group(3) or m.group(6)).lower()  # "4 to 7 p.m.": both p.m.
+        h1 = int(m.group(1)) % 12 + (12 if mer1 == "p" else 0)
+        if h1 >= h2:  # "11 to 1 p.m." -> the start was a.m.
+            h1 = int(m.group(1)) % 12
+        key = (h1, int(m.group(2) or 0), h2, int(m.group(5) or 0))
+        if key not in seen:
+            seen[key] = text
+        elif TX_ZIP_RE.search(text) and not TX_ZIP_RE.search(seen[key]):
+            # Same range stated twice (h3 header + details cell): keep the
+            # block that carries the venue address.
+            seen[key] = text
+    return [(*k, t) for k, t in seen.items()]
+
+
+def _venue_from(block_text: str) -> str:
+    """Street venue from an in-person block, anchored on a TX zip."""
+    z = TX_ZIP_RE.search(block_text)
+    if not z:
+        return ""
+    lead = block_text[:z.end()]
+    m = RANGE_RE.search(lead)
+    if m:
+        lead = lead[m.end():]
+    lead = re.sub(r"^[\s.,]*C[DS]?T\b", "", lead)  # drop trailing tz of the range
+    venue = ORDINAL_FIX_RE.sub(r"\1\2", lead.strip(" .,;:-"))
+    # Sanity: short-ish, contains a street number -> looks like an address.
+    return venue if 10 < len(venue) < 140 and re.search(r"\d", venue) else ""
+
+
+def enrich_index_event(ev: Event, html: str) -> None:
+    """Upgrade one all-day index event in place from its detail page."""
+    soup = BeautifulSoup(html, "html.parser")
+    day = _start_day(ev)
+    ranges = _ranges_for_day(soup, day)
+    deadline = ""
+    for td in soup.find_all("td"):
+        row_text = td.get_text(" ", strip=True)
+        if td.find_previous_sibling("td") and "comment deadline" in \
+                td.find_previous_sibling("td").get_text(" ", strip=True).lower():
+            row_text = re.sub(r"\s+,", ",", row_text)  # "<b>Aug. 14<span>, 2026" artifacts
+            d = _long_date(row_text.replace("Aug.", "August").replace(
+                "Sept.", "September").replace("Oct.", "October").replace(
+                "Nov.", "November").replace("Dec.", "December").replace(
+                "Jan.", "January").replace("Feb.", "February"))
+            if d:
+                deadline = _fmt_date(d)
+    if len(ranges) == 1:
+        h1, m1, h2, m2, block = ranges[0]
+        ev.start = datetime(day.year, day.month, day.day, h1, m1)
+        ev.end = datetime(day.year, day.month, day.day, h2, m2)
+        venue = _venue_from(block)
+        if venue:
+            ev.location = venue
+        # The "time and venue not listed" caveat is no longer true.
+        ev.description = "\n\n".join(x for x in [
+            ev.description.split("\n\n")[0]
+            if not ev.description.startswith("Time and venue") else "",
+            f"Public comment deadline: {deadline}." if deadline else "",
+            f"Details and materials: {ev.url}",
+        ] if x)
+    elif deadline:
+        ev.description += f"\n\nPublic comment deadline: {deadline}."
+
+
+def enrich_index_events(events: list[Event], get_html) -> None:
+    """Enrich every hearings-index event via get_html(url) -> str|None.
+
+    One fetch per distinct URL (a corridor-study page serves several rows);
+    any failure leaves that event exactly as the index described it.
+    """
+    pages: dict[str, str | None] = {}
+    for ev in events:
+        if "-hm-" not in ev.stable_uid():
+            continue
+        if ev.url not in pages:
+            try:
+                pages[ev.url] = get_html(ev.url)
+            except Exception as exc:
+                print(f"[{SOURCE}] WARNING: detail page fetch failed for "
+                      f"{ev.url}: {exc}")
+                pages[ev.url] = None
+        if pages[ev.url]:
+            try:
+                enrich_index_event(ev, pages[ev.url])
+            except Exception as exc:  # enrichment must never break the feed
+                print(f"[{SOURCE}] WARNING: enrichment failed for "
+                      f"{ev.url}: {exc}")
+
+
 def parse_page(html: str, context: str, page_url: str) -> list[Event]:
     soup = BeautifulSoup(html, "html.parser")
     events: list[Event] = []
@@ -489,7 +605,15 @@ def fetch(session) -> list[Event]:
     # produced so the same meeting isn't published twice.
     resp = session.get(HEARINGS_INDEX, timeout=30)
     resp.raise_for_status()
-    events.extend(parse_hearings_index(resp.text, owned_urls, owned_body_days))
+    index_events = parse_hearings_index(resp.text, owned_urls, owned_body_days)
+
+    def _get(url):
+        r = session.get(url, timeout=30)
+        r.raise_for_status()
+        return r.text
+
+    enrich_index_events(index_events, _get)
+    events.extend(index_events)
     return events
 
 
@@ -518,8 +642,17 @@ def fetch_offline() -> list[Event]:
                        for _, name, _ in COMMITTEES for e in events
                        if name.lower() in e.summary.lower()
                        or slugify(name) in e.stable_uid()}
-    events.extend(parse_hearings_index(
+    index_events = parse_hearings_index(
         (FIXTURES / "txdotev_hearings_index.html").read_text(),
         owned_urls, owned_body_days,
-    ))
+    )
+    detail_fixtures = {
+        "https://www.txdot.gov/projects/hearings-meetings/austin/2026/"
+        "us281-073026.html": FIXTURES / "txdotev_hm_us281.html",
+    }
+    enrich_index_events(
+        index_events,
+        lambda u: detail_fixtures[u].read_text() if u in detail_fixtures else None,
+    )
+    events.extend(index_events)
     return events
