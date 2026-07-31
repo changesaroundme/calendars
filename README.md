@@ -30,7 +30,7 @@ combined calendar at
 | CTRMA | HTML scrape | Upcoming-meeting cards on their board-meetings page (date, time, detail link) |
 | City of Austin | Legistar (shared module) + annual PDF + board pages | Council/committees via `austintexas` Legistar; year schedule from the EDIMS PDF; boards & commissions plus the Bicycle and Pedestrian Advisory Councils from full-year date lists on austintexas.gov |
 | ATP | ICS ingest | Austin Transit Partnership's published Tribe iCal feed (Board + Community Advisory Committee) |
-| TxDOT Events | HTML tables scrape | Public-involvement pages (UTP): dated events + comment windows; advisory committees (BPAC, PTAC) |
+| TxDOT Events | HTML tables scrape + discovery | Public-involvement pages (UTP): dated events + comment windows; advisory committees (BPAC, PTAC); statewide hearings/meetings index for one-off project meetings, each enriched from its detail page (time range, venue, comment deadline) when unambiguous |
 | Texas Legislature | HTML scrape + self-archive | Senate hearings page (watchlisted committees only; listings run ~2 months out). The page forgets each hearing at end of day, so the adapter folds its own snapshot's past events back in — the one source that keeps its own history |
 | One-off events | Hand-curated | `events/curated.yaml` — see below |
 | SOS open meetings | *Shadow mode* | UNT mirror of Texas SOS filings, watchlist-filtered and archived to `data/openmeetings.json`; observation only until the enrichment pass ships |
@@ -42,22 +42,7 @@ combined calendar at
 - `meetings.ics` — everything except `ENGAGEMENT_KINDS`; `engagement.ics` — only those.
   The two are disjoint and their union is `all.ics`. Widen the set in
   `build.py` to reclassify; never rename a feed, it breaks subscribers.
-- `index.html` — stub pointing to the canonical directory on changesaroundme.com; `embed.html` — filterable month/list view for embedding
-
-## Day-to-day: pushing changes
-
-The Actions bot commits refreshed calendars after every push and every
-morning, so your local clone is almost always slightly behind the remote.
-The rhythm that always works:
-
-```sh
-git add -A
-git commit -m "what changed"
-git pull --rebase   # replay your commit on top of the bot's
-git push
-```
-
-(Committing first matters — rebase refuses to run over uncommitted changes.)
+- `index.html` — stub pointing to the canonical directory on changesaroundme.com; `embed.html` — month/list view for embedding, parameterized: `?view=month|list`, `?feed=<any .ics above>`, `?kinds=hearing,comment-window`, `?orgs=campo,txdot`, `?theme=dark|light`
 
 ## Local development
 
@@ -103,7 +88,9 @@ Design notes worth keeping in mind:
   keep their feeds' own UIDs (those feeds are the system of record).
 - **Health checks over silence.** A source yielding zero events, shrinking
   more than half versus its last snapshot, or containing no future events
-  turns the Actions run red — but calendars still publish, with `all.ics`
+  turns the Actions run red (sporadic sources like the legislature are
+  exempt from the emptiness alarms — quiet stretches are normal) — but
+  calendars still publish, with `all.ics`
   backfilled from the last-good snapshot for any source that failed
   outright. Scraper breakage should be loud; stale data shouldn't take
   down what still works.
@@ -144,21 +131,25 @@ standing committees); **curated entry** otherwise (project open houses,
 one-off hearings, pop-up comment windows — pages that die with the event).
 
 Add entries to `events/curated.yaml` by hand (field docs are in the file),
-or drop links in `events/inbox.md` for a Claude session to extract, then
-review the git diff and push. Each entry names an existing org calendar
-via `org:` and merges into it — no separate feed. `python build.py
---offline` validates the file locally; a malformed entry turns CI red
-with a message naming it, while valid entries still publish.
+or run the `.claude/skills/curate-events` skill on dumped links and review
+the git diff. Each entry names an existing org calendar via `org:` and
+merges into it — no separate feed. Curated entries merge FIRST: pinning an
+entry's `uid:` to a scraped event's uid makes the hand-written version
+replace the scraped copy (dedupe by declared identity — the build warns on
+same-org-same-start near-duplicates but never merges by guessing).
+`python build.py --offline` validates the file locally; a malformed entry
+turns CI red with a message naming it, while valid entries still publish.
 
 ## Adding a source
 
 Write `sources/neworg.py` with `fetch(session) -> list[Event]` and a
 `fetch_offline() -> list[Event]` that builds from a checked-in fixture,
 then register the module in `CALENDARS` in `build.py`. Current backlog,
-roughly in order: promote the SOS open-meetings watcher from shadow mode
-to enrichment (times/addresses/agendas/cancellations onto existing
-events), un-park the ERCOT adapter (branch `add-ercot`, awaiting a
-committee filter), Texas Senate committee hearings (ephemeral page —
-needs faster-than-daily polling), PUCT (needs a content filter first),
-Speak Up Austin engagement events, and a custom domain
-(`calendars.changesaroundme.com`) before the URLs spread widely.
+roughly in order: audit every source for past-event retention (Legistar
+orgs and the legislature keep their own history; CTRMA, the feeds, and
+the committee tables are unverified), promote the SOS open-meetings
+watcher from shadow mode to enrichment (times/addresses/agendas/
+cancellations onto existing events), un-park the ERCOT adapter (branch
+`add-ercot`, awaiting a committee filter), PUCT (needs a content filter
+first), and a custom domain (`calendars.changesaroundme.com`) before the
+URLs spread widely.
