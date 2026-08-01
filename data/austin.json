@@ -1,19 +1,6 @@
 [
  {
   "source": "austin",
-  "summary": "City Council - Mobility Committee",
-  "start": "2025-10-16T13:00:00",
-  "end": "2025-10-16T15:00:00",
-  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
-  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1344356&GUID=F7961B51-6B48-4282-B3D9-3651D7C21A9C&Options=info|&Search=",
-  "status": "CONFIRMED",
-  "kind": "regular",
-  "uid": "austin-mobility-committee-20251016T1300@calendars.changesaroundme.com",
-  "description": "",
-  "all_day": false
- },
- {
-  "source": "austin",
   "summary": "City Council - Work Session",
   "start": "2025-10-21T09:00:00",
   "end": "2025-10-21T11:00:00",
@@ -2030,15 +2017,15 @@
  {
   "source": "austin",
   "summary": "City Council - Budget Meeting",
-  "start": "2026-08-06",
-  "end": null,
+  "start": "2026-08-06T10:00:00",
+  "end": "2026-08-06T12:00:00",
   "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
-  "url": "https://www.austintexas.gov/council/meetings",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4089&GID=684&G=4BED8896-C64D-4912-8005-D624C5197AA5",
   "status": "CONFIRMED",
   "kind": "budget",
-  "uid": "austin-city-council-20260806@calendars.changesaroundme.com",
-  "description": "From the published annual council calendar (dates subject to change). Time and agenda appear ~a week ahead: https://www.austintexas.gov/council/meetings",
-  "all_day": true
+  "uid": "austin-city-council-20260806T1000@calendars.changesaroundme.com",
+  "description": "Agenda: https://austintexas.legistar1.com/austintexas/meetings/2026/8/4089_A_City_Council_26-08-06_City_Council_Agenda.pdf",
+  "all_day": false
  },
  {
   "source": "austin",
