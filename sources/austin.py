@@ -66,10 +66,12 @@ COUNCIL = Legistar(
     # InSite's location cell sometimes carries junk suffixes; canonicalize.
     location_fixes={"Austin City Hall": CITY_HALL},
     # Summarize agenda items into descriptions for council meetings (incl.
-    # work sessions and "Budget Meeting of the ..."); committees can be
-    # added later by widening the predicate.
+    # work sessions, "Budget Meeting of the ...") and council committees
+    # (every Legistar body ending in "Committee" is one — same rule as
+    # display_transform above). Corporations etc. stay excluded.
     agenda_detail=lambda name: name.startswith("City Council")
-    or name.startswith("Budget Meeting"),
+    or name.startswith("Budget Meeting")
+    or name.endswith("Committee"),
 )
 
 # (Board name, schedule page, meeting-documents page,
