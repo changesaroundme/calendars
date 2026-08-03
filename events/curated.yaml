@@ -205,3 +205,55 @@
 
     RSVP at the link (also used to submit budget questions in advance).
     Questions: district3@austintexas.gov or 512-978-2103.
+
+# --- added 2026-08-03 (Housing Dept "Working Side by Side" newsletter) -------
+# NOTE: the newsletter is ahead of the SpeakUpAustin pages here — as of
+# 3 Aug 2026 the Grove-Riverside timeline still ends at the March meeting,
+# and the two AHFC pages say only "open houses at the end of August and
+# September". Update the placeholder entries below when times post.
+
+- summary: "East Riverside Open House #2"
+  start: 2026-08-29 10:00
+  end: 2026-08-29 13:00
+  org: austin
+  location: "Grove Boulevard Campus, 2400 Grove Boulevard, Austin, TX 78741"
+  url: https://www.speakupaustin.org/Grove-Riverside
+  kind: engagement
+  description: |
+    Second East Riverside open house (10am-1pm CDT): city-led projects
+    shaping the East Riverside Corridor in one room, including the
+    Grove-Riverside Site (125 acres of City-owned land), Project Connect /
+    Austin Light Rail, and the East Riverside planning and ETOD efforts.
+    Ask questions, meet project teams, and give feedback.
+
+    Learn more and register at the link.
+
+- summary: "AHFC Open Houses - 6200 Menchaca & 2908 South Congress (August)"
+  start: 2026-08-24
+  end: 2026-08-25
+  org: austin
+  kind: engagement
+  url: https://www.speakupaustin.org/6200Menchaca
+  description: |
+    All-day placeholder: the Housing Department's newsletter announces
+    open houses on 24 and 25 Aug 2026 for the planned affordable housing
+    developments at 6200 Menchaca Rd and 2908 South Congress, but times,
+    locations, and which date belongs to which site have not been posted
+    yet. Check the project pages:
+    https://www.speakupaustin.org/6200Menchaca
+    https://www.speakupaustin.org/2908SouthCongress
+
+- summary: "AHFC Open Houses - 6200 Menchaca & 2908 South Congress (September)"
+  start: 2026-09-22
+  end: 2026-09-23
+  org: austin
+  kind: engagement
+  url: https://www.speakupaustin.org/2908SouthCongress
+  description: |
+    All-day placeholder: the Housing Department's newsletter announces
+    open houses on 22 and 23 Sep 2026 for the planned affordable housing
+    developments at 6200 Menchaca Rd and 2908 South Congress, but times,
+    locations, and which date belongs to which site have not been posted
+    yet. Check the project pages:
+    https://www.speakupaustin.org/6200Menchaca
+    https://www.speakupaustin.org/2908SouthCongress
