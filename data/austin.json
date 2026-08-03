@@ -2029,6 +2029,19 @@
  },
  {
   "source": "austin",
+  "summary": "District 3 Budget Community Meeting",
+  "start": "2026-08-10T17:30:00",
+  "end": "2026-08-10T19:30:00",
+  "location": "Govalle Elementary School, 3601 Govalle Ave., Austin, TX",
+  "url": "https://docs.google.com/forms/d/e/1FAIpQLScJpPoP8OLVrteDQTlahCP9fyRYws22Hy4CGv3PBXzF5Ktpnw/viewform",
+  "status": "CONFIRMED",
+  "kind": "engagement",
+  "uid": "austin-district-3-budget-community-meeting-20260810T1730@calendars.changesaroundme.com",
+  "description": "City budget presentation hosted by Council District 3. Doors, food, and\nCity department tabling from 5:30pm CDT; presentation and Q&A 6-7:30pm.\nLight refreshments; Spanish interpretation available.\n\nRSVP at the link (also used to submit budget questions in advance).\nQuestions: district3@austintexas.gov or 512-978-2103.\n",
+  "all_day": false
+ },
+ {
+  "source": "austin",
   "summary": "Austin Integrated Water Resource Planning Community Task Force",
   "start": "2026-08-11",
   "end": null,
