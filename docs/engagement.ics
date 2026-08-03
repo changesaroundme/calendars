@@ -28,7 +28,7 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:txdotev-draft-2027-utp-comment-period-20260703@calendars.changesaroundm
  e.com
-DTSTAMP:20260803T030511Z
+DTSTAMP:20260803T154214Z
 DTSTART;VALUE=DATE:20260703
 DTEND;VALUE=DATE:20260804
 SUMMARY:TxDOT - Draft 2027 UTP comment period
@@ -38,5 +38,25 @@ DESCRIPTION:Public comment window: 3 Jul 2026 through 4pm CDT 3 Aug 2026\n\
  tp-public-involvement.html
 CATEGORIES:comment-window
 X-CAM-ORG:txdotev
+END:VEVENT
+BEGIN:VEVENT
+UID:lcra-water-rules-public-comments-close-20260901@calendars.changesaround
+ me.com
+DTSTAMP:20260803T154214Z
+DTSTART;VALUE=DATE:20260901
+SUMMARY:LCRA - Water rules public comments close
+URL:https://www.lcra.org/water/water-related-rules-and-regulations-for-publ
+ ic-comment/
+DESCRIPTION:Water-related rules and regulations LCRA is accepting public co
+ mments on a proposed change to its firm water rate. Proposed rate increase
+ : from $165 to $175 per acre-foot. Impacts customers such as municipalitie
+ s\, industries\, temporary water users and lakeside residential domestic u
+ sers that purchase water from the Highland Lakes or the lower Colorado Riv
+ er through firm water supply contracts with LCRA. Driven by inc…\n\nSubm
+ it comments: https://lcra.formstack.com/forms/lcra_firm_water_rate_comment
+ _form\n\nDetails: https://www.lcra.org/water/water-related-rules-and-regul
+ ations-for-public-comment/
+CATEGORIES:comment-window
+X-CAM-ORG:lcra
 END:VEVENT
 END:VCALENDAR

@@ -27,7 +27,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:lcra-board-committees-20260818@calendars.changesaroundme.com
-DTSTAMP:20260803T030511Z
+DTSTAMP:20260803T154214Z
 DTSTART;VALUE=DATE:20260818
 SUMMARY:LCRA - Board Committees
 LOCATION:Board Room\, Hancock Building\, 3700 Lake Austin Blvd\, Austin\, T
@@ -41,7 +41,7 @@ X-CAM-ORG:lcra
 END:VEVENT
 BEGIN:VEVENT
 UID:lcra-board-of-directors-20260819@calendars.changesaroundme.com
-DTSTAMP:20260803T030511Z
+DTSTAMP:20260803T154214Z
 DTSTART;VALUE=DATE:20260819
 SUMMARY:LCRA - Board of Directors
 LOCATION:Board Room\, Hancock Building\, 3700 Lake Austin Blvd\, Austin\, T
@@ -56,7 +56,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lcra-transmission-services-corp-board-20260819@calendars.changesaroundm
  e.com
-DTSTAMP:20260803T030511Z
+DTSTAMP:20260803T154214Z
 DTSTART;VALUE=DATE:20260819
 SUMMARY:LCRA - Transmission Services Corp. Board
 LOCATION:Board Room\, Hancock Building\, 3700 Lake Austin Blvd\, Austin\, T
@@ -69,8 +69,28 @@ CATEGORIES:regular
 X-CAM-ORG:lcra
 END:VEVENT
 BEGIN:VEVENT
+UID:lcra-water-rules-public-comments-close-20260901@calendars.changesaround
+ me.com
+DTSTAMP:20260803T154214Z
+DTSTART;VALUE=DATE:20260901
+SUMMARY:LCRA - Water rules public comments close
+URL:https://www.lcra.org/water/water-related-rules-and-regulations-for-publ
+ ic-comment/
+DESCRIPTION:Water-related rules and regulations LCRA is accepting public co
+ mments on a proposed change to its firm water rate. Proposed rate increase
+ : from $165 to $175 per acre-foot. Impacts customers such as municipalitie
+ s\, industries\, temporary water users and lakeside residential domestic u
+ sers that purchase water from the Highland Lakes or the lower Colorado Riv
+ er through firm water supply contracts with LCRA. Driven by inc…\n\nSubm
+ it comments: https://lcra.formstack.com/forms/lcra_firm_water_rate_comment
+ _form\n\nDetails: https://www.lcra.org/water/water-related-rules-and-regul
+ ations-for-public-comment/
+CATEGORIES:comment-window
+X-CAM-ORG:lcra
+END:VEVENT
+BEGIN:VEVENT
 UID:lcra-board-committee-meetings-20260923@calendars.changesaroundme.com
-DTSTAMP:20260803T030511Z
+DTSTAMP:20260803T154214Z
 DTSTART;VALUE=DATE:20260923
 SUMMARY:LCRA - Board & Committee Meetings
 LOCATION:Board Room\, Hancock Building\, 3700 Lake Austin Blvd\, Austin\, T
@@ -85,7 +105,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lcra-transmission-services-corp-board-20260923@calendars.changesaroundm
  e.com
-DTSTAMP:20260803T030511Z
+DTSTAMP:20260803T154214Z
 DTSTART;VALUE=DATE:20260923
 SUMMARY:LCRA - Transmission Services Corp. Board
 LOCATION:Board Room\, Hancock Building\, 3700 Lake Austin Blvd\, Austin\, T
@@ -99,7 +119,7 @@ X-CAM-ORG:lcra
 END:VEVENT
 BEGIN:VEVENT
 UID:lcra-board-committees-20261020@calendars.changesaroundme.com
-DTSTAMP:20260803T030511Z
+DTSTAMP:20260803T154214Z
 DTSTART;VALUE=DATE:20261020
 SUMMARY:LCRA - Board Committees
 LOCATION:Board Room\, Hancock Building\, 3700 Lake Austin Blvd\, Austin\, T
@@ -113,7 +133,7 @@ X-CAM-ORG:lcra
 END:VEVENT
 BEGIN:VEVENT
 UID:lcra-board-of-directors-20261021@calendars.changesaroundme.com
-DTSTAMP:20260803T030511Z
+DTSTAMP:20260803T154214Z
 DTSTART;VALUE=DATE:20261021
 SUMMARY:LCRA - Board of Directors
 LOCATION:Board Room\, Hancock Building\, 3700 Lake Austin Blvd\, Austin\, T
@@ -128,7 +148,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lcra-transmission-services-corp-board-20261021@calendars.changesaroundm
  e.com
-DTSTAMP:20260803T030511Z
+DTSTAMP:20260803T154214Z
 DTSTART;VALUE=DATE:20261021
 SUMMARY:LCRA - Transmission Services Corp. Board
 LOCATION:Board Room\, Hancock Building\, 3700 Lake Austin Blvd\, Austin\, T
@@ -142,7 +162,7 @@ X-CAM-ORG:lcra
 END:VEVENT
 BEGIN:VEVENT
 UID:lcra-board-committee-meetings-20261110@calendars.changesaroundme.com
-DTSTAMP:20260803T030511Z
+DTSTAMP:20260803T154214Z
 DTSTART;VALUE=DATE:20261110
 SUMMARY:LCRA - Board & Committee Meetings
 LOCATION:Board Room\, Hancock Building\, 3700 Lake Austin Blvd\, Austin\, T
@@ -157,7 +177,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lcra-transmission-services-corp-board-20261110@calendars.changesaroundm
  e.com
-DTSTAMP:20260803T030511Z
+DTSTAMP:20260803T154214Z
 DTSTART;VALUE=DATE:20261110
 SUMMARY:LCRA - Transmission Services Corp. Board
 LOCATION:Board Room\, Hancock Building\, 3700 Lake Austin Blvd\, Austin\, T
@@ -171,7 +191,7 @@ X-CAM-ORG:lcra
 END:VEVENT
 BEGIN:VEVENT
 UID:lcra-board-committee-meetings-20261208@calendars.changesaroundme.com
-DTSTAMP:20260803T030511Z
+DTSTAMP:20260803T154214Z
 DTSTART;VALUE=DATE:20261208
 SUMMARY:LCRA - Board & Committee Meetings
 LOCATION:Board Room\, Hancock Building\, 3700 Lake Austin Blvd\, Austin\, T
@@ -186,7 +206,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lcra-transmission-services-corp-board-20261208@calendars.changesaroundm
  e.com
-DTSTAMP:20260803T030511Z
+DTSTAMP:20260803T154214Z
 DTSTART;VALUE=DATE:20261208
 SUMMARY:LCRA - Transmission Services Corp. Board
 LOCATION:Board Room\, Hancock Building\, 3700 Lake Austin Blvd\, Austin\, T

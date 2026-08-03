@@ -40,6 +40,19 @@
  },
  {
   "source": "lcra",
+  "summary": "LCRA - Water rules public comments close",
+  "start": "2026-09-01",
+  "end": null,
+  "location": "",
+  "url": "https://www.lcra.org/water/water-related-rules-and-regulations-for-public-comment/",
+  "status": "CONFIRMED",
+  "kind": "comment-window",
+  "uid": "lcra-water-rules-public-comments-close-20260901@calendars.changesaroundme.com",
+  "description": "Water-related rules and regulations LCRA is accepting public comments on a proposed change to its firm water rate. Proposed rate increase: from $165 to $175 per acre-foot. Impacts customers such as municipalities, industries, temporary water users and lakeside residential domestic users that purchase water from the Highland Lakes or the lower Colorado River through firm water supply contracts with LCRA. Driven by inc\u2026\n\nSubmit comments: https://lcra.formstack.com/forms/lcra_firm_water_rate_comment_form\n\nDetails: https://www.lcra.org/water/water-related-rules-and-regulations-for-public-comment/",
+  "all_day": true
+ },
+ {
+  "source": "lcra",
   "summary": "LCRA - Board & Committee Meetings",
   "start": "2026-09-23",
   "end": null,
