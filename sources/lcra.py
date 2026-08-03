@@ -14,20 +14,52 @@ Table semantics (verified against live markup 2026-07-19):
 - "No meeting" rows and single-cell year rows ("2026") in between.
 
 Source: https://www.lcra.org/about/leadership/board-meeting-schedule/
+
+Also watches LCRA's standing public-comment page (COMMENT_URL): three
+fixed sections (water rules / pending water sale contracts / Dredge &
+Fill permits), each either an explicit empty-state sentence ("There are
+no ... at this time") or free prose describing an open item. The prose
+varies, but the calendar-relevant kernel is regular: "Comments may be
+submitted through [Tuesday,] Sept. 1". Each parsed deadline becomes one
+all-day comment-window event ON the deadline day (the part people miss;
+the window's start date is never stated). Conservative by rule: a section
+with content but NO parseable deadline trips a health problem instead of
+guessing — the red build names the section, and the fallback workflow is
+a curated.yaml entry (or a parser fix if LCRA changed their phrasing).
 """
 from __future__ import annotations
 
 import pathlib
 import re
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, NavigableString, Tag
 
 from caltools.model import Event
 
 SOURCE = "lcra"
 FIXTURES = pathlib.Path(__file__).resolve().parent.parent / "fixtures"
 SCHEDULE_URL = "https://www.lcra.org/about/leadership/board-meeting-schedule/"
+COMMENT_URL = ("https://www.lcra.org/water/"
+               "water-related-rules-and-regulations-for-public-comment/")
+# The page's three standing sections: (heading fragment, short display name).
+COMMENT_SECTIONS = [
+    ("Water-related rules and regulations", "Water rules"),
+    ("water sale contract", "Water sale contract"),
+    ("Dredge and Fill", "Dredge & Fill permit"),
+]
+EMPTY_RE = re.compile(r"There are no\b", re.IGNORECASE)
+DEADLINE_RE = re.compile(
+    r"submitted\s+through\s+(?:(Mon|Tues?|Wednes|Thurs?|Fri|Satur|Sun)[a-z]*day,?\s+)?"
+    r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+(\d{1,2})"
+    r"(?:,?\s+(20\d{2}))?",
+    re.IGNORECASE,
+)
+MONTH3 = {m: i + 1 for i, m in enumerate(
+    ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct",
+     "nov", "dec"])}
+WEEKDAYS = {"mon": 0, "tue": 1, "tues": 1, "wednes": 2, "thu": 3, "thur": 3,
+            "thurs": 3, "fri": 4, "satur": 5, "sun": 6}
 AGENDAS_URL = "https://www.lcra.org/about/leadership/board-agendas/"
 NOTE = (
     "All-day placeholder: LCRA publishes dates a year out; the exact time "
@@ -136,15 +168,120 @@ def finalize(events: list[Event]) -> list[Event]:
     return events
 
 
+_problems: list[str] = []
+
+
+def health_problems() -> list[str]:
+    return list(_problems)
+
+
+def _deadline_date(m: re.Match, today: date) -> date | None:
+    """Resolve a DEADLINE_RE match to a date; None if it can't be trusted.
+
+    The page usually omits the year: assume this year, roll to next if
+    that's well past (an open window's deadline is never far behind
+    today), and when a weekday word is present, require it to agree —
+    a mismatch means the year guess (or the page) is wrong.
+    """
+    month, day = MONTH3[m.group(2).lower()[:3]], int(m.group(3))
+    for year in ([int(m.group(4))] if m.group(4) else
+                 [today.year, today.year + 1]):
+        try:
+            d = date(year, month, day)
+        except ValueError:
+            continue
+        if not m.group(4) and d < today - timedelta(days=14):
+            continue  # long past: try next year
+        if m.group(1) and WEEKDAYS.get(m.group(1).lower()) != d.weekday():
+            continue  # stated weekday disagrees: wrong year, or a typo
+        return d
+    return None
+
+
+def parse_comment_page(html: str, today: date | None = None) -> list[Event]:
+    if today is None:
+        today = date.today()
+    soup = BeautifulSoup(html, "html.parser")
+    events: list[Event] = []
+    headings = soup.find_all(["h2", "h3"])
+    matched_any = False
+    for frag, label in COMMENT_SECTIONS:
+        head = next((h for h in headings
+                     if frag.lower() in h.get_text(" ", strip=True).lower()), None)
+        if head is None:
+            continue
+        matched_any = True
+        # Section text = every text node until the next section heading.
+        # A string walk, not an element list: Divi pages put copy in
+        # arbitrary containers (the deadline sentence lives in a bare
+        # <div class="et_pb_text_inner"><strong>), so filtering by tag
+        # name silently drops content.
+        texts: list[str] = []
+        submit = ""
+        for node in head.next_elements:
+            if isinstance(node, Tag) and node.name in ("h2", "h3"):
+                txt = node.get_text(" ", strip=True)
+                if any(f.lower() in txt.lower() for f, _ in COMMENT_SECTIONS) \
+                        or txt in ("Social Media", "Follow us"):
+                    break
+                continue
+            if isinstance(node, Tag) and node.name == "a" and not submit:
+                if "SUBMIT" in node.get_text(" ", strip=True).upper():
+                    submit = node.get("href", "")
+            if isinstance(node, NavigableString) and node.parent.name not in (
+                    "script", "style"):
+                frag = str(node).strip()
+                if frag:
+                    texts.append(frag)
+        text = re.sub(r"\s+", " ", " ".join(texts)).strip()
+        if not text or EMPTY_RE.search(text[:200]):
+            continue  # standing empty state: nothing open in this section
+        dm = DEADLINE_RE.search(text)
+        d = _deadline_date(dm, today) if dm else None
+        if d is None:
+            _problems.append(
+                f"lcra: comment page section '{label}' has content but no "
+                "parseable deadline — add via curated.yaml or fix the parser"
+            )
+            continue
+        snippet = text[:420].rstrip() + ("…" if len(text) > 420 else "")
+        events.append(Event(
+            source=SOURCE,
+            summary=f"{label} public comments close",
+            start=d,
+            url=COMMENT_URL,
+            kind="comment-window",
+            description="\n\n".join(x for x in [
+                snippet,
+                f"Submit comments: {submit}" if submit else "",
+                f"Details: {COMMENT_URL}",
+            ] if x),
+        ))
+    if not matched_any:
+        _problems.append(
+            "lcra: no known sections on the public-comment page "
+            "(page redesign?)"
+        )
+    return events
+
+
 def fetch(session) -> list[Event]:
+    _problems.clear()
     resp = session.get(SCHEDULE_URL, timeout=30)
     resp.raise_for_status()
-    return finalize(parse_page(resp.text))
+    events = finalize(parse_page(resp.text))
+    resp = session.get(COMMENT_URL, timeout=30)
+    resp.raise_for_status()
+    return events + finalize(parse_comment_page(resp.text))
 
 
 def fetch_offline() -> list[Event]:
     """Build from fixtures/ (no network) — the --offline contract."""
-    # Fixture captured in 2026; pin the year so the fixture stays stable.
+    _problems.clear()
+    # Fixtures captured in 2026; pin dates so they stay stable.
     return finalize(
         parse_page((FIXTURES / "lcra_schedule.html").read_text(), default_year=2026)
+    ) + finalize(
+        parse_comment_page((FIXTURES / "lcra_comments.html").read_text(),
+                           today=date(2026, 8, 4))
     )
