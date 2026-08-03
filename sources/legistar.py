@@ -44,6 +44,11 @@ NAME_SUFFIX_RE = re.compile(
 # as 100 rows spanning Feb 2024 to Dec 2026. "This Year" would empty out
 # every 1 January and take the year's history with it; letting the source
 # carry its own past is why this project needs no archive of its own.
+# Agenda-item summaries (see agenda_block): at or below the threshold the
+# items are listed outright; above it, a one-line count by matter type.
+AGENDA_LIST_MAX = 6
+AGENDA_TITLE_CHARS = 160
+
 CALENDAR_PERIOD = "All Years"
 PERIOD_FIELD = "ctl00$ContentPlaceHolder1$lstYears"
 PERIOD_STATE_FIELD = "ctl00_ContentPlaceHolder1_lstYears_ClientState"
@@ -58,6 +63,40 @@ def parse_time(text: str) -> datetime | None:
 
 def _time_key(ev: Event) -> str:
     return ev.start.strftime("%H%M") if isinstance(ev.start, datetime) else ""
+
+
+def agenda_block(items: list[dict]) -> str:
+    """Human summary of an event's agenda items for the description.
+
+    Real agenda items carry EventItemAgendaNumber; rows without one are
+    boilerplate (public-comment notice, closed-session notice, section
+    headers) and are ignored. At or below AGENDA_LIST_MAX items, list them
+    with file number and type — per Ian, the useful bit is what's actually
+    being decided. Above it, a count by matter type keeps the description
+    readable ("42 agenda items: 31 Consent, 6 Public Hearing, ...").
+    """
+    numbered = [i for i in items if i.get("EventItemAgendaNumber")]
+    if not numbered:
+        return ""
+    if len(numbered) <= AGENDA_LIST_MAX:
+        lines = ["Agenda items:"]
+        for i in numbered:
+            title = " ".join((i.get("EventItemTitle") or "").split())
+            if len(title) > AGENDA_TITLE_CHARS:
+                title = title[:AGENDA_TITLE_CHARS - 1].rstrip() + "\u2026"
+            tags = ", ".join(x for x in
+                             [i.get("EventItemMatterFile"),
+                              i.get("EventItemMatterType")] if x)
+            num = str(i["EventItemAgendaNumber"]).strip().rstrip(".")
+            lines.append(f"{num}. {title}" + (f" ({tags})" if tags else ""))
+        return "\n".join(lines)
+    counts: dict[str, int] = {}
+    for i in numbered:
+        t = i.get("EventItemMatterType") or "other"
+        counts[t] = counts.get(t, 0) + 1
+    parts = [f"{n} {t}" for t, n in
+             sorted(counts.items(), key=lambda kv: -kv[1])]
+    return f"{len(numbered)} agenda items: " + ", ".join(parts)
 
 
 @dataclass
@@ -79,6 +118,10 @@ class Legistar:
     # for patterns rather than exact names (e.g. Austin: any body ending in
     # "Committee" is a council committee -> "City Council - <name>").
     display_transform: object = None
+    # Optional predicate (raw body name -> bool): which bodies get their
+    # agenda ITEMS fetched and summarized into the description (one extra
+    # API call per matching future event with a published agenda).
+    agenda_detail: object = None
 
     @property
     def calendar_url(self) -> str:
@@ -163,7 +206,8 @@ class Legistar:
         resp.raise_for_status()
         return resp.json()
 
-    def merge_api(self, events: list[Event], api_rows: list[dict]) -> list[Event]:
+    def merge_api(self, events: list[Event], api_rows: list[dict],
+                  item_fetcher=None) -> list[Event]:
         """Enrich scraped events with API data; add API-only events.
 
         Match on (body slug, date, time); if the times disagree but the body
@@ -181,11 +225,25 @@ class Legistar:
             if prev is None or (prev.status == "CANCELLED" and e.status != "CANCELLED"):
                 by_key[k] = e
 
-        def _enrich(ev: Event, insite: str, agenda: str) -> None:
+        def _enrich(ev: Event, insite: str, agenda: str, row: dict) -> None:
             if insite:
                 ev.url = insite
             if agenda and agenda not in ev.description:
                 ev.description = (ev.description + f"\nAgenda: {agenda}").strip()
+            # Agenda-item summary: the fetcher decides which rows merit a
+            # per-event API call (live: future + agenda-published + capped;
+            # offline: fixture lookup) and returns None to decline.
+            if item_fetcher and agenda and "Agenda items:" not in ev.description:
+                try:
+                    items = item_fetcher(row)
+                except Exception as exc:
+                    print(f"[{self.source}] WARNING: agenda items fetch "
+                          f"failed for event {row.get('EventId')}: {exc}")
+                    items = None
+                if items:
+                    block = agenda_block(items)
+                    if block:
+                        ev.description = (ev.description + "\n\n" + block).strip()
 
         for row in api_rows:
             d = (row.get("EventDate") or "")[:10].replace("-", "")
@@ -196,11 +254,11 @@ class Legistar:
             insite = row.get("EventInSiteURL") or ""
 
             if (slug, d, tkey) in by_key:
-                _enrich(by_key[(slug, d, tkey)], insite, agenda)
+                _enrich(by_key[(slug, d, tkey)], insite, agenda, row)
                 continue
             same_day = [e for (s, dd, _), e in by_key.items() if s == slug and dd == d]
             if len(same_day) == 1:
-                _enrich(same_day[0], insite, agenda)
+                _enrich(same_day[0], insite, agenda, row)
                 continue
 
             try:
@@ -302,4 +360,24 @@ class Legistar:
         except Exception as exc:  # API enrichment is best-effort
             print(f"[{self.source}] WARNING: API enrichment failed: {exc}")
             rows = []
-        return self.finalize(self.merge_api(events, rows))
+        fetcher = None
+        if self.agenda_detail:
+            today = datetime.now().strftime("%Y-%m-%d")
+            spent = {"n": 0}
+
+            def fetcher(row):
+                # The fetcher gates; merge_api just calls it. Past meetings
+                # and non-matching bodies cost nothing; the cap bounds API
+                # load however many agendas publish at once.
+                if not self.agenda_detail(row.get("EventBodyName") or ""):
+                    return None
+                if (row.get("EventDate") or "")[:10] < today:
+                    return None
+                if spent["n"] >= 15 or not row.get("EventId"):
+                    return None
+                spent["n"] += 1
+                r = session.get(
+                    f"{self.api_url}/{row['EventId']}/eventitems", timeout=30)
+                r.raise_for_status()
+                return r.json()
+        return self.finalize(self.merge_api(events, rows, item_fetcher=fetcher))

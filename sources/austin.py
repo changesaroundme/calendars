@@ -65,6 +65,11 @@ COUNCIL = Legistar(
     ),
     # InSite's location cell sometimes carries junk suffixes; canonicalize.
     location_fixes={"Austin City Hall": CITY_HALL},
+    # Summarize agenda items into descriptions for council meetings (incl.
+    # work sessions and "Budget Meeting of the ..."); committees can be
+    # added later by widening the predicate.
+    agenda_detail=lambda name: name.startswith("City Council")
+    or name.startswith("Budget Meeting"),
 )
 
 # (Board name, schedule page, meeting-documents page,
@@ -437,6 +442,13 @@ def fetch_offline() -> list[Event]:
                 (fixtures / "austin_legistar.html").read_text()
             ),
             json.loads((fixtures / "austin_api.json").read_text()),
+            # Offline: serve the checked-in eventitems capture for council
+            # rows so the agenda-summary path is exercised deterministically.
+            item_fetcher=lambda row: (
+                json.loads((fixtures / "austin_eventitems.json").read_text())
+                if (row.get("EventBodyName") or "").startswith("City Council")
+                else None
+            ),
         )
     )
     records = parse_council_pdf(ANNUAL_PDF_FIXTURE.read_bytes())
