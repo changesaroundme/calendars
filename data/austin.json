@@ -2185,6 +2185,19 @@
  },
  {
   "source": "austin",
+  "summary": "AHFC Open Houses - 6200 Menchaca & 2908 South Congress (August)",
+  "start": "2026-08-24",
+  "end": "2026-08-26",
+  "location": "",
+  "url": "https://www.speakupaustin.org/6200Menchaca",
+  "status": "CONFIRMED",
+  "kind": "engagement",
+  "uid": "austin-ahfc-open-houses-6200-menchaca-2908-south-congress-august-20260824@calendars.changesaroundme.com",
+  "description": "All-day placeholder: the Housing Department's newsletter announces\nopen houses on 24 and 25 Aug 2026 for the planned affordable housing\ndevelopments at 6200 Menchaca Rd and 2908 South Congress, but times,\nlocations, and which date belongs to which site have not been posted\nyet. Check the project pages:\nhttps://www.speakupaustin.org/6200Menchaca\nhttps://www.speakupaustin.org/2908SouthCongress\n",
+  "all_day": true
+ },
+ {
+  "source": "austin",
   "summary": "Design Commission",
   "start": "2026-08-24T18:00:00",
   "end": "2026-08-24T21:00:00",
@@ -2221,6 +2234,19 @@
   "uid": "austin-city-council-20260827@calendars.changesaroundme.com",
   "description": "From the published annual council calendar (dates subject to change). Time and agenda appear ~a week ahead: https://www.austintexas.gov/council/meetings",
   "all_day": true
+ },
+ {
+  "source": "austin",
+  "summary": "East Riverside Open House #2",
+  "start": "2026-08-29T10:00:00",
+  "end": "2026-08-29T13:00:00",
+  "location": "Grove Boulevard Campus, 2400 Grove Boulevard, Austin, TX 78741",
+  "url": "https://www.speakupaustin.org/Grove-Riverside",
+  "status": "CONFIRMED",
+  "kind": "engagement",
+  "uid": "austin-east-riverside-open-house-2-20260829T1000@calendars.changesaroundme.com",
+  "description": "Second East Riverside open house (10am-1pm CDT): city-led projects\nshaping the East Riverside Corridor in one room, including the\nGrove-Riverside Site (125 acres of City-owned land), Project Connect /\nAustin Light Rail, and the East Riverside planning and ETOD efforts.\nAsk questions, meet project teams, and give feedback.\n\nLearn more and register at the link.\n",
+  "all_day": false
  },
  {
   "source": "austin",
@@ -2312,6 +2338,19 @@
   "uid": "austin-pedestrian-advisory-council-20260915@calendars.changesaroundme.com",
   "description": "Typical start time from the board's regular schedule \u2014 confirm on the posted agenda: https://www.austintexas.gov/boards-commissions/meetings/121_1",
   "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "AHFC Open Houses - 6200 Menchaca & 2908 South Congress (September)",
+  "start": "2026-09-22",
+  "end": "2026-09-24",
+  "location": "",
+  "url": "https://www.speakupaustin.org/2908SouthCongress",
+  "status": "CONFIRMED",
+  "kind": "engagement",
+  "uid": "austin-ahfc-open-houses-6200-menchaca-2908-south-congress-september-20260922@calendars.changesaroundme.com",
+  "description": "All-day placeholder: the Housing Department's newsletter announces\nopen houses on 22 and 23 Sep 2026 for the planned affordable housing\ndevelopments at 6200 Menchaca Rd and 2908 South Congress, but times,\nlocations, and which date belongs to which site have not been posted\nyet. Check the project pages:\nhttps://www.speakupaustin.org/6200Menchaca\nhttps://www.speakupaustin.org/2908SouthCongress\n",
+  "all_day": true
  },
  {
   "source": "austin",

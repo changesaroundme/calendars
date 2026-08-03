@@ -26,23 +26,9 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:txdotev-draft-2027-utp-comment-period-20260703@calendars.changesaroundm
- e.com
-DTSTAMP:20260803T193700Z
-DTSTART;VALUE=DATE:20260703
-DTEND;VALUE=DATE:20260804
-SUMMARY:TxDOT - Draft 2027 UTP comment period
-URL:https://www.txdot.gov/projects/planning/utp/utp-public-involvement.html
-DESCRIPTION:Public comment window: 3 Jul 2026 through 4pm CDT 3 Aug 2026\n\
- nDetails and how to comment: https://www.txdot.gov/projects/planning/utp/u
- tp-public-involvement.html
-CATEGORIES:comment-window
-X-CAM-ORG:txdotev
-END:VEVENT
-BEGIN:VEVENT
 UID:lcra-water-rules-public-comments-close-20260901@calendars.changesaround
  me.com
-DTSTAMP:20260803T193700Z
+DTSTAMP:20260803T211800Z
 DTSTART;VALUE=DATE:20260901
 SUMMARY:LCRA - Water rules public comments close
 URL:https://www.lcra.org/water/water-related-rules-and-regulations-for-publ

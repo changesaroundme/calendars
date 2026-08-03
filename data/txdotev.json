@@ -560,19 +560,6 @@
  },
  {
   "source": "txdotev",
-  "summary": "TxDOT - Draft 2027 UTP comment period",
-  "start": "2026-07-03",
-  "end": "2026-08-04",
-  "location": "",
-  "url": "https://www.txdot.gov/projects/planning/utp/utp-public-involvement.html",
-  "status": "CONFIRMED",
-  "kind": "comment-window",
-  "uid": "txdotev-draft-2027-utp-comment-period-20260703@calendars.changesaroundme.com",
-  "description": "Public comment window: 3 Jul 2026 through 4pm CDT 3 Aug 2026\n\nDetails and how to comment: https://www.txdot.gov/projects/planning/utp/utp-public-involvement.html",
-  "all_day": true
- },
- {
-  "source": "txdotev",
   "summary": "TxDOT - UTP: Virtual public hearing",
   "start": "2026-07-29T14:00:00",
   "end": "2026-07-29T16:00:00",
