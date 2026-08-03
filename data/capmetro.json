@@ -1,19 +1,6 @@
 [
  {
   "source": "capmetro",
-  "summary": "CapMetro - Operations, Planning and Safety Committee",
-  "start": "2024-02-14T13:00:00",
-  "end": "2024-02-14T15:00:00",
-  "location": "Rosa Parks Boardroom, CapMetro HQ, 2910 E. 5th St., Austin, TX 78702",
-  "url": "https://capmetrotx.legistar.com/Calendar.aspx",
-  "status": "CONFIRMED",
-  "kind": "regular",
-  "uid": "capmetro-operations-planning-and-safety-committee-20240214T1300@calendars.changesaroundme.com",
-  "description": "",
-  "all_day": false
- },
- {
-  "source": "capmetro",
   "summary": "CapMetro - Board of Directors",
   "start": "2024-02-26T12:00:00",
   "end": "2024-02-26T14:00:00",
@@ -1179,6 +1166,19 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "capmetro-finance-audit-and-administration-committee-20260916T1000@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
+ },
+ {
+  "source": "capmetro",
+  "summary": "CapMetro - Board of Directors",
+  "start": "2026-09-16T12:00:00",
+  "end": "2026-09-16T14:00:00",
+  "location": "Rosa Parks Boardroom, CapMetro HQ, 2910 E. 5th St., Austin, TX 78702",
+  "url": "https://capmetrotx.legistar.com/Calendar.aspx",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "capmetro-board-of-directors-20260916T1200@calendars.changesaroundme.com",
   "description": "",
   "all_day": false
  },
