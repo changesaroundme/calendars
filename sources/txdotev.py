@@ -127,6 +127,20 @@ def _long_date(text: str) -> date | None:
         return None
 
 
+# Detail-page tables abbreviate months ("Aug. 6, 2026"); expand to the full
+# names LONG_DATE_RE knows. "Sept" before "Sep" so the sub eats all of it.
+_MONTH_ABBR = {"Jan": "January", "Feb": "February", "Mar": "March",
+               "Apr": "April", "Jun": "June", "Jul": "July", "Aug": "August",
+               "Sept": "September", "Sep": "September", "Oct": "October",
+               "Nov": "November", "Dec": "December"}
+_MONTH_ABBR_RE = re.compile(
+    r"\b(Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sept|Sep|Oct|Nov|Dec)\.")
+
+
+def _expand_months(text: str) -> str:
+    return _MONTH_ABBR_RE.sub(lambda m: _MONTH_ABBR[m.group(1)], text)
+
+
 def _table_caption(table) -> str:
     """Label of a TxDOT CMS table, from either markup shape.
 
@@ -336,6 +350,44 @@ def _venue_from(block_text: str) -> str:
     return venue if 10 < len(venue) < 140 and re.search(r"\d", venue) else ""
 
 
+def _when_row(soup, day: date) -> tuple[int, int] | None:
+    """(hour, minute) from a "When"-labeled details row naming this day.
+
+    A meeting-details table often states a bare start time ("9 a.m.") that
+    the range rule rightly refuses -- out in prose a lone time is usually a
+    deadline. Inside a cell whose row label is literally "When" there is no
+    such ambiguity. Only a cell that names the event's own date and states
+    exactly one time (and no range) qualifies.
+    """
+    for td in soup.find_all("td"):
+        prev = td.find_previous_sibling("td")
+        if not prev or prev.get_text(" ", strip=True).lower() != "when":
+            continue
+        text = _expand_months(td.get_text(" ", strip=True))
+        if _long_date(text) != day or RANGE_RE.search(text):
+            continue
+        times = TIME_RE.findall(text)
+        if len(times) == 1:
+            h, minute, mer = times[0]
+            return int(h) % 12 + (12 if mer.lower() == "p" else 0), int(minute or 0)
+    return None
+
+
+def _where_row(soup) -> str:
+    """Venue from a "Where"-labeled details row, joined line-by-line.
+
+    Complements _venue_from (zip-anchored prose): these cells spell the
+    state out ("Austin, Texas 78744"), so the zip anchor never fires.
+    """
+    for td in soup.find_all("td"):
+        prev = td.find_previous_sibling("td")
+        if prev and prev.get_text(" ", strip=True).lower() == "where":
+            venue = ", ".join(s.strip() for s in td.stripped_strings)
+            if 10 < len(venue) < 160 and re.search(r"\d", venue):
+                return venue
+    return ""
+
+
 def enrich_index_event(ev: Event, html: str) -> None:
     """Upgrade one all-day index event in place from its detail page."""
     soup = BeautifulSoup(html, "html.parser")
@@ -343,21 +395,33 @@ def enrich_index_event(ev: Event, html: str) -> None:
     ranges = _ranges_for_day(soup, day)
     deadline = ""
     for td in soup.find_all("td"):
-        row_text = td.get_text(" ", strip=True)
-        if td.find_previous_sibling("td") and "comment deadline" in \
-                td.find_previous_sibling("td").get_text(" ", strip=True).lower():
-            row_text = re.sub(r"\s+,", ",", row_text)  # "<b>Aug. 14<span>, 2026" artifacts
-            d = _long_date(row_text.replace("Aug.", "August").replace(
-                "Sept.", "September").replace("Oct.", "October").replace(
-                "Nov.", "November").replace("Dec.", "December").replace(
-                "Jan.", "January").replace("Feb.", "February"))
-            if d:
-                deadline = _fmt_date(d)
+        prev = td.find_previous_sibling("td")
+        label = prev.get_text(" ", strip=True).lower() if prev else ""
+        if "comment deadline" in label or "comment period" in label:
+            row_text = re.sub(r"\s+,", ",", td.get_text(" ", strip=True))  # "<b>Aug. 14<span>, 2026" artifacts
+            row_text = _expand_months(row_text)
+            # "beginning July 10, 2026 through 5 p.m. on Aug. 10, 2026":
+            # the deadline is the LAST date; a time stated after "through"
+            # belongs to it.
+            dates = [d for m in LONG_DATE_RE.finditer(row_text)
+                     if (d := _long_date(m.group(0)))]
+            if dates:
+                cut = row_text.lower().rfind("through")
+                t = _time_of(row_text[cut:]) if cut >= 0 else None
+                deadline = _fmt_deadline(t, dates[-1], row_text)
+    timed = None
+    venue = ""
     if len(ranges) == 1:
         h1, m1, h2, m2, block = ranges[0]
-        ev.start = datetime(day.year, day.month, day.day, h1, m1)
-        ev.end = datetime(day.year, day.month, day.day, h2, m2)
+        timed = (datetime(day.year, day.month, day.day, h1, m1),
+                 datetime(day.year, day.month, day.day, h2, m2))
         venue = _venue_from(block)
+    elif not ranges and (hm := _when_row(soup, day)):
+        start = datetime(day.year, day.month, day.day, *hm)
+        timed = (start, start + EVENT_LENGTH)  # page states start only
+        venue = _where_row(soup)
+    if timed:
+        ev.start, ev.end = timed
         if venue:
             ev.location = venue
         # The "time and venue not listed" caveat is no longer true.
@@ -649,6 +713,10 @@ def fetch_offline() -> list[Event]:
     detail_fixtures = {
         "https://www.txdot.gov/projects/hearings-meetings/austin/2026/"
         "us281-073026.html": FIXTURES / "txdotev_hm_us281.html",
+        # "When"/"Where" details-table shape (bare start time, no range).
+        "https://www.txdot.gov/projects/hearings-meetings/"
+        "public-transportation/2026/public-hearing-public-transportation"
+        ".html": FIXTURES / "txdotev_hm_pt_chapter31.html",
     }
     enrich_index_events(
         index_events,
