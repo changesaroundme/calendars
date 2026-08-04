@@ -373,7 +373,7 @@
   "status": "CONFIRMED",
   "kind": "hearing",
   "uid": "txdotev-hm-mopac-loop1-expressway-ea-030926-20260309@calendars.changesaroundme.com",
-  "description": "Draft Environmental Assessment and virtual public hearing with an in-person option.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 see the event page for details: https://www.txdot.gov/projects/hearings-meetings/austin/2026/mopac-loop1-expressway-ea-030926.html\n\nPublic comment deadline: 9 Mar 2026.",
+  "description": "Draft Environmental Assessment and virtual public hearing with an in-person option.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 see the event page for details: https://www.txdot.gov/projects/hearings-meetings/austin/2026/mopac-loop1-expressway-ea-030926.html\n\nPublic comment deadline: 3 May 2026.",
   "all_day": true
  },
  {
@@ -626,15 +626,15 @@
  {
   "source": "txdotev",
   "summary": "TxDOT - Public Transportation Division Chapter 31 Amendments",
-  "start": "2026-08-06",
-  "end": null,
-  "location": "Statewide",
+  "start": "2026-08-06T09:00:00",
+  "end": "2026-08-06T11:00:00",
+  "location": "Texas Department of Transportation, 6230 E. Stassney Lane, Duro Canyon Hearing Room, Austin, Texas 78744",
   "url": "https://www.txdot.gov/projects/hearings-meetings/public-transportation/2026/public-hearing-public-transportation.html",
   "status": "CONFIRMED",
   "kind": "hearing",
   "uid": "txdotev-hm-public-hearing-public-transportation-20260806@calendars.changesaroundme.com",
-  "description": "in-person public hearing.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 see the event page for details: https://www.txdot.gov/projects/hearings-meetings/public-transportation/2026/public-hearing-public-transportation.html",
-  "all_day": true
+  "description": "in-person public hearing.\n\nPublic comment deadline: 5pm CT 10 Aug 2026.\n\nDetails and materials: https://www.txdot.gov/projects/hearings-meetings/public-transportation/2026/public-hearing-public-transportation.html",
+  "all_day": false
  },
  {
   "source": "txdotev",
