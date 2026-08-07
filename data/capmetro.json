@@ -1145,6 +1145,19 @@
  },
  {
   "source": "capmetro",
+  "summary": "CapMetro - Fare Increase Public Meeting",
+  "start": "2026-07-30T17:00:00",
+  "end": "2026-07-30T19:30:00",
+  "location": "Goodwill Career & Technical Academy / Henna Education Center, Austin, TX",
+  "url": "https://www.capmetro.org/fare/general-fares-overview/fare-increase",
+  "status": "CONFIRMED",
+  "kind": "engagement",
+  "uid": "capmetro-fare-increase-public-meeting-20260730T1700@calendars.changesaroundme.com",
+  "description": "First of four public meetings on CapMetro's proposed fare increases\n(Jan 2027 and Jan 2029) and reduced-fare program changes. Served by\nroutes 10, 325 and 339. RSVP: https://publicinput.com/Register/XS8587\n\nRest of the series: meetings 6, 18 and 19 Aug 2026 (5pm CDT); public\nhearing 12pm CDT 16 Sep 2026 (Rosa Parks Boardroom); comments open\nuntil the Board votes 28 Sep 2026.\n",
+  "all_day": false
+ },
+ {
+  "source": "capmetro",
   "summary": "CapMetro - Board of Directors",
   "start": "2026-08-03T12:00:00",
   "end": "2026-08-03T14:00:00",
@@ -1154,6 +1167,45 @@
   "kind": "regular",
   "uid": "capmetro-board-of-directors-20260803T1200@calendars.changesaroundme.com",
   "description": "",
+  "all_day": false
+ },
+ {
+  "source": "capmetro",
+  "summary": "CapMetro - Fare Increase Public Meeting",
+  "start": "2026-08-06T17:00:00",
+  "end": "2026-08-06T19:30:00",
+  "location": "ACC Northridge Campus, Austin, TX",
+  "url": "https://www.capmetro.org/fare/general-fares-overview/fare-increase",
+  "status": "CONFIRMED",
+  "kind": "engagement",
+  "uid": "capmetro-fare-increase-public-meeting-20260806T1700@calendars.changesaroundme.com",
+  "description": "Second of four public meetings on CapMetro's proposed fare increases\n(Jan 2027 and Jan 2029) and reduced-fare program changes. Served by\nroutes 325, 466 and Pickup Walnut Creek.\nRSVP: https://publicinput.com/Register/JG2066\n\nRest of the series: meetings 18 and 19 Aug 2026 (5pm CDT); public\nhearing 12pm CDT 16 Sep 2026 (Rosa Parks Boardroom); comments open\nuntil the Board votes 28 Sep 2026.\n",
+  "all_day": false
+ },
+ {
+  "source": "capmetro",
+  "summary": "CapMetro - Fare Increase Public Meeting",
+  "start": "2026-08-18T17:00:00",
+  "end": "2026-08-18T19:30:00",
+  "location": "ACC Riverside Campus, Austin, TX",
+  "url": "https://www.capmetro.org/fare/general-fares-overview/fare-increase",
+  "status": "CONFIRMED",
+  "kind": "engagement",
+  "uid": "capmetro-fare-increase-public-meeting-20260818T1700@calendars.changesaroundme.com",
+  "description": "Third of four public meetings on CapMetro's proposed fare increases\n(Jan 2027 and Jan 2029) and reduced-fare program changes. Served by\nroutes 20, 310, 311 and 350.\nRSVP: https://publicinput.com/Register/UR8023\n\nRest of the series: meeting 19 Aug 2026 (5pm CDT, ACC South Austin);\npublic hearing 12pm CDT 16 Sep 2026 (Rosa Parks Boardroom); comments\nopen until the Board votes 28 Sep 2026.\n",
+  "all_day": false
+ },
+ {
+  "source": "capmetro",
+  "summary": "CapMetro - Fare Increase Public Meeting",
+  "start": "2026-08-19T17:00:00",
+  "end": "2026-08-19T19:30:00",
+  "location": "ACC South Austin Campus, Austin, TX",
+  "url": "https://www.capmetro.org/fare/general-fares-overview/fare-increase",
+  "status": "CONFIRMED",
+  "kind": "engagement",
+  "uid": "capmetro-fare-increase-public-meeting-20260819T1700@calendars.changesaroundme.com",
+  "description": "Last of four public meetings on CapMetro's proposed fare increases\n(Jan 2027 and Jan 2029) and reduced-fare program changes. Served by\nroutes 3 and 311. RSVP: https://publicinput.com/Register/UX3336\n\nStill ahead: public hearing 12pm CDT 16 Sep 2026 (Rosa Parks\nBoardroom); comments open until the Board votes 28 Sep 2026.\n",
   "all_day": false
  },
  {
@@ -1184,6 +1236,19 @@
  },
  {
   "source": "capmetro",
+  "summary": "CapMetro - Fare Increase Public Hearing",
+  "start": "2026-09-16T12:00:00",
+  "end": "2026-09-16T14:00:00",
+  "location": "Rosa Parks Boardroom, CapMetro HQ, 2910 E. 5th St., Austin, TX 78702",
+  "url": "https://www.capmetro.org/fare/general-fares-overview/fare-increase",
+  "status": "CONFIRMED",
+  "kind": "hearing",
+  "uid": "capmetro-board-of-directors-20260916T1200@calendars.changesaroundme.com",
+  "description": "Public hearing on the proposed Jan 2027 / Jan 2029 fare increases and\nreduced-fare program changes. Served by routes 2, 4, 300, 800 and\nPickup East ATX.\n\nRemote participation available with prior sign-up: email\nboardofdirectors@capmetro.org or call (512) 369-6040 by 8am CDT\n16 Sep 2026 (join instructions follow just after 8am that day). In\nperson, arrive 15 minutes early to sign up to speak.\n\nComments stay open until the Board votes on the proposal at its\n28 Sep 2026 meeting.\n",
+  "all_day": false
+ },
+ {
+  "source": "capmetro",
   "summary": "CapMetro - Board of Directors",
   "start": "2026-09-16T12:00:00",
   "end": "2026-09-16T14:00:00",
@@ -1207,6 +1272,19 @@
   "uid": "capmetro-operations-planning-and-safety-committee-20260916T1230@calendars.changesaroundme.com",
   "description": "",
   "all_day": false
+ },
+ {
+  "source": "capmetro",
+  "summary": "CapMetro - Fare increase public comments close",
+  "start": "2026-09-28",
+  "end": null,
+  "location": "",
+  "url": "https://www.capmetro.org/fare/general-fares-overview/fare-increase",
+  "status": "CONFIRMED",
+  "kind": "comment-window",
+  "uid": "capmetro-fare-increase-public-comments-close-20260928@calendars.changesaroundme.com",
+  "description": "Last day of public comment on CapMetro's proposed fare increases\n(Jan 2027 and Jan 2029) and reduced-fare program changes: the Board\nvotes on the proposal at its meeting this day (12pm CDT, Rosa Parks\nBoardroom, 2910 E. 5th St.).\n\nDetails and how to comment: https://www.capmetro.org/fare/general-fares-overview/fare-increase\n",
+  "all_day": true
  },
  {
   "source": "capmetro",
