@@ -26,23 +26,9 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:ctrma-general-meeting-of-the-board-of-directors-20260729T0900@calendars
- .changesaroundme.com
-DTSTAMP:20260805T170459Z
-DTSTART;TZID=America/Chicago:20260729T090000
-DTEND;TZID=America/Chicago:20260729T110000
-SUMMARY:CTRMA - General Meeting of the Board of Directors
-LOCATION:3300 N. IH 35\, Suite 300\, Austin\, TX 78705
-URL:https://www.mobilityauthority.com/board-meetings/general-meeting-of-the
- -board-of-directors-8/
-STATUS:CANCELLED
-CATEGORIES:regular
-X-CAM-ORG:ctrma
-END:VEVENT
-BEGIN:VEVENT
 UID:ctrma-general-meeting-of-the-board-of-directors-20260826T0900@calendars
  .changesaroundme.com
-DTSTAMP:20260805T170459Z
+DTSTAMP:20260807T142845Z
 DTSTART;TZID=America/Chicago:20260826T090000
 DTEND;TZID=America/Chicago:20260826T110000
 SUMMARY:CTRMA - General Meeting of the Board of Directors
@@ -55,7 +41,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:ctrma-general-meeting-of-the-board-of-directors-20260930T0900@calendars
  .changesaroundme.com
-DTSTAMP:20260805T170459Z
+DTSTAMP:20260807T142845Z
 DTSTART;TZID=America/Chicago:20260930T090000
 DTEND;TZID=America/Chicago:20260930T110000
 SUMMARY:CTRMA - General Meeting of the Board of Directors
@@ -68,7 +54,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:ctrma-general-meeting-of-the-board-of-directors-20261028T0900@calendars
  .changesaroundme.com
-DTSTAMP:20260805T170459Z
+DTSTAMP:20260807T142845Z
 DTSTART;TZID=America/Chicago:20261028T090000
 DTEND;TZID=America/Chicago:20261028T110000
 SUMMARY:CTRMA - General Meeting of the Board of Directors
@@ -81,7 +67,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:ctrma-general-meeting-of-the-board-of-directors-20261118T0900@calendars
  .changesaroundme.com
-DTSTAMP:20260805T170459Z
+DTSTAMP:20260807T142845Z
 DTSTART;TZID=America/Chicago:20261118T090000
 DTEND;TZID=America/Chicago:20261118T110000
 SUMMARY:CTRMA - General Meeting of the Board of Directors
@@ -94,7 +80,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:ctrma-general-meeting-of-the-board-of-directors-20261216T0900@calendars
  .changesaroundme.com
-DTSTAMP:20260805T170459Z
+DTSTAMP:20260807T142845Z
 DTSTART;TZID=America/Chicago:20261216T090000
 DTEND;TZID=America/Chicago:20261216T110000
 SUMMARY:CTRMA - General Meeting of the Board of Directors

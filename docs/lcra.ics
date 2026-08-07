@@ -27,7 +27,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:lcra-board-committees-20260818@calendars.changesaroundme.com
-DTSTAMP:20260805T170459Z
+DTSTAMP:20260807T142845Z
 DTSTART;VALUE=DATE:20260818
 SUMMARY:LCRA - Board Committees
 LOCATION:Board Room\, Hancock Building\, 3700 Lake Austin Blvd\, Austin\, T
@@ -41,7 +41,7 @@ X-CAM-ORG:lcra
 END:VEVENT
 BEGIN:VEVENT
 UID:lcra-board-of-directors-20260819@calendars.changesaroundme.com
-DTSTAMP:20260805T170459Z
+DTSTAMP:20260807T142845Z
 DTSTART;VALUE=DATE:20260819
 SUMMARY:LCRA - Board of Directors
 LOCATION:Board Room\, Hancock Building\, 3700 Lake Austin Blvd\, Austin\, T
@@ -56,7 +56,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lcra-transmission-services-corp-board-20260819@calendars.changesaroundm
  e.com
-DTSTAMP:20260805T170459Z
+DTSTAMP:20260807T142845Z
 DTSTART;VALUE=DATE:20260819
 SUMMARY:LCRA - Transmission Services Corp. Board
 LOCATION:Board Room\, Hancock Building\, 3700 Lake Austin Blvd\, Austin\, T
@@ -71,7 +71,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lcra-water-rules-public-comments-close-20260901@calendars.changesaround
  me.com
-DTSTAMP:20260805T170459Z
+DTSTAMP:20260807T142845Z
 DTSTART;VALUE=DATE:20260901
 SUMMARY:LCRA - Water rules public comments close
 URL:https://www.lcra.org/water/water-related-rules-and-regulations-for-publ
@@ -90,7 +90,7 @@ X-CAM-ORG:lcra
 END:VEVENT
 BEGIN:VEVENT
 UID:lcra-board-committee-meetings-20260923@calendars.changesaroundme.com
-DTSTAMP:20260805T170459Z
+DTSTAMP:20260807T142845Z
 DTSTART;VALUE=DATE:20260923
 SUMMARY:LCRA - Board & Committee Meetings
 LOCATION:Board Room\, Hancock Building\, 3700 Lake Austin Blvd\, Austin\, T
@@ -105,7 +105,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lcra-transmission-services-corp-board-20260923@calendars.changesaroundm
  e.com
-DTSTAMP:20260805T170459Z
+DTSTAMP:20260807T142845Z
 DTSTART;VALUE=DATE:20260923
 SUMMARY:LCRA - Transmission Services Corp. Board
 LOCATION:Board Room\, Hancock Building\, 3700 Lake Austin Blvd\, Austin\, T
@@ -119,7 +119,7 @@ X-CAM-ORG:lcra
 END:VEVENT
 BEGIN:VEVENT
 UID:lcra-board-committees-20261020@calendars.changesaroundme.com
-DTSTAMP:20260805T170459Z
+DTSTAMP:20260807T142845Z
 DTSTART;VALUE=DATE:20261020
 SUMMARY:LCRA - Board Committees
 LOCATION:Board Room\, Hancock Building\, 3700 Lake Austin Blvd\, Austin\, T
@@ -133,7 +133,7 @@ X-CAM-ORG:lcra
 END:VEVENT
 BEGIN:VEVENT
 UID:lcra-board-of-directors-20261021@calendars.changesaroundme.com
-DTSTAMP:20260805T170459Z
+DTSTAMP:20260807T142845Z
 DTSTART;VALUE=DATE:20261021
 SUMMARY:LCRA - Board of Directors
 LOCATION:Board Room\, Hancock Building\, 3700 Lake Austin Blvd\, Austin\, T
@@ -148,7 +148,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lcra-transmission-services-corp-board-20261021@calendars.changesaroundm
  e.com
-DTSTAMP:20260805T170459Z
+DTSTAMP:20260807T142845Z
 DTSTART;VALUE=DATE:20261021
 SUMMARY:LCRA - Transmission Services Corp. Board
 LOCATION:Board Room\, Hancock Building\, 3700 Lake Austin Blvd\, Austin\, T
@@ -162,7 +162,7 @@ X-CAM-ORG:lcra
 END:VEVENT
 BEGIN:VEVENT
 UID:lcra-board-committee-meetings-20261110@calendars.changesaroundme.com
-DTSTAMP:20260805T170459Z
+DTSTAMP:20260807T142845Z
 DTSTART;VALUE=DATE:20261110
 SUMMARY:LCRA - Board & Committee Meetings
 LOCATION:Board Room\, Hancock Building\, 3700 Lake Austin Blvd\, Austin\, T
@@ -177,7 +177,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lcra-transmission-services-corp-board-20261110@calendars.changesaroundm
  e.com
-DTSTAMP:20260805T170459Z
+DTSTAMP:20260807T142845Z
 DTSTART;VALUE=DATE:20261110
 SUMMARY:LCRA - Transmission Services Corp. Board
 LOCATION:Board Room\, Hancock Building\, 3700 Lake Austin Blvd\, Austin\, T
@@ -191,7 +191,7 @@ X-CAM-ORG:lcra
 END:VEVENT
 BEGIN:VEVENT
 UID:lcra-board-committee-meetings-20261208@calendars.changesaroundme.com
-DTSTAMP:20260805T170459Z
+DTSTAMP:20260807T142845Z
 DTSTART;VALUE=DATE:20261208
 SUMMARY:LCRA - Board & Committee Meetings
 LOCATION:Board Room\, Hancock Building\, 3700 Lake Austin Blvd\, Austin\, T
@@ -206,7 +206,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lcra-transmission-services-corp-board-20261208@calendars.changesaroundm
  e.com
-DTSTAMP:20260805T170459Z
+DTSTAMP:20260807T142845Z
 DTSTART;VALUE=DATE:20261208
 SUMMARY:LCRA - Transmission Services Corp. Board
 LOCATION:Board Room\, Hancock Building\, 3700 Lake Austin Blvd\, Austin\, T
