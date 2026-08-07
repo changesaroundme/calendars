@@ -32,8 +32,10 @@
 #              the scraped event's uid (find it in data/<org>.json) — the
 #              curated entry then REPLACES the scraped copy everywhere.
 #
-# Housekeeping: past events can be pruned whenever; deleting one removes it
-# from the published calendars but it stays in git history.
+# Housekeeping: past events can be pruned from this file whenever — but note
+# the retention layer carries PAST events forward from data/<org>.json even
+# after they leave this file (we keep a record of what happened). To truly
+# retract a mistaken past entry, also delete it from data/<org>.json.
 #
 # Example (delete the leading "# " to activate):
 # - summary: "TxDOT - I-35 Capital Express Central Open House"
@@ -242,6 +244,115 @@
     yet. Check the project pages:
     https://www.speakupaustin.org/6200Menchaca
     https://www.speakupaustin.org/2908SouthCongress
+
+# --- added 2026-08-03 (CapMetro proposed fare increase, link via chat) -------
+# Source: https://www.capmetro.org/fare/general-fares-overview/fare-increase
+# First system-wide fare adjustment proposed since 2015 (increases Jan 2027
+# and Jan 2029 + reduced-fare program changes). The 28 Sep 2026 board VOTE
+# is the Legistar scraper's regular event — not curated here.
+
+- summary: "CapMetro - Fare Increase Public Meeting"
+  start: 2026-07-30 17:00
+  end: 2026-07-30 19:30
+  org: capmetro
+  location: "Goodwill Career & Technical Academy / Henna Education Center, Austin, TX"
+  url: https://www.capmetro.org/fare/general-fares-overview/fare-increase
+  kind: engagement
+  description: |
+    First of four public meetings on CapMetro's proposed fare increases
+    (Jan 2027 and Jan 2029) and reduced-fare program changes. Served by
+    routes 10, 325 and 339. RSVP: https://publicinput.com/Register/XS8587
+
+    Rest of the series: meetings 6, 18 and 19 Aug 2026 (5pm CDT); public
+    hearing 12pm CDT 16 Sep 2026 (Rosa Parks Boardroom); comments open
+    until the Board votes 28 Sep 2026.
+
+- summary: "CapMetro - Fare Increase Public Meeting"
+  start: 2026-08-06 17:00
+  end: 2026-08-06 19:30
+  org: capmetro
+  location: "ACC Northridge Campus, Austin, TX"
+  url: https://www.capmetro.org/fare/general-fares-overview/fare-increase
+  kind: engagement
+  description: |
+    Second of four public meetings on CapMetro's proposed fare increases
+    (Jan 2027 and Jan 2029) and reduced-fare program changes. Served by
+    routes 325, 466 and Pickup Walnut Creek.
+    RSVP: https://publicinput.com/Register/JG2066
+
+    Rest of the series: meetings 18 and 19 Aug 2026 (5pm CDT); public
+    hearing 12pm CDT 16 Sep 2026 (Rosa Parks Boardroom); comments open
+    until the Board votes 28 Sep 2026.
+
+- summary: "CapMetro - Fare Increase Public Meeting"
+  start: 2026-08-18 17:00
+  end: 2026-08-18 19:30
+  org: capmetro
+  location: "ACC Riverside Campus, Austin, TX"
+  url: https://www.capmetro.org/fare/general-fares-overview/fare-increase
+  kind: engagement
+  description: |
+    Third of four public meetings on CapMetro's proposed fare increases
+    (Jan 2027 and Jan 2029) and reduced-fare program changes. Served by
+    routes 20, 310, 311 and 350.
+    RSVP: https://publicinput.com/Register/UR8023
+
+    Rest of the series: meeting 19 Aug 2026 (5pm CDT, ACC South Austin);
+    public hearing 12pm CDT 16 Sep 2026 (Rosa Parks Boardroom); comments
+    open until the Board votes 28 Sep 2026.
+
+- summary: "CapMetro - Fare Increase Public Meeting"
+  start: 2026-08-19 17:00
+  end: 2026-08-19 19:30
+  org: capmetro
+  location: "ACC South Austin Campus, Austin, TX"
+  url: https://www.capmetro.org/fare/general-fares-overview/fare-increase
+  kind: engagement
+  description: |
+    Last of four public meetings on CapMetro's proposed fare increases
+    (Jan 2027 and Jan 2029) and reduced-fare program changes. Served by
+    routes 3 and 311. RSVP: https://publicinput.com/Register/UX3336
+
+    Still ahead: public hearing 12pm CDT 16 Sep 2026 (Rosa Parks
+    Boardroom); comments open until the Board votes 28 Sep 2026.
+
+- summary: "CapMetro - Fare Increase Public Hearing"
+  start: 2026-09-16 12:00
+  org: capmetro
+  # uid pinned to the Legistar scraper's noon "Board of Directors" row that
+  # day: a Wednesday-noon board slot between two committee meetings is the
+  # special called session holding this hearing, and this entry is richer.
+  # Ian: if the 16 Sep Legistar agenda shows OTHER board business too,
+  # delete this uid line so both entries publish separately.
+  uid: capmetro-board-of-directors-20260916T1200@calendars.changesaroundme.com
+  location: "Rosa Parks Boardroom, CapMetro HQ, 2910 E. 5th St., Austin, TX 78702"
+  url: https://www.capmetro.org/fare/general-fares-overview/fare-increase
+  kind: hearing
+  description: |
+    Public hearing on the proposed Jan 2027 / Jan 2029 fare increases and
+    reduced-fare program changes. Served by routes 2, 4, 300, 800 and
+    Pickup East ATX.
+
+    Remote participation available with prior sign-up: email
+    boardofdirectors@capmetro.org or call (512) 369-6040 by 8am CDT
+    16 Sep 2026 (join instructions follow just after 8am that day). In
+    person, arrive 15 minutes early to sign up to speak.
+
+    Comments stay open until the Board votes on the proposal at its
+    28 Sep 2026 meeting.
+
+- summary: "CapMetro - Fare increase public comments close"
+  start: 2026-09-28
+  org: capmetro
+  url: https://www.capmetro.org/fare/general-fares-overview/fare-increase
+  kind: comment-window
+  description: |
+    Last day of public comment on CapMetro's proposed fare increases
+    (Jan 2027 and Jan 2029) and reduced-fare program changes: the Board
+    votes on the proposal at its meeting this day (12pm CDT, Rosa Parks
+    Boardroom, 2910 E. 5th St.).
+
+    Details and how to comment: https://www.capmetro.org/fare/general-fares-overview/fare-increase
 
 - summary: "AHFC Open Houses - 6200 Menchaca & 2908 South Congress (September)"
   start: 2026-09-22

@@ -175,6 +175,25 @@ def main() -> int:
             # first-wins dedupe lets the hand-written entry override the
             # scraped copy — deliberate human data beats generic scrape.
             events = hand + events
+            # --- past-event retention (append-only, keyed by uid) ---
+            # Sources shed their own history: Legistar's "All Years" view
+            # self-bounds at ~100 rows (run #72 dropped eight Oct/Nov-2025
+            # council meetings the day the August rows appeared), committee
+            # tables roll over, CTRMA lists upcoming only. Any PAST event
+            # in the last snapshot whose uid this fetch no longer has is
+            # carried forward verbatim. Future events are never carried —
+            # a source delisting an upcoming meeting is a revision, not
+            # history. No identity matching, ever: uid equality only.
+            # (Emptiness health check below uses fresh_empty — a total
+            # fetch collapse must not hide behind carried history.)
+            fresh_empty = not events
+            have = {e.stable_uid() for e in events}
+            carried = [e for e in snapshot_events(snapshot_path)
+                       if event_day(e) < today and e.stable_uid() not in have]
+            if carried:
+                print(f"[{key}] retained {len(carried)} past events the "
+                      "source no longer lists")
+                events = events + carried
             events_by_key[key] = events
         except Exception as exc:
             print(f"[{key}] ERROR: fetch failed: {exc}")
@@ -201,7 +220,7 @@ def main() -> int:
         # there would guarantee red builds in every quiet stretch.
         sporadic = getattr(module, "SPORADIC", False) or getattr(
             module, "CURATED_ONLY", False)
-        if not events and not sporadic:
+        if fresh_empty and not sporadic:
             problems.append(f"{key}: 0 events parsed")
         else:
             if previous_count and len(events) < previous_count / 2:
