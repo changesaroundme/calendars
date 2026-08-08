@@ -68,7 +68,7 @@
   "Status": "Revised",
   "Submitted Date/Time": "7/28/2026 12:28 PM CDT",
   "first_seen": "2026-08-04",
-  "last_seen": "2026-08-07",
+  "last_seen": "2026-08-08",
   "routed": ""
  },
  "2026004453": {
@@ -86,7 +86,25 @@
   "Status": "Accepted",
   "Submitted Date/Time": "7/28/2026 12:30 PM CDT",
   "first_seen": "2026-08-04",
-  "last_seen": "2026-08-07",
+  "last_seen": "2026-08-08",
   "routed": "txdotev"
+ },
+ "2026004558": {
+  "Additional Information": "www.campotexas.org",
+  "Address": "The Junior League of Austin Community Impact Center 5330 Bluffstone Lane",
+  "Agency Name": "Capital Area Metropolitan Planning Organization",
+  "Agenda": "TRANSPORTATION POLICY BOARD MEETING\nThe Junior League of Austin Community Impact Center\n5330 Bluffstone Lane\nAustin, TX 78759\nMonday, August 10, 2026\n2:00 p.m.\nLivestream at www.campotexas.org\nPersons with Disabilities: Upon request, reasonable accommodations are provided. Please call 737-229-0896 at least three (3) business days prior to the meeting to arrange for assistance.\nTransportation from Transit Stops: Upon request, transportation vouchers from adjacent transit stops are available. Please call 737-229-0896 at least three (3) business days prior to the meeting to arrange for a voucher.\nAGENDA\n1.\tCertification of Quorum \u2013 Quorum requirement is 12 members.\nCouncil Member Rudy Metayer, Chair\n2.\tPublic Comments\nThe public is invited to comment on transportation-related topics in the CAMPO geographic area. The number of speakers and speaker time limits are at the discretion of the Chair. Each speaker will have one (1) minute to provide public comment. Written comments may be emailed to TPBcomments@campotexas.org by 5:00 p.m., Thursday, August 6, 2026.\nThis is an opportunity for the public to address the Transportation Policy Board concerning an issue of community interest that is not on the agenda. Comments on a specific agenda item must be made when the agenda item comes before the Board. The Chair may place a time limit on all comments. Any deliberation of an issue raised during Public Comment is limited to a statement regarding the item, a statement concerning the policy regarding the item or a proposal to place the item on a future agenda.\nEXECUTIVE SESSION:\nUnder Chapter 551 of the Texas Government Code, the Board may recess into a closed meeting (an executive session) to deliberate any item on this agenda if the Chairman announces the item will be deliberated in executive session and identifies the section or sections of Chapter 551 that authorize meeting in executive session. A final action, decision, or vote on a matter deliberated in executive session wi",
+  "Board": "Transportation Policy Board",
+  "City": "Austin",
+  "Committee": "N/A",
+  "Meeting Date": "8/10/2026",
+  "Meeting Time": "02:00 PM\n(Local Time)",
+  "Related TRD": "N/A",
+  "State": "TX",
+  "Status": "Accepted",
+  "Submitted Date/Time": "8/4/2026 10:03 AM CDT",
+  "first_seen": "2026-08-08",
+  "last_seen": "2026-08-08",
+  "routed": "campo"
  }
 }
