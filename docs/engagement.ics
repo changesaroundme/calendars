@@ -28,7 +28,7 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:lcra-water-rules-public-comments-close-20260901@calendars.changesaround
  me.com
-DTSTAMP:20260808T120417Z
+DTSTAMP:20260809T031602Z
 DTSTART;VALUE=DATE:20260901
 SUMMARY:LCRA - Water rules public comments close
 URL:https://www.lcra.org/water/water-related-rules-and-regulations-for-publ
@@ -48,7 +48,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-fare-increase-public-comments-close-20260928@calendars.changes
  aroundme.com
-DTSTAMP:20260808T120417Z
+DTSTAMP:20260809T031602Z
 DTSTART;VALUE=DATE:20260928
 SUMMARY:CapMetro - Fare increase public comments close
 URL:https://www.capmetro.org/fare/general-fares-overview/fare-increase
