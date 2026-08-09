@@ -571,10 +571,13 @@ def _committee_location(raw: str) -> str:
 
 
 def parse_committee_page(
-    html: str, abbrev: str, name: str, page_url: str, min_year: int | None = None
+    html: str, abbrev: str, name: str, page_url: str,
+    min_year: int | None = None, today: date | None = None
 ) -> list[Event]:
+    if today is None:
+        today = date.today()
     if min_year is None:
-        min_year = date.today().year
+        min_year = today.year
     soup = BeautifulSoup(html, "html.parser")
     events: list[Event] = []
     saw_table = False
@@ -613,6 +616,15 @@ def parse_committee_page(
                 if label and href.startswith("http"):
                     links.append(f"{label}: {href}")
             desc = [f"Posted location: {re.sub(r'  +', ' ', texts[2])}"] if texts[2] else []
+            cancelled = "cancel" in " ".join(texts).lower()
+            # An upcoming meeting whose row carries no Agenda link yet says
+            # so up front. "(checked daily)" rather than a timestamp: a
+            # per-build stamp would rewrite every event every day, making
+            # calendar clients flag daily phantom updates (Ian, 2026-08-09).
+            if (d >= today and not cancelled
+                    and not any(l.lower().startswith("agenda")
+                                for l in links)):
+                desc.insert(0, "Agenda not yet posted (checked daily).")
             events.append(
                 Event(
                     source=SOURCE,
@@ -621,8 +633,7 @@ def parse_committee_page(
                     end=(start + EVENT_LENGTH) if isinstance(start, datetime) else None,
                     location=_committee_location(texts[2]),
                     url=page_url,
-                    status=("CANCELLED" if "cancel" in " ".join(texts).lower()
-                            else "CONFIRMED"),
+                    status="CANCELLED" if cancelled else "CONFIRMED",
                     kind="regular",
                     description="\n".join(desc + links),
                     uid=(f"{SOURCE}-{slugify(name)}-"
@@ -699,6 +710,9 @@ def fetch_offline() -> list[Event]:
             parse_committee_page(
                 (FIXTURES / f"txdotev_{abbrev.lower()}.html").read_text(),
                 abbrev, name, url, min_year=FIXTURE_MIN_YEAR,
+                # Pinned so the "Agenda not yet posted" line is exercised
+                # deterministically against the 2026 fixture rows.
+                today=date(2026, 8, 10),
             )
         )
     owned_urls = {u for _, u in PAGES} | {u for _, _, u in COMMITTEES}

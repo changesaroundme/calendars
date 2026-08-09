@@ -229,6 +229,11 @@ def parse_board_page(html: str, board: str, docs_url: str,
             desc = ("All-day entry: this board's typical start time isn't "
                     "configured yet; the agenda posts at the event link "
                     "~a week ahead.")
+        cancelled = bool(CANCEL_RE.search(note))
+        if cancelled:
+            # Start-time commentary is noise on a meeting that isn't
+            # happening (Ian, 2026-08-09) — cancelled entries get no body.
+            desc = ""
         events.append(
             Event(
                 source=SOURCE,
@@ -237,7 +242,7 @@ def parse_board_page(html: str, board: str, docs_url: str,
                 end=end,
                 location=typical_location or "",
                 url=docs_url,
-                status="CANCELLED" if CANCEL_RE.search(note) else "CONFIRMED",
+                status="CANCELLED" if cancelled else "CONFIRMED",
                 kind=kind,
                 description=desc,
                 uid=uid,
@@ -392,7 +397,7 @@ def agenda_summary(pages: list[str]) -> str | None:
     def _s(n):
         return "" if n == 1 else "s"
 
-    out = ["Agenda Summary:"]
+    out = ["Summary Agenda"]  # standardized digest header (Ian, 2026-08-09)
     if cases:
         by_type: dict[str, int] = {}
         for t in cases:
@@ -474,8 +479,10 @@ def enrich_board_agendas(events: list[Event], get_html, get_bytes,
     board_urls = {docs for _, _, docs, _, _ in BOARDS}
     by_docs: dict[str, list[Event]] = {}
     for ev in events:
-        if (ev.url in board_urls and ev.status != "CANCELLED"
-                and today <= _day_of(ev) <= horizon):
+        # Cancelled meetings still enrich when an agenda exists (a tentative
+        # agenda may have posted before the cancellation — Ian, 2026-08-09);
+        # they just queue behind confirmed ones for the fetch cap.
+        if ev.url in board_urls and today <= _day_of(ev) <= horizon:
             by_docs.setdefault(ev.url, []).append(ev)
     spent = 0
     for docs_url, evs in by_docs.items():
@@ -485,6 +492,7 @@ def enrich_board_agendas(events: list[Event], get_html, get_bytes,
             print(f"[{SOURCE}] WARNING: meeting-docs fetch failed "
                   f"({docs_url}): {exc}")
             continue
+        evs.sort(key=lambda e: e.status == "CANCELLED")
         for ev in evs:
             d = _day_of(ev)
             agenda_url = agendas.get(d)
@@ -507,7 +515,9 @@ def enrich_board_agendas(events: list[Event], get_html, get_bytes,
             # should just BE the time (people trust close-in events). The
             # typical-time caveat only survives on UNenriched events, where
             # the uncertainty is real. (Ian, 2026-08-10.)
-            ev.description = (f"{summary}\n\n" if summary else "") \
+            # Standardized shape (Ian, 2026-08-09): summary on top, then a
+            # — rule, then the link.
+            ev.description = (f"{summary}\n\n—\n\n" if summary else "") \
                 + f"Agenda: {agenda_url}"
 
 
@@ -646,6 +656,33 @@ def apply_budget_flags(council: list[Event], records) -> list[Event]:
     return council
 
 
+def note_related_budget_meetings(council: list[Event]) -> None:
+    """Cross-note budget meetings that share one published agenda.
+
+    The August budget readings post as two Legistar meetings carrying an
+    IDENTICAL agenda (observed 12/14 Aug 2026); each gets a parenthetical
+    under its Summary Agenda header naming the other date(s). Equality of
+    the published digest block is the declared trigger — display-only, no
+    identity inference, and it self-corrects if an agenda later diverges.
+    """
+    groups: dict[str, list[Event]] = {}
+    for ev in council:
+        if (ev.summary == "City Council - Budget Meeting"
+                and (ev.description or "").startswith("Summary Agenda")):
+            groups.setdefault(
+                ev.description.split("\n\n—\n\n", 1)[0], []).append(ev)
+    for group in groups.values():
+        if len(group) < 2:
+            continue
+        group.sort(key=lambda e: str(e.start))
+        for ev in group:
+            others = " and ".join(_day_of(x).strftime("%-d %b")
+                                  for x in group if x is not ev)
+            ev.description = ev.description.replace(
+                "Summary Agenda\n",
+                f"Summary Agenda\n(same agenda as the {others} meeting)\n", 1)
+
+
 def fetch_annual(session) -> bytes:
     try:
         resp = session.get(ANNUAL_PDF_URL, timeout=30)
@@ -696,6 +733,9 @@ def fetch(session) -> list[Event]:
     except Exception as exc:
         _problems.append(f"austin: annual council schedule failed: {exc}")
         annual = []
+    # After apply_budget_flags — the annual calendar may be what names a
+    # meeting "City Council - Budget Meeting" in the first place.
+    note_related_budget_meetings(council)
     boards = fetch_boards(session)
     try:
         enrich_board_agendas(

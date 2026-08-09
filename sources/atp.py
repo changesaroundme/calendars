@@ -95,7 +95,7 @@ def cac_agenda_summary(pdf_bytes: bytes) -> str | None:
                 blocks[section][-1] += " " + line
     if not blocks:
         return None
-    out = ["Agenda Summary:"]
+    out = ["Summary Agenda"]  # standardized digest header (Ian, 2026-08-09)
     for label in CAC_WANTED.values():
         if label in blocks:
             out.append(label + "\n" + "\n".join(blocks[label]))
@@ -127,8 +127,9 @@ def enrich_cac(events: list[Event], get_html, get_bytes, today: date) -> None:
         except Exception as exc:
             print(f"[{SOURCE}] WARNING: CAC agenda parse failed ({url}): {exc}")
             continue
-        parts = [x for x in [block, f"Agenda: {url}"] if x]
-        addition = "\n\n".join(parts)
+        # Standardized shape (Ian, 2026-08-09): summary on top, — rule, link.
+        link_line = f"Agenda: {url}"
+        addition = f"{block}\n\n—\n\n{link_line}" if block else link_line
         if addition not in ev.description:
             ev.description = (f"{ev.description}\n\n{addition}"
                               if ev.description else addition)

@@ -123,8 +123,10 @@ def packet_items(pdf_bytes: bytes) -> tuple[str, list[str]]:
                          for p in pdf.pages[:PACKET_PAGES])
     memo = [f"{n}. {t}" for n, t in MEMO_ITEM_RE.findall(text)]
     if len(memo) >= 2:
-        return ("From the packet's executive summary (item numbers from "
-                "the agenda):", memo[:PACKET_ITEM_CAP])
+        # Attribution reads as a parenthetical under the "Summary Agenda"
+        # header (Ian's mock, 2026-08-09); the numbering gaps speak for
+        # themselves once the source is named.
+        return ("From the packet's executive summary", memo[:PACKET_ITEM_CAP])
     items: list[str] = []
     for m in AGENDA_ITEM_RE.finditer(text):
         title = re.sub(r"[.…]{2,}.*$", "", m.group(2)).strip().rstrip(".")
@@ -135,7 +137,7 @@ def packet_items(pdf_bytes: bytes) -> tuple[str, list[str]]:
             break
     kept = [f"{i + 1}. {t}" for i, t in enumerate(items)
             if not STANDING_RE.search(t)]
-    return ("On the agenda (standing items omitted):",
+    return ("From the agenda; standing items omitted",
             kept[:PACKET_ITEM_CAP])
 
 
@@ -160,18 +162,23 @@ def enrich_agendas(events: list[Event], get_html, today: date,
         for body, d, pdf in entries:
             if d != _day(ev) or body.lower() not in ev.summary.lower():
                 continue
-            parts = [f"Meeting packet: {pdf}"]
+            link_line = f"Meeting packet: {pdf}"
+            summary = None
             if get_bytes is not None and spent < PACKET_FETCH_CAP:
                 spent += 1
                 try:
                     label, items = packet_items(get_bytes(pdf))
                     if items:
-                        parts.append(label + "\n" + "\n".join(items))
+                        summary = (f"Summary Agenda\n({label})\n\n"
+                                   + "\n".join(items))
                 except Exception as exc:
                     print(f"[{SOURCE}] WARNING: packet parse failed "
                           f"({pdf}): {exc}")
-            block = "\n\n".join(parts)
-            if parts[0] not in ev.description:
+            # Standardized shape (Ian, 2026-08-09): summary on top, then a
+            # — rule, then the packet link.
+            block = (f"{summary}\n\n—\n\n{link_line}" if summary
+                     else link_line)
+            if link_line not in ev.description:
                 ev.description = (
                     f"{ev.description}\n\n{block}" if ev.description
                     else block)

@@ -288,7 +288,9 @@ def summarize_notice(html: bytes | str) -> str | None:
             leads.append(text)   # e.g. the invited-testimony paragraph
     if not charges and not leads:
         return None
-    lines = ["Summarized Agenda", ""]
+    # "Summary Agenda" is the standardized header across every source's
+    # agenda digest (Ian, 2026-08-09).
+    lines = ["Summary Agenda", ""]
     for i, c in enumerate(charges, 1):
         if c["bills"]:
             labels = " and ".join(l for l, _, _ in c["bills"])
@@ -337,7 +339,7 @@ def enrich_notices(events: list[Event], get_html, today: date) -> None:
             print(f"[{SOURCE}] WARNING: notice fetch/parse failed "
                   f"({ev.url}): {exc}")
             continue
-        if block and "Summarized Agenda" not in ev.description:
+        if block and "Summary Agenda" not in ev.description:
             ev.description = f"{block}\n\n—\n\n{ev.description}"
 
 

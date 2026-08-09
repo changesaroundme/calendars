@@ -72,14 +72,16 @@ def agenda_block(items: list[dict]) -> str:
     boilerplate (public-comment notice, closed-session notice, section
     headers) and are ignored. At or below AGENDA_LIST_MAX items, list them
     with file number and type — per Ian, the useful bit is what's actually
-    being decided. Above it, a count by matter type keeps the description
-    readable ("42 agenda items: 31 Consent, 6 Public Hearing, ...").
+    being decided. Above it, a bulleted count by matter type keeps the
+    description readable ("- 31 consent items"). Either way the block opens
+    with "Summary Agenda", the standardized header across every source's
+    agenda digest (Ian, 2026-08-09).
     """
     numbered = [i for i in items if i.get("EventItemAgendaNumber")]
     if not numbered:
         return ""
     if len(numbered) <= AGENDA_LIST_MAX:
-        lines = ["Agenda items:"]
+        lines = ["Summary Agenda", ""]
         for i in numbered:
             title = " ".join((i.get("EventItemTitle") or "").split())
             if len(title) > AGENDA_TITLE_CHARS:
@@ -94,9 +96,15 @@ def agenda_block(items: list[dict]) -> str:
     for i in numbered:
         t = i.get("EventItemMatterType") or "other"
         counts[t] = counts.get(t, 0) + 1
-    parts = [f"{n} {t}" for t, n in
-             sorted(counts.items(), key=lambda kv: -kv[1])]
-    return f"{len(numbered)} agenda items: " + ", ".join(parts)
+    def _bullet(t: str, n: int) -> str:
+        t = t.lower()
+        # Matter types like "Action Item" already end in the word — don't
+        # emit "action item items"; just pluralize what's there.
+        label = t if t.endswith("item") else f"{t} item"
+        return f"- {n} {label}{'' if n == 1 else 's'}"
+    return "Summary Agenda\n\n" + "\n".join(
+        _bullet(t, n) for t, n in
+        sorted(counts.items(), key=lambda kv: -kv[1]))
 
 
 @dataclass
@@ -233,7 +241,7 @@ class Legistar:
             # Agenda-item summary: the fetcher decides which rows merit a
             # per-event API call (live: future + agenda-published + capped;
             # offline: fixture lookup) and returns None to decline.
-            if item_fetcher and agenda and "Agenda items:" not in ev.description:
+            if item_fetcher and agenda and "Summary Agenda" not in ev.description:
                 try:
                     items = item_fetcher(row)
                 except Exception as exc:
@@ -243,7 +251,12 @@ class Legistar:
                 if items:
                     block = agenda_block(items)
                     if block:
-                        ev.description = (ev.description + "\n\n" + block).strip()
+                        # Standardized shape (Ian, 2026-08-09): summary on
+                        # top, then a — rule, then the link lines that were
+                        # already in the description.
+                        links = ev.description.strip()
+                        ev.description = block + (
+                            f"\n\n—\n\n{links}" if links else "")
 
         for row in api_rows:
             d = (row.get("EventDate") or "")[:10].replace("-", "")

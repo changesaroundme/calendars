@@ -151,9 +151,21 @@ def condense_council(events: list[Event]) -> list[Event]:
             entries.append(f"{b.summary}{cancelled}, {when}{link}")
         # Blank line between entries: with wrapped MeetingDetail URLs they
         # were unreadable run together (Ian, 8/12).
-        cont.description = ("Also convening within this meeting:\n"
-                            + "\n\n".join(entries)) + (
-            f"\n\n{original.description}" if original.description else "")
+        also = "Also convening within this meeting:\n" + "\n\n".join(entries)
+        names = [NESTED_BODIES[b.summary] for b in boards]
+        joined = (" and ".join(names) if len(names) <= 2
+                  else ", ".join(names[:-1]) + f", and {names[-1]}")
+        d0 = original.description or ""
+        if d0.startswith("Summary Agenda") and "\n\n—\n\n" in d0:
+            # The council agenda digest exists: the boards join it as a
+            # closing bullet (Ian's mock, 2026-08-09), and the per-board
+            # times/links move below the — rule with the other links.
+            head, tail = d0.split("\n\n—\n\n", 1)
+            bullet = (f"- {joined} board meeting"
+                      f"{'' if len(names) == 1 else 's'}")
+            cont.description = f"{head}\n{bullet}\n\n—\n\n{tail}\n\n{also}"
+        else:
+            cont.description = also + (f"\n\n{d0}" if d0 else "")
         out[out.index(original)] = cont
     return out
 
