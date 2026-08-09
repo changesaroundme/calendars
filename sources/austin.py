@@ -362,7 +362,11 @@ def enrich_board_agendas(events: list[Event], get_html, get_bytes,
                 continue
             ev.start = datetime(d.year, d.month, d.day, *t)
             ev.end = ev.start + timedelta(hours=BOARD_MEETING_HOURS)
-            ev.description = f"Start time from the posted agenda: {agenda_url}"
+            # No "start time from the agenda" commentary: a confirmed time
+            # should just BE the time (people trust close-in events). The
+            # typical-time caveat only survives on UNenriched events, where
+            # the uncertainty is real. (Ian, 2026-08-10.)
+            ev.description = f"Agenda: {agenda_url}"
 
 
 # ---------------------------------------------------------------------------
