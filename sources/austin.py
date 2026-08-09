@@ -216,12 +216,16 @@ def parse_board_page(html: str, board: str, docs_url: str,
             h, mnt = map(int, typical_time.split(":"))
             start = datetime(d.year, d.month, d.day, h, mnt)
             end = start + timedelta(hours=BOARD_MEETING_HOURS)
+            # The event's url field IS the meeting-documents page — don't
+            # repeat it here (calendar apps show both and it reads twice).
             desc = ("Typical start time from the board's regular schedule — "
-                    f"confirm on the posted agenda: {docs_url}")
+                    "confirm on the agenda posted at the event link "
+                    "(~a week ahead).")
         else:
             start, end = d, None
             desc = ("All-day entry: this board's typical start time isn't "
-                    f"configured yet; agendas post ~a week ahead: {docs_url}")
+                    "configured yet; the agenda posts at the event link "
+                    "~a week ahead.")
         events.append(
             Event(
                 source=SOURCE,
