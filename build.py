@@ -22,8 +22,10 @@ can't quietly starve the feeds.
 """
 from __future__ import annotations
 
+import copy
 import json
 import pathlib
+import re
 import sys
 from datetime import date, datetime, timedelta, timezone
 
@@ -78,6 +80,79 @@ USER_AGENT = (
     "cam-calendars/1.0 (+https://github.com/changesaroundme/calendars; "
     "ian@changesaroundme.com) public-meeting calendar builder"
 )
+
+# Corporation boards that only ever convene INSIDE a City Council meeting
+# (the council members reconvening as a different legal entity mid-session:
+# 11/11 AHFC and 3/3 Mueller meetings on record share a council day). On
+# the CONSOLIDATED feeds (all.ics + derived) they fold into the council
+# event; austin.ics keeps every event separate. DISPLAY-ONLY, and a
+# DECLARED relationship — body listed here + same day as a council meeting.
+# Never inferred from overlapping times (see the dedupe rule in the KB).
+NESTED_BODIES = {
+    "Austin Housing Finance Corporation": "AHFC",
+    "Mueller Local Government Corporation": "Mueller",
+    "Austin Industrial Development Corporation": "AIDC",
+}
+
+
+def _hm(dt: datetime) -> str:
+    """House time style: `10:30am CDT` / `5pm CST` (minutes only if set)."""
+    h12 = dt.hour % 12 or 12
+    mins = f":{dt.minute:02d}" if dt.minute else ""
+    zone = dt.replace(tzinfo=CENTRAL).tzname()
+    return f"{h12}{mins}{'pm' if dt.hour >= 12 else 'am'} {zone}"
+
+
+def _is_council_container(e: Event) -> bool:
+    return (e.source == "austin" and e.summary.startswith("City Council")
+            and "Committee" not in e.summary
+            and "Work Session" not in e.summary
+            and e.status != "CANCELLED")
+
+
+def condense_council(events: list[Event]) -> list[Event]:
+    """Fold nested corporation boards into their council meeting.
+
+    Returns a new list of (copied) events for the consolidated feeds: each
+    NESTED_BODIES meeting sharing a day with a council meeting disappears
+    as a standalone entry; the council copy's title gains `+ AHFC` (with a
+    trailing " Meeting" dropped first — it's obviously a meeting) and its
+    description gains each board's time and agenda link. Uids and the
+    original Event objects are untouched, so the org feeds and snapshots
+    never see this. A board meeting with no council container that day
+    passes through unchanged.
+    """
+    containers: dict[date, Event] = {}
+    for e in events:
+        if _is_council_container(e):
+            d = start_day(e)
+            if d not in containers or e.start < containers[d].start:
+                containers[d] = e
+    nested: dict[date, list[Event]] = {}
+    out: list[Event] = []
+    for e in events:
+        if (e.source == "austin" and e.summary in NESTED_BODIES
+                and start_day(e) in containers):
+            nested.setdefault(start_day(e), []).append(e)
+        else:
+            out.append(e)
+    for d, boards in nested.items():
+        boards.sort(key=lambda e: (str(e.start), e.summary))
+        original = containers[d]
+        cont = copy.copy(original)
+        base = re.sub(r"\s+Meeting$", "", cont.summary)
+        cont.summary = base + "".join(
+            f" + {NESTED_BODIES[b.summary]}" for b in boards)
+        lines = ["Also convening within this meeting:"]
+        for b in boards:
+            when = (_hm(b.start) if isinstance(b.start, datetime) else "time TBD")
+            cancelled = " (CANCELLED)" if b.status == "CANCELLED" else ""
+            link = f": {b.url}" if b.url else ""
+            lines.append(f"{b.summary}{cancelled}, {when}{link}")
+        cont.description = "\n".join(lines) + (
+            f"\n\n{original.description}" if original.description else "")
+        out[out.index(original)] = cont
+    return out
 
 
 def snapshot_events(path: pathlib.Path) -> list[Event]:
@@ -279,12 +354,19 @@ def main() -> int:
               + (f" ({', '.join(notes)})" if notes else ""))
 
     if all_events:
+        # Consolidated feeds get the condensed council view (display-only;
+        # the per-org feeds above were emitted from the untouched originals).
+        combined = condense_council(all_events)
+        folded = len(all_events) - len(combined)
+        if folded:
+            print(f"[all] folded {folded} corporation-board meetings into "
+                  "their council events")
         (docs / "all.ics").write_text(
-            emit(all_events, "CAM - All", now, color=ALL_COLOR), newline=""
+            emit(combined, "CAM - All", now, color=ALL_COLOR), newline=""
         )
-        print(f"[all] {len(all_events)} events")
+        print(f"[all] {len(combined)} events")
         for name, (calname, keep) in DERIVED_FEEDS.items():
-            subset = [e for e in all_events if keep(e)]
+            subset = [e for e in combined if keep(e)]
             (docs / f"{name}.ics").write_text(
                 emit(subset, calname, now, color=ALL_COLOR), newline=""
             )
