@@ -28,7 +28,7 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-business-and-commerce-20260729T0900@cal
  endars.changesaroundme.com
-DTSTAMP:20260809T194605Z
+DTSTAMP:20260809T215025Z
 DTSTART;TZID=America/Chicago:20260729T090000
 DTEND;TZID=America/Chicago:20260729T110000
 SUMMARY:Texas Senate - Business & Commerce: 765-kV lines and grid reliabili
@@ -57,7 +57,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-texas-senate-business-commerce-765-kv-lines-and-grid-reliab
  ility-20260729T0900@calendars.changesaroundme.com
-DTSTAMP:20260809T194605Z
+DTSTAMP:20260809T215025Z
 DTSTART;TZID=America/Chicago:20260729T090000
 DTEND;TZID=America/Chicago:20260729T110000
 SUMMARY:Texas Senate - Business & Commerce: 765-kV lines and grid reliabili
@@ -86,7 +86,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-transportation-20260729T1200@calendars.
  changesaroundme.com
-DTSTAMP:20260809T194605Z
+DTSTAMP:20260809T215025Z
 DTSTART;TZID=America/Chicago:20260729T120000
 DTEND;TZID=America/Chicago:20260729T150000
 SUMMARY:Texas Senate - Transportation
@@ -104,7 +104,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-natural-resources-20260811T0900@calenda
  rs.changesaroundme.com
-DTSTAMP:20260809T194605Z
+DTSTAMP:20260809T215025Z
 DTSTART;TZID=America/Chicago:20260811T090000
 DTEND;TZID=America/Chicago:20260811T120000
 SUMMARY:Texas Senate - Natural Resources
@@ -112,18 +112,23 @@ LOCATION:Room E1.012\, Texas Capitol Extension\, 1100 Congress Ave.\, Austi
  n\, TX 78701
 URL:https://capitol.texas.gov/tlodocs/89R/schedules/html/C5802026081109001.
  HTM
-DESCRIPTION:Summarized Agenda\n\n1. Monitor: "Monitoring"\n2. Study: "Prote
- cting Texas from Wildfires"\n\nTestimony to include: TCEQ\, RRC\, and GLO\
- n\n—\n\nHearing notice (topics\, testimony rules): https://capitol.texas
- .gov/tlodocs/89R/schedules/html/C5802026081109001.HTM\nLive/archived broad
- casts: https://senate.texas.gov/av-live.php
+DESCRIPTION:Summarized Agenda\n\n1. Monitoring: SB 1145 and HB 49 from the 
+ 2025 session\n2. Study: "Protecting Texas from Wildfires"\n\nTestimony to 
+ include: TCEQ\, RRC\, and GLO\n\n—\n\nSB 1145: relating to the authority
+  of the TCEQ to issue permits for the land application of water produced f
+ rom certain mining and oil and gas extraction operation.\n\nHB 49: relatin
+ g to the treatment and beneficial use of fluid oil and gas waste and relat
+ ed material\, including a limitation on liability for that treatment or us
+ e.\n\n—\n\nHearing notice (topics\, testimony rules): https://capitol.te
+ xas.gov/tlodocs/89R/schedules/html/C5802026081109001.HTM\nLive/archived br
+ oadcasts: https://senate.texas.gov/av-live.php
 CATEGORIES:hearing
 X-CAM-ORG:legislature
 END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-transportation-20260825T0900@calendars.
  changesaroundme.com
-DTSTAMP:20260809T194605Z
+DTSTAMP:20260809T215025Z
 DTSTART;TZID=America/Chicago:20260825T090000
 DTEND;TZID=America/Chicago:20260825T120000
 SUMMARY:Texas Senate - Transportation
@@ -143,7 +148,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-water-agriculture-and-rural-affairs-202
  60901T0900@calendars.changesaroundme.com
-DTSTAMP:20260809T194605Z
+DTSTAMP:20260809T215025Z
 DTSTART;TZID=America/Chicago:20260901T090000
 DTEND;TZID=America/Chicago:20260901T120000
 SUMMARY:Texas Senate - Water\, Agriculture\, and Rural Affairs
@@ -162,7 +167,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-local-government-20260901T1100@calendar
  s.changesaroundme.com
-DTSTAMP:20260809T194605Z
+DTSTAMP:20260809T215025Z
 DTSTART;TZID=America/Chicago:20260901T110000
 DTEND;TZID=America/Chicago:20260901T140000
 SUMMARY:Texas Senate - Local Government
@@ -179,7 +184,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-water-agriculture-and-rural-affairs-202
  60903T0900@calendars.changesaroundme.com
-DTSTAMP:20260809T194605Z
+DTSTAMP:20260809T215025Z
 DTSTART;TZID=America/Chicago:20260903T090000
 DTEND;TZID=America/Chicago:20260903T120000
 SUMMARY:Texas Senate - Water\, Agriculture\, and Rural Affairs
@@ -197,7 +202,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-natural-resources-20260921T0900@calenda
  rs.changesaroundme.com
-DTSTAMP:20260809T194605Z
+DTSTAMP:20260809T215025Z
 DTSTART;TZID=America/Chicago:20260921T090000
 DTEND;TZID=America/Chicago:20260921T120000
 SUMMARY:Texas Senate - Natural Resources
@@ -205,18 +210,29 @@ LOCATION:Room E1.012\, Texas Capitol Extension\, 1100 Congress Ave.\, Austi
  n\, TX 78701
 URL:https://capitol.texas.gov/tlodocs/89R/schedules/html/C5802026092109001.
  HTM
-DESCRIPTION:Summarized Agenda\n\n1. Monitor: "Monitoring"\n2. Study: "Ensur
- ing Responsible Renewable Energy Decommissioning"\n\n—\n\nHearing notice
-  (topics\, testimony rules): https://capitol.texas.gov/tlodocs/89R/schedul
- es/html/C5802026092109001.HTM\nLive/archived broadcasts: https://senate.te
- xas.gov/av-live.php
+DESCRIPTION:Summarized Agenda\n\n1. Monitoring: SB 494 and SB 1806 and HB 4
+ 8 from the 2025 session\n2. Study: "Ensuring Responsible Renewable Energy 
+ Decommissioning"\n\n—\n\nSB 494: relating to the establishment of a thef
+ t of petroleum products task force\;SB 1806 2025 session\, relating to the
+  inspection\, purchase\, sale\, possession\, storage\, transportation\, an
+ d disposal of petroleum products\, oil and gas equipment\, and oil and gas
+  waste\; creating criminal offenses and increasing the punishment for an e
+ xisting criminal offense\;\n\nSB 1806: relating to the inspection\, purcha
+ se\, sale\, possession\, storage\, transportation\, and disposal of petrol
+ eum products\, oil and gas equipment\, and oil and gas waste\; creating cr
+ iminal offenses and increasing the punishment for an existing criminal off
+ ense\;\n\nHB 48: relating to the creation of an organized oilfield theft p
+ revention unit within the Department of Public Safety.\n\n—\n\nHearing n
+ otice (topics\, testimony rules): https://capitol.texas.gov/tlodocs/89R/sc
+ hedules/html/C5802026092109001.HTM\nLive/archived broadcasts: https://sena
+ te.texas.gov/av-live.php
 CATEGORIES:hearing
 X-CAM-ORG:legislature
 END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-business-and-commerce-20260930T0900@cal
  endars.changesaroundme.com
-DTSTAMP:20260809T194605Z
+DTSTAMP:20260809T215025Z
 DTSTART;TZID=America/Chicago:20260930T090000
 DTEND;TZID=America/Chicago:20260930T120000
 SUMMARY:Texas Senate - Business and Commerce
