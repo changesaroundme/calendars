@@ -22,6 +22,7 @@ Entry fields are documented in events/curated.yaml itself.
 from __future__ import annotations
 
 import pathlib
+import re
 from datetime import date, datetime, timedelta
 
 import yaml
@@ -121,7 +122,13 @@ def load(valid_orgs: set[str], path: pathlib.Path | None = None) -> None:
             else "CONFIRMED",
             kind=kind,
             uid=str(entry.get("uid", "")),  # optional override; else stable_uid
-            description=str(entry.get("description", "")),
+            # Collapse the YAML source's line wraps: a single newline inside
+            # a paragraph is an artifact of editing width and renders as a
+            # mid-sentence break in calendar apps; blank lines (paragraph
+            # breaks) survive.
+            description=re.sub(
+                r"(?<!\n)\n(?!\n)", " ",
+                str(entry.get("description", "")).strip()),
         )
         ev.uid = ev.stable_uid()
         _events.setdefault(org, []).append(ev)

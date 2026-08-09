@@ -210,7 +210,10 @@ def parse_board_page(html: str, board: str, docs_url: str,
             continue
         seen.add(uid)
         note = (note or "").strip()
-        summary = board + (f" ({note})" if note else "")
+        # Display prefix per the 2026-08-09 convention update ("CoA - " on
+        # Austin boards and one-offs; the City Council family keeps its
+        # bare names). The uid above froze from the raw board name first.
+        summary = f"CoA - {board}" + (f" ({note})" if note else "")
         kind = "special" if re.search(r"special", note, re.IGNORECASE) else "regular"
         if typical_time:
             h, mnt = map(int, typical_time.split(":"))

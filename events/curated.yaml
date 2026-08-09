@@ -130,7 +130,8 @@
 
 # --- added 2026-07-30 (Speak Up Austin r31038, via curate-events flow) -------
 
-- summary: "César Chávez Street Renaming - Community Meeting"
+- summary: "CoA - César Chávez St Renaming"
+  uid: austin-c-sar-ch-vez-street-renaming-community-meeting-20260811T1700@calendars.changesaroundme.com
   start: 2026-08-11 17:00
   end: 2026-08-11 19:00
   org: austin
@@ -145,7 +146,8 @@
     Others in the series: 2pm CDT 15 Aug 2026 (Sanchez Elementary) and a
     virtual session 6pm CDT 18 Aug 2026. Online survey at the link.
 
-- summary: "César Chávez Street Renaming - Community Meeting"
+- summary: "CoA - César Chávez St Renaming"
+  uid: austin-c-sar-ch-vez-street-renaming-community-meeting-20260815T1400@calendars.changesaroundme.com
   start: 2026-08-15 14:00
   end: 2026-08-15 16:00
   org: austin
@@ -160,7 +162,8 @@
     Others in the series: 5pm CDT 11 Aug 2026 (Central Library) and a
     virtual session 6pm CDT 18 Aug 2026. Online survey at the link.
 
-- summary: "César Chávez Street Renaming - Virtual Community Meeting"
+- summary: "CoA - César Chávez St Renaming"
+  uid: austin-c-sar-ch-vez-street-renaming-virtual-community-meeting-20260818T1800@calendars.changesaroundme.com
   start: 2026-08-18 18:00
   end: 2026-08-18 20:00
   org: austin
@@ -193,7 +196,10 @@
 
 # --- added 2026-07-31 (District 3 newsletter / Google Form RSVP) -------------
 
-- summary: "District 3 Budget Community Meeting"
+- summary: "CoA - District 3 Budget Community Meeting"
+  # uid pinned across the 2026-08-09 retitle (renaming without a pin churns
+  # subscribers and leaves a ghost via past-event retention).
+  uid: austin-district-3-budget-community-meeting-20260810T1730@calendars.changesaroundme.com
   start: 2026-08-10 17:30
   end: 2026-08-10 19:30
   org: austin
