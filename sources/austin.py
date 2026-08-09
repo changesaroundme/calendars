@@ -244,6 +244,125 @@ def parse_board_page(html: str, board: str, docs_url: str,
 
 
 # ---------------------------------------------------------------------------
+# Board agenda enrichment: the posted agenda is the authoritative when/where.
+#
+# Each board's meeting-documents page (the docs_url in BOARDS — the same
+# "Agendas, Approved Minutes and Supporting Documents" link the KB
+# Organizations page carries) lists per-date document rows; the Agenda link
+# is an EDIMS PDF whose page-1 header states the confirmed start time
+# ("TUESDAY, AUGUST 4, 2026, AT 5:00 P.M."). For upcoming meetings we fetch
+# that chain and replace the typical-time guess with the agenda's time and
+# a direct link to the agenda itself. Upgrade-only: any failure (agenda not
+# posted yet, page redesign, PDF quirk) leaves the event exactly as the
+# typical-time path built it. UIDs are date-only and never touched.
+# ---------------------------------------------------------------------------
+AGENDA_HORIZON = timedelta(days=45)   # agendas post ~a week out; 45d is slack
+AGENDA_FETCH_CAP = 10                 # PDFs per run, across all boards
+
+AGENDA_HEADER_RE = re.compile(
+    r"(JANUARY|FEBRUARY|MARCH|APRIL|MAY|JUNE|JULY|AUGUST|SEPTEMBER|OCTOBER"
+    r"|NOVEMBER|DECEMBER)\s+(\d{1,2}),\s*(\d{4}),?\s+AT\s+"
+    r"(\d{1,2})(?::(\d{2}))?\s*([AP])\.?M\b",
+    re.IGNORECASE)
+
+
+def _day_of(e: Event) -> date:
+    return e.start.date() if isinstance(e.start, datetime) else e.start
+
+
+def parse_meetings_page(html: str) -> dict[date, str]:
+    """date -> Agenda PDF url from a board's meeting-documents page.
+
+    The bcic markup is flat siblings: a bcic_mtgdate div (date, possibly
+    "(Cancelled)"), then bcic_doc divs until the next date. Only the link
+    whose text is exactly "Agenda" counts — cancellation notices, minutes,
+    backup and video rows all carry other labels.
+    """
+    soup = BeautifulSoup(html, "html.parser")
+    out: dict[date, str] = {}
+    for div in soup.find_all("div", class_="bcic_mtgdate"):
+        m = DATE_LI_RE.match(div.get_text(" ", strip=True))
+        if not m:
+            continue
+        try:
+            d = datetime.strptime(
+                f"{m.group(1)} {int(m.group(2))} {m.group(3)}", "%B %d %Y"
+            ).date()
+        except ValueError:
+            continue
+        for sib in div.find_next_siblings("div"):
+            classes = sib.get("class") or []
+            if "bcic_mtgdate" in classes:
+                break
+            if "bcic_doc" not in classes:
+                continue
+            a = next((a for a in sib.find_all("a")
+                      if a.get_text(" ", strip=True) == "Agenda"), None)
+            if a and a.get("href") and d not in out:
+                out[d] = a["href"]
+    return out
+
+
+def agenda_start(pdf_bytes: bytes, day: date) -> tuple[int, int] | None:
+    """(hour, minute) from the agenda header naming this meeting day.
+
+    Conservative: the header must state OUR day, and exactly one distinct
+    time for it — an ambiguous agenda leaves the typical time in place.
+    """
+    with pdfplumber.open(io.BytesIO(pdf_bytes)) as pdf:
+        text = pdf.pages[0].extract_text() or ""
+    times: set[tuple[int, int]] = set()
+    for m in AGENDA_HEADER_RE.finditer(text):
+        try:
+            d = date(int(m.group(3)), MONTHS_FULL[m.group(1).title()],
+                     int(m.group(2)))
+        except (ValueError, KeyError):
+            continue
+        if d != day:
+            continue
+        h = int(m.group(4)) % 12 + (12 if m.group(6).upper() == "P" else 0)
+        times.add((h, int(m.group(5) or 0)))
+    return times.pop() if len(times) == 1 else None
+
+
+def enrich_board_agendas(events: list[Event], get_html, get_bytes,
+                         today: date) -> None:
+    """Upgrade upcoming board events in place from their posted agendas."""
+    horizon = today + AGENDA_HORIZON
+    board_urls = {docs for _, _, docs, _, _ in BOARDS}
+    by_docs: dict[str, list[Event]] = {}
+    for ev in events:
+        if (ev.url in board_urls and ev.status != "CANCELLED"
+                and today <= _day_of(ev) <= horizon):
+            by_docs.setdefault(ev.url, []).append(ev)
+    spent = 0
+    for docs_url, evs in by_docs.items():
+        try:
+            agendas = parse_meetings_page(get_html(docs_url))
+        except Exception as exc:  # enrichment must never break the feed
+            print(f"[{SOURCE}] WARNING: meeting-docs fetch failed "
+                  f"({docs_url}): {exc}")
+            continue
+        for ev in evs:
+            d = _day_of(ev)
+            agenda_url = agendas.get(d)
+            if not agenda_url or spent >= AGENDA_FETCH_CAP:
+                continue
+            spent += 1
+            try:
+                t = agenda_start(get_bytes(agenda_url), d)
+            except Exception as exc:
+                print(f"[{SOURCE}] WARNING: agenda parse failed "
+                      f"({agenda_url}): {exc}")
+                continue
+            if t is None:
+                continue
+            ev.start = datetime(d.year, d.month, d.day, *t)
+            ev.end = ev.start + timedelta(hours=BOARD_MEETING_HOURS)
+            ev.description = f"Start time from the posted agenda: {agenda_url}"
+
+
+# ---------------------------------------------------------------------------
 # Annual council schedule PDF (the year-ahead when/where for City Council).
 #
 # The city publishes a "202X City Council Meeting Calendar" PDF in EDIMS with
@@ -428,7 +547,23 @@ def fetch(session) -> list[Event]:
     except Exception as exc:
         _problems.append(f"austin: annual council schedule failed: {exc}")
         annual = []
-    return council + annual + fetch_boards(session)
+    boards = fetch_boards(session)
+    try:
+        enrich_board_agendas(
+            boards,
+            lambda u: _got(session, u).text,
+            lambda u: _got(session, u).content,
+            datetime.now().date(),
+        )
+    except Exception as exc:  # upgrade-only: never sink the boards
+        print(f"[{SOURCE}] WARNING: agenda enrichment failed: {exc}")
+    return council + annual + boards
+
+
+def _got(session, url):
+    resp = session.get(url, timeout=30)
+    resp.raise_for_status()
+    return resp
 
 
 def fetch_offline() -> list[Event]:
@@ -465,4 +600,20 @@ def fetch_offline() -> list[Event]:
         "Planning Commission",
         "https://www.austintexas.gov/boards-commissions/meetings/40_1",
     )
-    return council + annual + boards
+    # Agenda-enrichment chain, exercised end-to-end from real captures:
+    # UTC board page -> meeting-documents page -> the 4 Aug 2026 agenda PDF
+    # ("... AT 5:00 P.M."). today pinned so the Aug 4 meeting is upcoming.
+    utc = parse_board_page(
+        (fixtures / "austin_board_utc.html").read_text(),
+        "Urban Transportation Commission",
+        "https://www.austintexas.gov/boards-commissions/meetings/50_1",
+    )
+    agenda_pdf = fixtures / "austin_agenda_utc_20260804.pdf"
+    if agenda_pdf.exists():
+        enrich_board_agendas(
+            utc,
+            lambda u: (fixtures / "austin_meetings_utc.html").read_text(),
+            lambda u: agenda_pdf.read_bytes(),
+            today=date(2026, 8, 1),
+        )
+    return council + annual + boards + utc
