@@ -490,7 +490,7 @@
   "status": "CANCELLED",
   "kind": "regular",
   "uid": "austin-design-commission-20260126@calendars.changesaroundme.com",
-  "description": "Typical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).",
+  "description": "",
   "all_day": false
  },
  {
@@ -646,7 +646,7 @@
   "status": "CANCELLED",
   "kind": "regular",
   "uid": "austin-austin-integrated-water-resource-planning-community-task-force-20260210@calendars.changesaroundme.com",
-  "description": "All-day entry: this board's typical start time isn't configured yet; the agenda posts at the event link ~a week ahead.",
+  "description": "",
   "all_day": true
  },
  {
@@ -802,7 +802,7 @@
   "status": "CANCELLED",
   "kind": "regular",
   "uid": "austin-urban-transportation-commission-20260303@calendars.changesaroundme.com",
-  "description": "Typical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).",
+  "description": "",
   "all_day": false
  },
  {
@@ -1725,7 +1725,7 @@
   "status": "CANCELLED",
   "kind": "regular",
   "uid": "austin-bicycle-advisory-council-20260616@calendars.changesaroundme.com",
-  "description": "Typical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).",
+  "description": "",
   "all_day": false
  },
  {
@@ -2050,7 +2050,7 @@
   "status": "CANCELLED",
   "kind": "regular",
   "uid": "austin-austin-integrated-water-resource-planning-community-task-force-20260811@calendars.changesaroundme.com",
-  "description": "All-day entry: this board's typical start time isn't configured yet; the agenda posts at the event link ~a week ahead.",
+  "description": "",
   "all_day": true
  },
  {
@@ -2076,7 +2076,7 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-planning-commission-20260811@calendars.changesaroundme.com",
-  "description": "Agenda Summary:\n\n8 cases: 2 x Plan Amendment, 4 x Rezoning, 1 x Restrictive Covenant Termination, 1 x Historic Zoning\n\n1 discussion item: Item #10 \"Discussion and action to establish a working group related to Dog\u2019s Head Developments.\"\n\n4 permanent committee and 1 working group update\n\nAgenda: https://services.austintexas.gov/edims/document.cfm?id=478410",
+  "description": "Summary Agenda\n\n8 cases: 2 x Plan Amendment, 4 x Rezoning, 1 x Restrictive Covenant Termination, 1 x Historic Zoning\n\n1 discussion item: Item #10 \"Discussion and action to establish a working group related to Dog\u2019s Head Developments.\"\n\n4 permanent committee and 1 working group update\n\n\u2014\n\nAgenda: https://services.austintexas.gov/edims/document.cfm?id=478410",
   "all_day": false
  },
  {
@@ -2128,7 +2128,7 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-airport-advisory-commission-20260812@calendars.changesaroundme.com",
-  "description": "Agenda Summary:\n\n5 briefings:\n- June 2026 Financial Results\n- August 2026 Air Service Update\n- Journey with AUS Active Projects\n- Austin Aviation\u2019s Fiscal Year 2026-2027 Budget\n- BATX Pipeline Project status\n\n3 action items\n\n3 discussion items (all related to recent City Council actions)\n\nAgenda: https://services.austintexas.gov/edims/document.cfm?id=478452",
+  "description": "Summary Agenda\n\n5 briefings:\n- June 2026 Financial Results\n- August 2026 Air Service Update\n- Journey with AUS Active Projects\n- Austin Aviation\u2019s Fiscal Year 2026-2027 Budget\n- BATX Pipeline Project status\n\n3 action items\n\n3 discussion items (all related to recent City Council actions)\n\n\u2014\n\nAgenda: https://services.austintexas.gov/edims/document.cfm?id=478452",
   "all_day": false
  },
  {

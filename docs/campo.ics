@@ -27,25 +27,25 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:7706-1786370400-1786377600@www.campotexas.org
-DTSTAMP:20260809T224724Z
+DTSTAMP:20260809T233641Z
 DTSTART;TZID=America/Chicago:20260810T140000
 DTEND;TZID=America/Chicago:20260810T160000
 SUMMARY:CAMPO - Transportation Policy Board
 LOCATION:The Junior League of Austin Community Impact Center\, 5330 Bluffst
  one Lane\, Austin\, TX\, 78759\, United States
 URL:https://www.campotexas.org/event/transportation-policy-board-80/
-DESCRIPTION:Meeting packet: https://www.campotexas.org/wp-content/uploads/2
- 026/08/Aug-10-2026-TPB-Mtg.pdf\n\nFrom the packet's executive summary (ite
- m numbers from the agenda):\n6. Fiscal Agent Agreement\n7. Recruitment Ser
- vices Contract\n8. Support Services Contract\n9. Strategic Planning Worksh
- op\n10. Cedar Park TDC Application\n11. Transportation Demand Modeling\n12
- . Planning Activities
+DESCRIPTION:Summary Agenda\n(From the packet's executive summary)\n\n6. Fis
+ cal Agent Agreement\n7. Recruitment Services Contract\n8. Support Services
+  Contract\n9. Strategic Planning Workshop\n10. Cedar Park TDC Application\
+ n11. Transportation Demand Modeling\n12. Planning Activities\n\n—\n\nMee
+ ting packet: https://www.campotexas.org/wp-content/uploads/2026/08/Aug-10-
+ 2026-TPB-Mtg.pdf
 CATEGORIES:regular
 X-CAM-ORG:campo
 END:VEVENT
 BEGIN:VEVENT
 UID:7719-1787580000-1787587200@www.campotexas.org
-DTSTAMP:20260809T224724Z
+DTSTAMP:20260809T233641Z
 DTSTART;TZID=America/Chicago:20260824T140000
 DTEND;TZID=America/Chicago:20260824T160000
 SUMMARY:CAMPO - Technical Advisory Committee
@@ -56,7 +56,7 @@ X-CAM-ORG:campo
 END:VEVENT
 BEGIN:VEVENT
 UID:7707-1789394400-1789401600@www.campotexas.org
-DTSTAMP:20260809T224724Z
+DTSTAMP:20260809T233641Z
 DTSTART;TZID=America/Chicago:20260914T140000
 DTEND;TZID=America/Chicago:20260914T160000
 SUMMARY:CAMPO - Transportation Policy Board
@@ -68,7 +68,7 @@ X-CAM-ORG:campo
 END:VEVENT
 BEGIN:VEVENT
 UID:7720-1790604000-1790611200@www.campotexas.org
-DTSTAMP:20260809T224724Z
+DTSTAMP:20260809T233641Z
 DTSTART;TZID=America/Chicago:20260928T140000
 DTEND;TZID=America/Chicago:20260928T160000
 SUMMARY:CAMPO - Technical Advisory Committee
@@ -79,7 +79,7 @@ X-CAM-ORG:campo
 END:VEVENT
 BEGIN:VEVENT
 UID:7708-1791208800-1791216000@www.campotexas.org
-DTSTAMP:20260809T224724Z
+DTSTAMP:20260809T233641Z
 DTSTART;TZID=America/Chicago:20261005T140000
 DTEND;TZID=America/Chicago:20261005T160000
 SUMMARY:CAMPO - Transportation Policy Board
@@ -91,7 +91,7 @@ X-CAM-ORG:campo
 END:VEVENT
 BEGIN:VEVENT
 UID:7721-1793023200-1793030400@www.campotexas.org
-DTSTAMP:20260809T224724Z
+DTSTAMP:20260809T233641Z
 DTSTART;TZID=America/Chicago:20261026T140000
 DTEND;TZID=America/Chicago:20261026T160000
 SUMMARY:CAMPO - Technical Advisory Committee
@@ -102,7 +102,7 @@ X-CAM-ORG:campo
 END:VEVENT
 BEGIN:VEVENT
 UID:7709-1794232800-1794240000@www.campotexas.org
-DTSTAMP:20260809T224724Z
+DTSTAMP:20260809T233641Z
 DTSTART;TZID=America/Chicago:20261109T140000
 DTEND;TZID=America/Chicago:20261109T160000
 SUMMARY:CAMPO - Transportation Policy Board
@@ -114,7 +114,7 @@ X-CAM-ORG:campo
 END:VEVENT
 BEGIN:VEVENT
 UID:7722-1794837600-1794844800@www.campotexas.org
-DTSTAMP:20260809T224724Z
+DTSTAMP:20260809T233641Z
 DTSTART;TZID=America/Chicago:20261116T140000
 DTEND;TZID=America/Chicago:20261116T160000
 SUMMARY:CAMPO - Technical Advisory Committee
@@ -125,7 +125,7 @@ X-CAM-ORG:campo
 END:VEVENT
 BEGIN:VEVENT
 UID:7710-1797256800-1797264000@www.campotexas.org
-DTSTAMP:20260809T224724Z
+DTSTAMP:20260809T233641Z
 DTSTART;TZID=America/Chicago:20261214T140000
 DTEND;TZID=America/Chicago:20261214T160000
 SUMMARY:CAMPO - Transportation Policy Board
@@ -137,7 +137,7 @@ X-CAM-ORG:campo
 END:VEVENT
 BEGIN:VEVENT
 UID:7723-1797861600-1797868800@www.campotexas.org
-DTSTAMP:20260809T224724Z
+DTSTAMP:20260809T233641Z
 DTSTART;TZID=America/Chicago:20261221T140000
 DTEND;TZID=America/Chicago:20261221T160000
 SUMMARY:CAMPO - Technical Advisory Committee
