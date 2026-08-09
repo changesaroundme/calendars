@@ -28,7 +28,7 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:txdotev-hm-fm973-corridor-project-082125-20250821@calendars.changesarou
  ndme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;VALUE=DATE:20250821
 SUMMARY:TxDOT - FM 973 Corridor Project (Taylor)
 LOCATION:Taylor
@@ -45,7 +45,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-stip-fy-2025-2028-august-revision-20250909@calendars.changes
  aroundme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;VALUE=DATE:20250909
 SUMMARY:TxDOT - Statewide Transportation Improvement Program for FY 2025 - 
  2028 - August Revision
@@ -62,7 +62,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-us290-from-sh130-to-sh95-092325-20250923@calendars.changesar
  oundme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;VALUE=DATE:20250923
 SUMMARY:TxDOT - US 290 from SH 130 to SH 95 South (Elgin)
 LOCATION:Elgin
@@ -79,7 +79,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-us290-from-sh130-to-sh95-092325-20250925@calendars.changesar
  oundme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;VALUE=DATE:20250925
 SUMMARY:TxDOT - US 290 from SH 130 to SH 95 South (Elgin)
 LOCATION:Elgin
@@ -96,7 +96,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-fm969-corridor-study-100225-20251002@calendars.changesaround
  me.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;VALUE=DATE:20251002
 SUMMARY:TxDOT - FM 969 Corridor Study (Elgin)
 LOCATION:Elgin
@@ -111,7 +111,7 @@ X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-102325-20251023@calendars.changesaroundme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;VALUE=DATE:20251023
 SUMMARY:TxDOT - Public Transportation Advisory Committee
 LOCATION:Statewide
@@ -125,7 +125,7 @@ X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-102425-20251024@calendars.changesaroundme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;VALUE=DATE:20251024
 SUMMARY:TxDOT - Bicycle and Pedestrian Advisory Committee Quarterly Meeting
 LOCATION:Statewide
@@ -140,7 +140,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-texas-statewide-multimodal-transit-plan-102025-20251113@cale
  ndars.changesaroundme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;VALUE=DATE:20251113
 SUMMARY:TxDOT - Texas Statewide Multimodal Transit Plan virtual public meet
  ing with in-person options (Austin)
@@ -157,7 +157,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-us281-blanco-relief-route-study-111825-20251118@calendars.ch
  angesaroundme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;VALUE=DATE:20251118
 SUMMARY:TxDOT - US 281 Blanco Relief Route Study (Blanco)
 LOCATION:Blanco
@@ -174,7 +174,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-us281-blanco-county-project-111825-20251118@calendars.change
  saroundme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;VALUE=DATE:20251118
 SUMMARY:TxDOT - US 281 Blanco County Project (Blanco)
 LOCATION:Blanco
@@ -190,7 +190,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-stip-fy-2025-2028-nov-revision-20251216@calendars.changesaro
  undme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;VALUE=DATE:20251216
 SUMMARY:TxDOT - Statewide Transportation Improvement Program for FY 2025 - 
  2028 - November revision
@@ -206,7 +206,7 @@ X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-121925-20251219@calendars.changesaroundme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;VALUE=DATE:20251219
 SUMMARY:TxDOT - Texas-Mexico Border Transportation Master Plan (BTMP) Updat
  e
@@ -223,7 +223,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-public-transportation-advisory-committee-20260122T1000@calendar
  s.changesaroundme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;TZID=America/Chicago:20260122T100000
 DTEND;TZID=America/Chicago:20260122T120000
 SUMMARY:TxDOT PTAC - Meeting
@@ -239,7 +239,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-bicycle-and-pedestrian-advisory-committee-20260130T0930@calenda
  rs.changesaroundme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;TZID=America/Chicago:20260130T093000
 DTEND;TZID=America/Chicago:20260130T113000
 SUMMARY:TxDOT BPAC - Meeting
@@ -255,7 +255,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-public-transportation-advisory-committee-20260209T1000@calendar
  s.changesaroundme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;TZID=America/Chicago:20260209T100000
 DTEND;TZID=America/Chicago:20260209T120000
 SUMMARY:TxDOT PTAC - Meeting
@@ -271,7 +271,7 @@ X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-us77-021926-20260219@calendars.changesaroundme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;VALUE=DATE:20260219
 SUMMARY:TxDOT - US 77 from FM 2440 to SH 21 (Giddings)
 LOCATION:Giddings
@@ -287,7 +287,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-mopac-loop1-expressway-ea-030926-20260309@calendars.changesa
  roundme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;VALUE=DATE:20260309
 SUMMARY:TxDOT - MoPac (Loop 1) Expressway from Cesar Chavez Street to Slaug
  hter Lane (Austin)
@@ -305,7 +305,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-stip-fy-2025-2028-feb-revision-20260310@calendars.changesaro
  undme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;VALUE=DATE:20260310
 SUMMARY:TxDOT - Statewide Transportation Improvement Program for FY 2025 - 
  2028 - February revision
@@ -321,7 +321,7 @@ X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-parmer-lane-032526-20260325@calendars.changesaroundme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;TZID=America/Chicago:20260325T160000
 DTEND;TZID=America/Chicago:20260325T190000
 SUMMARY:TxDOT - Parmer Lane (FM 734) Corridor Study Open House (Austin)
@@ -337,7 +337,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-us281-at-sh71-interchange-040926-20260409@calendars.changesa
  roundme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;TZID=America/Chicago:20260409T173000
 DTEND;TZID=America/Chicago:20260409T193000
 SUMMARY:TxDOT - US 281 at SH 71 Interchange (Marble Falls)
@@ -354,7 +354,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-noa-fonsi-rm620-anderson-mill-road-20260414@calendars.change
  saroundme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;VALUE=DATE:20260414
 SUMMARY:TxDOT - Notice of Availability for Finding of No Significant Impact
   (FONSI) - RM 620 / Anderson Mill Road from South of Foundation Road to Li
@@ -371,7 +371,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-fm969-corridor-study-041526-20260415@calendars.changesaround
  me.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;TZID=America/Chicago:20260415T160000
 DTEND;TZID=America/Chicago:20260415T190000
 SUMMARY:TxDOT - FM 969 Corridor Study from SH 130 to SH 71 (Elgin)
@@ -387,7 +387,7 @@ X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-fm973-042226-20260422@calendars.changesaroundme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;TZID=America/Chicago:20260422T160000
 DTEND;TZID=America/Chicago:20260422T190000
 SUMMARY:TxDOT - FM 973 - US 290 to Samsung Hwy (Manor)
@@ -402,7 +402,7 @@ X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-042326-20260423@calendars.changesaroundme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;VALUE=DATE:20260423
 SUMMARY:TxDOT - Public Transportation Advisory Committee - virtual public m
  eeting - This meeting has been rescheduled to May 6\, 2026
@@ -418,7 +418,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-bicycle-and-pedestrian-advisory-committee-20260424T0930@calenda
  rs.changesaroundme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;TZID=America/Chicago:20260424T093000
 DTEND;TZID=America/Chicago:20260424T113000
 SUMMARY:TxDOT BPAC - Meeting
@@ -437,7 +437,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-2027-2030-rtip-austin-district-20260429@calendars.changesaro
  undme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;VALUE=DATE:20260429
 SUMMARY:TxDOT - 2027 - 2030 Rural Transportation Improvement Program Austin
   District (Blanco\, Gillespie\, Lee\, Llano and Mason counties)
@@ -454,7 +454,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-stip-may-2026-revision-20260505@calendars.changesaroundme.co
  m
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;VALUE=DATE:20260505
 SUMMARY:TxDOT - Statewide Transportation Improvement Program: May 2026 Revi
  sion
@@ -471,7 +471,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-public-transportation-advisory-committee-20260506T1000@calendar
  s.changesaroundme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;TZID=America/Chicago:20260506T100000
 DTEND;TZID=America/Chicago:20260506T120000
 SUMMARY:TxDOT PTAC - Meeting
@@ -487,7 +487,7 @@ X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-actionetwork-20260615@calendars.changesaroundme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;VALUE=DATE:20260615
 SUMMARY:TxDOT - Active Transportation Investment Opportunity Network (ACTIO
  N)
@@ -504,7 +504,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-statewide-transportation-improvement-program-fy-2027-2030-20
  260630@calendars.changesaroundme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;VALUE=DATE:20260630
 SUMMARY:TxDOT - Statewide Transportation Improvement Program - FY 2027-2030
 LOCATION:Statewide
@@ -521,7 +521,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-utp-virtual-public-meeting-20260701@calendars.changesaroundme.c
  om
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;TZID=America/Chicago:20260701T140000
 DTEND;TZID=America/Chicago:20260701T160000
 SUMMARY:TxDOT - UTP: Virtual public meeting
@@ -536,7 +536,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-utp-virtual-public-hearing-20260729@calendars.changesaroundme.c
  om
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;TZID=America/Chicago:20260729T140000
 DTEND;TZID=America/Chicago:20260729T160000
 SUMMARY:TxDOT - UTP: Virtual public hearing
@@ -551,26 +551,26 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-txdot-texas-triangle-multimodal-strategic-plan-webinar-20260730
  T1200@calendars.changesaroundme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;TZID=America/Chicago:20260730T120000
 DTEND;TZID=America/Chicago:20260730T140000
 SUMMARY:TxDOT - Texas Triangle Multimodal Strategic Plan Webinar
 LOCATION:Virtual (Microsoft Teams)
 URL:https://www.txdot.gov/projects/projects-studies/statewide/ttmsp.html
 DESCRIPTION:Virtual webinar\, 12pm CDT. Registration required - a Teams inv
- itation is\nsent to the address you register with:\nhttps://forms.office.c
- om/Pages/ResponsePage.aspx?id=dqTbOQlcY0yR2s56OrUiTehB7aaighdMu7NupziNqitU
- OFlWMzRRMU9EWjgyWTUxWEswWFMzQ08yWC4u\n\nTxDOT is seeking input from transp
- ortation and mobility advocates on the\nTexas Triangle Multimodal Strategi
- c Plan - current transportation\nchallenges\, emerging mobility trends\, a
- nd connections between communities\nacross the Dallas-Fort Worth / Houston
-  / San Antonio / Austin mega-region.\n
+ itation is sent to the address you register with: https://forms.office.com
+ /Pages/ResponsePage.aspx?id=dqTbOQlcY0yR2s56OrUiTehB7aaighdMu7NupziNqitUOF
+ lWMzRRMU9EWjgyWTUxWEswWFMzQ08yWC4u\n\nTxDOT is seeking input from transpor
+ tation and mobility advocates on the Texas Triangle Multimodal Strategic P
+ lan - current transportation challenges\, emerging mobility trends\, and c
+ onnections between communities across the Dallas-Fort Worth / Houston / Sa
+ n Antonio / Austin mega-region.
 CATEGORIES:engagement
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-us281-073026-20260730@calendars.changesaroundme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;TZID=America/Chicago:20260730T160000
 DTEND;TZID=America/Chicago:20260730T190000
 SUMMARY:TxDOT - US 281 Blanco County Project (Blanco)
@@ -586,7 +586,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-bicycle-and-pedestrian-advisory-committee-20260731T0930@calenda
  rs.changesaroundme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;TZID=America/Chicago:20260731T093000
 DTEND;TZID=America/Chicago:20260731T113000
 SUMMARY:TxDOT BPAC - Meeting
@@ -609,7 +609,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-txdot-i-14-extension-public-meeting-temple-20260805T1700@calend
  ars.changesaroundme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;TZID=America/Chicago:20260805T170000
 DTEND;TZID=America/Chicago:20260805T190000
 SUMMARY:TxDOT - I-14 Extension Public Meeting (Temple)
@@ -618,20 +618,20 @@ LOCATION:Frank W. Mayborn Civic & Convention Center\, Main Hall\, 3303 N. 3
 URL:https://www.txdot.gov/projects/hearings-meetings/waco/2026/i14-extensio
  n-080526.html
 DESCRIPTION:Open house\, drop in any time 5-7pm CDT. One of two in-person m
- eetings on\nthe same proposals\; the other is in Belton on 6 Aug 2026.\n\n
- Proposed I-35 improvements from south of Loop 121 in Belton to Loop\n363/U
- S 190/SH 36 in Temple ("Segment 1")\, part of extending I-14 from its\ncur
- rent terminus in Belton to BU 190 in Rogers.\n\nA pre-recorded video of th
- e same presentation goes up on the project page\nby 5pm on 5 Aug 2026. Wri
- tten comments must be postmarked or received by\n21 Aug 2026 to enter the 
- official record.\n
+ eetings on the same proposals\; the other is in Belton on 6 Aug 2026.\n\nP
+ roposed I-35 improvements from south of Loop 121 in Belton to Loop 363/US 
+ 190/SH 36 in Temple ("Segment 1")\, part of extending I-14 from its curren
+ t terminus in Belton to BU 190 in Rogers.\n\nA pre-recorded video of the s
+ ame presentation goes up on the project page by 5pm on 5 Aug 2026. Written
+  comments must be postmarked or received by 21 Aug 2026 to enter the offic
+ ial record.
 CATEGORIES:engagement
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-public-hearing-public-transportation-20260806@calendars.chan
  gesaroundme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;TZID=America/Chicago:20260806T090000
 DTEND;TZID=America/Chicago:20260806T110000
 SUMMARY:TxDOT - Public Transportation Division Chapter 31 Amendments
@@ -649,7 +649,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-txdot-i-14-extension-public-meeting-belton-20260806T1700@calend
  ars.changesaroundme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;TZID=America/Chicago:20260806T170000
 DTEND;TZID=America/Chicago:20260806T190000
 SUMMARY:TxDOT - I-14 Extension Public Meeting (Belton)
@@ -658,18 +658,18 @@ LOCATION:Huntington Bank Expo (Cadence Bank Center)\, Assembly Hall\, 301 W
 URL:https://www.txdot.gov/projects/hearings-meetings/waco/2026/i14-extensio
  n-080526.html
 DESCRIPTION:Open house\, drop in any time 5-7pm CDT. Same proposals as the 
- Temple\nmeeting on 5 Aug 2026 - attend whichever is more convenient.\n\nPr
- oposed I-35 improvements from south of Loop 121 in Belton to Loop\n363/US 
- 190/SH 36 in Temple ("Segment 1")\, part of extending I-14 from its\ncurre
- nt terminus in Belton to BU 190 in Rogers.\n\nWritten comments must be pos
- tmarked or received by 21 Aug 2026 to enter\nthe official record.\n
+ Temple meeting on 5 Aug 2026 - attend whichever is more convenient.\n\nPro
+ posed I-35 improvements from south of Loop 121 in Belton to Loop 363/US 19
+ 0/SH 36 in Temple ("Segment 1")\, part of extending I-14 from its current 
+ terminus in Belton to BU 190 in Rogers.\n\nWritten comments must be postma
+ rked or received by 21 Aug 2026 to enter the official record.
 CATEGORIES:engagement
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-i35-georgetown-to-round-rock-081326-20260813@calendars.chang
  esaroundme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;VALUE=DATE:20260813
 SUMMARY:TxDOT - I-35 Georgetown to Round Rock (Georgetown)
 LOCATION:Georgetown
@@ -685,7 +685,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-public-transportation-advisory-committee-20260813T1000@calendar
  s.changesaroundme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;TZID=America/Chicago:20260813T100000
 DTEND;TZID=America/Chicago:20260813T120000
 SUMMARY:TxDOT PTAC - Meeting
@@ -701,7 +701,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-bicycle-and-pedestrian-advisory-committee-20261106T0930@calenda
  rs.changesaroundme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;TZID=America/Chicago:20261106T093000
 DTEND;TZID=America/Chicago:20261106T113000
 SUMMARY:TxDOT BPAC - Meeting

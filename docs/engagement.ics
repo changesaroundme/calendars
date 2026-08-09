@@ -28,7 +28,7 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:lcra-water-rules-public-comments-close-20260901@calendars.changesaround
  me.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;VALUE=DATE:20260901
 SUMMARY:LCRA - Water rules public comments close
 URL:https://www.lcra.org/water/water-related-rules-and-regulations-for-publ
@@ -48,15 +48,15 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-fare-increase-public-comments-close-20260928@calendars.changes
  aroundme.com
-DTSTAMP:20260809T135713Z
+DTSTAMP:20260809T194605Z
 DTSTART;VALUE=DATE:20260928
 SUMMARY:CapMetro - Fare increase public comments close
 URL:https://www.capmetro.org/fare/general-fares-overview/fare-increase
 DESCRIPTION:Last day of public comment on CapMetro's proposed fare increase
- s\n(Jan 2027 and Jan 2029) and reduced-fare program changes: the Board\nvo
- tes on the proposal at its meeting this day (12pm CDT\, Rosa Parks\nBoardr
- oom\, 2910 E. 5th St.).\n\nDetails and how to comment: https://www.capmetr
- o.org/fare/general-fares-overview/fare-increase\n
+ s (Jan 2027 and Jan 2029) and reduced-fare program changes: the Board vote
+ s on the proposal at its meeting this day (12pm CDT\, Rosa Parks Boardroom
+ \, 2910 E. 5th St.).\n\nDetails and how to comment: https://www.capmetro.o
+ rg/fare/general-fares-overview/fare-increase
 CATEGORIES:comment-window
 X-CAM-ORG:capmetro
 END:VEVENT
