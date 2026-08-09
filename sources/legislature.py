@@ -232,7 +232,17 @@ def _abbrev(text: str, acronyms: dict[str, str]) -> str:
         lambda m: f"{_session_year(int(m.group(1)))} session, ", text)
 
 
-def summarize_notice(html: str) -> str | None:
+BILL_REF_RE = re.compile(
+    r"(Senate Bill|House Bill|Senate Joint Resolution|House Joint Resolution"
+    r"|SB|HB|SJR|HJR)\s+(\d+)")
+
+
+def summarize_notice(html: bytes | str) -> str | None:
+    # bytes, not a pre-decoded str: tlodocs serves UTF-8 Word HTML without a
+    # charset header, so requests' .text guesses ISO-8859-1 and the Symbol
+    # bullet "·" mojibakes to "Â·" (first live run, 10 Aug 2026 — every
+    # ASCII part parsed, only the bullets vanished). BeautifulSoup reads the
+    # meta charset itself when given bytes.
     soup = BeautifulSoup(html, "html.parser")
     full_text = re.sub(r"\s+", " ", soup.get_text(" ", strip=True))
     # "Texas Commission on Environmental Quality (TCEQ)" -> {name: TCEQ},
@@ -249,17 +259,24 @@ def summarize_notice(html: str) -> str | None:
             break
         b = p.find("b")
         lead = re.sub(r"\s+", " ", b.get_text(" ", strip=True)).strip() if b else ""
-        if text.startswith("·"):  # Symbol bullet: a bill item
-            if not (charges and lead):
+        # A bullet by markup (Word's Symbol/Wingdings marker span) or by
+        # leading glyph — including the mojibake forms, belt-and-braces.
+        sym = p.find("span", style=re.compile(r"Symbol|Wingdings", re.IGNORECASE))
+        is_bullet = bool(sym) or text[:1] in "·•§o" or text[:2] == "Â·"
+        if is_bullet:  # a bill item under the current charge
+            if not charges:
                 continue
-            body = text.lstrip("· ").strip()
-            desc = body[len(lead):].strip() if body.startswith(lead) else body
+            body = re.sub(r"^[·•§oÂ\s]+", "", text)
+            bm = BILL_REF_RE.match(body)
+            if not bm:
+                continue  # decorative bullet, not a bill reference
+            label = f"{_abbrev(bm.group(1), {})} {bm.group(2)}"
+            desc = body[bm.end():].strip(" ,")
             year = None
             ym = LEG_SESSION_RE.search(desc)
             if ym:
                 year = _session_year(int(ym.group(1)))
                 desc = LEG_SESSION_RE.sub("", desc, count=1).strip()
-            label = _abbrev(lead.strip(), {})
             charges[-1]["bills"].append((label, _abbrev(desc, acronyms), year))
         elif lead and text.startswith(lead):
             charges.append({"title": lead.rstrip(":").strip(),
@@ -337,13 +354,13 @@ def fetch(session) -> list[Event]:
     fresh = finalize(parse_page(resp.text))
     today = datetime.now(CENTRAL).date()
 
-    def _html(url):
+    def _notice(url):
         r = session.get(url, timeout=30)
         r.raise_for_status()
-        return r.text
+        return r.content  # bytes: see the charset note on summarize_notice
 
     try:
-        enrich_notices(fresh, _html, today)
+        enrich_notices(fresh, _notice, today)
     except Exception as exc:  # upgrade-only: never sink the feed
         print(f"[{SOURCE}] WARNING: notice enrichment failed: {exc}")
     return fresh + _archived_past({e.uid for e in fresh}, today)
@@ -363,7 +380,7 @@ def fetch_offline() -> list[Event]:
     }
     enrich_notices(
         events,
-        lambda u: notices[u].read_text() if u in notices else None,
+        lambda u: notices[u].read_bytes() if u in notices else None,
         today=date(2026, 8, 1),
     )
     return events
