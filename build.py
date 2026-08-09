@@ -143,13 +143,16 @@ def condense_council(events: list[Event]) -> list[Event]:
         base = re.sub(r"\s+Meeting$", "", cont.summary)
         cont.summary = base + "".join(
             f" + {NESTED_BODIES[b.summary]}" for b in boards)
-        lines = ["Also convening within this meeting:"]
+        entries = []
         for b in boards:
             when = (_hm(b.start) if isinstance(b.start, datetime) else "time TBD")
             cancelled = " (CANCELLED)" if b.status == "CANCELLED" else ""
             link = f": {b.url}" if b.url else ""
-            lines.append(f"{b.summary}{cancelled}, {when}{link}")
-        cont.description = "\n".join(lines) + (
+            entries.append(f"{b.summary}{cancelled}, {when}{link}")
+        # Blank line between entries: with wrapped MeetingDetail URLs they
+        # were unreadable run together (Ian, 8/12).
+        cont.description = ("Also convening within this meeting:\n"
+                            + "\n\n".join(entries)) + (
             f"\n\n{original.description}" if original.description else "")
         out[out.index(original)] = cont
     return out

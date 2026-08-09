@@ -133,7 +133,9 @@ def parse_page(html: str) -> list[Event]:
             note = texts[5].strip() if len(texts) > 5 else ""
             cancelled = ("cancelled" in (row.get("class") or [])
                          or "CANCELLED" in note.upper())
-            desc_bits = [f"Hearing notice (topics, testimony rules): {notice_url}"]
+            # The notice URL is the event's url field — repeating it in the
+            # body reads twice in calendar apps (Ian, 8/12).
+            desc_bits = []
             if "REVISED" in note.upper():
                 desc_bits.append("Notice was marked REVISED — recheck the link "
                                  "for changes.")

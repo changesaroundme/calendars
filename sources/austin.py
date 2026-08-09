@@ -306,14 +306,153 @@ def parse_meetings_page(html: str) -> dict[date, str]:
     return out
 
 
-def agenda_start(pdf_bytes: bytes, day: date) -> tuple[int, int] | None:
+def _agenda_pages(pdf_bytes: bytes, n: int = 10) -> list[str]:
+    with pdfplumber.open(io.BytesIO(pdf_bytes)) as pdf:
+        return [(p.extract_text() or "") for p in pdf.pages[:n]]
+
+
+# --- board agenda digest (Ian's format, 2026-08-10) -------------------------
+# Case items on land-use agendas type themselves ("2. Plan Amendment:
+# NPA-2025-0018.02 - ..."), so counting by type is declared, not inferred.
+# Discussion items are the rare high-signal entries -> quoted verbatim
+# (capped); standing committee/working-group updates are boilerplate on
+# every agenda -> counts only (verified against the 11 Aug 2026 PC agenda).
+CASE_NUM_RE = re.compile(r"\b[A-Z]{1,4}\d{0,2}[A-Z]?-\d{2,4}-[0-9A-Za-z.()]+")
+CASE_TYPE_CANON = {
+    "Plan": "Plan Amendment", "Rezoning": "Rezoning", "Zoning": "Rezoning",
+    "Historic": "Historic Zoning",
+    "Restrictive": "Restrictive Covenant Termination",  # label wraps in the
+    # PDF text layer ("Restrictive / Covenant / Termination:"), so the first
+    # word is the reliable key
+    "Site": "Site Plan", "Preliminary": "Preliminary Plan",
+    "Final": "Final Plat", "Conditional": "Conditional Use",
+}
+AGENDA_SECTIONS = {
+    "PUBLIC HEARINGS": "case",
+    "STAFF BRIEFINGS": "briefing",
+    # AAC's slash heading is its ACTION section (count-only); PC's "AND"
+    # heading is where novel one-offs land (quoted). Distinct on purpose.
+    "DISCUSSION/ACTION ITEMS": "action",
+    "DISCUSSION AND ACTION ITEMS": "discussion",
+    "DISCUSSION ITEMS": "discussion",
+    "PERMANENT COMMITTEE UPDATES": "committee",
+    "WORKING GROUP UPDATES": "workgroup",
+}
+BRIEFING_PREFIX_RE = re.compile(r"^(?:Staff\s+)?[Bb]riefing\s+(?:on|regarding|about)\s+")
+BRIEFING_PRESENTER_RE = re.compile(r"\s+(?:presented|provided|given)\s+by\b.*$",
+                                   re.DOTALL)
+QUOTE_CAP = 3      # discussion items quoted verbatim up to this many
+QUOTE_CHARS = 160
+
+
+def agenda_summary(pages: list[str]) -> str | None:
+    section = None
+    cases: list[str] = []
+    briefings: list[list] = []    # [number, text] — text grows on wraps
+    discussion: list[list] = []
+    action = committee = workgroup = 0
+    cur = None
+    for raw in "\n".join(pages).splitlines():
+        line = raw.strip()
+        up = line.upper()
+        if up == "ADJOURNMENT":
+            break  # everything after is how-to-participate boilerplate
+        if up in AGENDA_SECTIONS:
+            section, cur = AGENDA_SECTIONS[up], None
+            continue
+        m = re.match(r"(\d{1,3})\.\s+(.+)", line)
+        if m and section:
+            cur = None
+            body = m.group(2).strip()
+            if section == "case":
+                cm = CASE_NUM_RE.search(body)
+                if cm:
+                    first = body.split(" ", 1)[0].rstrip(":")
+                    cases.append(CASE_TYPE_CANON.get(
+                        first, body[:cm.start()].rstrip(" :") or "Other"))
+            elif section == "briefing":
+                briefings.append([int(m.group(1)), body])
+                cur = briefings[-1]
+            elif section == "discussion":
+                discussion.append([int(m.group(1)), body])
+                cur = discussion[-1]
+            elif section == "action":
+                action += 1
+            elif section == "committee":
+                committee += 1
+            elif section == "workgroup":
+                workgroup += 1
+        elif cur and line and not line.isupper():
+            if len(cur[1]) < QUOTE_CHARS + 60:  # wrapped sentence continues
+                cur[1] += " " + line
+    if not (cases or briefings or discussion or action or committee
+            or workgroup):
+        return None
+
+    def _s(n):
+        return "" if n == 1 else "s"
+
+    out = ["Agenda Summary:"]
+    if cases:
+        by_type: dict[str, int] = {}
+        for t in cases:
+            by_type[t] = by_type.get(t, 0) + 1
+        out.append(f"{len(cases)} case{_s(len(cases))}: "
+                   + ", ".join(f"{n} x {t}" for t, n in by_type.items()))
+    if briefings:
+        titles = []
+        for _, text in briefings:
+            t = re.sub(r"\s+", " ", text).strip()
+            t = BRIEFING_PRESENTER_RE.sub("", BRIEFING_PREFIX_RE.sub("", t))
+            # Parenthetical program tags read as clutter in titles (Ian).
+            t = re.sub(r"\s*\([^)]*\)", "", t)
+            titles.append(f"- {re.sub(r'  +', ' ', t).strip(' .,')}")
+        out.append(f"{len(briefings)} briefing{_s(len(briefings))}:\n"
+                   + "\n".join(titles))
+    if action:
+        out.append(f"{action} action item{_s(action)}")
+    if discussion:
+        def _q(num, text):
+            t = re.sub(r"\s+", " ", text).strip()
+            # Sponsors are procedural noise in a calendar body (Ian, 8/12).
+            t = re.sub(r"\s*\(Sponsored by[^)]*\)\s*\.?\s*$", "", t)
+            if len(t) > QUOTE_CHARS:
+                t = t[:QUOTE_CHARS].rstrip() + "…"
+            return f'Item #{num} "{t}"'
+        if all(re.sub(r"\s+", " ", t).strip().startswith(
+                "Review City Council action") for _, t in discussion):
+            # Standing post-council reviews: count them, note the pattern.
+            out.append(f"{len(discussion)} discussion item"
+                       f"{_s(len(discussion))} (all related to recent City "
+                       "Council actions)")
+        elif len(discussion) == 1:
+            out.append(f"1 discussion item: {_q(*discussion[0])}")
+        elif len(discussion) <= QUOTE_CAP:
+            out.append(f"{len(discussion)} discussion items:")
+            out += [_q(n, t) for n, t in discussion]
+        else:
+            out.append(f"{len(discussion)} discussion items")
+    if committee or workgroup:
+        parts = ([f"{committee} permanent committee"] if committee else []) \
+            + ([f"{workgroup} working group"] if workgroup else [])
+        last = workgroup if workgroup else committee
+        out.append(" and ".join(parts) + f" update{_s(last)}")
+    # Blank lines between blocks — breathing room in calendar bodies.
+    return "\n\n".join(out)
+
+
+def agenda_start(page1: bytes | str, day: date) -> tuple[int, int] | None:
     """(hour, minute) from the agenda header naming this meeting day.
 
+    Takes the page-1 TEXT (or raw PDF bytes, for direct callers).
     Conservative: the header must state OUR day, and exactly one distinct
     time for it — an ambiguous agenda leaves the typical time in place.
     """
-    with pdfplumber.open(io.BytesIO(pdf_bytes)) as pdf:
-        text = pdf.pages[0].extract_text() or ""
+    if isinstance(page1, bytes):
+        pages = _agenda_pages(page1, n=1)
+        text = pages[0] if pages else ""
+    else:
+        text = page1
     times: set[tuple[int, int]] = set()
     for m in AGENDA_HEADER_RE.finditer(text):
         try:
@@ -353,7 +492,9 @@ def enrich_board_agendas(events: list[Event], get_html, get_bytes,
                 continue
             spent += 1
             try:
-                t = agenda_start(get_bytes(agenda_url), d)
+                pages = _agenda_pages(get_bytes(agenda_url))
+                t = agenda_start(pages[0], d) if pages else None
+                summary = agenda_summary(pages)
             except Exception as exc:
                 print(f"[{SOURCE}] WARNING: agenda parse failed "
                       f"({agenda_url}): {exc}")
@@ -366,7 +507,8 @@ def enrich_board_agendas(events: list[Event], get_html, get_bytes,
             # should just BE the time (people trust close-in events). The
             # typical-time caveat only survives on UNenriched events, where
             # the uncertainty is real. (Ian, 2026-08-10.)
-            ev.description = f"Agenda: {agenda_url}"
+            ev.description = (f"{summary}\n\n" if summary else "") \
+                + f"Agenda: {agenda_url}"
 
 
 # ---------------------------------------------------------------------------
