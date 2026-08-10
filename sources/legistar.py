@@ -99,7 +99,12 @@ def agenda_block(items: list[dict]) -> str:
     def _bullet(t: str, n: int) -> str:
         t = t.lower()
         # Matter types like "Action Item" already end in the word — don't
-        # emit "action item items"; just pluralize what's there.
+        # emit "action item items"; just pluralize what's there. Types
+        # STARTING with it ("Item from Council") pluralize in place:
+        # "10 items from council", not "10 item from council items".
+        if t.startswith("item "):
+            label = t.replace("item", "items", 1) if n != 1 else t
+            return f"- {n} {label}"
         label = t if t.endswith("item") else f"{t} item"
         return f"- {n} {label}{'' if n == 1 else 's'}"
     return "Summary Agenda\n\n" + "\n".join(

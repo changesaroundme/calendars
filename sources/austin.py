@@ -311,9 +311,13 @@ AGENDA_FETCH_CAP = 16   # PDFs per run, across all boards (13 tracked;
                         # stays well under this)
 
 AGENDA_HEADER_RE = re.compile(
+    # "AT" is optional: UTC-style headers say "AUGUST 4, 2026 AT 5:00 P.M."
+    # but others (EUC, 10 Aug 2026) run date and time together. Safe to
+    # relax — a time must still follow the date immediately, AM/PM and all,
+    # and agenda_start still demands exactly one distinct time for the day.
     r"(JANUARY|FEBRUARY|MARCH|APRIL|MAY|JUNE|JULY|AUGUST|SEPTEMBER|OCTOBER"
-    r"|NOVEMBER|DECEMBER)\s+(\d{1,2}),\s*(\d{4}),?\s+AT\s+"
-    r"(\d{1,2})(?::(\d{2}))?\s*([AP])\.?M\b",
+    r"|NOVEMBER|DECEMBER)\s+(\d{1,2}),\s*(\d{4}),?\s+(?:AT\s+)?"
+    r"(\d{1,2})(?::(\d{2}))?\s*([AP])\.?\s*M\b",
     re.IGNORECASE)
 
 
@@ -550,18 +554,22 @@ def enrich_board_agendas(events: list[Event], get_html, get_bytes,
                 print(f"[{SOURCE}] WARNING: agenda parse failed "
                       f"({agenda_url}): {exc}")
                 continue
-            if t is None:
-                continue
-            ev.start = datetime(d.year, d.month, d.day, *t)
-            ev.end = ev.start + timedelta(hours=BOARD_MEETING_HOURS)
-            # No "start time from the agenda" commentary: a confirmed time
-            # should just BE the time (people trust close-in events). The
-            # typical-time caveat only survives on UNenriched events, where
-            # the uncertainty is real. (Ian, 2026-08-10.)
-            # Standardized shape (Ian, 2026-08-09): summary on top, then a
-            # — rule, then the link.
-            ev.description = (f"{summary}\n\n—\n\n" if summary else "") \
-                + f"Agenda: {agenda_url}"
+            # A fetched agenda ALWAYS contributes its link and digest —
+            # even when the header won't confirm a start time (Ian,
+            # 2026-08-10; the EUC agenda cost tonight's meeting its link
+            # under the old all-or-nothing rule). The time upgrade stays
+            # conservative: only a confirmed header replaces the start, and
+            # only then does the typical-time caveat drop — commentary
+            # survives exactly where the uncertainty is real.
+            caveat = ""
+            if t is not None:
+                ev.start = datetime(d.year, d.month, d.day, *t)
+                ev.end = ev.start + timedelta(hours=BOARD_MEETING_HOURS)
+            else:
+                caveat = ev.description  # typical-time / all-day note
+            ev.description = "\n\n".join(x for x in [
+                summary, "—" if summary else "", caveat,
+                f"Agenda: {agenda_url}"] if x)
 
 
 # ---------------------------------------------------------------------------
@@ -721,9 +729,11 @@ def note_related_budget_meetings(council: list[Event]) -> None:
         for ev in group:
             others = " and ".join(_day_of(x).strftime("%-d %b")
                                   for x in group if x is not ev)
+            s = "" if len(group) == 2 else "s"
             ev.description = ev.description.replace(
                 "Summary Agenda\n",
-                f"Summary Agenda\n(same agenda as the {others} meeting)\n", 1)
+                f"Summary Agenda\n(same agenda as the {others} "
+                f"meeting{s})\n", 1)
 
 
 def fetch_annual(session) -> bytes:

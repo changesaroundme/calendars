@@ -93,6 +93,14 @@ NESTED_BODIES = {
     "Mueller Local Government Corporation": "Mueller",
     "Austin Industrial Development Corporation": "AIDC",
 }
+# How each corporation reads in the digest's boards bullet ("- AHFC and
+# Mueller Local Government Boards" — Ian's wording, 2026-08-10); the short
+# NESTED_BODIES names stay for titles and bullet-dedup matching.
+NESTED_BULLETS = {
+    "Austin Housing Finance Corporation": "AHFC",
+    "Mueller Local Government Corporation": "Mueller Local Government",
+    "Austin Industrial Development Corporation": "AIDC",
+}
 
 
 def _hm(dt: datetime) -> str:
@@ -152,18 +160,23 @@ def condense_council(events: list[Event]) -> list[Event]:
         # Blank line between entries: with wrapped MeetingDetail URLs they
         # were unreadable run together (Ian, 8/12).
         also = "Also convening within this meeting:\n" + "\n\n".join(entries)
-        names = [NESTED_BODIES[b.summary] for b in boards]
-        joined = (" and ".join(names) if len(names) <= 2
-                  else ", ".join(names[:-1]) + f", and {names[-1]}")
         d0 = original.description or ""
-        if d0.startswith("Summary Agenda") and "\n\n—\n\n" in d0:
-            # The council agenda digest exists: the boards join it as a
-            # closing bullet (Ian's mock, 2026-08-09), and the per-board
-            # times/links move below the — rule with the other links.
-            head, tail = d0.split("\n\n—\n\n", 1)
-            bullet = (f"- {joined} board meeting"
-                      f"{'' if len(names) == 1 else 's'}")
-            cont.description = f"{head}\n{bullet}\n\n—\n\n{tail}\n\n{also}"
+        if d0.startswith("Summary Agenda"):
+            # Digest stays on top, links below the — rule (Ian, 2026-08-10).
+            # The corporations appear ONCE in the digest: their per-corp
+            # matter-type bullets ("- 1 ahfc meeting item") collapse into a
+            # single boards bullet; full names/times/links live below.
+            head, _, tail = d0.partition("\n\n—\n\n")
+            tokens = [NESTED_BODIES[b.summary].lower() for b in boards]
+            lines = [ln for ln in head.splitlines()
+                     if not (ln.startswith("- ")
+                             and any(t in ln.lower() for t in tokens))]
+            names = [NESTED_BULLETS[b.summary] for b in boards]
+            joined = (" and ".join(names) if len(names) <= 2
+                      else ", ".join(names[:-1]) + f", and {names[-1]}")
+            lines.append(f"- {joined} Board{'' if len(names) == 1 else 's'}")
+            cont.description = ("\n".join(lines) + "\n\n—\n\n"
+                                + "\n\n".join(x for x in [tail, also] if x))
         else:
             cont.description = also + (f"\n\n{d0}" if d0 else "")
         out[out.index(original)] = cont

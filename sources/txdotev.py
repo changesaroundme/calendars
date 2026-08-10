@@ -314,7 +314,11 @@ def _ranges_for_day(soup, day: date) -> list[tuple[int, int, int, int, str]]:
     """Distinct (h1,m1,h2,m2, block_text) ranges in blocks mentioning day."""
     seen: dict[tuple, str] = {}
     for el in soup.find_all(["h2", "h3", "td", "p", "li"]):
-        text = el.get_text(" ", strip=True)
+        # Expand "Aug. 13, 2026" -> "August 13, 2026" BEFORE the day match —
+        # schedule headers abbreviate months just like details tables do
+        # (the I-35 Georgetown page kept its 4:30-6:30 slot hidden behind
+        # exactly this until 2026-08-10).
+        text = _expand_months(el.get_text(" ", strip=True))
         if _long_date(text) != day:
             continue
         m = RANGE_RE.search(text)
@@ -731,6 +735,11 @@ def fetch_offline() -> list[Event]:
         "https://www.txdot.gov/projects/hearings-meetings/"
         "public-transportation/2026/public-hearing-public-transportation"
         ".html": FIXTURES / "txdotev_hm_pt_chapter31.html",
+        # Abbreviated-month schedule headers ("Aug. 13, 2026") — the range
+        # rule's month-expansion regression case.
+        "https://www.txdot.gov/projects/hearings-meetings/austin/2026/"
+        "i35-georgetown-to-round-rock-081326.html":
+            FIXTURES / "txdotev_hm_i35_georgetown.html",
     }
     enrich_index_events(
         index_events,
