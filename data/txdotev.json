@@ -9,7 +9,7 @@
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-012325-20250123@calendars.changesaroundme.com",
-  "description": "virtual public meeting.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 see the event page for details: https://www.txdot.gov/projects/hearings-meetings/public-transportation/2025/012325.html",
+  "description": "virtual public meeting.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 details post at the event link.",
   "all_day": true
  },
  {
@@ -22,7 +22,7 @@
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-012425-20250124@calendars.changesaroundme.com",
-  "description": "virtual public meeting.\n\nDetails and materials: https://www.txdot.gov/projects/hearings-meetings/public-transportation/2025/012425.html",
+  "description": "virtual public meeting.",
   "all_day": false
  },
  {
@@ -35,7 +35,7 @@
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-us281-blanco-relief-route-012925-20250129@calendars.changesaroundme.com",
-  "description": "in-person community workshop with virtual option.\n\nPublic comment deadline: 13 Feb 2025.\n\nDetails and materials: https://www.txdot.gov/projects/hearings-meetings/austin/2025/us281-blanco-relief-route-012925.html",
+  "description": "in-person community workshop with virtual option.\n\nPublic comment deadline: 13 Feb 2025.",
   "all_day": false
  },
  {
@@ -48,7 +48,7 @@
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-rm2243-fonsi-noa-030625-20250306@calendars.changesaroundme.com",
-  "description": "Time and venue are not listed on TxDOT's schedule index \u2014 see the event page for details: https://www.txdot.gov/projects/hearings-meetings/austin/2025/rm2243-fonsi-noa-030625.html",
+  "description": "Time and venue are not listed on TxDOT's schedule index \u2014 details post at the event link.",
   "all_day": true
  },
  {
@@ -61,7 +61,7 @@
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-statewide-transportation-improvement-program-february-2025-revision-20250415@calendars.changesaroundme.com",
-  "description": "Time and venue are not listed on TxDOT's schedule index \u2014 see the event page for details: https://www.txdot.gov/projects/hearings-meetings/transportation-planning/2025/statewide-transportation-improvement-program-february-2025-revision.html\n\nPublic comment deadline: 28 Apr 2025.",
+  "description": "Time and venue are not listed on TxDOT's schedule index \u2014 details post at the event link.\n\nPublic comment deadline: 28 Apr 2025.",
   "all_day": true
  },
  {
@@ -74,7 +74,7 @@
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-042225-20250422@calendars.changesaroundme.com",
-  "description": "virtual public meeting.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 see the event page for details: https://www.txdot.gov/projects/hearings-meetings/public-transportation/2025/042225.html",
+  "description": "virtual public meeting.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 details post at the event link.",
   "all_day": true
  },
  {
@@ -87,7 +87,7 @@
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-042525-20250425@calendars.changesaroundme.com",
-  "description": "virtual public meeting with in-person option.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 see the event page for details: https://www.txdot.gov/projects/hearings-meetings/public-transportation/2025/042525.html",
+  "description": "virtual public meeting with in-person option.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 details post at the event link.",
   "all_day": true
  },
  {
@@ -100,7 +100,7 @@
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-fm969-corridor-study-051525-20250515@calendars.changesaroundme.com",
-  "description": "virtual public meeting with in-person open house.\n\nPublic comment deadline: 16 Jun 2025.\n\nDetails and materials: https://www.txdot.gov/projects/hearings-meetings/austin/2025/fm969-corridor-study-051525.html",
+  "description": "virtual public meeting with in-person open house.\n\nPublic comment deadline: 16 Jun 2025.",
   "all_day": false
  },
  {
@@ -113,7 +113,7 @@
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-statewide-atp-071324-20250610@calendars.changesaroundme.com",
-  "description": "virtual public meeting with in-person options.\n\nPublic comment deadline: 13 Jul 2025.\n\nDetails and materials: https://www.txdot.gov/projects/hearings-meetings/public-transportation/2025/statewide-atp-071324.html",
+  "description": "virtual public meeting with in-person options.\n\nPublic comment deadline: 13 Jul 2025.",
   "all_day": false
  },
  {
@@ -126,7 +126,7 @@
   "status": "CONFIRMED",
   "kind": "hearing",
   "uid": "txdotev-hm-stip-fy-2025-2028-may-revision-20250624@calendars.changesaroundme.com",
-  "description": "virtual public hearing.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 see the event page for details: https://www.txdot.gov/projects/hearings-meetings/statewide/2025/stip-fy-2025-2028-may-revision.html\n\nPublic comment deadline: 7 Jul 2025.",
+  "description": "virtual public hearing.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 details post at the event link.\n\nPublic comment deadline: 7 Jul 2025.",
   "all_day": true
  },
  {
@@ -139,7 +139,7 @@
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-statewide-atp-071324-20250708@calendars.changesaroundme.com",
-  "description": "in-person public meeting with virtual option.\n\nPublic comment deadline: 13 Jul 2025.\n\nDetails and materials: https://www.txdot.gov/projects/hearings-meetings/public-transportation/2025/statewide-atp-071324.html",
+  "description": "in-person public meeting with virtual option.\n\nPublic comment deadline: 13 Jul 2025.",
   "all_day": false
  },
  {
@@ -152,7 +152,7 @@
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-072525-20250725@calendars.changesaroundme.com",
-  "description": "virtual public meeting.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 see the event page for details: https://www.txdot.gov/projects/hearings-meetings/public-transportation/2025/072525.html",
+  "description": "virtual public meeting.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 details post at the event link.",
   "all_day": true
  },
  {
@@ -165,7 +165,7 @@
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-fm973-corridor-project-082125-20250821@calendars.changesaroundme.com",
-  "description": "in-person open house with a virtual public meeting option.\n\nPublic comment deadline: 22 Sep 2025.\n\nDetails and materials: https://www.txdot.gov/projects/hearings-meetings/austin/2025/fm973-corridor-project-082125.html",
+  "description": "in-person open house with a virtual public meeting option.\n\nPublic comment deadline: 22 Sep 2025.",
   "all_day": false
  },
  {
@@ -178,7 +178,7 @@
   "status": "CONFIRMED",
   "kind": "hearing",
   "uid": "txdotev-hm-stip-fy-2025-2028-august-revision-20250909@calendars.changesaroundme.com",
-  "description": "virtual public hearing.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 see the event page for details: https://www.txdot.gov/projects/hearings-meetings/statewide/2025/stip-fy-2025-2028-august-revision.html\n\nPublic comment deadline: 22 Sep 2025.",
+  "description": "virtual public hearing.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 details post at the event link.\n\nPublic comment deadline: 22 Sep 2025.",
   "all_day": true
  },
  {
@@ -191,7 +191,7 @@
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-us290-from-sh130-to-sh95-092325-20250923@calendars.changesaroundme.com",
-  "description": "virtual community listening session with two in-person options.\n\nPublic comment deadline: 10 Oct 2025.\n\nDetails and materials: https://www.txdot.gov/projects/hearings-meetings/austin/2025/us290-from-sh130-to-sh95-092325.html",
+  "description": "virtual community listening session with two in-person options.\n\nPublic comment deadline: 10 Oct 2025.",
   "all_day": false
  },
  {
@@ -204,7 +204,7 @@
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-us290-from-sh130-to-sh95-092325-20250925@calendars.changesaroundme.com",
-  "description": "virtual community listening session with two in-person options.\n\nPublic comment deadline: 10 Oct 2025.\n\nDetails and materials: https://www.txdot.gov/projects/hearings-meetings/austin/2025/us290-from-sh130-to-sh95-092325.html",
+  "description": "virtual community listening session with two in-person options.\n\nPublic comment deadline: 10 Oct 2025.",
   "all_day": false
  },
  {
@@ -217,7 +217,7 @@
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-fm969-corridor-study-100225-20251002@calendars.changesaroundme.com",
-  "description": "virtual public meeting with an in person open house.\n\nPublic comment deadline: 3 Nov 2025.\n\nDetails and materials: https://www.txdot.gov/projects/hearings-meetings/austin/2025/fm969-corridor-study-100225.html",
+  "description": "virtual public meeting with an in person open house.\n\nPublic comment deadline: 3 Nov 2025.",
   "all_day": false
  },
  {
@@ -230,7 +230,7 @@
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-102325-20251023@calendars.changesaroundme.com",
-  "description": "virtual public meeting.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 see the event page for details: https://www.txdot.gov/projects/hearings-meetings/public-transportation/2025/102325.html",
+  "description": "virtual public meeting.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 details post at the event link.",
   "all_day": true
  },
  {
@@ -243,7 +243,7 @@
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-102425-20251024@calendars.changesaroundme.com",
-  "description": "virtual public meeting.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 see the event page for details: https://www.txdot.gov/projects/hearings-meetings/public-transportation/2025/102425.html",
+  "description": "virtual public meeting.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 details post at the event link.",
   "all_day": true
  },
  {
@@ -256,7 +256,7 @@
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-texas-statewide-multimodal-transit-plan-102025-20251113@calendars.changesaroundme.com",
-  "description": "Public comment deadline: 20 Nov 2025.\n\nDetails and materials: https://www.txdot.gov/projects/hearings-meetings/public-transportation/2025/texas-statewide-multimodal-transit-plan-102025.html",
+  "description": "Public comment deadline: 20 Nov 2025.",
   "all_day": false
  },
  {
@@ -269,7 +269,7 @@
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-us281-blanco-relief-route-study-111825-20251118@calendars.changesaroundme.com",
-  "description": "in-person community workshop with virtual option.\n\nPublic comment deadline: 9 Dec 2025.\n\nDetails and materials: https://www.txdot.gov/projects/hearings-meetings/austin/2025/us281-blanco-relief-route-study-111825.html",
+  "description": "in-person community workshop with virtual option.\n\nPublic comment deadline: 9 Dec 2025.",
   "all_day": false
  },
  {
@@ -282,7 +282,7 @@
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-us281-blanco-county-project-111825-20251118@calendars.changesaroundme.com",
-  "description": "in-person public meeting with virtual option.\n\nPublic comment deadline: 9 Dec 2025.\n\nDetails and materials: https://www.txdot.gov/projects/hearings-meetings/austin/2025/us281-blanco-county-project-111825.html",
+  "description": "in-person public meeting with virtual option.\n\nPublic comment deadline: 9 Dec 2025.",
   "all_day": false
  },
  {
@@ -295,7 +295,7 @@
   "status": "CONFIRMED",
   "kind": "hearing",
   "uid": "txdotev-hm-stip-fy-2025-2028-nov-revision-20251216@calendars.changesaroundme.com",
-  "description": "virtual public hearing.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 see the event page for details: https://www.txdot.gov/projects/hearings-meetings/statewide/2025/stip-fy-2025-2028-nov-revision.html\n\nPublic comment deadline: 29 Dec 2025.",
+  "description": "virtual public hearing.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 details post at the event link.\n\nPublic comment deadline: 29 Dec 2025.",
   "all_day": true
  },
  {
@@ -308,7 +308,7 @@
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-121925-20251219@calendars.changesaroundme.com",
-  "description": "virtual public meeting.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 see the event page for details: https://www.txdot.gov/projects/hearings-meetings/transportation-planning/2025/121925.html\n\nPublic comment deadline: 30 Jan 2026.",
+  "description": "virtual public meeting.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 details post at the event link.\n\nPublic comment deadline: 30 Jan 2026.",
   "all_day": true
  },
  {
@@ -360,7 +360,7 @@
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-us77-021926-20260219@calendars.changesaroundme.com",
-  "description": "in-person public meeting with a virtual option.\n\nPublic comment deadline: 23 Mar 2026.\n\nDetails and materials: https://www.txdot.gov/projects/hearings-meetings/austin/2026/us77-021926.html",
+  "description": "in-person public meeting with a virtual option.\n\nPublic comment deadline: 23 Mar 2026.",
   "all_day": false
  },
  {
@@ -373,7 +373,7 @@
   "status": "CONFIRMED",
   "kind": "hearing",
   "uid": "txdotev-hm-mopac-loop1-expressway-ea-030926-20260309@calendars.changesaroundme.com",
-  "description": "Draft Environmental Assessment and virtual public hearing with an in-person option.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 see the event page for details: https://www.txdot.gov/projects/hearings-meetings/austin/2026/mopac-loop1-expressway-ea-030926.html\n\nPublic comment deadline: 3 May 2026.",
+  "description": "Draft Environmental Assessment and virtual public hearing with an in-person option.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 details post at the event link.\n\nPublic comment deadline: 3 May 2026.",
   "all_day": true
  },
  {
@@ -386,7 +386,7 @@
   "status": "CONFIRMED",
   "kind": "hearing",
   "uid": "txdotev-hm-stip-fy-2025-2028-feb-revision-20260310@calendars.changesaroundme.com",
-  "description": "virtual public hearing.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 see the event page for details: https://www.txdot.gov/projects/hearings-meetings/statewide/2026/stip-fy-2025-2028-feb-revision.html\n\nPublic comment deadline: 23 Mar 2026.",
+  "description": "virtual public hearing.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 details post at the event link.\n\nPublic comment deadline: 23 Mar 2026.",
   "all_day": true
  },
  {
@@ -399,7 +399,7 @@
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-parmer-lane-032526-20260325@calendars.changesaroundme.com",
-  "description": "virtual public meeting with in-person open house.\n\nPublic comment deadline: 27 Apr 2026.\n\nDetails and materials: https://www.txdot.gov/projects/hearings-meetings/austin/2026/parmer-lane-032526.html",
+  "description": "virtual public meeting with in-person open house.\n\nPublic comment deadline: 27 Apr 2026.",
   "all_day": false
  },
  {
@@ -412,7 +412,7 @@
   "status": "CONFIRMED",
   "kind": "hearing",
   "uid": "txdotev-hm-us281-at-sh71-interchange-040926-20260409@calendars.changesaroundme.com",
-  "description": "draft environmental assessment and virtual public hearing with in-person open house.\n\nPublic comment deadline: 24 Apr 2026.\n\nDetails and materials: https://www.txdot.gov/projects/hearings-meetings/austin/2026/us281-at-sh71-interchange-040926.html",
+  "description": "draft environmental assessment and virtual public hearing with in-person open house.\n\nPublic comment deadline: 24 Apr 2026.",
   "all_day": false
  },
  {
@@ -425,7 +425,7 @@
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-noa-fonsi-rm620-anderson-mill-road-20260414@calendars.changesaroundme.com",
-  "description": "Time and venue are not listed on TxDOT's schedule index \u2014 see the event page for details: https://www.txdot.gov/projects/hearings-meetings/austin/2026/noa-fonsi-rm620-anderson-mill-road.html",
+  "description": "Time and venue are not listed on TxDOT's schedule index \u2014 details post at the event link.",
   "all_day": true
  },
  {
@@ -438,7 +438,7 @@
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-fm969-corridor-study-041526-20260415@calendars.changesaroundme.com",
-  "description": "in-person open house with a virtual option.\n\nPublic comment deadline: 18 May 2026.\n\nDetails and materials: https://www.txdot.gov/projects/hearings-meetings/austin/2026/fm969-corridor-study-041526.html",
+  "description": "in-person open house with a virtual option.\n\nPublic comment deadline: 18 May 2026.",
   "all_day": false
  },
  {
@@ -451,7 +451,7 @@
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-fm973-042226-20260422@calendars.changesaroundme.com",
-  "description": "virtual public meeting with in-person option.\n\nPublic comment deadline: 26 May 2026.\n\nDetails and materials: https://www.txdot.gov/projects/hearings-meetings/austin/2026/fm973-042226.html",
+  "description": "virtual public meeting with in-person option.\n\nPublic comment deadline: 26 May 2026.",
   "all_day": false
  },
  {
@@ -464,7 +464,7 @@
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-042326-20260423@calendars.changesaroundme.com",
-  "description": "Time and venue are not listed on TxDOT's schedule index \u2014 see the event page for details: https://www.txdot.gov/projects/hearings-meetings/public-transportation/2026/042326.html",
+  "description": "Time and venue are not listed on TxDOT's schedule index \u2014 details post at the event link.",
   "all_day": true
  },
  {
@@ -490,7 +490,7 @@
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-2027-2030-rtip-austin-district-20260429@calendars.changesaroundme.com",
-  "description": "virtual public meeting.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 see the event page for details: https://www.txdot.gov/projects/hearings-meetings/austin/2026/2027-2030-rtip-austin-district.html\n\nPublic comment deadline: 9 May 2026.",
+  "description": "virtual public meeting.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 details post at the event link.\n\nPublic comment deadline: 9 May 2026.",
   "all_day": true
  },
  {
@@ -503,7 +503,7 @@
   "status": "CONFIRMED",
   "kind": "hearing",
   "uid": "txdotev-hm-stip-may-2026-revision-20260505@calendars.changesaroundme.com",
-  "description": "virtual public hearing.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 see the event page for details: https://www.txdot.gov/projects/hearings-meetings/statewide/2026/stip-may-2026-revision.html\n\nPublic comment deadline: 18 May 2026.",
+  "description": "virtual public hearing.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 details post at the event link.\n\nPublic comment deadline: 18 May 2026.",
   "all_day": true
  },
  {
@@ -529,7 +529,7 @@
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-actionetwork-20260615@calendars.changesaroundme.com",
-  "description": "virtual engagement opportunity.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 see the event page for details: https://www.txdot.gov/projects/hearings-meetings/public-transportation/2026/actionetwork.html\n\nPublic comment deadline: 10 Jul 2026.",
+  "description": "virtual engagement opportunity.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 details post at the event link.\n\nPublic comment deadline: 10 Jul 2026.",
   "all_day": true
  },
  {
@@ -542,7 +542,7 @@
   "status": "CONFIRMED",
   "kind": "hearing",
   "uid": "txdotev-hm-statewide-transportation-improvement-program-fy-2027-2030-20260630@calendars.changesaroundme.com",
-  "description": "virtual public hearing.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 see the event page for details: https://www.txdot.gov/projects/hearings-meetings/transportation-planning/2026/statewide-transportation-improvement-program-fy-2027-2030.html\n\nPublic comment deadline: 13 Jul 2026.",
+  "description": "virtual public hearing.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 details post at the event link.\n\nPublic comment deadline: 13 Jul 2026.",
   "all_day": true
  },
  {
@@ -594,7 +594,7 @@
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-us281-073026-20260730@calendars.changesaroundme.com",
-  "description": "virtual public meeting with in-person option.\n\nPublic comment deadline: 14 Aug 2026.\n\nDetails and materials: https://www.txdot.gov/projects/hearings-meetings/austin/2026/us281-073026.html",
+  "description": "virtual public meeting with in-person option.\n\nPublic comment deadline: 14 Aug 2026.",
   "all_day": false
  },
  {
@@ -633,7 +633,7 @@
   "status": "CONFIRMED",
   "kind": "hearing",
   "uid": "txdotev-hm-public-hearing-public-transportation-20260806@calendars.changesaroundme.com",
-  "description": "in-person public hearing.\n\nPublic comment deadline: 5pm CT 10 Aug 2026.\n\nDetails and materials: https://www.txdot.gov/projects/hearings-meetings/public-transportation/2026/public-hearing-public-transportation.html",
+  "description": "in-person public hearing.\n\nPublic comment deadline: 5pm CT 10 Aug 2026.",
   "all_day": false
  },
  {
@@ -672,7 +672,7 @@
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-i35-georgetown-to-round-rock-081326-20260813@calendars.changesaroundme.com",
-  "description": "in-person public meeting with virtual option.\n\nPublic comment deadline: 28 Aug 2026.\n\nDetails and materials: https://www.txdot.gov/projects/hearings-meetings/austin/2026/i35-georgetown-to-round-rock-081326.html",
+  "description": "in-person public meeting with virtual option.\n\nPublic comment deadline: 28 Aug 2026.",
   "all_day": false
  },
  {

@@ -28,7 +28,7 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:txdotev-hm-fm973-corridor-project-082125-20250821@calendars.changesarou
  ndme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;TZID=America/Chicago:20250821T160000
 DTEND;TZID=America/Chicago:20250821T190000
 SUMMARY:TxDOT - FM 973 Corridor Project
@@ -37,16 +37,14 @@ LOCATION:on Thursday\, August 21\, 2025. Dickey-Givens Community Center 101
 URL:https://www.txdot.gov/projects/hearings-meetings/austin/2025/fm973-corr
  idor-project-082125.html
 DESCRIPTION:in-person open house with a virtual public meeting option.\n\nP
- ublic comment deadline: 22 Sep 2025.\n\nDetails and materials: https://www
- .txdot.gov/projects/hearings-meetings/austin/2025/fm973-corridor-project-0
- 82125.html
+ ublic comment deadline: 22 Sep 2025.
 CATEGORIES:engagement
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-stip-fy-2025-2028-august-revision-20250909@calendars.changes
  aroundme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;VALUE=DATE:20250909
 SUMMARY:TxDOT - Statewide Transportation Improvement Program for FY 2025 - 
  2028 - August Revision
@@ -54,16 +52,15 @@ LOCATION:Statewide
 URL:https://www.txdot.gov/projects/hearings-meetings/statewide/2025/stip-fy
  -2025-2028-august-revision.html
 DESCRIPTION:virtual public hearing.\n\nTime and venue are not listed on TxD
- OT's schedule index — see the event page for details: https://www.txdot.
- gov/projects/hearings-meetings/statewide/2025/stip-fy-2025-2028-august-rev
- ision.html\n\nPublic comment deadline: 22 Sep 2025.
+ OT's schedule index — details post at the event link.\n\nPublic comment 
+ deadline: 22 Sep 2025.
 CATEGORIES:hearing
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-us290-from-sh130-to-sh95-092325-20250923@calendars.changesar
  oundme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;TZID=America/Chicago:20250923T173000
 DTEND;TZID=America/Chicago:20250923T190000
 SUMMARY:TxDOT - US 290 from SH 130 to SH 95 South (Elgin)
@@ -72,16 +69,14 @@ LOCATION:Manor Elementary Early Learning Center 12904 Gregg Manor Road Elgi
 URL:https://www.txdot.gov/projects/hearings-meetings/austin/2025/us290-from
  -sh130-to-sh95-092325.html
 DESCRIPTION:virtual community listening session with two in-person options.
- \n\nPublic comment deadline: 10 Oct 2025.\n\nDetails and materials: https:
- //www.txdot.gov/projects/hearings-meetings/austin/2025/us290-from-sh130-to
- -sh95-092325.html
+ \n\nPublic comment deadline: 10 Oct 2025.
 CATEGORIES:engagement
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-us290-from-sh130-to-sh95-092325-20250925@calendars.changesar
  oundme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;TZID=America/Chicago:20250925T173000
 DTEND;TZID=America/Chicago:20250925T190000
 SUMMARY:TxDOT - US 290 from SH 130 to SH 95 South (Elgin)
@@ -90,16 +85,14 @@ LOCATION:Austin Community College: Elgin Campus Building 1000 1501 US 290 E
 URL:https://www.txdot.gov/projects/hearings-meetings/austin/2025/us290-from
  -sh130-to-sh95-092325.html
 DESCRIPTION:virtual community listening session with two in-person options.
- \n\nPublic comment deadline: 10 Oct 2025.\n\nDetails and materials: https:
- //www.txdot.gov/projects/hearings-meetings/austin/2025/us290-from-sh130-to
- -sh95-092325.html
+ \n\nPublic comment deadline: 10 Oct 2025.
 CATEGORIES:engagement
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-fm969-corridor-study-100225-20251002@calendars.changesaround
  me.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;TZID=America/Chicago:20251002T160000
 DTEND;TZID=America/Chicago:20251002T190000
 SUMMARY:TxDOT - FM 969 Corridor Study (Elgin)
@@ -107,44 +100,40 @@ LOCATION:Spiderwood Studios 140 Utley Road Elgin\, TX 78621
 URL:https://www.txdot.gov/projects/hearings-meetings/austin/2025/fm969-corr
  idor-study-100225.html
 DESCRIPTION:virtual public meeting with an in person open house.\n\nPublic 
- comment deadline: 3 Nov 2025.\n\nDetails and materials: https://www.txdot.
- gov/projects/hearings-meetings/austin/2025/fm969-corridor-study-100225.htm
- l
+ comment deadline: 3 Nov 2025.
 CATEGORIES:engagement
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-102325-20251023@calendars.changesaroundme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;VALUE=DATE:20251023
 SUMMARY:TxDOT - Public Transportation Advisory Committee
 LOCATION:Statewide
 URL:https://www.txdot.gov/projects/hearings-meetings/public-transportation/
  2025/102325.html
 DESCRIPTION:virtual public meeting.\n\nTime and venue are not listed on TxD
- OT's schedule index — see the event page for details: https://www.txdot.
- gov/projects/hearings-meetings/public-transportation/2025/102325.html
+ OT's schedule index — details post at the event link.
 CATEGORIES:engagement
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-102425-20251024@calendars.changesaroundme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;VALUE=DATE:20251024
 SUMMARY:TxDOT - Bicycle and Pedestrian Advisory Committee Quarterly Meeting
 LOCATION:Statewide
 URL:https://www.txdot.gov/projects/hearings-meetings/public-transportation/
  2025/102425.html
 DESCRIPTION:virtual public meeting.\n\nTime and venue are not listed on TxD
- OT's schedule index — see the event page for details: https://www.txdot.
- gov/projects/hearings-meetings/public-transportation/2025/102425.html
+ OT's schedule index — details post at the event link.
 CATEGORIES:engagement
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-texas-statewide-multimodal-transit-plan-102025-20251113@cale
  ndars.changesaroundme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;TZID=America/Chicago:20251113T173000
 DTEND;TZID=America/Chicago:20251113T193000
 SUMMARY:TxDOT - Texas Statewide Multimodal Transit Plan virtual public meet
@@ -152,16 +141,14 @@ SUMMARY:TxDOT - Texas Statewide Multimodal Transit Plan virtual public meet
 LOCATION:Cherrywood Center 1605 E 38th 1/2 St. Austin\, TX 78722
 URL:https://www.txdot.gov/projects/hearings-meetings/public-transportation/
  2025/texas-statewide-multimodal-transit-plan-102025.html
-DESCRIPTION:Public comment deadline: 20 Nov 2025.\n\nDetails and materials:
-  https://www.txdot.gov/projects/hearings-meetings/public-transportation/20
- 25/texas-statewide-multimodal-transit-plan-102025.html
+DESCRIPTION:Public comment deadline: 20 Nov 2025.
 CATEGORIES:engagement
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-us281-blanco-relief-route-study-111825-20251118@calendars.ch
  angesaroundme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;TZID=America/Chicago:20251118T160000
 DTEND;TZID=America/Chicago:20251118T190000
 SUMMARY:TxDOT - US 281 Blanco Relief Route Study (Blanco)
@@ -169,16 +156,14 @@ LOCATION:Blanco High School Cafeteria & Gym 1215 4th St. Blanco\, TX 78606
 URL:https://www.txdot.gov/projects/hearings-meetings/austin/2025/us281-blan
  co-relief-route-study-111825.html
 DESCRIPTION:in-person community workshop with virtual option.\n\nPublic com
- ment deadline: 9 Dec 2025.\n\nDetails and materials: https://www.txdot.gov
- /projects/hearings-meetings/austin/2025/us281-blanco-relief-route-study-11
- 1825.html
+ ment deadline: 9 Dec 2025.
 CATEGORIES:engagement
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-us281-blanco-county-project-111825-20251118@calendars.change
  saroundme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;TZID=America/Chicago:20251118T160000
 DTEND;TZID=America/Chicago:20251118T190000
 SUMMARY:TxDOT - US 281 Blanco County Project (Blanco)
@@ -186,16 +171,14 @@ LOCATION:Blanco High School Cafeteria & Gym 1215 4th St. Blanco\, TX 78606
 URL:https://www.txdot.gov/projects/hearings-meetings/austin/2025/us281-blan
  co-county-project-111825.html
 DESCRIPTION:in-person public meeting with virtual option.\n\nPublic comment
-  deadline: 9 Dec 2025.\n\nDetails and materials: https://www.txdot.gov/pro
- jects/hearings-meetings/austin/2025/us281-blanco-county-project-111825.htm
- l
+  deadline: 9 Dec 2025.
 CATEGORIES:engagement
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-stip-fy-2025-2028-nov-revision-20251216@calendars.changesaro
  undme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;VALUE=DATE:20251216
 SUMMARY:TxDOT - Statewide Transportation Improvement Program for FY 2025 - 
  2028 - November revision
@@ -203,15 +186,14 @@ LOCATION:Statewide
 URL:https://www.txdot.gov/projects/hearings-meetings/statewide/2025/stip-fy
  -2025-2028-nov-revision.html
 DESCRIPTION:virtual public hearing.\n\nTime and venue are not listed on TxD
- OT's schedule index — see the event page for details: https://www.txdot.
- gov/projects/hearings-meetings/statewide/2025/stip-fy-2025-2028-nov-revisi
- on.html\n\nPublic comment deadline: 29 Dec 2025.
+ OT's schedule index — details post at the event link.\n\nPublic comment 
+ deadline: 29 Dec 2025.
 CATEGORIES:hearing
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-121925-20251219@calendars.changesaroundme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;VALUE=DATE:20251219
 SUMMARY:TxDOT - Texas-Mexico Border Transportation Master Plan (BTMP) Updat
  e
@@ -219,16 +201,15 @@ LOCATION:Statewide
 URL:https://www.txdot.gov/projects/hearings-meetings/transportation-plannin
  g/2025/121925.html
 DESCRIPTION:virtual public meeting.\n\nTime and venue are not listed on TxD
- OT's schedule index — see the event page for details: https://www.txdot.
- gov/projects/hearings-meetings/transportation-planning/2025/121925.html\n\
- nPublic comment deadline: 30 Jan 2026.
+ OT's schedule index — details post at the event link.\n\nPublic comment 
+ deadline: 30 Jan 2026.
 CATEGORIES:engagement
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-public-transportation-advisory-committee-20260122T1000@calendar
  s.changesaroundme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;TZID=America/Chicago:20260122T100000
 DTEND;TZID=America/Chicago:20260122T120000
 SUMMARY:TxDOT PTAC - Meeting
@@ -244,7 +225,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-bicycle-and-pedestrian-advisory-committee-20260130T0930@calenda
  rs.changesaroundme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;TZID=America/Chicago:20260130T093000
 DTEND;TZID=America/Chicago:20260130T113000
 SUMMARY:TxDOT BPAC - Meeting
@@ -260,7 +241,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-public-transportation-advisory-committee-20260209T1000@calendar
  s.changesaroundme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;TZID=America/Chicago:20260209T100000
 DTEND;TZID=America/Chicago:20260209T120000
 SUMMARY:TxDOT PTAC - Meeting
@@ -276,7 +257,7 @@ X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-us77-021926-20260219@calendars.changesaroundme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;TZID=America/Chicago:20260219T163000
 DTEND;TZID=America/Chicago:20260219T183000
 SUMMARY:TxDOT - US 77 from FM 2440 to SH 21
@@ -284,15 +265,14 @@ LOCATION:American Legion York Post 276 1502 U.S. 77 Giddings\, TX 78942
 URL:https://www.txdot.gov/projects/hearings-meetings/austin/2026/us77-02192
  6.html
 DESCRIPTION:in-person public meeting with a virtual option.\n\nPublic comme
- nt deadline: 23 Mar 2026.\n\nDetails and materials: https://www.txdot.gov/
- projects/hearings-meetings/austin/2026/us77-021926.html
+ nt deadline: 23 Mar 2026.
 CATEGORIES:engagement
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-mopac-loop1-expressway-ea-030926-20260309@calendars.changesa
  roundme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;VALUE=DATE:20260309
 SUMMARY:TxDOT - MoPac (Loop 1) Expressway from Cesar Chavez Street to Slaug
  hter Lane
@@ -301,16 +281,15 @@ URL:https://www.txdot.gov/projects/hearings-meetings/austin/2026/mopac-loop
  1-expressway-ea-030926.html
 DESCRIPTION:Draft Environmental Assessment and virtual public hearing with 
  an in-person option.\n\nTime and venue are not listed on TxDOT's schedule 
- index — see the event page for details: https://www.txdot.gov/projects/h
- earings-meetings/austin/2026/mopac-loop1-expressway-ea-030926.html\n\nPubl
- ic comment deadline: 3 May 2026.
+ index — details post at the event link.\n\nPublic comment deadline: 3 Ma
+ y 2026.
 CATEGORIES:hearing
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-stip-fy-2025-2028-feb-revision-20260310@calendars.changesaro
  undme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;VALUE=DATE:20260310
 SUMMARY:TxDOT - Statewide Transportation Improvement Program for FY 2025 - 
  2028 - February revision
@@ -318,15 +297,14 @@ LOCATION:Statewide
 URL:https://www.txdot.gov/projects/hearings-meetings/statewide/2026/stip-fy
  -2025-2028-feb-revision.html
 DESCRIPTION:virtual public hearing.\n\nTime and venue are not listed on TxD
- OT's schedule index — see the event page for details: https://www.txdot.
- gov/projects/hearings-meetings/statewide/2026/stip-fy-2025-2028-feb-revisi
- on.html\n\nPublic comment deadline: 23 Mar 2026.
+ OT's schedule index — details post at the event link.\n\nPublic comment 
+ deadline: 23 Mar 2026.
 CATEGORIES:hearing
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-parmer-lane-032526-20260325@calendars.changesaroundme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;TZID=America/Chicago:20260325T160000
 DTEND;TZID=America/Chicago:20260325T190000
 SUMMARY:TxDOT - Parmer Lane (FM 734) Corridor Study Open House
@@ -334,15 +312,14 @@ LOCATION:Austin
 URL:https://www.txdot.gov/projects/hearings-meetings/austin/2026/parmer-lan
  e-032526.html
 DESCRIPTION:virtual public meeting with in-person open house.\n\nPublic com
- ment deadline: 27 Apr 2026.\n\nDetails and materials: https://www.txdot.go
- v/projects/hearings-meetings/austin/2026/parmer-lane-032526.html
+ ment deadline: 27 Apr 2026.
 CATEGORIES:engagement
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-us281-at-sh71-interchange-040926-20260409@calendars.changesa
  roundme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;TZID=America/Chicago:20260409T173000
 DTEND;TZID=America/Chicago:20260409T193000
 SUMMARY:TxDOT - US 281 at SH 71 Interchange
@@ -350,16 +327,14 @@ LOCATION:Marble Falls
 URL:https://www.txdot.gov/projects/hearings-meetings/austin/2026/us281-at-s
  h71-interchange-040926.html
 DESCRIPTION:draft environmental assessment and virtual public hearing with 
- in-person open house.\n\nPublic comment deadline: 24 Apr 2026.\n\nDetails 
- and materials: https://www.txdot.gov/projects/hearings-meetings/austin/202
- 6/us281-at-sh71-interchange-040926.html
+ in-person open house.\n\nPublic comment deadline: 24 Apr 2026.
 CATEGORIES:hearing
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-noa-fonsi-rm620-anderson-mill-road-20260414@calendars.change
  saroundme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;VALUE=DATE:20260414
 SUMMARY:TxDOT - Notice of Availability for Finding of No Significant Impact
   (FONSI) - RM 620 / Anderson Mill Road from South of Foundation Road to Li
@@ -367,16 +342,15 @@ SUMMARY:TxDOT - Notice of Availability for Finding of No Significant Impact
 LOCATION:Travis and Williamson counties
 URL:https://www.txdot.gov/projects/hearings-meetings/austin/2026/noa-fonsi-
  rm620-anderson-mill-road.html
-DESCRIPTION:Time and venue are not listed on TxDOT's schedule index — see
-  the event page for details: https://www.txdot.gov/projects/hearings-meeti
- ngs/austin/2026/noa-fonsi-rm620-anderson-mill-road.html
+DESCRIPTION:Time and venue are not listed on TxDOT's schedule index — det
+ ails post at the event link.
 CATEGORIES:engagement
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-fm969-corridor-study-041526-20260415@calendars.changesaround
  me.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;TZID=America/Chicago:20260415T160000
 DTEND;TZID=America/Chicago:20260415T190000
 SUMMARY:TxDOT - FM 969 Corridor Study from SH 130 to SH 71
@@ -385,14 +359,13 @@ LOCATION:on Wednesday\, April 15\, 2026: Spiderwood Studios 140 Utley Road
 URL:https://www.txdot.gov/projects/hearings-meetings/austin/2026/fm969-corr
  idor-study-041526.html
 DESCRIPTION:in-person open house with a virtual option.\n\nPublic comment d
- eadline: 18 May 2026.\n\nDetails and materials: https://www.txdot.gov/proj
- ects/hearings-meetings/austin/2026/fm969-corridor-study-041526.html
+ eadline: 18 May 2026.
 CATEGORIES:engagement
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-fm973-042226-20260422@calendars.changesaroundme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;TZID=America/Chicago:20260422T160000
 DTEND;TZID=America/Chicago:20260422T190000
 SUMMARY:TxDOT - FM 973 - US 290 to Samsung Hwy
@@ -400,30 +373,28 @@ LOCATION:Manor
 URL:https://www.txdot.gov/projects/hearings-meetings/austin/2026/fm973-0422
  26.html
 DESCRIPTION:virtual public meeting with in-person option.\n\nPublic comment
-  deadline: 26 May 2026.\n\nDetails and materials: https://www.txdot.gov/pr
- ojects/hearings-meetings/austin/2026/fm973-042226.html
+  deadline: 26 May 2026.
 CATEGORIES:engagement
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-042326-20260423@calendars.changesaroundme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;VALUE=DATE:20260423
 SUMMARY:TxDOT - Public Transportation Advisory Committee - virtual public m
  eeting - This meeting has been rescheduled to May 6\, 2026
 LOCATION:Statewide
 URL:https://www.txdot.gov/projects/hearings-meetings/public-transportation/
  2026/042326.html
-DESCRIPTION:Time and venue are not listed on TxDOT's schedule index — see
-  the event page for details: https://www.txdot.gov/projects/hearings-meeti
- ngs/public-transportation/2026/042326.html
+DESCRIPTION:Time and venue are not listed on TxDOT's schedule index — det
+ ails post at the event link.
 CATEGORIES:engagement
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-bicycle-and-pedestrian-advisory-committee-20260424T0930@calenda
  rs.changesaroundme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;TZID=America/Chicago:20260424T093000
 DTEND;TZID=America/Chicago:20260424T113000
 SUMMARY:TxDOT BPAC - Meeting
@@ -442,7 +413,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-2027-2030-rtip-austin-district-20260429@calendars.changesaro
  undme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;VALUE=DATE:20260429
 SUMMARY:TxDOT - 2027 - 2030 Rural Transportation Improvement Program Austin
   District
@@ -450,16 +421,15 @@ LOCATION:Blanco\, Gillespie\, Lee\, Llano and Mason counties
 URL:https://www.txdot.gov/projects/hearings-meetings/austin/2026/2027-2030-
  rtip-austin-district.html
 DESCRIPTION:virtual public meeting.\n\nTime and venue are not listed on TxD
- OT's schedule index — see the event page for details: https://www.txdot.
- gov/projects/hearings-meetings/austin/2026/2027-2030-rtip-austin-district.
- html\n\nPublic comment deadline: 9 May 2026.
+ OT's schedule index — details post at the event link.\n\nPublic comment 
+ deadline: 9 May 2026.
 CATEGORIES:engagement
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-stip-may-2026-revision-20260505@calendars.changesaroundme.co
  m
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;VALUE=DATE:20260505
 SUMMARY:TxDOT - Statewide Transportation Improvement Program: May 2026 Revi
  sion
@@ -467,16 +437,15 @@ LOCATION:Statewide
 URL:https://www.txdot.gov/projects/hearings-meetings/statewide/2026/stip-ma
  y-2026-revision.html
 DESCRIPTION:virtual public hearing.\n\nTime and venue are not listed on TxD
- OT's schedule index — see the event page for details: https://www.txdot.
- gov/projects/hearings-meetings/statewide/2026/stip-may-2026-revision.html\
- n\nPublic comment deadline: 18 May 2026.
+ OT's schedule index — details post at the event link.\n\nPublic comment 
+ deadline: 18 May 2026.
 CATEGORIES:hearing
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-public-transportation-advisory-committee-20260506T1000@calendar
  s.changesaroundme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;TZID=America/Chicago:20260506T100000
 DTEND;TZID=America/Chicago:20260506T120000
 SUMMARY:TxDOT PTAC - Meeting
@@ -492,7 +461,7 @@ X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-actionetwork-20260615@calendars.changesaroundme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;VALUE=DATE:20260615
 SUMMARY:TxDOT - Active Transportation Investment Opportunity Network (ACTIO
  N)
@@ -500,33 +469,30 @@ LOCATION:Statewide
 URL:https://www.txdot.gov/projects/hearings-meetings/public-transportation/
  2026/actionetwork.html
 DESCRIPTION:virtual engagement opportunity.\n\nTime and venue are not liste
- d on TxDOT's schedule index — see the event page for details: https://ww
- w.txdot.gov/projects/hearings-meetings/public-transportation/2026/actionet
- work.html\n\nPublic comment deadline: 10 Jul 2026.
+ d on TxDOT's schedule index — details post at the event link.\n\nPublic 
+ comment deadline: 10 Jul 2026.
 CATEGORIES:engagement
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-statewide-transportation-improvement-program-fy-2027-2030-20
  260630@calendars.changesaroundme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;VALUE=DATE:20260630
 SUMMARY:TxDOT - Statewide Transportation Improvement Program - FY 2027-2030
 LOCATION:Statewide
 URL:https://www.txdot.gov/projects/hearings-meetings/transportation-plannin
  g/2026/statewide-transportation-improvement-program-fy-2027-2030.html
 DESCRIPTION:virtual public hearing.\n\nTime and venue are not listed on TxD
- OT's schedule index — see the event page for details: https://www.txdot.
- gov/projects/hearings-meetings/transportation-planning/2026/statewide-tran
- sportation-improvement-program-fy-2027-2030.html\n\nPublic comment deadlin
- e: 13 Jul 2026.
+ OT's schedule index — details post at the event link.\n\nPublic comment 
+ deadline: 13 Jul 2026.
 CATEGORIES:hearing
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-utp-virtual-public-meeting-20260701@calendars.changesaroundme.c
  om
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;TZID=America/Chicago:20260701T140000
 DTEND;TZID=America/Chicago:20260701T160000
 SUMMARY:TxDOT - UTP: Virtual public meeting
@@ -541,7 +507,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-utp-virtual-public-hearing-20260729@calendars.changesaroundme.c
  om
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;TZID=America/Chicago:20260729T140000
 DTEND;TZID=America/Chicago:20260729T160000
 SUMMARY:TxDOT - UTP: Virtual public hearing
@@ -556,7 +522,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-txdot-texas-triangle-multimodal-strategic-plan-webinar-20260730
  T1200@calendars.changesaroundme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;TZID=America/Chicago:20260730T120000
 DTEND;TZID=America/Chicago:20260730T140000
 SUMMARY:TxDOT - Texas Triangle Multimodal Strategic Plan Webinar
@@ -575,7 +541,7 @@ X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-us281-073026-20260730@calendars.changesaroundme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;TZID=America/Chicago:20260730T160000
 DTEND;TZID=America/Chicago:20260730T190000
 SUMMARY:TxDOT - US 281 Blanco County Project (Blanco)
@@ -583,15 +549,14 @@ LOCATION:Blanco High School Cafeteria 1215 4th St. Blanco\, TX 78606
 URL:https://www.txdot.gov/projects/hearings-meetings/austin/2026/us281-0730
  26.html
 DESCRIPTION:virtual public meeting with in-person option.\n\nPublic comment
-  deadline: 14 Aug 2026.\n\nDetails and materials: https://www.txdot.gov/pr
- ojects/hearings-meetings/austin/2026/us281-073026.html
+  deadline: 14 Aug 2026.
 CATEGORIES:engagement
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-bicycle-and-pedestrian-advisory-committee-20260731T0930@calenda
  rs.changesaroundme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;TZID=America/Chicago:20260731T093000
 DTEND;TZID=America/Chicago:20260731T113000
 SUMMARY:TxDOT BPAC - Meeting
@@ -614,7 +579,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-txdot-i-14-extension-public-meeting-temple-20260805T1700@calend
  ars.changesaroundme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;TZID=America/Chicago:20260805T170000
 DTEND;TZID=America/Chicago:20260805T190000
 SUMMARY:TxDOT - I-14 Extension Public Meeting (Temple)
@@ -636,7 +601,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-public-hearing-public-transportation-20260806@calendars.chan
  gesaroundme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;TZID=America/Chicago:20260806T090000
 DTEND;TZID=America/Chicago:20260806T110000
 SUMMARY:TxDOT - Public Transportation Division Chapter 31 Amendments
@@ -645,16 +610,14 @@ LOCATION:Texas Department of Transportation\, 6230 E. Stassney Lane\, Duro
 URL:https://www.txdot.gov/projects/hearings-meetings/public-transportation/
  2026/public-hearing-public-transportation.html
 DESCRIPTION:in-person public hearing.\n\nPublic comment deadline: 5pm CT 10
-  Aug 2026.\n\nDetails and materials: https://www.txdot.gov/projects/hearin
- gs-meetings/public-transportation/2026/public-hearing-public-transportatio
- n.html
+  Aug 2026.
 CATEGORIES:hearing
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-txdot-i-14-extension-public-meeting-belton-20260806T1700@calend
  ars.changesaroundme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;TZID=America/Chicago:20260806T170000
 DTEND;TZID=America/Chicago:20260806T190000
 SUMMARY:TxDOT - I-14 Extension Public Meeting (Belton)
@@ -674,7 +637,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-public-transportation-advisory-committee-20260813T1000@calendar
  s.changesaroundme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;TZID=America/Chicago:20260813T100000
 DTEND;TZID=America/Chicago:20260813T120000
 SUMMARY:TxDOT PTAC - Meeting
@@ -690,7 +653,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-i35-georgetown-to-round-rock-081326-20260813@calendars.chang
  esaroundme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;TZID=America/Chicago:20260813T163000
 DTEND;TZID=America/Chicago:20260813T183000
 SUMMARY:TxDOT - I-35 Georgetown to Round Rock
@@ -699,16 +662,14 @@ LOCATION:Williamson County Georgetown Annex 100 Wilco Way Georgetown\, TX 7
 URL:https://www.txdot.gov/projects/hearings-meetings/austin/2026/i35-george
  town-to-round-rock-081326.html
 DESCRIPTION:in-person public meeting with virtual option.\n\nPublic comment
-  deadline: 28 Aug 2026.\n\nDetails and materials: https://www.txdot.gov/pr
- ojects/hearings-meetings/austin/2026/i35-georgetown-to-round-rock-081326.h
- tml
+  deadline: 28 Aug 2026.
 CATEGORIES:engagement
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-bicycle-and-pedestrian-advisory-committee-20261106T0930@calenda
  rs.changesaroundme.com
-DTSTAMP:20260810T042948Z
+DTSTAMP:20260810T044718Z
 DTSTART;TZID=America/Chicago:20261106T093000
 DTEND;TZID=America/Chicago:20261106T113000
 SUMMARY:TxDOT BPAC - Meeting
