@@ -267,9 +267,10 @@ def parse_hearings_index(html: str, owned_urls: set[str] | None = None,
         rows += 1
         topic, how = _split_modality(desc)
         url = href if href.startswith("http") else f"https://www.txdot.gov{href}"
+        # No raw URL in the body — the event's url field carries it.
         body = [f"{how}." if how else "",
                 "Time and venue are not listed on TxDOT's schedule index — "
-                f"see the event page for details: {url}"]
+                "details post at the event link."]
         events.append(Event(
             source=SOURCE,
             summary=f"TxDOT - {topic}",
@@ -433,12 +434,13 @@ def enrich_index_event(ev: Event, html: str) -> None:
         ev.start, ev.end = timed
         if venue:
             ev.location = venue
-        # The "time and venue not listed" caveat is no longer true.
+        # The "time and venue not listed" caveat is no longer true. No
+        # "Details and materials" line either — it would repeat the event's
+        # own url field verbatim (Ian, 2026-08-10).
         ev.description = "\n\n".join(x for x in [
             ev.description.split("\n\n")[0]
             if not ev.description.startswith("Time and venue") else "",
             f"Public comment deadline: {deadline}." if deadline else "",
-            f"Details and materials: {ev.url}",
         ] if x)
     elif deadline:
         ev.description += f"\n\nPublic comment deadline: {deadline}."

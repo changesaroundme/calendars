@@ -127,8 +127,9 @@ BOARDS = [
     ("Electric Utility Commission",
      "https://www.austintexas.gov/boards-commissions/board/electric-utility-commission",
      "https://www.austintexas.gov/boards-commissions/meetings/27_1",
-     "18:00", ("Austin Energy Headquarters at Mueller, Shudde Fath "
-               "Conference Room, 4815 Mueller Blvd., Austin, TX 78723")),
+     # Exactly this form — Apple's calendar apps geocode it (Ian, 8/10).
+     "18:00", ("Austin Energy Headquarters, 4815 Mueller Blvd, "
+               "Austin, TX 78723, United States")),
     ("Water and Wastewater Commission",
      "https://www.austintexas.gov/boards-commissions/board/water-and-wastewater-commission",
      "https://www.austintexas.gov/boards-commissions/meetings/52_1",
@@ -228,10 +229,15 @@ def parse_board_page(html: str, board: str, docs_url: str,
                      typical_time: str | None = None,
                      typical_location: str | None = None) -> list[Event]:
     soup = BeautifulSoup(html, "html.parser")
-    # Auto-detected details win; configured values are the fallback.
+    # Auto-detected details win — EXCEPT a configured location beats an
+    # auto-extracted one that lacks a full mailing address (no TX zip):
+    # calendar apps only geocode complete addresses, and the accordions
+    # often stop at "…, 4815 Mueller Blvd." (Ian, 2026-08-10).
     auto_time, auto_loc = parse_meeting_details(soup)
     typical_time = auto_time or typical_time
-    typical_location = auto_loc or typical_location
+    if auto_loc and (re.search(r"(?:TX|Texas)\s*\d{5}", auto_loc)
+                     or not typical_location):
+        typical_location = auto_loc
     events: list[Event] = []
     seen: set[str] = set()
     for li in (li for lst in _schedule_lists(soup)
@@ -311,12 +317,14 @@ AGENDA_FETCH_CAP = 16   # PDFs per run, across all boards (13 tracked;
                         # stays well under this)
 
 AGENDA_HEADER_RE = re.compile(
-    # "AT" is optional: UTC-style headers say "AUGUST 4, 2026 AT 5:00 P.M."
-    # but others (EUC, 10 Aug 2026) run date and time together. Safe to
-    # relax — a time must still follow the date immediately, AM/PM and all,
-    # and agenda_start still demands exactly one distinct time for the day.
+    # Header separators vary: UTC says "AUGUST 4, 2026 AT 5:00 P.M.", EUC
+    # "August 10, 2026 ▪ 6:00 PM" (decorative glyph — whatever pdfplumber
+    # extracts it as, [\W_]{0,8} swallows symbols/space but never words or
+    # digits). Safe to relax: a time must still follow the date directly,
+    # AM/PM and all, and agenda_start still demands exactly one distinct
+    # time for the day.
     r"(JANUARY|FEBRUARY|MARCH|APRIL|MAY|JUNE|JULY|AUGUST|SEPTEMBER|OCTOBER"
-    r"|NOVEMBER|DECEMBER)\s+(\d{1,2}),\s*(\d{4}),?\s+(?:AT\s+)?"
+    r"|NOVEMBER|DECEMBER)\s+(\d{1,2}),\s*(\d{4})[\W_]{0,8}(?:AT\s+)?"
     r"(\d{1,2})(?::(\d{2}))?\s*([AP])\.?\s*M\b",
     re.IGNORECASE)
 
@@ -391,6 +399,15 @@ AGENDA_SECTIONS = {
     "WORKING GROUP UPDATES": "workgroup",
 }
 BRIEFING_PREFIX_RE = re.compile(r"^(?:Staff\s+)?[Bb]riefing\s+(?:on|regarding|about)\s+")
+# "... Report by Lisa Martin, Deputy General Manager and COO" — a trailing
+# by-<Capitalized Name> clause is a presenter credit, not the topic (Ian,
+# 2026-08-10). Requires a capitalized word after "by" so "by the board" or
+# "by-laws" survive.
+BRIEFING_BY_RE = re.compile(r"\s+by\s+[A-Z][\w.'-]*.*$")
+# "the Third Quarter Operations Report" -> "Q3 Operations Report" (brevity,
+# same request).
+QUARTER_RE = re.compile(r"(?:[Tt]he\s+)?\b(First|Second|Third|Fourth)\s+[Qq]uarter\b")
+QUARTERS = {"first": "Q1", "second": "Q2", "third": "Q3", "fourth": "Q4"}
 BRIEFING_PRESENTER_RE = re.compile(r"\s+(?:presented|provided|given)\s+by\b.*$",
                                    re.DOTALL)
 QUOTE_CAP = 3      # discussion items quoted verbatim up to this many
@@ -456,6 +473,9 @@ def agenda_summary(pages: list[str]) -> str | None:
         for _, text in briefings:
             t = re.sub(r"\s+", " ", text).strip()
             t = BRIEFING_PRESENTER_RE.sub("", BRIEFING_PREFIX_RE.sub("", t))
+            t = BRIEFING_BY_RE.sub("", t)
+            t = QUARTER_RE.sub(lambda m: QUARTERS[m.group(1).lower()], t)
+            t = re.sub(r"^[Tt]he\s+", "", t)
             # Parenthetical program tags read as clutter in titles (Ian).
             t = re.sub(r"\s*\([^)]*\)", "", t)
             titles.append(f"- {re.sub(r'  +', ' ', t).strip(' .,')}")
