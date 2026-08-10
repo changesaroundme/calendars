@@ -266,17 +266,13 @@ def parse_hearings_index(html: str, owned_urls: set[str] | None = None,
             continue
         rows += 1
         topic, how = _split_modality(desc)
-        # One page can be many rows -- the I-14 corridor study runs the same
-        # meeting in six towns -- so the area disambiguates them. Statewide
-        # items gain nothing from it.
-        where = "" if area.strip().lower() == "statewide" else f" ({area.strip()})"
         url = href if href.startswith("http") else f"https://www.txdot.gov{href}"
         body = [f"{how}." if how else "",
                 "Time and venue are not listed on TxDOT's schedule index — "
                 f"see the event page for details: {url}"]
         events.append(Event(
             source=SOURCE,
-            summary=f"TxDOT - {topic}{where}",
+            summary=f"TxDOT - {topic}",
             start=day,
             location=area.strip(),
             url=url,
@@ -286,6 +282,15 @@ def parse_hearings_index(html: str, owned_urls: set[str] | None = None,
                  f"{slugify(href.rsplit('/', 1)[-1].removesuffix('.html'))}"
                  f"-{day:%Y%m%d}@calendars.changesaroundme.com"),
         ))
+    # Area parenthetical ONLY where it disambiguates: the I-14 corridor
+    # study runs the same-titled meeting in several towns, but a unique
+    # title ("I-35 Georgetown to Round Rock") gains nothing from "(...)"
+    # — Ian, 2026-08-10. Display-only; UIDs come from the link path above.
+    dupes = {s for s in (e.summary for e in events)
+             if sum(x.summary == s for x in events) > 1}
+    for e in events:
+        if e.summary in dupes and e.location.lower() != "statewide":
+            e.summary += f" ({e.location})"
     if seen_rows and not rows:
         _problems.append(
             f"{SOURCE}: hearings index parsed {seen_rows} rows but none "
