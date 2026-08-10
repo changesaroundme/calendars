@@ -28,7 +28,7 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-business-and-commerce-20260729T0900@cal
  endars.changesaroundme.com
-DTSTAMP:20260810T000101Z
+DTSTAMP:20260810T040309Z
 DTSTART;TZID=America/Chicago:20260729T090000
 DTEND;TZID=America/Chicago:20260729T110000
 SUMMARY:Texas Senate - Business & Commerce: 765-kV lines and grid reliabili
@@ -57,7 +57,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-texas-senate-business-commerce-765-kv-lines-and-grid-reliab
  ility-20260729T0900@calendars.changesaroundme.com
-DTSTAMP:20260810T000101Z
+DTSTAMP:20260810T040309Z
 DTSTART;TZID=America/Chicago:20260729T090000
 DTEND;TZID=America/Chicago:20260729T110000
 SUMMARY:Texas Senate - Business & Commerce: 765-kV lines and grid reliabili
@@ -86,7 +86,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-transportation-20260729T1200@calendars.
  changesaroundme.com
-DTSTAMP:20260810T000101Z
+DTSTAMP:20260810T040309Z
 DTSTART;TZID=America/Chicago:20260729T120000
 DTEND;TZID=America/Chicago:20260729T150000
 SUMMARY:Texas Senate - Transportation
@@ -104,7 +104,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-natural-resources-20260811T0900@calenda
  rs.changesaroundme.com
-DTSTAMP:20260810T000101Z
+DTSTAMP:20260810T040309Z
 DTSTART;TZID=America/Chicago:20260811T090000
 DTEND;TZID=America/Chicago:20260811T120000
 SUMMARY:Texas Senate - Natural Resources
@@ -126,7 +126,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-transportation-20260825T0900@calendars.
  changesaroundme.com
-DTSTAMP:20260810T000101Z
+DTSTAMP:20260810T040309Z
 DTSTART;TZID=America/Chicago:20260825T090000
 DTEND;TZID=America/Chicago:20260825T120000
 SUMMARY:Texas Senate - Transportation
@@ -145,7 +145,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-water-agriculture-and-rural-affairs-202
  60901T0900@calendars.changesaroundme.com
-DTSTAMP:20260810T000101Z
+DTSTAMP:20260810T040309Z
 DTSTART;TZID=America/Chicago:20260901T090000
 DTEND;TZID=America/Chicago:20260901T120000
 SUMMARY:Texas Senate - Water\, Agriculture\, and Rural Affairs
@@ -162,7 +162,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-local-government-20260901T1100@calendar
  s.changesaroundme.com
-DTSTAMP:20260810T000101Z
+DTSTAMP:20260810T040309Z
 DTSTART;TZID=America/Chicago:20260901T110000
 DTEND;TZID=America/Chicago:20260901T140000
 SUMMARY:Texas Senate - Local Government
@@ -178,7 +178,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-water-agriculture-and-rural-affairs-202
  60903T0900@calendars.changesaroundme.com
-DTSTAMP:20260810T000101Z
+DTSTAMP:20260810T040309Z
 DTSTART;TZID=America/Chicago:20260903T090000
 DTEND;TZID=America/Chicago:20260903T120000
 SUMMARY:Texas Senate - Water\, Agriculture\, and Rural Affairs
@@ -194,7 +194,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-natural-resources-20260921T0900@calenda
  rs.changesaroundme.com
-DTSTAMP:20260810T000101Z
+DTSTAMP:20260810T040309Z
 DTSTART;TZID=America/Chicago:20260921T090000
 DTEND;TZID=America/Chicago:20260921T120000
 SUMMARY:Texas Senate - Natural Resources
@@ -222,7 +222,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-business-and-commerce-20260930T0900@cal
  endars.changesaroundme.com
-DTSTAMP:20260810T000101Z
+DTSTAMP:20260810T040309Z
 DTSTART;TZID=America/Chicago:20260930T090000
 DTEND;TZID=America/Chicago:20260930T120000
 SUMMARY:Texas Senate - Business and Commerce

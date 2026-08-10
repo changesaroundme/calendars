@@ -15,28 +15,28 @@
  {
   "source": "txdotev",
   "summary": "TxDOT - Bicycle and Pedestrian Advisory Committee Quarterly Meeting",
-  "start": "2025-01-24",
-  "end": null,
+  "start": "2025-01-24T09:30:00",
+  "end": "2025-01-24T12:00:00",
   "location": "Statewide",
   "url": "https://www.txdot.gov/projects/hearings-meetings/public-transportation/2025/012425.html",
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-012425-20250124@calendars.changesaroundme.com",
-  "description": "virtual public meeting.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 see the event page for details: https://www.txdot.gov/projects/hearings-meetings/public-transportation/2025/012425.html",
-  "all_day": true
+  "description": "virtual public meeting.\n\nDetails and materials: https://www.txdot.gov/projects/hearings-meetings/public-transportation/2025/012425.html",
+  "all_day": false
  },
  {
   "source": "txdotev",
   "summary": "TxDOT - US 281 Blanco Relief Route Study (Blanco)",
-  "start": "2025-01-29",
-  "end": null,
-  "location": "Blanco",
+  "start": "2025-01-29T16:00:00",
+  "end": "2025-01-29T19:00:00",
+  "location": "Blanco High School Cafeteria 1215 4th St. Blanco, TX 78606",
   "url": "https://www.txdot.gov/projects/hearings-meetings/austin/2025/us281-blanco-relief-route-012925.html",
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-us281-blanco-relief-route-012925-20250129@calendars.changesaroundme.com",
-  "description": "in-person community workshop with virtual option.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 see the event page for details: https://www.txdot.gov/projects/hearings-meetings/austin/2025/us281-blanco-relief-route-012925.html\n\nPublic comment deadline: 13 Feb 2025.",
-  "all_day": true
+  "description": "in-person community workshop with virtual option.\n\nPublic comment deadline: 13 Feb 2025.\n\nDetails and materials: https://www.txdot.gov/projects/hearings-meetings/austin/2025/us281-blanco-relief-route-012925.html",
+  "all_day": false
  },
  {
   "source": "txdotev",
@@ -158,15 +158,15 @@
  {
   "source": "txdotev",
   "summary": "TxDOT - FM 973 Corridor Project (Taylor)",
-  "start": "2025-08-21",
-  "end": null,
-  "location": "Taylor",
+  "start": "2025-08-21T16:00:00",
+  "end": "2025-08-21T19:00:00",
+  "location": "on Thursday, August 21, 2025. Dickey-Givens Community Center 1015 E. MLK Jr, Blvd Taylor, TX 76574",
   "url": "https://www.txdot.gov/projects/hearings-meetings/austin/2025/fm973-corridor-project-082125.html",
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-fm973-corridor-project-082125-20250821@calendars.changesaroundme.com",
-  "description": "in-person open house with a virtual public meeting option.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 see the event page for details: https://www.txdot.gov/projects/hearings-meetings/austin/2025/fm973-corridor-project-082125.html\n\nPublic comment deadline: 22 Sep 2025.",
-  "all_day": true
+  "description": "in-person open house with a virtual public meeting option.\n\nPublic comment deadline: 22 Sep 2025.\n\nDetails and materials: https://www.txdot.gov/projects/hearings-meetings/austin/2025/fm973-corridor-project-082125.html",
+  "all_day": false
  },
  {
   "source": "txdotev",
@@ -184,41 +184,41 @@
  {
   "source": "txdotev",
   "summary": "TxDOT - US 290 from SH 130 to SH 95 South (Elgin)",
-  "start": "2025-09-23",
-  "end": null,
-  "location": "Elgin",
+  "start": "2025-09-23T17:30:00",
+  "end": "2025-09-23T19:00:00",
+  "location": "Manor Elementary Early Learning Center 12904 Gregg Manor Road Elgin, TX 78653",
   "url": "https://www.txdot.gov/projects/hearings-meetings/austin/2025/us290-from-sh130-to-sh95-092325.html",
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-us290-from-sh130-to-sh95-092325-20250923@calendars.changesaroundme.com",
-  "description": "virtual community listening session with two in-person options.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 see the event page for details: https://www.txdot.gov/projects/hearings-meetings/austin/2025/us290-from-sh130-to-sh95-092325.html\n\nPublic comment deadline: 10 Oct 2025.",
-  "all_day": true
+  "description": "virtual community listening session with two in-person options.\n\nPublic comment deadline: 10 Oct 2025.\n\nDetails and materials: https://www.txdot.gov/projects/hearings-meetings/austin/2025/us290-from-sh130-to-sh95-092325.html",
+  "all_day": false
  },
  {
   "source": "txdotev",
   "summary": "TxDOT - US 290 from SH 130 to SH 95 South (Elgin)",
-  "start": "2025-09-25",
-  "end": null,
-  "location": "Elgin",
+  "start": "2025-09-25T17:30:00",
+  "end": "2025-09-25T19:00:00",
+  "location": "Austin Community College: Elgin Campus Building 1000 1501 US 290 Elgin, TX 78621",
   "url": "https://www.txdot.gov/projects/hearings-meetings/austin/2025/us290-from-sh130-to-sh95-092325.html",
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-us290-from-sh130-to-sh95-092325-20250925@calendars.changesaroundme.com",
-  "description": "virtual community listening session with two in-person options.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 see the event page for details: https://www.txdot.gov/projects/hearings-meetings/austin/2025/us290-from-sh130-to-sh95-092325.html\n\nPublic comment deadline: 10 Oct 2025.",
-  "all_day": true
+  "description": "virtual community listening session with two in-person options.\n\nPublic comment deadline: 10 Oct 2025.\n\nDetails and materials: https://www.txdot.gov/projects/hearings-meetings/austin/2025/us290-from-sh130-to-sh95-092325.html",
+  "all_day": false
  },
  {
   "source": "txdotev",
   "summary": "TxDOT - FM 969 Corridor Study (Elgin)",
-  "start": "2025-10-02",
-  "end": null,
-  "location": "Elgin",
+  "start": "2025-10-02T16:00:00",
+  "end": "2025-10-02T19:00:00",
+  "location": "Spiderwood Studios 140 Utley Road Elgin, TX 78621",
   "url": "https://www.txdot.gov/projects/hearings-meetings/austin/2025/fm969-corridor-study-100225.html",
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-fm969-corridor-study-100225-20251002@calendars.changesaroundme.com",
-  "description": "virtual public meeting with an in person open house.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 see the event page for details: https://www.txdot.gov/projects/hearings-meetings/austin/2025/fm969-corridor-study-100225.html\n\nPublic comment deadline: 3 Nov 2025.",
-  "all_day": true
+  "description": "virtual public meeting with an in person open house.\n\nPublic comment deadline: 3 Nov 2025.\n\nDetails and materials: https://www.txdot.gov/projects/hearings-meetings/austin/2025/fm969-corridor-study-100225.html",
+  "all_day": false
  },
  {
   "source": "txdotev",
@@ -249,41 +249,41 @@
  {
   "source": "txdotev",
   "summary": "TxDOT - Texas Statewide Multimodal Transit Plan virtual public meeting with in-person options (Austin)",
-  "start": "2025-11-13",
-  "end": null,
-  "location": "Austin",
+  "start": "2025-11-13T17:30:00",
+  "end": "2025-11-13T19:30:00",
+  "location": "Cherrywood Center 1605 E 38th 1/2 St. Austin, TX 78722",
   "url": "https://www.txdot.gov/projects/hearings-meetings/public-transportation/2025/texas-statewide-multimodal-transit-plan-102025.html",
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-texas-statewide-multimodal-transit-plan-102025-20251113@calendars.changesaroundme.com",
-  "description": "Time and venue are not listed on TxDOT's schedule index \u2014 see the event page for details: https://www.txdot.gov/projects/hearings-meetings/public-transportation/2025/texas-statewide-multimodal-transit-plan-102025.html\n\nPublic comment deadline: 20 Nov 2025.",
-  "all_day": true
+  "description": "Public comment deadline: 20 Nov 2025.\n\nDetails and materials: https://www.txdot.gov/projects/hearings-meetings/public-transportation/2025/texas-statewide-multimodal-transit-plan-102025.html",
+  "all_day": false
  },
  {
   "source": "txdotev",
   "summary": "TxDOT - US 281 Blanco Relief Route Study (Blanco)",
-  "start": "2025-11-18",
-  "end": null,
-  "location": "Blanco",
+  "start": "2025-11-18T16:00:00",
+  "end": "2025-11-18T19:00:00",
+  "location": "Blanco High School Cafeteria & Gym 1215 4th St. Blanco, TX 78606",
   "url": "https://www.txdot.gov/projects/hearings-meetings/austin/2025/us281-blanco-relief-route-study-111825.html",
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-us281-blanco-relief-route-study-111825-20251118@calendars.changesaroundme.com",
-  "description": "in-person community workshop with virtual option.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 see the event page for details: https://www.txdot.gov/projects/hearings-meetings/austin/2025/us281-blanco-relief-route-study-111825.html\n\nPublic comment deadline: 9 Dec 2025.",
-  "all_day": true
+  "description": "in-person community workshop with virtual option.\n\nPublic comment deadline: 9 Dec 2025.\n\nDetails and materials: https://www.txdot.gov/projects/hearings-meetings/austin/2025/us281-blanco-relief-route-study-111825.html",
+  "all_day": false
  },
  {
   "source": "txdotev",
   "summary": "TxDOT - US 281 Blanco County Project (Blanco)",
-  "start": "2025-11-18",
-  "end": null,
-  "location": "Blanco",
+  "start": "2025-11-18T16:00:00",
+  "end": "2025-11-18T19:00:00",
+  "location": "Blanco High School Cafeteria & Gym 1215 4th St. Blanco, TX 78606",
   "url": "https://www.txdot.gov/projects/hearings-meetings/austin/2025/us281-blanco-county-project-111825.html",
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-us281-blanco-county-project-111825-20251118@calendars.changesaroundme.com",
-  "description": "in-person public meeting with virtual option.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 see the event page for details: https://www.txdot.gov/projects/hearings-meetings/austin/2025/us281-blanco-county-project-111825.html\n\nPublic comment deadline: 9 Dec 2025.",
-  "all_day": true
+  "description": "in-person public meeting with virtual option.\n\nPublic comment deadline: 9 Dec 2025.\n\nDetails and materials: https://www.txdot.gov/projects/hearings-meetings/austin/2025/us281-blanco-county-project-111825.html",
+  "all_day": false
  },
  {
   "source": "txdotev",
@@ -353,15 +353,15 @@
  {
   "source": "txdotev",
   "summary": "TxDOT - US 77 from FM 2440 to SH 21 (Giddings)",
-  "start": "2026-02-19",
-  "end": null,
-  "location": "Giddings",
+  "start": "2026-02-19T16:30:00",
+  "end": "2026-02-19T18:30:00",
+  "location": "American Legion York Post 276 1502 U.S. 77 Giddings, TX 78942",
   "url": "https://www.txdot.gov/projects/hearings-meetings/austin/2026/us77-021926.html",
   "status": "CONFIRMED",
   "kind": "engagement",
   "uid": "txdotev-hm-us77-021926-20260219@calendars.changesaroundme.com",
-  "description": "in-person public meeting with a virtual option.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 see the event page for details: https://www.txdot.gov/projects/hearings-meetings/austin/2026/us77-021926.html\n\nPublic comment deadline: 23 Mar 2026.",
-  "all_day": true
+  "description": "in-person public meeting with a virtual option.\n\nPublic comment deadline: 23 Mar 2026.\n\nDetails and materials: https://www.txdot.gov/projects/hearings-meetings/austin/2026/us77-021926.html",
+  "all_day": false
  },
  {
   "source": "txdotev",
@@ -651,19 +651,6 @@
  },
  {
   "source": "txdotev",
-  "summary": "TxDOT - I-35 Georgetown to Round Rock (Georgetown)",
-  "start": "2026-08-13",
-  "end": null,
-  "location": "Georgetown",
-  "url": "https://www.txdot.gov/projects/hearings-meetings/austin/2026/i35-georgetown-to-round-rock-081326.html",
-  "status": "CONFIRMED",
-  "kind": "engagement",
-  "uid": "txdotev-hm-i35-georgetown-to-round-rock-081326-20260813@calendars.changesaroundme.com",
-  "description": "in-person public meeting with virtual option.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 see the event page for details: https://www.txdot.gov/projects/hearings-meetings/austin/2026/i35-georgetown-to-round-rock-081326.html\n\nPublic comment deadline: 28 Aug 2026.",
-  "all_day": true
- },
- {
-  "source": "txdotev",
   "summary": "TxDOT PTAC - Meeting",
   "start": "2026-08-13T10:00:00",
   "end": "2026-08-13T12:00:00",
@@ -673,6 +660,19 @@
   "kind": "regular",
   "uid": "txdotev-public-transportation-advisory-committee-20260813T1000@calendars.changesaroundme.com",
   "description": "Agenda not yet posted (checked daily).\nPosted location: Hybrid 6230 E Stassney Lane, Austin, TX 78744 Virtual",
+  "all_day": false
+ },
+ {
+  "source": "txdotev",
+  "summary": "TxDOT - I-35 Georgetown to Round Rock (Georgetown)",
+  "start": "2026-08-13T16:30:00",
+  "end": "2026-08-13T18:30:00",
+  "location": "Williamson County Georgetown Annex 100 Wilco Way Georgetown, TX 78626",
+  "url": "https://www.txdot.gov/projects/hearings-meetings/austin/2026/i35-georgetown-to-round-rock-081326.html",
+  "status": "CONFIRMED",
+  "kind": "engagement",
+  "uid": "txdotev-hm-i35-georgetown-to-round-rock-081326-20260813@calendars.changesaroundme.com",
+  "description": "in-person public meeting with virtual option.\n\nPublic comment deadline: 28 Aug 2026.\n\nDetails and materials: https://www.txdot.gov/projects/hearings-meetings/austin/2026/i35-georgetown-to-round-rock-081326.html",
   "all_day": false
  },
  {
