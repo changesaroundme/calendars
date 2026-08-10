@@ -2952,6 +2952,19 @@
  },
  {
   "source": "austin",
+  "summary": "City Council - Climate, Water, Environment, and Parks Committee",
+  "start": "2026-08-26T09:30:00",
+  "end": "2026-08-26T11:30:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/Calendar.aspx",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-climate-water-environment-and-parks-committee-20260826T0930@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
+ },
+ {
+  "source": "austin",
   "summary": "City Council",
   "start": "2026-08-27",
   "end": null,
