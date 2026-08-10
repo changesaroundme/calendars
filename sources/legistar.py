@@ -241,7 +241,12 @@ class Legistar:
             # Agenda-item summary: the fetcher decides which rows merit a
             # per-event API call (live: future + agenda-published + capped;
             # offline: fixture lookup) and returns None to decline.
-            if item_fetcher and agenda and "Summary Agenda" not in ev.description:
+            # Not gated on the agenda FILE: Legistar serves meeting items
+            # through the API before "Published agenda" flips from "Not
+            # available" (the 12/14 Aug 2026 budget meetings each showed 24
+            # items with no published file — Ian, 2026-08-09). The fetcher
+            # still gates on body/date/cap.
+            if item_fetcher and "Summary Agenda" not in ev.description:
                 try:
                     items = item_fetcher(row)
                 except Exception as exc:

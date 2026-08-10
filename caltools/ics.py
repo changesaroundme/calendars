@@ -6,7 +6,7 @@ without fighting a library's opinions.
 """
 from __future__ import annotations
 
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from typing import Iterable
 from zoneinfo import ZoneInfo
 
@@ -81,8 +81,17 @@ def event_block(ev: Event, dtstamp: str) -> list[str]:
     lines.append(f"UID:{ev.stable_uid()}")
     lines.append(f"DTSTAMP:{dtstamp}")
     lines.append(_dt(ev.start, "DTSTART"))
-    if ev.end is not None:
-        lines.append(_dt(ev.end, "DTEND"))
+    end = ev.end
+    if isinstance(ev.start, datetime):
+        # Minimum one-hour block for timed events (Ian, 2026-08-09): some
+        # source feeds ship DTEND == DTSTART (ATP board meetings), which
+        # calendar apps render as a zero-height sliver. Publication-layer
+        # only — stored events keep whatever the source said.
+        floor = ev.start + timedelta(hours=1)
+        if end is None or (isinstance(end, datetime) and end < floor):
+            end = floor
+    if end is not None:
+        lines.append(_dt(end, "DTEND"))
     lines.append(f"SUMMARY:{escape(ev.summary)}")
     if ev.location:
         lines.append(f"LOCATION:{escape(ev.location)}")

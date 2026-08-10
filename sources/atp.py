@@ -39,7 +39,10 @@ def parse_feed(ics_data: bytes | str) -> list[Event]:
             Event(
                 source=SOURCE,
                 # Org prefix is display-only; identity comes from ATP's UID.
-                summary=f"ATP - {summary}",
+                # Their feed titles some events "ATP Board of Directors
+                # Meeting" — strip the leading ATP so the prefix doesn't
+                # stutter ("ATP - ATP Board..."; Ian, 2026-08-09).
+                summary="ATP - " + re.sub(r"^ATP\s+", "", summary),
                 start=dtstart,
                 end=component.get("DTEND").dt if component.get("DTEND") else None,
                 location=str(component.get("LOCATION", "")).strip() or DEFAULT_LOCATION,

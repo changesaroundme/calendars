@@ -99,6 +99,40 @@ BOARDS = [
      "https://www.austintexas.gov/boards-commissions/board/austin-integrated-water-resource-planning-community-task-force",
      "https://www.austintexas.gov/boards-commissions/meetings/132_1",
      None, None),
+    # Batch added 2026-08-09 from the KB Organizations "To add: Definitely"
+    # list (Design Commission and UTC were already tracked). Docs ids
+    # discovered from each landing page's "Agendas, Approved Minutes..."
+    # link; typical times/locations below are fallbacks transcribed from
+    # each page's Meeting Details accordion, which the auto-extraction
+    # re-reads (and overrides these) on every fetch.
+    ("Bond Oversight Commission",
+     "https://www.austintexas.gov/boards-commissions/board/bond-oversight-commission",
+     "https://www.austintexas.gov/boards-commissions/meetings/2_1",
+     "14:00", f"Board and Commission Room 1101, {CITY_HALL}"),
+    ("Environmental Commission",
+     "https://www.austintexas.gov/boards-commissions/board/environmental-commission",
+     "https://www.austintexas.gov/boards-commissions/meetings/28_1",
+     "18:00", ("Permitting and Development Center, Events Center Room 1405, "
+               "6310 Wilhelmina Delco Dr., Austin, TX 78752")),
+    ("Small Area Planning Joint Committee",
+     "https://www.austintexas.gov/boards-commissions/board/small-area-planning-joint-committee",
+     "https://www.austintexas.gov/boards-commissions/meetings/139_1",
+     # Their page names no room — venue only, per the venue-name rule.
+     "11:30", ("Permitting and Development Center, "
+               "6310 Wilhelmina Delco Dr., Austin, TX 78752")),
+    ("Historic Landmark Commission",
+     "https://www.austintexas.gov/boards-commissions/board/historic-landmark-commission",
+     "https://www.austintexas.gov/boards-commissions/meetings/31_1",
+     "18:00", f"Council Chambers Room 1001, {CITY_HALL}"),
+    ("Electric Utility Commission",
+     "https://www.austintexas.gov/boards-commissions/board/electric-utility-commission",
+     "https://www.austintexas.gov/boards-commissions/meetings/27_1",
+     "18:00", ("Austin Energy Headquarters at Mueller, Shudde Fath "
+               "Conference Room, 4815 Mueller Blvd., Austin, TX 78723")),
+    ("Water and Wastewater Commission",
+     "https://www.austintexas.gov/boards-commissions/board/water-and-wastewater-commission",
+     "https://www.austintexas.gov/boards-commissions/meetings/52_1",
+     "17:30", "Waller Creek Center, 625 E. 10th St., Austin, TX 78701"),
     # Council advisory councils: schedule page under /council/, agendas on a
     # /boards-commissions/meetings/ page. Both pages DO state their time and
     # venue, but as an <h3> + <ul> rather than the <dt>/<dd> accordion that
@@ -174,7 +208,14 @@ def parse_meeting_details(soup) -> tuple[str | None, str | None]:
                 h = int(m.group(1)) % 12 + (12 if m.group(3).lower() == "p" else 0)
                 t = f"{h:02d}:{int(m.group(2) or 0):02d}"
                 continue
-            if loc is None and not SKIP_LOC_RE.search(txt):
+            # Trailing "unless otherwise noted/indicated ..." hedges are
+            # boilerplate, and some carry the word "agenda" — strip BEFORE
+            # the skip-check so a real venue isn't discarded over its hedge
+            # (Historic Landmark: "City Hall, Council Chambers unless
+            # otherwise noted in the agenda posting").
+            txt = re.sub(r"\s*[,–—-]?\s*unless\b.*$", "", txt,
+                         flags=re.IGNORECASE)
+            if loc is None and txt and not SKIP_LOC_RE.search(txt):
                 loc = re.sub(r"\s*\([^)]*\)\s*", " ", txt).strip(" ,")
         if loc and "city hall" in loc.lower() and "301" not in loc:
             loc = f"{loc}, 301 W. 2nd St., Austin, TX 78701"
@@ -265,7 +306,9 @@ def parse_board_page(html: str, board: str, docs_url: str,
 # typical-time path built it. UIDs are date-only and never touched.
 # ---------------------------------------------------------------------------
 AGENDA_HORIZON = timedelta(days=45)   # agendas post ~a week out; 45d is slack
-AGENDA_FETCH_CAP = 10                 # PDFs per run, across all boards
+AGENDA_FETCH_CAP = 16   # PDFs per run, across all boards (13 tracked;
+                        # agendas post ~a week out, so posted-at-once
+                        # stays well under this)
 
 AGENDA_HEADER_RE = re.compile(
     r"(JANUARY|FEBRUARY|MARCH|APRIL|MAY|JUNE|JULY|AUGUST|SEPTEMBER|OCTOBER"
