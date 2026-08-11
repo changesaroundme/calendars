@@ -1799,11 +1799,11 @@
   "start": "2026-05-12T09:00:00",
   "end": "2026-05-12T11:00:00",
   "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
-  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4181&GID=684&G=4BED8896-C64D-4912-8005-D624C5197AA5",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1405090&GUID=64826AD3-5012-44B1-A253-0140F48CB884&Options=info|&Search=",
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-public-safety-committee-20260512T0900@calendars.changesaroundme.com",
-  "description": "Agenda: https://austintexas.legistar1.com/austintexas/meetings/2026/5/4181_A_Public_Safety_Committee_26-05-12_Committee_Agenda.pdf",
+  "description": "",
   "all_day": false
  },
  {
@@ -2648,7 +2648,7 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-electric-utility-commission-20260810@calendars.changesaroundme.com",
-  "description": "Summary Agenda\n\n2 briefings:\n- Q3 Operations Report\n- Q3 Financial Report\n\n9 discussion items\n\n\u2014\n\nAgenda: https://services.austintexas.gov/edims/document.cfm?id=478381",
+  "description": "Typical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).",
   "all_day": false
  },
  {
