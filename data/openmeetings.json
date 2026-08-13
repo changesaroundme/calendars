@@ -68,7 +68,7 @@
   "Status": "Revised",
   "Submitted Date/Time": "7/28/2026 12:28 PM CDT",
   "first_seen": "2026-08-04",
-  "last_seen": "2026-08-12",
+  "last_seen": "2026-08-13",
   "routed": ""
  },
  "2026004453": {
@@ -86,7 +86,7 @@
   "Status": "Accepted",
   "Submitted Date/Time": "7/28/2026 12:30 PM CDT",
   "first_seen": "2026-08-04",
-  "last_seen": "2026-08-12",
+  "last_seen": "2026-08-13",
   "routed": "txdotev"
  },
  "2026004558": {
@@ -106,5 +106,23 @@
   "first_seen": "2026-08-08",
   "last_seen": "2026-08-10",
   "routed": "campo"
+ },
+ "2026004631": {
+  "Additional Information": "Ruby Hicks - 512-936-7249",
+  "Address": "1701 North Congress Avenue",
+  "Agency Name": "Public Utility Commission of Texas",
+  "Agenda": "MEETING OF THE\nPUBLIC UTILITY COMMISSION OF TEXAS\nFriday, August 14, 2026, 9:30 A.M.\nCommissioners' Hearing Room\n1701 N. Congress Ave., Austin, Texas 78701\n7th Floor, William B. Travis Building\nProject No. 59148 - Open Meeting Agenda items without an associated control number.\nAGENDA\nI.\tPUBLIC COMMENT\n1.\tThe Commission will receive comments from the public on any matters within the jurisdiction of the Public Utility Commission of Texas in accordance with Utilities Code Section 12.202, except for pending items related to contested cases, which are subject to the ex parte prohibition found in Texas Government Code Section 2001.061. In the interest of time, speakers will be limited to three minutes each.\nII.\tCONTESTED CASE ITEMS\nELECTRIC\n2.\tDocket No. 59029  SOAH Docket No. 473-26-07756 \u2013 Application of Oncor Electric Delivery Company LLC to Amend Its Certificate of Convenience and Necessity for the Longshore Switch-Drill Hole Switch 765-kV Transmission Line Project in Andrews, Culberson, Ector, Glasscock, Howard, Loving, Martin, Midland, Reeves, and Winkler Counties. (Discussion)\n3.\tDocket No. 59315  SOAH Docket No. 473-26-13152 \u2013 Application of Oncor Electric Delivery Company LLC to Amend Its Certificate of Convenience and Necessity for the Dinosaur Switch \u2013 Longshore Switch 765-kV Transmission Line Project in Borden, Bosque, Brown, Callahan, Coke, Coleman, Comanche, Eastland, Erath, Glasscock, Hamilton, Hood, Howard, Jones, Mitchell, Nolan, Runnels, Shackelford, Somervell, Stephens, Sterling, and Taylor Counties. (Discussion)\n4.\tDocket No. 59182  SOAH Docket No. 473-26-10397 \u2013 Joint Application of Oncor Electric Delivery Company LLC and LCRA Transmission Services Corporation to Amend Their Certificates of Convenience and Necessity for the Big Hill Substation to Sand Lake Switch 765-kV Transmission Line Project in Crane, Crockett, Irion, Pecos, Reagan, Reeves, Schleicher, Tom Green, Upton, and Ward Counties. (Discussion)\n5.\tDocket No. 59475  SOAH Docket No. 473-26-16",
+  "Board": "N/A",
+  "City": "Austin",
+  "Committee": "N/A",
+  "Meeting Date": "8/14/2026",
+  "Meeting Time": "09:30 AM\n(Local Time)",
+  "Related TRD": "N/A",
+  "State": "TX",
+  "Status": "Accepted",
+  "Submitted Date/Time": "8/6/2026 2:10 PM CDT",
+  "first_seen": "2026-08-13",
+  "last_seen": "2026-08-13",
+  "routed": "puct"
  }
 }
