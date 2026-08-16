@@ -235,6 +235,17 @@ def main() -> int:
     now = datetime.now(timezone.utc)
     session = requests.Session()
     session.headers["User-Agent"] = USER_AGENT
+    # Transient-flake armor for EVERY source (added 2026-08-14 after three
+    # single-fetch flakes turned three builds red in five days: senate 8/9,
+    # txdot.gov 8/10, campotexas.org 8/12). Two retries with a pause cover
+    # connection refusals, drops, and 5xx; a source that stays down through
+    # all three attempts is a real signal and still fails loud.
+    retry = requests.adapters.Retry(
+        total=2, connect=2, read=2, status=2, backoff_factor=13,
+        status_forcelist=[500, 502, 503, 504, 429],
+        allowed_methods=["GET", "POST"])
+    session.mount("https://", requests.adapters.HTTPAdapter(max_retries=retry))
+    session.mount("http://", requests.adapters.HTTPAdapter(max_retries=retry))
 
     docs = (ROOT / "dist-offline" / "docs") if offline else DOCS
     data = (ROOT / "dist-offline" / "data") if offline else DATA
@@ -244,6 +255,13 @@ def main() -> int:
     unhealthy: list[str] = []
     all_events = []
     events_by_key: dict[str, list[Event]] = {}
+
+    # The publish window, shared by the normal path AND the snapshot
+    # backfills below — raw snapshot events must pass the same bounds, or
+    # a red day ships unbounded history to combined-feed subscribers.
+    def in_window(e: Event) -> bool:
+        return (event_day(e) >= today - PUBLISH_HISTORY
+                and start_day(e) <= publish_horizon(today))
 
     # Central, not UTC. `now` stays UTC because DTSTAMP requires it, but
     # "is this meeting still upcoming" is a question about local wall-clock
@@ -304,7 +322,7 @@ def main() -> int:
             # Per-org .ics goes stale-but-present (never rewritten); give
             # all.ics the same courtesy by backfilling from the last-good
             # snapshot, so combined-feed subscribers don't lose the org.
-            stale = snapshot_events(snapshot_path)
+            stale = [e for e in snapshot_events(snapshot_path) if in_window(e)]
             if stale:
                 print(f"[{key}] backfilling all.ics with {len(stale)} snapshot events")
                 all_events.extend(stale)
@@ -350,8 +368,7 @@ def main() -> int:
         # window still counts; start_day for the far edge so one that opens
         # inside the horizon isn't dropped for ending just past it.
         cutoff, horizon = today - PUBLISH_HISTORY, publish_horizon(today)
-        publishable = [e for e in events
-                       if event_day(e) >= cutoff and start_day(e) <= horizon]
+        publishable = [e for e in events if in_window(e)]
         if publishable:
             # Always publish what we got (stale beats absent)...
             (docs / f"{key}.ics").write_text(
@@ -368,9 +385,11 @@ def main() -> int:
                 )
                 snapshot_path.write_text(json.dumps(snapshot, indent=1) + "\n")
         else:
-            # Parsed to zero (already flagged unhealthy above): keep the org
-            # present in all.ics from the last-good snapshot.
-            stale = snapshot_events(snapshot_path)
+            # Nothing inside the publish window (parsed to zero — flagged
+            # unhealthy above — or a sporadic source whose events all fell
+            # outside it): keep the org present in all.ics from the
+            # last-good snapshot, same window applied.
+            stale = [e for e in snapshot_events(snapshot_path) if in_window(e)]
             if stale:
                 print(f"[{key}] backfilling all.ics with {len(stale)} snapshot events")
                 all_events.extend(stale)

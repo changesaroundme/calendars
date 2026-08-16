@@ -856,6 +856,9 @@ def fetch_offline() -> list[Event]:
     )
     records = parse_council_pdf(ANNUAL_PDF_FIXTURE.read_bytes())
     council = apply_budget_flags(council, records)
+    # Mirrors fetch(): the fixture eventitems land on every council row, so
+    # identical-digest budget meetings exercise the related-note path here.
+    note_related_budget_meetings(council)
     annual = annual_council_events(records, council)
     boards = parse_board_page(
         (fixtures / "austin_board.html").read_text(),

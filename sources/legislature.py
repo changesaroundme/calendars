@@ -31,15 +31,21 @@ UID: the old time vanishes from the feed (delisted-future rule) and the
 new one appears — no phantom pair.
 
 The notice URL (capitol.texas.gov/tlodocs/...) is stable after the page
-forgets the hearing; it stays as each event's URL. House committees are
-out of scope for now (Ian's watchlist is Senate-only).
+forgets the hearing; it stays as each event's URL.
+
+House committees (added 2026-08-14, HOUSE_WATCH list): scraped from
+capitol.texas.gov's upcoming-meetings page — one usa-table where bold
+sectionTitle rows declare the date, Gainsboro separator rows the time, and
+committee rows inherit both. House notices are the same tlodocs family as
+the Senate's, so enrich_notices and the archive/retention machinery apply
+to both chambers unchanged (UIDs can't collide: House raw names get a
+"House " prefix before freezing).
 """
 from __future__ import annotations
 
 import json
 import pathlib
 import re
-import time
 from datetime import date, datetime, timedelta
 from zoneinfo import ZoneInfo
 
@@ -69,6 +75,17 @@ WATCH = [
     "transportation",
     "local government",
     "water, agriculture",
+]
+
+HOUSE_URL = ("https://capitol.texas.gov/Committees/MeetingsUpcoming.aspx"
+             "?Chamber=H")
+# Ian's House watchlist (2026-08-14). Substring match like WATCH, so
+# subcommittees of a watched committee ride along.
+HOUSE_WATCH = [
+    "transportation",
+    "natural resources",
+    "agriculture",       # "Agriculture & Livestock"
+    "energy resources",
 ]
 
 DATE_RE = re.compile(
@@ -169,6 +186,83 @@ def finalize(events: list[Event]) -> list[Event]:
         ev.uid = ev.stable_uid()
         short = CMTE_PREFIX_RE.sub("", ev.summary)
         ev.summary = f"Texas Senate - {short}"
+    return events
+
+
+def _house_location(raw: str) -> str:
+    """Full address for Capitol Extension rooms; anything else stays raw
+    (off-site hearings say e.g. "Weslaco, TX (See details below)" — the
+    notice has the venue)."""
+    raw = raw.strip()
+    if re.match(r"^E\d\.\d{3}$", raw):
+        return (f"Room {raw}, Texas Capitol Extension, "
+                "1100 Congress Ave., Austin, TX 78701")
+    return raw
+
+
+def parse_house(html: str) -> list[Event]:
+    """Watchlisted hearings from the House upcoming-meetings table."""
+    soup = BeautifulSoup(html, "html.parser")
+    events: list[Event] = []
+    table = soup.find("table", class_="usa-table")
+    if table is None:
+        _problems.append(
+            "legislature: no usa-table on the House upcoming-meetings page "
+            "(page redesign?)")
+        return events
+    cur_day = cur_time = None
+    for row in table.find_all("tr"):
+        cells = row.find_all("td")
+        if not cells:
+            continue
+        first = cells[0]
+        text = first.get_text(" ", strip=True)
+        if "sectionTitle" in (first.get("class") or []):
+            dm = DATE_RE.search(text)
+            try:
+                cur_day = (date(int(dm.group(3)), MONTHS[dm.group(1)],
+                                int(dm.group(2))) if dm else None)
+            except ValueError:
+                cur_day = None
+            cur_time = None
+            continue
+        if first.get("data-label") == "Committee Meeting Time":
+            tm = TIME_RE.search(text)
+            cur_time = ((int(tm.group(1)) % 12
+                         + (12 if tm.group(3).upper() == "P" else 0),
+                         int(tm.group(2))) if tm else None)
+            continue
+        if cur_day is None or len(cells) < 3:
+            continue
+        # Committee row: "Name … Type: Public Hearing … Location: E2.012".
+        name = text.split(" Type:")[0].strip()
+        if not name:
+            continue
+        blob = (text + " " + cells[1].get_text(" ", strip=True)).lower()
+        if not any(w in blob for w in HOUSE_WATCH):
+            continue
+        lm = re.search(r"Location:\s*(.+)$", text)
+        start = (datetime(cur_day.year, cur_day.month, cur_day.day,
+                          *cur_time) if cur_time else cur_day)
+        notice = row.find("a", href=re.compile(r"tlodocs.*html", re.IGNORECASE))
+        events.append(Event(
+            source=SOURCE,
+            summary=f"House {name}",  # chamber marker; UID freezes from this
+            start=start,
+            end=(start + HEARING_LENGTH)
+                if isinstance(start, datetime) else None,
+            location=_house_location(lm.group(1)) if lm else "",
+            url=notice["href"] if notice else HOUSE_URL,
+            kind="hearing",
+        ))
+    return events
+
+
+def finalize_house(events: list[Event]) -> list[Event]:
+    """Freeze UIDs from the chamber-marked raw name, then display-name."""
+    for ev in events:
+        ev.uid = ev.stable_uid()
+        ev.summary = f"Texas House - {ev.summary.removeprefix('House ')}"
     return events
 
 
@@ -345,17 +439,19 @@ def enrich_notices(events: list[Event], get_html, today: date) -> None:
 
 def fetch(session) -> list[Event]:
     _problems.clear()
-    # senate.texas.gov refuses connections intermittently (reds on 9 and
-    # 10 Aug 2026); one retry after a pause clears the transient kind.
-    # A persistent refusal still fails loud, and the snapshot backfill
-    # keeps serving either way.
-    try:
-        resp = session.get(EVENTS_URL, timeout=30)
-    except Exception:
-        time.sleep(25)
-        resp = session.get(EVENTS_URL, timeout=30)
+    # (The old manual sleep-and-retry for senate.texas.gov refusals is
+    # gone: build.py's session-level Retry armor covers it for every URL.)
+    resp = session.get(EVENTS_URL, timeout=30)
     resp.raise_for_status()
     fresh = finalize(parse_page(resp.text))
+    # One chamber failing shouldn't sink the other; a flagged problem
+    # still turns the build red while the snapshot serves the gap.
+    try:
+        rh = session.get(HOUSE_URL, timeout=30)
+        rh.raise_for_status()
+        fresh += finalize_house(parse_house(rh.text))
+    except Exception as exc:
+        _problems.append(f"legislature: House meetings fetch failed: {exc}")
     today = datetime.now(CENTRAL).date()
 
     def _notice(url):
@@ -373,7 +469,9 @@ def fetch(session) -> list[Event]:
 def fetch_offline() -> list[Event]:
     """Fixture-only (no archive read), so the parser check is deterministic."""
     _problems.clear()
-    events = finalize(parse_page((FIXTURES / "legislature_events.html").read_text()))
+    events = finalize(parse_page((FIXTURES / "legislature_events.html").read_text())) \
+        + finalize_house(parse_house(
+            (FIXTURES / "legislature_house.html").read_text()))
     # Notice-enrichment chain on the real 11 Aug 2026 Natural Resources
     # capture; other notices have no fixture and skip (None). today pinned
     # so that hearing is upcoming.

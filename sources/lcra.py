@@ -265,11 +265,142 @@ def parse_comment_page(html: str, today: date | None = None) -> list[Event]:
     return events
 
 
+# --- meeting-materials enrichment ------------------------------------------
+# The board-agendas page groups each meeting's documents under a dated
+# heading ("Aug. 19, 2026, meeting materials"): top-level list items are a
+# body label with a nested list of /download/ links. The heading's own date
+# is the declared match key. TSC-labeled sections attach to the TSC event;
+# everything else attaches to the LCRA-side event on that date. Loose
+# monthly boilerplate links (schedule, notices) are skipped. Upgrade-only.
+MATERIALS_HEAD_RE = re.compile(
+    r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+"
+    r"(\d{1,2}),\s+(20\d{2}),?\s+meeting materials", re.IGNORECASE)
+AGENDA_TIME_RE = re.compile(r"(\d{1,2})(?::(\d{2}))?\s*([ap])\.?\s*m\b",
+                            re.IGNORECASE)
+MATERIALS_HORIZON = timedelta(days=45)
+MATERIALS_PDF_CAP = 3       # agenda PDFs per run, for the time upgrade
+MEETING_HOURS = 3
+
+
+def parse_materials_page(html: str) -> dict[date, list[tuple[str, str, str]]]:
+    """date -> [(section_label, link_text, abs_url)] per dated block."""
+    soup = BeautifulSoup(html, "html.parser")
+    out: dict[date, list[tuple[str, str, str]]] = {}
+    for strong in soup.find_all("strong"):
+        m = MATERIALS_HEAD_RE.search(strong.get_text(" ", strip=True))
+        if not m:
+            continue
+        try:
+            d = date(int(m.group(3)), MONTH3[m.group(1).lower()[:3]],
+                     int(m.group(2)))
+        except (ValueError, KeyError):
+            continue
+        container = strong.find_parent(["div", "section"])
+        ul = container.find("ul") if container else None
+        if ul is None:
+            continue
+        for li in ul.find_all("li", recursive=False):
+            sub = li.find("ul")
+            if sub is None:
+                continue  # loose boilerplate link (schedule, notices)
+            # The label is the li's leading text node (sometimes wrapped in
+            # a span, sometimes bare — both shapes are live).
+            label = next((s.strip() for s in li.stripped_strings), "")
+            for a in sub.find_all("a", href=True):
+                url = a["href"]
+                if "/download/" not in url:
+                    continue
+                if url.startswith("/"):
+                    url = "https://www.lcra.org" + url
+                out.setdefault(d, []).append(
+                    (label, a.get_text(" ", strip=True), url))
+    return out
+
+
+def _agenda_start_time(pdf_bytes: bytes, day: date):
+    """(hour, minute) if page 1 names this day and exactly one time."""
+    import io
+    import pdfplumber
+    with pdfplumber.open(io.BytesIO(pdf_bytes)) as pdf:
+        text = (pdf.pages[0].extract_text() or "") if pdf.pages else ""
+    daystr = f"{day.day}, {day.year}"
+    if day.strftime("%B").lower()[:3] not in text.lower() or daystr not in text:
+        return None
+    times = {(int(h) % 12 + (12 if mer.lower() == "p" else 0), int(mn or 0))
+             for h, mn, mer in AGENDA_TIME_RE.findall(text)}
+    return times.pop() if len(times) == 1 else None
+
+
+def enrich_materials(events: list[Event], get_html, today: date,
+                     get_bytes=None) -> None:
+    """Attach posted meeting materials (and confirm times) in place."""
+    horizon = today + MATERIALS_HORIZON
+    upcoming = [e for e in events
+                if e.url == AGENDAS_URL and e.status != "CANCELLED"
+                and today <= (e.start.date() if isinstance(e.start, datetime)
+                              else e.start) <= horizon]
+    if not upcoming:
+        return
+    try:
+        blocks = parse_materials_page(get_html(AGENDAS_URL))
+    except Exception as exc:  # enrichment must never break the feed
+        print(f"[{SOURCE}] WARNING: materials page fetch failed: {exc}")
+        return
+    spent = 0
+    for ev in upcoming:
+        d = ev.start.date() if isinstance(ev.start, datetime) else ev.start
+        entries = blocks.get(d)
+        if not entries:
+            continue
+        tsc = "Transmission" in ev.summary
+        keep = [(lbl, txt, url) for lbl, txt, url in entries
+                if ("transmission" in lbl.lower()) == tsc]
+        if not keep:
+            continue
+        # Time upgrade from the day's FIRST posted agenda (blocks list the
+        # bodies in convening order; the combined event starts when the
+        # first committee does). Conservative: page 1 must name the day
+        # and state exactly one distinct time, else the event stays
+        # all-day and says where to look.
+        confirmed = False
+        main = next(((lbl, txt, url) for lbl, txt, url in keep
+                     if txt.lower().endswith("meeting agenda")), None)
+        if get_bytes is not None and main and spent < MATERIALS_PDF_CAP:
+            spent += 1
+            try:
+                t = _agenda_start_time(get_bytes(main[2]), d)
+            except Exception as exc:
+                print(f"[{SOURCE}] WARNING: agenda time parse failed "
+                      f"({main[2]}): {exc}")
+                t = None
+            if t is not None:
+                ev.start = datetime(d.year, d.month, d.day, *t)
+                ev.end = ev.start + timedelta(hours=MEETING_HOURS)
+                confirmed = True
+        lines = [f"- {txt}: {url}" for _, txt, url in keep]
+        parts = ["Meeting materials:\n" + "\n".join(lines)]
+        if not confirmed:
+            # Commentary only where uncertainty is real (house rule).
+            parts.append("Start time: see the posted agenda.")
+        ev.description = "\n\n".join(parts)
+
+
 def fetch(session) -> list[Event]:
     _problems.clear()
     resp = session.get(SCHEDULE_URL, timeout=30)
     resp.raise_for_status()
     events = finalize(parse_page(resp.text))
+
+    def _got(url, binary=False):
+        r = session.get(url, timeout=60)
+        r.raise_for_status()
+        return r.content if binary else r.text
+
+    try:
+        enrich_materials(events, lambda u: _got(u), datetime.now().date(),
+                         get_bytes=lambda u: _got(u, binary=True))
+    except Exception as exc:  # upgrade-only: never sink the feed
+        print(f"[{SOURCE}] WARNING: materials enrichment failed: {exc}")
     resp = session.get(COMMENT_URL, timeout=30)
     resp.raise_for_status()
     return events + finalize(parse_comment_page(resp.text))
@@ -279,9 +410,18 @@ def fetch_offline() -> list[Event]:
     """Build from fixtures/ (no network) — the --offline contract."""
     _problems.clear()
     # Fixtures captured in 2026; pin dates so they stay stable.
-    return finalize(
+    events = finalize(
         parse_page((FIXTURES / "lcra_schedule.html").read_text(), default_year=2026)
-    ) + finalize(
+    )
+    # Materials enrichment on the real Aug-19 capture; today pinned so that
+    # meeting is upcoming. No get_bytes offline: the link-attach path runs,
+    # the PDF time-upgrade path stays conservative (all-day + pointer).
+    enrich_materials(
+        events,
+        lambda u: (FIXTURES / "lcra_materials.html").read_text(),
+        today=date(2026, 8, 14),
+    )
+    return events + finalize(
         parse_comment_page((FIXTURES / "lcra_comments.html").read_text(),
                            today=date(2026, 8, 4))
     )
