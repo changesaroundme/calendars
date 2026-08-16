@@ -26,23 +26,8 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:lcra-transmission-services-corp-board-20260819@calendars.changesaroundm
- e.com
-DTSTAMP:20260816T115326Z
-DTSTART;VALUE=DATE:20260819
-SUMMARY:LCRA - Transmission Services Corp. Board
-LOCATION:Board Room\, Hancock Building\, 3700 Lake Austin Blvd\, Austin\, T
- X 78703
-URL:https://www.lcra.org/about/leadership/board-agendas/
-DESCRIPTION:Meeting materials:\n- LCRA Transmission Services Corporation Bo
- ard meeting agenda: https://www.lcra.org/download/2026-08-lcra-tsc-board-a
- genda/?wpdmdl=42761\n\nStart time: see the posted agenda.
-CATEGORIES:regular
-X-CAM-ORG:lcra
-END:VEVENT
-BEGIN:VEVENT
 UID:lcra-board-committee-meetings-20260819@calendars.changesaroundme.com
-DTSTAMP:20260816T115326Z
+DTSTAMP:20260816T140454Z
 DTSTART;TZID=America/Chicago:20260819T090000
 DTEND;TZID=America/Chicago:20260819T120000
 SUMMARY:LCRA - Board & Committee Meetings
@@ -59,14 +44,33 @@ DESCRIPTION:Meeting materials:\n- Planning and Public Policy Committee meet
  26-08-firm-water-rates-cy-2027-presentation/?wpdmdl=42759\n- Energy Operat
  ions Committee meeting agenda: https://www.lcra.org/download/2026-08-energ
  y-operations-agenda/?wpdmdl=42760\n- LCRA Board meeting agenda: https://ww
- w.lcra.org/download/2026-08-lcra-board-agenda/?wpdmdl=42762
+ w.lcra.org/download/2026-08-lcra-board-agenda/?wpdmdl=42762\n\nPer the age
+ nda this is the earliest start time — the board convenes after preceding
+  meetings adjourn.
+CATEGORIES:regular
+X-CAM-ORG:lcra
+END:VEVENT
+BEGIN:VEVENT
+UID:lcra-transmission-services-corp-board-20260819@calendars.changesaroundm
+ e.com
+DTSTAMP:20260816T140454Z
+DTSTART;TZID=America/Chicago:20260819T120000
+DTEND;TZID=America/Chicago:20260819T150000
+SUMMARY:LCRA - Transmission Services Corp. Board
+LOCATION:Board Room\, Hancock Building\, 3700 Lake Austin Blvd\, Austin\, T
+ X 78703
+URL:https://www.lcra.org/about/leadership/board-agendas/
+DESCRIPTION:Meeting materials:\n- LCRA Transmission Services Corporation Bo
+ ard meeting agenda: https://www.lcra.org/download/2026-08-lcra-tsc-board-a
+ genda/?wpdmdl=42761\n\nPer the agenda this is the earliest start time — 
+ the board convenes after preceding meetings adjourn.
 CATEGORIES:regular
 X-CAM-ORG:lcra
 END:VEVENT
 BEGIN:VEVENT
 UID:lcra-water-rules-public-comments-close-20260901@calendars.changesaround
  me.com
-DTSTAMP:20260816T115326Z
+DTSTAMP:20260816T140454Z
 DTSTART;VALUE=DATE:20260901
 SUMMARY:LCRA - Water rules public comments close
 URL:https://www.lcra.org/water/water-related-rules-and-regulations-for-publ
@@ -85,7 +89,7 @@ X-CAM-ORG:lcra
 END:VEVENT
 BEGIN:VEVENT
 UID:lcra-board-committee-meetings-20260923@calendars.changesaroundme.com
-DTSTAMP:20260816T115326Z
+DTSTAMP:20260816T140454Z
 DTSTART;VALUE=DATE:20260923
 SUMMARY:LCRA - Board & Committee Meetings
 LOCATION:Board Room\, Hancock Building\, 3700 Lake Austin Blvd\, Austin\, T
@@ -100,7 +104,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lcra-transmission-services-corp-board-20260923@calendars.changesaroundm
  e.com
-DTSTAMP:20260816T115326Z
+DTSTAMP:20260816T140454Z
 DTSTART;VALUE=DATE:20260923
 SUMMARY:LCRA - Transmission Services Corp. Board
 LOCATION:Board Room\, Hancock Building\, 3700 Lake Austin Blvd\, Austin\, T
@@ -114,7 +118,7 @@ X-CAM-ORG:lcra
 END:VEVENT
 BEGIN:VEVENT
 UID:lcra-board-committee-meetings-20261020@calendars.changesaroundme.com
-DTSTAMP:20260816T115326Z
+DTSTAMP:20260816T140454Z
 DTSTART;VALUE=DATE:20261020
 SUMMARY:LCRA - Board & Committee Meetings
 LOCATION:Horseshoe Bay\, TX
@@ -128,7 +132,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lcra-transmission-services-corp-board-20261020@calendars.changesaroundm
  e.com
-DTSTAMP:20260816T115326Z
+DTSTAMP:20260816T140454Z
 DTSTART;VALUE=DATE:20261020
 SUMMARY:LCRA - Transmission Services Corp. Board
 LOCATION:Horseshoe Bay\, TX
@@ -141,7 +145,7 @@ X-CAM-ORG:lcra
 END:VEVENT
 BEGIN:VEVENT
 UID:lcra-board-committee-meetings-20261110@calendars.changesaroundme.com
-DTSTAMP:20260816T115326Z
+DTSTAMP:20260816T140454Z
 DTSTART;VALUE=DATE:20261110
 SUMMARY:LCRA - Board & Committee Meetings
 LOCATION:Board Room\, Hancock Building\, 3700 Lake Austin Blvd\, Austin\, T
@@ -156,7 +160,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lcra-transmission-services-corp-board-20261110@calendars.changesaroundm
  e.com
-DTSTAMP:20260816T115326Z
+DTSTAMP:20260816T140454Z
 DTSTART;VALUE=DATE:20261110
 SUMMARY:LCRA - Transmission Services Corp. Board
 LOCATION:Board Room\, Hancock Building\, 3700 Lake Austin Blvd\, Austin\, T
@@ -170,7 +174,7 @@ X-CAM-ORG:lcra
 END:VEVENT
 BEGIN:VEVENT
 UID:lcra-board-committee-meetings-20261208@calendars.changesaroundme.com
-DTSTAMP:20260816T115326Z
+DTSTAMP:20260816T140454Z
 DTSTART;VALUE=DATE:20261208
 SUMMARY:LCRA - Board & Committee Meetings
 LOCATION:Board Room\, Hancock Building\, 3700 Lake Austin Blvd\, Austin\, T
@@ -185,7 +189,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:lcra-transmission-services-corp-board-20261208@calendars.changesaroundm
  e.com
-DTSTAMP:20260816T115326Z
+DTSTAMP:20260816T140454Z
 DTSTART;VALUE=DATE:20261208
 SUMMARY:LCRA - Transmission Services Corp. Board
 LOCATION:Board Room\, Hancock Building\, 3700 Lake Austin Blvd\, Austin\, T
