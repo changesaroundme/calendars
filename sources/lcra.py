@@ -318,7 +318,13 @@ def parse_materials_page(html: str) -> dict[date, list[tuple[str, str, str]]]:
 
 
 def _agenda_start_time(pdf_bytes: bytes, day: date):
-    """(hour, minute) if page 1 names this day and exactly one time."""
+    """((hour, minute), earliest_flag) if page 1 names this day and states
+    exactly one distinct time — counting the word "noon", which is the
+    ONLY time on real TSC agendas ("Earliest start time: noon", verified
+    against the 19 Aug 2026 document). earliest_flag is True when the
+    header uses that "earliest start time" phrasing: the board convenes
+    after preceding meetings adjourn, so the time is a floor, not a
+    promise — worth one line of commentary (real uncertainty)."""
     import io
     import pdfplumber
     with pdfplumber.open(io.BytesIO(pdf_bytes)) as pdf:
@@ -328,7 +334,12 @@ def _agenda_start_time(pdf_bytes: bytes, day: date):
         return None
     times = {(int(h) % 12 + (12 if mer.lower() == "p" else 0), int(mn or 0))
              for h, mn, mer in AGENDA_TIME_RE.findall(text)}
-    return times.pop() if len(times) == 1 else None
+    if re.search(r"\bnoon\b", text, re.IGNORECASE):
+        times.add((12, 0))
+    if len(times) != 1:
+        return None
+    earliest = bool(re.search(r"earliest start time", text, re.IGNORECASE))
+    return times.pop(), earliest
 
 
 def enrich_materials(events: list[Event], get_html, today: date,
@@ -362,24 +373,32 @@ def enrich_materials(events: list[Event], get_html, today: date,
         # first committee does). Conservative: page 1 must name the day
         # and state exactly one distinct time, else the event stays
         # all-day and says where to look.
-        confirmed = False
+        confirmed = earliest = False
         main = next(((lbl, txt, url) for lbl, txt, url in keep
                      if txt.lower().endswith("meeting agenda")), None)
         if get_bytes is not None and main and spent < MATERIALS_PDF_CAP:
             spent += 1
             try:
-                t = _agenda_start_time(get_bytes(main[2]), d)
+                data = get_bytes(main[2])
+                t = _agenda_start_time(data, d) if data else None
             except Exception as exc:
                 print(f"[{SOURCE}] WARNING: agenda time parse failed "
                       f"({main[2]}): {exc}")
                 t = None
             if t is not None:
-                ev.start = datetime(d.year, d.month, d.day, *t)
+                (h, m), earliest = t
+                ev.start = datetime(d.year, d.month, d.day, h, m)
                 ev.end = ev.start + timedelta(hours=MEETING_HOURS)
                 confirmed = True
         lines = [f"- {txt}: {url}" for _, txt, url in keep]
         parts = ["Meeting materials:\n" + "\n".join(lines)]
-        if not confirmed:
+        if earliest:
+            # The agenda's own phrasing: a floor, not a promise — the one
+            # kind of start-time commentary that stays on a confirmed event.
+            parts.append("Per the agenda this is the earliest start time — "
+                         "the board convenes after preceding meetings "
+                         "adjourn.")
+        elif not confirmed:
             # Commentary only where uncertainty is real (house rule).
             parts.append("Start time: see the posted agenda.")
         ev.description = "\n\n".join(parts)
@@ -413,13 +432,18 @@ def fetch_offline() -> list[Event]:
     events = finalize(
         parse_page((FIXTURES / "lcra_schedule.html").read_text(), default_year=2026)
     )
-    # Materials enrichment on the real Aug-19 capture; today pinned so that
-    # meeting is upcoming. No get_bytes offline: the link-attach path runs,
-    # the PDF time-upgrade path stays conservative (all-day + pointer).
+    # Materials enrichment on the real Aug-19 captures; today pinned so
+    # that meeting is upcoming. The TSC agenda PDF (real document, 26pp,
+    # "Earliest start time: noon") exercises the noon/earliest time
+    # upgrade; other agendas have no fixture and return None, so the
+    # LCRA-side event exercises the all-day + pointer path.
     enrich_materials(
         events,
         lambda u: (FIXTURES / "lcra_materials.html").read_text(),
         today=date(2026, 8, 14),
+        get_bytes=lambda u: (
+            (FIXTURES / "lcra_agenda_tsc_20260819.pdf").read_bytes()
+            if "tsc-board-agenda" in u else None),
     )
     return events + finalize(
         parse_comment_page((FIXTURES / "lcra_comments.html").read_text(),
