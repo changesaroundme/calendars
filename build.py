@@ -406,8 +406,19 @@ def main() -> int:
     if all_events:
         # Consolidated feeds get the condensed council view (display-only;
         # the per-org feeds above were emitted from the untouched originals).
-        combined = condense_council(all_events)
-        folded = len(all_events) - len(combined)
+        # PUCT publishes ~30 routine open meetings a year; the consolidated
+        # feeds carry only the ones that matter here — watched-case
+        # meetings (kind flipped to "hearing" by puct.mark_watched_cases)
+        # and comment windows / curated entries. puct.ics keeps everything.
+        # Content-based (kind), so the gate survives snapshot round-trips.
+        consolidated = [e for e in all_events
+                        if not (e.source == "puct" and e.kind == "regular")]
+        gated = len(all_events) - len(consolidated)
+        if gated:
+            print(f"[all] {gated} routine PUCT open meetings stay on "
+                  "puct.ics only (watched-case gate)")
+        combined = condense_council(consolidated)
+        folded = len(consolidated) - len(combined)
         if folded:
             print(f"[all] folded {folded} corporation-board meetings into "
                   "their council events")

@@ -381,6 +381,9 @@
   start: 2026-09-04
   org: puct
   kind: comment-window
+  # Pinned to the calendar-RSS scraper's uid (appointment 1809) so this
+  # richer entry replaces the scraped "Project 58482 comments close" copy.
+  uid: puct-cal-1809-20260904@calendars.changesaroundme.com
   url: https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=58482
   description: |
     Public comment window: comments due 4 Sep 2026 on proposed new 16 TAC
@@ -393,21 +396,26 @@
     Comments are filed in Project No. 58482 via the PUC Interchange:
     https://interchange.puc.texas.gov/filer
 
-- summary: "PUCT - Open Meeting (765kV dockets on agenda)"
-  start: 2026-08-28 09:30
+- summary: "PUCT - Open Meeting (765kV dockets 59029 & 59315)"
+  start: 2026-08-21 09:30
   org: puct
   kind: hearing
-  location: "Commissioners' Hearing Room, 7th Floor, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701"
-  url: https://www.puc.texas.gov/agency/calendar/openmeetings/
+  # Pinned to the calendar-RSS scraper's uid (appointment 1802) so this
+  # annotated entry replaces the scraped generic open meeting. Dockets
+  # confirmed from the posted agenda PDF (items 2-3, contested cases,
+  # "Discussion and possible action") — NOT the 20 Aug merits hearing,
+  # and the 28 Aug date the oral-argument motion suggested is unneeded:
+  # if the cases return there, the watched-case gate promotes that
+  # meeting automatically once its agenda files with the SOS.
+  uid: puct-cal-1802-20260821@calendars.changesaroundme.com
+  location: "Zlotnik Family Ballroom, AT&T Hotel and Conference Center, 1900 University Ave., Austin, TX 78705"
+  url: https://ftp.puc.texas.gov/public/puct-info/agency/om/082126Final.pdf
   description: |
-    Both watched 765-kV CCN dockets are before the Commission this day per
-    docket filings (agenda posts ~a week ahead at the event link):
+    Both watched 765-kV CCN dockets are contested-case items on this
+    meeting's agenda (discussion and possible action):
 
-    - Docket 59315 (Oncor, Dinosaur Switch - Longshore Switch line): merits
-      hearing complete, Proposal for Decision + exceptions filed; an
-      intervenor has moved for oral argument at this meeting.
-    - Docket 59029 (Oncor, Longshore Switch - Drill Hole Switch line):
-      abated 17 Jun 2026; abatement motions pending.
+    - Item 2, Docket 59029 (Oncor, Longshore Switch - Drill Hole Switch)
+    - Item 3, Docket 59315 (Oncor, Dinosaur Switch - Longshore Switch)
 
-    Filings: https://interchange.puc.texas.gov/search/filings/?controlNumber=59315&itemMatch=Equal
-    and https://interchange.puc.texas.gov/search/filings/?controlNumber=59029&itemMatch=Equal
+    Filings: https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=59029
+    and https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=59315

@@ -39,7 +39,10 @@ from bs4 import BeautifulSoup
 
 MIRROR_URL = "https://texinfo.library.unt.edu/texasregister/openmeetings/OpenMeetings.html"
 FIXTURES = pathlib.Path(__file__).resolve().parent.parent / "fixtures"
-AGENDA_KEEP = 2000  # chars of agenda text to archive per filing
+# Chars of agenda text to archive per filing. 8000, not 2000 (2026-08-17):
+# PUC open-meeting agendas run 40+ items, and the puct watched-case match
+# reads this archive — a watched docket past the cut would be missed.
+AGENDA_KEEP = 8000
 
 # (Agency Name pattern, our org key or observation-only placeholder,
 #  optional `include` regex the agenda/committee text must match)
