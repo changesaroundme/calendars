@@ -28,7 +28,7 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-business-and-commerce-20260729T0900@cal
  endars.changesaroundme.com
-DTSTAMP:20260817T115851Z
+DTSTAMP:20260817T190617Z
 DTSTART;TZID=America/Chicago:20260729T090000
 DTEND;TZID=America/Chicago:20260729T110000
 SUMMARY:Texas Senate - Business & Commerce: 765-kV lines and grid reliabili
@@ -57,7 +57,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-texas-senate-business-commerce-765-kv-lines-and-grid-reliab
  ility-20260729T0900@calendars.changesaroundme.com
-DTSTAMP:20260817T115851Z
+DTSTAMP:20260817T190617Z
 DTSTART;TZID=America/Chicago:20260729T090000
 DTEND;TZID=America/Chicago:20260729T110000
 SUMMARY:Texas Senate - Business & Commerce: 765-kV lines and grid reliabili
@@ -86,7 +86,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-transportation-20260729T1200@calendars.
  changesaroundme.com
-DTSTAMP:20260817T115851Z
+DTSTAMP:20260817T190617Z
 DTSTART;TZID=America/Chicago:20260729T120000
 DTEND;TZID=America/Chicago:20260729T150000
 SUMMARY:Texas Senate - Transportation
@@ -104,7 +104,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-natural-resources-20260811T0900@calenda
  rs.changesaroundme.com
-DTSTAMP:20260817T115851Z
+DTSTAMP:20260817T190617Z
 DTSTART;TZID=America/Chicago:20260811T090000
 DTEND;TZID=America/Chicago:20260811T120000
 SUMMARY:Texas Senate - Natural Resources
@@ -126,7 +126,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-house-transportation-20260817T0930@calendars.changesaroundm
  e.com
-DTSTAMP:20260817T115851Z
+DTSTAMP:20260817T190617Z
 DTSTART;TZID=America/Chicago:20260817T093000
 DTEND;TZID=America/Chicago:20260817T123000
 SUMMARY:Texas House - Transportation
@@ -134,24 +134,24 @@ LOCATION:Room E2.012\, Texas Capitol Extension\, 1100 Congress Ave.\, Austi
  n\, TX 78701
 URL:https://capitol.texas.gov/tlodocs/89R/schedules/html/C4702026081709301.
  HTM
-DESCRIPTION:Summary Agenda\n\n1. HOUSE OF REPRESENTATIVES\n2. Public testim
- ony may be limited at the discretion of the chair.\n3. Monitoring: SB 1555
-  and SB 1939\n4. Evaluate: "Foreign Holders of Commercial Driver Licenses"
- \n5. Study: "Legislative Prioritization of Texas Department of Transportat
- ion Projects"\n6. Review: "Texas Department of Transportation Construction
-  Communications"\n7. Assess: "Supporting Texas Ports"\n8. Evaluate: "Speed
-  Enforcement in Work and School Zones"\n9. Evaluate: "Texas Department of 
- Motor Vehicles Review"\n10. Agency Oversight\n\n—\n\nSB 1555: relating t
- o a grant program to fund certain railroad grade separation projects\; and
- \n\nSB 1939: relating to the ship channel improvement revolving fund.\n\n
- —\n\n
+DESCRIPTION:Summary Agenda\n\n1. Public testimony may be limited at the dis
+ cretion of the chair.\n2. Monitoring: SB 1555 and SB 1939\n3. Evaluate: "F
+ oreign Holders of Commercial Driver Licenses"\n4. Study: "Legislative Prio
+ ritization of Texas Department of Transportation Projects"\n5. Review: "Te
+ xas Department of Transportation Construction Communications"\n6. Assess: 
+ "Supporting Texas Ports"\n7. Evaluate: "Speed Enforcement in Work and Scho
+ ol Zones"\n8. Evaluate: "Texas Department of Motor Vehicles Review"\n9. Ag
+ ency Oversight\n\nElectronic public comments: https://comments.house.texas
+ .gov/home?c=c470\n\n—\n\nSB 1555: relating to a grant program to fund ce
+ rtain railroad grade separation projects\; and\n\nSB 1939: relating to the
+  ship channel improvement revolving fund.\n\n—\n\n
 CATEGORIES:hearing
 X-CAM-ORG:legislature
 END:VEVENT
 BEGIN:VEVENT
 UID:legislature-house-agriculture-livestock-20260818T1100@calendars.changes
  aroundme.com
-DTSTAMP:20260817T115851Z
+DTSTAMP:20260817T190617Z
 DTSTART;TZID=America/Chicago:20260818T110000
 DTEND;TZID=America/Chicago:20260818T140000
 SUMMARY:Texas House - Agriculture & Livestock
@@ -159,18 +159,18 @@ LOCATION:Room E1.026\, Texas Capitol Extension\, 1100 Congress Ave.\, Austi
  n\, TX 78701
 URL:https://capitol.texas.gov/tlodocs/89R/schedules/html/C0202026081811001.
  HTM
-DESCRIPTION:Summary Agenda\n\n1. HOUSE OF REPRESENTATIVES\n2. Monitoring: H
- B 43\n3. Consider: "Resiliency of Texas Agriculture"\n4. Agency Oversight\
- n5. Electronic public comment will be available for\n\n—\n\nHB 43: relat
- ing to the Texas Agricultural Finance Authority and certain programs admin
- istered by the authority.\n\n—\n\n
+DESCRIPTION:Summary Agenda\n\n1. Monitoring: HB 43\n2. Consider: "Resilienc
+ y of Texas Agriculture"\n3. Agency Oversight\n\nElectronic public comments
+ : https://comments.house.texas.gov/home?c=c020\n\n—\n\nHB 43: relating t
+ o the Texas Agricultural Finance Authority and certain programs administer
+ ed by the authority.\n\n—\n\n
 CATEGORIES:hearing
 X-CAM-ORG:legislature
 END:VEVENT
 BEGIN:VEVENT
 UID:legislature-house-natural-resources-20260824T1000@calendars.changesarou
  ndme.com
-DTSTAMP:20260817T115851Z
+DTSTAMP:20260817T190617Z
 DTSTART;TZID=America/Chicago:20260824T100000
 DTEND;TZID=America/Chicago:20260824T130000
 SUMMARY:Texas House - Natural Resources
@@ -183,7 +183,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-transportation-20260825T0900@calendars.
  changesaroundme.com
-DTSTAMP:20260817T115851Z
+DTSTAMP:20260817T190617Z
 DTSTART;TZID=America/Chicago:20260825T090000
 DTEND;TZID=America/Chicago:20260825T120000
 SUMMARY:Texas Senate - Transportation
@@ -202,7 +202,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-water-agriculture-and-rural-affairs-202
  60901T0900@calendars.changesaroundme.com
-DTSTAMP:20260817T115851Z
+DTSTAMP:20260817T190617Z
 DTSTART;TZID=America/Chicago:20260901T090000
 DTEND;TZID=America/Chicago:20260901T120000
 SUMMARY:Texas Senate - Water\, Agriculture\, and Rural Affairs
@@ -219,7 +219,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-local-government-20260901T1100@calendar
  s.changesaroundme.com
-DTSTAMP:20260817T115851Z
+DTSTAMP:20260817T190617Z
 DTSTART;TZID=America/Chicago:20260901T110000
 DTEND;TZID=America/Chicago:20260901T140000
 SUMMARY:Texas Senate - Local Government
@@ -235,7 +235,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-house-s-c-on-transportation-funding-20260902T1000@calendars
  .changesaroundme.com
-DTSTAMP:20260817T115851Z
+DTSTAMP:20260817T190617Z
 DTSTART;TZID=America/Chicago:20260902T100000
 DTEND;TZID=America/Chicago:20260902T130000
 SUMMARY:Texas House - S/C on Transportation Funding
@@ -248,7 +248,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-water-agriculture-and-rural-affairs-202
  60903T0900@calendars.changesaroundme.com
-DTSTAMP:20260817T115851Z
+DTSTAMP:20260817T190617Z
 DTSTART;TZID=America/Chicago:20260903T090000
 DTEND;TZID=America/Chicago:20260903T120000
 SUMMARY:Texas Senate - Water\, Agriculture\, and Rural Affairs
@@ -264,7 +264,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-house-energy-resources-20260914T0830@calendars.changesaroun
  dme.com
-DTSTAMP:20260817T115851Z
+DTSTAMP:20260817T190617Z
 DTSTART;TZID=America/Chicago:20260914T083000
 DTEND;TZID=America/Chicago:20260914T113000
 SUMMARY:Texas House - Energy Resources
@@ -278,7 +278,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-house-energy-resources-20260915T0830@calendars.changesaroun
  dme.com
-DTSTAMP:20260817T115851Z
+DTSTAMP:20260817T190617Z
 DTSTART;TZID=America/Chicago:20260915T083000
 DTEND;TZID=America/Chicago:20260915T113000
 SUMMARY:Texas House - Energy Resources
@@ -292,7 +292,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-natural-resources-20260921T0900@calenda
  rs.changesaroundme.com
-DTSTAMP:20260817T115851Z
+DTSTAMP:20260817T190617Z
 DTSTART;TZID=America/Chicago:20260921T090000
 DTEND;TZID=America/Chicago:20260921T120000
 SUMMARY:Texas Senate - Natural Resources
@@ -320,7 +320,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-business-and-commerce-20260930T0900@cal
  endars.changesaroundme.com
-DTSTAMP:20260817T115851Z
+DTSTAMP:20260817T190617Z
 DTSTART;TZID=America/Chicago:20260930T090000
 DTEND;TZID=America/Chicago:20260930T120000
 SUMMARY:Texas Senate - Business and Commerce

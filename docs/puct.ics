@@ -1,0 +1,67 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//changesaroundme//calendars//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CAM - PUCT
+X-WR-TIMEZONE:America/Chicago
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+X-APPLE-CALENDAR-COLOR:#6E6E6E
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:puct-open-meeting-765kv-dockets-on-agenda-20260828T0930@calendars.chang
+ esaroundme.com
+DTSTAMP:20260817T190617Z
+DTSTART;TZID=America/Chicago:20260828T093000
+DTEND;TZID=America/Chicago:20260828T113000
+SUMMARY:PUCT - Open Meeting (765kV dockets on agenda)
+LOCATION:Commissioners' Hearing Room\, 7th Floor\, William B. Travis Buildi
+ ng\, 1701 N. Congress Ave.\, Austin\, TX 78701
+URL:https://www.puc.texas.gov/agency/calendar/openmeetings/
+DESCRIPTION:Both watched 765-kV CCN dockets are before the Commission this 
+ day per docket filings (agenda posts ~a week ahead at the event link):\n\n
+ - Docket 59315 (Oncor\, Dinosaur Switch - Longshore Switch line): merits  
+  hearing complete\, Proposal for Decision + exceptions filed\; an   interv
+ enor has moved for oral argument at this meeting. - Docket 59029 (Oncor\, 
+ Longshore Switch - Drill Hole Switch line):   abated 17 Jun 2026\; abateme
+ nt motions pending.\n\nFilings: https://interchange.puc.texas.gov/search/f
+ ilings/?controlNumber=59315&itemMatch=Equal and https://interchange.puc.te
+ xas.gov/search/filings/?controlNumber=59029&itemMatch=Equal
+CATEGORIES:hearing
+X-CAM-ORG:puct
+END:VEVENT
+BEGIN:VEVENT
+UID:puct-large-load-demand-management-service-comments-close-20260904@calen
+ dars.changesaroundme.com
+DTSTAMP:20260817T190617Z
+DTSTART;VALUE=DATE:20260904
+SUMMARY:PUCT - Large Load Demand Management Service comments close
+URL:https://interchange.puc.texas.gov/search/filings/?UtilityType=A&Control
+ Number=58482
+DESCRIPTION:Public comment window: comments due 4 Sep 2026 on proposed new 
+ 16 TAC §25.521 (Large Load Demand Management Service)\, published in the 
+ Texas Register 14 Aug 2026 (Project No. 58482).\n\nBackground (PUC Staff M
+ emo): https://interchange.puc.texas.gov/Documents/58482_3_1607913.PDF\n\nC
+ omments are filed in Project No. 58482 via the PUC Interchange: https://in
+ terchange.puc.texas.gov/filer
+CATEGORIES:comment-window
+X-CAM-ORG:puct
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+[
+ {
+  "source": "puct",
+  "summary": "PUCT - Open Meeting (765kV dockets on agenda)",
+  "start": "2026-08-28T09:30:00",
+  "end": "2026-08-28T11:30:00",
+  "location": "Commissioners' Hearing Room, 7th Floor, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
+  "url": "https://www.puc.texas.gov/agency/calendar/openmeetings/",
+  "status": "CONFIRMED",
+  "kind": "hearing",
+  "uid": "puct-open-meeting-765kv-dockets-on-agenda-20260828T0930@calendars.changesaroundme.com",
+  "description": "Both watched 765-kV CCN dockets are before the Commission this day per docket filings (agenda posts ~a week ahead at the event link):\n\n- Docket 59315 (Oncor, Dinosaur Switch - Longshore Switch line): merits   hearing complete, Proposal for Decision + exceptions filed; an   intervenor has moved for oral argument at this meeting. - Docket 59029 (Oncor, Longshore Switch - Drill Hole Switch line):   abated 17 Jun 2026; abatement motions pending.\n\nFilings: https://interchange.puc.texas.gov/search/filings/?controlNumber=59315&itemMatch=Equal and https://interchange.puc.texas.gov/search/filings/?controlNumber=59029&itemMatch=Equal",
+  "all_day": false
+ },
+ {
+  "source": "puct",
+  "summary": "PUCT - Large Load Demand Management Service comments close",
+  "start": "2026-09-04",
+  "end": null,
+  "location": "",
+  "url": "https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=58482",
+  "status": "CONFIRMED",
+  "kind": "comment-window",
+  "uid": "puct-large-load-demand-management-service-comments-close-20260904@calendars.changesaroundme.com",
+  "description": "Public comment window: comments due 4 Sep 2026 on proposed new 16 TAC \u00a725.521 (Large Load Demand Management Service), published in the Texas Register 14 Aug 2026 (Project No. 58482).\n\nBackground (PUC Staff Memo): https://interchange.puc.texas.gov/Documents/58482_3_1607913.PDF\n\nComments are filed in Project No. 58482 via the PUC Interchange: https://interchange.puc.texas.gov/filer",
+  "all_day": true
+ }
+]

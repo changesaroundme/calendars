@@ -230,6 +230,19 @@
   "status": "CONFIRMED",
   "kind": "hearing",
   "uid": "legislature-senate-committee-on-business-and-commerce-20260729T0900@calendars.changesaroundme.com",
+  "description": "Senate Committee on Business & Commerce, chaired by Sen. Charles Schwertner. Invited and public testimony on two interim charges:\n\nManaging the Impacts of 765-kV Transmission Lines on Private Property Rights - reviewing the proposed route plans and their effect on homes, businesses and communities; whether current regulatory processes and timelines adequately protect landowner rights; and recommendations for transmission planning, permitting and siting.\n\nAssessing the State of the Texas Electric Grid - SB 6 rulemaking including large load interconnection and transmission cost allocation, ERCOT load forecast confidence, the Texas Energy Fund and post-Uri reforms, and whether the ERCOT market remains competitive.\n\nPublic testimony is limited to 2 minutes per witness. Written testimony needs 15 copies to the committee clerk plus a digital copy by email. Registration closes at 11am on the day of the hearing.\n\nNotice was marked REVISION - check the link for any later change.",
+  "all_day": false
+ },
+ {
+  "source": "legislature",
+  "summary": "Texas Senate - Business & Commerce: 765-kV lines and grid reliability",
+  "start": "2026-07-29T09:00:00",
+  "end": "2026-07-29T11:00:00",
+  "location": "Room E1.012 (Hearing Room), Texas Capitol Extension, 1100 Congress Ave., Austin, TX 78701",
+  "url": "https://capitol.texas.gov/tlodocs/89R/schedules/html/C5102026072909001.HTM",
+  "status": "CONFIRMED",
+  "kind": "hearing",
+  "uid": "legislature-senate-committee-on-business-and-commerce-20260729T0900@calendars.changesaroundme.com",
   "description": "Senate Committee on Business & Commerce, chaired by Sen. Charles\nSchwertner. Invited and public testimony on two interim charges:\n\nManaging the Impacts of 765-kV Transmission Lines on Private Property\nRights - reviewing the proposed route plans and their effect on homes,\nbusinesses and communities; whether current regulatory processes and\ntimelines adequately protect landowner rights; and recommendations for\ntransmission planning, permitting and siting.\n\nAssessing the State of the Texas Electric Grid - SB 6 rulemaking\nincluding large load interconnection and transmission cost allocation,\nERCOT load forecast confidence, the Texas Energy Fund and post-Uri\nreforms, and whether the ERCOT market remains competitive.\n\nPublic testimony is limited to 2 minutes per witness. Written testimony\nneeds 15 copies to the committee clerk plus a digital copy by email.\nRegistration closes at 11am on the day of the hearing.\n\nNotice was marked REVISION - check the link for any later change.\n",
   "all_day": false
  },
@@ -568,7 +581,7 @@
   "status": "CONFIRMED",
   "kind": "hearing",
   "uid": "legislature-house-transportation-20260817T0930@calendars.changesaroundme.com",
-  "description": "Summary Agenda\n\n1. HOUSE OF REPRESENTATIVES\n2. Public testimony may be limited at the discretion of the chair.\n3. Monitoring: SB 1555 and SB 1939\n4. Evaluate: \"Foreign Holders of Commercial Driver Licenses\"\n5. Study: \"Legislative Prioritization of Texas Department of Transportation Projects\"\n6. Review: \"Texas Department of Transportation Construction Communications\"\n7. Assess: \"Supporting Texas Ports\"\n8. Evaluate: \"Speed Enforcement in Work and School Zones\"\n9. Evaluate: \"Texas Department of Motor Vehicles Review\"\n10. Agency Oversight\n\n\u2014\n\nSB 1555: relating to a grant program to fund certain railroad grade separation projects; and\n\nSB 1939: relating to the ship channel improvement revolving fund.\n\n\u2014\n\n",
+  "description": "Summary Agenda\n\n1. Public testimony may be limited at the discretion of the chair.\n2. Monitoring: SB 1555 and SB 1939\n3. Evaluate: \"Foreign Holders of Commercial Driver Licenses\"\n4. Study: \"Legislative Prioritization of Texas Department of Transportation Projects\"\n5. Review: \"Texas Department of Transportation Construction Communications\"\n6. Assess: \"Supporting Texas Ports\"\n7. Evaluate: \"Speed Enforcement in Work and School Zones\"\n8. Evaluate: \"Texas Department of Motor Vehicles Review\"\n9. Agency Oversight\n\nElectronic public comments: https://comments.house.texas.gov/home?c=c470\n\n\u2014\n\nSB 1555: relating to a grant program to fund certain railroad grade separation projects; and\n\nSB 1939: relating to the ship channel improvement revolving fund.\n\n\u2014\n\n",
   "all_day": false
  },
  {
@@ -581,7 +594,7 @@
   "status": "CONFIRMED",
   "kind": "hearing",
   "uid": "legislature-house-agriculture-livestock-20260818T1100@calendars.changesaroundme.com",
-  "description": "Summary Agenda\n\n1. HOUSE OF REPRESENTATIVES\n2. Monitoring: HB 43\n3. Consider: \"Resiliency of Texas Agriculture\"\n4. Agency Oversight\n5. Electronic public comment will be available for\n\n\u2014\n\nHB 43: relating to the Texas Agricultural Finance Authority and certain programs administered by the authority.\n\n\u2014\n\n",
+  "description": "Summary Agenda\n\n1. Monitoring: HB 43\n2. Consider: \"Resiliency of Texas Agriculture\"\n3. Agency Oversight\n\nElectronic public comments: https://comments.house.texas.gov/home?c=c020\n\n\u2014\n\nHB 43: relating to the Texas Agricultural Finance Authority and certain programs administered by the authority.\n\n\u2014\n\n",
   "all_day": false
  },
  {

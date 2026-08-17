@@ -28,7 +28,7 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:lcra-water-rules-public-comments-close-20260901@calendars.changesaround
  me.com
-DTSTAMP:20260817T115851Z
+DTSTAMP:20260817T190617Z
 DTSTART;VALUE=DATE:20260901
 SUMMARY:LCRA - Water rules public comments close
 URL:https://www.lcra.org/water/water-related-rules-and-regulations-for-publ
@@ -46,9 +46,26 @@ CATEGORIES:comment-window
 X-CAM-ORG:lcra
 END:VEVENT
 BEGIN:VEVENT
+UID:puct-large-load-demand-management-service-comments-close-20260904@calen
+ dars.changesaroundme.com
+DTSTAMP:20260817T190617Z
+DTSTART;VALUE=DATE:20260904
+SUMMARY:PUCT - Large Load Demand Management Service comments close
+URL:https://interchange.puc.texas.gov/search/filings/?UtilityType=A&Control
+ Number=58482
+DESCRIPTION:Public comment window: comments due 4 Sep 2026 on proposed new 
+ 16 TAC §25.521 (Large Load Demand Management Service)\, published in the 
+ Texas Register 14 Aug 2026 (Project No. 58482).\n\nBackground (PUC Staff M
+ emo): https://interchange.puc.texas.gov/Documents/58482_3_1607913.PDF\n\nC
+ omments are filed in Project No. 58482 via the PUC Interchange: https://in
+ terchange.puc.texas.gov/filer
+CATEGORIES:comment-window
+X-CAM-ORG:puct
+END:VEVENT
+BEGIN:VEVENT
 UID:capmetro-fare-increase-public-comments-close-20260928@calendars.changes
  aroundme.com
-DTSTAMP:20260817T115851Z
+DTSTAMP:20260817T190617Z
 DTSTART;VALUE=DATE:20260928
 SUMMARY:CapMetro - Fare increase public comments close
 URL:https://www.capmetro.org/fare/general-fares-overview/fare-increase
