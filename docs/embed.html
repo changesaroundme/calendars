@@ -22,6 +22,7 @@
     --org-atp:      #4a3aa7;  /* violet */
     --org-txdotev:  #e34948;  /* red */
     --org-legislature: #6e6e6e;  /* neutral until the palette rethink */
+    --org-puct:     #6e6e6e;
   }
   /* Dark values apply via OS setting (unless ?theme=light) or ?theme=dark. */
   @media (prefers-color-scheme: dark) {
@@ -40,6 +41,7 @@
       --org-atp:      #9085e9;
       --org-txdotev:  #e66767;
       --org-legislature: #9a9a91;
+      --org-puct:     #9a9a91;
     }
   }
   :root[data-theme="dark"] {
@@ -57,6 +59,7 @@
     --org-atp:      #9085e9;
     --org-txdotev:  #e66767;
     --org-legislature: #9a9a91;
+    --org-puct:     #9a9a91;
   }
   /* Fill the iframe and scroll INTERNALLY: legend/toolbar/footer stay
      pinned; only the event list scrolls. Prevents double scrollbars in
@@ -152,6 +155,7 @@ const ORGS = [
   { key: "atp",      label: "ATP",      match: u => u.endsWith("@www.atptx.org") },
   { key: "txdotev",  label: "TxDOT",    match: u => u.startsWith("txdotev-") },
   { key: "legislature", label: "TxLege", match: u => u.startsWith("legislature-") },
+  { key: "puct",     label: "PUCT",     match: u => u.startsWith("puct-") },
 ];
 const hidden = new Set();
 

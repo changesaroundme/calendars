@@ -301,8 +301,14 @@ def _archived_past(fresh_uids: set[str], today: date) -> list[Event]:
 # descriptions at the bottom. Conservative: no charges parsed -> None, and
 # the event keeps its unenriched description.
 NOTICE_HEADER_RE = re.compile(
-    r"^(COMMITTEE|TIME & DATE|PLACE|CHAIR|SENATE$|NOTICE OF PUBLIC HEARING)",
+    r"^(COMMITTEE|TIME & DATE|PLACE|CHAIR|SENATE$|HOUSE OF REPRESENTATIVES$"
+    r"|NOTICE OF PUBLIC HEARING|NOTICE OF FORMAL MEETING)",
     re.IGNORECASE)
+# House notices close with an "Electronic public comment will be available
+# for:" block — a bold lead plus a topic list that restates the charges.
+# It reduces to its submission link (Ian, 2026-08-17: "we don't need to
+# help people with anything beyond providing them the link").
+ECOMMENT_RE = re.compile(r"^Electronic public comment", re.IGNORECASE)
 NOTICE_STOP_RE = re.compile(
     r"public testimony is limited|notice of assistance", re.IGNORECASE)
 LEG_SESSION_RE = re.compile(r"\(?(\d{2,3})(?:st|nd|rd|th)\s+Legislature\)?,?\s*")
@@ -353,6 +359,8 @@ def summarize_notice(html: bytes | str) -> str | None:
             continue
         if NOTICE_STOP_RE.search(text):
             break
+        if ECOMMENT_RE.match(text):
+            continue  # bold e-comment lead: link-only treatment (below)
         b = p.find("b")
         lead = re.sub(r"\s+", " ", b.get_text(" ", strip=True)).strip() if b else ""
         # A bullet by markup (Word's Symbol/Wingdings marker span) or by
@@ -407,6 +415,10 @@ def summarize_notice(html: bytes | str) -> str | None:
             lines += ["", f"Testimony to include: {joined}"]
         else:
             lines += ["", _abbrev(testimony, acronyms)]
+    ecomment = soup.find(
+        "a", href=re.compile(r"comments\.house\.texas\.gov", re.IGNORECASE))
+    if ecomment:
+        lines += ["", f"Electronic public comments: {ecomment['href']}"]
     bills = [(l, d) for c in charges for l, d, _ in c["bills"]]
     if bills:
         lines.append("")
@@ -479,6 +491,10 @@ def fetch_offline() -> list[Event]:
         "https://capitol.texas.gov/tlodocs/89R/schedules/html/"
         "C5802026081109001.HTM":
             FIXTURES / "legislature_notice_c580_20260811.html",
+        # House shape: chamber header skip + e-comment link reduction.
+        "https://capitol.texas.gov/tlodocs/89R/schedules/html/"
+        "C0202026081811001.HTM":
+            FIXTURES / "legislature_notice_c020_20260818.html",
     }
     enrich_notices(
         events,

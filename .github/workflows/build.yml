@@ -5,6 +5,7 @@ on:
     # 11:17 UTC = 6:17 AM Central (CDT). Odd minute on purpose — be a polite
     # scraper and don't pile onto the :00 thundering herd.
     - cron: "17 11 * * *"
+    - cron: "17 23 * * *"
   workflow_dispatch: {}
   push:
     branches: [main]
