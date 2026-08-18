@@ -27,7 +27,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20250825T1200@calendars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20250825T120000
 DTEND;TZID=America/Chicago:20250825T140000
 SUMMARY:CapMetro - Board of Directors
@@ -40,7 +40,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-finance-audit-and-administration-committee-20250910T1000@calen
  dars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20250910T100000
 DTEND;TZID=America/Chicago:20250910T120000
 SUMMARY:CapMetro - Finance\, Audit and Administration Committee
@@ -52,7 +52,7 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20250910T1200@calendars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20250910T120000
 DTEND;TZID=America/Chicago:20250910T140000
 SUMMARY:CapMetro - Board of Directors
@@ -65,7 +65,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-operations-planning-and-safety-committee-20250910T1230@calenda
  rs.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20250910T123000
 DTEND;TZID=America/Chicago:20250910T143000
 SUMMARY:CapMetro - Operations\, Planning and Safety Committee
@@ -77,7 +77,7 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20250922T1200@calendars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20250922T120000
 DTEND;TZID=America/Chicago:20250922T140000
 SUMMARY:CapMetro - Board of Directors
@@ -90,7 +90,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-finance-audit-and-administration-committee-20251008T1000@calen
  dars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20251008T100000
 DTEND;TZID=America/Chicago:20251008T120000
 SUMMARY:CapMetro - Finance\, Audit and Administration Committee
@@ -103,7 +103,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-operations-planning-and-safety-committee-20251008T1230@calenda
  rs.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20251008T123000
 DTEND;TZID=America/Chicago:20251008T143000
 SUMMARY:CapMetro - Operations\, Planning and Safety Committee
@@ -115,7 +115,7 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20251020T1200@calendars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20251020T120000
 DTEND;TZID=America/Chicago:20251020T140000
 SUMMARY:CapMetro - Board of Directors
@@ -128,7 +128,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-finance-audit-and-administration-committee-20251105T1000@calen
  dars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20251105T100000
 DTEND;TZID=America/Chicago:20251105T120000
 SUMMARY:CapMetro - Finance\, Audit and Administration Committee
@@ -141,7 +141,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-operations-planning-and-safety-committee-20251105T1230@calenda
  rs.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20251105T123000
 DTEND;TZID=America/Chicago:20251105T143000
 SUMMARY:CapMetro - Operations\, Planning and Safety Committee
@@ -153,7 +153,7 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20251117T1200@calendars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20251117T120000
 DTEND;TZID=America/Chicago:20251117T140000
 SUMMARY:CapMetro - Board of Directors
@@ -166,7 +166,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-finance-audit-and-administration-committee-20251210T1000@calen
  dars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20251210T100000
 DTEND;TZID=America/Chicago:20251210T120000
 SUMMARY:CapMetro - Finance\, Audit and Administration Committee
@@ -179,7 +179,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-operations-planning-and-safety-committee-20251210T1230@calenda
  rs.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20251210T123000
 DTEND;TZID=America/Chicago:20251210T143000
 SUMMARY:CapMetro - Operations\, Planning and Safety Committee
@@ -191,7 +191,7 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20251217T1200@calendars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20251217T120000
 DTEND;TZID=America/Chicago:20251217T140000
 SUMMARY:CapMetro - Board of Directors
@@ -204,7 +204,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-finance-audit-and-administration-committee-20260114T1000@calen
  dars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260114T100000
 DTEND;TZID=America/Chicago:20260114T120000
 SUMMARY:CapMetro - Finance\, Audit and Administration Committee
@@ -217,7 +217,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-operations-planning-and-safety-committee-20260114T1230@calenda
  rs.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260114T123000
 DTEND;TZID=America/Chicago:20260114T143000
 SUMMARY:CapMetro - Operations\, Planning and Safety Committee
@@ -229,7 +229,7 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260126T1200@calendars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260126T120000
 DTEND;TZID=America/Chicago:20260126T140000
 SUMMARY:CapMetro - Board of Directors
@@ -242,7 +242,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-finance-audit-and-administration-committee-20260211T1000@calen
  dars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260211T100000
 DTEND;TZID=America/Chicago:20260211T120000
 SUMMARY:CapMetro - Finance\, Audit and Administration Committee
@@ -254,7 +254,7 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260211T1200@calendars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260211T120000
 DTEND;TZID=America/Chicago:20260211T140000
 SUMMARY:CapMetro - Board of Directors
@@ -267,7 +267,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-operations-planning-and-safety-committee-20260211T1230@calenda
  rs.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260211T123000
 DTEND;TZID=America/Chicago:20260211T143000
 SUMMARY:CapMetro - Operations\, Planning and Safety Committee
@@ -279,7 +279,7 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260223T1200@calendars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260223T120000
 DTEND;TZID=America/Chicago:20260223T140000
 SUMMARY:CapMetro - Board of Directors
@@ -292,7 +292,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-finance-audit-and-administration-committee-20260311T1100@calen
  dars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260311T110000
 DTEND;TZID=America/Chicago:20260311T130000
 SUMMARY:CapMetro - Finance\, Audit and Administration Committee
@@ -304,7 +304,7 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260311T1200@calendars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260311T120000
 DTEND;TZID=America/Chicago:20260311T140000
 SUMMARY:CapMetro - Board of Directors
@@ -317,7 +317,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-operations-planning-and-safety-committee-20260311T1230@calenda
  rs.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260311T123000
 DTEND;TZID=America/Chicago:20260311T143000
 SUMMARY:CapMetro - Operations\, Planning and Safety Committee
@@ -329,7 +329,7 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260323T1200@calendars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260323T120000
 DTEND;TZID=America/Chicago:20260323T140000
 SUMMARY:CapMetro - Board of Directors
@@ -341,7 +341,7 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260408T1200@calendars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260408T120000
 DTEND;TZID=America/Chicago:20260408T140000
 SUMMARY:CapMetro - Board of Directors
@@ -353,7 +353,7 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260420T1200@calendars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260420T120000
 DTEND;TZID=America/Chicago:20260420T140000
 SUMMARY:CapMetro - Board of Directors
@@ -366,7 +366,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-finance-audit-and-administration-committee-20260506T1100@calen
  dars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260506T110000
 DTEND;TZID=America/Chicago:20260506T130000
 SUMMARY:CapMetro - Finance\, Audit and Administration Committee
@@ -378,7 +378,7 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260506T1200@calendars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260506T120000
 DTEND;TZID=America/Chicago:20260506T140000
 SUMMARY:CapMetro - Board of Directors
@@ -390,7 +390,7 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260518T1200@calendars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260518T120000
 DTEND;TZID=America/Chicago:20260518T140000
 SUMMARY:CapMetro - Board of Directors
@@ -403,7 +403,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-finance-audit-and-administration-committee-20260610T1000@calen
  dars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260610T100000
 DTEND;TZID=America/Chicago:20260610T120000
 SUMMARY:CapMetro - Finance\, Audit and Administration Committee
@@ -420,7 +420,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-operations-planning-and-safety-committee-20260610T1230@calenda
  rs.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260610T123000
 DTEND;TZID=America/Chicago:20260610T143000
 SUMMARY:CapMetro - Operations\, Planning and Safety Committee
@@ -436,7 +436,7 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260622T1200@calendars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260622T120000
 DTEND;TZID=America/Chicago:20260622T140000
 SUMMARY:CapMetro - Board of Directors
@@ -451,7 +451,7 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260727T1200@calendars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260727T120000
 DTEND;TZID=America/Chicago:20260727T140000
 SUMMARY:CapMetro - Board of Directors
@@ -467,25 +467,26 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-fare-increase-public-meeting-20260730T1700@calendars.changesar
  oundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260730T170000
 DTEND;TZID=America/Chicago:20260730T193000
-SUMMARY:CapMetro - Fare Increase Public Meeting
+SUMMARY:CapMetro - Fare Increase Meeting
 LOCATION:Goodwill Career & Technical Academy / Henna Education Center\, Aus
  tin\, TX
 URL:https://www.capmetro.org/fare/general-fares-overview/fare-increase
-DESCRIPTION:First of four public meetings on CapMetro's proposed fare incre
- ases (Jan 2027 and Jan 2029) and reduced-fare program changes. Served by r
- outes 10\, 325 and 339. RSVP: https://publicinput.com/Register/XS8587\n\nR
- est of the series: meetings 6\, 18 and 19 Aug 2026 (5pm CDT)\; public hear
- ing 12pm CDT 16 Sep 2026 (Rosa Parks Boardroom)\; comments open until the 
- Board votes 28 Sep 2026.
+DESCRIPTION:Meeting about CapMetro's proposed fare increases (Jan 2027 and 
+ Jan 2029) and reduced-fare program changes.\n\nPart of a series of meeting
+ s. Remaining:\n- meeting 6 Aug 2026 (5–7:30pm\, ACC Northridge)\n- meeti
+ ng 18 Aug 2026 (5–7:30pm\, ACC Riverside)\n- meeting 19 Aug 2026 (5–7:
+ 30pm\, ACC South Austin)\n- hearing 16 Sep 2026 (12pm\, Rosa Parks Boardro
+ om)\n\nComments open until the Board votes 28 Sep 2026.\n\n—\n\nRSVP: ht
+ tps://publicinput.com/Register/XS8587
 CATEGORIES:engagement
 X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260803T1200@calendars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260803T120000
 DTEND;TZID=America/Chicago:20260803T140000
 SUMMARY:CapMetro - Board of Directors
@@ -499,59 +500,59 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-fare-increase-public-meeting-20260806T1700@calendars.changesar
  oundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260806T170000
 DTEND;TZID=America/Chicago:20260806T193000
-SUMMARY:CapMetro - Fare Increase Public Meeting
+SUMMARY:CapMetro - Fare Increase Meeting
 LOCATION:ACC Northridge Campus\, Austin\, TX
 URL:https://www.capmetro.org/fare/general-fares-overview/fare-increase
-DESCRIPTION:Second of four public meetings on CapMetro's proposed fare incr
- eases (Jan 2027 and Jan 2029) and reduced-fare program changes. Served by 
- routes 325\, 466 and Pickup Walnut Creek. RSVP: https://publicinput.com/Re
- gister/JG2066\n\nRest of the series: meetings 18 and 19 Aug 2026 (5pm CDT)
- \; public hearing 12pm CDT 16 Sep 2026 (Rosa Parks Boardroom)\; comments o
- pen until the Board votes 28 Sep 2026.
+DESCRIPTION:Meeting about CapMetro's proposed fare increases (Jan 2027 and 
+ Jan 2029) and reduced-fare program changes.\n\nPart of a series of meeting
+ s. Remaining:\n- meeting 18 Aug 2026 (5–7:30pm\, ACC Riverside)\n- meeti
+ ng 19 Aug 2026 (5–7:30pm\, ACC South Austin)\n- hearing 16 Sep 2026 (12p
+ m\, Rosa Parks Boardroom)\n\nComments open until the Board votes 28 Sep 20
+ 26.\n\n—\n\nRSVP: https://publicinput.com/Register/JG2066
 CATEGORIES:engagement
 X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-fare-increase-public-meeting-20260818T1700@calendars.changesar
  oundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260818T170000
 DTEND;TZID=America/Chicago:20260818T193000
-SUMMARY:CapMetro - Fare Increase Public Meeting
+SUMMARY:CapMetro - Fare Increase Meeting
 LOCATION:ACC Riverside Campus\, Austin\, TX
 URL:https://www.capmetro.org/fare/general-fares-overview/fare-increase
-DESCRIPTION:Third of four public meetings on CapMetro's proposed fare incre
- ases (Jan 2027 and Jan 2029) and reduced-fare program changes. Served by r
- outes 20\, 310\, 311 and 350. RSVP: https://publicinput.com/Register/UR802
- 3\n\nRest of the series: meeting 19 Aug 2026 (5pm CDT\, ACC South Austin)\
- ; public hearing 12pm CDT 16 Sep 2026 (Rosa Parks Boardroom)\; comments op
- en until the Board votes 28 Sep 2026.
+DESCRIPTION:Meeting about CapMetro's proposed fare increases (Jan 2027 and 
+ Jan 2029) and reduced-fare program changes.\n\nPart of a series of meeting
+ s. Remaining:\n- meeting 19 Aug 2026 (5–7:30pm\, ACC South Austin)\n- he
+ aring 16 Sep 2026 (12pm\, Rosa Parks Boardroom)\n\nComments open until the
+  Board votes 28 Sep 2026.\n\n—\n\nRSVP: https://publicinput.com/Register
+ /UR8023
 CATEGORIES:engagement
 X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-fare-increase-public-meeting-20260819T1700@calendars.changesar
  oundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260819T170000
 DTEND;TZID=America/Chicago:20260819T193000
-SUMMARY:CapMetro - Fare Increase Public Meeting
+SUMMARY:CapMetro - Fare Increase Meeting
 LOCATION:ACC South Austin Campus\, Austin\, TX
 URL:https://www.capmetro.org/fare/general-fares-overview/fare-increase
-DESCRIPTION:Last of four public meetings on CapMetro's proposed fare increa
- ses (Jan 2027 and Jan 2029) and reduced-fare program changes. Served by ro
- utes 3 and 311. RSVP: https://publicinput.com/Register/UX3336\n\nStill ahe
- ad: public hearing 12pm CDT 16 Sep 2026 (Rosa Parks Boardroom)\; comments 
- open until the Board votes 28 Sep 2026.
+DESCRIPTION:Meeting about CapMetro's proposed fare increases (Jan 2027 and 
+ Jan 2029) and reduced-fare program changes. Last meeting of the series. Re
+ maining:\n- hearing 16 Sep 2026 (12pm\, Rosa Parks Boardroom)\n\nComments 
+ open until the Board votes 28 Sep 2026.\n\n—\n\nRSVP: https://publicinpu
+ t.com/Register/UX3336
 CATEGORIES:engagement
 X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260824T1200@calendars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260824T120000
 DTEND;TZID=America/Chicago:20260824T140000
 SUMMARY:CapMetro - Board of Directors
@@ -567,7 +568,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-finance-audit-and-administration-committee-20260916T1000@calen
  dars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260916T100000
 DTEND;TZID=America/Chicago:20260916T120000
 SUMMARY:CapMetro - Finance\, Audit and Administration Committee
@@ -579,27 +580,26 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260916T1200@calendars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260916T120000
 DTEND;TZID=America/Chicago:20260916T140000
-SUMMARY:CapMetro - Fare Increase Public Hearing
+SUMMARY:CapMetro - Fare Increase Hearing
 LOCATION:Rosa Parks Boardroom\, CapMetro HQ\, 2910 E. 5th St.\, Austin\, TX
   78702
 URL:https://www.capmetro.org/fare/general-fares-overview/fare-increase
-DESCRIPTION:Public hearing on the proposed Jan 2027 / Jan 2029 fare increas
- es and reduced-fare program changes. Served by routes 2\, 4\, 300\, 800 an
- d Pickup East ATX.\n\nRemote participation available with prior sign-up: e
- mail boardofdirectors@capmetro.org or call (512) 369-6040 by 8am CDT 16 Se
- p 2026 (join instructions follow just after 8am that day). In person\, arr
- ive 15 minutes early to sign up to speak.\n\nComments stay open until the 
- Board votes on the proposal at its 28 Sep 2026 meeting.
+DESCRIPTION:Hearing on CapMetro's proposed fare increases (Jan 2027 and Jan
+  2029) and reduced-fare program changes.\n\nRemote participation is availa
+ ble with sign-up by 8am that day:\n- email boardofdirectors@capmetro.org\,
+  or\n- call (512) 369-6040 and leave your name and phone number\n\nJoin in
+ structions follow just after 8am. In person\, arrive 15 minutes early to s
+ ign up to speak.\n\nComments open until the Board votes 28 Sep 2026.
 CATEGORIES:hearing
 X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-operations-planning-and-safety-committee-20260916T1230@calenda
  rs.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260916T123000
 DTEND;TZID=America/Chicago:20260916T143000
 SUMMARY:CapMetro - Operations\, Planning and Safety Committee
@@ -612,21 +612,21 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-fare-increase-public-comments-close-20260928@calendars.changes
  aroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;VALUE=DATE:20260928
-SUMMARY:CapMetro - Fare increase public comments close
+SUMMARY:CapMetro - Fare increase comments close
 URL:https://www.capmetro.org/fare/general-fares-overview/fare-increase
-DESCRIPTION:Last day of public comment on CapMetro's proposed fare increase
- s (Jan 2027 and Jan 2029) and reduced-fare program changes: the Board vote
- s on the proposal at its meeting this day (12pm CDT\, Rosa Parks Boardroom
- \, 2910 E. 5th St.).\n\nDetails and how to comment: https://www.capmetro.o
- rg/fare/general-fares-overview/fare-increase
+DESCRIPTION:Last day of comment on CapMetro's proposed fare increases (Jan 
+ 2027 and Jan 2029) and reduced-fare program changes: the Board votes on th
+ e proposal at its meeting this day (12pm\, Rosa Parks Boardroom\, 2910 E. 
+ 5th St.).\n\n—\n\nDetails and how to comment: https://www.capmetro.org/f
+ are/general-fares-overview/fare-increase
 CATEGORIES:comment-window
 X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20260928T1200@calendars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260928T120000
 DTEND;TZID=America/Chicago:20260928T140000
 SUMMARY:CapMetro - Board of Directors
@@ -639,7 +639,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-finance-audit-and-administration-committee-20261014T1000@calen
  dars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20261014T100000
 DTEND;TZID=America/Chicago:20261014T120000
 SUMMARY:CapMetro - Finance\, Audit and Administration Committee
@@ -652,7 +652,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-operations-planning-and-safety-committee-20261014T1230@calenda
  rs.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20261014T123000
 DTEND;TZID=America/Chicago:20261014T143000
 SUMMARY:CapMetro - Operations\, Planning and Safety Committee
@@ -664,7 +664,7 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20261026T1200@calendars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20261026T120000
 DTEND;TZID=America/Chicago:20261026T140000
 SUMMARY:CapMetro - Board of Directors
@@ -676,7 +676,7 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20261116T1200@calendars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20261116T120000
 DTEND;TZID=America/Chicago:20261116T140000
 SUMMARY:CapMetro - Board of Directors
@@ -689,7 +689,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-finance-audit-and-administration-committee-20261202T1000@calen
  dars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20261202T100000
 DTEND;TZID=America/Chicago:20261202T120000
 SUMMARY:CapMetro - Finance\, Audit and Administration Committee
@@ -702,7 +702,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-operations-planning-and-safety-committee-20261202T1230@calenda
  rs.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20261202T123000
 DTEND;TZID=America/Chicago:20261202T143000
 SUMMARY:CapMetro - Operations\, Planning and Safety Committee
@@ -714,7 +714,7 @@ X-CAM-ORG:capmetro
 END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-board-of-directors-20261214T1200@calendars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20261214T120000
 DTEND;TZID=America/Chicago:20261214T140000
 SUMMARY:CapMetro - Board of Directors

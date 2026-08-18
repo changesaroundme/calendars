@@ -28,7 +28,7 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-business-and-commerce-20260729T0900@cal
  endars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260729T090000
 DTEND;TZID=America/Chicago:20260729T110000
 SUMMARY:Texas Senate - Business & Commerce: 765-kV lines and grid reliabili
@@ -57,7 +57,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-texas-senate-business-commerce-765-kv-lines-and-grid-reliab
  ility-20260729T0900@calendars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260729T090000
 DTEND;TZID=America/Chicago:20260729T110000
 SUMMARY:Texas Senate - Business & Commerce: 765-kV lines and grid reliabili
@@ -86,7 +86,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-transportation-20260729T1200@calendars.
  changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260729T120000
 DTEND;TZID=America/Chicago:20260729T150000
 SUMMARY:Texas Senate - Transportation
@@ -104,7 +104,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-natural-resources-20260811T0900@calenda
  rs.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260811T090000
 DTEND;TZID=America/Chicago:20260811T120000
 SUMMARY:Texas Senate - Natural Resources
@@ -126,7 +126,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-house-transportation-20260817T0930@calendars.changesaroundm
  e.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260817T093000
 DTEND;TZID=America/Chicago:20260817T123000
 SUMMARY:Texas House - Transportation
@@ -151,7 +151,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-house-agriculture-livestock-20260818T1100@calendars.changes
  aroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260818T110000
 DTEND;TZID=America/Chicago:20260818T140000
 SUMMARY:Texas House - Agriculture & Livestock
@@ -160,17 +160,17 @@ LOCATION:Room E1.026\, Texas Capitol Extension\, 1100 Congress Ave.\, Austi
 URL:https://capitol.texas.gov/tlodocs/89R/schedules/html/C0202026081811001.
  HTM
 DESCRIPTION:Summary Agenda\n\n1. Monitoring: HB 43\n2. Consider: "Resilienc
- y of Texas Agriculture"\n3. Agency Oversight\n\nElectronic public comments
- : https://comments.house.texas.gov/home?c=c020\n\n—\n\nHB 43: relating t
- o the Texas Agricultural Finance Authority and certain programs administer
- ed by the authority.\n\n—\n\n
+ y of Texas Agriculture"\n3. Agency Oversight\n\n—\n\nHB 43: relating to 
+ the Texas Agricultural Finance Authority and certain programs administered
+  by the authority.\n\nElectronic public comments: https://comments.house.t
+ exas.gov/home?c=c020
 CATEGORIES:hearing
 X-CAM-ORG:legislature
 END:VEVENT
 BEGIN:VEVENT
 UID:legislature-house-natural-resources-20260824T1000@calendars.changesarou
  ndme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260824T100000
 DTEND;TZID=America/Chicago:20260824T130000
 SUMMARY:Texas House - Natural Resources
@@ -179,17 +179,17 @@ URL:https://capitol.texas.gov/tlodocs/89R/schedules/html/C3902026082410001.
  HTM
 DESCRIPTION:Summary Agenda\n\n1. Public Access to Meeting Location at\n2. A
  gency Oversight\n3. Monitoring: SB 1169\n4. Study: "Regional Water Plannin
- g -"\n5. Study: "Innovative Water Supply Strategies"\n6. Registration\n\nE
- lectronic public comments: https://comments.house.texas.gov/home?c=c390\n\
- n—\n\nSB 1169: - Relating to the provision of water or sewer service by 
- public entities operating jointly or concurrently.\n\n—\n\n
+ g -"\n5. Study: "Innovative Water Supply Strategies"\n6. Registration\n\n
+ —\n\nSB 1169: - Relating to the provision of water or sewer service by p
+ ublic entities operating jointly or concurrently.\n\nElectronic public com
+ ments: https://comments.house.texas.gov/home?c=c390
 CATEGORIES:hearing
 X-CAM-ORG:legislature
 END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-transportation-20260825T0900@calendars.
  changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260825T090000
 DTEND;TZID=America/Chicago:20260825T120000
 SUMMARY:Texas Senate - Transportation
@@ -208,7 +208,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-water-agriculture-and-rural-affairs-202
  60901T0900@calendars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260901T090000
 DTEND;TZID=America/Chicago:20260901T120000
 SUMMARY:Texas Senate - Water\, Agriculture\, and Rural Affairs
@@ -225,7 +225,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-local-government-20260901T1100@calendar
  s.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260901T110000
 DTEND;TZID=America/Chicago:20260901T140000
 SUMMARY:Texas Senate - Local Government
@@ -241,7 +241,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-water-agriculture-and-rural-affairs-202
  60902T0900@calendars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260902T090000
 DTEND;TZID=America/Chicago:20260902T120000
 SUMMARY:Texas Senate - Water\, Agriculture\, and Rural Affairs
@@ -258,7 +258,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-house-s-c-on-transportation-funding-20260902T1000@calendars
  .changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260902T100000
 DTEND;TZID=America/Chicago:20260902T130000
 SUMMARY:Texas House - S/C on Transportation Funding
@@ -271,7 +271,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-house-energy-resources-20260914T0830@calendars.changesaroun
  dme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260914T083000
 DTEND;TZID=America/Chicago:20260914T113000
 SUMMARY:Texas House - Energy Resources
@@ -285,7 +285,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-house-energy-resources-20260915T0830@calendars.changesaroun
  dme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260915T083000
 DTEND;TZID=America/Chicago:20260915T113000
 SUMMARY:Texas House - Energy Resources
@@ -299,7 +299,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-natural-resources-20260921T0900@calenda
  rs.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260921T090000
 DTEND;TZID=America/Chicago:20260921T120000
 SUMMARY:Texas Senate - Natural Resources
@@ -327,7 +327,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-business-and-commerce-20260930T0900@cal
  endars.changesaroundme.com
-DTSTAMP:20260818T120050Z
+DTSTAMP:20260818T150023Z
 DTSTART;TZID=America/Chicago:20260930T090000
 DTEND;TZID=America/Chicago:20260930T120000
 SUMMARY:Texas Senate - Business and Commerce
