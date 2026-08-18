@@ -22,7 +22,7 @@
     --org-atp:      #4a3aa7;  /* violet */
     --org-txdotev:  #e34948;  /* red */
     --org-legislature: #6e6e6e;  /* neutral until the palette rethink */
-    --org-puct:     #6e6e6e;
+    --org-puc:     #6e6e6e;
   }
   /* Dark values apply via OS setting (unless ?theme=light) or ?theme=dark. */
   @media (prefers-color-scheme: dark) {
@@ -41,7 +41,7 @@
       --org-atp:      #9085e9;
       --org-txdotev:  #e66767;
       --org-legislature: #9a9a91;
-      --org-puct:     #9a9a91;
+      --org-puc:     #9a9a91;
     }
   }
   :root[data-theme="dark"] {
@@ -59,12 +59,13 @@
     --org-atp:      #9085e9;
     --org-txdotev:  #e66767;
     --org-legislature: #9a9a91;
-    --org-puct:     #9a9a91;
+    --org-puc:     #9a9a91;
   }
-  /* Fill the iframe and scroll INTERNALLY: legend/toolbar/footer stay
-     pinned; only the event list scrolls. Prevents double scrollbars in
-     short embeds. */
-  html, body { margin: 0; padding: 0; background: var(--surface-1); height: 100%; }
+  /* Natural height: the page grows to fit the grid (a 6-week month
+     renders in full instead of scrolling internally — Ian, 2026-08-18).
+     The embedding iframe decides how much of it shows; size it tall
+     enough (~1000px) or let the outer page scroll. */
+  html, body { margin: 0; padding: 0; background: var(--surface-1); }
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
          color: var(--text-primary); padding: 10px 12px;
          box-sizing: border-box; display: flex; flex-direction: column; }
@@ -80,8 +81,7 @@
   .tz-note { font-size: 11.5px; color: var(--text-secondary); margin-left: auto; }
 
   /* FullCalendar theming */
-  #cal { max-width: 980px; margin: 0 auto; width: 100%;
-         flex: 1; min-height: 0; }
+  #cal { max-width: 980px; margin: 0 auto; width: 100%; }
   .fc { --fc-page-bg-color: var(--surface-1); --fc-border-color: var(--border);
         --fc-neutral-text-color: var(--text-secondary);
         --fc-today-bg-color: color-mix(in srgb, var(--org-campo) 9%, transparent);
@@ -155,7 +155,7 @@ const ORGS = [
   { key: "atp",      label: "ATP",      match: u => u.endsWith("@www.atptx.org") },
   { key: "txdotev",  label: "TxDOT",    match: u => u.startsWith("txdotev-") },
   { key: "legislature", label: "TxLege", match: u => u.startsWith("legislature-") },
-  { key: "puct",     label: "PUC",     match: u => u.startsWith("puct-") },
+  { key: "puc",     label: "PUC",     match: u => u.startsWith("puc-") },
 ];
 const hidden = new Set();
 
@@ -276,7 +276,7 @@ const calendar = new FullCalendar.Calendar(document.getElementById("cal"), {
   headerToolbar: { left: "prev,next today", center: "title",
                    right: "dayGridMonth,listUpcoming" },
   buttonText: { today: "today", dayGridMonth: "month", listUpcoming: "list" },
-  height: "100%",  // fill the flex slot; list scrolls internally
+  height: "auto",  // natural height: 6-week months render fully, no inner scroll
   dayMaxEventRows: 4,
   displayEventEnd: false,
   eventDisplay: "block",  // chips for timed events too, not default dots

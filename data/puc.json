@@ -1,6 +1,6 @@
 [
  {
-  "source": "puct",
+  "source": "puc",
   "summary": "PUC - Open Meeting",
   "start": "2026-08-14",
   "end": null,
@@ -8,12 +8,12 @@
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1824",
   "status": "CONFIRMED",
   "kind": "hearing",
-  "uid": "puct-cal-1824-20260814@calendars.changesaroundme.com",
+  "uid": "puc-cal-1824-20260814@calendars.changesaroundme.com",
   "description": "Watched cases on the posted agenda:\n- Docket 59029: 765-kV Longshore Switch - Drill Hole Switch line (Oncor CCN)\n- Docket 59315: 765-kV Dinosaur Switch - Longshore Switch line (Oncor CCN)",
   "all_day": true
  },
  {
-  "source": "puct",
+  "source": "puc",
   "summary": "PUC - Open Meeting",
   "start": "2026-08-20T09:30:00",
   "end": "2026-08-20T17:00:00",
@@ -21,12 +21,12 @@
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1706",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "puct-cal-1706-20260820@calendars.changesaroundme.com",
+  "uid": "puc-cal-1706-20260820@calendars.changesaroundme.com",
   "description": "",
   "all_day": false
  },
  {
-  "source": "puct",
+  "source": "puc",
   "summary": "PUC - Meeting (inc. 765 kV cases)",
   "start": "2026-08-21T09:30:00",
   "end": "2026-08-21T11:30:00",
@@ -34,12 +34,12 @@
   "url": "https://ftp.puc.texas.gov/public/puct-info/agency/om/082126Final.pdf",
   "status": "CONFIRMED",
   "kind": "hearing",
-  "uid": "puct-cal-1802-20260821@calendars.changesaroundme.com",
+  "uid": "puc-cal-1802-20260821@calendars.changesaroundme.com",
   "description": "Summary Agenda\n\n- Longshore \u2013 Drill Hole (Docket 59029); discussion and possible action.\n- Dinosaur \u2013 Longshore (Docket 59315); discussion and possible action.\n\nMore: https://changesaroundme.com/Focuses/765+kV+Transmission+Lines",
   "all_day": false
  },
  {
-  "source": "puct",
+  "source": "puc",
   "summary": "PUC - Open Meeting",
   "start": "2026-08-21T09:30:00",
   "end": "2026-08-21T17:00:00",
@@ -47,12 +47,12 @@
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1802",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "puct-cal-1802-20260821@calendars.changesaroundme.com",
+  "uid": "puc-cal-1802-20260821@calendars.changesaroundme.com",
   "description": "",
   "all_day": false
  },
  {
-  "source": "puct",
+  "source": "puc",
   "summary": "PUC - Open Meeting",
   "start": "2026-08-28T09:30:00",
   "end": "2026-08-28T17:00:00",
@@ -60,12 +60,12 @@
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1806",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "puct-cal-1806-20260828@calendars.changesaroundme.com",
+  "uid": "puc-cal-1806-20260828@calendars.changesaroundme.com",
   "description": "",
   "all_day": false
  },
  {
-  "source": "puct",
+  "source": "puc",
   "summary": "PUC - Large Load Demand Management Service comments close",
   "start": "2026-09-04",
   "end": null,
@@ -73,12 +73,12 @@
   "url": "https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=58482",
   "status": "CONFIRMED",
   "kind": "comment-window",
-  "uid": "puct-cal-1809-20260904@calendars.changesaroundme.com",
+  "uid": "puc-cal-1809-20260904@calendars.changesaroundme.com",
   "description": "Public comment window: comments due 4 Sep 2026 on proposed new 16 TAC \u00a725.521 (Large Load Demand Management Service), published in the Texas Register 14 Aug 2026 (Project No. 58482).\n\nBackground (PUC Staff Memo): https://interchange.puc.texas.gov/Documents/58482_3_1607913.PDF\n\nComments are filed in Project No. 58482 via the PUC Interchange: https://interchange.puc.texas.gov/filer",
   "all_day": true
  },
  {
-  "source": "puct",
+  "source": "puc",
   "summary": "PUC - Project 58482 comments close",
   "start": "2026-09-04",
   "end": null,
@@ -86,12 +86,12 @@
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1809",
   "status": "CONFIRMED",
   "kind": "comment-window",
-  "uid": "puct-cal-1809-20260904@calendars.changesaroundme.com",
+  "uid": "puc-cal-1809-20260904@calendars.changesaroundme.com",
   "description": "Comments are filed via the PUC Interchange: https://interchange.puc.texas.gov/filer\n\nProject filings: https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=58482",
   "all_day": true
  },
  {
-  "source": "puct",
+  "source": "puc",
   "summary": "PUC - Open Meeting",
   "start": "2026-09-11T09:30:00",
   "end": "2026-09-11T17:00:00",
@@ -99,12 +99,12 @@
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1771",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "puct-cal-1771-20260911@calendars.changesaroundme.com",
+  "uid": "puc-cal-1771-20260911@calendars.changesaroundme.com",
   "description": "",
   "all_day": false
  },
  {
-  "source": "puct",
+  "source": "puc",
   "summary": "PUC - Open Meeting",
   "start": "2026-09-17T09:30:00",
   "end": "2026-09-17T17:00:00",
@@ -112,12 +112,12 @@
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1825",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "puct-cal-1825-20260917@calendars.changesaroundme.com",
+  "uid": "puc-cal-1825-20260917@calendars.changesaroundme.com",
   "description": "",
   "all_day": false
  },
  {
-  "source": "puct",
+  "source": "puc",
   "summary": "PUC - Open Meeting",
   "start": "2026-09-18T09:30:00",
   "end": "2026-09-18T17:00:00",
@@ -125,12 +125,12 @@
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1772",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "puct-cal-1772-20260918@calendars.changesaroundme.com",
+  "uid": "puc-cal-1772-20260918@calendars.changesaroundme.com",
   "description": "",
   "all_day": false
  },
  {
-  "source": "puct",
+  "source": "puc",
   "summary": "PUC - Open Meeting",
   "start": "2026-09-25",
   "end": null,
@@ -138,12 +138,12 @@
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1807",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "puct-cal-1807-20260925@calendars.changesaroundme.com",
+  "uid": "puc-cal-1807-20260925@calendars.changesaroundme.com",
   "description": "",
   "all_day": true
  },
  {
-  "source": "puct",
+  "source": "puc",
   "summary": "PUC - Open Meeting",
   "start": "2026-10-01",
   "end": null,
@@ -151,12 +151,12 @@
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1773",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "puct-cal-1773-20261001@calendars.changesaroundme.com",
+  "uid": "puc-cal-1773-20261001@calendars.changesaroundme.com",
   "description": "",
   "all_day": true
  },
  {
-  "source": "puct",
+  "source": "puc",
   "summary": "PUC - Open Meeting",
   "start": "2026-10-02",
   "end": null,
@@ -164,12 +164,12 @@
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1808",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "puct-cal-1808-20261002@calendars.changesaroundme.com",
+  "uid": "puc-cal-1808-20261002@calendars.changesaroundme.com",
   "description": "",
   "all_day": true
  },
  {
-  "source": "puct",
+  "source": "puc",
   "summary": "PUC - Open Meeting",
   "start": "2026-10-15",
   "end": null,
@@ -177,12 +177,12 @@
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1774",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "puct-cal-1774-20261015@calendars.changesaroundme.com",
+  "uid": "puc-cal-1774-20261015@calendars.changesaroundme.com",
   "description": "",
   "all_day": true
  },
  {
-  "source": "puct",
+  "source": "puc",
   "summary": "PUC - Open Meeting",
   "start": "2026-11-05",
   "end": null,
@@ -190,12 +190,12 @@
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1775",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "puct-cal-1775-20261105@calendars.changesaroundme.com",
+  "uid": "puc-cal-1775-20261105@calendars.changesaroundme.com",
   "description": "",
   "all_day": true
  },
  {
-  "source": "puct",
+  "source": "puc",
   "summary": "PUC - Open Meeting",
   "start": "2026-11-09",
   "end": null,
@@ -203,12 +203,12 @@
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1826",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "puct-cal-1826-20261109@calendars.changesaroundme.com",
+  "uid": "puc-cal-1826-20261109@calendars.changesaroundme.com",
   "description": "",
   "all_day": true
  },
  {
-  "source": "puct",
+  "source": "puc",
   "summary": "PUC - Open Meeting",
   "start": "2026-11-19",
   "end": null,
@@ -216,12 +216,12 @@
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1776",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "puct-cal-1776-20261119@calendars.changesaroundme.com",
+  "uid": "puc-cal-1776-20261119@calendars.changesaroundme.com",
   "description": "",
   "all_day": true
  },
  {
-  "source": "puct",
+  "source": "puc",
   "summary": "PUC - Open Meeting",
   "start": "2026-12-03",
   "end": null,
@@ -229,12 +229,12 @@
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1777",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "puct-cal-1777-20261203@calendars.changesaroundme.com",
+  "uid": "puc-cal-1777-20261203@calendars.changesaroundme.com",
   "description": "",
   "all_day": true
  },
  {
-  "source": "puct",
+  "source": "puc",
   "summary": "PUC - Open Meeting",
   "start": "2026-12-11",
   "end": null,
@@ -242,12 +242,12 @@
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1827",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "puct-cal-1827-20261211@calendars.changesaroundme.com",
+  "uid": "puc-cal-1827-20261211@calendars.changesaroundme.com",
   "description": "",
   "all_day": true
  },
  {
-  "source": "puct",
+  "source": "puc",
   "summary": "PUC - Open Meeting",
   "start": "2026-12-17",
   "end": null,
@@ -255,12 +255,12 @@
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1778",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "puct-cal-1778-20261217@calendars.changesaroundme.com",
+  "uid": "puc-cal-1778-20261217@calendars.changesaroundme.com",
   "description": "",
   "all_day": true
  },
  {
-  "source": "puct",
+  "source": "puc",
   "summary": "PUC - Open Meeting",
   "start": "2027-01-14",
   "end": null,
@@ -268,12 +268,12 @@
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1810",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "puct-cal-1810-20270114@calendars.changesaroundme.com",
+  "uid": "puc-cal-1810-20270114@calendars.changesaroundme.com",
   "description": "",
   "all_day": true
  },
  {
-  "source": "puct",
+  "source": "puc",
   "summary": "PUC - Open Meeting",
   "start": "2027-01-29",
   "end": null,
@@ -281,12 +281,12 @@
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1811",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "puct-cal-1811-20270129@calendars.changesaroundme.com",
+  "uid": "puc-cal-1811-20270129@calendars.changesaroundme.com",
   "description": "",
   "all_day": true
  },
  {
-  "source": "puct",
+  "source": "puc",
   "summary": "PUC - Open Meeting",
   "start": "2027-02-18",
   "end": null,
@@ -294,12 +294,12 @@
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1812",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "puct-cal-1812-20270218@calendars.changesaroundme.com",
+  "uid": "puc-cal-1812-20270218@calendars.changesaroundme.com",
   "description": "",
   "all_day": true
  },
  {
-  "source": "puct",
+  "source": "puc",
   "summary": "PUC - Open Meeting",
   "start": "2027-02-25",
   "end": null,
@@ -307,12 +307,12 @@
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1813",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "puct-cal-1813-20270225@calendars.changesaroundme.com",
+  "uid": "puc-cal-1813-20270225@calendars.changesaroundme.com",
   "description": "",
   "all_day": true
  },
  {
-  "source": "puct",
+  "source": "puc",
   "summary": "PUC - Open Meeting",
   "start": "2027-03-11",
   "end": null,
@@ -320,12 +320,12 @@
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1814",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "puct-cal-1814-20270311@calendars.changesaroundme.com",
+  "uid": "puc-cal-1814-20270311@calendars.changesaroundme.com",
   "description": "",
   "all_day": true
  },
  {
-  "source": "puct",
+  "source": "puc",
   "summary": "PUC - Open Meeting",
   "start": "2027-03-25",
   "end": null,
@@ -333,12 +333,12 @@
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1815",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "puct-cal-1815-20270325@calendars.changesaroundme.com",
+  "uid": "puc-cal-1815-20270325@calendars.changesaroundme.com",
   "description": "",
   "all_day": true
  },
  {
-  "source": "puct",
+  "source": "puc",
   "summary": "PUC - Open Meeting",
   "start": "2027-04-01",
   "end": null,
@@ -346,12 +346,12 @@
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1816",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "puct-cal-1816-20270401@calendars.changesaroundme.com",
+  "uid": "puc-cal-1816-20270401@calendars.changesaroundme.com",
   "description": "",
   "all_day": true
  },
  {
-  "source": "puct",
+  "source": "puc",
   "summary": "PUC - Open Meeting",
   "start": "2027-04-22",
   "end": null,
@@ -359,12 +359,12 @@
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1817",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "puct-cal-1817-20270422@calendars.changesaroundme.com",
+  "uid": "puc-cal-1817-20270422@calendars.changesaroundme.com",
   "description": "",
   "all_day": true
  },
  {
-  "source": "puct",
+  "source": "puc",
   "summary": "PUC - Open Meeting",
   "start": "2027-05-13",
   "end": null,
@@ -372,12 +372,12 @@
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1818",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "puct-cal-1818-20270513@calendars.changesaroundme.com",
+  "uid": "puc-cal-1818-20270513@calendars.changesaroundme.com",
   "description": "",
   "all_day": true
  },
  {
-  "source": "puct",
+  "source": "puc",
   "summary": "PUC - Open Meeting",
   "start": "2027-05-20",
   "end": null,
@@ -385,12 +385,12 @@
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1819",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "puct-cal-1819-20270520@calendars.changesaroundme.com",
+  "uid": "puc-cal-1819-20270520@calendars.changesaroundme.com",
   "description": "",
   "all_day": true
  },
  {
-  "source": "puct",
+  "source": "puc",
   "summary": "PUC - Open Meeting",
   "start": "2027-06-03",
   "end": null,
@@ -398,12 +398,12 @@
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1820",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "puct-cal-1820-20270603@calendars.changesaroundme.com",
+  "uid": "puc-cal-1820-20270603@calendars.changesaroundme.com",
   "description": "",
   "all_day": true
  },
  {
-  "source": "puct",
+  "source": "puc",
   "summary": "PUC - Open Meeting",
   "start": "2027-06-17",
   "end": null,
@@ -411,12 +411,12 @@
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1821",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "puct-cal-1821-20270617@calendars.changesaroundme.com",
+  "uid": "puc-cal-1821-20270617@calendars.changesaroundme.com",
   "description": "",
   "all_day": true
  },
  {
-  "source": "puct",
+  "source": "puc",
   "summary": "PUC - Open Meeting",
   "start": "2027-07-08",
   "end": null,
@@ -424,12 +424,12 @@
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1822",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "puct-cal-1822-20270708@calendars.changesaroundme.com",
+  "uid": "puc-cal-1822-20270708@calendars.changesaroundme.com",
   "description": "",
   "all_day": true
  },
  {
-  "source": "puct",
+  "source": "puc",
   "summary": "PUC - Open Meeting",
   "start": "2027-07-29",
   "end": null,
@@ -437,7 +437,7 @@
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1823",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "puct-cal-1823-20270729@calendars.changesaroundme.com",
+  "uid": "puc-cal-1823-20270729@calendars.changesaroundme.com",
   "description": "",
   "all_day": true
  }

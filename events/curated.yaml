@@ -13,7 +13,7 @@
 #   start:     (required) 2026-09-15 for all-day, 2026-09-15 17:30 for timed
 #   org:       (required) which calendar it lands in — one of:
 #              campo capmetro txdot lcra ctrma austin atp txdotev
-#              legislature puct
+#              legislature puc
 #   end:       optional. Timed events default to start + 2h. For multi-day
 #              all-day events, `end:` is the LAST day (inclusive).
 #   location:  optional street address
@@ -375,15 +375,15 @@
     https://www.speakupaustin.org/6200Menchaca
     https://www.speakupaustin.org/2908SouthCongress
 
-# --- added 2026-08-17 (PUCT) ------------------------------------------------
+# --- added 2026-08-17 (PUC) -------------------------------------------------
 
 - summary: "PUC - Large Load Demand Management Service comments close"
   start: 2026-09-04
-  org: puct
+  org: puc
   kind: comment-window
   # Pinned to the calendar-RSS scraper's uid (appointment 1809) so this
   # richer entry replaces the scraped "Project 58482 comments close" copy.
-  uid: puct-cal-1809-20260904@calendars.changesaroundme.com
+  uid: puc-cal-1809-20260904@calendars.changesaroundme.com
   url: https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=58482
   description: |
     Public comment window: comments due 4 Sep 2026 on proposed new 16 TAC
@@ -398,13 +398,13 @@
 
 - summary: "PUC - Meeting (inc. 765 kV cases)"
   start: 2026-08-21 09:30
-  org: puct
+  org: puc
   kind: hearing
   # Pinned to the calendar-RSS scraper's uid (appointment 1802) so this
   # annotated entry replaces the scraped generic open meeting. Title and
   # body per Ian's mock (2026-08-18): no docket numbers in the title, the
   # 765 kV Focus page carries the deep links.
-  uid: puct-cal-1802-20260821@calendars.changesaroundme.com
+  uid: puc-cal-1802-20260821@calendars.changesaroundme.com
   location: "Zlotnik Family Ballroom, AT&T Hotel and Conference Center, 1900 University Ave., Austin, TX 78705"
   url: https://ftp.puc.texas.gov/public/puct-info/agency/om/082126Final.pdf
   description: |
@@ -414,3 +414,5 @@
     - Dinosaur – Longshore (Docket 59315); discussion and possible action.
 
     More: https://changesaroundme.com/Focuses/765+kV+Transmission+Lines
+
+    Watch live or archived: https://www.puc.texas.gov/agency/calendar/broadcasts/

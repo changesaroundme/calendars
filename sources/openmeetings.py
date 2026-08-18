@@ -44,20 +44,20 @@ from bs4 import BeautifulSoup
 MIRROR_URL = "https://texinfo.library.unt.edu/texasregister/openmeetings/OpenMeetings.html"
 FIXTURES = pathlib.Path(__file__).resolve().parent.parent / "fixtures"
 # Chars of agenda text to archive per filing. 8000, not 2000 (2026-08-17):
-# PUC open-meeting agendas run 40+ items, and the puct watched-case match
+# PUC open-meeting agendas run 40+ items, and the puc watched-case match
 # reads this archive — a watched docket past the cut would be missed.
 AGENDA_KEEP = 8000
 
 # (Agency Name pattern, our org key or observation-only placeholder,
 #  optional `include` regex the agenda/committee text must match)
-# Keys campo/ctrma/lcra/txdot/txdotev route to real feeds; carts/puct/tti
+# Keys campo/ctrma/lcra/puc/txdot/txdotev route to real feeds; carts/tti
 # have no feed yet — archived for observation only.
 WATCH = [
     (r"capital area metropolitan planning", "campo", None),
     (r"capital area rural transportation", "carts", None),
     (r"central texas regional mobility", "ctrma", None),
     (r"lower colorado river authority", "lcra", None),
-    (r"public utility commission", "puct", None),  # future: r"59475|765\s*.?kV"
+    (r"public utility commission", "puc", None),  # future: r"59475|765\s*.?kV"
     (r"transportation institute", "tti", None),
     (r"texas department of transportation", "txdot", None),  # rerouted below
 ]

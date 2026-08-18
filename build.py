@@ -34,7 +34,7 @@ import requests
 from caltools.ics import CENTRAL, emit
 from caltools.model import Event
 from sources import (atp, austin, campo, capmetro, ctrma, curated, lcra,
-                     legislature, openmeetings, puct, txdot, txdotev)
+                     legislature, openmeetings, puc, txdot, txdotev)
 
 ROOT = pathlib.Path(__file__).parent
 DOCS = ROOT / "docs"
@@ -55,9 +55,9 @@ CALENDARS = {
     # noted on the Calendar Maintenance page happens -- better an obviously
     # unassigned colour than a 9th hue that collides with one of the 8.
     "legislature": ("CAM - Texas Legislature", legislature, "#6E6E6E"),
-    # Curated-only substrate (see sources/puct.py) — neutral grey with
+    # Curated-only substrate (see sources/puc.py) — neutral grey with
     # legislature until the palette rethink.
-    "puct": ("CAM - PUC", puct, "#6E6E6E"),
+    "puc": ("CAM - PUC", puc, "#6E6E6E"),
 }
 # All 8 validated categorical slots are now assigned to orgs; the combined
 # feeds get a neutral (they never appear next to org colors in the embed).
@@ -415,15 +415,15 @@ def main() -> int:
         # the per-org feeds above were emitted from the untouched originals).
         # PUCT publishes ~30 routine open meetings a year; the consolidated
         # feeds carry only the ones that matter here — watched-case
-        # meetings (kind flipped to "hearing" by puct.mark_watched_cases)
-        # and comment windows / curated entries. puct.ics keeps everything.
+        # meetings (kind flipped to "hearing" by puc.mark_watched_cases)
+        # and comment windows / curated entries. puc.ics keeps everything.
         # Content-based (kind), so the gate survives snapshot round-trips.
         consolidated = [e for e in all_events
-                        if not (e.source == "puct" and e.kind == "regular")]
+                        if not (e.source == "puc" and e.kind == "regular")]
         gated = len(all_events) - len(consolidated)
         if gated:
-            print(f"[all] {gated} routine PUCT open meetings stay on "
-                  "puct.ics only (watched-case gate)")
+            print(f"[all] {gated} routine PUC open meetings stay on "
+                  "puc.ics only (watched-case gate)")
         combined = condense_council(consolidated)
         folded = len(consolidated) - len(combined)
         if folded:

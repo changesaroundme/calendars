@@ -1,4 +1,8 @@
-"""PUCT adapter — the Commission's own calendar RSS, plus curated extras.
+"""PUC adapter — the Commission's own calendar RSS, plus curated extras.
+
+(Launched as "puct"; renamed feed/org/uids to "puc" on 2026-08-18, the day
+after launch, while the subscriber count was ~zero — the one moment a feed
+rename is cheap — renaming a published feed later breaks every subscriber.)
 
 The PUC calendar page (agency/calendar/calendar.aspx) publishes a plain
 RSS 2.0 feed of ~30 items a year ahead: Open Meetings (with room, and the
@@ -11,7 +15,7 @@ NOT on this calendar; those stay curated.
 The RSS carries dates but not times; each item's AppointmentDetail page
 states exact Start/End, so an upgrade-only enrichment pass confirms times
 for upcoming items. Identity: the appointment ID in each item's link is
-the Commission's own key — UIDs are puct-cal-<id>-<date>, so a curated
+the Commission's own key — UIDs are puc-cal-<id>-<date>, so a curated
 entry can pin one to override a scraped copy with richer text (the
 2026-08-28 open meeting and Project 58482 deadline both do this).
 """
@@ -28,7 +32,7 @@ from bs4 import BeautifulSoup
 
 from caltools.model import Event
 
-SOURCE = "puct"
+SOURCE = "puc"
 RSS_URL = "https://www.puc.texas.gov/agency/calendar/getcalendarrss/"
 CALENDAR_URL = "https://www.puc.texas.gov/agency/calendar/calendar.aspx"
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -37,8 +41,8 @@ SOS_ARCHIVE = ROOT / "data" / "openmeetings.json"
 
 # Ian's watched cases (2026-08-17). Open meetings whose SOS-filed agenda
 # names one of these get kind="hearing" plus a description note — and
-# build.py's consolidated feeds carry ONLY non-"regular" puct events, so
-# routine open meetings stay on puct.ics without cluttering all.ics.
+# build.py's consolidated feeds carry ONLY non-"regular" puc events, so
+# routine open meetings stay on puc.ics without cluttering all.ics.
 # Curated entries (kind hearing/comment-window) pass the same gate.
 WATCHED_CASES = {
     "59029": "765-kV Longshore Switch - Drill Hole Switch line (Oncor CCN)",
@@ -129,8 +133,6 @@ def parse_rss(xml_text: str) -> list[Event]:
         tail = re.sub(r"^(NA|Project\s*\d+)\s*", "", tail).strip()
         location = tail if len(tail) > 10 else HEARING_ROOM
         if kind_part.lower().startswith("public comment deadline"):
-            # Display prefix is "PUC" (Ian, 2026-08-18); the org key and
-            # uids stay "puct".
             summary = ("PUC - Project " + pm.group(1) + " comments close"
                        if pm else "PUC - Public comment deadline")
             kind = "comment-window"
@@ -143,7 +145,10 @@ def parse_rss(xml_text: str) -> list[Event]:
         else:
             summary = f"PUC - {kind_part}"
             kind = "regular"
-            body = ""
+            # Same shape as senate hearings: meetings you can't attend in
+            # person are still watchable — live and archived.
+            body = ("Watch live or archived: "
+                    "https://www.puc.texas.gov/agency/calendar/broadcasts/")
         events.append(Event(
             source=SOURCE,
             summary=summary,
@@ -157,7 +162,7 @@ def parse_rss(xml_text: str) -> list[Event]:
                  "@calendars.changesaroundme.com"),
         ))
     if not events:
-        _problems.append("puct: calendar RSS parsed to zero items "
+        _problems.append("puc: calendar RSS parsed to zero items "
                          "(feed moved or reshaped?)")
     return events
 
@@ -241,7 +246,7 @@ def fetch(session) -> list[Event]:
     # (see certs/puc_intermediates.pem). Start failing loud two months out
     # so the re-chain lands before the cliff.
     if date.today() >= date(2028, 11, 1):
-        _problems.append("puct: pinned trust anchors expire 2028-12-31 — "
+        _problems.append("puc: pinned trust anchors expire 2028-12-31 — "
                          "refresh certs/puc_intermediates.pem (see header)")
     resp = session.get(RSS_URL, timeout=30, verify=_verify())
     resp.raise_for_status()
@@ -263,17 +268,17 @@ def fetch(session) -> list[Event]:
 def fetch_offline() -> list[Event]:
     """Build from fixtures/ (no network) — the --offline contract."""
     _problems.clear()
-    events = parse_rss((FIXTURES / "puct_rss.xml").read_text())
+    events = parse_rss((FIXTURES / "puc_rss.xml").read_text())
     # Detail chain on the real ID=1806 capture (28 Aug open meeting,
     # 9:30 AM - 5:00 PM); other items have no fixture and skip.
     details = {"https://www.puc.texas.gov/agency/calendar/"
                "AppointmentDetail.aspx?ID=1806":
-               FIXTURES / "puct_detail_1806.html"}
+               FIXTURES / "puc_detail_1806.html"}
 
     enrich_details(events,
                    lambda u: details[u].read_text() if u in details else None,
                    today=date(2026, 8, 17))
     # Watched-case marking against a pinned SOS-archive extract (the real
     # 14 Aug 2026 filing, agenda naming both 765-kV dockets).
-    mark_watched_cases(events, FIXTURES / "puct_sos_openmeetings.json")
+    mark_watched_cases(events, FIXTURES / "puc_sos_openmeetings.json")
     return events
