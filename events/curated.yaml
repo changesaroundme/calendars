@@ -171,12 +171,18 @@
   url: https://www.speakupaustin.org/r31038
   kind: engagement
   description: |
-    Third of three community meetings on potentially renaming César Chávez
-    Street (MOPAC to Hwy 183) — virtual session. Register:
-    https://zoom.us/meeting/register/jfd_MPZpTnKHHKEO7tT7Ww
+    Virtual community meeting on potentially renaming César Chávez Street
+    (MOPAC to Hwy 183). Learn the street's naming history and the costs
+    of a change for the City and area businesses; share your input.
 
-    In-person sessions: 5pm CDT 11 Aug 2026 (Central Library) and 2pm CDT
-    15 Aug 2026 (Sanchez Elementary). Online survey at the link.
+    Last of a series of three meetings (in-person sessions were 11 and
+    15 Aug).
+
+    —
+
+    Register (Zoom): https://zoom.us/meeting/register/jfd_MPZpTnKHHKEO7tT7Ww
+
+    Online survey: https://www.speakupaustin.org/r31038
 
 # --- added 2026-07-31 (Eventbrite link via chat) -----------------------------
 
@@ -257,7 +263,11 @@
 # and Jan 2029 + reduced-fare program changes). The 28 Sep 2026 board VOTE
 # is the Legistar scraper's regular event — not curated here.
 
-- summary: "CapMetro - Fare Increase Public Meeting"
+# Titles dropped "Public" on 2026-08-18 (a posted meeting is obviously
+# public); each entry pins the uid its ORIGINAL title generated, so the
+# retitle is display-only and the archive never sees a second identity.
+- summary: "CapMetro - Fare Increase Meeting"
+  uid: capmetro-fare-increase-public-meeting-20260730T1700@calendars.changesaroundme.com
   start: 2026-07-30 17:00
   end: 2026-07-30 19:30
   org: capmetro
@@ -265,15 +275,23 @@
   url: https://www.capmetro.org/fare/general-fares-overview/fare-increase
   kind: engagement
   description: |
-    First of four public meetings on CapMetro's proposed fare increases
-    (Jan 2027 and Jan 2029) and reduced-fare program changes. Served by
-    routes 10, 325 and 339. RSVP: https://publicinput.com/Register/XS8587
+    Meeting about CapMetro's proposed fare increases (Jan 2027 and
+    Jan 2029) and reduced-fare program changes.
 
-    Rest of the series: meetings 6, 18 and 19 Aug 2026 (5pm CDT); public
-    hearing 12pm CDT 16 Sep 2026 (Rosa Parks Boardroom); comments open
-    until the Board votes 28 Sep 2026.
+    Part of a series of meetings. Remaining:
+    - meeting 6 Aug 2026 (5–7:30pm, ACC Northridge)
+    - meeting 18 Aug 2026 (5–7:30pm, ACC Riverside)
+    - meeting 19 Aug 2026 (5–7:30pm, ACC South Austin)
+    - hearing 16 Sep 2026 (12pm, Rosa Parks Boardroom)
 
-- summary: "CapMetro - Fare Increase Public Meeting"
+    Comments open until the Board votes 28 Sep 2026.
+
+    —
+
+    RSVP: https://publicinput.com/Register/XS8587
+
+- summary: "CapMetro - Fare Increase Meeting"
+  uid: capmetro-fare-increase-public-meeting-20260806T1700@calendars.changesaroundme.com
   start: 2026-08-06 17:00
   end: 2026-08-06 19:30
   org: capmetro
@@ -281,16 +299,22 @@
   url: https://www.capmetro.org/fare/general-fares-overview/fare-increase
   kind: engagement
   description: |
-    Second of four public meetings on CapMetro's proposed fare increases
-    (Jan 2027 and Jan 2029) and reduced-fare program changes. Served by
-    routes 325, 466 and Pickup Walnut Creek.
+    Meeting about CapMetro's proposed fare increases (Jan 2027 and
+    Jan 2029) and reduced-fare program changes.
+
+    Part of a series of meetings. Remaining:
+    - meeting 18 Aug 2026 (5–7:30pm, ACC Riverside)
+    - meeting 19 Aug 2026 (5–7:30pm, ACC South Austin)
+    - hearing 16 Sep 2026 (12pm, Rosa Parks Boardroom)
+
+    Comments open until the Board votes 28 Sep 2026.
+
+    —
+
     RSVP: https://publicinput.com/Register/JG2066
 
-    Rest of the series: meetings 18 and 19 Aug 2026 (5pm CDT); public
-    hearing 12pm CDT 16 Sep 2026 (Rosa Parks Boardroom); comments open
-    until the Board votes 28 Sep 2026.
-
-- summary: "CapMetro - Fare Increase Public Meeting"
+- summary: "CapMetro - Fare Increase Meeting"
+  uid: capmetro-fare-increase-public-meeting-20260818T1700@calendars.changesaroundme.com
   start: 2026-08-18 17:00
   end: 2026-08-18 19:30
   org: capmetro
@@ -298,16 +322,21 @@
   url: https://www.capmetro.org/fare/general-fares-overview/fare-increase
   kind: engagement
   description: |
-    Third of four public meetings on CapMetro's proposed fare increases
-    (Jan 2027 and Jan 2029) and reduced-fare program changes. Served by
-    routes 20, 310, 311 and 350.
+    Meeting about CapMetro's proposed fare increases (Jan 2027 and
+    Jan 2029) and reduced-fare program changes.
+
+    Part of a series of meetings. Remaining:
+    - meeting 19 Aug 2026 (5–7:30pm, ACC South Austin)
+    - hearing 16 Sep 2026 (12pm, Rosa Parks Boardroom)
+
+    Comments open until the Board votes 28 Sep 2026.
+
+    —
+
     RSVP: https://publicinput.com/Register/UR8023
 
-    Rest of the series: meeting 19 Aug 2026 (5pm CDT, ACC South Austin);
-    public hearing 12pm CDT 16 Sep 2026 (Rosa Parks Boardroom); comments
-    open until the Board votes 28 Sep 2026.
-
-- summary: "CapMetro - Fare Increase Public Meeting"
+- summary: "CapMetro - Fare Increase Meeting"
+  uid: capmetro-fare-increase-public-meeting-20260819T1700@calendars.changesaroundme.com
   start: 2026-08-19 17:00
   end: 2026-08-19 19:30
   org: capmetro
@@ -315,14 +344,18 @@
   url: https://www.capmetro.org/fare/general-fares-overview/fare-increase
   kind: engagement
   description: |
-    Last of four public meetings on CapMetro's proposed fare increases
-    (Jan 2027 and Jan 2029) and reduced-fare program changes. Served by
-    routes 3 and 311. RSVP: https://publicinput.com/Register/UX3336
+    Meeting about CapMetro's proposed fare increases (Jan 2027 and
+    Jan 2029) and reduced-fare program changes. Last meeting of the
+    series. Remaining:
+    - hearing 16 Sep 2026 (12pm, Rosa Parks Boardroom)
 
-    Still ahead: public hearing 12pm CDT 16 Sep 2026 (Rosa Parks
-    Boardroom); comments open until the Board votes 28 Sep 2026.
+    Comments open until the Board votes 28 Sep 2026.
 
-- summary: "CapMetro - Fare Increase Public Hearing"
+    —
+
+    RSVP: https://publicinput.com/Register/UX3336
+
+- summary: "CapMetro - Fare Increase Hearing"
   start: 2026-09-16 12:00
   org: capmetro
   # uid pinned to the Legistar scraper's noon "Board of Directors" row that
@@ -335,28 +368,31 @@
   url: https://www.capmetro.org/fare/general-fares-overview/fare-increase
   kind: hearing
   description: |
-    Public hearing on the proposed Jan 2027 / Jan 2029 fare increases and
-    reduced-fare program changes. Served by routes 2, 4, 300, 800 and
-    Pickup East ATX.
+    Hearing on CapMetro's proposed fare increases (Jan 2027 and Jan 2029)
+    and reduced-fare program changes.
 
-    Remote participation available with prior sign-up: email
-    boardofdirectors@capmetro.org or call (512) 369-6040 by 8am CDT
-    16 Sep 2026 (join instructions follow just after 8am that day). In
-    person, arrive 15 minutes early to sign up to speak.
+    Remote participation is available with sign-up by 8am that day:
+    - email boardofdirectors@capmetro.org, or
+    - call (512) 369-6040 and leave your name and phone number
 
-    Comments stay open until the Board votes on the proposal at its
-    28 Sep 2026 meeting.
+    Join instructions follow just after 8am. In person, arrive
+    15 minutes early to sign up to speak.
 
-- summary: "CapMetro - Fare increase public comments close"
+    Comments open until the Board votes 28 Sep 2026.
+
+- summary: "CapMetro - Fare increase comments close"
+  uid: capmetro-fare-increase-public-comments-close-20260928@calendars.changesaroundme.com
   start: 2026-09-28
   org: capmetro
   url: https://www.capmetro.org/fare/general-fares-overview/fare-increase
   kind: comment-window
   description: |
-    Last day of public comment on CapMetro's proposed fare increases
-    (Jan 2027 and Jan 2029) and reduced-fare program changes: the Board
-    votes on the proposal at its meeting this day (12pm CDT, Rosa Parks
-    Boardroom, 2910 E. 5th St.).
+    Last day of comment on CapMetro's proposed fare increases (Jan 2027
+    and Jan 2029) and reduced-fare program changes: the Board votes on
+    the proposal at its meeting this day (12pm, Rosa Parks Boardroom,
+    2910 E. 5th St.).
+
+    —
 
     Details and how to comment: https://www.capmetro.org/fare/general-fares-overview/fare-increase
 

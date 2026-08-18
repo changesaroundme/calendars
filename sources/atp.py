@@ -138,6 +138,61 @@ def enrich_cac(events: list[Event], get_html, get_bytes, today: date) -> None:
                               if ev.description else addition)
 
 
+# --- Board agenda enrichment (eScribe portal) -------------------------------
+# ATP's board documents live on their eScribe portal (linked from the
+# board-meeting page on atptx.org). The portal server-renders every
+# document link with a fully self-describing aria-label:
+#   aria-label='Agenda (PDF) for Board of Directors Meetings 19 August 2026'
+# That label IS the declared match key — body name + meeting date — so no
+# structure-walking is needed, and "Agenda Cover Page (PDF)" or posting
+# notices can't false-match. Ian (2026-08-18): link the agenda PDF.
+ESCRIBE_PORTAL = "https://pub-atptx.escribemeetings.com/?FillWidth=1"
+ESCRIBE_MONTHS = {m: i + 1 for i, m in enumerate(
+    ["January", "February", "March", "April", "May", "June", "July",
+     "August", "September", "October", "November", "December"])}
+ESCRIBE_AGENDA_PDF_RE = re.compile(
+    r"href=['\"](/FileStream\.ashx\?DocumentId=\d+)['\"][^>]*"
+    r"aria-label=['\"]Agenda \(PDF\) for ([^'\"]*?)\s*(\d{1,2})\s+"
+    r"(January|February|March|April|May|June|July|August|September|October"
+    r"|November|December)\s+(\d{4})['\"]")
+
+
+def enrich_board(events: list[Event], get_html, today: date) -> None:
+    """Attach the eScribe agenda PDF link to upcoming board meetings."""
+    board = [e for e in events
+             if "board of directors" in e.summary.lower()
+             and e.status != "CANCELLED"
+             and today <= (e.start.date() if isinstance(e.start, datetime)
+                           else e.start)]
+    if not board:
+        return
+    try:
+        page = get_html(ESCRIBE_PORTAL)
+    except Exception as exc:  # enrichment must never break the feed
+        print(f"[{SOURCE}] WARNING: eScribe portal fetch failed: {exc}")
+        return
+    agendas: dict[date, str] = {}
+    for m in ESCRIBE_AGENDA_PDF_RE.finditer(page or ""):
+        if "board of directors" not in m.group(2).lower():
+            continue
+        try:
+            d = date(int(m.group(5)), ESCRIBE_MONTHS[m.group(4)],
+                     int(m.group(3)))
+        except ValueError:
+            continue
+        agendas[d] = "https://pub-atptx.escribemeetings.com" + m.group(1)
+    for ev in board[:3]:
+        day = ev.start.date() if isinstance(ev.start, datetime) else ev.start
+        url = agendas.get(day)
+        if not url:
+            continue
+        # Standardized shape: links live below the — rule.
+        line = f"Agenda (PDF): {url}"
+        if line not in ev.description:
+            ev.description = (f"{ev.description}\n\n—\n\n{line}"
+                              if ev.description else line)
+
+
 def fetch(session) -> list[Event]:
     resp = session.get(FEED_URL, timeout=30)
     resp.raise_for_status()
@@ -149,11 +204,16 @@ def fetch(session) -> list[Event]:
         r.raise_for_status()
         return r.content if binary else r.text
 
+    today = datetime.now().date()
     try:
         enrich_cac(events, lambda u: _got(u),
-                   lambda u: _got(u, binary=True), datetime.now().date())
+                   lambda u: _got(u, binary=True), today)
     except Exception as exc:  # upgrade-only
         print(f"[{SOURCE}] WARNING: CAC enrichment failed: {exc}")
+    try:
+        enrich_board(events, lambda u: _got(u), today)
+    except Exception as exc:  # upgrade-only
+        print(f"[{SOURCE}] WARNING: board enrichment failed: {exc}")
     return events
 
 
@@ -167,5 +227,12 @@ def fetch_offline() -> list[Event]:
         lambda u: (FIXTURES / "atp_cac_page.html").read_text(),
         lambda u: (FIXTURES / "atp_agenda_cac_20260813.pdf").read_bytes(),
         today=date(2026, 8, 10),
+    )
+    # Board agenda link on the real portal capture (19 Aug agenda posted;
+    # 21 Sep block present with no agenda yet — must stay untouched).
+    enrich_board(
+        events,
+        lambda u: (FIXTURES / "atp_escribe_portal.html").read_text(),
+        today=date(2026, 8, 18),
     )
     return events

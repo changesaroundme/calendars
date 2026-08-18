@@ -415,16 +415,18 @@ def summarize_notice(html: bytes | str) -> str | None:
             lines += ["", f"Testimony to include: {joined}"]
         else:
             lines += ["", _abbrev(testimony, acronyms)]
+    # Below the — rule: bill glosses, then links (Ian, 2026-08-18 — the
+    # rule marks where the digest ends and reference material begins, so
+    # the e-comment link lives at the bottom with any other links).
     ecomment = soup.find(
         "a", href=re.compile(r"comments\.house\.texas\.gov", re.IGNORECASE))
+    bills = [(l, d) for c in charges for l, d, _ in c["bills"]]
+    if bills or ecomment:
+        lines += ["", "—"]
+    for label, desc in bills:
+        lines += ["", f"{label}: {desc}"]
     if ecomment:
         lines += ["", f"Electronic public comments: {ecomment['href']}"]
-    bills = [(l, d) for c in charges for l, d, _ in c["bills"]]
-    if bills:
-        lines.append("")
-        lines.append("—")
-        for label, desc in bills:
-            lines += ["", f"{label}: {desc}"]
     return "\n".join(lines)
 
 
@@ -446,7 +448,10 @@ def enrich_notices(events: list[Event], get_html, today: date) -> None:
                   f"({ev.url}): {exc}")
             continue
         if block and "Summary Agenda" not in ev.description:
-            ev.description = f"{block}\n\n—\n\n{ev.description}"
+            # No dangling rule when there's nothing below it (House events
+            # start with an empty description; Senate ones carry notes).
+            ev.description = (f"{block}\n\n—\n\n{ev.description}"
+                              if ev.description else block)
 
 
 def fetch(session) -> list[Event]:

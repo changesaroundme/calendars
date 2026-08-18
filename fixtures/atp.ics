@@ -51,4 +51,22 @@ LOCATION:ATP Office\, 203 Colorado Street\, Austin\, Texas\, 78701
 URL:https://www.atptx.org/event/community-advisory-committee-meeting-6-202
  5-12/2026-10-08/
 END:VEVENT
+BEGIN:VEVENT
+UID:10000153-1787148000-1787148000@www.atptx.org
+DTSTAMP:20260818T120000Z
+DTSTART;TZID=America/Chicago:20260819T140000
+DTEND;TZID=America/Chicago:20260819T140000
+SUMMARY:ATP Board of Directors Meeting
+LOCATION:ATP Office\, 203 Colorado Street\, Austin\, Texas\, 78701
+URL:https://www.atptx.org/event/atp-board-of-directors-meeting-4/
+END:VEVENT
+BEGIN:VEVENT
+UID:10000154-1789981200-1789981200@www.atptx.org
+DTSTAMP:20260818T120000Z
+DTSTART;TZID=America/Chicago:20260921T090000
+DTEND;TZID=America/Chicago:20260921T090000
+SUMMARY:ATP Board of Directors Meeting
+LOCATION:ATP Office\, 203 Colorado Street\, Austin\, Texas\, 78701
+URL:https://www.atptx.org/event/atp-board-of-directors-meeting-5/
+END:VEVENT
 END:VCALENDAR
