@@ -677,6 +677,19 @@
  },
  {
   "source": "txdotev",
+  "summary": "TxDOT - US 79 from I-35 to east of FM 1460",
+  "start": "2026-09-01",
+  "end": null,
+  "location": "Round Rock",
+  "url": "https://www.txdot.gov/projects/hearings-meetings/austin/2026/us79-from-i35-to-fm1460-090126.html",
+  "status": "CONFIRMED",
+  "kind": "engagement",
+  "uid": "txdotev-hm-us79-from-i35-to-fm1460-090126-20260901@calendars.changesaroundme.com",
+  "description": "virtual public meeting.\n\nTime and venue are not listed on TxDOT's schedule index \u2014 details post at the event link.\n\nPublic comment deadline: 16 Sep 2026.",
+  "all_day": true
+ },
+ {
+  "source": "txdotev",
   "summary": "TxDOT BPAC - Meeting",
   "start": "2026-11-06T09:30:00",
   "end": "2026-11-06T11:30:00",
