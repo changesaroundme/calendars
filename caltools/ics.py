@@ -142,12 +142,20 @@ def emit(
     if color:
         lines.append(f"X-APPLE-CALENDAR-COLOR:{color}")
     lines.extend(VTIMEZONE.split("\n"))
+    # Dedupe BEFORE sorting: first-wins must follow INPUT order (curated
+    # entries are merged ahead of scraped ones upstream), not start order.
+    # Sorting first silently inverted a uid pin whenever the curated copy
+    # had a later-sorting start — an all-day scraped event ("2026-08-21")
+    # beat its timed curated override ("...T09:30") on 18 Aug 2026.
     seen = set()
-    for ev in sorted(events, key=lambda e: e.start.isoformat()):
+    unique = []
+    for ev in events:
         uid = ev.stable_uid()
         if uid in seen:  # merge safety: last writer does NOT win; first does
             continue
         seen.add(uid)
+        unique.append(ev)
+    for ev in sorted(unique, key=lambda e: e.start.isoformat()):
         lines.extend(event_block(ev, dtstamp))
     lines.append("END:VCALENDAR")
     return CRLF.join(fold(l) for l in lines) + CRLF

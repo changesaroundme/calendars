@@ -57,7 +57,7 @@ CALENDARS = {
     "legislature": ("CAM - Texas Legislature", legislature, "#6E6E6E"),
     # Curated-only substrate (see sources/puct.py) — neutral grey with
     # legislature until the palette rethink.
-    "puct": ("CAM - PUCT", puct, "#6E6E6E"),
+    "puct": ("CAM - PUC", puct, "#6E6E6E"),
 }
 # All 8 validated categorical slots are now assigned to orgs; the combined
 # feeds get a neutral (they never appear next to org colors in the embed).

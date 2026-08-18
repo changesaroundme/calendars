@@ -377,7 +377,7 @@
 
 # --- added 2026-08-17 (PUCT) ------------------------------------------------
 
-- summary: "PUCT - Large Load Demand Management Service comments close"
+- summary: "PUC - Large Load Demand Management Service comments close"
   start: 2026-09-04
   org: puct
   kind: comment-window
@@ -396,26 +396,21 @@
     Comments are filed in Project No. 58482 via the PUC Interchange:
     https://interchange.puc.texas.gov/filer
 
-- summary: "PUCT - Open Meeting (765kV dockets 59029 & 59315)"
+- summary: "PUC - Meeting (inc. 765 kV cases)"
   start: 2026-08-21 09:30
   org: puct
   kind: hearing
   # Pinned to the calendar-RSS scraper's uid (appointment 1802) so this
-  # annotated entry replaces the scraped generic open meeting. Dockets
-  # confirmed from the posted agenda PDF (items 2-3, contested cases,
-  # "Discussion and possible action") — NOT the 20 Aug merits hearing,
-  # and the 28 Aug date the oral-argument motion suggested is unneeded:
-  # if the cases return there, the watched-case gate promotes that
-  # meeting automatically once its agenda files with the SOS.
+  # annotated entry replaces the scraped generic open meeting. Title and
+  # body per Ian's mock (2026-08-18): no docket numbers in the title, the
+  # 765 kV Focus page carries the deep links.
   uid: puct-cal-1802-20260821@calendars.changesaroundme.com
   location: "Zlotnik Family Ballroom, AT&T Hotel and Conference Center, 1900 University Ave., Austin, TX 78705"
   url: https://ftp.puc.texas.gov/public/puct-info/agency/om/082126Final.pdf
   description: |
-    Both watched 765-kV CCN dockets are contested-case items on this
-    meeting's agenda (discussion and possible action):
+    Summary Agenda
 
-    - Item 2, Docket 59029 (Oncor, Longshore Switch - Drill Hole Switch)
-    - Item 3, Docket 59315 (Oncor, Dinosaur Switch - Longshore Switch)
+    - Longshore – Drill Hole (Docket 59029); discussion and possible action.
+    - Dinosaur – Longshore (Docket 59315); discussion and possible action.
 
-    Filings: https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=59029
-    and https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=59315
+    More: https://changesaroundme.com/Focuses/765+kV+Transmission+Lines

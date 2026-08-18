@@ -129,8 +129,10 @@ def parse_rss(xml_text: str) -> list[Event]:
         tail = re.sub(r"^(NA|Project\s*\d+)\s*", "", tail).strip()
         location = tail if len(tail) > 10 else HEARING_ROOM
         if kind_part.lower().startswith("public comment deadline"):
-            summary = ("PUCT - Project " + pm.group(1) + " comments close"
-                       if pm else "PUCT - Public comment deadline")
+            # Display prefix is "PUC" (Ian, 2026-08-18); the org key and
+            # uids stay "puct".
+            summary = ("PUC - Project " + pm.group(1) + " comments close"
+                       if pm else "PUC - Public comment deadline")
             kind = "comment-window"
             body = ("Comments are filed via the PUC Interchange: "
                     "https://interchange.puc.texas.gov/filer"
@@ -139,7 +141,7 @@ def parse_rss(xml_text: str) -> list[Event]:
                        f"{pm.group(1)}" if pm else ""))
             location = ""
         else:
-            summary = f"PUCT - {kind_part}"
+            summary = f"PUC - {kind_part}"
             kind = "regular"
             body = ""
         events.append(Event(

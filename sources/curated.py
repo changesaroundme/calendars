@@ -125,9 +125,11 @@ def load(valid_orgs: set[str], path: pathlib.Path | None = None) -> None:
             # Collapse the YAML source's line wraps: a single newline inside
             # a paragraph is an artifact of editing width and renders as a
             # mid-sentence break in calendar apps; blank lines (paragraph
-            # breaks) survive.
+            # breaks) survive — and so do newlines BEFORE list items
+            # ("- x" / "1. x"), or a bulleted agenda folds into one long
+            # line (bit the 21 Aug 2026 PUC entry).
             description=re.sub(
-                r"(?<!\n)\n(?!\n)", " ",
+                r"(?<!\n)\n(?!\n|- |\* |\d+\. )", " ",
                 str(entry.get("description", "")).strip()),
         )
         ev.uid = ev.stable_uid()
