@@ -1,7 +1,7 @@
 [
  {
   "source": "puct",
-  "summary": "PUCT - Open Meeting",
+  "summary": "PUC - Open Meeting",
   "start": "2026-08-14",
   "end": null,
   "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
@@ -14,7 +14,7 @@
  },
  {
   "source": "puct",
-  "summary": "PUCT - Open Meeting",
+  "summary": "PUC - Open Meeting",
   "start": "2026-08-20T09:30:00",
   "end": "2026-08-20T17:00:00",
   "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
@@ -27,7 +27,7 @@
  },
  {
   "source": "puct",
-  "summary": "PUCT - Open Meeting (765kV dockets 59029 & 59315)",
+  "summary": "PUC - Meeting (inc. 765 kV cases)",
   "start": "2026-08-21T09:30:00",
   "end": "2026-08-21T11:30:00",
   "location": "Zlotnik Family Ballroom, AT&T Hotel and Conference Center, 1900 University Ave., Austin, TX 78705",
@@ -35,12 +35,12 @@
   "status": "CONFIRMED",
   "kind": "hearing",
   "uid": "puct-cal-1802-20260821@calendars.changesaroundme.com",
-  "description": "Both watched 765-kV CCN dockets are contested-case items on this meeting's agenda (discussion and possible action):\n\n- Item 2, Docket 59029 (Oncor, Longshore Switch - Drill Hole Switch) - Item 3, Docket 59315 (Oncor, Dinosaur Switch - Longshore Switch)\n\nFilings: https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=59029 and https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=59315",
+  "description": "Summary Agenda\n\n- Longshore \u2013 Drill Hole (Docket 59029); discussion and possible action.\n- Dinosaur \u2013 Longshore (Docket 59315); discussion and possible action.\n\nMore: https://changesaroundme.com/Focuses/765+kV+Transmission+Lines",
   "all_day": false
  },
  {
   "source": "puct",
-  "summary": "PUCT - Open Meeting",
+  "summary": "PUC - Open Meeting",
   "start": "2026-08-21T09:30:00",
   "end": "2026-08-21T17:00:00",
   "location": "AT&T Hotel and Conference Center (1900 University Ave, Austin, TX  78705)",
@@ -53,7 +53,7 @@
  },
  {
   "source": "puct",
-  "summary": "PUCT - Open Meeting",
+  "summary": "PUC - Open Meeting",
   "start": "2026-08-28T09:30:00",
   "end": "2026-08-28T17:00:00",
   "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
@@ -66,7 +66,7 @@
  },
  {
   "source": "puct",
-  "summary": "PUCT - Large Load Demand Management Service comments close",
+  "summary": "PUC - Large Load Demand Management Service comments close",
   "start": "2026-09-04",
   "end": null,
   "location": "",
@@ -79,7 +79,7 @@
  },
  {
   "source": "puct",
-  "summary": "PUCT - Project 58482 comments close",
+  "summary": "PUC - Project 58482 comments close",
   "start": "2026-09-04",
   "end": null,
   "location": "",
@@ -92,7 +92,7 @@
  },
  {
   "source": "puct",
-  "summary": "PUCT - Open Meeting",
+  "summary": "PUC - Open Meeting",
   "start": "2026-09-11T09:30:00",
   "end": "2026-09-11T17:00:00",
   "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
@@ -105,7 +105,7 @@
  },
  {
   "source": "puct",
-  "summary": "PUCT - Open Meeting",
+  "summary": "PUC - Open Meeting",
   "start": "2026-09-17T09:30:00",
   "end": "2026-09-17T17:00:00",
   "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
@@ -118,7 +118,7 @@
  },
  {
   "source": "puct",
-  "summary": "PUCT - Open Meeting",
+  "summary": "PUC - Open Meeting",
   "start": "2026-09-18T09:30:00",
   "end": "2026-09-18T17:00:00",
   "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
@@ -131,7 +131,7 @@
  },
  {
   "source": "puct",
-  "summary": "PUCT - Open Meeting",
+  "summary": "PUC - Open Meeting",
   "start": "2026-09-25",
   "end": null,
   "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
@@ -144,7 +144,7 @@
  },
  {
   "source": "puct",
-  "summary": "PUCT - Open Meeting",
+  "summary": "PUC - Open Meeting",
   "start": "2026-10-01",
   "end": null,
   "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
@@ -157,7 +157,7 @@
  },
  {
   "source": "puct",
-  "summary": "PUCT - Open Meeting",
+  "summary": "PUC - Open Meeting",
   "start": "2026-10-02",
   "end": null,
   "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
@@ -170,7 +170,7 @@
  },
  {
   "source": "puct",
-  "summary": "PUCT - Open Meeting",
+  "summary": "PUC - Open Meeting",
   "start": "2026-10-15",
   "end": null,
   "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
@@ -183,7 +183,7 @@
  },
  {
   "source": "puct",
-  "summary": "PUCT - Open Meeting",
+  "summary": "PUC - Open Meeting",
   "start": "2026-11-05",
   "end": null,
   "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
@@ -196,7 +196,7 @@
  },
  {
   "source": "puct",
-  "summary": "PUCT - Open Meeting",
+  "summary": "PUC - Open Meeting",
   "start": "2026-11-09",
   "end": null,
   "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
@@ -209,7 +209,7 @@
  },
  {
   "source": "puct",
-  "summary": "PUCT - Open Meeting",
+  "summary": "PUC - Open Meeting",
   "start": "2026-11-19",
   "end": null,
   "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
@@ -222,7 +222,7 @@
  },
  {
   "source": "puct",
-  "summary": "PUCT - Open Meeting",
+  "summary": "PUC - Open Meeting",
   "start": "2026-12-03",
   "end": null,
   "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
@@ -235,7 +235,7 @@
  },
  {
   "source": "puct",
-  "summary": "PUCT - Open Meeting",
+  "summary": "PUC - Open Meeting",
   "start": "2026-12-11",
   "end": null,
   "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
@@ -248,7 +248,7 @@
  },
  {
   "source": "puct",
-  "summary": "PUCT - Open Meeting",
+  "summary": "PUC - Open Meeting",
   "start": "2026-12-17",
   "end": null,
   "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
@@ -261,7 +261,7 @@
  },
  {
   "source": "puct",
-  "summary": "PUCT - Open Meeting",
+  "summary": "PUC - Open Meeting",
   "start": "2027-01-14",
   "end": null,
   "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
@@ -274,7 +274,7 @@
  },
  {
   "source": "puct",
-  "summary": "PUCT - Open Meeting",
+  "summary": "PUC - Open Meeting",
   "start": "2027-01-29",
   "end": null,
   "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
@@ -287,7 +287,7 @@
  },
  {
   "source": "puct",
-  "summary": "PUCT - Open Meeting",
+  "summary": "PUC - Open Meeting",
   "start": "2027-02-18",
   "end": null,
   "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
@@ -300,7 +300,7 @@
  },
  {
   "source": "puct",
-  "summary": "PUCT - Open Meeting",
+  "summary": "PUC - Open Meeting",
   "start": "2027-02-25",
   "end": null,
   "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
@@ -313,7 +313,7 @@
  },
  {
   "source": "puct",
-  "summary": "PUCT - Open Meeting",
+  "summary": "PUC - Open Meeting",
   "start": "2027-03-11",
   "end": null,
   "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
@@ -326,7 +326,7 @@
  },
  {
   "source": "puct",
-  "summary": "PUCT - Open Meeting",
+  "summary": "PUC - Open Meeting",
   "start": "2027-03-25",
   "end": null,
   "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
@@ -339,7 +339,7 @@
  },
  {
   "source": "puct",
-  "summary": "PUCT - Open Meeting",
+  "summary": "PUC - Open Meeting",
   "start": "2027-04-01",
   "end": null,
   "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
@@ -352,7 +352,7 @@
  },
  {
   "source": "puct",
-  "summary": "PUCT - Open Meeting",
+  "summary": "PUC - Open Meeting",
   "start": "2027-04-22",
   "end": null,
   "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
@@ -365,7 +365,7 @@
  },
  {
   "source": "puct",
-  "summary": "PUCT - Open Meeting",
+  "summary": "PUC - Open Meeting",
   "start": "2027-05-13",
   "end": null,
   "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
@@ -378,7 +378,7 @@
  },
  {
   "source": "puct",
-  "summary": "PUCT - Open Meeting",
+  "summary": "PUC - Open Meeting",
   "start": "2027-05-20",
   "end": null,
   "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
@@ -391,7 +391,7 @@
  },
  {
   "source": "puct",
-  "summary": "PUCT - Open Meeting",
+  "summary": "PUC - Open Meeting",
   "start": "2027-06-03",
   "end": null,
   "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
@@ -404,7 +404,7 @@
  },
  {
   "source": "puct",
-  "summary": "PUCT - Open Meeting",
+  "summary": "PUC - Open Meeting",
   "start": "2027-06-17",
   "end": null,
   "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
@@ -417,7 +417,7 @@
  },
  {
   "source": "puct",
-  "summary": "PUCT - Open Meeting",
+  "summary": "PUC - Open Meeting",
   "start": "2027-07-08",
   "end": null,
   "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
@@ -430,7 +430,7 @@
  },
  {
   "source": "puct",
-  "summary": "PUCT - Open Meeting",
+  "summary": "PUC - Open Meeting",
   "start": "2027-07-29",
   "end": null,
   "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",

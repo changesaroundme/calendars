@@ -3,7 +3,7 @@ VERSION:2.0
 PRODID:-//changesaroundme//calendars//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:CAM - PUCT
+X-WR-CALNAME:CAM - PUC
 X-WR-TIMEZONE:America/Chicago
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
@@ -27,9 +27,9 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:puct-cal-1824-20260814@calendars.changesaroundme.com
-DTSTAMP:20260818T030325Z
+DTSTAMP:20260818T041059Z
 DTSTART;VALUE=DATE:20260814
-SUMMARY:PUCT - Open Meeting
+SUMMARY:PUC - Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
  701 N. Congress Ave.\, Austin\, TX 78701
 URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=182
@@ -42,10 +42,10 @@ X-CAM-ORG:puct
 END:VEVENT
 BEGIN:VEVENT
 UID:puct-cal-1706-20260820@calendars.changesaroundme.com
-DTSTAMP:20260818T030325Z
+DTSTAMP:20260818T041059Z
 DTSTART;TZID=America/Chicago:20260820T093000
 DTEND;TZID=America/Chicago:20260820T170000
-SUMMARY:PUCT - Open Meeting
+SUMMARY:PUC - Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
  701 N. Congress Ave.\, Austin\, TX 78701
 URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=170
@@ -55,29 +55,26 @@ X-CAM-ORG:puct
 END:VEVENT
 BEGIN:VEVENT
 UID:puct-cal-1802-20260821@calendars.changesaroundme.com
-DTSTAMP:20260818T030325Z
+DTSTAMP:20260818T041059Z
 DTSTART;TZID=America/Chicago:20260821T093000
 DTEND;TZID=America/Chicago:20260821T113000
-SUMMARY:PUCT - Open Meeting (765kV dockets 59029 & 59315)
+SUMMARY:PUC - Meeting (inc. 765 kV cases)
 LOCATION:Zlotnik Family Ballroom\, AT&T Hotel and Conference Center\, 1900 
  University Ave.\, Austin\, TX 78705
 URL:https://ftp.puc.texas.gov/public/puct-info/agency/om/082126Final.pdf
-DESCRIPTION:Both watched 765-kV CCN dockets are contested-case items on thi
- s meeting's agenda (discussion and possible action):\n\n- Item 2\, Docket 
- 59029 (Oncor\, Longshore Switch - Drill Hole Switch) - Item 3\, Docket 593
- 15 (Oncor\, Dinosaur Switch - Longshore Switch)\n\nFilings: https://interc
- hange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=59029 and 
- https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNum
- ber=59315
+DESCRIPTION:Summary Agenda\n\n- Longshore – Drill Hole (Docket 59029)\; d
+ iscussion and possible action.\n- Dinosaur – Longshore (Docket 59315)\; 
+ discussion and possible action.\n\nMore: https://changesaroundme.com/Focus
+ es/765+kV+Transmission+Lines
 CATEGORIES:hearing
 X-CAM-ORG:puct
 END:VEVENT
 BEGIN:VEVENT
 UID:puct-cal-1806-20260828@calendars.changesaroundme.com
-DTSTAMP:20260818T030325Z
+DTSTAMP:20260818T041059Z
 DTSTART;TZID=America/Chicago:20260828T093000
 DTEND;TZID=America/Chicago:20260828T170000
-SUMMARY:PUCT - Open Meeting
+SUMMARY:PUC - Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
  701 N. Congress Ave.\, Austin\, TX 78701
 URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=180
@@ -87,9 +84,9 @@ X-CAM-ORG:puct
 END:VEVENT
 BEGIN:VEVENT
 UID:puct-cal-1809-20260904@calendars.changesaroundme.com
-DTSTAMP:20260818T030325Z
+DTSTAMP:20260818T041059Z
 DTSTART;VALUE=DATE:20260904
-SUMMARY:PUCT - Large Load Demand Management Service comments close
+SUMMARY:PUC - Large Load Demand Management Service comments close
 URL:https://interchange.puc.texas.gov/search/filings/?UtilityType=A&Control
  Number=58482
 DESCRIPTION:Public comment window: comments due 4 Sep 2026 on proposed new 
@@ -103,10 +100,10 @@ X-CAM-ORG:puct
 END:VEVENT
 BEGIN:VEVENT
 UID:puct-cal-1771-20260911@calendars.changesaroundme.com
-DTSTAMP:20260818T030325Z
+DTSTAMP:20260818T041059Z
 DTSTART;TZID=America/Chicago:20260911T093000
 DTEND;TZID=America/Chicago:20260911T170000
-SUMMARY:PUCT - Open Meeting
+SUMMARY:PUC - Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
  701 N. Congress Ave.\, Austin\, TX 78701
 URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=177
@@ -116,10 +113,10 @@ X-CAM-ORG:puct
 END:VEVENT
 BEGIN:VEVENT
 UID:puct-cal-1825-20260917@calendars.changesaroundme.com
-DTSTAMP:20260818T030325Z
+DTSTAMP:20260818T041059Z
 DTSTART;TZID=America/Chicago:20260917T093000
 DTEND;TZID=America/Chicago:20260917T170000
-SUMMARY:PUCT - Open Meeting
+SUMMARY:PUC - Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
  701 N. Congress Ave.\, Austin\, TX 78701
 URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=182
@@ -129,10 +126,10 @@ X-CAM-ORG:puct
 END:VEVENT
 BEGIN:VEVENT
 UID:puct-cal-1772-20260918@calendars.changesaroundme.com
-DTSTAMP:20260818T030325Z
+DTSTAMP:20260818T041059Z
 DTSTART;TZID=America/Chicago:20260918T093000
 DTEND;TZID=America/Chicago:20260918T170000
-SUMMARY:PUCT - Open Meeting
+SUMMARY:PUC - Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
  701 N. Congress Ave.\, Austin\, TX 78701
 URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=177
@@ -142,9 +139,9 @@ X-CAM-ORG:puct
 END:VEVENT
 BEGIN:VEVENT
 UID:puct-cal-1807-20260925@calendars.changesaroundme.com
-DTSTAMP:20260818T030325Z
+DTSTAMP:20260818T041059Z
 DTSTART;VALUE=DATE:20260925
-SUMMARY:PUCT - Open Meeting
+SUMMARY:PUC - Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
  701 N. Congress Ave.\, Austin\, TX 78701
 URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=180
@@ -154,9 +151,9 @@ X-CAM-ORG:puct
 END:VEVENT
 BEGIN:VEVENT
 UID:puct-cal-1773-20261001@calendars.changesaroundme.com
-DTSTAMP:20260818T030325Z
+DTSTAMP:20260818T041059Z
 DTSTART;VALUE=DATE:20261001
-SUMMARY:PUCT - Open Meeting
+SUMMARY:PUC - Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
  701 N. Congress Ave.\, Austin\, TX 78701
 URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=177
@@ -166,9 +163,9 @@ X-CAM-ORG:puct
 END:VEVENT
 BEGIN:VEVENT
 UID:puct-cal-1808-20261002@calendars.changesaroundme.com
-DTSTAMP:20260818T030325Z
+DTSTAMP:20260818T041059Z
 DTSTART;VALUE=DATE:20261002
-SUMMARY:PUCT - Open Meeting
+SUMMARY:PUC - Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
  701 N. Congress Ave.\, Austin\, TX 78701
 URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=180
@@ -178,9 +175,9 @@ X-CAM-ORG:puct
 END:VEVENT
 BEGIN:VEVENT
 UID:puct-cal-1774-20261015@calendars.changesaroundme.com
-DTSTAMP:20260818T030325Z
+DTSTAMP:20260818T041059Z
 DTSTART;VALUE=DATE:20261015
-SUMMARY:PUCT - Open Meeting
+SUMMARY:PUC - Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
  701 N. Congress Ave.\, Austin\, TX 78701
 URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=177
@@ -190,9 +187,9 @@ X-CAM-ORG:puct
 END:VEVENT
 BEGIN:VEVENT
 UID:puct-cal-1775-20261105@calendars.changesaroundme.com
-DTSTAMP:20260818T030325Z
+DTSTAMP:20260818T041059Z
 DTSTART;VALUE=DATE:20261105
-SUMMARY:PUCT - Open Meeting
+SUMMARY:PUC - Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
  701 N. Congress Ave.\, Austin\, TX 78701
 URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=177
@@ -202,9 +199,9 @@ X-CAM-ORG:puct
 END:VEVENT
 BEGIN:VEVENT
 UID:puct-cal-1826-20261109@calendars.changesaroundme.com
-DTSTAMP:20260818T030325Z
+DTSTAMP:20260818T041059Z
 DTSTART;VALUE=DATE:20261109
-SUMMARY:PUCT - Open Meeting
+SUMMARY:PUC - Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
  701 N. Congress Ave.\, Austin\, TX 78701
 URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=182
@@ -214,9 +211,9 @@ X-CAM-ORG:puct
 END:VEVENT
 BEGIN:VEVENT
 UID:puct-cal-1776-20261119@calendars.changesaroundme.com
-DTSTAMP:20260818T030325Z
+DTSTAMP:20260818T041059Z
 DTSTART;VALUE=DATE:20261119
-SUMMARY:PUCT - Open Meeting
+SUMMARY:PUC - Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
  701 N. Congress Ave.\, Austin\, TX 78701
 URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=177
@@ -226,9 +223,9 @@ X-CAM-ORG:puct
 END:VEVENT
 BEGIN:VEVENT
 UID:puct-cal-1777-20261203@calendars.changesaroundme.com
-DTSTAMP:20260818T030325Z
+DTSTAMP:20260818T041059Z
 DTSTART;VALUE=DATE:20261203
-SUMMARY:PUCT - Open Meeting
+SUMMARY:PUC - Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
  701 N. Congress Ave.\, Austin\, TX 78701
 URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=177
@@ -238,9 +235,9 @@ X-CAM-ORG:puct
 END:VEVENT
 BEGIN:VEVENT
 UID:puct-cal-1827-20261211@calendars.changesaroundme.com
-DTSTAMP:20260818T030325Z
+DTSTAMP:20260818T041059Z
 DTSTART;VALUE=DATE:20261211
-SUMMARY:PUCT - Open Meeting
+SUMMARY:PUC - Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
  701 N. Congress Ave.\, Austin\, TX 78701
 URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=182
@@ -250,9 +247,9 @@ X-CAM-ORG:puct
 END:VEVENT
 BEGIN:VEVENT
 UID:puct-cal-1778-20261217@calendars.changesaroundme.com
-DTSTAMP:20260818T030325Z
+DTSTAMP:20260818T041059Z
 DTSTART;VALUE=DATE:20261217
-SUMMARY:PUCT - Open Meeting
+SUMMARY:PUC - Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
  701 N. Congress Ave.\, Austin\, TX 78701
 URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=177
@@ -262,9 +259,9 @@ X-CAM-ORG:puct
 END:VEVENT
 BEGIN:VEVENT
 UID:puct-cal-1810-20270114@calendars.changesaroundme.com
-DTSTAMP:20260818T030325Z
+DTSTAMP:20260818T041059Z
 DTSTART;VALUE=DATE:20270114
-SUMMARY:PUCT - Open Meeting
+SUMMARY:PUC - Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
  701 N. Congress Ave.\, Austin\, TX 78701
 URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=181
@@ -274,9 +271,9 @@ X-CAM-ORG:puct
 END:VEVENT
 BEGIN:VEVENT
 UID:puct-cal-1811-20270129@calendars.changesaroundme.com
-DTSTAMP:20260818T030325Z
+DTSTAMP:20260818T041059Z
 DTSTART;VALUE=DATE:20270129
-SUMMARY:PUCT - Open Meeting
+SUMMARY:PUC - Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
  701 N. Congress Ave.\, Austin\, TX 78701
 URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=181
@@ -286,9 +283,9 @@ X-CAM-ORG:puct
 END:VEVENT
 BEGIN:VEVENT
 UID:puct-cal-1812-20270218@calendars.changesaroundme.com
-DTSTAMP:20260818T030325Z
+DTSTAMP:20260818T041059Z
 DTSTART;VALUE=DATE:20270218
-SUMMARY:PUCT - Open Meeting
+SUMMARY:PUC - Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
  701 N. Congress Ave.\, Austin\, TX 78701
 URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=181
@@ -298,9 +295,9 @@ X-CAM-ORG:puct
 END:VEVENT
 BEGIN:VEVENT
 UID:puct-cal-1813-20270225@calendars.changesaroundme.com
-DTSTAMP:20260818T030325Z
+DTSTAMP:20260818T041059Z
 DTSTART;VALUE=DATE:20270225
-SUMMARY:PUCT - Open Meeting
+SUMMARY:PUC - Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
  701 N. Congress Ave.\, Austin\, TX 78701
 URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=181
@@ -310,9 +307,9 @@ X-CAM-ORG:puct
 END:VEVENT
 BEGIN:VEVENT
 UID:puct-cal-1814-20270311@calendars.changesaroundme.com
-DTSTAMP:20260818T030325Z
+DTSTAMP:20260818T041059Z
 DTSTART;VALUE=DATE:20270311
-SUMMARY:PUCT - Open Meeting
+SUMMARY:PUC - Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
  701 N. Congress Ave.\, Austin\, TX 78701
 URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=181
@@ -322,9 +319,9 @@ X-CAM-ORG:puct
 END:VEVENT
 BEGIN:VEVENT
 UID:puct-cal-1815-20270325@calendars.changesaroundme.com
-DTSTAMP:20260818T030325Z
+DTSTAMP:20260818T041059Z
 DTSTART;VALUE=DATE:20270325
-SUMMARY:PUCT - Open Meeting
+SUMMARY:PUC - Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
  701 N. Congress Ave.\, Austin\, TX 78701
 URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=181
@@ -334,9 +331,9 @@ X-CAM-ORG:puct
 END:VEVENT
 BEGIN:VEVENT
 UID:puct-cal-1816-20270401@calendars.changesaroundme.com
-DTSTAMP:20260818T030325Z
+DTSTAMP:20260818T041059Z
 DTSTART;VALUE=DATE:20270401
-SUMMARY:PUCT - Open Meeting
+SUMMARY:PUC - Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
  701 N. Congress Ave.\, Austin\, TX 78701
 URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=181
@@ -346,9 +343,9 @@ X-CAM-ORG:puct
 END:VEVENT
 BEGIN:VEVENT
 UID:puct-cal-1817-20270422@calendars.changesaroundme.com
-DTSTAMP:20260818T030325Z
+DTSTAMP:20260818T041059Z
 DTSTART;VALUE=DATE:20270422
-SUMMARY:PUCT - Open Meeting
+SUMMARY:PUC - Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
  701 N. Congress Ave.\, Austin\, TX 78701
 URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=181
@@ -358,9 +355,9 @@ X-CAM-ORG:puct
 END:VEVENT
 BEGIN:VEVENT
 UID:puct-cal-1818-20270513@calendars.changesaroundme.com
-DTSTAMP:20260818T030325Z
+DTSTAMP:20260818T041059Z
 DTSTART;VALUE=DATE:20270513
-SUMMARY:PUCT - Open Meeting
+SUMMARY:PUC - Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
  701 N. Congress Ave.\, Austin\, TX 78701
 URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=181
@@ -370,9 +367,9 @@ X-CAM-ORG:puct
 END:VEVENT
 BEGIN:VEVENT
 UID:puct-cal-1819-20270520@calendars.changesaroundme.com
-DTSTAMP:20260818T030325Z
+DTSTAMP:20260818T041059Z
 DTSTART;VALUE=DATE:20270520
-SUMMARY:PUCT - Open Meeting
+SUMMARY:PUC - Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
  701 N. Congress Ave.\, Austin\, TX 78701
 URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=181
@@ -382,9 +379,9 @@ X-CAM-ORG:puct
 END:VEVENT
 BEGIN:VEVENT
 UID:puct-cal-1820-20270603@calendars.changesaroundme.com
-DTSTAMP:20260818T030325Z
+DTSTAMP:20260818T041059Z
 DTSTART;VALUE=DATE:20270603
-SUMMARY:PUCT - Open Meeting
+SUMMARY:PUC - Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
  701 N. Congress Ave.\, Austin\, TX 78701
 URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=182
@@ -394,9 +391,9 @@ X-CAM-ORG:puct
 END:VEVENT
 BEGIN:VEVENT
 UID:puct-cal-1821-20270617@calendars.changesaroundme.com
-DTSTAMP:20260818T030325Z
+DTSTAMP:20260818T041059Z
 DTSTART;VALUE=DATE:20270617
-SUMMARY:PUCT - Open Meeting
+SUMMARY:PUC - Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
  701 N. Congress Ave.\, Austin\, TX 78701
 URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=182
@@ -406,9 +403,9 @@ X-CAM-ORG:puct
 END:VEVENT
 BEGIN:VEVENT
 UID:puct-cal-1822-20270708@calendars.changesaroundme.com
-DTSTAMP:20260818T030325Z
+DTSTAMP:20260818T041059Z
 DTSTART;VALUE=DATE:20270708
-SUMMARY:PUCT - Open Meeting
+SUMMARY:PUC - Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
  701 N. Congress Ave.\, Austin\, TX 78701
 URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=182
@@ -418,9 +415,9 @@ X-CAM-ORG:puct
 END:VEVENT
 BEGIN:VEVENT
 UID:puct-cal-1823-20270729@calendars.changesaroundme.com
-DTSTAMP:20260818T030325Z
+DTSTAMP:20260818T041059Z
 DTSTART;VALUE=DATE:20270729
-SUMMARY:PUCT - Open Meeting
+SUMMARY:PUC - Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
  701 N. Congress Ave.\, Austin\, TX 78701
 URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=182
