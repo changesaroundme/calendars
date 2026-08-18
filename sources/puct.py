@@ -235,6 +235,12 @@ def mark_watched_cases(events: list[Event],
 
 def fetch(session) -> list[Event]:
     _problems.clear()
+    # Tripwire: the pinned anchor and PUC's whole chain expire 2028-12-31
+    # (see certs/puc_intermediates.pem). Start failing loud two months out
+    # so the re-chain lands before the cliff.
+    if date.today() >= date(2028, 11, 1):
+        _problems.append("puct: pinned trust anchors expire 2028-12-31 — "
+                         "refresh certs/puc_intermediates.pem (see header)")
     resp = session.get(RSS_URL, timeout=30, verify=_verify())
     resp.raise_for_status()
     events = parse_rss(resp.text)
