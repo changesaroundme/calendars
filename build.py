@@ -299,6 +299,13 @@ def main() -> int:
             # first-wins dedupe lets the hand-written entry override the
             # scraped copy — deliberate human data beats generic scrape.
             events = hand + events
+            # SOS open-meetings enrichment (times/venues/cancellations onto
+            # existing events, from LAST build's archive — see the module
+            # docstring for the graduation story and the one-build lag).
+            try:
+                openmeetings.enrich_from_archive(events, key, today, data)
+            except Exception as exc:  # upgrade-only: never sink a source
+                print(f"[{key}] WARNING: SOS enrichment failed: {exc}")
             # --- past-event retention (append-only, keyed by uid) ---
             # Sources shed their own history: Legistar's "All Years" view
             # self-bounds at ~100 rows (run #72 dropped eight Oct/Nov-2025

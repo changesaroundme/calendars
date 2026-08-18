@@ -1,4 +1,4 @@
-"""Texas SOS open-meetings filings — enrichment source, currently SHADOW MODE.
+"""Texas SOS open-meetings filings — enrichment source (live 2026-08-17).
 
 Reads the UNT Libraries daily mirror of the SOS open-meetings bulletin
 (one static HTML file of ~100 recent filings, each a labeled field table
@@ -14,13 +14,17 @@ and a daily fetch records each one in data/openmeetings.json (keyed by TRD)
 before it can roll off. If shadow observation shows misses, the portal is
 the documented escalation path.
 
-SHADOW MODE means: fetch, filter, archive to data/openmeetings.json, and
-LOG what an enrichment pass would have done — but never touch published
-events. After a couple of weeks of daily snapshots in git history prove
-the matching, the enrichment pass gets built on the evidence. Planned
-enrichment (per Ian): upgrade EXISTING events only — exact times onto
-all-day placeholders, addresses, Teams links + agenda into descriptions,
-Status: Cancelled -> STATUS:CANCELLED. Never creates events.
+Ran in SHADOW MODE 2026-07-26 to 2026-08-17 (archive + would-enrich logs
+only); three weeks of clean matches graduated it. enrich_from_archive()
+now upgrades EXISTING events only — an exact time onto an all-day
+placeholder, an address onto a locationless event, Status: Cancelled ->
+STATUS:CANCELLED. It NEVER creates events, and it reads the PREVIOUS
+build's archive (the shadow writes after feeds publish), so a filing
+takes effect one build after capture — immaterial against the 1-3 week
+filing lead, and it keeps offline builds deterministic. Conservative
+match: routed org + exact meeting date, and only when that org has
+exactly ONE event that day (two same-day events would need body-name
+matching — the identity inference the architecture forbids).
 
 Filings for watched orgs with no feed yet (CARTS, PUCT, TTI) are archived
 for observation but marked unroutable. PUCT will eventually need a
@@ -130,6 +134,61 @@ def _meeting_date(rec: dict) -> date | None:
         return None
 
 
+TIME_RE = re.compile(r"(\d{1,2}):(\d{2})\s*([AP])M", re.IGNORECASE)
+MEETING_HOURS = 2
+
+
+def enrich_from_archive(events: list, key: str, today: date,
+                        data_dir: pathlib.Path) -> None:
+    """Upgrade one org's events in place from archived SOS filings.
+
+    Called per source from build.py's loop, before feeds are written.
+    Upgrade-only, three fields, future meetings only; see module docstring
+    for the match rule and the one-build lag.
+    """
+    try:
+        archive = json.loads((data_dir / "openmeetings.json").read_text())
+    except Exception:
+        return  # no archive yet (first run)
+    from datetime import timedelta  # local: module imports date/datetime only
+    for trd, rec in archive.items():
+        if rec.get("routed") != key:
+            continue
+        d = _meeting_date(rec)
+        if not d or d < today:
+            continue
+        same_day = [e for e in events
+                    if (e.start.date() if isinstance(e.start, datetime)
+                        else e.start) == d]
+        if len(same_day) != 1:
+            if len(same_day) > 1:
+                print(f"[openmeetings] TRD {trd}: {len(same_day)} {key} "
+                      f"events on {d} — ambiguous, not enriched")
+            continue
+        ev = same_day[0]
+        did = []
+        tm = TIME_RE.search(rec.get("Meeting Time", ""))
+        if tm and not isinstance(ev.start, datetime):
+            h = int(tm.group(1)) % 12 + (12 if tm.group(3).upper() == "P" else 0)
+            ev.start = datetime(d.year, d.month, d.day, h, int(tm.group(2)))
+            ev.end = ev.start + timedelta(hours=MEETING_HOURS)
+            did.append(f"time {h:02d}:{tm.group(2)}")
+        addr = " ".join(rec.get("Address", "").split())
+        if addr and not ev.location:
+            city = rec.get("City", "").strip()
+            if city and city.lower() not in addr.lower():
+                addr = f"{addr}, {city}, TX"
+            ev.location = addr
+            did.append("venue")
+        if rec.get("Status", "").lower().startswith("cancel") \
+                and ev.status != "CANCELLED":
+            ev.status = "CANCELLED"
+            did.append("CANCELLED")
+        if did:
+            print(f"[openmeetings] TRD {trd} enriched {key} event on {d}: "
+                  + ", ".join(did))
+
+
 def shadow(session, data_dir: pathlib.Path, offline: bool, events_by_key: dict) -> None:
     """Observation pass: archive watched filings + log would-be enrichment."""
     if offline:
@@ -178,9 +237,10 @@ def shadow(session, data_dir: pathlib.Path, offline: bool, events_by_key: dict) 
             for e in events_by_key.get(key, [])
         ):
             print(f"[openmeetings] TRD {trd} {who} {rec.get('Meeting Date')}: "
-                  f"WOULD ENRICH a {key} event "
+                  f"matches a {key} event "
                   f"({' '.join(rec.get('Meeting Time', '?').split())}, "
-                  f"status {rec.get('Status')})")
+                  f"status {rec.get('Status')}) — enrichment applies from "
+                  "the archive next build")
         else:
             print(f"[openmeetings] TRD {trd} {who} {rec.get('Meeting Date')}: "
                   f"no matching {key} event on that date (enrichment would skip; "

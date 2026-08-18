@@ -69,6 +69,35 @@ def health_problems() -> list[str]:
     return list(_problems)
 
 
+# --- TLS trust for puc.texas.gov -------------------------------------------
+# See certs/puc_intermediates.pem for the incident write-up: the server
+# doesn't always send its certificate chain, so PUCT requests verify
+# against certifi's roots PLUS those pinned intermediates. Built lazily
+# into a temp file once per process; falls back to default verification
+# if the pinned file ever goes missing.
+INTERMEDIATES = ROOT / "certs" / "puc_intermediates.pem"
+_verify_path: str | bool | None = None
+
+
+def _verify() -> str | bool:
+    global _verify_path
+    if _verify_path is None:
+        try:
+            import tempfile
+            import certifi
+            f = tempfile.NamedTemporaryFile("wb", suffix=".pem", delete=False)
+            f.write(pathlib.Path(certifi.where()).read_bytes())
+            f.write(b"\n")
+            f.write(INTERMEDIATES.read_bytes())
+            f.close()
+            _verify_path = f.name
+        except Exception as exc:
+            print(f"[{SOURCE}] WARNING: trust-bundle build failed ({exc}); "
+                  "using default verification")
+            _verify_path = True
+    return _verify_path
+
+
 def _hm(h: str, mm: str, mer: str) -> tuple[int, int]:
     return int(h) % 12 + (12 if mer.upper() == "P" else 0), int(mm)
 
@@ -206,13 +235,13 @@ def mark_watched_cases(events: list[Event],
 
 def fetch(session) -> list[Event]:
     _problems.clear()
-    resp = session.get(RSS_URL, timeout=30)
+    resp = session.get(RSS_URL, timeout=30, verify=_verify())
     resp.raise_for_status()
     events = parse_rss(resp.text)
     mark_watched_cases(events)
 
     def _got(url):
-        r = session.get(url, timeout=30)
+        r = session.get(url, timeout=30, verify=_verify())
         r.raise_for_status()
         return r.text
 
