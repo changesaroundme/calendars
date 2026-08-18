@@ -1890,11 +1890,11 @@
   "start": "2026-05-19T09:00:00",
   "end": "2026-05-19T11:00:00",
   "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
-  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4111&GID=684&G=4BED8896-C64D-4912-8005-D624C5197AA5",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1367847&GUID=DBFA4B19-285E-43B3-B258-3B3AEA0EBFF2&Options=info|&Search=",
   "status": "CONFIRMED",
   "kind": "work-session",
   "uid": "austin-city-council-work-session-20260519T0900@calendars.changesaroundme.com",
-  "description": "Agenda: https://austintexas.legistar1.com/austintexas/meetings/2026/5/4111_A_City_Council_Work_Session_26-05-19_City_Council_Agenda.pdf",
+  "description": "",
   "all_day": false
  },
  {
@@ -1903,11 +1903,11 @@
   "start": "2026-05-19T09:00:00",
   "end": "2026-05-19T11:00:00",
   "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
-  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4175&GID=684&G=4BED8896-C64D-4912-8005-D624C5197AA5",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1400442&GUID=3ED45674-6F06-4171-8188-42CB8055A60D&Options=info|&Search=",
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-energy-utility-oversight-committee-20260519T0900@calendars.changesaroundme.com",
-  "description": "Agenda: https://austintexas.legistar1.com/austintexas/meetings/2026/5/4175_A_Austin_Energy_Utility_Oversight_Committee___26-05-19_Committee_Agenda.pdf",
+  "description": "",
   "all_day": false
  },
  {
@@ -2817,7 +2817,7 @@
   "status": "CONFIRMED",
   "kind": "budget",
   "uid": "austin-city-council-20260817T1000@calendars.changesaroundme.com",
-  "description": "Summary Agenda\n\n- 12 consent items\n- 10 items from council\n- 1 ahfc meeting item\n- 1 mueller local govt. item",
+  "description": "",
   "all_day": false
  },
  {
