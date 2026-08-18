@@ -28,9 +28,9 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:lcra-water-rules-public-comments-close-20260901@calendars.changesaround
  me.com
-DTSTAMP:20260818T150023Z
+DTSTAMP:20260818T154434Z
 DTSTART;VALUE=DATE:20260901
-SUMMARY:LCRA - Water rules public comments close
+SUMMARY:LCRA: Water rules public comments close
 URL:https://www.lcra.org/water/water-related-rules-and-regulations-for-publ
  ic-comment/
 DESCRIPTION:Water-related rules and regulations LCRA is accepting public co
@@ -47,9 +47,9 @@ X-CAM-ORG:lcra
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1809-20260904@calendars.changesaroundme.com
-DTSTAMP:20260818T150023Z
+DTSTAMP:20260818T154434Z
 DTSTART;VALUE=DATE:20260904
-SUMMARY:PUC - Large Load Demand Management Service comments close
+SUMMARY:PUC: Large Load Demand Management Service comments close
 URL:https://interchange.puc.texas.gov/search/filings/?UtilityType=A&Control
  Number=58482
 DESCRIPTION:Public comment window: comments due 4 Sep 2026 on proposed new 
@@ -64,9 +64,9 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-fare-increase-public-comments-close-20260928@calendars.changes
  aroundme.com
-DTSTAMP:20260818T150023Z
+DTSTAMP:20260818T154434Z
 DTSTART;VALUE=DATE:20260928
-SUMMARY:CapMetro - Fare increase comments close
+SUMMARY:CapMetro: Fare increase comments close
 URL:https://www.capmetro.org/fare/general-fares-overview/fare-increase
 DESCRIPTION:Last day of comment on CapMetro's proposed fare increases (Jan 
  2027 and Jan 2029) and reduced-fare program changes: the Board votes on th

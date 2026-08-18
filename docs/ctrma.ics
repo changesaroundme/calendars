@@ -28,10 +28,10 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:ctrma-general-meeting-of-the-board-of-directors-20260826T0900@calendars
  .changesaroundme.com
-DTSTAMP:20260818T150023Z
+DTSTAMP:20260818T154434Z
 DTSTART;TZID=America/Chicago:20260826T090000
 DTEND;TZID=America/Chicago:20260826T110000
-SUMMARY:CTRMA - General Meeting of the Board of Directors
+SUMMARY:CTRMA: General Meeting of the Board of Directors
 LOCATION:3300 N. IH 35\, Suite 300\, Austin\, TX 78705
 URL:https://www.mobilityauthority.com/board-meetings/general-meeting-of-the
  -board-of-directors-9/
@@ -41,10 +41,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:ctrma-general-meeting-of-the-board-of-directors-20260930T0900@calendars
  .changesaroundme.com
-DTSTAMP:20260818T150023Z
+DTSTAMP:20260818T154434Z
 DTSTART;TZID=America/Chicago:20260930T090000
 DTEND;TZID=America/Chicago:20260930T110000
-SUMMARY:CTRMA - General Meeting of the Board of Directors
+SUMMARY:CTRMA: General Meeting of the Board of Directors
 LOCATION:3300 N. IH 35\, Suite 300\, Austin\, TX 78705
 URL:https://www.mobilityauthority.com/board-meetings/general-meeting-of-the
  -board-of-directors-10/
@@ -54,10 +54,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:ctrma-general-meeting-of-the-board-of-directors-20261028T0900@calendars
  .changesaroundme.com
-DTSTAMP:20260818T150023Z
+DTSTAMP:20260818T154434Z
 DTSTART;TZID=America/Chicago:20261028T090000
 DTEND;TZID=America/Chicago:20261028T110000
-SUMMARY:CTRMA - General Meeting of the Board of Directors
+SUMMARY:CTRMA: General Meeting of the Board of Directors
 LOCATION:3300 N. IH 35\, Suite 300\, Austin\, TX 78705
 URL:https://www.mobilityauthority.com/board-meetings/general-meeting-of-the
  -board-of-directors-11/
@@ -67,10 +67,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:ctrma-general-meeting-of-the-board-of-directors-20261118T0900@calendars
  .changesaroundme.com
-DTSTAMP:20260818T150023Z
+DTSTAMP:20260818T154434Z
 DTSTART;TZID=America/Chicago:20261118T090000
 DTEND;TZID=America/Chicago:20261118T110000
-SUMMARY:CTRMA - General Meeting of the Board of Directors
+SUMMARY:CTRMA: General Meeting of the Board of Directors
 LOCATION:3300 N. IH 35\, Suite 300\, Austin\, TX 78705
 URL:https://www.mobilityauthority.com/board-meetings/general-meeting-of-the
  -board-of-directors-12/
@@ -80,10 +80,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:ctrma-general-meeting-of-the-board-of-directors-20261216T0900@calendars
  .changesaroundme.com
-DTSTAMP:20260818T150023Z
+DTSTAMP:20260818T154434Z
 DTSTART;TZID=America/Chicago:20261216T090000
 DTEND;TZID=America/Chicago:20261216T110000
-SUMMARY:CTRMA - General Meeting of the Board of Directors
+SUMMARY:CTRMA: General Meeting of the Board of Directors
 LOCATION:3300 N. IH 35\, Suite 300\, Austin\, TX 78705
 URL:https://www.mobilityauthority.com/board-meetings/general-meeting-of-the
  -board-of-directors-13/
