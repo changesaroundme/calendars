@@ -100,15 +100,15 @@ def finalize(events: list[Event]) -> list[Event]:
     """Freeze UIDs from the raw body name, then apply display naming.
 
     Display follows the KB's governance model: the commission is "TTC"
-    (Texas Transportation Commission), shown as "TTC - Meeting". UIDs stay
+    (Texas Transportation Commission), shown as "TTC: Meeting". UIDs stay
     pinned to the raw body name, so this rename never churns subscribers.
     """
     for ev in events:
         ev.uid = ev.stable_uid()
         if ev.summary == BODY_NAME:
-            ev.summary = "TTC - Meeting"
+            ev.summary = "TTC: Meeting"
         elif not ev.summary.startswith("TTC"):
-            ev.summary = f"TTC - {ev.summary}"
+            ev.summary = f"TTC: {ev.summary}"
     return events
 
 

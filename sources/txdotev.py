@@ -273,7 +273,7 @@ def parse_hearings_index(html: str, owned_urls: set[str] | None = None,
                 "details post at the event link."]
         events.append(Event(
             source=SOURCE,
-            summary=f"TxDOT - {topic}",
+            summary=f"TxDOT: {topic}",
             start=day,
             location=area.strip(),
             url=url,
@@ -493,7 +493,7 @@ def parse_page(html: str, context: str, page_url: str) -> list[Event]:
                 events.append(
                     Event(
                         source=SOURCE,
-                        summary=f"TxDOT - {cap}",
+                        summary=f"TxDOT: {cap}",
                         start=start,
                         end=end + timedelta(days=1),  # DTEND exclusive
                         url=page_url,
@@ -534,7 +534,7 @@ def parse_page(html: str, context: str, page_url: str) -> list[Event]:
                 events.append(
                     Event(
                         source=SOURCE,
-                        summary=f"TxDOT - {context}: {topic}",
+                        summary=f"TxDOT: {context} - {topic}",
                         start=start,
                         end=(start + EVENT_LENGTH) if isinstance(start, datetime) else None,
                         url=page_url,
@@ -639,7 +639,7 @@ def parse_committee_page(
             events.append(
                 Event(
                     source=SOURCE,
-                    summary=f"TxDOT {abbrev} - Meeting",
+                    summary=f"TxDOT {abbrev}: Meeting",
                     start=start,
                     end=(start + EVENT_LENGTH) if isinstance(start, datetime) else None,
                     location=_committee_location(texts[2]),

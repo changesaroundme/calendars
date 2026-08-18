@@ -49,17 +49,17 @@ COUNCIL = Legistar(
     host="austintexas.legistar.com",
     prefix="",  # "Austin" is assumed for this calendar; no org prefix
     display_names={
-        "Budget Meeting of the Austin City Council": "City Council - Budget Meeting",
-        "City Council Work Session": "City Council - Work Session",
-        "City Council Budget Work Session": "City Council - Budget Work Session",
-        "City Council Special Called Meeting": "City Council - Special Called Meeting",
+        "Budget Meeting of the Austin City Council": "City Council: Budget Meeting",
+        "City Council Work Session": "City Council: Work Session",
+        "City Council Budget Work Session": "City Council: Budget Work Session",
+        "City Council Special Called Meeting": "City Council: Special Called Meeting",
     },
     # Every Legistar body ending in "Committee" is a committee OF the council
     # (verified against the full bodies list 2026-07-25); corporations, TIF
     # zones, etc. don't match and keep their own names. Rule, not list, so
     # future committees are prefixed automatically.
     display_transform=lambda s: (
-        f"City Council - {s}"
+        f"City Council: {s}"
         if s.endswith("Committee") and not s.startswith("City Council")
         else s
     ),
@@ -257,10 +257,10 @@ def parse_board_page(html: str, board: str, docs_url: str,
             continue
         seen.add(uid)
         note = (note or "").strip()
-        # Display prefix per the 2026-08-09 convention update ("CoA - " on
+        # Display prefix ("CoA: " on
         # Austin boards and one-offs; the City Council family keeps its
         # bare names). The uid above froze from the raw board name first.
-        summary = f"CoA - {board}" + (f" ({note})" if note else "")
+        summary = f"CoA: {board}" + (f" ({note})" if note else "")
         kind = "special" if re.search(r"special", note, re.IGNORECASE) else "regular"
         if typical_time:
             h, mnt = map(int, typical_time.split(":"))
@@ -693,7 +693,7 @@ def annual_council_events(records, legistar_events: list[Event]) -> list[Event]:
         events.append(
             Event(
                 source=SOURCE,
-                summary="City Council - Budget Meeting" if budget else "City Council",
+                summary="City Council: Budget Meeting" if budget else "City Council",
                 start=day,
                 location=CITY_HALL,
                 url=COUNCIL_MEETINGS_URL,
@@ -723,7 +723,7 @@ def apply_budget_flags(council: list[Event], records) -> list[Event]:
         if m and m.group(1) in budget_days:
             ev.kind = "budget"
             if ev.summary == "City Council":
-                ev.summary = "City Council - Budget Meeting"
+                ev.summary = "City Council: Budget Meeting"
     return council
 
 
@@ -738,7 +738,7 @@ def note_related_budget_meetings(council: list[Event]) -> None:
     """
     groups: dict[str, list[Event]] = {}
     for ev in council:
-        if (ev.summary == "City Council - Budget Meeting"
+        if (ev.summary == "City Council: Budget Meeting"
                 and (ev.description or "").startswith("Summary Agenda")):
             groups.setdefault(
                 ev.description.split("\n\n—\n\n", 1)[0], []).append(ev)
@@ -807,7 +807,7 @@ def fetch(session) -> list[Event]:
         _problems.append(f"austin: annual council schedule failed: {exc}")
         annual = []
     # After apply_budget_flags — the annual calendar may be what names a
-    # meeting "City Council - Budget Meeting" in the first place.
+    # meeting "City Council: Budget Meeting" in the first place.
     note_related_budget_meetings(council)
     boards = fetch_boards(session)
     try:

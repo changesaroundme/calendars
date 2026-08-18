@@ -9,7 +9,7 @@
 #
 # Fields:
 #   summary:   (required) title EXACTLY as it should appear in calendars,
-#              including any org prefix, e.g. "TxDOT - I-35 CapEx Open House"
+#              including any org prefix, e.g. "TxDOT: I-35 CapEx Open House"
 #   start:     (required) 2026-09-15 for all-day, 2026-09-15 17:30 for timed
 #   org:       (required) which calendar it lands in — one of:
 #              campo capmetro txdot lcra ctrma austin atp txdotev
@@ -38,7 +38,7 @@
 # retract a mistaken past entry, also delete it from data/<org>.json.
 #
 # Example (delete the leading "# " to activate):
-# - summary: "TxDOT - I-35 Capital Express Central Open House"
+# - summary: "TxDOT: I-35 Capital Express Central Open House"
 #   start: 2026-09-15 17:30
 #   org: txdotev
 #   location: "Austin High School Cafeteria, 1715 W. Cesar Chavez St., Austin, TX"
@@ -47,7 +47,7 @@
 
 # --- added 2026-07-28 -------------------------------------------------------
 
-- summary: "TxDOT - I-14 Extension Public Meeting (Temple)"
+- summary: "TxDOT: I-14 Extension Public Meeting (Temple)"
   start: 2026-08-05 17:00
   org: txdotev
   location: "Frank W. Mayborn Civic & Convention Center, Main Hall, 3303 N. 3rd Street, Temple, TX 76501"
@@ -65,7 +65,7 @@
     by 5pm on 5 Aug 2026. Written comments must be postmarked or received by
     21 Aug 2026 to enter the official record.
 
-- summary: "TxDOT - I-14 Extension Public Meeting (Belton)"
+- summary: "TxDOT: I-14 Extension Public Meeting (Belton)"
   start: 2026-08-06 17:00
   org: txdotev
   location: "Huntington Bank Expo (Cadence Bank Center), Assembly Hall, 301 W. Loop 121, Belton, TX 76513"
@@ -82,7 +82,7 @@
     Written comments must be postmarked or received by 21 Aug 2026 to enter
     the official record.
 
-- summary: "TxDOT - Texas Triangle Multimodal Strategic Plan Webinar"
+- summary: "TxDOT: Texas Triangle Multimodal Strategic Plan Webinar"
   start: 2026-07-30 12:00
   org: txdotev
   location: "Virtual (Microsoft Teams)"
@@ -98,7 +98,7 @@
     challenges, emerging mobility trends, and connections between communities
     across the Dallas-Fort Worth / Houston / San Antonio / Austin mega-region.
 
-- summary: "Texas Senate - Business & Commerce: 765-kV lines and grid reliability"
+- summary: "Texas Senate: Business & Commerce - 765-kV lines and grid reliability"
   start: 2026-07-29 09:00
   org: legislature
   # uid pinned to the scraper's copy of this same hearing (captured by the
@@ -130,7 +130,7 @@
 
 # --- added 2026-07-30 (Speak Up Austin r31038, via curate-events flow) -------
 
-- summary: "CoA - César Chávez St Renaming"
+- summary: "CoA: César Chávez St Renaming"
   uid: austin-c-sar-ch-vez-street-renaming-community-meeting-20260811T1700@calendars.changesaroundme.com
   start: 2026-08-11 17:00
   end: 2026-08-11 19:00
@@ -146,7 +146,7 @@
     Others in the series: 2pm CDT 15 Aug 2026 (Sanchez Elementary) and a
     virtual session 6pm CDT 18 Aug 2026. Online survey at the link.
 
-- summary: "CoA - César Chávez St Renaming"
+- summary: "CoA: César Chávez St Renaming"
   uid: austin-c-sar-ch-vez-street-renaming-community-meeting-20260815T1400@calendars.changesaroundme.com
   start: 2026-08-15 14:00
   end: 2026-08-15 16:00
@@ -162,7 +162,7 @@
     Others in the series: 5pm CDT 11 Aug 2026 (Central Library) and a
     virtual session 6pm CDT 18 Aug 2026. Online survey at the link.
 
-- summary: "CoA - César Chávez St Renaming"
+- summary: "CoA: César Chávez St Renaming"
   uid: austin-c-sar-ch-vez-street-renaming-virtual-community-meeting-20260818T1800@calendars.changesaroundme.com
   start: 2026-08-18 18:00
   end: 2026-08-18 20:00
@@ -202,7 +202,7 @@
 
 # --- added 2026-07-31 (District 3 newsletter / Google Form RSVP) -------------
 
-- summary: "CoA - District 3 Budget Community Meeting"
+- summary: "CoA: District 3 Budget Community Meeting"
   # uid pinned across the 2026-08-09 retitle (renaming without a pin churns
   # subscribers and leaves a ghost via past-event retention).
   uid: austin-district-3-budget-community-meeting-20260810T1730@calendars.changesaroundme.com
@@ -266,7 +266,7 @@
 # Titles dropped "Public" on 2026-08-18 (a posted meeting is obviously
 # public); each entry pins the uid its ORIGINAL title generated, so the
 # retitle is display-only and the archive never sees a second identity.
-- summary: "CapMetro - Fare Increase Meeting"
+- summary: "CapMetro: Fare Increase Meeting"
   uid: capmetro-fare-increase-public-meeting-20260730T1700@calendars.changesaroundme.com
   start: 2026-07-30 17:00
   end: 2026-07-30 19:30
@@ -290,7 +290,7 @@
 
     RSVP: https://publicinput.com/Register/XS8587
 
-- summary: "CapMetro - Fare Increase Meeting"
+- summary: "CapMetro: Fare Increase Meeting"
   uid: capmetro-fare-increase-public-meeting-20260806T1700@calendars.changesaroundme.com
   start: 2026-08-06 17:00
   end: 2026-08-06 19:30
@@ -313,7 +313,7 @@
 
     RSVP: https://publicinput.com/Register/JG2066
 
-- summary: "CapMetro - Fare Increase Meeting"
+- summary: "CapMetro: Fare Increase Meeting"
   uid: capmetro-fare-increase-public-meeting-20260818T1700@calendars.changesaroundme.com
   start: 2026-08-18 17:00
   end: 2026-08-18 19:30
@@ -335,7 +335,7 @@
 
     RSVP: https://publicinput.com/Register/UR8023
 
-- summary: "CapMetro - Fare Increase Meeting"
+- summary: "CapMetro: Fare Increase Meeting"
   uid: capmetro-fare-increase-public-meeting-20260819T1700@calendars.changesaroundme.com
   start: 2026-08-19 17:00
   end: 2026-08-19 19:30
@@ -355,7 +355,7 @@
 
     RSVP: https://publicinput.com/Register/UX3336
 
-- summary: "CapMetro - Fare Increase Hearing"
+- summary: "CapMetro: Fare Increase Hearing"
   start: 2026-09-16 12:00
   org: capmetro
   # uid pinned to the Legistar scraper's noon "Board of Directors" row that
@@ -380,7 +380,7 @@
 
     Comments open until the Board votes 28 Sep 2026.
 
-- summary: "CapMetro - Fare increase comments close"
+- summary: "CapMetro: Fare increase comments close"
   uid: capmetro-fare-increase-public-comments-close-20260928@calendars.changesaroundme.com
   start: 2026-09-28
   org: capmetro
@@ -413,7 +413,7 @@
 
 # --- added 2026-08-17 (PUC) -------------------------------------------------
 
-- summary: "PUC - Large Load Demand Management Service comments close"
+- summary: "PUC: Large Load Demand Management Service comments close"
   start: 2026-09-04
   org: puc
   kind: comment-window
@@ -432,7 +432,7 @@
     Comments are filed in Project No. 58482 via the PUC Interchange:
     https://interchange.puc.texas.gov/filer
 
-- summary: "PUC - Meeting (inc. 765 kV cases)"
+- summary: "PUC: Meeting (inc. 765 kV cases)"
   start: 2026-08-21 09:30
   org: puc
   kind: hearing

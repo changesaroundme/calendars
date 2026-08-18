@@ -185,7 +185,7 @@ def finalize(events: list[Event]) -> list[Event]:
     for ev in events:
         ev.uid = ev.stable_uid()
         short = CMTE_PREFIX_RE.sub("", ev.summary)
-        ev.summary = f"Texas Senate - {short}"
+        ev.summary = f"Texas Senate: {short}"
     return events
 
 
@@ -262,7 +262,7 @@ def finalize_house(events: list[Event]) -> list[Event]:
     """Freeze UIDs from the chamber-marked raw name, then display-name."""
     for ev in events:
         ev.uid = ev.stable_uid()
-        ev.summary = f"Texas House - {ev.summary.removeprefix('House ')}"
+        ev.summary = f"Texas House: {ev.summary.removeprefix('House ')}"
     return events
 
 

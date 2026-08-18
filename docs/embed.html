@@ -213,12 +213,16 @@ function orgOf(ev) {
 }
 function displayTitle(ev) {
   // The org is shown as its own tag, so drop a leading org name from the
-  // title ("CAMPO - TPB" -> tag CAMPO + "TPB"; "TxDOT BPAC - Meeting" ->
-  // tag TxDOT + "BPAC - Meeting"). Titles without one (CoA) pass through.
+  // title ("CAMPO: TPB" -> tag CAMPO + "TPB"; "TxDOT BPAC: Meeting" ->
+  // tag TxDOT + "BPAC: Meeting"). Titles without one (council family)
+  // pass through. The " - " branch is a legacy fallback: archived events
+  // predating the 2026-08-18 separator switch were migrated, but stray
+  // old-style titles must not render doubled.
   const o = orgOf(ev);
   let t = ev.summary || "(untitled)";
   if (o) {
-    if (t.startsWith(o.label + " - ")) t = t.slice(o.label.length + 3);
+    if (t.startsWith(o.label + ": ")) t = t.slice(o.label.length + 2);
+    else if (t.startsWith(o.label + " - ")) t = t.slice(o.label.length + 3);
     else if (t.startsWith(o.label + " ")) t = t.slice(o.label.length + 1);
   }
   return t;

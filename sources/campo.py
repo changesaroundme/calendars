@@ -39,7 +39,7 @@ def parse_feed(ics_data: bytes | str) -> list[Event]:
             Event(
                 source=SOURCE,
                 # Org prefix is display-only; identity comes from CAMPO's UID.
-                summary=f"CAMPO - {summary}",
+                summary=f"CAMPO: {summary}",
                 start=dtstart,
                 end=dtend,
                 # Their feed's TAC entries carry a junk "TX" location; the

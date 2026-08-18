@@ -121,7 +121,7 @@ class Legistar:
     meeting_length: timedelta = timedelta(hours=2)
     # Display renames applied AFTER the UID is frozen (raw body name is the
     # identity; these are presentation only), e.g.
-    # {"Budget Meeting of the Austin City Council": "City Council - Budget Meeting"}
+    # {"Budget Meeting of the Austin City Council": "City Council: Budget Meeting"}
     display_names: dict = None
     # Location cleanups: if a location starts with a key, replace it with the
     # canonical value (sources often publish just a room name or junk-suffixed
@@ -129,7 +129,7 @@ class Legistar:
     location_fixes: dict = None
     # Optional display rename RULE (str -> str), applied after display_names —
     # for patterns rather than exact names (e.g. Austin: any body ending in
-    # "Committee" is a council committee -> "City Council - <name>").
+    # "Committee" is a council committee -> "City Council: <name>").
     display_transform: object = None
     # Optional predicate (raw body name -> bool): which bodies get their
     # agenda ITEMS fetched and summarized into the description (one extra
@@ -317,7 +317,7 @@ class Legistar:
             if self.display_transform:
                 ev.summary = self.display_transform(ev.summary)
             if self.prefix and not ev.summary.startswith(self.prefix):
-                ev.summary = f"{self.prefix} - {ev.summary}"
+                ev.summary = f"{self.prefix}: {ev.summary}"
             if self.location_fixes:
                 for pfx, canonical in self.location_fixes.items():
                     if ev.location.startswith(pfx):

@@ -164,7 +164,7 @@ def finalize(events: list[Event]) -> list[Event]:
     for ev in events:
         ev.uid = ev.stable_uid()
         if not ev.summary.startswith("LCRA"):
-            ev.summary = f"LCRA - {ev.summary}"
+            ev.summary = f"LCRA: {ev.summary}"
     return events
 
 

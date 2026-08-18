@@ -133,8 +133,8 @@ def parse_rss(xml_text: str) -> list[Event]:
         tail = re.sub(r"^(NA|Project\s*\d+)\s*", "", tail).strip()
         location = tail if len(tail) > 10 else HEARING_ROOM
         if kind_part.lower().startswith("public comment deadline"):
-            summary = ("PUC - Project " + pm.group(1) + " comments close"
-                       if pm else "PUC - Public comment deadline")
+            summary = ("PUC: Project " + pm.group(1) + " comments close"
+                       if pm else "PUC: Public comment deadline")
             kind = "comment-window"
             body = ("Comments are filed via the PUC Interchange: "
                     "https://interchange.puc.texas.gov/filer"
@@ -143,7 +143,7 @@ def parse_rss(xml_text: str) -> list[Event]:
                        f"{pm.group(1)}" if pm else ""))
             location = ""
         else:
-            summary = f"PUC - {kind_part}"
+            summary = f"PUC: {kind_part}"
             kind = "regular"
             # Same shape as senate hearings: meetings you can't attend in
             # person are still watchable — live and archived.
