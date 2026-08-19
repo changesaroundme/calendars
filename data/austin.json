@@ -2939,6 +2939,19 @@
  },
  {
   "source": "austin",
+  "summary": "City Council: Work Session",
+  "start": "2026-08-25T09:00:00",
+  "end": "2026-08-25T11:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4117&GID=684&G=4BED8896-C64D-4912-8005-D624C5197AA5",
+  "status": "CONFIRMED",
+  "kind": "work-session",
+  "uid": "austin-city-council-work-session-20260825T0900@calendars.changesaroundme.com",
+  "description": "Summary Agenda\n\n- 5 other items\n- 2 briefing items\n\n\u2014\n\nAgenda: https://austintexas.legistar1.com/austintexas/meetings/2026/8/4117_A_City_Council_Work_Session_26-08-25_City_Council_Agenda.pdf",
+  "all_day": false
+ },
+ {
+  "source": "austin",
   "summary": "CoA: Planning Commission",
   "start": "2026-08-25T18:00:00",
   "end": "2026-08-25T21:00:00",
@@ -2947,7 +2960,7 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-planning-commission-20260825@calendars.changesaroundme.com",
-  "description": "Typical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).",
+  "description": "Summary Agenda\n\n12 cases: 2 x Plan Amendment, 7 x Rezoning, 1 x Restrictive Covenant Termination, 1 x Historic Zoning, 1 x Code\n\n4 permanent committee and 1 working group update\n\n\u2014\n\nAgenda: https://services.austintexas.gov/edims/document.cfm?id=479415",
   "all_day": false
  },
  {
