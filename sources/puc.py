@@ -66,6 +66,17 @@ DETAIL_TIMES_RE = re.compile(
 DETAIL_HORIZON = timedelta(days=45)
 DETAIL_FETCH_CAP = 6
 
+# Per-meeting video links (Ian, 2026-08-18): the broadcasts page links each
+# meeting's adminmonitor.com player, and the URL itself carries the meeting
+# date (/tx/puct/open_meeting/20260814/) — that embedded date is the match
+# key, so the scrape doesn't depend on the page's layout, only on the hrefs.
+# Only links actually posted there ever attach; no URLs are constructed.
+BROADCASTS_URL = "https://www.puc.texas.gov/agency/calendar/broadcasts/"
+BROADCAST_LINE = f"Watch live or archived: {BROADCASTS_URL}"
+ADMINMONITOR_RE = re.compile(
+    r"https?://(?:www\.)?adminmonitor\.com/tx/puct/[^\"'<>\s]*?(\d{8})/?"
+    r"(?=[\"'<>\s])")
+
 _problems: list[str] = []
 
 
@@ -147,8 +158,7 @@ def parse_rss(xml_text: str) -> list[Event]:
             kind = "regular"
             # Same shape as senate hearings: meetings you can't attend in
             # person are still watchable — live and archived.
-            body = ("Watch live or archived: "
-                    "https://www.puc.texas.gov/agency/calendar/broadcasts/")
+            body = BROADCAST_LINE
         events.append(Event(
             source=SOURCE,
             summary=summary,
@@ -240,6 +250,40 @@ def mark_watched_cases(events: list[Event],
                               if ev.description else block)
 
 
+def enrich_broadcasts(events: list[Event], get_html) -> None:
+    """Swap the generic broadcasts-page line for each meeting's own player.
+
+    Applies to past meetings too: their archived recording link attaches on
+    the next build and rides into the snapshot (fresh wins on UID), so the
+    record improves after the fact instead of decaying.
+    """
+    try:
+        page = get_html(BROADCASTS_URL)
+    except Exception as exc:  # enrichment must never break the feed
+        print(f"[{SOURCE}] WARNING: broadcasts page fetch failed: {exc}")
+        return
+    links: dict[date, str] = {}
+    for m in ADMINMONITOR_RE.finditer(page or ""):
+        try:
+            d = datetime.strptime(m.group(1), "%Y%m%d").date()
+        except ValueError:
+            continue
+        links.setdefault(d, m.group(0))  # first link per date wins
+    for ev in events:
+        if ev.kind == "comment-window":
+            continue
+        day = ev.start.date() if isinstance(ev.start, datetime) else ev.start
+        url = links.get(day)
+        if not url:
+            continue
+        line = f"Watch live or archived: {url}"
+        if BROADCAST_LINE in ev.description:
+            ev.description = ev.description.replace(BROADCAST_LINE, line)
+        elif line not in ev.description:
+            ev.description = (f"{ev.description}\n\n{line}"
+                              if ev.description else line)
+
+
 def fetch(session) -> list[Event]:
     _problems.clear()
     # Tripwire: the pinned anchor and PUC's whole chain expire 2028-12-31
@@ -262,6 +306,7 @@ def fetch(session) -> list[Event]:
         enrich_details(events, _got, datetime.now().date())
     except Exception as exc:  # upgrade-only
         print(f"[{SOURCE}] WARNING: detail enrichment failed: {exc}")
+    enrich_broadcasts(events, _got)  # guards internally
     return events
 
 
@@ -281,4 +326,9 @@ def fetch_offline() -> list[Event]:
     # Watched-case marking against a pinned SOS-archive extract (the real
     # 14 Aug 2026 filing, agenda naming both 765-kV dockets).
     mark_watched_cases(events, FIXTURES / "puc_sos_openmeetings.json")
+    # Broadcast links against the synthetic broadcasts fixture (see its
+    # header): the 14 Aug meeting must pick up its player link, everything
+    # else keeps the generic broadcasts-page line.
+    enrich_broadcasts(events,
+                      lambda u: (FIXTURES / "puc_broadcasts.html").read_text())
     return events

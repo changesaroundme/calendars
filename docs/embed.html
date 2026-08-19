@@ -340,6 +340,21 @@ const calendar = new FullCalendar.Calendar(document.getElementById("cal"), {
   },
 });
 calendar.render();
+
+// An iframe can never size itself to its content, so with the natural-
+// height layout (2026-08-18) the embed reports its height to the parent
+// page; the KB site's publish.js listens and stretches the frame — no
+// inner scrollbar, no clipped weeks, in month AND list views. Standalone
+// (no parent, or no listener) this is harmless, and the iframe's static
+// height attribute stays the fallback.
+const reportHeight = () => {
+  if (window.parent === window) return;
+  window.parent.postMessage(
+    { cam: "embed-height", height: document.documentElement.scrollHeight },
+    "*");  // height of a public calendar — nothing sensitive to scope
+};
+new ResizeObserver(reportHeight).observe(document.body);
+addEventListener("load", reportHeight);
 </script>
 </body>
 </html>

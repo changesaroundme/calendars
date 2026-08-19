@@ -1,0 +1,20 @@
+<!-- SYNTHETIC fixture (2026-08-18): puc.texas.gov/agency/calendar/broadcasts/
+     could not be captured (the container can't reach puc.texas.gov, and
+     Anthropic's fetcher trips on the same broken TLS chain CI pins around).
+     The one real datum is the adminmonitor URL shape, confirmed by Ian's
+     example link for the 14 Aug 2026 open meeting. The enrichment regex
+     keys ONLY on hrefs matching that shape — page layout is irrelevant —
+     so this fixture just exercises the href extraction: one real URL, one
+     plausible second date, one decoy that must NOT match. Replace with a
+     real capture when convenient. -->
+<html><body>
+<h1>Broadcasts</h1>
+<ul>
+  <li>Open Meeting, August 14, 2026 —
+      <a href="http://www.adminmonitor.com/tx/puct/open_meeting/20260814/">watch</a></li>
+  <li>Open Meeting, July 24, 2026 —
+      <a href="http://www.adminmonitor.com/tx/puct/open_meeting/20260724/">watch</a></li>
+  <li>Decoy (wrong agency, must not match):
+      <a href="http://www.adminmonitor.com/tx/otheragency/open_meeting/20260814/">nope</a></li>
+</ul>
+</body></html>
