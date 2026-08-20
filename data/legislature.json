@@ -391,6 +391,19 @@
  },
  {
   "source": "legislature",
+  "summary": "Texas Senate: Business & Commerce - 765-kV lines and grid reliability",
+  "start": "2026-07-29T09:00:00",
+  "end": "2026-07-29T11:00:00",
+  "location": "Room E1.012 (Hearing Room), Texas Capitol Extension, 1100 Congress Ave., Austin, TX 78701",
+  "url": "https://capitol.texas.gov/tlodocs/89R/schedules/html/C5102026072909001.HTM",
+  "status": "CONFIRMED",
+  "kind": "hearing",
+  "uid": "legislature-senate-committee-on-business-and-commerce-20260729T0900@calendars.changesaroundme.com",
+  "description": "Senate Committee on Business & Commerce, chaired by Sen. Charles Schwertner. Invited and public testimony on two interim charges:\n\nManaging the Impacts of 765-kV Transmission Lines on Private Property Rights - reviewing the proposed route plans and their effect on homes, businesses and communities; whether current regulatory processes and timelines adequately protect landowner rights; and recommendations for transmission planning, permitting and siting.\n\nAssessing the State of the Texas Electric Grid - SB 6 rulemaking including large load interconnection and transmission cost allocation, ERCOT load forecast confidence, the Texas Energy Fund and post-Uri reforms, and whether the ERCOT market remains competitive.\n\nPublic testimony is limited to 2 minutes per witness. Written testimony needs 15 copies to the committee clerk plus a digital copy by email. Registration closes at 11am on the day of the hearing.\n\nNotice was marked REVISION - check the link for any later change.",
+  "all_day": false
+ },
+ {
+  "source": "legislature",
   "summary": "Texas Senate - Business & Commerce: 765-kV lines and grid reliability",
   "start": "2026-07-29T09:00:00",
   "end": "2026-07-29T11:00:00",

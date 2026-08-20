@@ -1981,11 +1981,11 @@
   "start": "2026-05-21T10:00:00",
   "end": "2026-05-21T12:00:00",
   "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
-  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4072&GID=684&G=4BED8896-C64D-4912-8005-D624C5197AA5",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1362250&GUID=E4E3F7D2-A087-4945-A577-2603C94AFDDD&Options=info|&Search=",
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-city-council-20260521T1000@calendars.changesaroundme.com",
-  "description": "Agenda: https://austintexas.legistar1.com/austintexas/meetings/2026/5/4072_A_City_Council_26-05-21_City_Council_Agenda.pdf",
+  "description": "",
   "all_day": false
  },
  {
@@ -2882,7 +2882,7 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-audit-and-finance-committee-20260819T0930@calendars.changesaroundme.com",
-  "description": "Summary Agenda\n\n1. Approve the minutes for the July 20, 2026, special called meeting of the Audit and Finance Committee. (26-2140, Minutes)\n2. Discussion and possible action regarding adoption of bylaws for the Austin-Travis County Public Health Commission. (26-1978, Discussion and Possible Action)\n3. Discuss audit of management of privileged access to critical City systems. (Deliberation regarding security devices or security audits - Sections 551.076 and 5\u2026 (26-2142, Executive Session)\n4. Identify items to discuss at future meetings. (26-2146, Future Items)\n\n\u2014\n\nAgenda: https://austintexas.legistar1.com/austintexas/meetings/2026/8/4192_A_Audit_and_Finance_Committee_26-08-19_Committee_Agenda.pdf",
+  "description": "Agenda: https://austintexas.legistar1.com/austintexas/meetings/2026/8/4192_A_Audit_and_Finance_Committee_26-08-19_Committee_Agenda.pdf",
   "all_day": false
  },
  {
@@ -2895,7 +2895,7 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-water-and-wastewater-commission-20260819@calendars.changesaroundme.com",
-  "description": "Summary Agenda\n\n2 briefings:\n- highlights of Austin Water\u2019s 2026 Q2 Report on Water Management Strategy Implementation \u2013 Kevin Kluge, Austin Water Conservation Manager\n- Austin Water\u2019s Onsite Water Reuse, Decentralized and Centralized Reclaimed Water Programs \u2013 Katherine Jashinski P.E., Water Reuse Programs Supervisor, Joe Smith P.E., Wastewater Systems Planning Supervisor, Kane Wei, P.E\n\n3 discussion items:\n\nItem #2 \"Recommend approval to authorize a contract for construction services for the Relocation of 36-inch Water Line across Colorado River for Austin Water with Arguij\u2026\"\n\nItem #3 \"Recommend approval to authorize two contracts for sodium bisulfate for Austin Water with Gasochem International LLC d/b/a Gasochem International and Univar Solu\u2026\"\n\nItem #4 \"Recommend approval to authorize a contract for water and wastewater treatment instrumentation, analyzers, gas detection equipment, and valves/actuators, includi\u2026\"\n\n\u2014\n\nAgenda: https://services.austintexas.gov/edims/document.cfm?id=479124",
+  "description": "Typical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).",
   "all_day": false
  },
  {
@@ -2908,7 +2908,7 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-environmental-commission-20260819@calendars.changesaroundme.com",
-  "description": "Summary Agenda\n\n1 case: 1 x Name: 5811 Southwest Parkway Site-Specific SOS Amendment,\n\n\u2014\n\nAgenda: https://services.austintexas.gov/edims/document.cfm?id=479117",
+  "description": "Typical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).",
   "all_day": false
  },
  {
