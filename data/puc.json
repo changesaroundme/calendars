@@ -46,9 +46,9 @@
   "location": "AT&T Hotel and Conference Center (1900 University Ave, Austin, TX  78705)",
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1802",
   "status": "CONFIRMED",
-  "kind": "regular",
+  "kind": "hearing",
   "uid": "puc-cal-1802-20260821@calendars.changesaroundme.com",
-  "description": "Watch live or archived: http://www.adminmonitor.com/tx/puct/open_meeting/20260821/",
+  "description": "Watched cases on the posted agenda:\n- Docket 59029: 765-kV Longshore Switch - Drill Hole Switch line (Oncor CCN)\n- Docket 59315: 765-kV Dinosaur Switch - Longshore Switch line (Oncor CCN)\n\nWatch live or archived: http://www.adminmonitor.com/tx/puct/open_meeting/20260821/",
   "all_day": false
  },
  {
@@ -56,7 +56,7 @@
   "summary": "PUC: Open Meeting",
   "start": "2026-08-28T09:30:00",
   "end": "2026-08-28T17:00:00",
-  "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
+  "location": "1700 Congress Ave., Austin, Texas 78701 \nStephen F. Austin Building, Room 170",
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1806",
   "status": "CONFIRMED",
   "kind": "regular",
