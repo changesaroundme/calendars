@@ -3017,6 +3017,19 @@
  },
  {
   "source": "austin",
+  "summary": "City Council: Public Health Committee",
+  "start": "2026-09-02T10:00:00",
+  "end": "2026-09-02T12:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/Calendar.aspx",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-public-health-committee-20260902T1000@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
+ },
+ {
+  "source": "austin",
   "summary": "CoA: Environmental Commission",
   "start": "2026-09-02T18:00:00",
   "end": "2026-09-02T21:00:00",
@@ -3039,6 +3052,19 @@
   "kind": "regular",
   "uid": "austin-historic-landmark-commission-20260902@calendars.changesaroundme.com",
   "description": "Typical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).",
+  "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "City Council: Mobility Committee",
+  "start": "2026-09-03T13:00:00",
+  "end": "2026-09-03T15:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/Calendar.aspx",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-mobility-committee-20260903T1300@calendars.changesaroundme.com",
+  "description": "",
   "all_day": false
  },
  {
@@ -3147,6 +3173,19 @@
  },
  {
   "source": "austin",
+  "summary": "City Council: Audit and Finance Committee",
+  "start": "2026-09-16T09:30:00",
+  "end": "2026-09-16T11:30:00",
+  "location": "",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4193&GID=684&G=4BED8896-C64D-4912-8005-D624C5197AA5",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-audit-and-finance-committee-20260916T0930@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
+ },
+ {
+  "source": "austin",
   "summary": "CoA: Bond Oversight Commission",
   "start": "2026-09-16T14:00:00",
   "end": "2026-09-16T17:00:00",
@@ -3182,6 +3221,19 @@
   "kind": "regular",
   "uid": "austin-environmental-commission-20260916@calendars.changesaroundme.com",
   "description": "Typical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).",
+  "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "City Council: Economic Opportunity Committee",
+  "start": "2026-09-18T09:00:00",
+  "end": "2026-09-18T11:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4204&GID=684&G=4BED8896-C64D-4912-8005-D624C5197AA5",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-economic-opportunity-committee-20260918T0900@calendars.changesaroundme.com",
+  "description": "",
   "all_day": false
  },
  {
