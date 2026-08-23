@@ -48,6 +48,16 @@ NAME_SUFFIX_RE = re.compile(
 # items are listed outright; above it, a one-line count by matter type.
 AGENDA_LIST_MAX = 6
 AGENDA_TITLE_CHARS = 160
+# Digest polish (Ian, 2026-08-26 committee mock): minutes approvals are
+# procedural filler and drop entirely; items whose Legistar matter type is
+# a briefing collapse into one "Briefings:" section — the header carries
+# the word, so each line drops its "Briefing on" lead-in, its [presenter
+# credit] bracket, and its (file, type) tag to leave just the topic.
+MINUTES_TYPE_RE = re.compile(r"\bminutes\b", re.IGNORECASE)
+BRIEFING_TYPE_RE = re.compile(r"\bbriefings?\b", re.IGNORECASE)
+BRIEFING_LEAD_RE = re.compile(r"^Briefings?\s+(?:on|regarding|about)\s+",
+                              re.IGNORECASE)
+PRESENTER_BRACKET_RE = re.compile(r"\s*\[[^\]]*\]")
 
 CALENDAR_PERIOD = "All Years"
 PERIOD_FIELD = "ctl00$ContentPlaceHolder1$lstYears"
@@ -77,21 +87,44 @@ def agenda_block(items: list[dict]) -> str:
     with "Summary Agenda", the standardized header across every source's
     agenda digest (Ian, 2026-08-09).
     """
-    numbered = [i for i in items if i.get("EventItemAgendaNumber")]
+    numbered = [i for i in items if i.get("EventItemAgendaNumber")
+                and not MINUTES_TYPE_RE.search(
+                    i.get("EventItemMatterType") or "")]
     if not numbered:
         return ""
+
+    def _cap(t: str) -> str:
+        return (t[:AGENDA_TITLE_CHARS - 1].rstrip() + "\u2026"
+                if len(t) > AGENDA_TITLE_CHARS else t)
+
     if len(numbered) <= AGENDA_LIST_MAX:
-        lines = ["Summary Agenda", ""]
+        # Agenda order preserved; all briefings merge into one "Briefings:"
+        # block sitting where the first briefing appeared. Plain items stay
+        # contiguous lines; the briefings block gets blank-line breathing
+        # room on both sides.
+        chunks: list[list] = []      # ["item", lines...] / ["briefings", ...]
+        briefings: list[str] = None
         for i in numbered:
-            title = " ".join((i.get("EventItemTitle") or "").split())
-            if len(title) > AGENDA_TITLE_CHARS:
-                title = title[:AGENDA_TITLE_CHARS - 1].rstrip() + "\u2026"
+            title = PRESENTER_BRACKET_RE.sub(
+                "", " ".join((i.get("EventItemTitle") or "").split())).strip()
+            if BRIEFING_TYPE_RE.search(i.get("EventItemMatterType") or ""):
+                t = BRIEFING_LEAD_RE.sub("", title).strip(" .")
+                if briefings is None:
+                    briefings = ["Briefings:"]
+                    chunks.append(briefings)
+                briefings.append("- " + _cap(t[:1].upper() + t[1:]))
+                continue
             tags = ", ".join(x for x in
                              [i.get("EventItemMatterFile"),
                               i.get("EventItemMatterType")] if x)
             num = str(i["EventItemAgendaNumber"]).strip().rstrip(".")
-            lines.append(f"{num}. {title}" + (f" ({tags})" if tags else ""))
-        return "\n".join(lines)
+            line = f"{num}. {_cap(title)}" + (f" ({tags})" if tags else "")
+            if chunks and chunks[-1][0] == "item":
+                chunks[-1].append(line)
+            else:
+                chunks.append(["item", line])
+        return "Summary Agenda\n\n" + "\n\n".join(
+            "\n".join(c[1:] if c[0] == "item" else c) for c in chunks)
     counts: dict[str, int] = {}
     for i in numbered:
         t = i.get("EventItemMatterType") or "other"
