@@ -393,7 +393,9 @@ AGENDA_SECTIONS = {
     # AAC's slash heading is its ACTION section (count-only); PC's "AND"
     # heading is where novel one-offs land (quoted). Distinct on purpose.
     "DISCUSSION/ACTION ITEMS": "action",
-    "DISCUSSION AND ACTION ITEMS": "discussion",
+    # Same handling; the digest keeps the agenda's own section wording
+    # ("N discussion and action items:" vs "N discussion items:").
+    "DISCUSSION AND ACTION ITEMS": "discussion-action",
     "DISCUSSION ITEMS": "discussion",
     "PERMANENT COMMITTEE UPDATES": "committee",
     "WORKING GROUP UPDATES": "workgroup",
@@ -408,10 +410,23 @@ BRIEFING_BY_RE = re.compile(r"\s+by\s+[A-Z][\w.'-]*.*$")
 # same request).
 QUARTER_RE = re.compile(r"(?:[Tt]he\s+)?\b(First|Second|Third|Fourth)\s+[Qq]uarter\b")
 QUARTERS = {"first": "Q1", "second": "Q2", "third": "Q3", "fourth": "Q4"}
-BRIEFING_PRESENTER_RE = re.compile(r"\s+(?:presented|provided|given)\s+by\b.*$",
-                                   re.DOTALL)
-QUOTE_CAP = 3      # discussion items quoted verbatim up to this many
+BRIEFING_PRESENTER_RE = re.compile(r"[.\s]+(?:presented|provided|given)\s+by\b.*$",
+                                   re.DOTALL | re.IGNORECASE)
+QUOTE_CAP = 3      # discussion items shown individually up to this many
 QUOTE_CHARS = 160
+# Item lines show the TOPIC, not the procedural sentence (Ian, 2026-08-23:
+# "that way the space is focused on the topic"): strip the "Discussion and
+# possible action regarding the..." lead-in, then trim elaboration. The
+# bounded second pattern catches indirect leads ("...to approve a
+# recommendation regarding the X") without ever eating a topic's own
+# mid-sentence "regarding".
+ITEM_LEAD_RE = re.compile(
+    r"^Discussion(?:\s+and\s+possible\s+action)?\s+"
+    r"(?:on|regarding|about)\s+(?:the\s+)?", re.IGNORECASE)
+ITEM_LEAD_INDIRECT_RE = re.compile(
+    r"^Discussion\s+and\s+possible\s+action\s+.{0,60}?"
+    r"\bregarding\s+(?:the\s+)?", re.IGNORECASE)
+ITEM_ELABORATION_RE = re.compile(r",\s+including\b.*$", re.DOTALL)
 
 
 def agenda_summary(pages: list[str]) -> str | None:
@@ -419,6 +434,7 @@ def agenda_summary(pages: list[str]) -> str | None:
     cases: list[str] = []
     briefings: list[list] = []    # [number, text] — text grows on wraps
     discussion: list[list] = []
+    disc_label = "discussion item"
     action = committee = workgroup = 0
     cur = None
     for raw in "\n".join(pages).splitlines():
@@ -442,7 +458,9 @@ def agenda_summary(pages: list[str]) -> str | None:
             elif section == "briefing":
                 briefings.append([int(m.group(1)), body])
                 cur = briefings[-1]
-            elif section == "discussion":
+            elif section in ("discussion", "discussion-action"):
+                if section == "discussion-action":
+                    disc_label = "discussion and action item"
                 discussion.append([int(m.group(1)), body])
                 cur = discussion[-1]
             elif section == "action":
@@ -488,22 +506,27 @@ def agenda_summary(pages: list[str]) -> str | None:
             t = re.sub(r"\s+", " ", text).strip()
             # Sponsors are procedural noise in a calendar body (Ian, 8/12).
             t = re.sub(r"\s*\(Sponsored by[^)]*\)\s*\.?\s*$", "", t)
+            t = ITEM_LEAD_RE.sub("", t) if ITEM_LEAD_RE.match(t) \
+                else ITEM_LEAD_INDIRECT_RE.sub("", t)
+            t = re.split(r"\.\s+", t)[0]        # topic = first sentence
+            t = ITEM_ELABORATION_RE.sub("", t)  # drop ", including ..."
+            t = t.strip(" .,")
+            t = t[:1].upper() + t[1:]
             if len(t) > QUOTE_CHARS:
                 t = t[:QUOTE_CHARS].rstrip() + "…"
-            return f'Item #{num} "{t}"'
+            return f"#{num}: {t}"
         if all(re.sub(r"\s+", " ", t).strip().startswith(
                 "Review City Council action") for _, t in discussion):
             # Standing post-council reviews: count them, note the pattern.
-            out.append(f"{len(discussion)} discussion item"
+            out.append(f"{len(discussion)} {disc_label}"
                        f"{_s(len(discussion))} (all related to recent City "
                        "Council actions)")
-        elif len(discussion) == 1:
-            out.append(f"1 discussion item: {_q(*discussion[0])}")
         elif len(discussion) <= QUOTE_CAP:
-            out.append(f"{len(discussion)} discussion items:")
+            out.append(f"{len(discussion)} {disc_label}"
+                       f"{_s(len(discussion))}:")
             out += [_q(n, t) for n, t in discussion]
         else:
-            out.append(f"{len(discussion)} discussion items")
+            out.append(f"{len(discussion)} {disc_label}s")
     if committee or workgroup:
         parts = ([f"{committee} permanent committee"] if committee else []) \
             + ([f"{workgroup} working group"] if workgroup else [])
