@@ -309,6 +309,11 @@ NOTICE_HEADER_RE = re.compile(
 # It reduces to its submission link (Ian, 2026-08-17: "we don't need to
 # help people with anything beyond providing them the link").
 ECOMMENT_RE = re.compile(r"^Electronic public comment", re.IGNORECASE)
+# Off-site hearings add logistics paragraphs with bold leads that are NOT
+# agenda items — the 24 Aug 2026 Weslaco NR notice put "Public Access to
+# Meeting Location at:" and "Registration" into the digest (Ian, 2026-08-23).
+BOILERPLATE_LEAD_RE = re.compile(
+    r"^(Public Access|Registration\b|Parking\b)", re.IGNORECASE)
 NOTICE_STOP_RE = re.compile(
     r"public testimony is limited|notice of assistance", re.IGNORECASE)
 LEG_SESSION_RE = re.compile(r"\(?(\d{2,3})(?:st|nd|rd|th)\s+Legislature\)?,?\s*")
@@ -361,6 +366,8 @@ def summarize_notice(html: bytes | str) -> str | None:
             break
         if ECOMMENT_RE.match(text):
             continue  # bold e-comment lead: link-only treatment (below)
+        if BOILERPLATE_LEAD_RE.match(text):
+            continue  # venue/registration logistics, not an agenda item
         b = p.find("b")
         lead = re.sub(r"\s+", " ", b.get_text(" ", strip=True)).strip() if b else ""
         # A bullet by markup (Word's Symbol/Wingdings marker span) or by
@@ -375,7 +382,9 @@ def summarize_notice(html: bytes | str) -> str | None:
             if not bm:
                 continue  # decorative bullet, not a bill reference
             label = f"{_abbrev(bm.group(1), {})} {bm.group(2)}"
-            desc = body[bm.end():].strip(" ,")
+            # lstrip separators too: "SB 1169 - Relating to..." otherwise
+            # glosses as "SB 1169: - Relating to...".
+            desc = body[bm.end():].strip(" ,").lstrip(" ,:-–—")
             year = None
             ym = LEG_SESSION_RE.search(desc)
             if ym:
@@ -383,7 +392,9 @@ def summarize_notice(html: bytes | str) -> str | None:
                 desc = LEG_SESSION_RE.sub("", desc, count=1).strip()
             charges[-1]["bills"].append((label, _abbrev(desc, acronyms), year))
         elif lead and text.startswith(lead):
-            charges.append({"title": lead.rstrip(":").strip(),
+            # Trailing separator glyphs are layout, not title ("Regional
+            # Water Planning –" rendered as a dangling dash).
+            charges.append({"title": lead.strip().rstrip(" :-–—"),
                             "body": text[len(lead):].lstrip(": ").strip(),
                             "bills": []})
         elif not charges and not text.endswith(":"):
