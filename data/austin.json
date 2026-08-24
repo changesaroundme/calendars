@@ -3004,15 +3004,15 @@
  },
  {
   "source": "austin",
-  "summary": "CoA: Urban Transportation Commission",
+  "summary": "CoA: Urban Transportation Commission (Cancelled)",
   "start": "2026-09-01T17:00:00",
   "end": "2026-09-01T20:00:00",
   "location": "Austin City Hall, Boards and Commission, Room 1101, 301 W. 2nd St., Austin, TX 78701",
   "url": "https://www.austintexas.gov/boards-commissions/meetings/50_1",
-  "status": "CONFIRMED",
+  "status": "CANCELLED",
   "kind": "regular",
   "uid": "austin-urban-transportation-commission-20260901@calendars.changesaroundme.com",
-  "description": "Typical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).",
+  "description": "",
   "all_day": false
  },
  {
