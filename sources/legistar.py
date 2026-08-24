@@ -48,12 +48,15 @@ NAME_SUFFIX_RE = re.compile(
 # items are listed outright; above it, a one-line count by matter type.
 AGENDA_LIST_MAX = 6
 AGENDA_TITLE_CHARS = 160
-# Digest polish (Ian, 2026-08-26 committee mock): minutes approvals are
-# procedural filler and drop entirely; items whose Legistar matter type is
-# a briefing collapse into one "Briefings:" section — the header carries
-# the word, so each line drops its "Briefing on" lead-in, its [presenter
-# credit] bracket, and its (file, type) tag to leave just the topic.
-MINUTES_TYPE_RE = re.compile(r"\bminutes\b", re.IGNORECASE)
+# Digest polish (Ian, 2026-08-26 committee mock): procedural filler drops
+# entirely — minutes approvals, and the standing "identify items for
+# future meetings" row (matter type "Future Items"). Items whose Legistar
+# matter type is a briefing collapse into one "Briefings:" section — the
+# header carries the word, so each line drops its "Briefing on" lead-in,
+# its [presenter credit] bracket, and its (file, type) tag to leave just
+# the topic.
+PROCEDURAL_TYPE_RE = re.compile(r"\bminutes\b|\bfuture\s+items\b",
+                                re.IGNORECASE)
 BRIEFING_TYPE_RE = re.compile(r"\bbriefings?\b", re.IGNORECASE)
 BRIEFING_LEAD_RE = re.compile(r"^Briefings?\s+(?:on|regarding|about)\s+",
                               re.IGNORECASE)
@@ -88,7 +91,7 @@ def agenda_block(items: list[dict]) -> str:
     agenda digest (Ian, 2026-08-09).
     """
     numbered = [i for i in items if i.get("EventItemAgendaNumber")
-                and not MINUTES_TYPE_RE.search(
+                and not PROCEDURAL_TYPE_RE.search(
                     i.get("EventItemMatterType") or "")]
     if not numbered:
         return ""
