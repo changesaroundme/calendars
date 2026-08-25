@@ -3030,15 +3030,15 @@
  },
  {
   "source": "austin",
-  "summary": "CoA: Environmental Commission",
+  "summary": "CoA: Environmental Commission (Cancelled)",
   "start": "2026-09-02T18:00:00",
   "end": "2026-09-02T21:00:00",
   "location": "Permitting and Development Center Events Center Room 1405, 6310 Wilhelmina Delco Drive, Austin, Texas 78752",
   "url": "https://www.austintexas.gov/boards-commissions/meetings/28_1",
-  "status": "CONFIRMED",
+  "status": "CANCELLED",
   "kind": "regular",
   "uid": "austin-environmental-commission-20260902@calendars.changesaroundme.com",
-  "description": "Typical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).",
+  "description": "",
   "all_day": false
  },
  {
