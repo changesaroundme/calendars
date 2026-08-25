@@ -3017,19 +3017,6 @@
  },
  {
   "source": "austin",
-  "summary": "City Council: Public Health Committee",
-  "start": "2026-09-02T10:00:00",
-  "end": "2026-09-02T12:00:00",
-  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
-  "url": "https://austintexas.legistar.com/Calendar.aspx",
-  "status": "CONFIRMED",
-  "kind": "regular",
-  "uid": "austin-public-health-committee-20260902T1000@calendars.changesaroundme.com",
-  "description": "",
-  "all_day": false
- },
- {
-  "source": "austin",
   "summary": "CoA: Environmental Commission (Cancelled)",
   "start": "2026-09-02T18:00:00",
   "end": "2026-09-02T21:00:00",
