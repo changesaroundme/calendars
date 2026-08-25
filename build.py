@@ -320,12 +320,46 @@ def main() -> int:
             # fetch collapse must not hide behind carried history.)
             fresh_empty = not events
             have = {e.stable_uid() for e in events}
-            carried = [e for e in snapshot_events(snapshot_path)
+            snap = snapshot_events(snapshot_path)
+            carried = [e for e in snap
                        if event_day(e) < today and e.stable_uid() not in have]
             if carried:
                 print(f"[{key}] retained {len(carried)} past events the "
                       "source no longer lists")
                 events = events + carried
+            # A fresh copy of a PAST event can be BARER than its archived
+            # self: enrichment only runs for upcoming meetings, so the
+            # morning after a meeting the scrape hands back the default
+            # body and would overwrite the snapshot's agenda digest (the
+            # CapMetro 90-day decay, run #72; the 24 Aug 2026 Design
+            # Commission digest vanished the same way — Ian, 2026-08-25).
+            # Field-wise repair, uid equality only, past events only:
+            # keep the archived description when the fresh one lost its
+            # "Summary Agenda" digest, and the archived url/location when
+            # the fresh ones are empty. Future events: fresh always wins.
+            snap_by_uid = {e.stable_uid(): e for e in snap}
+            healed = 0
+            for ev in events:
+                if event_day(ev) >= today:
+                    continue
+                old_ev = snap_by_uid.get(ev.stable_uid())
+                if old_ev is None:
+                    continue
+                kept = False
+                if ("Summary Agenda" in old_ev.description
+                        and "Summary Agenda" not in ev.description):
+                    ev.description = old_ev.description
+                    kept = True
+                if not ev.url and old_ev.url:
+                    ev.url = old_ev.url
+                    kept = True
+                if not ev.location and old_ev.location:
+                    ev.location = old_ev.location
+                    kept = True
+                healed += kept
+            if healed:
+                print(f"[{key}] kept archived enrichment on {healed} "
+                      "past events (fresh copies were barer)")
             events_by_key[key] = events
         except Exception as exc:
             print(f"[{key}] ERROR: fetch failed: {exc}")
