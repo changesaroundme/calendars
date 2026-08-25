@@ -24,6 +24,7 @@ from __future__ import annotations
 
 import copy
 import json
+import os
 import pathlib
 import re
 import sys
@@ -450,6 +451,21 @@ def main() -> int:
 
     if unhealthy:
         print("BUILD UNHEALTHY:\n  - " + "\n  - ".join(unhealthy))
+        # Surface the list where a red run is actually READ (Ian,
+        # 2026-08-25: the failure email said only "see build log above",
+        # so every soft flake looked like a crisis): one GitHub annotation
+        # per problem (top of the run page), the run's summary panel, and
+        # unhealthy.txt for the workflow's failure step to echo. All three are
+        # no-ops outside Actions.
+        for prob in unhealthy:
+            print("::error title=Unhealthy source::"
+                  + prob.replace("%", "%25").replace("\n", " "))
+        summary = os.environ.get("GITHUB_STEP_SUMMARY")
+        if summary:
+            with open(summary, "a") as f:
+                f.write("### Unhealthy sources (feeds still published)\n\n"
+                        + "\n".join(f"- {p}" for p in unhealthy) + "\n")
+        (ROOT / "unhealthy.txt").write_text("\n".join(unhealthy) + "\n")
         return 1
     return 0
 

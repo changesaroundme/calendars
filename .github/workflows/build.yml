@@ -57,5 +57,6 @@ jobs:
       - name: Fail if build was unhealthy
         if: steps.build.outputs.exitcode != '0'
         run: |
-          echo "One or more sources were unhealthy — see build log above."
+          echo "Unhealthy sources this run (feeds still published):"
+          cat unhealthy.txt 2>/dev/null || echo "(see build log above)"
           exit 1

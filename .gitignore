@@ -5,3 +5,4 @@ _to_delete/
 .venv/
 dist-offline/
 data/*.tmp
+unhealthy.txt
