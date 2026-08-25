@@ -91,6 +91,12 @@ def agenda_block(items: list[dict]) -> str:
     agenda digest (Ian, 2026-08-09).
     """
     numbered = [i for i in items if i.get("EventItemAgendaNumber")
+                # Section-header rows carry an agenda letter but no file
+                # and no matter type ("A. Pre-Selected Agenda Items") —
+                # layout, not items. The 25 Aug 2026 work-session digest
+                # counted exactly these as "5 other items" (Ian).
+                and (i.get("EventItemMatterFile")
+                     or i.get("EventItemMatterType"))
                 and not PROCEDURAL_TYPE_RE.search(
                     i.get("EventItemMatterType") or "")]
     if not numbered:
@@ -115,7 +121,14 @@ def agenda_block(items: list[dict]) -> str:
                 if briefings is None:
                     briefings = ["Briefings:"]
                     chunks.append(briefings)
-                briefings.append("- " + _cap(t[:1].upper() + t[1:]))
+                # Lettered agenda numbers (B1, B2 — council style) are how
+                # the posted agenda refers to the item, so keep them as the
+                # line label; bare ordinals add nothing under the section
+                # header and become plain bullets (committee style).
+                num = str(i.get("EventItemAgendaNumber") or "") \
+                    .strip().rstrip(".")
+                label = f"{num}: " if re.search(r"[A-Za-z]", num) else "- "
+                briefings.append(label + _cap(t[:1].upper() + t[1:]))
                 continue
             tags = ", ".join(x for x in
                              [i.get("EventItemMatterFile"),
