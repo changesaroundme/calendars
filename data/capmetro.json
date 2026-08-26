@@ -1049,7 +1049,7 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "capmetro-board-of-directors-20260420T1200@calendars.changesaroundme.com",
-  "description": "",
+  "description": "Agenda: https://capmetrotx.legistar1.com/capmetrotx/meetings/2026/4/3042_A_Board_of_Directors_26-04-20_Agenda.pdf",
   "all_day": false
  },
  {
@@ -1062,7 +1062,7 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "capmetro-finance-audit-and-administration-committee-20260506T1100@calendars.changesaroundme.com",
-  "description": "",
+  "description": "Agenda: https://capmetrotx.legistar1.com/capmetrotx/meetings/2026/5/3043_A_Finance%2C_Audit_and_Administration_Committee_26-05-06_Agenda.pdf",
   "all_day": false
  },
  {
@@ -1075,7 +1075,7 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "capmetro-board-of-directors-20260506T1200@calendars.changesaroundme.com",
-  "description": "",
+  "description": "Agenda: https://capmetrotx.legistar1.com/capmetrotx/meetings/2026/5/3075_A_Board_of_Directors_26-05-06_Agenda.pdf",
   "all_day": false
  },
  {
@@ -1088,7 +1088,7 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "capmetro-board-of-directors-20260518T1200@calendars.changesaroundme.com",
-  "description": "",
+  "description": "Agenda: https://capmetrotx.legistar1.com/capmetrotx/meetings/2026/5/3045_A_Board_of_Directors_26-05-18_Agenda.pdf",
   "all_day": false
  },
  {
@@ -1245,19 +1245,6 @@
   "kind": "hearing",
   "uid": "capmetro-board-of-directors-20260916T1200@calendars.changesaroundme.com",
   "description": "Hearing on CapMetro's proposed fare increases (Jan 2027 and Jan 2029) and reduced-fare program changes.\n\nRemote participation is available with sign-up by 8am that day:\n- email boardofdirectors@capmetro.org, or\n- call (512) 369-6040 and leave your name and phone number\n\nJoin instructions follow just after 8am. In person, arrive 15 minutes early to sign up to speak.\n\nComments open until the Board votes 28 Sep 2026.",
-  "all_day": false
- },
- {
-  "source": "capmetro",
-  "summary": "CapMetro: Board of Directors",
-  "start": "2026-09-16T12:00:00",
-  "end": "2026-09-16T14:00:00",
-  "location": "Rosa Parks Boardroom, CapMetro HQ, 2910 E. 5th St., Austin, TX 78702",
-  "url": "https://capmetrotx.legistar.com/Calendar.aspx",
-  "status": "CONFIRMED",
-  "kind": "regular",
-  "uid": "capmetro-board-of-directors-20260916T1200@calendars.changesaroundme.com",
-  "description": "",
   "all_day": false
  },
  {

@@ -195,6 +195,108 @@ def snapshot_events(path: pathlib.Path) -> list[Event]:
         return []
 
 
+def monotone_past_merge(events: list[Event], snap: list[Event],
+                        today: date,
+                        skip: frozenset[str] = frozenset()) -> int:
+    """The record of a PAST event never gets poorer. Returns events healed.
+
+    Enrichment (agenda digests, materials links, confirmed times, SOS
+    cancellations) only runs for UPCOMING meetings, so the morning after a
+    meeting the fresh scrape hands back a barer copy under the same uid and
+    last-write-wins would decay the archive — the CapMetro 90-day decay
+    (run #72), the 24 Aug 2026 Design Commission digest, the 19 Aug 2026
+    LCRA materials (2026-08-25 architecture review, which replaced an
+    earlier marker-based heal with this generic monotone rule). Field-wise,
+    uid equality only, past events only; future events are never touched.
+
+      - description: the longer non-empty text wins; and a text carrying
+        the "Summary Agenda" digest beats one without it regardless of
+        length (a SHORT digest must still beat austin's long "Typical
+        start time..." placeholder — the offline self-test pins this)
+      - url / location: non-empty beats empty
+      - start/end: a confirmed time beats an all-day placeholder
+      - status: CANCELLED sticks (a cancellation is a fact about the past)
+      - kind: a specific kind beats "regular" (e.g. a watched-case
+        "hearing" flip must survive, or the meeting drops out of all.ics)
+    """
+    snap_by_uid = {e.stable_uid(): e for e in snap}
+    healed = 0
+    for ev in events:
+        if event_day(ev) >= today:
+            continue
+        if ev.stable_uid() in skip:
+            # Curated entries are deliberate human data and may
+            # intentionally SHORTEN a past record (the fare-series restyle,
+            # 2026-08-23) — the archive never overrides the human.
+            continue
+        old = snap_by_uid.get(ev.stable_uid())
+        if old is None:
+            continue
+        kept = False
+        old_d, new_d = old.description or "", ev.description or ""
+        if len(old_d) > len(new_d) or ("Summary Agenda" in old_d
+                                       and "Summary Agenda" not in new_d):
+            ev.description = old_d
+            kept = True
+        if not ev.url and old.url:
+            ev.url = old.url
+            kept = True
+        if not ev.location and old.location:
+            ev.location = old.location
+            kept = True
+        if isinstance(old.start, datetime) and not isinstance(ev.start,
+                                                              datetime):
+            ev.start, ev.end = old.start, old.end
+            kept = True
+        if old.status == "CANCELLED" and ev.status != "CANCELLED":
+            ev.status = "CANCELLED"
+            kept = True
+        if old.kind and old.kind != "regular" and ev.kind == "regular":
+            ev.kind = old.kind
+            kept = True
+        healed += kept
+    return healed
+
+
+def _selftest_monotone_merge() -> None:
+    """The 2026-08-25 decay incident as a permanent regression check.
+
+    Runs on every --offline build (cheap, deterministic): an enriched past
+    event must survive a barer fresh copy; a future event must not be
+    touched. Raises AssertionError — an offline run fails loudly before
+    any push."""
+    today = date(2026, 8, 25)
+    past = datetime(2026, 8, 24, 18, 0)
+    fresh = [
+        Event(source="t", summary="Board", start=date(2026, 8, 24),
+              description="Typical start time — confirm on the agenda.",
+              uid="t-1"),
+        Event(source="t", summary="Board", start=date(2026, 9, 24),
+              description="new future text", uid="t-2"),
+    ]
+    snap = [
+        Event(source="t", summary="Board", start=past,
+              end=past + timedelta(hours=2), status="CANCELLED",
+              kind="hearing", url="https://example.com/agenda.pdf",
+              location="Room 1405",
+              description="Summary Agenda\n\n#3: The good stuff", uid="t-1"),
+        Event(source="t", summary="Board", start=date(2026, 9, 24),
+              description="older future text that is much longer", uid="t-2"),
+    ]
+    assert monotone_past_merge(fresh, snap, today) == 1
+    ev = fresh[0]
+    assert ev.description.startswith("Summary Agenda")
+    assert ev.start == past and ev.status == "CANCELLED"
+    assert ev.kind == "hearing" and ev.url and ev.location
+    assert fresh[1].description == "new future text"  # future: fresh wins
+    # Curated entries are exempt even in the past: human edits stick.
+    fresh2 = [Event(source="t", summary="Board", start=date(2026, 8, 24),
+                    description="short deliberate rewrite", uid="t-1")]
+    assert monotone_past_merge(fresh2, snap, today,
+                               skip=frozenset(["t-1"])) == 0
+    assert fresh2[0].description == "short deliberate rewrite"
+
+
 # How much past a published feed carries. Sources supply their own history
 # now -- Legistar's "All Years" view reaches back to 2024, CTRMA's past
 # accordions to 2003 -- and subscribers re-download the whole .ics on every
@@ -236,6 +338,8 @@ def has_future_events(events: list[Event], today: date) -> bool:
 
 def main() -> int:
     offline = "--offline" in sys.argv
+    if offline:
+        _selftest_monotone_merge()  # the 2026-08-25 decay incident as a test
     now = datetime.now(timezone.utc)
     session = requests.Session()
     session.headers["User-Agent"] = USER_AGENT
@@ -313,9 +417,12 @@ def main() -> int:
             # council meetings the day the August rows appeared), committee
             # tables roll over, CTRMA lists upcoming only. Any PAST event
             # in the last snapshot whose uid this fetch no longer has is
-            # carried forward verbatim. Future events are never carried —
-            # a source delisting an upcoming meeting is a revision, not
-            # history. No identity matching, ever: uid equality only.
+            # carried forward verbatim; a past event the fetch STILL lists
+            # is merged monotonically (monotone_past_merge — the record of
+            # a meeting that already happened never gets poorer). Future
+            # events are never carried and never merged: a source revising
+            # an upcoming meeting always wins outright. No identity
+            # matching, ever: uid equality only.
             # (Emptiness health check below uses fresh_empty — a total
             # fetch collapse must not hide behind carried history.)
             fresh_empty = not events
@@ -327,39 +434,23 @@ def main() -> int:
                 print(f"[{key}] retained {len(carried)} past events the "
                       "source no longer lists")
                 events = events + carried
-            # A fresh copy of a PAST event can be BARER than its archived
-            # self: enrichment only runs for upcoming meetings, so the
-            # morning after a meeting the scrape hands back the default
-            # body and would overwrite the snapshot's agenda digest (the
-            # CapMetro 90-day decay, run #72; the 24 Aug 2026 Design
-            # Commission digest vanished the same way — Ian, 2026-08-25).
-            # Field-wise repair, uid equality only, past events only:
-            # keep the archived description when the fresh one lost its
-            # "Summary Agenda" digest, and the archived url/location when
-            # the fresh ones are empty. Future events: fresh always wins.
-            snap_by_uid = {e.stable_uid(): e for e in snap}
-            healed = 0
-            for ev in events:
-                if event_day(ev) >= today:
-                    continue
-                old_ev = snap_by_uid.get(ev.stable_uid())
-                if old_ev is None:
-                    continue
-                kept = False
-                if ("Summary Agenda" in old_ev.description
-                        and "Summary Agenda" not in ev.description):
-                    ev.description = old_ev.description
-                    kept = True
-                if not ev.url and old_ev.url:
-                    ev.url = old_ev.url
-                    kept = True
-                if not ev.location and old_ev.location:
-                    ev.location = old_ev.location
-                    kept = True
-                healed += kept
+            healed = monotone_past_merge(
+                events, snap, today,
+                skip=frozenset(e.stable_uid() for e in hand))
             if healed:
                 print(f"[{key}] kept archived enrichment on {healed} "
                       "past events (fresh copies were barer)")
+            # Snapshot hygiene: `events` can hold two copies of one uid (a
+            # pinned curated entry plus its scraped twin). emit() dedupes
+            # at publish, but the snapshot stored both AND re-carried them
+            # every build — compounding to 21 copies of the 29 Jul hearing
+            # in data/legislature.json by 26 Aug (found in the architecture
+            # review's restore sweep). Same rule as emit: first wins, in
+            # input order, so the curated copy is the one that survives.
+            seen_uids: set[str] = set()
+            events = [e for e in events
+                      if not (e.stable_uid() in seen_uids
+                              or seen_uids.add(e.stable_uid()))]
             events_by_key[key] = events
         except Exception as exc:
             print(f"[{key}] ERROR: fetch failed: {exc}")
@@ -479,9 +570,9 @@ def main() -> int:
     # Non-fatal during observation; promote to a health check when the
     # enrichment pass ships.
     try:
-        openmeetings.shadow(session, data, offline, events_by_key)
+        openmeetings.archive_filings(session, data, offline, events_by_key)
     except Exception as exc:
-        print(f"[openmeetings] shadow error (non-fatal during observation): {exc}")
+        print(f"[openmeetings] archive error (non-fatal): {exc}")
 
     if unhealthy:
         print("BUILD UNHEALTHY:\n  - " + "\n  - ".join(unhealthy))

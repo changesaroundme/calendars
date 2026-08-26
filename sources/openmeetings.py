@@ -11,7 +11,7 @@ grid, agenda text one request per record). The mirror is one fetch and
 includes agendas. Its ~100-record rolling window is narrower than the
 portal (~197 that day), but filings arrive 1-3 weeks before their meeting
 and a daily fetch records each one in data/openmeetings.json (keyed by TRD)
-before it can roll off. If shadow observation shows misses, the portal is
+before it can roll off. If the archive log shows misses, the portal is
 the documented escalation path.
 
 Ran in SHADOW MODE 2026-07-26 to 2026-08-17 (archive + would-enrich logs
@@ -19,7 +19,7 @@ only); three weeks of clean matches graduated it. enrich_from_archive()
 now upgrades EXISTING events only — an exact time onto an all-day
 placeholder, an address onto a locationless event, Status: Cancelled ->
 STATUS:CANCELLED. It NEVER creates events, and it reads the PREVIOUS
-build's archive (the shadow writes after feeds publish), so a filing
+build's archive (archive_filings writes after feeds publish), so a filing
 takes effect one build after capture — immaterial against the 1-3 week
 filing lead, and it keeps offline builds deterministic. Conservative
 match: routed org + exact meeting date, and only when that org has
@@ -189,7 +189,7 @@ def enrich_from_archive(events: list, key: str, today: date,
                   + ", ".join(did))
 
 
-def shadow(session, data_dir: pathlib.Path, offline: bool, events_by_key: dict) -> None:
+def archive_filings(session, data_dir: pathlib.Path, offline: bool, events_by_key: dict) -> None:
     """Observation pass: archive watched filings + log would-be enrichment."""
     if offline:
         html = (FIXTURES / "openmeetings.html").read_text()
@@ -222,7 +222,8 @@ def shadow(session, data_dir: pathlib.Path, offline: bool, events_by_key: dict) 
         )
         archive[trd] = entry
 
-        # would-be enrichment log (shadow only — nothing is modified)
+        # next-build enrichment preview (this pass only archives; the
+        # upgrade itself runs in enrich_from_archive next build)
         d = _meeting_date(rec)
         who = f"{rec['Agency Name']}" + (
             f" / {rec.get('Committee') or rec.get('Board')}"
@@ -247,5 +248,5 @@ def shadow(session, data_dir: pathlib.Path, offline: bool, events_by_key: dict) 
                   "never creates)")
 
     archive_path.write_text(json.dumps(archive, indent=1, sort_keys=True) + "\n")
-    print(f"[openmeetings] shadow: {len(matched)} watchlist filings "
+    print(f"[openmeetings] {len(matched)} watchlist filings "
           f"({new} new) archived to {archive_path.name}")

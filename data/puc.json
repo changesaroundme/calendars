@@ -15,8 +15,8 @@
  {
   "source": "puc",
   "summary": "PUC: Open Meeting",
-  "start": "2026-08-20",
-  "end": null,
+  "start": "2026-08-20T09:30:00",
+  "end": "2026-08-20T17:00:00",
   "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1706",
   "status": "CONFIRMED",
@@ -28,8 +28,8 @@
  {
   "source": "puc",
   "summary": "PUC: Open Meeting",
-  "start": "2026-08-21",
-  "end": null,
+  "start": "2026-08-21T09:30:00",
+  "end": "2026-08-21T11:30:00",
   "location": "AT&T Hotel and Conference Center (1900 University Ave, Austin, TX  78705)",
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1802",
   "status": "CONFIRMED",
@@ -37,19 +37,6 @@
   "uid": "puc-cal-1802-20260821@calendars.changesaroundme.com",
   "description": "Summary Agenda\n\n- Longshore \u2013 Drill Hole (Docket 59029); discussion and possible action.\n- Dinosaur \u2013 Longshore (Docket 59315); discussion and possible action.\n\nMore: https://changesaroundme.com/Focuses/765+kV+Transmission+Lines\n\nWatch live or archived: http://www.adminmonitor.com/tx/puct/open_meeting/20260821/",
   "all_day": true
- },
- {
-  "source": "puc",
-  "summary": "PUC: Meeting (inc. 765 kV cases)",
-  "start": "2026-08-21T09:30:00",
-  "end": "2026-08-21T11:30:00",
-  "location": "Zlotnik Family Ballroom, AT&T Hotel and Conference Center, 1900 University Ave., Austin, TX 78705",
-  "url": "https://ftp.puc.texas.gov/public/puct-info/agency/om/082126Final.pdf",
-  "status": "CONFIRMED",
-  "kind": "hearing",
-  "uid": "puc-cal-1802-20260821@calendars.changesaroundme.com",
-  "description": "Summary Agenda\n\n- Longshore \u2013 Drill Hole (Docket 59029); discussion and possible action.\n- Dinosaur \u2013 Longshore (Docket 59315); discussion and possible action.\n\nMore: https://changesaroundme.com/Focuses/765+kV+Transmission+Lines\n\nWatch live or archived: http://www.adminmonitor.com/tx/puct/open_meeting/20260821/",
-  "all_day": false
  },
  {
   "source": "puc",
@@ -75,19 +62,6 @@
   "kind": "comment-window",
   "uid": "puc-cal-1809-20260904@calendars.changesaroundme.com",
   "description": "Public comment window: comments due 4 Sep 2026 on proposed new 16 TAC \u00a725.521 (Large Load Demand Management Service), published in the Texas Register 14 Aug 2026 (Project No. 58482).\n\nBackground (PUC Staff Memo): https://interchange.puc.texas.gov/Documents/58482_3_1607913.PDF\n\nComments are filed in Project No. 58482 via the PUC Interchange: https://interchange.puc.texas.gov/filer",
-  "all_day": true
- },
- {
-  "source": "puc",
-  "summary": "PUC: Project 58482 comments close",
-  "start": "2026-09-04",
-  "end": null,
-  "location": "",
-  "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1809",
-  "status": "CONFIRMED",
-  "kind": "comment-window",
-  "uid": "puc-cal-1809-20260904@calendars.changesaroundme.com",
-  "description": "Comments are filed via the PUC Interchange: https://interchange.puc.texas.gov/filer\n\nProject filings: https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=58482",
   "all_day": true
  },
  {
