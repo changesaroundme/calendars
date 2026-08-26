@@ -23,20 +23,20 @@
   "kind": "regular",
   "uid": "puc-cal-1706-20260820@calendars.changesaroundme.com",
   "description": "Watch live or archived: http://www.adminmonitor.com/tx/puct/open_meeting/20260820/",
-  "all_day": true
+  "all_day": false
  },
  {
   "source": "puc",
-  "summary": "PUC: Open Meeting",
+  "summary": "PUC: Meeting (inc. 765 kV cases)",
   "start": "2026-08-21T09:30:00",
   "end": "2026-08-21T11:30:00",
-  "location": "AT&T Hotel and Conference Center (1900 University Ave, Austin, TX  78705)",
-  "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1802",
+  "location": "Zlotnik Family Ballroom, AT&T Hotel and Conference Center, 1900 University Ave., Austin, TX 78705",
+  "url": "https://ftp.puc.texas.gov/public/puct-info/agency/om/082126Final.pdf",
   "status": "CONFIRMED",
   "kind": "hearing",
   "uid": "puc-cal-1802-20260821@calendars.changesaroundme.com",
   "description": "Summary Agenda\n\n- Longshore \u2013 Drill Hole (Docket 59029); discussion and possible action.\n- Dinosaur \u2013 Longshore (Docket 59315); discussion and possible action.\n\nMore: https://changesaroundme.com/Focuses/765+kV+Transmission+Lines\n\nWatch live or archived: http://www.adminmonitor.com/tx/puct/open_meeting/20260821/",
-  "all_day": true
+  "all_day": false
  },
  {
   "source": "puc",
@@ -118,6 +118,19 @@
  },
  {
   "source": "puc",
+  "summary": "PUC: Workshop",
+  "start": "2026-09-22T09:00:00",
+  "end": "2026-09-22T13:00:00",
+  "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
+  "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1829",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "puc-cal-1829-20260922@calendars.changesaroundme.com",
+  "description": "Watch live or archived: https://www.puc.texas.gov/agency/calendar/broadcasts/",
+  "all_day": false
+ },
+ {
+  "source": "puc",
   "summary": "PUC: Open Meeting",
   "start": "2026-09-25T09:30:00",
   "end": "2026-09-25T17:00:00",
@@ -132,15 +145,15 @@
  {
   "source": "puc",
   "summary": "PUC: Open Meeting",
-  "start": "2026-10-01T09:30:00",
-  "end": "2026-10-01T17:00:00",
+  "start": "2026-10-01",
+  "end": null,
   "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1773",
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "puc-cal-1773-20261001@calendars.changesaroundme.com",
   "description": "Watch live or archived: https://www.puc.texas.gov/agency/calendar/broadcasts/",
-  "all_day": false
+  "all_day": true
  },
  {
   "source": "puc",

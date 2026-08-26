@@ -10,7 +10,7 @@
   "kind": "regular",
   "uid": "lcra-board-committee-meetings-20260819@calendars.changesaroundme.com",
   "description": "Meeting materials:\n- Planning and Public Policy Committee meeting agenda: https://www.lcra.org/download/2026-08-ppp-agenda/?wpdmdl=42756\n- Water Operations Committee meeting agenda: https://www.lcra.org/download/2026-08-water-operations-agenda/?wpdmdl=42757\n- Water Operations Committee Agenda Item No. 3: presentation: https://www.lcra.org/download/2026-08-basin-conditions-update-presentation/?wpdmdl=42758\n- Water Operations Committee Agenda Item No. 4: presentation: https://www.lcra.org/download/2026-08-firm-water-rates-cy-2027-presentation/?wpdmdl=42759\n- Energy Operations Committee meeting agenda: https://www.lcra.org/download/2026-08-energy-operations-agenda/?wpdmdl=42760\n- LCRA Board meeting agenda: https://www.lcra.org/download/2026-08-lcra-board-agenda/?wpdmdl=42762\n\nPer the agenda this is the earliest start time \u2014 the board convenes after preceding meetings adjourn.",
-  "all_day": true
+  "all_day": false
  },
  {
   "source": "lcra",
@@ -23,7 +23,7 @@
   "kind": "regular",
   "uid": "lcra-transmission-services-corp-board-20260819@calendars.changesaroundme.com",
   "description": "Meeting materials:\n- LCRA Transmission Services Corporation Board meeting agenda: https://www.lcra.org/download/2026-08-lcra-tsc-board-agenda/?wpdmdl=42761\n\nPer the agenda this is the earliest start time \u2014 the board convenes after preceding meetings adjourn.",
-  "all_day": true
+  "all_day": false
  },
  {
   "source": "lcra",
