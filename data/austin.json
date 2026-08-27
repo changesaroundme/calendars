@@ -2020,7 +2020,7 @@
   "start": "2026-05-28T10:00:00",
   "end": "2026-05-28T12:00:00",
   "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
-  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4073&GID=684&G=4BED8896-C64D-4912-8005-D624C5197AA5",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1362251&GUID=349175ED-80C3-47F7-B042-0EEEFFDAD828&Options=info|&Search=",
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-city-council-20260528T1000@calendars.changesaroundme.com",
@@ -2033,7 +2033,7 @@
   "start": "2026-05-28T10:30:00",
   "end": "2026-05-28T12:30:00",
   "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
-  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4189&GID=684&G=4BED8896-C64D-4912-8005-D624C5197AA5",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1416049&GUID=BBDD58ED-BBA0-470A-850E-A9B06BAB250A&Options=info|&Search=",
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-housing-finance-corporation-20260528T1030@calendars.changesaroundme.com",
@@ -2973,7 +2973,7 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-climate-water-environment-and-parks-committee-20260826T0930@calendars.changesaroundme.com",
-  "description": "Summary Agenda\n\nBriefings:\n- Performance measures from Austin Climate Action and Resilience\n- Wildfire mitigation through on-demand brush and household hazardous waste collections\n- Update regarding a drawdown of Lake Austin\n\n\u2014\n\nAgenda: https://austintexas.legistar1.com/austintexas/meetings/2026/8/4198_A_Climate%2C_Water%2C_Environment%2C_and_Parks_Committee_26-08-26_Committee_Agenda.pdf",
+  "description": "Agenda: https://austintexas.legistar1.com/austintexas/meetings/2026/8/4198_A_Climate%2C_Water%2C_Environment%2C_and_Parks_Committee_26-08-26_Committee_Agenda.pdf",
   "all_day": false
  },
  {
@@ -3038,7 +3038,7 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-historic-landmark-commission-20260902@calendars.changesaroundme.com",
-  "description": "Typical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).",
+  "description": "Agenda: https://services.austintexas.gov/edims/document.cfm?id=480010",
   "all_day": false
  },
  {
