@@ -344,6 +344,11 @@ BILL_REF_RE = re.compile(
     r"|SB|HB|SJR|HJR)\s+(\d+)")
 
 
+def _denum(text: str) -> str:
+    """Strip a leading '1. ' item number (charge numbering is layout)."""
+    return re.sub(r"^\d{1,3}\.\s+", "", text)
+
+
 def summarize_notice(html: bytes | str) -> str | None:
     # bytes, not a pre-decoded str: tlodocs serves UTF-8 Word HTML without a
     # charset header, so requests' .text guesses ISO-8859-1 and the Symbol
@@ -391,11 +396,15 @@ def summarize_notice(html: bytes | str) -> str | None:
                 year = _session_year(int(ym.group(1)))
                 desc = LEG_SESSION_RE.sub("", desc, count=1).strip()
             charges[-1]["bills"].append((label, _abbrev(desc, acronyms), year))
-        elif lead and text.startswith(lead):
+        elif lead and _denum(text).startswith(lead):
             # Trailing separator glyphs are layout, not title ("Regional
-            # Water Planning –" rendered as a dangling dash).
+            # Water Planning –" rendered as a dangling dash). _denum: some
+            # notices NUMBER their charges ("1. **Removing Barriers...**:"
+            # — Local Government, 2 Sep 2026), putting digits before the
+            # bold lead; the number is layout too.
+            body = _denum(text)
             charges.append({"title": lead.strip().rstrip(" :-–—"),
-                            "body": text[len(lead):].lstrip(": ").strip(),
+                            "body": body[len(lead):].lstrip(": ").strip(),
                             "bills": []})
         elif not charges and not text.endswith(":"):
             leads.append(text)   # e.g. the invited-testimony paragraph
@@ -404,6 +413,7 @@ def summarize_notice(html: bytes | str) -> str | None:
     # "Summary Agenda" is the standardized header across every source's
     # agenda digest (Ian, 2026-08-09).
     lines = ["Summary Agenda", ""]
+    header_only = len(lines)  # a digest that never grows past this is noise
     for i, c in enumerate(charges, 1):
         if c["bills"]:
             labels = " and ".join(l for l, _, _ in c["bills"])
@@ -429,6 +439,11 @@ def summarize_notice(html: bytes | str) -> str | None:
     # Below the — rule: bill glosses, then links (Ian, 2026-08-18 — the
     # rule marks where the digest ends and reference material begins, so
     # the e-comment link lives at the bottom with any other links).
+    if len(lines) == header_only:
+        # No agenda items and no testimony line parsed: an empty "Summary
+        # Agenda" header is worse than no digest (the 2 Sep 2026 Local
+        # Government event shipped one) — leave the event's base body alone.
+        return None
     ecomment = soup.find(
         "a", href=re.compile(r"comments\.house\.texas\.gov", re.IGNORECASE))
     bills = [(l, d) for c in charges for l, d, _ in c["bills"]]
