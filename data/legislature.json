@@ -92,19 +92,6 @@
  },
  {
   "source": "legislature",
-  "summary": "Texas Senate: Water, Agriculture, and Rural Affairs",
-  "start": "2026-09-01T09:00:00",
-  "end": "2026-09-01T12:00:00",
-  "location": "Room E1.012, Texas Capitol Extension, 1100 Congress Ave., Austin, TX 78701",
-  "url": "https://capitol.texas.gov/tlodocs/89R/schedules/html/C7002026090109001.HTM",
-  "status": "CONFIRMED",
-  "kind": "hearing",
-  "uid": "legislature-senate-committee-on-water-agriculture-and-rural-affairs-20260901T0900@calendars.changesaroundme.com",
-  "description": "Summary Agenda\n\n1. Examine: \"Assessing the Water Demands of Energy-Intensive Technologies\"\n\n\u2014\n\nLive/archived broadcasts: https://senate.texas.gov/av-live.php",
-  "all_day": false
- },
- {
-  "source": "legislature",
   "summary": "Texas Senate: Local Government",
   "start": "2026-09-01T13:00:00",
   "end": "2026-09-01T16:00:00",
@@ -113,7 +100,7 @@
   "status": "CONFIRMED",
   "kind": "hearing",
   "uid": "legislature-senate-committee-on-local-government-20260901T1300@calendars.changesaroundme.com",
-  "description": "Summary Agenda\n\n\n\u2014\n\nNotice was marked REVISED \u2014 recheck the link for changes.\nLive/archived broadcasts: https://senate.texas.gov/av-live.php",
+  "description": "Summary Agenda\n\n1. Review: \"Examining the Effect of Increasing the Homestead Exemption\"\n2. Study: \"Ensuring Transparency in Appraisal District Funding\"\n\n\u2014\n\nNotice was marked REVISED \u2014 recheck the link for changes.\nLive/archived broadcasts: https://senate.texas.gov/av-live.php",
   "all_day": false
  },
  {
@@ -139,7 +126,7 @@
   "status": "CONFIRMED",
   "kind": "hearing",
   "uid": "legislature-senate-committee-on-local-government-20260902T0900@calendars.changesaroundme.com",
-  "description": "Summary Agenda\n\n\n\u2014\n\nLive/archived broadcasts: https://senate.texas.gov/av-live.php",
+  "description": "Summary Agenda\n\n1. Removing Barriers to Housing Affordability\n2. Examine: \"Holding Local Government Fees Accountable\"\n\n\u2014\n\nLive/archived broadcasts: https://senate.texas.gov/av-live.php",
   "all_day": false
  },
  {
@@ -178,7 +165,7 @@
   "status": "CONFIRMED",
   "kind": "hearing",
   "uid": "legislature-house-energy-resources-20260915T0830@calendars.changesaroundme.com",
-  "description": "",
+  "description": "Summary Agenda\n\n1. To accommodate all attendees wishing to testify, public testimony may be limited at the discretion of the chair.\n2. Agency Oversight\n3. Review: \"Severed Well Operations\"\n4. Monitor: \"Preventing Orphaned Wells\"\n5. Study: \"P-13 Water Wells Overview\"\n\n\u2014\n\nElectronic public comments: https://comments.house.texas.gov/home?c=c250",
   "all_day": false
  },
  {
