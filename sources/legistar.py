@@ -90,13 +90,20 @@ def agenda_block(items: list[dict]) -> str:
     with "Summary Agenda", the standardized header across every source's
     agenda digest (Ian, 2026-08-09).
     """
+    def _is_header(i: dict) -> bool:
+        # Section-header rows ("A. Pre-Selected Agenda Items") carry a bare
+        # LETTER as their agenda number and no file/matter type — layout,
+        # not items (the 25 Aug 2026 work session counted them as "5 other
+        # items"). Real items always have a digit ("2.", "B1."), so a row
+        # is dropped only when BOTH signals agree: an item that merely
+        # lacks a file number is still an item (Ian, 2026-09-02).
+        num = str(i.get("EventItemAgendaNumber") or "")
+        return (not re.search(r"\d", num)
+                and not (i.get("EventItemMatterFile")
+                         or i.get("EventItemMatterType")))
+
     numbered = [i for i in items if i.get("EventItemAgendaNumber")
-                # Section-header rows carry an agenda letter but no file
-                # and no matter type ("A. Pre-Selected Agenda Items") —
-                # layout, not items. The 25 Aug 2026 work-session digest
-                # counted exactly these as "5 other items" (Ian).
-                and (i.get("EventItemMatterFile")
-                     or i.get("EventItemMatterType"))
+                and not _is_header(i)
                 and not PROCEDURAL_TYPE_RE.search(
                     i.get("EventItemMatterType") or "")]
     if not numbered:
