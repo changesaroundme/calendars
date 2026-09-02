@@ -390,6 +390,17 @@ CASE_TYPE_CANON = {
 AGENDA_SECTIONS = {
     "PUBLIC HEARINGS": "case",
     "STAFF BRIEFINGS": "briefing",
+    # Historic Landmark Commission (Ian's mock, 2026-09-02): hearings are
+    # grouped under Title-Case subsection headings ("... Applications")
+    # and every item states its council district — the digest counts
+    # items per subsection per district. Committee updates reduce to
+    # date + body.
+    "BRIEFINGS": "briefing",
+    "PUBLIC HEARINGS/DISCUSSION ITEMS": "hearing-grouped",
+    "COMMITTEE UPDATES": "updates",
+    "APPROVAL OF MINUTES": "skip",
+    "PUBLIC COMMUNICATION: GENERAL": "skip",
+    "FUTURE AGENDA ITEMS": "skip",
     # AAC's slash heading is its ACTION section (count-only); PC's "AND"
     # heading is where novel one-offs land (quoted). Distinct on purpose.
     "DISCUSSION/ACTION ITEMS": "action",
@@ -429,6 +440,78 @@ ITEM_LEAD_INDIRECT_RE = re.compile(
 ITEM_ELABORATION_RE = re.compile(r",\s+including\b.*$", re.DOTALL)
 
 
+HLC_SUBSECTIONS = {  # heading -> digest label (Ian's wording)
+    "historic landmark and local historic district applications":
+        "Historic Landmark/Local Historic District",
+    "national register historic district permit applications":
+        "National Register Historic District",
+    "demolition and relocation permit applications":
+        "Demolition and Relocation",
+}
+SUBSECTION_RE = re.compile(r"^[A-Z][A-Za-z/&' -]+ Applications$")
+DISTRICT_RE = re.compile(r"^Council District (\d{1,2})\b")
+# "Update from the Architectural Review Committee regarding the August 12,
+# 2026 meeting." / "Update from Commissioner X regarding the August 19,
+# 2026 Downtown Commission meeting." -> "12 Aug 2026 Architectural Review
+# Committee" / "19 Aug 2026 Downtown Commission".
+UPDATE_DATE_RE = re.compile(
+    r"(January|February|March|April|May|June|July|August|September|October"
+    r"|November|December)\s+(\d{1,2}),\s+(20\d{2})")
+UPDATE_BODY_RE = re.compile(
+    r"^Update from (?:the )?(?P<from>.+?) regarding the "
+    r"(?P<date>[A-Z][a-z]+ \d{1,2}, 20\d{2}) (?P<after>.*?)\s*meeting\b")
+# (prefix match: a wrapped "Members: ..." tail after "meeting." is ignored)
+
+
+def _update_line(text: str) -> str:
+    text = re.sub(r"\s+", " ", text).strip()
+    m = UPDATE_BODY_RE.match(text)
+    if not m:
+        return text
+    dm = UPDATE_DATE_RE.search(m.group("date"))
+    when = ""
+    if dm:
+        from datetime import date as _date
+        try:
+            when = _date(int(dm.group(3)),
+                         ["January", "February", "March", "April", "May",
+                          "June", "July", "August", "September", "October",
+                          "November", "December"].index(dm.group(1)) + 1,
+                         int(dm.group(2))).strftime("%-d %b %Y")
+        except ValueError:
+            pass
+    # The body is whichever side names a committee/commission: "from the
+    # Architectural Review Committee regarding the <date> meeting" or
+    # "from Commissioner X regarding the <date> Downtown Commission meeting".
+    body = m.group("after").strip() or m.group("from").strip()
+    return f"{when} {body}".strip()
+
+
+def _district_counts(items: list[tuple[str, str | None]]) -> str:
+    """[(subsection, district)] -> "1 x D1, 2 x D9" ordered by district."""
+    counts: dict[str, int] = {}
+    for _, d in items:
+        key = f"D{d}" if d else "district n/a"
+        counts[key] = counts.get(key, 0) + 1
+    return ", ".join(f"{n} x {k}" for k, n in sorted(
+        counts.items(), key=lambda kv: (kv[0] == "district n/a",
+                                        int(kv[0][1:]) if kv[0][1:].isdigit() else 99)))
+
+
+def remote_registration(pages: list[str], day: date) -> str | None:
+    """Top-of-body action line when the agenda requires advance registration
+    to speak remotely ("noon the day before" + a registration link)."""
+    text = "\n".join(pages)
+    low = text.lower()
+    link = re.search(r"https://forms\.office\.com/\S+", text)
+    if not link or "the day before" not in low:
+        return None
+    clock = "noon" if "noon" in low or "12 pm" in low else "the deadline"
+    before = (day - timedelta(days=1)).strftime("%-d %b %Y")
+    return (f"To speak remotely, register by {clock} {before}:\n"
+            f"{link.group(0).rstrip('.')}")
+
+
 def agenda_summary(pages: list[str]) -> str | None:
     section = None
     cases: list[str] = []
@@ -436,6 +519,9 @@ def agenda_summary(pages: list[str]) -> str | None:
     discussion: list[list] = []
     disc_label = "discussion item"
     action = committee = workgroup = 0
+    grouped: list[tuple[str, str | None]] = []   # (subsection, district)
+    subsection = ""
+    updates: list[list] = []
     cur = None
     for raw in "\n".join(pages).splitlines():
         line = raw.strip()
@@ -445,10 +531,28 @@ def agenda_summary(pages: list[str]) -> str | None:
         if up in AGENDA_SECTIONS:
             section, cur = AGENDA_SECTIONS[up], None
             continue
+        if section == "hearing-grouped":
+            if SUBSECTION_RE.match(line):
+                subsection = HLC_SUBSECTIONS.get(
+                    line.lower(), re.sub(r"\s+(Permit\s+)?Applications$", "", line))
+                continue
+            dm = DISTRICT_RE.match(line)
+            if dm and grouped and grouped[-1][1] is None:
+                grouped[-1] = (grouped[-1][0], dm.group(1))
+                continue
         m = re.match(r"(\d{1,3})\.\s+(.+)", line)
         if m and section:
             cur = None
             body = m.group(2).strip()
+            if section == "skip":
+                continue
+            if section == "hearing-grouped":
+                grouped.append((subsection or "Other", None))
+                continue
+            if section == "updates":
+                updates.append([int(m.group(1)), body])
+                cur = updates[-1]
+                continue
             if section == "case":
                 cm = CASE_NUM_RE.search(body)
                 if cm:
@@ -473,7 +577,7 @@ def agenda_summary(pages: list[str]) -> str | None:
             if len(cur[1]) < QUOTE_CHARS + 60:  # wrapped sentence continues
                 cur[1] += " " + line
     if not (cases or briefings or discussion or action or committee
-            or workgroup):
+            or workgroup or grouped or updates):
         return None
 
     def _s(n):
@@ -493,12 +597,20 @@ def agenda_summary(pages: list[str]) -> str | None:
             t = BRIEFING_PRESENTER_RE.sub("", BRIEFING_PREFIX_RE.sub("", t))
             t = BRIEFING_BY_RE.sub("", t)
             t = QUARTER_RE.sub(lambda m: QUARTERS[m.group(1).lower()], t)
-            t = re.sub(r"^[Tt]he\s+", "", t)
+            t = re.sub(r"^(?:[Tt]he|[Aa]n?)\s+", "", t)  # leading article
+            t = t[:1].upper() + t[1:]
             # Parenthetical program tags read as clutter in titles (Ian).
             t = re.sub(r"\s*\([^)]*\)", "", t)
             titles.append(f"- {re.sub(r'  +', ' ', t).strip(' .,')}")
         out.append(f"{len(briefings)} briefing{_s(len(briefings))}:\n"
                    + "\n".join(titles))
+    if grouped:
+        by_sub: dict[str, list] = {}
+        for sub, d in grouped:
+            by_sub.setdefault(sub, []).append((sub, d))
+        out.append(f"{len(grouped)} public hearing{_s(len(grouped))}:\n"
+                   + "\n".join(f"- {sub} ({_district_counts(items)})"
+                                for sub, items in by_sub.items()))
     if action:
         out.append(f"{action} action item{_s(action)}")
     if discussion:
@@ -532,6 +644,9 @@ def agenda_summary(pages: list[str]) -> str | None:
             + ([f"{workgroup} working group"] if workgroup else [])
         last = workgroup if workgroup else committee
         out.append(" and ".join(parts) + f" update{_s(last)}")
+    if updates:
+        out.append(f"{len(updates)} update{_s(len(updates))}:\n"
+                   + "\n".join(f"- {_update_line(txt)}" for _, txt in updates))
     # Blank lines between blocks — breathing room in calendar bodies.
     return "\n\n".join(out)
 
@@ -610,7 +725,9 @@ def enrich_board_agendas(events: list[Event], get_html, get_bytes,
                 ev.end = ev.start + timedelta(hours=BOARD_MEETING_HOURS)
             else:
                 caveat = ev.description  # typical-time / all-day note
+            register = remote_registration(pages, d) if pages else None
             ev.description = "\n\n".join(x for x in [
+                register, "—" if register and summary else "",
                 summary, "—" if summary else "", caveat,
                 f"Agenda: {agenda_url}"] if x)
 
@@ -904,4 +1021,15 @@ def fetch_offline() -> list[Event]:
             lambda u: agenda_pdf.read_bytes(),
             today=date(2026, 8, 1),
         )
+    # HLC agenda grammar (hearings counted per subsection per council
+    # district, committee updates, remote-registration action line):
+    # parser check on the real 2 Sep 2026 agenda. Fails the offline build
+    # loudly if the grammar regresses; the board-page chain is UTC's above.
+    hlc_pdf = fixtures / "austin_agenda_hlc_20260902.pdf"
+    if hlc_pdf.exists():
+        pages = _agenda_pages(hlc_pdf.read_bytes())
+        digest = agenda_summary(pages) or ""
+        assert "18 public hearings" in digest and "(1 x D1, 2 x D9)" in digest, digest
+        assert "12 Aug 2026 Architectural Review Committee" in digest, digest
+        assert remote_registration(pages, date(2026, 9, 2)), "registration line"
     return council + annual + boards + utc
