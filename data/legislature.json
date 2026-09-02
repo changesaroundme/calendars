@@ -92,19 +92,6 @@
  },
  {
   "source": "legislature",
-  "summary": "Texas Senate: Local Government",
-  "start": "2026-09-02T09:00:00",
-  "end": "2026-09-02T12:00:00",
-  "location": "Room E1.016, Texas Capitol Extension, 1100 Congress Ave., Austin, TX 78701",
-  "url": "https://capitol.texas.gov/tlodocs/89R/schedules/html/C5562026090209001.HTM",
-  "status": "CONFIRMED",
-  "kind": "hearing",
-  "uid": "legislature-senate-committee-on-local-government-20260902T0900@calendars.changesaroundme.com",
-  "description": "Summary Agenda\n\n1. Removing Barriers to Housing Affordability\n2. Examine: \"Holding Local Government Fees Accountable\"\n\n\u2014\n\nLive/archived broadcasts: https://senate.texas.gov/av-live.php",
-  "all_day": false
- },
- {
-  "source": "legislature",
   "summary": "Texas House: S/C on Transportation Funding",
   "start": "2026-09-02T10:00:00",
   "end": "2026-09-02T13:00:00",
