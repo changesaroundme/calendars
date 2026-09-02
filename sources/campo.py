@@ -185,6 +185,78 @@ def enrich_agendas(events: list[Event], get_html, today: date,
             break
 
 
+# --- series notes -----------------------------------------------------------
+# CAMPO runs public-input rounds as a burst of identically-titled open
+# houses across the region (six "2027-2030 TIP and 2050 RTP Amendments Open
+# House" events, 3-16 Sep 2026). Each one lists the others' dates and
+# venues at the bottom of its body (Ian, 2026-09-02) so a reader who can't
+# make one finds the nearest. Display-only; uids untouched. The grouping
+# key is the feed's own identical title, and only for engagement-shaped
+# titles clustered in time — a monthly standing body (TPB, TAC) shares a
+# title too but never puts three meetings inside 45 days.
+SERIES_TITLE_RE = re.compile(r"open house|public meeting|hearing|workshop",
+                             re.IGNORECASE)
+SERIES_SPAN = timedelta(days=45)
+SERIES_MIN = 3
+
+
+def _venue(location: str) -> str:
+    """Venue name + city from a feed address: "Southeast Branch, Austin
+    Public Library, 5803 Nuckols Crossing Rd, Austin, TX, 78744" ->
+    "Southeast Branch, Austin Public Library, Austin"."""
+    parts = [s.strip() for s in (location or "").split(",") if s.strip()]
+    if not parts:
+        return "venue TBD"
+    name = []
+    for s in parts:
+        if re.match(r"^\d", s):
+            break  # the street address starts here
+        name.append(s)
+    venue = ", ".join(name) or parts[0]
+    city = next((parts[i - 1] for i, s in enumerate(parts)
+                 if i and re.match(r"^(TX|Texas)\b", s)), "")
+    return f"{venue}, {city}" if city and city not in venue else venue
+
+
+def _when(e: Event) -> str:
+    d = _day(e).strftime("%-d %b %Y")
+    if isinstance(e.start, datetime):
+        h = e.start.hour % 12 or 12
+        m = f":{e.start.minute:02d}" if e.start.minute else ""
+        return f"{d} ({h}{m}{'pm' if e.start.hour >= 12 else 'am'}, "
+    return f"{d} ("
+
+
+def annotate_series(events: list[Event]) -> int:
+    groups: dict[str, list[Event]] = {}
+    for e in events:
+        if SERIES_TITLE_RE.search(e.summary) and e.status != "CANCELLED":
+            groups.setdefault(e.summary, []).append(e)
+    noted = 0
+    for members in groups.values():
+        members.sort(key=lambda e: str(e.start))
+        if len(members) < SERIES_MIN or \
+                _day(members[-1]) - _day(members[0]) > SERIES_SPAN:
+            continue
+        noun = "open houses" if "open house" in members[0].summary.lower() \
+            else "meetings"
+        for e in members:
+            others = "\n".join(f"- {_when(o)}{_venue(o.location)})"
+                               for o in members if o is not e)
+            block = (f"Part of a series of {len(members)} {noun}. Others:\n"
+                     f"{others}")
+            if block in (e.description or ""):
+                continue
+            if "\n\n—\n\n" in (e.description or ""):
+                head, tail = e.description.split("\n\n—\n\n", 1)
+                e.description = f"{head}\n\n{block}\n\n—\n\n{tail}"
+            else:
+                e.description = (f"{e.description}\n\n{block}"
+                                 if e.description else block)
+            noted += 1
+    return noted
+
+
 def fetch(session) -> list[Event]:
     resp = session.get(FEED_URL, timeout=30)
     resp.raise_for_status()
@@ -206,6 +278,7 @@ def fetch(session) -> list[Event]:
         enrich_agendas(events, _html, datetime.now().date(), get_bytes=_bytes)
     except Exception as exc:  # upgrade-only: never sink the feed
         print(f"[{SOURCE}] WARNING: agenda enrichment failed: {exc}")
+    annotate_series(events)
     return events
 
 

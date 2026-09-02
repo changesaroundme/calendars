@@ -428,8 +428,15 @@ def main() -> int:
             fresh_empty = not events
             have = {e.stable_uid() for e in events}
             snap = snapshot_events(snapshot_path)
+            # Carry: past events, TODAY's events (CAMPO's Tribe feed drops a
+            # meeting the morning of its own day — the 24 Aug 2026 TAC
+            # vanished at 6am and was never "past" while still in a
+            # snapshot), and CANCELLED future events (a source that deletes
+            # a cancelled meeting outright would otherwise erase the
+            # cancellation notice subscribers need — the 27 Jul 2026 TAC).
             carried = [e for e in snap
-                       if event_day(e) < today and e.stable_uid() not in have]
+                       if e.stable_uid() not in have
+                       and (event_day(e) <= today or e.status == "CANCELLED")]
             if carried:
                 print(f"[{key}] retained {len(carried)} past events the "
                       "source no longer lists")
