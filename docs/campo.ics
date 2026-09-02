@@ -26,8 +26,20 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
+UID:7718-1785110400-1785196799@www.campotexas.org
+DTSTAMP:20260902T230605Z
+DTSTART;VALUE=DATE:20260727
+DTEND;VALUE=DATE:20260728
+SUMMARY:CAMPO: Technical Advisory Committee - Cancelled
+LOCATION:CAMPO Offices\, 5330 Bluffstone Ln\, Austin\, TX 78759
+URL:https://www.campotexas.org/event/technical-advisory-committee-102/
+STATUS:CANCELLED
+CATEGORIES:regular
+X-CAM-ORG:campo
+END:VEVENT
+BEGIN:VEVENT
 UID:7706-1786370400-1786377600@www.campotexas.org
-DTSTAMP:20260902T221157Z
+DTSTAMP:20260902T230605Z
 DTSTART;TZID=America/Chicago:20260810T140000
 DTEND;TZID=America/Chicago:20260810T160000
 SUMMARY:CAMPO: Transportation Policy Board
@@ -44,8 +56,19 @@ CATEGORIES:regular
 X-CAM-ORG:campo
 END:VEVENT
 BEGIN:VEVENT
+UID:7719-1787580000-1787587200@www.campotexas.org
+DTSTAMP:20260902T230605Z
+DTSTART;TZID=America/Chicago:20260824T140000
+DTEND;TZID=America/Chicago:20260824T160000
+SUMMARY:CAMPO: Technical Advisory Committee
+LOCATION:CAMPO Offices\, 5330 Bluffstone Ln\, Austin\, TX 78759
+URL:https://www.campotexas.org/event/technical-advisory-committee-103/
+CATEGORIES:regular
+X-CAM-ORG:campo
+END:VEVENT
+BEGIN:VEVENT
 UID:7958-1788451200-1788462000@www.campotexas.org
-DTSTAMP:20260902T221157Z
+DTSTAMP:20260902T230605Z
 DTSTART;TZID=America/Chicago:20260903T160000
 DTEND;TZID=America/Chicago:20260903T190000
 SUMMARY:CAMPO: 2027-2030 TIP and 2050 RTP Amendments Open House
@@ -53,12 +76,17 @@ LOCATION:Buda Public Library\, 405 Loop Street\, Buda\, TX\, 78610\, United
   States
 URL:https://www.campotexas.org/event/2027-2030-tip-and-2050-rtp-amendments-
  open-house-5/
+DESCRIPTION:Part of a series of 6 open houses. Others:\n- 8 Sep 2026 (4pm\,
+  Dr. Eugene Clark Library – Lockhart)\n- 10 Sep 2026 (5:30pm\, Elgin Sip
+ \, Shop\, & Stroll)\n- 14 Sep 2026 (11:30am\, The Junior League of Austin 
+ Community Impact Center)\n- 15 Sep 2026 (4pm\, Southeast Branch\, Austin P
+ ublic Library)\n- 16 Sep 2026 (4pm\, Marble Falls Library)
 CATEGORIES:regular
 X-CAM-ORG:campo
 END:VEVENT
 BEGIN:VEVENT
 UID:7960-1788883200-1788894000@www.campotexas.org
-DTSTAMP:20260902T221157Z
+DTSTAMP:20260902T230605Z
 DTSTART;TZID=America/Chicago:20260908T160000
 DTEND;TZID=America/Chicago:20260908T190000
 SUMMARY:CAMPO: 2027-2030 TIP and 2050 RTP Amendments Open House
@@ -66,12 +94,17 @@ LOCATION:Dr. Eugene Clark Library – Lockhart\, 217 S. Main St.\, Lockhart
  \, TX\, 78644\, United States
 URL:https://www.campotexas.org/event/2027-2030-tip-and-2050-rtp-amendments-
  open-house-4/
+DESCRIPTION:Part of a series of 6 open houses. Others:\n- 3 Sep 2026 (4pm\,
+  Buda Public Library)\n- 10 Sep 2026 (5:30pm\, Elgin Sip\, Shop\, & Stroll
+ )\n- 14 Sep 2026 (11:30am\, The Junior League of Austin Community Impact C
+ enter)\n- 15 Sep 2026 (4pm\, Southeast Branch\, Austin Public Library)\n- 
+ 16 Sep 2026 (4pm\, Marble Falls Library)
 CATEGORIES:regular
 X-CAM-ORG:campo
 END:VEVENT
 BEGIN:VEVENT
 UID:7962-1789061400-1789066800@www.campotexas.org
-DTSTAMP:20260902T221157Z
+DTSTAMP:20260902T230605Z
 DTSTART;TZID=America/Chicago:20260910T173000
 DTEND;TZID=America/Chicago:20260910T190000
 SUMMARY:CAMPO: 2027-2030 TIP and 2050 RTP Amendments Open House
@@ -79,12 +112,17 @@ LOCATION:Elgin Sip\, Shop\, & Stroll\, 14 N Main Street\, Elgin\, TX\, 7862
  1\, United States
 URL:https://www.campotexas.org/event/2027-2030-tip-and-2050-rtp-amendments-
  open-house-3/
+DESCRIPTION:Part of a series of 6 open houses. Others:\n- 3 Sep 2026 (4pm\,
+  Buda Public Library)\n- 8 Sep 2026 (4pm\, Dr. Eugene Clark Library – Lo
+ ckhart)\n- 14 Sep 2026 (11:30am\, The Junior League of Austin Community Im
+ pact Center)\n- 15 Sep 2026 (4pm\, Southeast Branch\, Austin Public Librar
+ y)\n- 16 Sep 2026 (4pm\, Marble Falls Library)
 CATEGORIES:regular
 X-CAM-ORG:campo
 END:VEVENT
 BEGIN:VEVENT
 UID:7964-1789385400-1789392600@www.campotexas.org
-DTSTAMP:20260902T221157Z
+DTSTAMP:20260902T230605Z
 DTSTART;TZID=America/Chicago:20260914T113000
 DTEND;TZID=America/Chicago:20260914T133000
 SUMMARY:CAMPO: 2027-2030 TIP and 2050 RTP Amendments Open House
@@ -92,12 +130,17 @@ LOCATION:The Junior League of Austin Community Impact Center\, 5330 Bluffst
  one Lane\, Austin\, TX\, 78759\, United States
 URL:https://www.campotexas.org/event/2027-2030-tip-and-2050-rtp-amendments-
  open-house-2/
+DESCRIPTION:Part of a series of 6 open houses. Others:\n- 3 Sep 2026 (4pm\,
+  Buda Public Library)\n- 8 Sep 2026 (4pm\, Dr. Eugene Clark Library – Lo
+ ckhart)\n- 10 Sep 2026 (5:30pm\, Elgin Sip\, Shop\, & Stroll)\n- 15 Sep 20
+ 26 (4pm\, Southeast Branch\, Austin Public Library)\n- 16 Sep 2026 (4pm\, 
+ Marble Falls Library)
 CATEGORIES:regular
 X-CAM-ORG:campo
 END:VEVENT
 BEGIN:VEVENT
 UID:7707-1789394400-1789401600@www.campotexas.org
-DTSTAMP:20260902T221157Z
+DTSTAMP:20260902T230605Z
 DTSTART;TZID=America/Chicago:20260914T140000
 DTEND;TZID=America/Chicago:20260914T160000
 SUMMARY:CAMPO: Transportation Policy Board
@@ -109,7 +152,7 @@ X-CAM-ORG:campo
 END:VEVENT
 BEGIN:VEVENT
 UID:7966-1789488000-1789498800@www.campotexas.org
-DTSTAMP:20260902T221157Z
+DTSTAMP:20260902T230605Z
 DTSTART;TZID=America/Chicago:20260915T160000
 DTEND;TZID=America/Chicago:20260915T190000
 SUMMARY:CAMPO: 2027-2030 TIP and 2050 RTP Amendments Open House
@@ -117,12 +160,17 @@ LOCATION:Southeast Branch\, Austin Public Library\, 5803 Nuckols Crossing R
  d.\, Austin\, TX\, 78744\, United States
 URL:https://www.campotexas.org/event/2027-2030-tip-and-2050-rtp-amendments-
  open-house/
+DESCRIPTION:Part of a series of 6 open houses. Others:\n- 3 Sep 2026 (4pm\,
+  Buda Public Library)\n- 8 Sep 2026 (4pm\, Dr. Eugene Clark Library – Lo
+ ckhart)\n- 10 Sep 2026 (5:30pm\, Elgin Sip\, Shop\, & Stroll)\n- 14 Sep 20
+ 26 (11:30am\, The Junior League of Austin Community Impact Center)\n- 16 S
+ ep 2026 (4pm\, Marble Falls Library)
 CATEGORIES:regular
 X-CAM-ORG:campo
 END:VEVENT
 BEGIN:VEVENT
 UID:7968-1789574400-1789585200@www.campotexas.org
-DTSTAMP:20260902T221157Z
+DTSTAMP:20260902T230605Z
 DTSTART;TZID=America/Chicago:20260916T160000
 DTEND;TZID=America/Chicago:20260916T190000
 SUMMARY:CAMPO: 2027-2030 TIP and 2050 RTP Amendments Open House
@@ -130,12 +178,17 @@ LOCATION:Marble Falls Library\, 101 Main St.\, Marble Falls\, TX\, 78654\,
  United States
 URL:https://www.campotexas.org/event/2027-2030-tip-and-2050-rtp-amendments-
  open-house-7/
+DESCRIPTION:Part of a series of 6 open houses. Others:\n- 3 Sep 2026 (4pm\,
+  Buda Public Library)\n- 8 Sep 2026 (4pm\, Dr. Eugene Clark Library – Lo
+ ckhart)\n- 10 Sep 2026 (5:30pm\, Elgin Sip\, Shop\, & Stroll)\n- 14 Sep 20
+ 26 (11:30am\, The Junior League of Austin Community Impact Center)\n- 15 S
+ ep 2026 (4pm\, Southeast Branch\, Austin Public Library)
 CATEGORIES:regular
 X-CAM-ORG:campo
 END:VEVENT
 BEGIN:VEVENT
 UID:7720-1790604000-1790611200@www.campotexas.org
-DTSTAMP:20260902T221157Z
+DTSTAMP:20260902T230605Z
 DTSTART;TZID=America/Chicago:20260928T140000
 DTEND;TZID=America/Chicago:20260928T160000
 SUMMARY:CAMPO: Technical Advisory Committee
@@ -146,7 +199,7 @@ X-CAM-ORG:campo
 END:VEVENT
 BEGIN:VEVENT
 UID:7708-1791208800-1791216000@www.campotexas.org
-DTSTAMP:20260902T221157Z
+DTSTAMP:20260902T230605Z
 DTSTART;TZID=America/Chicago:20261005T140000
 DTEND;TZID=America/Chicago:20261005T160000
 SUMMARY:CAMPO: Transportation Policy Board
@@ -158,7 +211,7 @@ X-CAM-ORG:campo
 END:VEVENT
 BEGIN:VEVENT
 UID:7721-1793023200-1793030400@www.campotexas.org
-DTSTAMP:20260902T221157Z
+DTSTAMP:20260902T230605Z
 DTSTART;TZID=America/Chicago:20261026T140000
 DTEND;TZID=America/Chicago:20261026T160000
 SUMMARY:CAMPO: Technical Advisory Committee
@@ -169,7 +222,7 @@ X-CAM-ORG:campo
 END:VEVENT
 BEGIN:VEVENT
 UID:7709-1794232800-1794240000@www.campotexas.org
-DTSTAMP:20260902T221157Z
+DTSTAMP:20260902T230605Z
 DTSTART;TZID=America/Chicago:20261109T140000
 DTEND;TZID=America/Chicago:20261109T160000
 SUMMARY:CAMPO: Transportation Policy Board
@@ -181,7 +234,7 @@ X-CAM-ORG:campo
 END:VEVENT
 BEGIN:VEVENT
 UID:7722-1794837600-1794844800@www.campotexas.org
-DTSTAMP:20260902T221157Z
+DTSTAMP:20260902T230605Z
 DTSTART;TZID=America/Chicago:20261116T140000
 DTEND;TZID=America/Chicago:20261116T160000
 SUMMARY:CAMPO: Technical Advisory Committee
@@ -192,7 +245,7 @@ X-CAM-ORG:campo
 END:VEVENT
 BEGIN:VEVENT
 UID:7710-1797256800-1797264000@www.campotexas.org
-DTSTAMP:20260902T221157Z
+DTSTAMP:20260902T230605Z
 DTSTART;TZID=America/Chicago:20261214T140000
 DTEND;TZID=America/Chicago:20261214T160000
 SUMMARY:CAMPO: Transportation Policy Board
@@ -204,7 +257,7 @@ X-CAM-ORG:campo
 END:VEVENT
 BEGIN:VEVENT
 UID:7723-1797861600-1797868800@www.campotexas.org
-DTSTAMP:20260902T221157Z
+DTSTAMP:20260902T230605Z
 DTSTART;TZID=America/Chicago:20261221T140000
 DTEND;TZID=America/Chicago:20261221T160000
 SUMMARY:CAMPO: Technical Advisory Committee

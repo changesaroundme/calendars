@@ -28,7 +28,7 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:lcra-water-rules-public-comments-close-20260901@calendars.changesaround
  me.com
-DTSTAMP:20260902T221157Z
+DTSTAMP:20260902T230605Z
 DTSTART;VALUE=DATE:20260901
 SUMMARY:LCRA: Water rules public comments close
 URL:https://www.lcra.org/water/water-related-rules-and-regulations-for-publ
@@ -47,7 +47,7 @@ X-CAM-ORG:lcra
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1809-20260904@calendars.changesaroundme.com
-DTSTAMP:20260902T221157Z
+DTSTAMP:20260902T230605Z
 DTSTART;VALUE=DATE:20260904
 SUMMARY:PUC: Large Load Demand Management Service comments close
 URL:https://interchange.puc.texas.gov/search/filings/?UtilityType=A&Control
@@ -63,7 +63,7 @@ X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1828-20260917@calendars.changesaroundme.com
-DTSTAMP:20260902T221157Z
+DTSTAMP:20260902T230605Z
 DTSTART;VALUE=DATE:20260917
 SUMMARY:PUC: Project 59550 comments close
 URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=182
@@ -77,7 +77,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:capmetro-fare-increase-public-comments-close-20260928@calendars.changes
  aroundme.com
-DTSTAMP:20260902T221157Z
+DTSTAMP:20260902T230605Z
 DTSTART;VALUE=DATE:20260928
 SUMMARY:CapMetro: Fare increase comments close
 URL:https://www.capmetro.org/fare/general-fares-overview/fare-increase
