@@ -434,16 +434,98 @@ def enrich_index_event(ev: Event, html: str) -> None:
         ev.start, ev.end = timed
         if venue:
             ev.location = venue
-        # The "time and venue not listed" caveat is no longer true. No
-        # "Details and materials" line either — it would repeat the event's
-        # own url field verbatim (Ian, 2026-08-10).
-        ev.description = "\n\n".join(x for x in [
-            ev.description.split("\n\n")[0]
-            if not ev.description.startswith("Time and venue") else "",
-            f"Public comment deadline: {deadline}." if deadline else "",
-        ] if x)
-    elif deadline:
-        ev.description += f"\n\nPublic comment deadline: {deadline}."
+
+    # --- body, in the house shape (Ian, 2026-09-02, US 79 virtual meeting):
+    # meeting type + comment deadline on top, — rule, the page's Purpose and
+    # Description, — rule, project links. The index-level "time and venue
+    # are not listed" caveat was flatly WRONG for a virtual meeting whose
+    # page states the format plainly; it now survives only when the detail
+    # page yields nothing at all.
+    rows = _detail_rows(soup)
+    virtual, inperson = rows.get("virtual details"), rows.get("in-person details")
+    how = ev.description.split("\n\n")[0] \
+        if not ev.description.startswith("Time and venue") else ""
+    if virtual is not None and inperson is None:
+        # No live session to show up for: say so, and when the materials
+        # land. The event stays all-day on purpose.
+        vt = _cell_text(virtual)
+        posted = _time_of(vt)
+        kind = ("pre-recorded video presentation" if "pre-recorded" in vt.lower()
+                else "online materials")
+        type_line = (f"Virtual meeting - {kind} only; no fixed time"
+                     + (f", materials post by {_clock(*posted)}" if posted else "")
+                     + " (no in-person meeting)")
+        ev.location = "Virtual"
+    elif inperson is not None and virtual is not None:
+        type_line = "In-person meeting; materials also posted online"
+    elif inperson is not None:
+        type_line = "In-person meeting"
+    else:
+        type_line = how.rstrip(".") if how else ""
+    type_line = type_line[:1].upper() + type_line[1:]
+    top = [type_line, f"Public comment deadline: {deadline}." if deadline else ""]
+    middle = []
+    purpose = _cell_text(rows["purpose"]) if "purpose" in rows else ""
+    if purpose:
+        middle.append(f"Purpose: {purpose}")
+    if "description" in rows:
+        middle.append("Description: " + _cell_body(rows["description"]))
+    links = []
+    for label in ("purpose", "description"):
+        for a in (rows[label].find_all("a", href=True) if label in rows else []):
+            href = a["href"].strip()
+            if href.startswith("mailto") or href in links:
+                continue
+            links.append(href if href.startswith("http")
+                         else f"https://www.txdot.gov{href}")
+    if not (rows or timed):
+        # Unknown page shape: leave the index description, add the deadline.
+        if deadline:
+            ev.description += f"\n\nPublic comment deadline: {deadline}."
+        return
+    sections = ["\n".join(x for x in top if x)]
+    if middle:
+        sections.append("\n\n".join(middle))
+    if links:
+        sections.append("\n\n".join(
+            f"{'Project info' if i == 0 else 'More'}: {u}"
+            for i, u in enumerate(links)))
+    ev.description = "\n\n—\n\n".join(s for s in sections if s)
+
+
+def _detail_rows(soup) -> dict:
+    """{lowercased label: value cell} for the page's two-column detail table."""
+    rows = {}
+    for tr in soup.find_all("tr"):
+        cells = tr.find_all(["td", "th"])
+        if len(cells) >= 2:
+            label = re.sub(r"\s+", " ", cells[0].get_text(" ", strip=True)).lower()
+            if label and label not in rows:
+                rows[label] = cells[1]
+    return rows
+
+
+def _cell_text(td) -> str:
+    return re.sub(r"\s+,", ",", re.sub(r"\s+", " ", td.get_text(" ", strip=True)))
+
+
+def _cell_body(td) -> str:
+    """A cell's prose in document order, <li> items as a bullet list."""
+    blocks = td.find_all(["p", "li"])
+    if not blocks:
+        return _cell_text(td)
+    lines = []
+    for el in blocks:
+        if el.name == "p" and el.find("li"):
+            continue  # a paragraph wrapping a list: its items come next
+        text = _cell_text(el)
+        if text:
+            lines.append(f"- {text.rstrip('.')}" if el.name == "li" else text)
+    return "\n".join(lines)
+
+
+def _clock(h: int, m: int) -> str:
+    return f"{h % 12 or 12}{f':{m:02d}' if m else ''}{'pm' if h >= 12 else 'am'}"
 
 
 def enrich_index_events(events: list[Event], get_html) -> None:
