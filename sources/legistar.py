@@ -47,6 +47,9 @@ NAME_SUFFIX_RE = re.compile(
 # Agenda-item summaries (see agenda_block): at or below the threshold the
 # items are listed outright; above it, a one-line count by matter type.
 AGENDA_LIST_MAX = 6
+# Per-event item fetches: how far back to keep asking, and per-build cap.
+ITEM_LOOKBACK_DAYS = 7
+ITEM_FETCH_CAP = 25
 AGENDA_TITLE_CHARS = 160
 # Digest polish (Ian, 2026-08-26 committee mock): procedural filler drops
 # entirely — minutes approvals, and the standing "identify items for
@@ -275,6 +278,29 @@ class Legistar:
         resp.raise_for_status()
         return resp.json()
 
+    def wants_items(self, row: dict, floor: str) -> bool:
+        """Should this API event row get a per-event agenda-items call?
+
+        Body must pass agenda_detail and the meeting must be on/after
+        `floor` (YYYY-MM-DD). The floor sits ITEM_LOOKBACK_DAYS in the past,
+        not at today: a digest can still be worth fetching for a meeting
+        that just happened (its items sometimes land late, and the
+        past-event merge in build.py keeps one once seen).
+
+        Body names are whitespace-normalized first. Legistar's API returned
+        "Public Health Committee  " — two trailing spaces — for the 2 Sep
+        2026 meeting, so endswith("Committee") failed and the meeting never
+        got its digest even though the items had been posted a week
+        earlier (Ian, 2026-09-03). The InSite scrape strips its cells, so
+        the same meeting titled fine; only the API-side gate saw the junk.
+        """
+        name = " ".join((row.get("EventBodyName") or "").split())
+        if not name or not self.agenda_detail or not self.agenda_detail(name):
+            return False
+        if (row.get("EventDate") or "")[:10] < floor:
+            return False
+        return bool(row.get("EventId"))
+
     def merge_api(self, events: list[Event], api_rows: list[dict],
                   item_fetcher=None) -> list[Event]:
         """Enrich scraped events with API data; add API-only events.
@@ -441,18 +467,17 @@ class Legistar:
             rows = []
         fetcher = None
         if self.agenda_detail:
-            today = datetime.now().strftime("%Y-%m-%d")
+            floor = (datetime.now() - timedelta(days=ITEM_LOOKBACK_DAYS)
+                     ).strftime("%Y-%m-%d")
             spent = {"n": 0}
 
             def fetcher(row):
-                # The fetcher gates; merge_api just calls it. Past meetings
+                # The fetcher gates; merge_api just calls it. Older meetings
                 # and non-matching bodies cost nothing; the cap bounds API
                 # load however many agendas publish at once.
-                if not self.agenda_detail(row.get("EventBodyName") or ""):
+                if not self.wants_items(row, floor):
                     return None
-                if (row.get("EventDate") or "")[:10] < today:
-                    return None
-                if spent["n"] >= 15 or not row.get("EventId"):
+                if spent["n"] >= ITEM_FETCH_CAP:
                     return None
                 spent["n"] += 1
                 r = session.get(

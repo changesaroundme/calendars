@@ -978,6 +978,16 @@ def fetch_offline() -> list[Event]:
     """
     import json
 
+    # Item-fetch gate: the API's "Public Health Committee  " (trailing
+    # spaces, 2 Sep 2026) must pass; corporations and older meetings must
+    # not.
+    gate = lambda name, day: COUNCIL.wants_items(
+        {"EventBodyName": name, "EventDate": day, "EventId": 1}, "2026-08-27")
+    assert gate("Public Health Committee  ", "2026-09-02T00:00:00")
+    assert gate("City Council", "2026-09-10T00:00:00")
+    assert not gate("Austin Housing Finance Corporation", "2026-09-10T00:00:00")
+    assert not gate("Public Health Committee", "2026-08-26T00:00:00")
+
     fixtures = ANNUAL_PDF_FIXTURE.parent
     council = COUNCIL.finalize(
         COUNCIL.merge_api(
