@@ -28,7 +28,7 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:txdotev-hm-stip-fy-2025-2028-august-revision-20250909@calendars.changes
  aroundme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;VALUE=DATE:20250909
 SUMMARY:TxDOT: Statewide Transportation Improvement Program for FY 2025 - 2
  028 - August Revision
@@ -67,7 +67,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-us290-from-sh130-to-sh95-092325-20250923@calendars.changesar
  oundme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;TZID=America/Chicago:20250923T173000
 DTEND;TZID=America/Chicago:20250923T190000
 SUMMARY:TxDOT: US 290 from SH 130 to SH 95 South (Elgin)
@@ -75,35 +75,18 @@ LOCATION:Manor Elementary Early Learning Center 12904 Gregg Manor Road Elgi
  n\, TX 78653
 URL:https://www.txdot.gov/projects/hearings-meetings/austin/2025/us290-from
  -sh130-to-sh95-092325.html
-DESCRIPTION:In-person meeting\; materials also posted online\nPublic commen
- t deadline: 10 Oct 2025.\n\n—\n\nPurpose: The Central Texas Regional Mob
- ility Authority (Mobility Authority)\, in coordination with the Texas Depa
- rtment of Transportation (TxDOT)\, is considering improvements to US 290 b
- etween SH 130 and SH 95 South (virtual session closed) to increase mobilit
- y and safety along this highly congested corridor.\n\nDescription: An envi
- ronmental study and schematic design is underway to evaluate the extension
-  of the 290 Toll from its current end point near SH 130 in Travis County f
- arther east to SH 95 South in Bastrop County\, covering approximately 15 m
- iles. This notice advises the public that TxDOT and the Mobility Authority
-  will be conducting a virtual Community Listening Session on the proposed 
- project with two in-person options.\nWhile the proposed improvements will 
- be determined through this study\, TxDOT and the Mobility Authority are co
- nsidering the addition of tolled mainlanes alongside existing non-tolled U
- S 290 general-purpose lanes\, enhancing cross street intersections\, inclu
- ding the possibility of new signals and potential pedestrian and bicycle i
- nfrastructure enhancements where feasible.\nThe proposed project could\, s
- ubject to final design considerations\, require additional right-of-way an
- d potentially displace residential and non-residential structures. Relocat
- ion assistance is available for displaced persons and businesses\, should 
- displacements occur.\nThe proposed project may involve construction in wet
- lands.\nThe proposed project would involve an action in a floodplain.
+DESCRIPTION:virtual community listening session with two in-person options.
+ \n\nTime and venue are not listed on TxDOT's schedule index — see the ev
+ ent page for details: https://www.txdot.gov/projects/hearings-meetings/aus
+ tin/2025/us290-from-sh130-to-sh95-092325.html\n\nPublic comment deadline: 
+ 10 Oct 2025.
 CATEGORIES:engagement
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-us290-from-sh130-to-sh95-092325-20250925@calendars.changesar
  oundme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;TZID=America/Chicago:20250925T173000
 DTEND;TZID=America/Chicago:20250925T190000
 SUMMARY:TxDOT: US 290 from SH 130 to SH 95 South (Elgin)
@@ -111,35 +94,18 @@ LOCATION:Austin Community College: Elgin Campus Building 1000 1501 US 290 E
  lgin\, TX 78621
 URL:https://www.txdot.gov/projects/hearings-meetings/austin/2025/us290-from
  -sh130-to-sh95-092325.html
-DESCRIPTION:In-person meeting\; materials also posted online\nPublic commen
- t deadline: 10 Oct 2025.\n\n—\n\nPurpose: The Central Texas Regional Mob
- ility Authority (Mobility Authority)\, in coordination with the Texas Depa
- rtment of Transportation (TxDOT)\, is considering improvements to US 290 b
- etween SH 130 and SH 95 South (virtual session closed) to increase mobilit
- y and safety along this highly congested corridor.\n\nDescription: An envi
- ronmental study and schematic design is underway to evaluate the extension
-  of the 290 Toll from its current end point near SH 130 in Travis County f
- arther east to SH 95 South in Bastrop County\, covering approximately 15 m
- iles. This notice advises the public that TxDOT and the Mobility Authority
-  will be conducting a virtual Community Listening Session on the proposed 
- project with two in-person options.\nWhile the proposed improvements will 
- be determined through this study\, TxDOT and the Mobility Authority are co
- nsidering the addition of tolled mainlanes alongside existing non-tolled U
- S 290 general-purpose lanes\, enhancing cross street intersections\, inclu
- ding the possibility of new signals and potential pedestrian and bicycle i
- nfrastructure enhancements where feasible.\nThe proposed project could\, s
- ubject to final design considerations\, require additional right-of-way an
- d potentially displace residential and non-residential structures. Relocat
- ion assistance is available for displaced persons and businesses\, should 
- displacements occur.\nThe proposed project may involve construction in wet
- lands.\nThe proposed project would involve an action in a floodplain.
+DESCRIPTION:virtual community listening session with two in-person options.
+ \n\nTime and venue are not listed on TxDOT's schedule index — see the ev
+ ent page for details: https://www.txdot.gov/projects/hearings-meetings/aus
+ tin/2025/us290-from-sh130-to-sh95-092325.html\n\nPublic comment deadline: 
+ 10 Oct 2025.
 CATEGORIES:engagement
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-fm969-corridor-study-100225-20251002@calendars.changesaround
  me.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;TZID=America/Chicago:20251002T160000
 DTEND;TZID=America/Chicago:20251002T190000
 SUMMARY:TxDOT: FM 969 Corridor Study (Elgin)
@@ -167,7 +133,7 @@ X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-102325-20251023@calendars.changesaroundme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;VALUE=DATE:20251023
 SUMMARY:TxDOT: Public Transportation Advisory Committee
 LOCATION:Virtual
@@ -191,7 +157,7 @@ X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-102425-20251024@calendars.changesaroundme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;VALUE=DATE:20251024
 SUMMARY:TxDOT: Bicycle and Pedestrian Advisory Committee Quarterly Meeting
 LOCATION:Virtual
@@ -219,7 +185,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-texas-statewide-multimodal-transit-plan-102025-20251113@cale
  ndars.changesaroundme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;TZID=America/Chicago:20251113T173000
 DTEND;TZID=America/Chicago:20251113T193000
 SUMMARY:TxDOT: Texas Statewide Multimodal Transit Plan virtual public meeti
@@ -253,7 +219,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-us281-blanco-relief-route-study-111825-20251118@calendars.ch
  angesaroundme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;TZID=America/Chicago:20251118T160000
 DTEND;TZID=America/Chicago:20251118T190000
 SUMMARY:TxDOT: US 281 Blanco Relief Route Study (Blanco)
@@ -276,28 +242,24 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-us281-blanco-county-project-111825-20251118@calendars.change
  saroundme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;TZID=America/Chicago:20251118T160000
 DTEND;TZID=America/Chicago:20251118T190000
 SUMMARY:TxDOT: US 281 Blanco County Project (Blanco)
 LOCATION:Blanco High School Cafeteria & Gym 1215 4th St. Blanco\, TX 78606
 URL:https://www.txdot.gov/projects/hearings-meetings/austin/2025/us281-blan
  co-county-project-111825.html
-DESCRIPTION:In-person meeting\; materials also posted online\nPublic commen
- t deadline: 9 Dec 2025.\n\n—\n\nPurpose: TxDOT is developing preliminary
-  plans to improve 19 miles of US 281 from US 290 to FM 306 in Blanco Count
- y\, Texas\, including the US 281/US 290 interchange.\n\nDescription: The p
- urpose of the proposed project is to enhance safety and improve connectivi
- ty and mobility by providing additional roadway capacity to meet current a
- nd future traffic demands due to population growth and increased traffic v
- olumes.
+DESCRIPTION:in-person public meeting with virtual option.\n\nTime and venue
+  are not listed on TxDOT's schedule index — see the event page for detai
+ ls: https://www.txdot.gov/projects/hearings-meetings/austin/2025/us281-bla
+ nco-county-project-111825.html\n\nPublic comment deadline: 9 Dec 2025.
 CATEGORIES:engagement
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-stip-fy-2025-2028-nov-revision-20251216@calendars.changesaro
  undme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;VALUE=DATE:20251216
 SUMMARY:TxDOT: Statewide Transportation Improvement Program for FY 2025 - 2
  028 - November revision
@@ -335,7 +297,7 @@ X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-121925-20251219@calendars.changesaroundme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;VALUE=DATE:20251219
 SUMMARY:TxDOT: Texas-Mexico Border Transportation Master Plan (BTMP) Update
 LOCATION:Virtual
@@ -371,7 +333,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-public-transportation-advisory-committee-20260122T1000@calendar
  s.changesaroundme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;TZID=America/Chicago:20260122T100000
 DTEND;TZID=America/Chicago:20260122T120000
 SUMMARY:TxDOT PTAC: Meeting
@@ -387,7 +349,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-bicycle-and-pedestrian-advisory-committee-20260130T0930@calenda
  rs.changesaroundme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;TZID=America/Chicago:20260130T093000
 DTEND;TZID=America/Chicago:20260130T113000
 SUMMARY:TxDOT BPAC: Meeting
@@ -403,7 +365,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-public-transportation-advisory-committee-20260209T1000@calendar
  s.changesaroundme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;TZID=America/Chicago:20260209T100000
 DTEND;TZID=America/Chicago:20260209T120000
 SUMMARY:TxDOT PTAC: Meeting
@@ -419,7 +381,7 @@ X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-us77-021926-20260219@calendars.changesaroundme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;TZID=America/Chicago:20260219T163000
 DTEND;TZID=America/Chicago:20260219T183000
 SUMMARY:TxDOT: US 77 from FM 2440 to SH 21
@@ -457,44 +419,25 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-mopac-loop1-expressway-ea-030926-20260309@calendars.changesa
  roundme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;VALUE=DATE:20260309
 SUMMARY:TxDOT: MoPac (Loop 1) Expressway from Cesar Chavez Street to Slaugh
  ter Lane
 LOCATION:Austin
 URL:https://www.txdot.gov/projects/hearings-meetings/austin/2026/mopac-loop
  1-expressway-ea-030926.html
-DESCRIPTION:In-person meeting\; materials also posted online\nPublic commen
- t deadline: 3 May 2026.\n\n—\n\nPurpose: The purpose of the public heari
- ng is to share the draft EA and Build Alternative\, and receive public com
- ment on the Central Texas Regional Mobility Authority (Mobility Authority)
-  and TxDOT’s proposed plan to improve MoPac (Loop 1) Expressway from Ces
- ar Chavez Street to Slaughter Lane in Travis County\, Texas by adding expr
- ess lanes in each direction. Participants may watch a prerecorded video\, 
- view exhibits\, review the proposed schematic\, review the draft Environme
- ntal Assessment and associated technical reports and submit official comme
- nts. Comments must be received or postmarked on or before Sunday\, May 3\,
-  2026\, to be included in the official hearing record. For additional info
- rmation\, call 512-342-3299 between 9 a.m. and 5 p.m.\, Monday through Fri
- day\, with questions about the project.\n\nDescription: The Mobility Autho
- rity is proposing to add express lanes along approximately 8-miles of the 
- south MoPac (Loop 1) Expressway from Cesar Chavez Street to Slaughter Lane
-  in Austin\, Travis County\, Texas. The Mobility Authority and TxDOT launc
- hed the environmental study in 2013 to identify a mobility solution to thi
- s stretch of congested highway that improves mobility for drivers\, transi
- t riders\, bicyclists and pedestrians in a manner that promotes environmen
- tal stewardship and sustainability.\nIn compliance with Section 4(f) of th
- e Highway Act of 1966 and Chapter 26 Texas Parks and Wildlife Code\, the p
- ublic hearing will present information regarding the temporary constructio
- n easements need to build the project and review potential temporary impac
- ts to park and recreational properties adjacent to MoPac South.
+DESCRIPTION:Draft Environmental Assessment and virtual public hearing with 
+ an in-person option.\n\nTime and venue are not listed on TxDOT's schedule 
+ index — see the event page for details: https://www.txdot.gov/projects/h
+ earings-meetings/austin/2026/mopac-loop1-expressway-ea-030926.html\n\nPubl
+ ic comment deadline: 3 May 2026.
 CATEGORIES:hearing
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-stip-fy-2025-2028-feb-revision-20260310@calendars.changesaro
  undme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;VALUE=DATE:20260310
 SUMMARY:TxDOT: Statewide Transportation Improvement Program for FY 2025 - 2
  028 - February revision
@@ -524,35 +467,24 @@ X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-parmer-lane-032526-20260325@calendars.changesaroundme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;TZID=America/Chicago:20260325T160000
 DTEND;TZID=America/Chicago:20260325T190000
 SUMMARY:TxDOT: Parmer Lane (FM 734) Corridor Study Open House
 LOCATION:Austin
 URL:https://www.txdot.gov/projects/hearings-meetings/austin/2026/parmer-lan
  e-032526.html
-DESCRIPTION:In-person meeting\; materials also posted online\nPublic commen
- t deadline: 27 Apr 2026.\n\n—\n\nPurpose: The purpose of this open house
-  is to share community feedback received during the first two open houses\
- , gather input on proposed short-term and long-term improvement concepts\,
-  and share next steps. In-person open house attendees will be able to revi
- ew hard copies of project materials\, ask questions of CAMPO\, TxDOT staff
-  and consultants\, and leave written comments. Online participants will be
-  able to view the same information delivered at the in-person public meeti
- ngs. The virtual meeting will consist of a self-guided virtual meeting roo
- m with pre-recorded narration and will include both audio and visual compo
- nents as well as opportunities to provide comments.\n\nDescription: The Ca
- pital Area Metro Planning Organization (CAMPO) and TxDOT are working toget
- her to identify\, evaluate\, and recommend potential design concepts for P
- armer Lane (FM 734) from MoPac (SL 1) in North Austin to Whitestone Boulev
- ard (RM 1431) in Cedar Park.
+DESCRIPTION:virtual public meeting with in-person open house.\n\nTime and v
+ enue are not listed on TxDOT's schedule index — see the event page for d
+ etails: https://www.txdot.gov/projects/hearings-meetings/austin/2026/parme
+ r-lane-032526.html
 CATEGORIES:engagement
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-us281-at-sh71-interchange-040926-20260409@calendars.changesa
  roundme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;TZID=America/Chicago:20260409T173000
 DTEND;TZID=America/Chicago:20260409T193000
 SUMMARY:TxDOT: US 281 at SH 71 Interchange
@@ -580,7 +512,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-noa-fonsi-rm620-anderson-mill-road-20260414@calendars.change
  saroundme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;VALUE=DATE:20260414
 SUMMARY:TxDOT: Notice of Availability for Finding of No Significant Impact 
  (FONSI) - RM 620 / Anderson Mill Road from South of Foundation Road to Lit
@@ -608,7 +540,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-fm969-corridor-study-041526-20260415@calendars.changesaround
  me.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;TZID=America/Chicago:20260415T160000
 DTEND;TZID=America/Chicago:20260415T190000
 SUMMARY:TxDOT: FM 969 Corridor Study from SH 130 to SH 71
@@ -637,34 +569,23 @@ X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-fm973-042226-20260422@calendars.changesaroundme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;TZID=America/Chicago:20260422T160000
 DTEND;TZID=America/Chicago:20260422T190000
 SUMMARY:TxDOT: FM 973 - US 290 to Samsung Hwy
 LOCATION:Manor
 URL:https://www.txdot.gov/projects/hearings-meetings/austin/2026/fm973-0422
  26.html
-DESCRIPTION:In-person meeting\; materials also posted online\nPublic commen
- t deadline: 26 May 2026.\n\n—\n\nPurpose: The purpose of the public meet
- ing is to introduce the project and collect input from the community on en
- vironmental features and constraints and potential improvements. In-person
-  participants are welcome to come and go any time from 4 to 7 p.m. and wil
- l be able to review project materials\, ask questions of CAMPO and TxDOT s
- taff and/or consultants and leave written comments. The virtual open house
-  will consist of a self-guided virtual meeting room and will include both 
- audio and visual components. The virtual open house is not a live broadcas
- t event and can be accessed online starting at 4 p.m. on Wednesday\, April
-  22\, 2026 and will remain available for viewing at the web address indica
- ted below through Tuesday\, May 26\, 2026.\n\nDescription: The Capital Are
- a Metropolitan Planning Organization (CAMPO) and TxDOT are working togethe
- r to identify\, evaluate\, and propose improvements to FM 973 between US 2
- 90 and Samsung Highway in Travis and Williamson counties.
+DESCRIPTION:virtual public meeting with in-person option.\n\nTime and venue
+  are not listed on TxDOT's schedule index — see the event page for detai
+ ls: https://www.txdot.gov/projects/hearings-meetings/austin/2026/fm973-042
+ 226.html
 CATEGORIES:engagement
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-042326-20260423@calendars.changesaroundme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;VALUE=DATE:20260423
 SUMMARY:TxDOT: Public Transportation Advisory Committee - virtual public me
  eting - This meeting has been rescheduled to May 6\, 2026
@@ -694,7 +615,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-bicycle-and-pedestrian-advisory-committee-20260424T0930@calenda
  rs.changesaroundme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;TZID=America/Chicago:20260424T093000
 DTEND;TZID=America/Chicago:20260424T113000
 SUMMARY:TxDOT BPAC: Meeting
@@ -713,38 +634,24 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-2027-2030-rtip-austin-district-20260429@calendars.changesaro
  undme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;VALUE=DATE:20260429
 SUMMARY:TxDOT: 2027 - 2030 Rural Transportation Improvement Program Austin 
  District
 LOCATION:Virtual
 URL:https://www.txdot.gov/projects/hearings-meetings/austin/2026/2027-2030-
  rtip-austin-district.html
-DESCRIPTION:Virtual meeting - online materials only\; no fixed time\, mater
- ials post by 5pm (no in-person meeting)\nPublic comment deadline: 9 May 20
- 26.\n\n—\n\nPurpose: The purpose of this meeting is to provide informati
- on and receive comments on which transportation projects may be coming to 
- your area. The Austin District includes includes Blanco\, Gillespie\, Lee\
- , Llano and Mason Counties.\n\nDescription: The Rural TIP includes both gr
- ouped projects and individually listed projects that include added-capacit
- y projects and regionally significant projects to be funded outside of MPO
-  boundary and within a TxDOT district during the next four years\, includi
- ng those eligible for federal funding. This meeting offers the public an o
- pportunity to review and comment on the proposed priorities. The Rural TIP
-  is the first step on the road to producing a Statewide Transportation Imp
- rovement Program (STIP).\nThe Rural TIP meetings are being held pursuant t
- o Title 43\, Texas Administrative Code\, Section 16.102\, which calls for 
- an opportunity for public comment concerning the Rural TIP. A short prerec
- orded presentation\, exhibits explaining how the Rural TIP operates and pr
- ojects that are included in it will be available to view during the virtua
- l public meeting.
+DESCRIPTION:virtual public meeting.\n\nTime and venue are not listed on TxD
+ OT's schedule index — see the event page for details: https://www.txdot.
+ gov/projects/hearings-meetings/austin/2026/2027-2030-rtip-austin-district.
+ html\n\nPublic comment deadline: 9 May 2026.
 CATEGORIES:engagement
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-stip-may-2026-revision-20260505@calendars.changesaroundme.co
  m
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;VALUE=DATE:20260505
 SUMMARY:TxDOT: Statewide Transportation Improvement Program: May 2026 Revis
  ion
@@ -775,7 +682,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-public-transportation-advisory-committee-20260506T1000@calendar
  s.changesaroundme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;TZID=America/Chicago:20260506T100000
 DTEND;TZID=America/Chicago:20260506T120000
 SUMMARY:TxDOT PTAC: Meeting
@@ -791,7 +698,7 @@ X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-actionetwork-20260615@calendars.changesaroundme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;VALUE=DATE:20260615
 SUMMARY:TxDOT: Active Transportation Investment Opportunity Network (ACTION
  )
@@ -822,7 +729,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-statewide-transportation-improvement-program-fy-2027-2030-20
  260630@calendars.changesaroundme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;VALUE=DATE:20260630
 SUMMARY:TxDOT: Statewide Transportation Improvement Program - FY 2027-2030
 LOCATION:Virtual
@@ -846,7 +753,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-utp-virtual-public-meeting-20260701@calendars.changesaroundme.c
  om
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;TZID=America/Chicago:20260701T140000
 DTEND;TZID=America/Chicago:20260701T160000
 SUMMARY:TxDOT: UTP - Virtual public meeting
@@ -861,7 +768,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-utp-virtual-public-hearing-20260729@calendars.changesaroundme.c
  om
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;TZID=America/Chicago:20260729T140000
 DTEND;TZID=America/Chicago:20260729T160000
 SUMMARY:TxDOT: UTP - Virtual public hearing
@@ -876,7 +783,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-txdot-texas-triangle-multimodal-strategic-plan-webinar-20260730
  T1200@calendars.changesaroundme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;TZID=America/Chicago:20260730T120000
 DTEND;TZID=America/Chicago:20260730T140000
 SUMMARY:TxDOT: Texas Triangle Multimodal Strategic Plan Webinar
@@ -895,7 +802,7 @@ X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-us281-073026-20260730@calendars.changesaroundme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;TZID=America/Chicago:20260730T160000
 DTEND;TZID=America/Chicago:20260730T190000
 SUMMARY:TxDOT: US 281 Blanco County Project (Blanco)
@@ -917,7 +824,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-bicycle-and-pedestrian-advisory-committee-20260731T0930@calenda
  rs.changesaroundme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;TZID=America/Chicago:20260731T093000
 DTEND;TZID=America/Chicago:20260731T113000
 SUMMARY:TxDOT BPAC: Meeting
@@ -940,7 +847,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-txdot-i-14-extension-public-meeting-temple-20260805T1700@calend
  ars.changesaroundme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;TZID=America/Chicago:20260805T170000
 DTEND;TZID=America/Chicago:20260805T190000
 SUMMARY:TxDOT: I-14 Extension Public Meeting (Temple)
@@ -962,7 +869,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-public-hearing-public-transportation-20260806@calendars.chan
  gesaroundme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;TZID=America/Chicago:20260806T090000
 DTEND;TZID=America/Chicago:20260806T110000
 SUMMARY:TxDOT: Public Transportation Division Chapter 31 Amendments
@@ -970,22 +877,17 @@ LOCATION:Texas Department of Transportation\, 6230 E. Stassney Lane\, Duro
  Canyon Hearing Room\, Austin\, Texas 78744
 URL:https://www.txdot.gov/projects/hearings-meetings/public-transportation/
  2026/public-hearing-public-transportation.html
-DESCRIPTION:In-person public hearing\nPublic comment deadline: 5pm CT 10 Au
- g 2026.\n\n—\n\nPurpose: To receive public comment on amendments to Chap
- ter 31 concerning the policies and procedures followed by the department i
- n the administration of state and federal public transportation grant fund
- s.\n\nDescription: The changes update and streamline the department’s ru
- les\, addresses recommendations made by the Texas Regulatory Efficiency Of
- fice (TREO)\, removes obsolete program references\, and amends language go
- verning the allocation of funding for federal 5310 and 5339 grant programs
- .
+DESCRIPTION:in-person public hearing.\n\nTime and venue are not listed on T
+ xDOT's schedule index — see the event page for details: https://www.txdo
+ t.gov/projects/hearings-meetings/public-transportation/2026/public-hearing
+ -public-transportation.html
 CATEGORIES:hearing
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-txdot-i-14-extension-public-meeting-belton-20260806T1700@calend
  ars.changesaroundme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;TZID=America/Chicago:20260806T170000
 DTEND;TZID=America/Chicago:20260806T190000
 SUMMARY:TxDOT: I-14 Extension Public Meeting (Belton)
@@ -1005,7 +907,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-public-transportation-advisory-committee-20260813T1000@calendar
  s.changesaroundme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;TZID=America/Chicago:20260813T100000
 DTEND;TZID=America/Chicago:20260813T120000
 SUMMARY:TxDOT PTAC: Meeting
@@ -1021,7 +923,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-i35-georgetown-to-round-rock-081326-20260813@calendars.chang
  esaroundme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;TZID=America/Chicago:20260813T163000
 DTEND;TZID=America/Chicago:20260813T183000
 SUMMARY:TxDOT: I-35 Georgetown to Round Rock
@@ -1052,7 +954,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-us79-from-i35-to-fm1460-090126-20260901@calendars.changesaro
  undme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;VALUE=DATE:20260901
 SUMMARY:TxDOT: US 79 from I-35 to east of FM 1460
 LOCATION:Virtual
@@ -1079,7 +981,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-bicycle-and-pedestrian-advisory-committee-20261106T0930@calenda
  rs.changesaroundme.com
-DTSTAMP:20260903T150041Z
+DTSTAMP:20260903T171530Z
 DTSTART;TZID=America/Chicago:20261106T093000
 DTEND;TZID=America/Chicago:20261106T113000
 SUMMARY:TxDOT BPAC: Meeting
