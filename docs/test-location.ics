@@ -1,0 +1,66 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Changes Around Me//location test//EN
+X-WR-CALNAME:CAM location test
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cam-location-test-0@calendars.changesaroundme.com
+DTSTAMP:20260903T210000Z
+DTSTART;TZID=America/Chicago:20260904T090000
+DTEND;TZID=America/Chicago:20260904T100000
+SUMMARY:Location test A: comma string (current)
+LOCATION:Buda Public Library\, 405 Loop Street\, Buda\, TX\, 78610\, United
+  States
+DESCRIPTION:Temporary test event — which of A/B/C/D shows a map?
+END:VEVENT
+BEGIN:VEVENT
+UID:cam-location-test-1@calendars.changesaroundme.com
+DTSTAMP:20260903T210000Z
+DTSTART;TZID=America/Chicago:20260904T100000
+DTEND;TZID=America/Chicago:20260904T110000
+SUMMARY:Location test B: line break
+LOCATION:Buda Public Library\n405 Loop Street\, Buda\, TX\, 78610\, United 
+ States
+DESCRIPTION:Temporary test event — which of A/B/C/D shows a map?
+END:VEVENT
+BEGIN:VEVENT
+UID:cam-location-test-2@calendars.changesaroundme.com
+DTSTAMP:20260903T210000Z
+DTSTART;TZID=America/Chicago:20260904T110000
+DTEND;TZID=America/Chicago:20260904T120000
+SUMMARY:Location test C: line break + structured geo
+LOCATION:Buda Public Library\n405 Loop Street\, Buda\, TX\, 78610\, United 
+ States
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="405 Loop Street\, Buda\, T
+ X\, 78610\, United States";X-APPLE-RADIUS=100;X-TITLE="Buda Public Library
+ ":geo:30.0870174,-97.8389369
+DESCRIPTION:Temporary test event — which of A/B/C/D shows a map?
+END:VEVENT
+BEGIN:VEVENT
+UID:cam-location-test-3@calendars.changesaroundme.com
+DTSTAMP:20260903T210000Z
+DTSTART;TZID=America/Chicago:20260904T120000
+DTEND;TZID=America/Chicago:20260904T130000
+SUMMARY:Location test D: structured geo only (comma string)
+LOCATION:Buda Public Library\, 405 Loop Street\, Buda\, TX\, 78610\, United
+  States
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="405 Loop Street\, Buda\, T
+ X\, 78610\, United States";X-APPLE-RADIUS=100;X-TITLE="Buda Public Library
+ ":geo:30.0870174,-97.8389369
+DESCRIPTION:Temporary test event — which of A/B/C/D shows a map?
+END:VEVENT
+END:VCALENDAR
