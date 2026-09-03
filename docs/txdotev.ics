@@ -28,11 +28,10 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:txdotev-hm-stip-fy-2025-2028-august-revision-20250909@calendars.changes
  aroundme.com
-DTSTAMP:20260903T171530Z
+DTSTAMP:20260903T194148Z
 DTSTART;VALUE=DATE:20250909
 SUMMARY:TxDOT: Statewide Transportation Improvement Program for FY 2025 - 2
  028 - August Revision
-LOCATION:Virtual
 URL:https://www.txdot.gov/projects/hearings-meetings/statewide/2025/stip-fy
  -2025-2028-august-revision.html
 DESCRIPTION:Virtual meeting - online materials only\; no fixed time (no in-
@@ -67,7 +66,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-us290-from-sh130-to-sh95-092325-20250923@calendars.changesar
  oundme.com
-DTSTAMP:20260903T171530Z
+DTSTAMP:20260903T194148Z
 DTSTART;TZID=America/Chicago:20250923T173000
 DTEND;TZID=America/Chicago:20250923T190000
 SUMMARY:TxDOT: US 290 from SH 130 to SH 95 South (Elgin)
@@ -86,7 +85,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-us290-from-sh130-to-sh95-092325-20250925@calendars.changesar
  oundme.com
-DTSTAMP:20260903T171530Z
+DTSTAMP:20260903T194148Z
 DTSTART;TZID=America/Chicago:20250925T173000
 DTEND;TZID=America/Chicago:20250925T190000
 SUMMARY:TxDOT: US 290 from SH 130 to SH 95 South (Elgin)
@@ -105,7 +104,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-fm969-corridor-study-100225-20251002@calendars.changesaround
  me.com
-DTSTAMP:20260903T171530Z
+DTSTAMP:20260903T194148Z
 DTSTART;TZID=America/Chicago:20251002T160000
 DTEND;TZID=America/Chicago:20251002T190000
 SUMMARY:TxDOT: FM 969 Corridor Study (Elgin)
@@ -133,93 +132,92 @@ X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-102325-20251023@calendars.changesaroundme.com
-DTSTAMP:20260903T171530Z
-DTSTART;VALUE=DATE:20251023
+DTSTAMP:20260903T194148Z
+DTSTART;TZID=America/Chicago:20251023T100000
+DTEND;TZID=America/Chicago:20251023T103000
 SUMMARY:TxDOT: Public Transportation Advisory Committee
-LOCATION:Virtual
 URL:https://www.txdot.gov/projects/hearings-meetings/public-transportation/
  2025/102325.html
-DESCRIPTION:Virtual meeting - online materials only\; no fixed time\, mater
- ials post by 10am (no in-person meeting)\n\n—\n\nPurpose: TxDOT invites 
- the public to attend a public meeting of TxDOT’s Public Transportation A
- dvisory Committee (PTAC).\n\nDescription: PTAC is a nine-member legislativ
- ely appointed committee that advises the Texas Transportation Commission a
- bout public transportation-related matters. The committee’s meetings are
-  open to the public. The public can listen and view meeting presentations 
- electronically via Teams.\nEach PTAC meeting includes an opportunity for a
- nyone in attendance to address the committee. The Teams meeting\, however\
- , allows attendees to listen/view presentations only. Meeting documents\, 
- including agendas and printed transcripts of previous meetings\, are poste
- d on TxDOT’s PTAC webpage.\n\n—\n\nProject info: https://www.txdot.gov
- /about/advisory-committees/public-transportation-advisory-committee.html
+DESCRIPTION:Virtual meeting - online materials only\; materials post by 10a
+ m (no in-person meeting)\n\n—\n\nPurpose: TxDOT invites the public to at
+ tend a public meeting of TxDOT’s Public Transportation Advisory Committe
+ e (PTAC).\n\nDescription: PTAC is a nine-member legislatively appointed co
+ mmittee that advises the Texas Transportation Commission about public tran
+ sportation-related matters. The committee’s meetings are open to the pub
+ lic. The public can listen and view meeting presentations electronically v
+ ia Teams.\nEach PTAC meeting includes an opportunity for anyone in attenda
+ nce to address the committee. The Teams meeting\, however\, allows attende
+ es to listen/view presentations only. Meeting documents\, including agenda
+ s and printed transcripts of previous meetings\, are posted on TxDOT’s P
+ TAC webpage.\n\n—\n\nProject info: https://www.txdot.gov/about/advisory-
+ committees/public-transportation-advisory-committee.html
 CATEGORIES:engagement
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-102425-20251024@calendars.changesaroundme.com
-DTSTAMP:20260903T171530Z
-DTSTART;VALUE=DATE:20251024
+DTSTAMP:20260903T194148Z
+DTSTART;TZID=America/Chicago:20251024T093000
+DTEND;TZID=America/Chicago:20251024T100000
 SUMMARY:TxDOT: Bicycle and Pedestrian Advisory Committee Quarterly Meeting
-LOCATION:Virtual
 URL:https://www.txdot.gov/projects/hearings-meetings/public-transportation/
  2025/102425.html
-DESCRIPTION:Virtual meeting - online materials only\; no fixed time\, mater
- ials post by 9:30am (no in-person meeting)\n\n—\n\nPurpose: TxDOT invite
- s the public to attend an in person and virtual public meeting of TxDOT’
- s Bicycle and Pedestrian Advisory Committee.\n\nDescription: TxDOT's Bicyc
- le and Pedestrian Advisory Committee (BPAC) advises the Transportation Com
- mission on bicycle and pedestrian issues to help ensure the bicyclist’s 
- and pedestrian’s perspective will be considered in the development of de
- partmental policies affecting bicycle use and pedestrian activity\, includ
- ing the design\, construction\, and maintenance of roadways. The BPAC is c
- omprised of bicycle and pedestrian enthusiasts who represent various backg
- rounds and perspectives from across the state. Eleven members are selected
-  by the Commission to serve voluntary\, three-year terms.\nThe Committee's
-  meetings are open to the public. Meeting documents\, including agendas an
- d transcripts of previous meetings\, are posted on TxDOT’s BPAC webpage.
- \n\n—\n\nProject info: https://www.txdot.gov/about/advisory-committees/b
- icycle-pedestrian-advisory-committee.html
+DESCRIPTION:Virtual meeting - online materials only\; materials post by 9:3
+ 0am (no in-person meeting)\n\n—\n\nPurpose: TxDOT invites the public to 
+ attend an in person and virtual public meeting of TxDOT’s Bicycle and Pe
+ destrian Advisory Committee.\n\nDescription: TxDOT's Bicycle and Pedestria
+ n Advisory Committee (BPAC) advises the Transportation Commission on bicyc
+ le and pedestrian issues to help ensure the bicyclist’s and pedestrian
+ ’s perspective will be considered in the development of departmental pol
+ icies affecting bicycle use and pedestrian activity\, including the design
+ \, construction\, and maintenance of roadways. The BPAC is comprised of bi
+ cycle and pedestrian enthusiasts who represent various backgrounds and per
+ spectives from across the state. Eleven members are selected by the Commis
+ sion to serve voluntary\, three-year terms.\nThe Committee's meetings are 
+ open to the public. Meeting documents\, including agendas and transcripts 
+ of previous meetings\, are posted on TxDOT’s BPAC webpage.\n\n—\n\nPro
+ ject info: https://www.txdot.gov/about/advisory-committees/bicycle-pedestr
+ ian-advisory-committee.html
 CATEGORIES:engagement
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-texas-statewide-multimodal-transit-plan-102025-20251113@cale
  ndars.changesaroundme.com
-DTSTAMP:20260903T171530Z
+DTSTAMP:20260903T194148Z
 DTSTART;TZID=America/Chicago:20251113T173000
 DTEND;TZID=America/Chicago:20251113T193000
 SUMMARY:TxDOT: Texas Statewide Multimodal Transit Plan virtual public meeti
  ng with in-person options
-LOCATION:Virtual
 URL:https://www.txdot.gov/projects/hearings-meetings/public-transportation/
  2025/texas-statewide-multimodal-transit-plan-102025.html
-DESCRIPTION:Virtual meeting - online materials only\; no fixed time\, mater
- ials post by 5pm (no in-person meeting)\nPublic comment deadline: 20 Nov 2
- 025.\n\n—\n\nPurpose: As our state’s population and economy continue t
- o grow\, TxDOT has been developing the Statewide Multimodal Transit Plan (
-  Texas SMTP 2050 ) to help Texans get to where they want to go more effect
- ively\, efficiently and safely while meeting the needs of our fast-growing
-  state and contributing to a next-generation transportation network. With 
- input from stakeholders and communities across the state\, this plan prese
- nts a coordinated\, unified vision for multimodal transportation prioritie
- s through 2050 and beyond. The SMTP includes transit such as buses\, train
- s\, ferries\, and on-demand rideshare. TxDOT is hosting a series of public
-  meetings and seeking public feedback on the development of the SMTP.\n\nD
- escription: Between Oct. 22 and Nov. 13\, TxDOT is hosting seven public me
- etings across the state to provide the public information about the Statew
- ide Multimodal Transit Plan ( Texas SMTP 2050)\, ask the technical team qu
- estions about the draft plan\, and provide feedback on the initial priorit
- y steps proposed for implementation.\n\n—\n\nProject info: https://www.t
- xdot.gov/projects/projects-studies/statewide/statewide-multimodal-transit-
- plan.html\n\nMore: https://www.txdot.gov/projects/projects-studies/statewi
- de/statewide-multimodal-transit-plan.html
+DESCRIPTION:Virtual meeting - online materials\; materials post by 5pm (no 
+ in-person meeting)\nPublic comment deadline: 20 Nov 2025.\n\n—\n\nPurpos
+ e: As our state’s population and economy continue to grow\, TxDOT has be
+ en developing the Statewide Multimodal Transit Plan ( Texas SMTP 2050 ) to
+  help Texans get to where they want to go more effectively\, efficiently a
+ nd safely while meeting the needs of our fast-growing state and contributi
+ ng to a next-generation transportation network. With input from stakeholde
+ rs and communities across the state\, this plan presents a coordinated\, u
+ nified vision for multimodal transportation priorities through 2050 and be
+ yond. The SMTP includes transit such as buses\, trains\, ferries\, and on-
+ demand rideshare. TxDOT is hosting a series of public meetings and seeking
+  public feedback on the development of the SMTP.\n\nDescription: Between O
+ ct. 22 and Nov. 13\, TxDOT is hosting seven public meetings across the sta
+ te to provide the public information about the Statewide Multimodal Transi
+ t Plan ( Texas SMTP 2050)\, ask the technical team questions about the dra
+ ft plan\, and provide feedback on the initial priority steps proposed for 
+ implementation.\n\n—\n\nProject info: https://www.txdot.gov/projects/pro
+ jects-studies/statewide/statewide-multimodal-transit-plan.html\n\nMore: ht
+ tps://www.txdot.gov/projects/projects-studies/statewide/statewide-multimod
+ al-transit-plan.html
 CATEGORIES:engagement
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-us281-blanco-relief-route-study-111825-20251118@calendars.ch
  angesaroundme.com
-DTSTAMP:20260903T171530Z
+DTSTAMP:20260903T194148Z
 DTSTART;TZID=America/Chicago:20251118T160000
 DTEND;TZID=America/Chicago:20251118T190000
 SUMMARY:TxDOT: US 281 Blanco Relief Route Study (Blanco)
@@ -242,7 +240,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-us281-blanco-county-project-111825-20251118@calendars.change
  saroundme.com
-DTSTAMP:20260903T171530Z
+DTSTAMP:20260903T194148Z
 DTSTART;TZID=America/Chicago:20251118T160000
 DTEND;TZID=America/Chicago:20251118T190000
 SUMMARY:TxDOT: US 281 Blanco County Project (Blanco)
@@ -259,11 +257,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-stip-fy-2025-2028-nov-revision-20251216@calendars.changesaro
  undme.com
-DTSTAMP:20260903T171530Z
+DTSTAMP:20260903T194148Z
 DTSTART;VALUE=DATE:20251216
 SUMMARY:TxDOT: Statewide Transportation Improvement Program for FY 2025 - 2
  028 - November revision
-LOCATION:Virtual
 URL:https://www.txdot.gov/projects/hearings-meetings/statewide/2025/stip-fy
  -2025-2028-nov-revision.html
 DESCRIPTION:Virtual meeting - online materials only\; no fixed time (no in-
@@ -297,43 +294,43 @@ X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-121925-20251219@calendars.changesaroundme.com
-DTSTAMP:20260903T171530Z
-DTSTART;VALUE=DATE:20251219
+DTSTAMP:20260903T194148Z
+DTSTART;TZID=America/Chicago:20251219T170000
+DTEND;TZID=America/Chicago:20251219T173000
 SUMMARY:TxDOT: Texas-Mexico Border Transportation Master Plan (BTMP) Update
-LOCATION:Virtual
 URL:https://www.txdot.gov/projects/hearings-meetings/transportation-plannin
  g/2025/121925.html
-DESCRIPTION:Virtual meeting - online materials only\; no fixed time\, mater
- ials post by 5pm (no in-person meeting)\nPublic comment deadline: 30 Jan 2
- 026.\n\n—\n\nPurpose: Transportation infrastructure plays a vital role i
- n facilitating the nation’s trade with Mexico. As the population and eco
- nomy in the Texas-Mexico border region continue to grow\, improving the ex
- isting multimodal infrastructure is critical to reduce crossing delays\, a
- lleviate traffic congestion\, facilitate international trade\, lessen envi
- ronmental impacts\, and enhance the quality of life for residents in the b
- order region. The purpose of this meeting is to provide the public with an
-  opportunity to learn about the Texas-Mexico Border Master Plan and provid
- e input on what is important to those who live and work in the border regi
- on and what improvements to the transportation network would be beneficial
- .\n\nDescription: The BTMP is a binational\, comprehensive\, multimodal lo
- ng-range plan that identifies current and future transportation needs\, ch
- allenges\, opportunities and strategies for moving people and goods safely
-  and efficiently across the Texas-Mexico border\, the border regions and b
- eyond. The BTMP serves as the foundation for TxDOT’s border-planning eff
- orts\, developed in collaboration with U.S. and Mexican stakeholders and t
- he public after extensive technical analysis. The BTMP Update will provide
-  strategic recommendations to enhance mobility\, safety\, trade and resili
- ency along the 1\,254-mile Texas-Mexico border\, which includes 34 border 
- crossings.\n\n—\n\nProject info: https://www.txdot.gov/projects/planning
- /international-trade-border-planning/btmp.html\n\nMore: https://www.txdot.
- gov/projects/planning/international-trade-border-planning/btmp.html
+DESCRIPTION:Virtual meeting - online materials only\; materials post by 5pm
+  (no in-person meeting)\nPublic comment deadline: 30 Jan 2026.\n\n—\n\nP
+ urpose: Transportation infrastructure plays a vital role in facilitating t
+ he nation’s trade with Mexico. As the population and economy in the Texa
+ s-Mexico border region continue to grow\, improving the existing multimoda
+ l infrastructure is critical to reduce crossing delays\, alleviate traffic
+  congestion\, facilitate international trade\, lessen environmental impact
+ s\, and enhance the quality of life for residents in the border region. Th
+ e purpose of this meeting is to provide the public with an opportunity to 
+ learn about the Texas-Mexico Border Master Plan and provide input on what 
+ is important to those who live and work in the border region and what impr
+ ovements to the transportation network would be beneficial.\n\nDescription
+ : The BTMP is a binational\, comprehensive\, multimodal long-range plan th
+ at identifies current and future transportation needs\, challenges\, oppor
+ tunities and strategies for moving people and goods safely and efficiently
+  across the Texas-Mexico border\, the border regions and beyond. The BTMP 
+ serves as the foundation for TxDOT’s border-planning efforts\, developed
+  in collaboration with U.S. and Mexican stakeholders and the public after 
+ extensive technical analysis. The BTMP Update will provide strategic recom
+ mendations to enhance mobility\, safety\, trade and resiliency along the 1
+ \,254-mile Texas-Mexico border\, which includes 34 border crossings.\n\n
+ —\n\nProject info: https://www.txdot.gov/projects/planning/international
+ -trade-border-planning/btmp.html\n\nMore: https://www.txdot.gov/projects/p
+ lanning/international-trade-border-planning/btmp.html
 CATEGORIES:engagement
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-public-transportation-advisory-committee-20260122T1000@calendar
  s.changesaroundme.com
-DTSTAMP:20260903T171530Z
+DTSTAMP:20260903T194148Z
 DTSTART;TZID=America/Chicago:20260122T100000
 DTEND;TZID=America/Chicago:20260122T120000
 SUMMARY:TxDOT PTAC: Meeting
@@ -349,7 +346,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-bicycle-and-pedestrian-advisory-committee-20260130T0930@calenda
  rs.changesaroundme.com
-DTSTAMP:20260903T171530Z
+DTSTAMP:20260903T194148Z
 DTSTART;TZID=America/Chicago:20260130T093000
 DTEND;TZID=America/Chicago:20260130T113000
 SUMMARY:TxDOT BPAC: Meeting
@@ -365,7 +362,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-public-transportation-advisory-committee-20260209T1000@calendar
  s.changesaroundme.com
-DTSTAMP:20260903T171530Z
+DTSTAMP:20260903T194148Z
 DTSTART;TZID=America/Chicago:20260209T100000
 DTEND;TZID=America/Chicago:20260209T120000
 SUMMARY:TxDOT PTAC: Meeting
@@ -381,7 +378,7 @@ X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-us77-021926-20260219@calendars.changesaroundme.com
-DTSTAMP:20260903T171530Z
+DTSTAMP:20260903T194148Z
 DTSTART;TZID=America/Chicago:20260219T163000
 DTEND;TZID=America/Chicago:20260219T183000
 SUMMARY:TxDOT: US 77 from FM 2440 to SH 21
@@ -419,7 +416,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-mopac-loop1-expressway-ea-030926-20260309@calendars.changesa
  roundme.com
-DTSTAMP:20260903T171530Z
+DTSTAMP:20260903T194148Z
 DTSTART;VALUE=DATE:20260309
 SUMMARY:TxDOT: MoPac (Loop 1) Expressway from Cesar Chavez Street to Slaugh
  ter Lane
@@ -437,11 +434,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-stip-fy-2025-2028-feb-revision-20260310@calendars.changesaro
  undme.com
-DTSTAMP:20260903T171530Z
+DTSTAMP:20260903T194148Z
 DTSTART;VALUE=DATE:20260310
 SUMMARY:TxDOT: Statewide Transportation Improvement Program for FY 2025 - 2
  028 - February revision
-LOCATION:Virtual
 URL:https://www.txdot.gov/projects/hearings-meetings/statewide/2026/stip-fy
  -2025-2028-feb-revision.html
 DESCRIPTION:Virtual meeting - online materials only\; no fixed time (no in-
@@ -467,7 +463,7 @@ X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-parmer-lane-032526-20260325@calendars.changesaroundme.com
-DTSTAMP:20260903T171530Z
+DTSTAMP:20260903T194148Z
 DTSTART;TZID=America/Chicago:20260325T160000
 DTEND;TZID=America/Chicago:20260325T190000
 SUMMARY:TxDOT: Parmer Lane (FM 734) Corridor Study Open House
@@ -484,7 +480,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-us281-at-sh71-interchange-040926-20260409@calendars.changesa
  roundme.com
-DTSTAMP:20260903T171530Z
+DTSTAMP:20260903T194148Z
 DTSTART;TZID=America/Chicago:20260409T173000
 DTEND;TZID=America/Chicago:20260409T193000
 SUMMARY:TxDOT: US 281 at SH 71 Interchange
@@ -512,7 +508,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-noa-fonsi-rm620-anderson-mill-road-20260414@calendars.change
  saroundme.com
-DTSTAMP:20260903T171530Z
+DTSTAMP:20260903T194148Z
 DTSTART;VALUE=DATE:20260414
 SUMMARY:TxDOT: Notice of Availability for Finding of No Significant Impact 
  (FONSI) - RM 620 / Anderson Mill Road from South of Foundation Road to Lit
@@ -540,7 +536,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-fm969-corridor-study-041526-20260415@calendars.changesaround
  me.com
-DTSTAMP:20260903T171530Z
+DTSTAMP:20260903T194148Z
 DTSTART;TZID=America/Chicago:20260415T160000
 DTEND;TZID=America/Chicago:20260415T190000
 SUMMARY:TxDOT: FM 969 Corridor Study from SH 130 to SH 71
@@ -569,7 +565,7 @@ X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-fm973-042226-20260422@calendars.changesaroundme.com
-DTSTAMP:20260903T171530Z
+DTSTAMP:20260903T194148Z
 DTSTART;TZID=America/Chicago:20260422T160000
 DTEND;TZID=America/Chicago:20260422T190000
 SUMMARY:TxDOT: FM 973 - US 290 to Samsung Hwy
@@ -585,37 +581,37 @@ X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-042326-20260423@calendars.changesaroundme.com
-DTSTAMP:20260903T171530Z
-DTSTART;VALUE=DATE:20260423
+DTSTAMP:20260903T194148Z
+DTSTART;TZID=America/Chicago:20260423T100000
+DTEND;TZID=America/Chicago:20260423T103000
 SUMMARY:TxDOT: Public Transportation Advisory Committee - virtual public me
  eting - This meeting has been rescheduled to May 6\, 2026
-LOCATION:Virtual
 URL:https://www.txdot.gov/projects/hearings-meetings/public-transportation/
  2026/042326.html
-DESCRIPTION:Virtual meeting - online materials only\; no fixed time\, mater
- ials post by 10am (no in-person meeting)\n\n—\n\nPurpose: TxDOT invites 
- the public to attend a public meeting of TxDOT’s Public Transportation A
- dvisory Committee (PTAC).\n\nDescription: PTAC is a nine-member legislativ
- ely appointed committee that advises the Texas Transportation Commission a
- bout public transportation-related matters. The committee’s meetings are
-  open to the public. The public can listen and view meeting presentations 
- electronically via Teams .\nEach PTAC meeting includes an opportunity for 
- anyone in attendance to address the committee. The Teams meeting\, however
- \, allows attendees to listen/view presentations only. Meeting documents\,
-  including agendas and printed transcripts of previous meetings\, are post
- ed on TxDOT’s PTAC webpage.\n\n—\n\nProject info: https://teams.micros
- oft.com/dl/launcher/launcher.html?url=%2F_%23%2Fmeet%2F2716658035083%3Fp%3
- Dq5mnWAwTPIbMgEcG5O%26anon%3Dtrue&type=meet&deeplinkId=9b98563b-508c-4eb3-
- 9c31-6fe149be357b&directDl=true&msLaunch=true&enableMobilePage=true&suppre
- ssPrompt=true\n\nMore: https://www.txdot.gov/about/advisory-committees/pub
- lic-transportation-advisory-committee.html
+DESCRIPTION:Virtual meeting - online materials only\; materials post by 10a
+ m (no in-person meeting)\n\n—\n\nPurpose: TxDOT invites the public to at
+ tend a public meeting of TxDOT’s Public Transportation Advisory Committe
+ e (PTAC).\n\nDescription: PTAC is a nine-member legislatively appointed co
+ mmittee that advises the Texas Transportation Commission about public tran
+ sportation-related matters. The committee’s meetings are open to the pub
+ lic. The public can listen and view meeting presentations electronically v
+ ia Teams .\nEach PTAC meeting includes an opportunity for anyone in attend
+ ance to address the committee. The Teams meeting\, however\, allows attend
+ ees to listen/view presentations only. Meeting documents\, including agend
+ as and printed transcripts of previous meetings\, are posted on TxDOT’s 
+ PTAC webpage.\n\n—\n\nProject info: https://teams.microsoft.com/dl/launc
+ her/launcher.html?url=%2F_%23%2Fmeet%2F2716658035083%3Fp%3Dq5mnWAwTPIbMgEc
+ G5O%26anon%3Dtrue&type=meet&deeplinkId=9b98563b-508c-4eb3-9c31-6fe149be357
+ b&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true\n\
+ nMore: https://www.txdot.gov/about/advisory-committees/public-transportati
+ on-advisory-committee.html
 CATEGORIES:engagement
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-bicycle-and-pedestrian-advisory-committee-20260424T0930@calenda
  rs.changesaroundme.com
-DTSTAMP:20260903T171530Z
+DTSTAMP:20260903T194148Z
 DTSTART;TZID=America/Chicago:20260424T093000
 DTEND;TZID=America/Chicago:20260424T113000
 SUMMARY:TxDOT BPAC: Meeting
@@ -634,11 +630,11 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-2027-2030-rtip-austin-district-20260429@calendars.changesaro
  undme.com
-DTSTAMP:20260903T171530Z
-DTSTART;VALUE=DATE:20260429
+DTSTAMP:20260903T194148Z
+DTSTART;TZID=America/Chicago:20260429T170000
+DTEND;TZID=America/Chicago:20260429T173000
 SUMMARY:TxDOT: 2027 - 2030 Rural Transportation Improvement Program Austin 
  District
-LOCATION:Virtual
 URL:https://www.txdot.gov/projects/hearings-meetings/austin/2026/2027-2030-
  rtip-austin-district.html
 DESCRIPTION:virtual public meeting.\n\nTime and venue are not listed on TxD
@@ -651,11 +647,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-stip-may-2026-revision-20260505@calendars.changesaroundme.co
  m
-DTSTAMP:20260903T171530Z
+DTSTAMP:20260903T194148Z
 DTSTART;VALUE=DATE:20260505
 SUMMARY:TxDOT: Statewide Transportation Improvement Program: May 2026 Revis
  ion
-LOCATION:Virtual
 URL:https://www.txdot.gov/projects/hearings-meetings/statewide/2026/stip-ma
  y-2026-revision.html
 DESCRIPTION:Virtual meeting - online materials only\; no fixed time (no in-
@@ -682,7 +677,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-public-transportation-advisory-committee-20260506T1000@calendar
  s.changesaroundme.com
-DTSTAMP:20260903T171530Z
+DTSTAMP:20260903T194148Z
 DTSTART;TZID=America/Chicago:20260506T100000
 DTEND;TZID=America/Chicago:20260506T120000
 SUMMARY:TxDOT PTAC: Meeting
@@ -698,11 +693,10 @@ X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-actionetwork-20260615@calendars.changesaroundme.com
-DTSTAMP:20260903T171530Z
+DTSTAMP:20260903T194148Z
 DTSTART;VALUE=DATE:20260615
 SUMMARY:TxDOT: Active Transportation Investment Opportunity Network (ACTION
  )
-LOCATION:Virtual
 URL:https://www.txdot.gov/projects/hearings-meetings/public-transportation/
  2026/actionetwork.html
 DESCRIPTION:Virtual meeting - online materials only\; no fixed time (no in-
@@ -729,10 +723,9 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-statewide-transportation-improvement-program-fy-2027-2030-20
  260630@calendars.changesaroundme.com
-DTSTAMP:20260903T171530Z
+DTSTAMP:20260903T194148Z
 DTSTART;VALUE=DATE:20260630
 SUMMARY:TxDOT: Statewide Transportation Improvement Program - FY 2027-2030
-LOCATION:Virtual
 URL:https://www.txdot.gov/projects/hearings-meetings/transportation-plannin
  g/2026/statewide-transportation-improvement-program-fy-2027-2030.html
 DESCRIPTION:Virtual meeting - online materials only\; no fixed time (no in-
@@ -753,7 +746,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-utp-virtual-public-meeting-20260701@calendars.changesaroundme.c
  om
-DTSTAMP:20260903T171530Z
+DTSTAMP:20260903T194148Z
 DTSTART;TZID=America/Chicago:20260701T140000
 DTEND;TZID=America/Chicago:20260701T160000
 SUMMARY:TxDOT: UTP - Virtual public meeting
@@ -768,7 +761,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-utp-virtual-public-hearing-20260729@calendars.changesaroundme.c
  om
-DTSTAMP:20260903T171530Z
+DTSTAMP:20260903T194148Z
 DTSTART;TZID=America/Chicago:20260729T140000
 DTEND;TZID=America/Chicago:20260729T160000
 SUMMARY:TxDOT: UTP - Virtual public hearing
@@ -783,7 +776,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-txdot-texas-triangle-multimodal-strategic-plan-webinar-20260730
  T1200@calendars.changesaroundme.com
-DTSTAMP:20260903T171530Z
+DTSTAMP:20260903T194148Z
 DTSTART;TZID=America/Chicago:20260730T120000
 DTEND;TZID=America/Chicago:20260730T140000
 SUMMARY:TxDOT: Texas Triangle Multimodal Strategic Plan Webinar
@@ -802,7 +795,7 @@ X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-us281-073026-20260730@calendars.changesaroundme.com
-DTSTAMP:20260903T171530Z
+DTSTAMP:20260903T194148Z
 DTSTART;TZID=America/Chicago:20260730T160000
 DTEND;TZID=America/Chicago:20260730T190000
 SUMMARY:TxDOT: US 281 Blanco County Project (Blanco)
@@ -824,7 +817,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-bicycle-and-pedestrian-advisory-committee-20260731T0930@calenda
  rs.changesaroundme.com
-DTSTAMP:20260903T171530Z
+DTSTAMP:20260903T194148Z
 DTSTART;TZID=America/Chicago:20260731T093000
 DTEND;TZID=America/Chicago:20260731T113000
 SUMMARY:TxDOT BPAC: Meeting
@@ -847,7 +840,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-txdot-i-14-extension-public-meeting-temple-20260805T1700@calend
  ars.changesaroundme.com
-DTSTAMP:20260903T171530Z
+DTSTAMP:20260903T194148Z
 DTSTART;TZID=America/Chicago:20260805T170000
 DTEND;TZID=America/Chicago:20260805T190000
 SUMMARY:TxDOT: I-14 Extension Public Meeting (Temple)
@@ -869,7 +862,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-public-hearing-public-transportation-20260806@calendars.chan
  gesaroundme.com
-DTSTAMP:20260903T171530Z
+DTSTAMP:20260903T194148Z
 DTSTART;TZID=America/Chicago:20260806T090000
 DTEND;TZID=America/Chicago:20260806T110000
 SUMMARY:TxDOT: Public Transportation Division Chapter 31 Amendments
@@ -887,7 +880,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-txdot-i-14-extension-public-meeting-belton-20260806T1700@calend
  ars.changesaroundme.com
-DTSTAMP:20260903T171530Z
+DTSTAMP:20260903T194148Z
 DTSTART;TZID=America/Chicago:20260806T170000
 DTEND;TZID=America/Chicago:20260806T190000
 SUMMARY:TxDOT: I-14 Extension Public Meeting (Belton)
@@ -907,7 +900,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-public-transportation-advisory-committee-20260813T1000@calendar
  s.changesaroundme.com
-DTSTAMP:20260903T171530Z
+DTSTAMP:20260903T194148Z
 DTSTART;TZID=America/Chicago:20260813T100000
 DTEND;TZID=America/Chicago:20260813T120000
 SUMMARY:TxDOT PTAC: Meeting
@@ -923,7 +916,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-i35-georgetown-to-round-rock-081326-20260813@calendars.chang
  esaroundme.com
-DTSTAMP:20260903T171530Z
+DTSTAMP:20260903T194148Z
 DTSTART;TZID=America/Chicago:20260813T163000
 DTEND;TZID=America/Chicago:20260813T183000
 SUMMARY:TxDOT: I-35 Georgetown to Round Rock
@@ -954,34 +947,33 @@ END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-hm-us79-from-i35-to-fm1460-090126-20260901@calendars.changesaro
  undme.com
-DTSTAMP:20260903T171530Z
-DTSTART;VALUE=DATE:20260901
+DTSTAMP:20260903T194148Z
+DTSTART;TZID=America/Chicago:20260901T173000
+DTEND;TZID=America/Chicago:20260901T180000
 SUMMARY:TxDOT: US 79 from I-35 to east of FM 1460
-LOCATION:Virtual
 URL:https://www.txdot.gov/projects/hearings-meetings/austin/2026/us79-from-
  i35-to-fm1460-090126.html
-DESCRIPTION:Virtual meeting - pre-recorded video presentation only\; no fix
- ed time\, materials post by 5:30pm (no in-person meeting)\nPublic comment 
- deadline: 16 Sep 2026.\n\n—\n\nPurpose: TxDOT and the city of Round Rock
-  are proposing improvements to US 79 from I-35 to east of A.W. Grimes Boul
- evard in Williamson County\, Texas. This notice advises the public that Tx
- DOT will be hosting a virtual public meeting.\n\nDescription: The proposed
-  improvements include widening the existing US 79 highway to add a third t
- ravel lane in each direction with a raised median and selected median brea
- ks\, constructing intersection improvements featuring grade separations at
-  Mays Street and at A.W. Grimes Boulevard\, reconfiguring the US 79 and I-
- 35 intersection\, modifying driveways and access points to improve safety 
- and traffic flow\, and installing shared-use paths on both sides of US 79 
- to enhance pedestrian and bicycle accommodations.\n\n—\n\nProject info: 
- https://www.txdot.gov/projects/projects-studies/austin/us79-i35-east-fm146
- 0.html
+DESCRIPTION:Virtual meeting - pre-recorded video presentation only\; materi
+ als post by 5:30pm (no in-person meeting)\nPublic comment deadline: 16 Sep
+  2026.\n\n—\n\nPurpose: TxDOT and the city of Round Rock are proposing i
+ mprovements to US 79 from I-35 to east of A.W. Grimes Boulevard in William
+ son County\, Texas. This notice advises the public that TxDOT will be host
+ ing a virtual public meeting.\n\nDescription: The proposed improvements in
+ clude widening the existing US 79 highway to add a third travel lane in ea
+ ch direction with a raised median and selected median breaks\, constructin
+ g intersection improvements featuring grade separations at Mays Street and
+  at A.W. Grimes Boulevard\, reconfiguring the US 79 and I-35 intersection\
+ , modifying driveways and access points to improve safety and traffic flow
+ \, and installing shared-use paths on both sides of US 79 to enhance pedes
+ trian and bicycle accommodations.\n\n—\n\nProject info: https://www.txdo
+ t.gov/projects/projects-studies/austin/us79-i35-east-fm1460.html
 CATEGORIES:engagement
 X-CAM-ORG:txdotev
 END:VEVENT
 BEGIN:VEVENT
 UID:txdotev-bicycle-and-pedestrian-advisory-committee-20261106T0930@calenda
  rs.changesaroundme.com
-DTSTAMP:20260903T171530Z
+DTSTAMP:20260903T194148Z
 DTSTART;TZID=America/Chicago:20261106T093000
 DTEND;TZID=America/Chicago:20261106T113000
 SUMMARY:TxDOT BPAC: Meeting
