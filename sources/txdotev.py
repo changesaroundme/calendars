@@ -96,6 +96,7 @@ MODALITY_RE = re.compile(
 INDEX_DATE_RE = re.compile(r"^\s*(\d{1,2})/(\d{1,2})/(\d{2})\s*$")
 
 EVENT_LENGTH = timedelta(hours=2)
+VIRTUAL_SLOT = timedelta(minutes=30)  # virtual-only "materials post by" events
 STASSNEY = "TxDOT Stassney Campus Auditorium, 6230 E. Stassney Ln., Austin, TX 78744"
 
 NUM_DATE_RE = re.compile(r"(\d{1,2})/(\d{1,2})/(\d{4})")
@@ -447,15 +448,28 @@ def enrich_index_event(ev: Event, html: str) -> None:
         if not ev.description.startswith("Time and venue") else ""
     if virtual is not None and inperson is None:
         # No live session to show up for: say so, and when the materials
-        # land. The event stays all-day on purpose.
+        # land. When the page gives a posting time the event sits there as
+        # a half-hour slot (Ian, 2026-09-03: an all-day bar for "materials
+        # post by 5:30pm" buried the one useful time); with no time at all
+        # it stays all-day. No location: the bare word "Virtual" told
+        # nobody anything the URL didn't — a virtual-only event has none.
         vt = _cell_text(virtual)
         posted = _time_of(vt)
         kind = ("pre-recorded video presentation" if "pre-recorded" in vt.lower()
                 else "online materials")
-        type_line = (f"Virtual meeting - {kind} only; no fixed time"
-                     + (f", materials post by {_clock(*posted)}" if posted else "")
-                     + " (no in-person meeting)")
-        ev.location = "Virtual"
+        if timed:  # page also gave a live time range: keep it
+            type_line = (f"Virtual meeting - {kind}"
+                         + (f"; materials post by {_clock(*posted)}" if posted else "")
+                         + " (no in-person meeting)")
+        elif posted:
+            ev.start = datetime(day.year, day.month, day.day, *posted)
+            ev.end = ev.start + VIRTUAL_SLOT
+            type_line = (f"Virtual meeting - {kind} only; materials post by "
+                         f"{_clock(*posted)} (no in-person meeting)")
+        else:
+            type_line = (f"Virtual meeting - {kind} only; no fixed time "
+                         "(no in-person meeting)")
+        ev.location = ""
     elif inperson is not None and virtual is not None:
         type_line = "In-person meeting; materials also posted online"
     elif inperson is not None:
@@ -829,10 +843,25 @@ def fetch_offline() -> list[Event]:
         "https://www.txdot.gov/projects/hearings-meetings/austin/2026/"
         "i35-georgetown-to-round-rock-081326.html":
             FIXTURES / "txdotev_hm_i35_georgetown.html",
+        # Virtual-only (no In-person details row): half-hour slot at the
+        # materials posting time, no location.
+        "https://www.txdot.gov/projects/hearings-meetings/austin/2026/"
+        "us79-from-i35-to-fm1460-090126.html": FIXTURES / "txdotev_hm_us79.html",
     }
     enrich_index_events(
         index_events,
         lambda u: detail_fixtures[u].read_text() if u in detail_fixtures else None,
     )
+    us79 = [e for e in index_events if "us79" in e.stable_uid()]
+    assert len(us79) == 1, us79
+    us79 = us79[0]
+    assert us79.start == datetime(2026, 9, 1, 17, 30), us79.start
+    assert us79.end == datetime(2026, 9, 1, 18, 0), us79.end
+    assert not us79.location, us79.location
+    assert us79.description.startswith(
+        "Virtual meeting - pre-recorded video presentation only; materials "
+        "post by 5:30pm (no in-person meeting)\nPublic comment deadline: "
+        "16 Sep 2026."), us79.description
+    assert "no fixed time" not in us79.description
     events.extend(index_events)
     return events

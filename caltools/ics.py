@@ -83,11 +83,13 @@ def event_block(ev: Event, dtstamp: str) -> list[str]:
     lines.append(_dt(ev.start, "DTSTART"))
     end = ev.end
     if isinstance(ev.start, datetime):
-        # Minimum one-hour block for timed events (Ian, 2026-08-09): some
-        # source feeds ship DTEND == DTSTART (ATP board meetings), which
-        # calendar apps render as a zero-height sliver. Publication-layer
+        # Minimum block for timed events (Ian, 2026-08-09): some source
+        # feeds ship DTEND == DTSTART (ATP board meetings), which calendar
+        # apps render as a zero-height sliver. Was one hour; lowered to 30
+        # minutes on 2026-09-03 so TxDOT virtual-only "materials post by
+        # 5:30pm" events can sit as a half-hour slot. Publication-layer
         # only — stored events keep whatever the source said.
-        floor = ev.start + timedelta(hours=1)
+        floor = ev.start + timedelta(minutes=30)
         if end is None or (isinstance(end, datetime) and end < floor):
             end = floor
     if end is not None:
