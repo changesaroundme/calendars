@@ -234,8 +234,13 @@ def monotone_past_merge(events: list[Event], snap: list[Event],
             continue
         kept = False
         old_d, new_d = old.description or "", ev.description or ""
-        if len(old_d) > len(new_d) or ("Summary Agenda" in old_d
-                                       and "Summary Agenda" not in new_d):
+        if (len(old_d) > len(new_d)
+                or ("Summary Agenda" in old_d and "Summary Agenda" not in new_d)
+                or _links(old_d) > _links(new_d)):
+            # Third clause: a link-only body ("Agenda: <url>", 70 chars)
+            # must beat austin's 115-char "Typical start time..."
+            # placeholder — length alone got that backwards on the 2 Sep
+            # 2026 HLC meeting.
             ev.description = old_d
             kept = True
         if not ev.url and old.url:
@@ -256,6 +261,10 @@ def monotone_past_merge(events: list[Event], snap: list[Event],
             kept = True
         healed += kept
     return healed
+
+
+def _links(text: str) -> int:
+    return len(re.findall(r"https?://", text or ""))
 
 
 def _selftest_monotone_merge() -> None:
@@ -295,6 +304,15 @@ def _selftest_monotone_merge() -> None:
     assert monotone_past_merge(fresh2, snap, today,
                                skip=frozenset(["t-1"])) == 0
     assert fresh2[0].description == "short deliberate rewrite"
+    # A link-only archived body beats a longer link-less placeholder.
+    fresh3 = [Event(source="t", summary="Board", start=date(2026, 8, 24),
+                    description="Typical start time from the board's regular "
+                    "schedule — confirm on the agenda posted at the event "
+                    "link (~a week ahead).", uid="t-3")]
+    snap3 = [Event(source="t", summary="Board", start=date(2026, 8, 24),
+                   description="Agenda: https://example.com/a.pdf", uid="t-3")]
+    assert monotone_past_merge(fresh3, snap3, today) == 1
+    assert fresh3[0].description.startswith("Agenda:")
 
 
 # How much past a published feed carries. Sources supply their own history
@@ -518,11 +536,16 @@ def main() -> int:
                 emit(publishable, calname, now, color=color), newline=""
             )
             all_events.extend(publishable)
-            # ...but only advance the snapshot baseline when healthy, so a
-            # shrink alarm keeps firing until the data actually recovers
-            # (otherwise the shrunken count becomes tomorrow's baseline and
-            # the alarm silences itself after one red run).
-            if not problems:
+            # ...and advance the snapshot from the MERGED events unless the
+            # fetch collapsed outright. Until 2026-09-03 the snapshot only
+            # advanced on healthy runs, so a shrink alarm couldn't silence
+            # itself — but enrichment captured during an unhealthy stretch
+            # was never archived (the 2 Sep 2026 HLC digest was published by
+            # an unhealthy build and lost the next morning). The merged
+            # list already carries every past event, so the count baseline
+            # can't shrink from a partial fetch; a total collapse
+            # (fresh_empty) is the one case that still never overwrites.
+            if not fresh_empty:
                 snapshot = sorted(
                     (e.to_json() for e in events), key=lambda d: d["start"]
                 )
