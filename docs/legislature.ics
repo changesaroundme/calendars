@@ -28,7 +28,7 @@ END:VTIMEZONE
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-business-and-commerce-20260729T0900@cal
  endars.changesaroundme.com
-DTSTAMP:20260904T145749Z
+DTSTAMP:20260905T005921Z
 DTSTART;TZID=America/Chicago:20260729T090000
 DTEND;TZID=America/Chicago:20260729T110000
 SUMMARY:Texas Senate: Business & Commerce - 765-kV lines and grid reliabili
@@ -57,7 +57,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-texas-senate-business-commerce-765-kv-lines-and-grid-reliab
  ility-20260729T0900@calendars.changesaroundme.com
-DTSTAMP:20260904T145749Z
+DTSTAMP:20260905T005921Z
 DTSTART;TZID=America/Chicago:20260729T090000
 DTEND;TZID=America/Chicago:20260729T110000
 SUMMARY:Texas Senate: Business & Commerce - 765-kV lines and grid reliabili
@@ -86,7 +86,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-transportation-20260729T1200@calendars.
  changesaroundme.com
-DTSTAMP:20260904T145749Z
+DTSTAMP:20260905T005921Z
 DTSTART;TZID=America/Chicago:20260729T120000
 DTEND;TZID=America/Chicago:20260729T150000
 SUMMARY:Texas Senate: Transportation
@@ -104,7 +104,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-natural-resources-20260811T0900@calenda
  rs.changesaroundme.com
-DTSTAMP:20260904T145749Z
+DTSTAMP:20260905T005921Z
 DTSTART;TZID=America/Chicago:20260811T090000
 DTEND;TZID=America/Chicago:20260811T120000
 SUMMARY:Texas Senate: Natural Resources
@@ -128,7 +128,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-house-transportation-20260817T0930@calendars.changesaroundm
  e.com
-DTSTAMP:20260904T145749Z
+DTSTAMP:20260905T005921Z
 DTSTART;TZID=America/Chicago:20260817T093000
 DTEND;TZID=America/Chicago:20260817T123000
 SUMMARY:Texas House: Transportation
@@ -153,7 +153,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-house-agriculture-livestock-20260818T1100@calendars.changes
  aroundme.com
-DTSTAMP:20260904T145749Z
+DTSTAMP:20260905T005921Z
 DTSTART;TZID=America/Chicago:20260818T110000
 DTEND;TZID=America/Chicago:20260818T140000
 SUMMARY:Texas House: Agriculture & Livestock
@@ -172,7 +172,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-house-natural-resources-20260824T1000@calendars.changesarou
  ndme.com
-DTSTAMP:20260904T145749Z
+DTSTAMP:20260905T005921Z
 DTSTART;TZID=America/Chicago:20260824T100000
 DTEND;TZID=America/Chicago:20260824T130000
 SUMMARY:Texas House: Natural Resources
@@ -191,7 +191,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-house-s-c-on-transportation-funding-20260902T1000@calendars
  .changesaroundme.com
-DTSTAMP:20260904T145749Z
+DTSTAMP:20260905T005921Z
 DTSTART;TZID=America/Chicago:20260902T100000
 DTEND;TZID=America/Chicago:20260902T130000
 SUMMARY:Texas House: S/C on Transportation Funding
@@ -207,7 +207,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-house-energy-resources-20260914T0830@calendars.changesaroun
  dme.com
-DTSTAMP:20260904T145749Z
+DTSTAMP:20260905T005921Z
 DTSTART;TZID=America/Chicago:20260914T083000
 DTEND;TZID=America/Chicago:20260914T113000
 SUMMARY:Texas House: Energy Resources
@@ -226,7 +226,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-house-energy-resources-20260915T0830@calendars.changesaroun
  dme.com
-DTSTAMP:20260904T145749Z
+DTSTAMP:20260905T005921Z
 DTSTART;TZID=America/Chicago:20260915T083000
 DTEND;TZID=America/Chicago:20260915T113000
 SUMMARY:Texas House: Energy Resources
@@ -245,7 +245,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-natural-resources-20260921T0900@calenda
  rs.changesaroundme.com
-DTSTAMP:20260904T145749Z
+DTSTAMP:20260905T005921Z
 DTSTART;TZID=America/Chicago:20260921T090000
 DTEND;TZID=America/Chicago:20260921T120000
 SUMMARY:Texas Senate: Natural Resources
@@ -273,7 +273,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:legislature-senate-committee-on-business-and-commerce-20260930T0900@cal
  endars.changesaroundme.com
-DTSTAMP:20260904T145749Z
+DTSTAMP:20260905T005921Z
 DTSTART;TZID=America/Chicago:20260930T090000
 DTEND;TZID=America/Chicago:20260930T120000
 SUMMARY:Texas Senate: Business and Commerce
