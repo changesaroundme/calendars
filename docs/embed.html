@@ -23,6 +23,7 @@
     --org-txdotev:  #e34948;  /* red */
     --org-legislature: #6e6e6e;  /* neutral until the palette rethink */
     --org-puc:     #6e6e6e;
+    --org-tpsc:    #6e6e6e;
   }
   /* Dark values apply via OS setting (unless ?theme=light) or ?theme=dark. */
   @media (prefers-color-scheme: dark) {
@@ -42,6 +43,7 @@
       --org-txdotev:  #e66767;
       --org-legislature: #9a9a91;
       --org-puc:     #9a9a91;
+    --org-tpsc:    #9a9a91;
     }
   }
   :root[data-theme="dark"] {
@@ -60,6 +62,7 @@
     --org-txdotev:  #e66767;
     --org-legislature: #9a9a91;
     --org-puc:     #9a9a91;
+    --org-tpsc:    #9a9a91;
   }
   /* Natural height: the page grows to fit the grid (a 6-week month
      renders in full instead of scrolling internally — Ian, 2026-08-18).
@@ -156,6 +159,7 @@ const ORGS = [
   { key: "txdotev",  label: "TxDOT",    match: u => u.startsWith("txdotev-") },
   { key: "legislature", label: "TxLege", match: u => u.startsWith("legislature-") },
   { key: "puc",     label: "PUC",     match: u => u.startsWith("puc-") },
+  { key: "tpsc",    label: "TPSC",    match: u => u.startsWith("tpsc-") },
 ];
 const hidden = new Set();
 

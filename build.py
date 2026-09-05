@@ -35,7 +35,7 @@ import requests
 from caltools.ics import CENTRAL, emit
 from caltools.model import Event
 from sources import (atp, austin, campo, capmetro, ctrma, curated, lcra,
-                     legislature, openmeetings, puc, txdot, txdotev)
+                     legislature, openmeetings, puc, tpsc, txdot, txdotev)
 
 ROOT = pathlib.Path(__file__).parent
 DOCS = ROOT / "docs"
@@ -59,6 +59,9 @@ CALENDARS = {
     # Curated-only substrate (see sources/puc.py) — neutral grey with
     # legislature until the palette rethink.
     "puc": ("CAM - PUC", puc, "#6E6E6E"),
+    # Texas Pedestrian Safety Coalition (TTI-hosted; added 2026-09-04) —
+    # neutral grey with the other post-palette orgs.
+    "tpsc": ("CAM - TPSC", tpsc, "#6E6E6E"),
 }
 # All 8 validated categorical slots are now assigned to orgs; the combined
 # feeds get a neutral (they never appear next to org colors in the embed).

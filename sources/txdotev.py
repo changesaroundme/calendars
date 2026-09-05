@@ -735,7 +735,13 @@ def parse_committee_page(
             events.append(
                 Event(
                     source=SOURCE,
-                    summary=f"TxDOT {abbrev}: Meeting",
+                    # Full body name, not the abbreviation: "TxDOT BPAC:
+                    # Meeting" was opaque enough that Ian asked for BPAC
+                    # meetings to be added when they were already there
+                    # (2026-09-04). uid is built from `name` below and is
+                    # unaffected; data/txdotev.json was migrated the same
+                    # day.
+                    summary=f"TxDOT: {name}",
                     start=start,
                     end=(start + EVENT_LENGTH) if isinstance(start, datetime) else None,
                     location=_committee_location(texts[2]),

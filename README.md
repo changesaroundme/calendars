@@ -32,6 +32,7 @@ combined calendar at
 | ATP | ICS ingest | Austin Transit Partnership's published Tribe iCal feed (Board + Community Advisory Committee) |
 | TxDOT Events | HTML tables scrape + discovery | Public-involvement pages (UTP): dated events + comment windows; advisory committees (BPAC, PTAC); statewide hearings/meetings index for one-off project meetings, each enriched from its detail page (time range, venue, comment deadline) when unambiguous |
 | Texas Legislature | HTML scrape + self-archive | Senate hearings page (watchlisted committees only; listings run ~2 months out). The page forgets each hearing at end of day, so the adapter folds its own snapshot's past events back in — the one source that keeps its own history |
+| Texas Pedestrian Safety Coalition | WordPress REST API | Announcement posts on texaspedsafety.org (coalition meetings, webinars, the annual Forum), plus per-meeting pages for agendas and recordings |
 | One-off events | Hand-curated | `events/curated.yaml` — see below |
 | SOS open meetings | *Shadow mode* | UNT mirror of Texas SOS filings, watchlist-filtered and archived to `data/openmeetings.json`; observation only until the enrichment pass ships |
 
