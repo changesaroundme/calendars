@@ -1,0 +1,145 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//changesaroundme//calendars//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CAM - TPSC
+X-WR-TIMEZONE:America/Chicago
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+X-APPLE-CALENDAR-COLOR:#6E6E6E
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:tpsc-webinar-20250911@calendars.changesaroundme.com
+DTSTAMP:20260905T140201Z
+DTSTART;TZID=America/Chicago:20250911T140000
+DTEND;TZID=America/Chicago:20250911T150000
+SUMMARY:TPSC: Webinar – Coordinated Approaches to Changing Traffic-Safety
+  Related Behaviors
+URL:https://www.texaspedsafety.org/3082-2/
+DESCRIPTION:Webinar (virtual)\n\n—\n\nDetails: https://www.texaspedsafety
+ .org/webinar-coordinated-approaches-to-changing-traffic-safety-related-beh
+ aviors/
+CATEGORIES:regular
+X-CAM-ORG:tpsc
+END:VEVENT
+BEGIN:VEVENT
+UID:tpsc-webinar-20250923@calendars.changesaroundme.com
+DTSTAMP:20260905T140201Z
+DTSTART;TZID=America/Chicago:20250923T140000
+DTEND;TZID=America/Chicago:20250923T150000
+SUMMARY:TPSC: Webinar – Enhancing Vulnerable Road User Safety though the 
+ Texas Statewide Active Transportation Plan
+URL:https://www.texaspedsafety.org/upcoming-webinar-enhancing-vulnerable-ro
+ ad-user-safety-though-the-texas-statewide-active-transportation-plan/
+DESCRIPTION:Webinar (virtual)\n\n—\n\nDetails: https://www.texaspedsafety
+ .org/webinar-enhancing-vulnerable-road-user-safety-though-the-texas-statew
+ ide-active-transportation-plan/
+CATEGORIES:regular
+X-CAM-ORG:tpsc
+END:VEVENT
+BEGIN:VEVENT
+UID:tpsc-coalition-meeting-20250930@calendars.changesaroundme.com
+DTSTAMP:20260905T140201Z
+DTSTART;TZID=America/Chicago:20250930T100000
+DTEND;TZID=America/Chicago:20250930T113000
+SUMMARY:TPSC: Coalition Meeting
+URL:https://www.texaspedsafety.org/september-2025-texas-pedestrian-safety-c
+ oalition-meeting/
+DESCRIPTION:Virtual meeting (Microsoft Teams)\n\n—\n\nSummary Agenda\n\n1
+ 0:10 Review of Texas Pedestrian & Bicycle Safety Assessment\n10:20 Results
+  of Texas Pedestrian & Bicycle Safety Assessment\n10:30 Review of Priority
+  Recommendations from Texas Pedestrian & Bicycle Safety Assessment (Engine
+ ering)\n11:10 Next Steps for Texas Pedestrian Safety Task Force\n11:20 Sta
+ keholder Updates\n\n—\n\nSlides: https://www.texaspedsafety.org/wp-conte
+ nt/uploads/2025/10/TPSC-Meeting-September-30-2025.pdf\nTranscript: https:/
+ /www.texaspedsafety.org/wp-content/uploads/2025/10/TPSC-Meeting.docx
+CATEGORIES:regular
+X-CAM-ORG:tpsc
+END:VEVENT
+BEGIN:VEVENT
+UID:tpsc-coalition-meeting-20251211@calendars.changesaroundme.com
+DTSTAMP:20260905T140201Z
+DTSTART;TZID=America/Chicago:20251211T100000
+DTEND;TZID=America/Chicago:20251211T113000
+SUMMARY:TPSC: Coalition Meeting
+URL:https://www.texaspedsafety.org/december-2025-texas-pedestrian-safety-co
+ alition-meeting/
+DESCRIPTION:Virtual meeting (Microsoft Teams)\n\n—\n\nSummary Agenda\n\n-
+  2026 Texas Pedestrian Safety Forum\n- 2026 Pedestrian Safety Task Force\n
+ - Future of Pedestrian Safety Task Force\n- Stakeholder Updates\n\n—\n\n
+ Slides: https://www.texaspedsafety.org/wp-content/uploads/2025/12/12.11.25
+ -TPSC.pdf\nMinutes: https://www.texaspedsafety.org/wp-content/uploads/2025
+ /12/12-11-25-Texas-Pedestrian-Safety-Coalition-Meeting.pdf\nTranscript: ht
+ tps://www.texaspedsafety.org/wp-content/uploads/2025/12/Texas-Pedestrian-S
+ afety-Coalition-Meeting-transcript.pdf
+CATEGORIES:regular
+X-CAM-ORG:tpsc
+END:VEVENT
+BEGIN:VEVENT
+UID:tpsc-forum-20260506@calendars.changesaroundme.com
+DTSTAMP:20260905T140201Z
+DTSTART;VALUE=DATE:20260506
+SUMMARY:TPSC: Texas Pedestrian Safety Forum
+LOCATION:AT&T Center\, Austin\, TX
+URL:https://www.texaspedsafety.org/2026-texas-pedestrian-safety-forum-may-5
+ -in-austin/
+DESCRIPTION:Annual statewide forum. Registration and program are posted on 
+ the event link.
+CATEGORIES:regular
+X-CAM-ORG:tpsc
+END:VEVENT
+BEGIN:VEVENT
+UID:tpsc-coalition-meeting-20260820@calendars.changesaroundme.com
+DTSTAMP:20260905T140201Z
+DTSTART;TZID=America/Chicago:20260820T100000
+DTEND;TZID=America/Chicago:20260820T113000
+SUMMARY:TPSC: Coalition Meeting
+URL:https://www.texaspedsafety.org/august-2026-texas-pedestrian-safety-coal
+ ition-meeting/
+DESCRIPTION:Virtual meeting (Microsoft Teams)\n\n—\n\nSummary Agenda\n\n1
+ 0:10 2026 Texas Pedestrian Safety Forum Recap\n10:20 S tatewide Update on 
+ Youth Pedestrian Crashes (Gaby Kolodzy\, Assistant Research Scientist\, Te
+ xas A&M Transportation Institute (TTI))\n10:40 Enhancing Youth Pedestrian 
+ Safety with Schoolpool (Taylor Hunter\, Regional Data Planner\, Capital Ar
+ ea Metropolitan Planning Organization (CAMPO))\n11:00 Update on 2026 Texas
+  Pedestrian Safety Task Force\n11:15 Stakeholder Updates\n\n—\n\nJoin (T
+ eams): https://teams.microsoft.com/meet/276795173889779?p=ER3ODtKcCw6NTlYT
+ LP\nRecording: https://youtu.be/XyxoZdyEi9k\nPresentation: https://www.tex
+ aspedsafety.org/wp-content/uploads/2026/08/TPSC-Meeting-8.20.26.pdf\nNotes
+ : https://www.texaspedsafety.org/wp-content/uploads/2026/08/8.20.26-Meetin
+ g-Notes-1.pdf
+CATEGORIES:regular
+X-CAM-ORG:tpsc
+END:VEVENT
+BEGIN:VEVENT
+UID:tpsc-webinar-20260826@calendars.changesaroundme.com
+DTSTAMP:20260905T140201Z
+DTSTART;TZID=America/Chicago:20260826T133000
+DTEND;TZID=America/Chicago:20260826T143000
+SUMMARY:TPSC: Webinar – What does Texas’ New Sidewalk User Law Really M
+ ean?
+URL:https://www.texaspedsafety.org/upcoming-webinar-what-does-texas-new-sid
+ ewalk-user-law-really-mean/
+DESCRIPTION:Webinar (virtual)\n\n—\n\nJoin (Teams): https://teams.microso
+ ft.com/meet/24924124682148?p=92ybliJvzYKLGTKBWz
+CATEGORIES:regular
+X-CAM-ORG:tpsc
+END:VEVENT
+END:VCALENDAR
