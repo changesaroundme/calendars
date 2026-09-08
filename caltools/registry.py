@@ -9,13 +9,22 @@ the archive script will move onto it one at a time.
 validate() returns problems as strings naming the row (1-based line
 number in the file, plus the slug where one exists) so a bad save is
 findable from the CI log without opening the file.
+
+Tracker is the CI half of docs/status.json: it listens to every response
+the build's requests.Session receives, maps the URL back to a registry
+slug, and records when that page was last fetched and when its body last
+differed from the previous build. No adapter knows it exists. The Mac
+archive script keeps its own capture times in its own file; the generated
+sources page merges the two, so the two writers never touch one file.
 """
 from __future__ import annotations
 
 import csv
+import hashlib
+import json
 import pathlib
 import re
-from datetime import date
+from datetime import date, datetime
 from urllib.parse import urlparse
 
 COLUMNS = ["slug", "org", "name", "url", "calendar", "expect", "check",
@@ -136,3 +145,95 @@ def selftest() -> None:
     assert any("bad url" in p and "line 4" in p for p in probs), probs
     assert any("neither fetched nor archived" in p and "line 5" in p for p in probs), probs
     assert any("in the future" in p and "line 6" in p for p in probs), probs
+    # URL matching: exact, query/path extensions, longest wins, no false prefix.
+    rows = [dict(good, slug="a", url="https://x.gov/a"),
+            dict(good, slug="a-b", url="https://x.gov/a/b"),
+            dict(good, slug="api", url="https://api.x.gov/v1/events"),
+            dict(good, slug="html", url="https://x.gov/c.html")]
+    assert match_slug("https://x.gov/a/", rows) == "a"
+    assert match_slug("https://X.gov/a/b?year=2026", rows) == "a-b"
+    assert match_slug("https://api.x.gov/v1/events?$filter=1", rows) == "api"
+    assert match_slug("https://x.gov/c.html/sub", rows) == "html"
+    assert match_slug("https://x.gov/c.htmlx", rows) is None
+    assert match_slug("https://x.gov/ab", rows) is None
+    # ASP.NET viewstate churn must not read as a change.
+    v1 = b'<input name="__VIEWSTATE" id="v" value="AAA" /><p>same</p>'
+    v2 = b'<input name="__VIEWSTATE" id="v" value="BBB" /><p>same</p>'
+    assert body_hash(v1) == body_hash(v2)
+    assert body_hash(v1) != body_hash(b'<p>other</p>')
+
+
+# ---------------------------------------------------------------------------
+# docs/status.json — per-slug "checked" / "changed", from the live session
+# ---------------------------------------------------------------------------
+
+# ASP.NET pages (Legistar) carry a fresh __VIEWSTATE on every response, so
+# hashing the raw body would report "changed" on every build. Blank those
+# hidden fields before hashing; anything else that churns will show up as
+# daily changes in status.json and can be added here when it does.
+_ASPNET_RE = re.compile(
+    rb'(name="__(?:VIEWSTATE|VIEWSTATEGENERATOR|EVENTVALIDATION)"[^>]*?value=")[^"]*(")')
+
+
+def _norm(url: str) -> str:
+    u = urlparse(url)
+    return f"{u.scheme.lower()}://{u.netloc.lower()}{u.path.rstrip('/') or '/'}" + (
+        f"?{u.query}" if u.query else "")
+
+
+def match_slug(url: str, rows: list[dict[str, str]]) -> str | None:
+    """The registry row a fetched URL belongs to: exact, or the longest
+    registry URL that the fetched URL extends with '?', '&' or '/'."""
+    n = _norm(url)
+    best = None
+    for r in rows:
+        ru = _norm(r["url"])
+        if n == ru or n.startswith(ru + "?") or n.startswith(ru + "&") or n.startswith(ru + "/"):
+            if best is None or len(ru) > len(_norm(best["url"])):
+                best = r
+    return best["slug"] if best else None
+
+
+def body_hash(body: bytes) -> str:
+    return "sha256:" + hashlib.sha256(_ASPNET_RE.sub(rb"\1\2", body)).hexdigest()
+
+
+class Tracker:
+    """requests response hook that records fetches per registry slug."""
+
+    def __init__(self, rows: list[dict[str, str]]):
+        self.rows = rows
+        self.seen: dict[str, str] = {}      # slug -> body hash (last response wins)
+
+    def record(self, resp, **_kw) -> None:
+        if not getattr(resp, "ok", False):
+            return
+        for url in [resp.url] + [h.url for h in getattr(resp, "history", [])] \
+                + [getattr(getattr(resp, "request", None), "url", None)]:
+            slug = match_slug(url, self.rows) if url else None
+            if slug:
+                self.seen[slug] = body_hash(resp.content)
+                return
+
+    def write(self, out: pathlib.Path, prior_path: pathlib.Path, now: datetime) -> dict:
+        """Merge this build's fetches into the previous status.json and write it.
+        Slugs not fetched this build keep their previous entry untouched."""
+        prior: dict = {}
+        if prior_path.exists():
+            try:
+                prior = json.loads(prior_path.read_text()).get("sources", {})
+            except (ValueError, AttributeError):
+                prior = {}
+        stamp = now.strftime("%Y-%m-%dT%H:%M:%SZ")
+        sources = dict(prior)
+        for slug, h in self.seen.items():
+            old = prior.get(slug, {})
+            sources[slug] = {
+                "checked": stamp,
+                "changed": old.get("changed", stamp) if old.get("hash") == h else stamp,
+                "hash": h,
+            }
+        doc = {"generated": stamp,
+               "sources": {k: sources[k] for k in sorted(sources)}}
+        out.write_text(json.dumps(doc, indent=1) + "\n")
+        return doc

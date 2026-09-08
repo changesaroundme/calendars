@@ -407,13 +407,17 @@ def main() -> int:
     # stop the feeds publishing.
     if offline:
         registry.selftest()
-    reg_problems = registry.validate(registry.load(ROOT / "sources.csv"),
-                                     set(CALENDARS) | {"openmeetings"}, today)
+    reg_rows = registry.load(ROOT / "sources.csv")
+    reg_problems = registry.validate(reg_rows, set(CALENDARS) | {"openmeetings"}, today)
     for prob in reg_problems:
         print(f"[registry] {prob}")
         unhealthy.append(f"sources.csv {prob}")
     if reg_problems and offline:
         return 1
+    # Every live response passes through here; docs/status.json is written
+    # at the end of the build with per-slug checked/changed stamps.
+    tracker = registry.Tracker(reg_rows)
+    session.hooks["response"].append(tracker.record)
 
     # Hand-curated one-offs (events/curated.yaml) merge into org feeds below.
     curated.load(set(CALENDARS))
@@ -623,6 +627,14 @@ def main() -> int:
         openmeetings.archive_filings(session, data, offline, events_by_key)
     except Exception as exc:
         print(f"[openmeetings] archive error (non-fatal): {exc}")
+
+    # Per-slug fetch stamps for the sources page. Prior values come from the
+    # published file so a slug not fetched this build keeps its last stamps;
+    # offline builds record nothing and just carry the file across.
+    status = tracker.write(docs / "status.json", DOCS / "status.json", now)
+    changed = sum(1 for slug in tracker.seen
+                  if status["sources"][slug]["changed"] == status["generated"])
+    print(f"[status] {len(tracker.seen)} registry pages fetched, {changed} changed")
 
     if unhealthy:
         print("BUILD UNHEALTHY:\n  - " + "\n  - ".join(unhealthy))
