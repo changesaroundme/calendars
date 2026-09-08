@@ -32,6 +32,7 @@ from datetime import date, datetime, timedelta, timezone
 
 import requests
 
+from caltools import registry
 from caltools.ics import CENTRAL, emit
 from caltools.model import Event
 from sources import (atp, austin, campo, capmetro, ctrma, curated, lcra,
@@ -382,6 +383,7 @@ def main() -> int:
     data.mkdir(parents=True, exist_ok=True)
 
     unhealthy: list[str] = []
+
     all_events = []
     events_by_key: dict[str, list[Event]] = {}
 
@@ -397,6 +399,21 @@ def main() -> int:
     # days: now.date() flips over at 7pm Central, so an evening build
     # counted a meeting held earlier that same day as already past.
     today = now.astimezone(CENTRAL).date()
+
+    # sources.csv (the page registry) is hand-edited in a grid, so every
+    # build checks it and names the offending row. Offline (the pre-push
+    # check) that is fatal; live it is a soft alarm like any other health
+    # problem -- nothing reads the registry yet, so a stray comma must not
+    # stop the feeds publishing.
+    if offline:
+        registry.selftest()
+    reg_problems = registry.validate(registry.load(ROOT / "sources.csv"),
+                                     set(CALENDARS) | {"openmeetings"}, today)
+    for prob in reg_problems:
+        print(f"[registry] {prob}")
+        unhealthy.append(f"sources.csv {prob}")
+    if reg_problems and offline:
+        return 1
 
     # Hand-curated one-offs (events/curated.yaml) merge into org feeds below.
     curated.load(set(CALENDARS))
