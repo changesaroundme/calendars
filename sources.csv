@@ -33,9 +33,9 @@ coa-urban-transportation-commission-meetings,CoA,Urban Transportation Commission
 coa-water-and-wastewater-commission,CoA,Water and Wastewater Commission,https://www.austintexas.gov/boards-commissions/board/water-and-wastewater-commission,austin,always,twice daily,no,html,active,yes,,ci,2026-08-09
 coa-water-and-wastewater-commission-meetings,CoA,Water and Wastewater Commission — meeting content,https://www.austintexas.gov/boards-commissions/meetings/52_1,austin,always,twice daily,no,html,active,yes,coa-water-and-wastewater-commission,ci,2026-08-09
 coa-bicycle-advisory-council,CoA,Bicycle Advisory Council,https://www.austintexas.gov/council/bicycle-advisory-council,austin,always,twice daily,no,html,active,yes,,ci,2026-07-28
-coa-bicycle-advisory-council-meetings,CoA,Bicycle Advisory Council — meeting content,https://www.austintexas.gov/boards-commissions/meetings/110_1,austin,always,twice daily,no,html,active,yes,,ci,2026-07-28
+coa-bicycle-advisory-council-meetings,CoA,Bicycle Advisory Council — meeting content,https://www.austintexas.gov/boards-commissions/meetings/110_1,austin,always,twice daily,no,html,active,yes,coa-bicycle-advisory-council,ci,2026-07-28
 coa-pedestrian-advisory-council,CoA,Pedestrian Advisory Council,https://www.austintexas.gov/council/pedestrian-advisory-council,austin,always,twice daily,no,html,active,yes,,ci,2026-07-28
-coa-pedestrian-advisory-council-meetings,CoA,Pedestrian Advisory Council — meeting content,https://www.austintexas.gov/boards-commissions/meetings/121_1,austin,always,twice daily,no,html,active,yes,,ci,2026-07-28
+coa-pedestrian-advisory-council-meetings,CoA,Pedestrian Advisory Council — meeting content,https://www.austintexas.gov/boards-commissions/meetings/121_1,austin,always,twice daily,no,html,active,yes,coa-pedestrian-advisory-council,ci,2026-07-28
 coa-speak-up-austin-events,CoA,Speak Up Austin events,https://publicinput.com/Portal/F1211#events,,always,every 3 days,no,manual,active,yes,,manual,2026-07-25
 atp-events-ical,ATP,Events (Tribe iCal feed),https://www.atptx.org/?post_type=tribe_events&ical=1&eventDisplay=list,atp,always,twice daily,no,ics,active,no,,ci,2026-07-25
 atp-escribe-portal,ATP,Board agendas (eScribe portal),https://pub-atptx.escribemeetings.com/?FillWidth=1,atp,always,twice daily,no,html,active,yes,,ci,2026-08-18

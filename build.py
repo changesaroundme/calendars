@@ -32,7 +32,7 @@ from datetime import date, datetime, timedelta, timezone
 
 import requests
 
-from caltools import registry
+from caltools import registry, sourcespage
 from caltools.ics import CENTRAL, emit
 from caltools.model import Event
 from sources import (atp, austin, campo, capmetro, ctrma, curated, lcra,
@@ -635,6 +635,8 @@ def main() -> int:
     changed = sum(1 for slug in tracker.seen
                   if status["sources"][slug]["changed"] == status["generated"])
     print(f"[status] {len(tracker.seen)} registry pages fetched, {changed} changed")
+    (docs / "sources.html").write_text(sourcespage.render(reg_rows, status, now))
+    (docs / "sources.md").write_text(sourcespage.render_markdown(reg_rows, status))
 
     if unhealthy:
         print("BUILD UNHEALTHY:\n  - " + "\n  - ".join(unhealthy))
