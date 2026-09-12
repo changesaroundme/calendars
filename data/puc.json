@@ -68,7 +68,7 @@
   "source": "puc",
   "summary": "PUC: Open Meeting",
   "start": "2026-09-11T09:30:00",
-  "end": "2026-09-11T17:00:00",
+  "end": "2026-09-11T11:30:00",
   "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1771",
   "status": "CONFIRMED",
@@ -144,19 +144,6 @@
  },
  {
   "source": "puc",
-  "summary": "PUC: Open Meeting",
-  "start": "2026-09-17",
-  "end": null,
-  "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
-  "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1825",
-  "status": "CONFIRMED",
-  "kind": "regular",
-  "uid": "puc-cal-1825-20260917@calendars.changesaroundme.com",
-  "description": "Watch live or archived: http://www.adminmonitor.com/tx/puct/open_meeting/20260917/",
-  "all_day": true
- },
- {
-  "source": "puc",
   "summary": "PUC: Project 59550 comments close",
   "start": "2026-09-17",
   "end": null,
@@ -167,6 +154,19 @@
   "uid": "puc-cal-1828-20260917@calendars.changesaroundme.com",
   "description": "Comments are filed via the PUC Interchange: https://interchange.puc.texas.gov/filer\n\nProject filings: https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=59550",
   "all_day": true
+ },
+ {
+  "source": "puc",
+  "summary": "PUC: Open Meeting",
+  "start": "2026-09-17T11:00:00",
+  "end": "2026-09-17T17:00:00",
+  "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
+  "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1825",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "puc-cal-1825-20260917@calendars.changesaroundme.com",
+  "description": "Watch live or archived: http://www.adminmonitor.com/tx/puct/open_meeting/20260917/",
+  "all_day": false
  },
  {
   "source": "puc",
@@ -196,15 +196,15 @@
  },
  {
   "source": "puc",
-  "summary": "PUC: Open Meeting",
+  "summary": "PUC: Office Closed",
   "start": "2026-09-25",
   "end": null,
-  "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
+  "location": "Commissioners Hearing Room 7-100 ( Closed To Public )",
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1807",
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "puc-cal-1807-20260925@calendars.changesaroundme.com",
-  "description": "Watch live or archived: http://www.adminmonitor.com/tx/puct/open_meeting/20260925/",
+  "description": "Watch live or archived: https://www.puc.texas.gov/agency/calendar/broadcasts/",
   "all_day": true
  },
  {
@@ -261,6 +261,19 @@
  },
  {
   "source": "puc",
+  "summary": "PUC: Project 59086 comments close",
+  "start": "2026-10-15",
+  "end": null,
+  "location": "",
+  "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1837",
+  "status": "CONFIRMED",
+  "kind": "comment-window",
+  "uid": "puc-cal-1837-20261015@calendars.changesaroundme.com",
+  "description": "Comments are filed via the PUC Interchange: https://interchange.puc.texas.gov/filer\n\nProject filings: https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=59086",
+  "all_day": true
+ },
+ {
+  "source": "puc",
   "summary": "PUC: Open Meeting",
   "start": "2026-11-05",
   "end": null,
@@ -282,6 +295,19 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "puc-cal-1826-20261109@calendars.changesaroundme.com",
+  "description": "Watch live or archived: https://www.puc.texas.gov/agency/calendar/broadcasts/",
+  "all_day": true
+ },
+ {
+  "source": "puc",
+  "summary": "PUC: Workshop",
+  "start": "2026-11-16",
+  "end": null,
+  "location": "The Public Utility Commission of Texas (PUCT) will host a meeting of the Energy Waste Advisory Committee established by PURA ?18.002.",
+  "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1836",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "puc-cal-1836-20261116@calendars.changesaroundme.com",
   "description": "Watch live or archived: https://www.puc.texas.gov/agency/calendar/broadcasts/",
   "all_day": true
  },

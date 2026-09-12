@@ -3265,15 +3265,15 @@
  {
   "source": "austin",
   "summary": "City Council",
-  "start": "2026-09-24",
-  "end": null,
+  "start": "2026-09-24T10:00:00",
+  "end": "2026-09-24T12:00:00",
   "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
-  "url": "https://www.austintexas.gov/council/meetings",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4077&GID=684&G=4BED8896-C64D-4912-8005-D624C5197AA5",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "austin-city-council-20260924@calendars.changesaroundme.com",
-  "description": "From the published annual council calendar (dates subject to change). Time and agenda appear ~a week ahead: https://www.austintexas.gov/council/meetings",
-  "all_day": true
+  "uid": "austin-city-council-20260924T1000@calendars.changesaroundme.com",
+  "description": "Summary Agenda\n\n- 64 consent items\n- 10 zoning and neighborhood plan amendments items\n- 7 items from council\n- 5 eminent domain  items\n- 4 public hearing items\n- 2 items from council committee\n- 1 items associated with public hearings item",
+  "all_day": false
  },
  {
   "source": "austin",

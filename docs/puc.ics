@@ -27,7 +27,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:puc-cal-1824-20260814@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;VALUE=DATE:20260814
 SUMMARY:PUC: Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
@@ -43,7 +43,7 @@ X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1706-20260820@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;TZID=America/Chicago:20260820T093000
 DTEND;TZID=America/Chicago:20260820T170000
 SUMMARY:PUC: Open Meeting
@@ -58,7 +58,7 @@ X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1802-20260821@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;TZID=America/Chicago:20260821T093000
 DTEND;TZID=America/Chicago:20260821T113000
 SUMMARY:PUC: Meeting (inc. 765 kV cases)
@@ -75,7 +75,7 @@ X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1806-20260828@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;TZID=America/Chicago:20260828T093000
 DTEND;TZID=America/Chicago:20260828T113000
 SUMMARY:PUC: Open Meeting
@@ -92,7 +92,7 @@ X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1809-20260904@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;VALUE=DATE:20260904
 SUMMARY:PUC: Large Load Demand Management Service comments close
 URL:https://interchange.puc.texas.gov/search/filings/?UtilityType=A&Control
@@ -108,9 +108,9 @@ X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1771-20260911@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;TZID=America/Chicago:20260911T093000
-DTEND;TZID=America/Chicago:20260911T170000
+DTEND;TZID=America/Chicago:20260911T113000
 SUMMARY:PUC: Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
  701 N. Congress Ave.\, Austin\, TX 78701
@@ -123,7 +123,7 @@ X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1831-20260914@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;TZID=America/Chicago:20260914T083000
 DTEND;TZID=America/Chicago:20260914T143000
 SUMMARY:PUC: Open Meeting ERCOT
@@ -137,7 +137,7 @@ X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1832-20260914@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;TZID=America/Chicago:20260914T093000
 DTEND;TZID=America/Chicago:20260914T120000
 SUMMARY:PUC: Open Meeting ERCOT
@@ -151,7 +151,7 @@ X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1834-20260914@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;TZID=America/Chicago:20260914T120000
 DTEND;TZID=America/Chicago:20260914T170000
 SUMMARY:PUC: Open Meeting ERCOT
@@ -165,7 +165,7 @@ X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1833-20260914@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;TZID=America/Chicago:20260914T143000
 DTEND;TZID=America/Chicago:20260914T170000
 SUMMARY:PUC: Open Meeting ERCOT
@@ -179,7 +179,7 @@ X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1835-20260915@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;TZID=America/Chicago:20260915T100000
 DTEND;TZID=America/Chicago:20260915T170000
 SUMMARY:PUC: Open Meeting ERCOT
@@ -193,22 +193,8 @@ CATEGORIES:regular
 X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
-UID:puc-cal-1825-20260917@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
-DTSTART;VALUE=DATE:20260917
-SUMMARY:PUC: Open Meeting
-LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
- 701 N. Congress Ave.\, Austin\, TX 78701
-URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=182
- 5
-DESCRIPTION:Watch live or archived: http://www.adminmonitor.com/tx/puct/ope
- n_meeting/20260917/
-CATEGORIES:regular
-X-CAM-ORG:puc
-END:VEVENT
-BEGIN:VEVENT
 UID:puc-cal-1828-20260917@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;VALUE=DATE:20260917
 SUMMARY:PUC: Project 59550 comments close
 URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=182
@@ -220,8 +206,23 @@ CATEGORIES:comment-window
 X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
+UID:puc-cal-1825-20260917@calendars.changesaroundme.com
+DTSTAMP:20260912T010842Z
+DTSTART;TZID=America/Chicago:20260917T110000
+DTEND;TZID=America/Chicago:20260917T170000
+SUMMARY:PUC: Open Meeting
+LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
+ 701 N. Congress Ave.\, Austin\, TX 78701
+URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=182
+ 5
+DESCRIPTION:Watch live or archived: http://www.adminmonitor.com/tx/puct/ope
+ n_meeting/20260917/
+CATEGORIES:regular
+X-CAM-ORG:puc
+END:VEVENT
+BEGIN:VEVENT
 UID:puc-cal-1772-20260918@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;VALUE=DATE:20260918
 SUMMARY:PUC: Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
@@ -235,7 +236,7 @@ X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1829-20260922@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;VALUE=DATE:20260922
 SUMMARY:PUC: Workshop
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
@@ -249,21 +250,20 @@ X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1807-20260925@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;VALUE=DATE:20260925
-SUMMARY:PUC: Open Meeting
-LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
- 701 N. Congress Ave.\, Austin\, TX 78701
+SUMMARY:PUC: Office Closed
+LOCATION:Commissioners Hearing Room 7-100 ( Closed To Public )
 URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=180
  7
-DESCRIPTION:Watch live or archived: http://www.adminmonitor.com/tx/puct/ope
- n_meeting/20260925/
+DESCRIPTION:Watch live or archived: https://www.puc.texas.gov/agency/calend
+ ar/broadcasts/
 CATEGORIES:regular
 X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1773-20261001@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;VALUE=DATE:20261001
 SUMMARY:PUC: Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
@@ -277,7 +277,7 @@ X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1808-20261002@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;VALUE=DATE:20261002
 SUMMARY:PUC: Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
@@ -291,7 +291,7 @@ X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1830-20261006@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;VALUE=DATE:20261006
 SUMMARY:PUC: Workshop
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
@@ -305,7 +305,7 @@ X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1774-20261015@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;VALUE=DATE:20261015
 SUMMARY:PUC: Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
@@ -318,8 +318,21 @@ CATEGORIES:regular
 X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
+UID:puc-cal-1837-20261015@calendars.changesaroundme.com
+DTSTAMP:20260912T010842Z
+DTSTART;VALUE=DATE:20261015
+SUMMARY:PUC: Project 59086 comments close
+URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=183
+ 7
+DESCRIPTION:Comments are filed via the PUC Interchange: https://interchange
+ .puc.texas.gov/filer\n\nProject filings: https://interchange.puc.texas.gov
+ /search/filings/?UtilityType=A&ControlNumber=59086
+CATEGORIES:comment-window
+X-CAM-ORG:puc
+END:VEVENT
+BEGIN:VEVENT
 UID:puc-cal-1775-20261105@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;VALUE=DATE:20261105
 SUMMARY:PUC: Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
@@ -333,7 +346,7 @@ X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1826-20261109@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;VALUE=DATE:20261109
 SUMMARY:PUC: Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
@@ -346,8 +359,22 @@ CATEGORIES:regular
 X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
+UID:puc-cal-1836-20261116@calendars.changesaroundme.com
+DTSTAMP:20260912T010842Z
+DTSTART;VALUE=DATE:20261116
+SUMMARY:PUC: Workshop
+LOCATION:The Public Utility Commission of Texas (PUCT) will host a meeting 
+ of the Energy Waste Advisory Committee established by PURA ?18.002.
+URL:https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=183
+ 6
+DESCRIPTION:Watch live or archived: https://www.puc.texas.gov/agency/calend
+ ar/broadcasts/
+CATEGORIES:regular
+X-CAM-ORG:puc
+END:VEVENT
+BEGIN:VEVENT
 UID:puc-cal-1776-20261119@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;VALUE=DATE:20261119
 SUMMARY:PUC: Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
@@ -361,7 +388,7 @@ X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1777-20261203@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;VALUE=DATE:20261203
 SUMMARY:PUC: Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
@@ -375,7 +402,7 @@ X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1827-20261211@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;VALUE=DATE:20261211
 SUMMARY:PUC: Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
@@ -389,7 +416,7 @@ X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1778-20261217@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;VALUE=DATE:20261217
 SUMMARY:PUC: Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
@@ -403,7 +430,7 @@ X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1810-20270114@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;VALUE=DATE:20270114
 SUMMARY:PUC: Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
@@ -417,7 +444,7 @@ X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1811-20270129@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;VALUE=DATE:20270129
 SUMMARY:PUC: Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
@@ -431,7 +458,7 @@ X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1812-20270218@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;VALUE=DATE:20270218
 SUMMARY:PUC: Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
@@ -445,7 +472,7 @@ X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1813-20270225@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;VALUE=DATE:20270225
 SUMMARY:PUC: Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
@@ -459,7 +486,7 @@ X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1814-20270311@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;VALUE=DATE:20270311
 SUMMARY:PUC: Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
@@ -473,7 +500,7 @@ X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1815-20270325@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;VALUE=DATE:20270325
 SUMMARY:PUC: Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
@@ -487,7 +514,7 @@ X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1816-20270401@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;VALUE=DATE:20270401
 SUMMARY:PUC: Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
@@ -501,7 +528,7 @@ X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1817-20270422@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;VALUE=DATE:20270422
 SUMMARY:PUC: Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
@@ -515,7 +542,7 @@ X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1818-20270513@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;VALUE=DATE:20270513
 SUMMARY:PUC: Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
@@ -529,7 +556,7 @@ X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1819-20270520@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;VALUE=DATE:20270520
 SUMMARY:PUC: Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
@@ -543,7 +570,7 @@ X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1820-20270603@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;VALUE=DATE:20270603
 SUMMARY:PUC: Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
@@ -557,7 +584,7 @@ X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1821-20270617@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;VALUE=DATE:20270617
 SUMMARY:PUC: Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
@@ -571,7 +598,7 @@ X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1822-20270708@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;VALUE=DATE:20270708
 SUMMARY:PUC: Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
@@ -585,7 +612,7 @@ X-CAM-ORG:puc
 END:VEVENT
 BEGIN:VEVENT
 UID:puc-cal-1823-20270729@calendars.changesaroundme.com
-DTSTAMP:20260911T150216Z
+DTSTAMP:20260912T010842Z
 DTSTART;VALUE=DATE:20270729
 SUMMARY:PUC: Open Meeting
 LOCATION:Commissioners' Hearing Room 7-100\, William B. Travis Building\, 1
