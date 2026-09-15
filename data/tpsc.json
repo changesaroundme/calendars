@@ -128,5 +128,18 @@
   "uid": "tpsc-webinar-20260826@calendars.changesaroundme.com",
   "description": "Webinar (virtual)\n\n\u2014\n\nJoin (Teams): https://teams.microsoft.com/meet/24924124682148?p=92ybliJvzYKLGTKBWz",
   "all_day": false
+ },
+ {
+  "source": "tpsc",
+  "summary": "TPSC: Webinar \u2013 SafeAcross: A Plug-and-Play Pedestrian Safety Initiative\u200b",
+  "start": "2026-09-15",
+  "end": null,
+  "location": "",
+  "url": "https://www.texaspedsafety.org/upcoming-webinar-safeacross-a-plug-and-play-pedestrian-safety-initiative/",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "tpsc-webinar-20260915@calendars.changesaroundme.com",
+  "description": "Webinar (virtual)\n\n\u2014\n\nJoin (Teams): https://teams.microsoft.com/meet/262549332779083?p=KoXknw14HE7Jd98Vlv",
+  "all_day": true
  }
 ]
