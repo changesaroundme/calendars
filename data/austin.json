@@ -3251,6 +3251,32 @@
  },
  {
   "source": "austin",
+  "summary": "City Council: Work Session",
+  "start": "2026-09-22T09:00:00",
+  "end": "2026-09-22T11:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4121&GID=684&G=4BED8896-C64D-4912-8005-D624C5197AA5",
+  "status": "CONFIRMED",
+  "kind": "work-session",
+  "uid": "austin-city-council-work-session-20260922T0900@calendars.changesaroundme.com",
+  "description": "Summary Agenda\n\nA21. A contract for telecommunication services for all City departments through the Texas Department of Information Resources cooperative contract program, for an i\u2026 (26-2646, Pre-Selected Item)\nA31. Seven contracts for telecommunication, broadband, and cellular products and services for all City departments to support computer-aided dispatch, wireless mete\u2026 (26-2647, Pre-Selected Item)\n\nBriefings:\nB1: The Joint Emergency Call Center Feasibility Assessment for the City of Austin\nB2: The social services strategy update",
+  "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "City Council: Austin Energy Utility Oversight Committee",
+  "start": "2026-09-22T09:00:00",
+  "end": "2026-09-22T11:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4191&GID=684&G=4BED8896-C64D-4912-8005-D624C5197AA5",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-energy-utility-oversight-committee-20260922T0900@calendars.changesaroundme.com",
+  "description": "Summary Agenda\n\nBriefings:\n- General Manager\u2019s Report - ERCOT Summer Peak Energy Usage and the Value of Public Power in the Texas Electric Market\n- The Third Quarter Financial Highlights Report\n- The Third Quarter Operations Highlights Report\n\n\u2014\n\nAgenda: https://austintexas.legistar1.com/austintexas/meetings/2026/9/4191_A_Austin_Energy_Utility_Oversight_Committee___26-09-22_Committee_Agenda.pdf",
+  "all_day": false
+ },
+ {
+  "source": "austin",
   "summary": "CoA: Planning Commission",
   "start": "2026-09-22T18:00:00",
   "end": "2026-09-22T21:00:00",
