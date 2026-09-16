@@ -141,5 +141,18 @@
   "uid": "tpsc-webinar-20260915@calendars.changesaroundme.com",
   "description": "Webinar (virtual)\n\n\u2014\n\nJoin (Teams): https://teams.microsoft.com/meet/262549332779083?p=KoXknw14HE7Jd98Vlv",
   "all_day": true
+ },
+ {
+  "source": "tpsc",
+  "summary": "TPSC: Webinar \u2013 Understanding the Impact of Vehicle Design on Pedestrian Safety",
+  "start": "2026-09-17",
+  "end": null,
+  "location": "",
+  "url": "https://www.texaspedsafety.org/upcoming-webinar-understanding-the-impact-of-vehicle-design-on-pedestrian-safety/",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "tpsc-webinar-20260917@calendars.changesaroundme.com",
+  "description": "Webinar (virtual)\n\n\u2014\n\nJoin (Teams): https://teams.microsoft.com/meet/218286462510833?p=Vf4W486QRGQSqRNIJE",
+  "all_day": true
  }
 ]

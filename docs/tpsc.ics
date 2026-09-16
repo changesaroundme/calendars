@@ -27,7 +27,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:tpsc-webinar-20250923@calendars.changesaroundme.com
-DTSTAMP:20260915T153411Z
+DTSTAMP:20260916T012801Z
 DTSTART;TZID=America/Chicago:20250923T140000
 DTEND;TZID=America/Chicago:20250923T150000
 SUMMARY:TPSC: Webinar – Enhancing Vulnerable Road User Safety though the 
@@ -42,7 +42,7 @@ X-CAM-ORG:tpsc
 END:VEVENT
 BEGIN:VEVENT
 UID:tpsc-coalition-meeting-20250930@calendars.changesaroundme.com
-DTSTAMP:20260915T153411Z
+DTSTAMP:20260916T012801Z
 DTSTART;TZID=America/Chicago:20250930T100000
 DTEND;TZID=America/Chicago:20250930T113000
 SUMMARY:TPSC: Coalition Meeting
@@ -61,7 +61,7 @@ X-CAM-ORG:tpsc
 END:VEVENT
 BEGIN:VEVENT
 UID:tpsc-coalition-meeting-20251211@calendars.changesaroundme.com
-DTSTAMP:20260915T153411Z
+DTSTAMP:20260916T012801Z
 DTSTART;TZID=America/Chicago:20251211T100000
 DTEND;TZID=America/Chicago:20251211T113000
 SUMMARY:TPSC: Coalition Meeting
@@ -80,7 +80,7 @@ X-CAM-ORG:tpsc
 END:VEVENT
 BEGIN:VEVENT
 UID:tpsc-forum-20260506@calendars.changesaroundme.com
-DTSTAMP:20260915T153411Z
+DTSTAMP:20260916T012801Z
 DTSTART;VALUE=DATE:20260506
 SUMMARY:TPSC: Texas Pedestrian Safety Forum
 LOCATION:AT&T Center\, Austin\, TX
@@ -93,7 +93,7 @@ X-CAM-ORG:tpsc
 END:VEVENT
 BEGIN:VEVENT
 UID:tpsc-coalition-meeting-20260820@calendars.changesaroundme.com
-DTSTAMP:20260915T153411Z
+DTSTAMP:20260916T012801Z
 DTSTART;TZID=America/Chicago:20260820T100000
 DTEND;TZID=America/Chicago:20260820T113000
 SUMMARY:TPSC: Coalition Meeting
@@ -116,7 +116,7 @@ X-CAM-ORG:tpsc
 END:VEVENT
 BEGIN:VEVENT
 UID:tpsc-webinar-20260826@calendars.changesaroundme.com
-DTSTAMP:20260915T153411Z
+DTSTAMP:20260916T012801Z
 DTSTART;TZID=America/Chicago:20260826T133000
 DTEND;TZID=America/Chicago:20260826T143000
 SUMMARY:TPSC: Webinar – What does Texas’ New Sidewalk User Law Really M
@@ -130,7 +130,7 @@ X-CAM-ORG:tpsc
 END:VEVENT
 BEGIN:VEVENT
 UID:tpsc-webinar-20260915@calendars.changesaroundme.com
-DTSTAMP:20260915T153411Z
+DTSTAMP:20260916T012801Z
 DTSTART;VALUE=DATE:20260915
 SUMMARY:TPSC: Webinar – SafeAcross: A Plug-and-Play Pedestrian Safety Ini
  tiative​
@@ -138,6 +138,19 @@ URL:https://www.texaspedsafety.org/upcoming-webinar-safeacross-a-plug-and-p
  lay-pedestrian-safety-initiative/
 DESCRIPTION:Webinar (virtual)\n\n—\n\nJoin (Teams): https://teams.microso
  ft.com/meet/262549332779083?p=KoXknw14HE7Jd98Vlv
+CATEGORIES:regular
+X-CAM-ORG:tpsc
+END:VEVENT
+BEGIN:VEVENT
+UID:tpsc-webinar-20260917@calendars.changesaroundme.com
+DTSTAMP:20260916T012801Z
+DTSTART;VALUE=DATE:20260917
+SUMMARY:TPSC: Webinar – Understanding the Impact of Vehicle Design on Ped
+ estrian Safety
+URL:https://www.texaspedsafety.org/upcoming-webinar-understanding-the-impac
+ t-of-vehicle-design-on-pedestrian-safety/
+DESCRIPTION:Webinar (virtual)\n\n—\n\nJoin (Teams): https://teams.microso
+ ft.com/meet/218286462510833?p=Vf4W486QRGQSqRNIJE
 CATEGORIES:regular
 X-CAM-ORG:tpsc
 END:VEVENT
