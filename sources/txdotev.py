@@ -288,8 +288,13 @@ def parse_hearings_index(html: str, owned_urls: set[str] | None = None,
     # study runs the same-titled meeting in several towns, but a unique
     # title ("I-35 Georgetown to Round Rock") gains nothing from "(...)"
     # — Ian, 2026-08-10. Display-only; UIDs come from the link path above.
-    dupes = {s for s in (e.summary for e in events)
-             if sum(x.summary == s for x in events) > 1}
+    # One meeting held on two dates (US 290, Sept/Oct 2026) is two index rows
+    # with the same title AND the same page: nothing to disambiguate, so the
+    # suffix only applies when the title is shared across different pages.
+    pages_by_title: dict[str, set[str]] = {}
+    for e in events:
+        pages_by_title.setdefault(e.summary, set()).add(e.url)
+    dupes = {t for t, urls in pages_by_title.items() if len(urls) > 1}
     for e in events:
         if e.summary in dupes and e.location.lower() != "statewide":
             e.summary += f" ({e.location})"
@@ -484,14 +489,33 @@ def enrich_index_event(ev: Event, html: str) -> None:
         middle.append(f"Purpose: {purpose}")
     if "description" in rows:
         middle.append("Description: " + _cell_body(rows["description"]))
-    links = []
+    links: list[tuple[str, str]] = []   # (label, url)
+    seen_links: set[str] = set()
+
+    def _add(label: str, a) -> None:
+        href = a["href"].strip()
+        if href.startswith("mailto") or not href:
+            return
+        if not href.startswith("http"):
+            href = (f"https://www.txdot.gov{href}" if href.startswith("/")
+                    else f"https://{href}")        # "290Ext.com/OpenHouse"
+        if href in seen_links:
+            return
+        seen_links.add(href)
+        links.append((label, href))
+
+    # The virtual session's own address first (it IS the meeting for anyone
+    # not driving to Elgin), then the project pages, then posted materials.
+    for label in ("virtual details",):
+        for a in (rows[label].find_all("a", href=True) if label in rows else []):
+            _add("Virtual meeting", a)
     for label in ("purpose", "description"):
         for a in (rows[label].find_all("a", href=True) if label in rows else []):
-            href = a["href"].strip()
-            if href.startswith("mailto") or href in links:
-                continue
-            links.append(href if href.startswith("http")
-                         else f"https://www.txdot.gov{href}")
+            _add("Project info" if not links or links[-1][0] == "Virtual meeting" else "More", a)
+    for label in [k for k in rows if k.startswith("meeting") and "material" in k]:
+        for a in rows[label].find_all("a", href=True):
+            text = re.sub(r"\s+", " ", a.get_text(" ", strip=True)) or "Materials"
+            _add(text + (" (PDF)" if a["href"].lower().endswith(".pdf") else ""), a)
     if not (rows or timed):
         # Unknown page shape: leave the index description, add the deadline.
         if deadline:
@@ -501,9 +525,7 @@ def enrich_index_event(ev: Event, html: str) -> None:
     if middle:
         sections.append("\n\n".join(middle))
     if links:
-        sections.append("\n\n".join(
-            f"{'Project info' if i == 0 else 'More'}: {u}"
-            for i, u in enumerate(links)))
+        sections.append("\n\n".join(f"{label}: {u}" for label, u in links))
     ev.description = "\n\n—\n\n".join(s for s in sections if s)
 
 
@@ -853,6 +875,12 @@ def fetch_offline() -> list[Event]:
         # materials posting time, no location.
         "https://www.txdot.gov/projects/hearings-meetings/austin/2026/"
         "us79-from-i35-to-fm1460-090126.html": FIXTURES / "txdotev_hm_us79.html",
+        # One meeting, two in-person dates (two index rows, one page): each
+        # date gets its own venue; no "(area)" title suffix; the virtual
+        # session link and the Notice PDF reach the body.
+        "https://www.txdot.gov/projects/hearings-meetings/austin/2026/"
+        "us290-from-sh130-to-east-of-sh95-south-092926.html":
+            FIXTURES / "txdotev_hm_us290.html",
     }
     enrich_index_events(
         index_events,
@@ -869,5 +897,15 @@ def fetch_offline() -> list[Event]:
         "post by 5:30pm (no in-person meeting)\nPublic comment deadline: "
         "16 Sep 2026."), us79.description
     assert "no fixed time" not in us79.description
+    us290 = sorted((e for e in index_events if "us290-from-sh130-to-east" in e.stable_uid()),
+                   key=lambda e: str(e.start))
+    assert [e.start for e in us290] == [datetime(2026, 9, 29, 16), datetime(2026, 10, 1, 16)], us290
+    assert us290[0].location.startswith("First Baptist Church of Elgin"), us290[0].location
+    assert us290[1].location.startswith("St. Joseph"), us290[1].location
+    assert all(e.summary == "TxDOT: US 290 From SH 130 to SH 95 South" for e in us290), \
+        [e.summary for e in us290]
+    assert "Virtual meeting: http://www.290Ext.com/OpenHouse" in us290[0].description, us290[0].description
+    assert "Notice (PDF): https://ftp.txdot.gov/pub/txdot/get-involved/aus/us290-extension/092926-notice.pdf" \
+        in us290[0].description, us290[0].description
     events.extend(index_events)
     return events
