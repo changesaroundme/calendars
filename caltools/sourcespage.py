@@ -160,7 +160,7 @@ def render_markdown(rows: list[dict[str, str]], status: dict) -> str:
         f"*Every public page the calendars and the web archive are built from. "
         f"**Checked** is the last time the build read the page; **Last changed** is the last time "
         f"its content differed from the previous read. Generated {fmt_md(generated)} — "
-        f"regenerated on every build as `docs/sources.md` in the calendars repo; this page is a copy.*",
+        f"regenerated on every build as `docs/sources.md` in the calendars repo; [[Links]] is a copy of that file.*",
         "",
         "| Org | Page | Checked | Last changed | Archive |",
         "| --- | --- | --- | --- | --- |",
