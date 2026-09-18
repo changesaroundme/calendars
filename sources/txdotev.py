@@ -37,12 +37,17 @@ from datetime import date, datetime, timedelta
 
 from bs4 import BeautifulSoup
 
+from caltools import registry
 from caltools.model import Event, slugify
 
 SOURCE = "txdotev"
 PAGES = [
     ("UTP", "https://www.txdot.gov/projects/planning/utp/utp-public-involvement.html"),
 ]
+# Registry slug per page: its `expect` window decides whether an empty page is
+# a finding (the UTP involvement tables only exist Jun-Aug; the rest of the
+# year "no tables" is the off-season, not a redesign).
+PAGE_SLUGS = {"UTP": "txdot-utp-public-involvement"}
 # (display abbrev, raw body name [frozen into UIDs], page url)
 COMMITTEES = [
     ("BPAC", "Bicycle and Pedestrian Advisory Committee",
@@ -589,7 +594,8 @@ def enrich_index_events(events: list[Event], get_html) -> None:
                       f"{ev.url}: {exc}")
 
 
-def parse_page(html: str, context: str, page_url: str) -> list[Event]:
+def parse_page(html: str, context: str, page_url: str,
+               today: date | None = None) -> list[Event]:
     soup = BeautifulSoup(html, "html.parser")
     events: list[Event] = []
     matched_tables = 0
@@ -663,10 +669,14 @@ def parse_page(html: str, context: str, page_url: str) -> list[Event]:
                     )
                 )
     if not matched_tables:
-        _problems.append(
-            f"txdotev: no involvement/comment tables on {context} page "
-            "(page redesign?)"
-        )
+        if registry.expected(PAGE_SLUGS.get(context, ""), today):
+            _problems.append(
+                f"txdotev: no involvement/comment tables on {context} page "
+                "(page redesign?)"
+            )
+        else:
+            print(f"[{SOURCE}] {context}: no involvement/comment tables — "
+                  "outside the page's expected season, so not a finding")
     return events
 
 

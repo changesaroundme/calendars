@@ -40,7 +40,7 @@ coa-speak-up-austin-events,CoA,Speak Up Austin events,https://publicinput.com/Po
 atp-events-ical,ATP,Events (Tribe iCal feed),https://www.atptx.org/?post_type=tribe_events&ical=1&eventDisplay=list,atp,always,twice daily,no,ics,active,no,,ci,2026-07-25
 atp-escribe-portal,ATP,Board agendas (eScribe portal),https://pub-atptx.escribemeetings.com/?FillWidth=1,atp,always,twice daily,no,html,active,yes,,ci,2026-08-18
 atp-community-advisory-committee,ATP,Community Advisory Committee,https://www.projectconnect.com/community-advisory-committee/,atp,always,twice daily,no,html,active,yes,,ci,2026-08-09
-txdot-utp-public-involvement,TxDOT,UTP public involvement,https://www.txdot.gov/projects/planning/utp/utp-public-involvement.html,txdotev,annual Jul-Aug,daily Jul-Aug; every 3 days otherwise,yes,html,active,yes,,mac,2026-07-26
+txdot-utp-public-involvement,TxDOT,UTP public involvement,https://www.txdot.gov/projects/planning/utp/utp-public-involvement.html,txdotev,annual annual Jun-Aug,weekly,yes,html,active,yes,,mac,2026-07-26
 txdot-bpac,TxDOT,Bicycle and Pedestrian Advisory Committee,https://www.txdot.gov/about/advisory-committees/bicycle-pedestrian-advisory-committee.html,txdotev,always,twice daily,no,html-table,active,yes,,ci,2026-07-26
 txdot-ptac,TxDOT,Public Transportation Advisory Committee,https://www.txdot.gov/about/advisory-committees/public-transportation-advisory-committee.html,txdotev,always,twice daily,no,html-table,active,yes,,ci,2026-07-26
 txdot-hearings-meetings,TxDOT,Hearings and meetings index,https://www.txdot.gov/projects/hearings-meetings.html,txdotev,always,twice daily,no,html-table,active,yes,,ci,2026-07-28

@@ -37,12 +37,47 @@ STATUS = {"active", "paused", "retired"}
 RUNNER = {"ci", "mac", "manual"}
 YESNO = {"yes", "no"}
 SLUG_RE = re.compile(r"[a-z0-9]+(-[a-z0-9]+)*")
-EXPECT_RE = re.compile(r"always|sporadic|annual .+")
+MONTHS = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
+EXPECT_RE = re.compile(r"always|sporadic|annual ([A-Za-z]{3})(?:-([A-Za-z]{3}))?")
+ROOT = pathlib.Path(__file__).resolve().parent.parent
+_ROWS: list[dict[str, str]] | None = None
 
 
 def load(path: pathlib.Path) -> list[dict[str, str]]:
     with open(path, newline="", encoding="utf-8") as f:
         return list(csv.DictReader(f))
+
+
+def rows() -> list[dict[str, str]]:
+    """The registry, loaded once per process (adapters ask about their own slugs)."""
+    global _ROWS
+    if _ROWS is None:
+        try:
+            _ROWS = load(ROOT / "sources.csv")
+        except OSError:
+            _ROWS = []
+    return _ROWS
+
+
+def expected_now(expect: str, today: date) -> bool:
+    """Is content expected on this page right now, so that an empty page is a
+    finding rather than the off-season? `always` -> yes; `sporadic` -> no;
+    `annual Jun-Aug` -> yes inside the window (inclusive, wraps at year end);
+    `annual Jan` is the one-month window."""
+    m = EXPECT_RE.fullmatch(expect or "")
+    if not m:
+        return True                              # unknown: keep the old behaviour
+    if not m.group(1):
+        return expect == "always"
+    a = MONTHS.index(m.group(1).lower()) + 1
+    b = MONTHS.index((m.group(2) or m.group(1)).lower()) + 1
+    return a <= today.month <= b if a <= b else (today.month >= a or today.month <= b)
+
+
+def expected(slug: str, today: date | None = None) -> bool:
+    """expected_now() for a registry slug; an unregistered slug is `always`."""
+    row = next((r for r in rows() if r["slug"] == slug), None)
+    return expected_now(row["expect"] if row else "always", today or date.today())
 
 
 def validate(rows: list[dict[str, str]], calendars: set[str],
@@ -90,8 +125,11 @@ def validate(rows: list[dict[str, str]], calendars: set[str],
         seen_url.setdefault(r["url"], i)
         if r["calendar"] and r["calendar"] not in calendars:
             bad(f"unknown calendar {r['calendar']!r}")
-        if not EXPECT_RE.fullmatch(r["expect"]):
-            bad(f"expect must be always / sporadic / annual <when>, got {r['expect']!r}")
+        em = EXPECT_RE.fullmatch(r["expect"])
+        if not em:
+            bad(f"expect must be always / sporadic / annual Mon-Mon, got {r['expect']!r}")
+        elif em.group(1) and not {em.group(1).lower(), (em.group(2) or em.group(1)).lower()} <= set(MONTHS):
+            bad(f"expect months must be Jan..Dec, got {r['expect']!r}")
         if not r["check"]:
             bad("check is empty")
         if r["archive"] not in YESNO:
@@ -145,6 +183,14 @@ def selftest() -> None:
     assert any("bad url" in p and "line 4" in p for p in probs), probs
     assert any("neither fetched nor archived" in p and "line 5" in p for p in probs), probs
     assert any("in the future" in p and "line 6" in p for p in probs), probs
+    # Seasonal expectation windows.
+    assert expected_now("always", date(2026, 3, 1))
+    assert not expected_now("sporadic", date(2026, 3, 1))
+    assert expected_now("annual Jun-Aug", date(2026, 7, 4))
+    assert not expected_now("annual Jun-Aug", date(2026, 9, 16))
+    assert expected_now("annual Jan", date(2026, 1, 20)) and not expected_now("annual Jan", date(2026, 2, 1))
+    assert expected_now("annual Nov-Jan", date(2027, 1, 5)) and not expected_now("annual Nov-Jan", date(2026, 6, 1))
+    assert any("months must be" in p for p in validate([dict(good, expect="annual Foo-Bar")], cals))
     # URL matching: exact, query/path extensions, longest wins, no false prefix.
     rows = [dict(good, slug="a", url="https://x.gov/a"),
             dict(good, slug="a-b", url="https://x.gov/a/b"),
