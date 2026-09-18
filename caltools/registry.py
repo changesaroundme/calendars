@@ -42,18 +42,19 @@ MONTHS = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", 
 #   always | sporadic
 #   every <N> year[s] [from <YYYY>] <Mon>[-<Mon>]        every 1 year Jun-Aug · every 2 years from 2025 Jan-May
 #   every <N> month[s] from <Mon> [<D> month[s] long]    every 3 months from Jan · every 2 months from Feb 2 months long
-#   quarterly [from <Mon>]                               = every 3 months from Jan (window: the first month of each quarter)
+#   every <N> quarter[s] [from Q<q> <YYYY>]              every 2 quarters from Q1 2026 (window: the whole quarter; from required for N > 1)
 MON = r"(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)"
 EXPECT_YEAR_RE = re.compile(
     rf"every (\d+) years?(?: from (20\d\d))? {MON}(?:-{MON})?", re.IGNORECASE)
 EXPECT_MONTH_RE = re.compile(
     rf"every (\d+) months? from {MON}(?: (\d+) months? long)?", re.IGNORECASE)
-EXPECT_QUARTER_RE = re.compile(rf"quarterly(?: from {MON})?", re.IGNORECASE)
+EXPECT_QUARTER_RE = re.compile(r"every (\d+) quarters?(?: from Q([1-4]) (20\d\d))?", re.IGNORECASE)
 
 
 def parse_expect(expect: str):
     """-> None (invalid) | ("always",) | ("sporadic",) | ("year", n, from_year|None, a, b)
-    | ("month", n, anchor, length). Months are 1-12."""
+    | ("month", n, anchor, length) | ("quarter", n, anchor_index|None). Months are 1-12;
+    a quarter index is year*4 + quarter-1."""
     e = (expect or "").strip()
     if e in ("always", "sporadic"):
         return (e,)
@@ -66,7 +67,11 @@ def parse_expect(expect: str):
         n, anchor, length = int(m.group(1)), MONTHS.index(m.group(2).lower()) + 1, int(m.group(3) or 1)
         return ("month", n, anchor, length) if 1 <= length <= n else None
     if m := EXPECT_QUARTER_RE.fullmatch(e):
-        return ("month", 3, MONTHS.index((m.group(1) or "jan").lower()) + 1, 1)
+        n = int(m.group(1))
+        if n < 1:
+            return None
+        anchor = int(m.group(3)) * 4 + int(m.group(2)) - 1 if m.group(2) else None
+        return ("quarter", n, anchor)
     return None
 
 
@@ -105,6 +110,10 @@ def expected_now(expect: str, today: date) -> bool:
     if kind == "month":
         _, n, anchor, length = spec
         return (today.month - anchor) % n < length
+    if kind == "quarter":
+        _, n, anchor = spec
+        this_q = today.year * 4 + (today.month - 1) // 3
+        return anchor is None or (this_q - anchor) % n == 0
     _, n, start_year, a, b = spec
     if a <= b:
         in_window, window_year = a <= today.month <= b, today.year
@@ -170,9 +179,11 @@ def validate(rows: list[dict[str, str]], calendars: set[str],
         spec = parse_expect(r["expect"])
         if spec is None:
             bad(f"expect must be always / sporadic / every N year(s) [from YYYY] Mon[-Mon] / "
-                f"every N month(s) from Mon [D months long] / quarterly [from Mon], got {r['expect']!r}")
+                f"every N month(s) from Mon [D months long] / every N quarter(s) [from Qn YYYY], got {r['expect']!r}")
         elif spec[0] == "year" and spec[1] > 1 and spec[2] is None:
             bad(f"expect 'every {spec[1]} years' needs 'from <year>' to say which years")
+        elif spec[0] == "quarter" and spec[1] > 1 and spec[2] is None:
+            bad(f"expect 'every {spec[1]} quarters' needs 'from Q<n> <year>' to say which quarters")
         if not r["check"]:
             bad("check is empty")
         if r["archive"] not in YESNO:
@@ -238,9 +249,13 @@ def selftest() -> None:
     assert not expected_now(leg, date(2026, 3, 1)) and not expected_now(leg, date(2025, 9, 1))
     assert expected_now("every 2 years from 2025 Nov-Jan", date(2026, 1, 10))   # window started in 2025
     assert not expected_now("every 2 years from 2025 Nov-Jan", date(2027, 1, 10))
-    q = "quarterly"                                   # Jan, Apr, Jul, Oct
-    assert expected_now(q, date(2026, 4, 1)) and not expected_now(q, date(2026, 5, 1))
-    assert expected_now("quarterly from Feb", date(2026, 11, 1)) and not expected_now("quarterly from Feb", date(2026, 10, 1))
+    q = "every 2 quarters from Q1 2026"               # Q1 2026, Q3 2026, Q1 2027 ...
+    assert expected_now(q, date(2026, 2, 1)) and expected_now(q, date(2026, 8, 31)) and expected_now(q, date(2027, 1, 1))
+    assert not expected_now(q, date(2026, 5, 1)) and not expected_now(q, date(2026, 12, 31))
+    assert expected_now("every 3 quarters from Q4 2025", date(2026, 7, 15)) and not expected_now("every 3 quarters from Q4 2025", date(2026, 4, 15))
+    assert expected_now("every 1 quarter", date(2026, 6, 1))                   # every quarter = always
+    assert any("needs 'from Q" in p for p in validate([dict(good, expect="every 2 quarters")], cals))
+    assert parse_expect("quarterly") is None
     assert expected_now("every 2 months from Feb 2 months long", date(2026, 3, 1))
     assert not expected_now("every 6 months from Jan", date(2026, 4, 1))
     assert any("needs 'from" in p for p in validate([dict(good, expect="every 2 years Jan-May")], cals))
