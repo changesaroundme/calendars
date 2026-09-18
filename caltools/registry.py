@@ -38,7 +38,38 @@ RUNNER = {"ci", "mac", "manual"}
 YESNO = {"yes", "no"}
 SLUG_RE = re.compile(r"[a-z0-9]+(-[a-z0-9]+)*")
 MONTHS = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
-EXPECT_RE = re.compile(r"always|sporadic|annual ([A-Za-z]{3})(?:-([A-Za-z]{3}))?")
+# expect grammar (one cell, hand-typed):
+#   always | sporadic
+#   every <N> year[s] [from <YYYY>] <Mon>[-<Mon>]        every 1 year Jun-Aug · every 2 years from 2025 Jan-May
+#   every <N> month[s] from <Mon> [<D> month[s] long]    every 3 months from Jan · every 2 months from Feb 2 months long
+#   quarterly [from <Mon>]                               = every 3 months from Jan (window: the first month of each quarter)
+MON = r"(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)"
+EXPECT_YEAR_RE = re.compile(
+    rf"every (\d+) years?(?: from (20\d\d))? {MON}(?:-{MON})?", re.IGNORECASE)
+EXPECT_MONTH_RE = re.compile(
+    rf"every (\d+) months? from {MON}(?: (\d+) months? long)?", re.IGNORECASE)
+EXPECT_QUARTER_RE = re.compile(rf"quarterly(?: from {MON})?", re.IGNORECASE)
+
+
+def parse_expect(expect: str):
+    """-> None (invalid) | ("always",) | ("sporadic",) | ("year", n, from_year|None, a, b)
+    | ("month", n, anchor, length). Months are 1-12."""
+    e = (expect or "").strip()
+    if e in ("always", "sporadic"):
+        return (e,)
+    if m := EXPECT_YEAR_RE.fullmatch(e):
+        n, yr, a, b = int(m.group(1)), m.group(2), m.group(3), m.group(4) or m.group(3)
+        if n < 1:
+            return None
+        return ("year", n, int(yr) if yr else None, MONTHS.index(a.lower()) + 1, MONTHS.index(b.lower()) + 1)
+    if m := EXPECT_MONTH_RE.fullmatch(e):
+        n, anchor, length = int(m.group(1)), MONTHS.index(m.group(2).lower()) + 1, int(m.group(3) or 1)
+        return ("month", n, anchor, length) if 1 <= length <= n else None
+    if m := EXPECT_QUARTER_RE.fullmatch(e):
+        return ("month", 3, MONTHS.index((m.group(1) or "jan").lower()) + 1, 1)
+    return None
+
+
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 _ROWS: list[dict[str, str]] | None = None
 
@@ -61,17 +92,28 @@ def rows() -> list[dict[str, str]]:
 
 def expected_now(expect: str, today: date) -> bool:
     """Is content expected on this page right now, so that an empty page is a
-    finding rather than the off-season? `always` -> yes; `sporadic` -> no;
-    `annual Jun-Aug` -> yes inside the window (inclusive, wraps at year end);
-    `annual Jan` is the one-month window."""
-    m = EXPECT_RE.fullmatch(expect or "")
-    if not m:
+    finding rather than the off-season? See parse_expect for the grammar.
+    Year windows are inclusive and may wrap the year end (Nov-Jan belongs to
+    the year it starts in); `every N years` counts from `from` (or any year
+    when no anchor is given, though the validator requires one for N > 1)."""
+    spec = parse_expect(expect)
+    if spec is None:
         return True                              # unknown: keep the old behaviour
-    if not m.group(1):
-        return expect == "always"
-    a = MONTHS.index(m.group(1).lower()) + 1
-    b = MONTHS.index((m.group(2) or m.group(1)).lower()) + 1
-    return a <= today.month <= b if a <= b else (today.month >= a or today.month <= b)
+    kind = spec[0]
+    if kind in ("always", "sporadic"):
+        return kind == "always"
+    if kind == "month":
+        _, n, anchor, length = spec
+        return (today.month - anchor) % n < length
+    _, n, start_year, a, b = spec
+    if a <= b:
+        in_window, window_year = a <= today.month <= b, today.year
+    else:                                        # wraps: Nov-Jan
+        in_window = today.month >= a or today.month <= b
+        window_year = today.year if today.month >= a else today.year - 1
+    if not in_window:
+        return False
+    return start_year is None or (window_year - start_year) % n == 0
 
 
 def expected(slug: str, today: date | None = None) -> bool:
@@ -125,11 +167,12 @@ def validate(rows: list[dict[str, str]], calendars: set[str],
         seen_url.setdefault(r["url"], i)
         if r["calendar"] and r["calendar"] not in calendars:
             bad(f"unknown calendar {r['calendar']!r}")
-        em = EXPECT_RE.fullmatch(r["expect"])
-        if not em:
-            bad(f"expect must be always / sporadic / annual Mon-Mon, got {r['expect']!r}")
-        elif em.group(1) and not {em.group(1).lower(), (em.group(2) or em.group(1)).lower()} <= set(MONTHS):
-            bad(f"expect months must be Jan..Dec, got {r['expect']!r}")
+        spec = parse_expect(r["expect"])
+        if spec is None:
+            bad(f"expect must be always / sporadic / every N year(s) [from YYYY] Mon[-Mon] / "
+                f"every N month(s) from Mon [D months long] / quarterly [from Mon], got {r['expect']!r}")
+        elif spec[0] == "year" and spec[1] > 1 and spec[2] is None:
+            bad(f"expect 'every {spec[1]} years' needs 'from <year>' to say which years")
         if not r["check"]:
             bad("check is empty")
         if r["archive"] not in YESNO:
@@ -186,11 +229,23 @@ def selftest() -> None:
     # Seasonal expectation windows.
     assert expected_now("always", date(2026, 3, 1))
     assert not expected_now("sporadic", date(2026, 3, 1))
-    assert expected_now("annual Jun-Aug", date(2026, 7, 4))
-    assert not expected_now("annual Jun-Aug", date(2026, 9, 16))
-    assert expected_now("annual Jan", date(2026, 1, 20)) and not expected_now("annual Jan", date(2026, 2, 1))
-    assert expected_now("annual Nov-Jan", date(2027, 1, 5)) and not expected_now("annual Nov-Jan", date(2026, 6, 1))
-    assert any("months must be" in p for p in validate([dict(good, expect="annual Foo-Bar")], cals))
+    assert expected_now("every 1 year Jun-Aug", date(2026, 7, 4))
+    assert not expected_now("every 1 year Jun-Aug", date(2026, 9, 16))
+    assert expected_now("every 1 year Jan", date(2026, 1, 20)) and not expected_now("every 1 year Jan", date(2026, 2, 1))
+    assert expected_now("every 1 year Nov-Jan", date(2027, 1, 5)) and not expected_now("every 1 year Nov-Jan", date(2026, 6, 1))
+    leg = "every 2 years from 2025 Jan-May"          # Texas Legislature: odd years
+    assert expected_now(leg, date(2025, 3, 1)) and expected_now(leg, date(2027, 1, 20))
+    assert not expected_now(leg, date(2026, 3, 1)) and not expected_now(leg, date(2025, 9, 1))
+    assert expected_now("every 2 years from 2025 Nov-Jan", date(2026, 1, 10))   # window started in 2025
+    assert not expected_now("every 2 years from 2025 Nov-Jan", date(2027, 1, 10))
+    q = "quarterly"                                   # Jan, Apr, Jul, Oct
+    assert expected_now(q, date(2026, 4, 1)) and not expected_now(q, date(2026, 5, 1))
+    assert expected_now("quarterly from Feb", date(2026, 11, 1)) and not expected_now("quarterly from Feb", date(2026, 10, 1))
+    assert expected_now("every 2 months from Feb 2 months long", date(2026, 3, 1))
+    assert not expected_now("every 6 months from Jan", date(2026, 4, 1))
+    assert any("needs 'from" in p for p in validate([dict(good, expect="every 2 years Jan-May")], cals))
+    assert any("expect must be" in p for p in validate([dict(good, expect="annual Jun-Aug")], cals))
+    assert parse_expect("every 3 months from Jan 4 months long") is None      # window longer than period
     # URL matching: exact, query/path extensions, longest wins, no false prefix.
     rows = [dict(good, slug="a", url="https://x.gov/a"),
             dict(good, slug="a-b", url="https://x.gov/a/b"),

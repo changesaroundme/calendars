@@ -9,7 +9,7 @@ lcra-water-public-comment,LCRA,Water rules and permits open for public comment,h
 ctrma-board-upcoming,CTRMA,Board meetings (upcoming),https://www.mobilityauthority.com/board-meetings/upcoming/,ctrma,always,twice daily,no,html,active,yes,,ci,2026-07-19
 coa-council-legistar-calendar,CoA,City Council Legistar calendar,https://austintexas.legistar.com/Calendar.aspx,austin,always,twice daily,no,html,active,yes,,ci,2026-07-25
 coa-council-legistar-api,CoA,City Council Legistar Web API,https://webapi.legistar.com/v1/austintexas/events,austin,always,twice daily,no,api,active,no,,ci,2026-07-25
-coa-council-annual-schedule-pdf,CoA,Council annual meeting schedule (EDIMS PDF),https://services.austintexas.gov/edims/document.cfm?id=462100,austin,annual Jan,twice daily,no,pdf,active,yes,,ci,2026-07-25
+coa-council-annual-schedule-pdf,CoA,Council annual meeting schedule (EDIMS PDF),https://services.austintexas.gov/edims/document.cfm?id=462100,austin,every 1 year Jan,twice daily,no,pdf,active,yes,,ci,2026-07-25
 coa-airport-advisory-commission,CoA,Airport Advisory Commission,https://www.austintexas.gov/boards-commissions/board/airport-advisory-commission,austin,always,twice daily,no,html,active,yes,,ci,2026-07-25
 coa-airport-advisory-commission-meetings,CoA,Airport Advisory Commission — meeting content,https://www.austintexas.gov/boards-commissions/meetings/7_1,austin,always,twice daily,no,html,active,yes,coa-airport-advisory-commission,ci,2026-07-25
 coa-integrated-water-resource-planning-task-force,CoA,Austin Integrated Water Resource Planning Community Task Force,https://www.austintexas.gov/boards-commissions/board/austin-integrated-water-resource-planning-community-task-force,austin,always,twice daily,no,html,active,yes,,ci,2026-07-25
@@ -40,13 +40,13 @@ coa-speak-up-austin-events,CoA,Speak Up Austin events,https://publicinput.com/Po
 atp-events-ical,ATP,Events (Tribe iCal feed),https://www.atptx.org/?post_type=tribe_events&ical=1&eventDisplay=list,atp,always,twice daily,no,ics,active,no,,ci,2026-07-25
 atp-escribe-portal,ATP,Board agendas (eScribe portal),https://pub-atptx.escribemeetings.com/?FillWidth=1,atp,always,twice daily,no,html,active,yes,,ci,2026-08-18
 atp-community-advisory-committee,ATP,Community Advisory Committee,https://www.projectconnect.com/community-advisory-committee/,atp,always,twice daily,no,html,active,yes,,ci,2026-08-09
-txdot-utp-public-involvement,TxDOT,UTP public involvement,https://www.txdot.gov/projects/planning/utp/utp-public-involvement.html,txdotev,annual annual Jun-Aug,weekly,yes,html,active,yes,,mac,2026-07-26
+txdot-utp-public-involvement,TxDOT,UTP public involvement,https://www.txdot.gov/projects/planning/utp/utp-public-involvement.html,txdotev,every 1 year Jun-Aug,weekly,yes,html,active,yes,,mac,2026-07-26
 txdot-bpac,TxDOT,Bicycle and Pedestrian Advisory Committee,https://www.txdot.gov/about/advisory-committees/bicycle-pedestrian-advisory-committee.html,txdotev,always,twice daily,no,html-table,active,yes,,ci,2026-07-26
 txdot-ptac,TxDOT,Public Transportation Advisory Committee,https://www.txdot.gov/about/advisory-committees/public-transportation-advisory-committee.html,txdotev,always,twice daily,no,html-table,active,yes,,ci,2026-07-26
 txdot-hearings-meetings,TxDOT,Hearings and meetings index,https://www.txdot.gov/projects/hearings-meetings.html,txdotev,always,twice daily,no,html-table,active,yes,,ci,2026-07-28
 txdot-bike-ped-coordinators,TxDOT,Bicycle and pedestrian coordinators,https://www.txdot.gov/about/advisory-committees/bicycle-pedestrian-advisory-committee/regional-coordination-planning.html,,sporadic,every 3 days,yes,none,active,yes,,mac,2026-09-01
-legislature-senate-events,Legislature,Senate committee events,https://senate.texas.gov/events.php,legislature,sporadic,twice daily,no,html,active,yes,,ci,2026-07-28
-legislature-house-meetings-upcoming,Legislature,House committee meetings (upcoming),https://capitol.texas.gov/Committees/MeetingsUpcoming.aspx?Chamber=H,legislature,sporadic,twice daily,no,html,active,yes,,ci,2026-08-15
+legislature-senate-events,Legislature,Senate committee events,https://senate.texas.gov/events.php,legislature,every 2 years from 2025 Jan-May,twice daily,no,html,active,yes,,ci,2026-07-28
+legislature-house-meetings-upcoming,Legislature,House committee meetings (upcoming),https://capitol.texas.gov/Committees/MeetingsUpcoming.aspx?Chamber=H,legislature,every 2 years from 2025 Jan-May,twice daily,no,html,active,yes,,ci,2026-08-15
 puc-calendar-rss,PUC,Commission calendar RSS,https://www.puc.texas.gov/agency/calendar/getcalendarrss/,puc,always,twice daily,no,rss,active,no,,ci,2026-08-17
 puc-broadcasts,PUC,Broadcasts,https://www.puc.texas.gov/agency/calendar/broadcasts/,puc,always,twice daily,no,html,active,yes,,ci,2026-08-17
 tpsc-wp-posts,TPSC,Announcements (WP REST posts),https://www.texaspedsafety.org/wp-json/wp/v2/posts,tpsc,sporadic,twice daily,no,api,active,no,,ci,2026-09-05
