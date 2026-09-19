@@ -24,7 +24,7 @@ import hashlib
 import json
 import pathlib
 import re
-from datetime import date, datetime
+from datetime import date, datetime, timezone
 from urllib.parse import urlparse
 
 COLUMNS = ["slug", "org", "name", "url", "calendar", "expect", "check",
@@ -129,6 +129,14 @@ def expected(slug: str, today: date | None = None) -> bool:
     """expected_now() for a registry slug; an unregistered slug is `always`."""
     row = next((r for r in rows() if r["slug"] == slug), None)
     return expected_now(row["expect"] if row else "always", today or date.today())
+
+
+def parse_mode(slug: str) -> str:
+    """The registry's `parse` value for a slug ('' when unregistered). Adapters
+    use it to stand down from a page whose events are curated by hand
+    (`claude`, `manual`) while still fetching it for the Checked stamp."""
+    row = next((r for r in rows() if r["slug"] == slug), None)
+    return row["parse"] if row else ""
 
 
 def validate(rows: list[dict[str, str]], calendars: set[str],
@@ -272,23 +280,101 @@ def selftest() -> None:
     assert match_slug("https://x.gov/c.html/sub", rows) == "html"
     assert match_slug("https://x.gov/c.htmlx", rows) is None
     assert match_slug("https://x.gov/ab", rows) is None
-    # ASP.NET viewstate churn must not read as a change.
-    v1 = b'<input name="__VIEWSTATE" id="v" value="AAA" /><p>same</p>'
-    v2 = b'<input name="__VIEWSTATE" id="v" value="BBB" /><p>same</p>'
-    assert body_hash(v1) == body_hash(v2)
-    assert body_hash(v1) != body_hash(b'<p>other</p>')
+    # Per-request noise must not read as a change; real edits still must.
+    # One pair per _NOISE pattern, lifted from the sites' actual markup.
+    noise = [
+        (b'<input name="__VIEWSTATE" id="v" value="AAA" /><p>same</p>',
+         b'<input name="__VIEWSTATE" id="v" value="BBB" /><p>same</p>'),
+        (b'<link href="Feed.ashx?M=Calendar&amp;ID=44783118&amp;GUID=3feb264b-2018-4eb2-a7e8-ae002aa49398"',
+         b'<link href="Feed.ashx?M=Calendar&amp;ID=44783122&amp;GUID=224d659d-383d-4d43-9474-d53e641e8300"'),
+        (b"&quot;Alerts.aspx?M=CA&amp;ID=44783118&amp;GUID=3feb264b-2018-4eb2-a7e8-ae002aa49398&quot;",
+         b"&quot;Alerts.aspx?M=CA&amp;ID=44783122&amp;GUID=224d659d-383d-4d43-9474-d53e641e8300&quot;"),
+        (b"const sessionId = 'fb2evltlow0b3nnacxzmfw0n';",
+         b"const sessionId = '3z3dgrk55quil20e0j3uoe30';"),
+        (b'data-links="gov.tx.txdot.cmd.reImagine.core.models.FooterItem@31f60766,gov.tx.txdot.cmd.reImagine.core.models.FooterItem@3d3f1ae6"',
+         b'data-links="gov.tx.txdot.cmd.reImagine.core.models.FooterItem@3dbc0fc5,gov.tx.txdot.cmd.reImagine.core.models.FooterItem@687e8fb7"'),
+        (b'<script src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=130436041" async></script>',
+         b'<script src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=3&cb=701614767" async></script>'),
+        (b"d.innerHTML=\"window.__CF$cv$params={r:'a3d55717ae51c303',t:'MTc4OTc4NjgyNw=='}\"",
+         b"d.innerHTML=\"window.__CF$cv$params={r:'a3d55263ee1c303',t:'MTc4OTc4NjgyOQ=='}\""),
+        (b'var wpdm_js = {"client_id":"b80b3b982f16cc12fdccac361a4b9c05","color_scheme":"system"};',
+         b'var wpdm_js = {"client_id":"df3105383208244e4fa2f42c13025969","color_scheme":"system"};'),
+        (b'"ajaxurl":"https:\\/\\/www.lcra.org\\/wp-admin\\/admin-ajax.php","nonce":"612be2e9df","preview":false',
+         b'"ajaxurl":"https:\\/\\/www.lcra.org\\/wp-admin\\/admin-ajax.php","nonce":"a1b2c3d4e5","preview":false'),
+        (b"admin-ajax.php?action=x&_wpnonce=612be2e9df\"", b"admin-ajax.php?action=x&_wpnonce=a1b2c3d4e5\""),
+        (b"BEGIN:VEVENT\r\nDTSTAMP:20260918T215951\r\nCREATED:20251124T190855Z\r\n",
+         b"BEGIN:VEVENT\r\nDTSTAMP:20260919T101502\r\nCREATED:20251124T190855Z\r\n"),
+    ]
+    for a, b in noise:
+        assert body_hash(a) == body_hash(b), (a, b)
+    assert body_hash(noise[0][0]) != body_hash(b'<p>other</p>')
+    # Content changes beside the noise still register.
+    assert body_hash(b"DTSTAMP:20260918T215951\r\nSUMMARY:Board\r\n") != \
+        body_hash(b"DTSTAMP:20260918T215951\r\nSUMMARY:Board (moved)\r\n")
+    assert body_hash(b'"nonce":"612be2e9df","postId":350') != body_hash(b'"nonce":"612be2e9df","postId":351')
+    # Email addresses are not Java identity hashes.
+    assert normalize(b"mail first.last@cafe.org now") == b"mail first.last@cafe.org now"
+    assert body_hash(b"x").startswith(HASH_SCHEME + ":")
+    assert not comparable("sha256:aa", HASH_SCHEME + ":aa")
+    assert comparable(HASH_SCHEME + ":aa", HASH_SCHEME + ":bb")
+    # Scheme change carries the old "changed" stamp forward; same-scheme
+    # difference re-stamps; same hash keeps it.
+    import tempfile
+    with tempfile.TemporaryDirectory() as td:
+        prior = pathlib.Path(td) / "old.json"
+        prior.write_text(json.dumps({"sources": {
+            "a": {"checked": "2026-01-01T00:00:00Z", "changed": "2025-12-01T00:00:00Z", "hash": "sha256:old"},
+            "b": {"checked": "2026-01-01T00:00:00Z", "changed": "2025-12-01T00:00:00Z", "hash": body_hash(b"same")},
+            "c": {"checked": "2026-01-01T00:00:00Z", "changed": "2025-12-01T00:00:00Z", "hash": body_hash(b"was")},
+        }}))
+        t = Tracker([])
+        t.seen = {"a": body_hash(b"x"), "b": body_hash(b"same"), "c": body_hash(b"now")}
+        doc = t.write(pathlib.Path(td) / "new.json", prior, datetime(2026, 2, 1, tzinfo=timezone.utc))
+        assert doc["sources"]["a"]["changed"] == "2025-12-01T00:00:00Z"
+        assert doc["sources"]["b"]["changed"] == "2025-12-01T00:00:00Z"
+        assert doc["sources"]["c"]["changed"] == "2026-02-01T00:00:00Z"
 
 
 # ---------------------------------------------------------------------------
 # docs/status.json — per-slug "checked" / "changed", from the live session
 # ---------------------------------------------------------------------------
 
-# ASP.NET pages (Legistar) carry a fresh __VIEWSTATE on every response, so
-# hashing the raw body would report "changed" on every build. Blank those
-# hidden fields before hashing; anything else that churns will show up as
-# daily changes in status.json and can be added here when it does.
-_ASPNET_RE = re.compile(
-    rb'(name="__(?:VIEWSTATE|VIEWSTATEGENERATOR|EVENTVALIDATION)"[^>]*?value=")[^"]*(")')
+# Per-request noise that must not read as a page change. Each pattern was
+# found by fetching the page twice and diffing (Sep 2026); the (site) note
+# says where it came from. Blank the noise, hash what is left. HASH_SCHEME
+# bumps whenever this list changes so the next build carries every page's
+# "changed" stamp forward instead of re-stamping it (hashes from an older
+# scheme are not comparable).
+HASH_SCHEME = "sha256v2"
+_NOISE = [
+    # ASP.NET (Legistar, eSCRIBE, PUC): viewstate blobs differ per response.
+    (rb'(name="__(?:VIEWSTATE|VIEWSTATEGENERATOR|EVENTVALIDATION)"[^>]*?value=")[^"]*(")',
+     rb"\1\2"),
+    # Legistar: each render mints a saved-filter ID + GUID for the feed/alert links.
+    (rb'((?:Feed\.ashx|Alerts\.aspx)\?M=\w+&(?:amp;)?ID=)\d+(&(?:amp;)?GUID=)[0-9A-Fa-f-]{36}',
+     rb"\1\2"),
+    # eSCRIBE (ATP): `const sessionId = '...'`.
+    (rb"""(\bsessionId\s*=\s*['"])[^'"]*(['"])""", rb"\1\2"),
+    # TxDOT (AEM): Java object identity hashes in data attributes, `FooterItem@31f60766`.
+    (rb'(\b[A-Za-z_$][\w$]*(?:\.[A-Za-z_$][\w$]*)+@)[0-9a-f]{1,8}(?![\w.])', rb"\1"),
+    # austintexas.gov (Imperva/Incapsula): `_Incapsula_Resource?...&ns=8&cb=1165696431`.
+    (rb'(_Incapsula_Resource\?[^"\'\s>]*?&ns=)\d+&cb=\d+', rb"\1"),
+    # Cloudflare bot management (CTRMA, Project Connect): `__CF$cv$params={r:'..',t:'..'}`.
+    (rb"(__CF\$cv\$params=\{)r:'[^']*',t:'[^']*'", rb"\1"),
+    # WordPress Download Manager (LCRA): per-request `"client_id":"<32 hex>"`.
+    (rb'("client_id":")[0-9a-f]{32}(")', rb"\1\2"),
+    # WordPress nonces rotate every 12-24 h: `"nonce":"612be2e9df"`, `_wpnonce=...`.
+    (rb"""((?:_wp)?nonce["']?\s*[:=]\s*["']?)[0-9a-f]{10}(?![0-9a-f])""", rb"\1"),
+    # iCalendar feeds (The Events Calendar): DTSTAMP is the generation time.
+    (rb"(?m)^(DTSTAMP:)\d{8}T\d{6}Z?", rb"\1"),
+]
+_NOISE = [(re.compile(p), r) for p, r in _NOISE]
+
+
+def normalize(body: bytes) -> bytes:
+    for pat, rep in _NOISE:
+        body = pat.sub(rep, body)
+    return body
 
 
 def _norm(url: str) -> str:
@@ -311,7 +397,12 @@ def match_slug(url: str, rows: list[dict[str, str]]) -> str | None:
 
 
 def body_hash(body: bytes) -> str:
-    return "sha256:" + hashlib.sha256(_ASPNET_RE.sub(rb"\1\2", body)).hexdigest()
+    return f"{HASH_SCHEME}:" + hashlib.sha256(normalize(body)).hexdigest()
+
+
+def comparable(old_hash: str, new_hash: str) -> bool:
+    """Two hashes can only be compared under the same scheme."""
+    return old_hash.split(":", 1)[0] == new_hash.split(":", 1)[0]
 
 
 class Tracker:
@@ -344,9 +435,13 @@ class Tracker:
         sources = dict(prior)
         for slug, h in self.seen.items():
             old = prior.get(slug, {})
+            old_h = old.get("hash", "")
+            # Same content, or a hash we cannot compare against (scheme
+            # changed): keep the previous "changed" stamp.
+            unchanged = old_h == h or not comparable(old_h, h) if old_h else False
             sources[slug] = {
                 "checked": stamp,
-                "changed": old.get("changed", stamp) if old.get("hash") == h else stamp,
+                "changed": old.get("changed", stamp) if unchanged else stamp,
                 "hash": h,
             }
         doc = {"generated": stamp,
