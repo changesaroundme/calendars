@@ -315,10 +315,8 @@ def selftest() -> None:
     # Email addresses are not Java identity hashes.
     assert normalize(b"mail first.last@cafe.org now") == b"mail first.last@cafe.org now"
     assert body_hash(b"x").startswith(HASH_SCHEME + ":")
-    assert not comparable("sha256:aa", HASH_SCHEME + ":aa")
-    assert comparable(HASH_SCHEME + ":aa", HASH_SCHEME + ":bb")
-    # Scheme change carries the old "changed" stamp forward; same-scheme
-    # difference re-stamps; same hash keeps it.
+    # A hash from an older scheme re-stamps (baseline reset); a same-scheme
+    # difference re-stamps; the same hash keeps the old stamp.
     import tempfile
     with tempfile.TemporaryDirectory() as td:
         prior = pathlib.Path(td) / "old.json"
@@ -330,7 +328,7 @@ def selftest() -> None:
         t = Tracker([])
         t.seen = {"a": body_hash(b"x"), "b": body_hash(b"same"), "c": body_hash(b"now")}
         doc = t.write(pathlib.Path(td) / "new.json", prior, datetime(2026, 2, 1, tzinfo=timezone.utc))
-        assert doc["sources"]["a"]["changed"] == "2025-12-01T00:00:00Z"
+        assert doc["sources"]["a"]["changed"] == "2026-02-01T00:00:00Z"
         assert doc["sources"]["b"]["changed"] == "2025-12-01T00:00:00Z"
         assert doc["sources"]["c"]["changed"] == "2026-02-01T00:00:00Z"
 
@@ -342,9 +340,9 @@ def selftest() -> None:
 # Per-request noise that must not read as a page change. Each pattern was
 # found by fetching the page twice and diffing (Sep 2026); the (site) note
 # says where it came from. Blank the noise, hash what is left. HASH_SCHEME
-# bumps whenever this list changes so the next build carries every page's
-# "changed" stamp forward instead of re-stamping it (hashes from an older
-# scheme are not comparable).
+# bumps whenever this list changes; the first build after a bump re-stamps
+# every page (a deliberate baseline reset — one clean "changed" date beats
+# carrying forward stamps the old hashing polluted).
 HASH_SCHEME = "sha256v2"
 _NOISE = [
     # ASP.NET (Legistar, eSCRIBE, PUC): viewstate blobs differ per response.
@@ -400,10 +398,6 @@ def body_hash(body: bytes) -> str:
     return f"{HASH_SCHEME}:" + hashlib.sha256(normalize(body)).hexdigest()
 
 
-def comparable(old_hash: str, new_hash: str) -> bool:
-    """Two hashes can only be compared under the same scheme."""
-    return old_hash.split(":", 1)[0] == new_hash.split(":", 1)[0]
-
 
 class Tracker:
     """requests response hook that records fetches per registry slug."""
@@ -435,13 +429,9 @@ class Tracker:
         sources = dict(prior)
         for slug, h in self.seen.items():
             old = prior.get(slug, {})
-            old_h = old.get("hash", "")
-            # Same content, or a hash we cannot compare against (scheme
-            # changed): keep the previous "changed" stamp.
-            unchanged = old_h == h or not comparable(old_h, h) if old_h else False
             sources[slug] = {
                 "checked": stamp,
-                "changed": old.get("changed", stamp) if unchanged else stamp,
+                "changed": old.get("changed", stamp) if old.get("hash") == h else stamp,
                 "hash": h,
             }
         doc = {"generated": stamp,

@@ -5,7 +5,7 @@ capmetro-legistar-calendar,CapMetro,Legistar calendar,https://capmetrotx.legista
 capmetro-legistar-api,CapMetro,Legistar Web API events,https://webapi.legistar.com/v1/capmetrotx/events,capmetro,always,twice daily,no,api,active,no,,ci,2026-07-19
 ttc-meeting-dates,TTC,Meeting dates and agendas,https://www.txdot.gov/about/leadership/texas-transportation-commission/meeting-dates-agendas.html,txdot,always,twice daily,no,html-table,active,yes,,ci,2026-07-19
 lcra-board-schedule,LCRA,Board meeting schedule,https://www.lcra.org/about/leadership/board-meeting-schedule/,lcra,always,twice daily,no,html-table,active,yes,,ci,2026-07-19
-lcra-water-public-comment,LCRA,Water rules and permits open for public comment,https://www.lcra.org/water/water-related-rules-and-regulations-for-public-comment/,lcra,sporadic,daily,yes,html,active,yes,,mac,2026-08-03
+lcra-water-public-comment,LCRA,Water rules and permits open for public comment,https://www.lcra.org/water/water-related-rules-and-regulations-for-public-comment/,lcra,sporadic,daily,yes,claude,active,yes,,mac,2026-08-03
 ctrma-board-upcoming,CTRMA,Board meetings (upcoming),https://www.mobilityauthority.com/board-meetings/upcoming/,ctrma,always,twice daily,no,html,active,yes,,ci,2026-07-19
 coa-council-legistar-calendar,CoA,City Council Legistar calendar,https://austintexas.legistar.com/Calendar.aspx,austin,always,twice daily,no,html,active,yes,,ci,2026-07-25
 coa-council-legistar-api,CoA,City Council Legistar Web API,https://webapi.legistar.com/v1/austintexas/events,austin,always,twice daily,no,api,active,no,,ci,2026-07-25
