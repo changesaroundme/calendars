@@ -172,7 +172,7 @@
   "source": "puc",
   "summary": "PUC: Open Meeting",
   "start": "2026-09-18T09:30:00",
-  "end": "2026-09-18T17:00:00",
+  "end": "2026-09-18T11:30:00",
   "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1772",
   "status": "CONFIRMED",
@@ -248,19 +248,6 @@
  },
  {
   "source": "puc",
-  "summary": "PUC: Open Meeting",
-  "start": "2026-10-15",
-  "end": null,
-  "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
-  "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1774",
-  "status": "CONFIRMED",
-  "kind": "regular",
-  "uid": "puc-cal-1774-20261015@calendars.changesaroundme.com",
-  "description": "Watch live or archived: https://www.puc.texas.gov/agency/calendar/broadcasts/",
-  "all_day": true
- },
- {
-  "source": "puc",
   "summary": "PUC: Project 59086 comments close",
   "start": "2026-10-15",
   "end": null,
@@ -271,6 +258,19 @@
   "uid": "puc-cal-1837-20261015@calendars.changesaroundme.com",
   "description": "Comments are filed via the PUC Interchange: https://interchange.puc.texas.gov/filer\n\nProject filings: https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=59086",
   "all_day": true
+ },
+ {
+  "source": "puc",
+  "summary": "PUC: Open Meeting",
+  "start": "2026-10-15T09:30:00",
+  "end": "2026-10-15T17:00:00",
+  "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
+  "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1774",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "puc-cal-1774-20261015@calendars.changesaroundme.com",
+  "description": "Watch live or archived: https://www.puc.texas.gov/agency/calendar/broadcasts/",
+  "all_day": false
  },
  {
   "source": "puc",
