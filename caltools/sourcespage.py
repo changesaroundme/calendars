@@ -9,6 +9,8 @@ same table as an Obsidian page (wikilinked orgs) that Ian copies into the
 vault and publishes when he wants it refreshed. The Archive column comes from
 docs/captures.json, which the Mac archive job (archive_page.py --due) writes
 and Ian commits; it stays "—" for a page with no capture on record.
+docs/archive.md is the companion page: every capture and document in the
+archive with its object-storage URL, from docs/archive.json (r2sync.py).
 """
 from __future__ import annotations
 
@@ -204,3 +206,82 @@ def render_markdown(rows: list[dict[str, str]], status: dict,
         archive = f"[{fmt_md(captured)}]({cap_url})" if cap_url else fmt_md(captured)
         lines.append(f"| {org} | [{name}]({r['url']}) | {fmt_md(checked)} | {fmt_md(changed)} | {archive} |")
     return "\n".join(lines) + "\n"
+
+
+def load_archive(path: pathlib.Path) -> dict:
+    """docs/archive.json (written by r2sync.py after each mirror) -> the whole
+    document: {generated, public_url, sources: {slug: {captures, files, latest}}};
+    {} when absent."""
+    try:
+        return json.loads(path.read_text())
+    except (OSError, ValueError):
+        return {}
+
+
+def _fmt_stamp(stamp: str) -> str:
+    """Archive stamps are local capture time, `2026-09-10-0900` -> `10 Sep 2026 09:00`."""
+    try:
+        return fmt_md(datetime.strptime(stamp, "%Y-%m-%d-%H%M").replace(tzinfo=CENTRAL))
+    except ValueError:
+        return stamp
+
+
+def _md_link(text: str, url: str) -> str:
+    text = text.replace("|", "\\|").replace("[", "(").replace("]", ")")
+    return f"[{text}]({url})"
+
+
+def render_archive_markdown(rows: list[dict[str, str]], archive: dict) -> str:
+    """The vault's Archive page: every saved copy of every page, by organisation,
+    with the stable `latest` link first, then each capture and each document
+    fetched from the page. Written to docs/archive.md by the build; the vault
+    copy is a plain file copy. Folders the registry does not know come last."""
+    sources = archive.get("sources", {})
+    generated = _parse(archive.get("generated"))
+    by_slug = {r["slug"]: r for r in rows}
+    order = {o: i for i, o in enumerate(ORG_ORDER)}
+    lines = [
+        f"*Every saved copy in the web archive, oldest to newest. Each page's **latest** link always "
+        f"points at its newest copy, so it can be cited even after the page itself changes or "
+        f"disappears; the dated links are the individual captures, and the files are the documents "
+        f"the page linked to, saved when first seen. Updated {fmt_md(generated)} — regenerated on "
+        f"every build as `docs/archive.md` in the calendars repo; [[Archive]] is a copy of that file.*",
+    ]
+    listed = sorted((s for s in sources if s in by_slug),
+                    key=lambda s: (order.get(by_slug[s]["org"], 99), by_slug[s]["name"].lower()))
+    unlisted = sorted(s for s in sources if s not in by_slug)
+    org = None
+    for slug in listed:
+        r, entry = by_slug[slug], sources[slug]
+        if r["org"] != org:
+            org = r["org"]
+            lines += ["", f"## {ORG_ANCHORS.get(org, org)}"]
+        name = r["name"] + (" *(retired)*" if r["status"] == "retired" else "")
+        head = f"### {name}"
+        latest = entry.get("latest")
+        lines += ["", head, "", " · ".join(filter(None, [
+            _md_link("page", r["url"]),
+            _md_link("latest copy", latest) if latest else "",
+        ]))]
+        _append_entries(lines, entry)
+    if unlisted:
+        lines += ["", "## Not in the registry",
+                  "", "*Folders in the archive with no row in `sources.csv` — kept, but not checked or refreshed.*"]
+        for slug in unlisted:
+            lines += ["", f"### {slug.removeprefix('_unlisted/')}"]
+            _append_entries(lines, sources[slug])
+    return "\n".join(lines) + "\n"
+
+
+def _append_entries(lines: list[str], entry: dict) -> None:
+    caps = sorted(entry.get("captures", []), key=lambda c: c["stamp"])
+    files = sorted(entry.get("files", []), key=lambda f: (f["stamp"], f.get("name", "")))
+    if caps:
+        lines.append("")
+        lines.append("Captures: " + ", ".join(_md_link(_fmt_stamp(c["stamp"]), c["url"]) for c in caps))
+    if files:
+        lines.append("")
+        lines.append("Files:")
+        for f in files:
+            size = f"{f['size'] / 1e6:.1f} MB" if f.get("size", 0) >= 100_000 else f"{f.get('size', 0) / 1e3:.0f} KB"
+            lines.append(f"- {_md_link(f.get('name', ''), f['url'])} — {_fmt_stamp(f['stamp'])}, {size}")

@@ -640,10 +640,15 @@ def main() -> int:
                   if status["sources"][slug]["changed"] == status["generated"])
     print(f"[status] {len(tracker.seen)} registry pages fetched, {changed} changed")
     # The Mac archive job writes docs/captures.json (per slug: last checked,
-    # newest capture); Ian commits it with his next push. Read-only here.
+    # newest capture) and, after mirroring to object storage, docs/archive.json
+    # (every capture and document with its public URL); Ian commits both with
+    # his next push. Read-only here: they become the Links and Archive pages.
     captures = sourcespage.load_captures(DOCS / "captures.json")
     (docs / "sources.html").write_text(sourcespage.render(reg_rows, status, now, captures))
     (docs / "sources.md").write_text(sourcespage.render_markdown(reg_rows, status, captures))
+    archive = sourcespage.load_archive(DOCS / "archive.json")
+    if archive:
+        (docs / "archive.md").write_text(sourcespage.render_archive_markdown(reg_rows, archive))
 
     if unhealthy:
         print("BUILD UNHEALTHY:\n  - " + "\n  - ".join(unhealthy))
