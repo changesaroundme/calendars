@@ -521,11 +521,15 @@ def main() -> int:
             except Exception:
                 pass
         problems = list(getattr(module, "health_problems", lambda: [])())
-        # SPORADIC sources (legislature: hearings come in bursts) are
-        # legitimately empty — or past-only — between events; alarming
-        # there would guarantee red builds in every quiet stretch.
-        sporadic = getattr(module, "SPORADIC", False) or getattr(
-            module, "CURATED_ONLY", False)
+        # A calendar whose registry pages are all outside their `expect`
+        # window (legislature between sessions, TPSC between posts) is
+        # legitimately empty — or past-only; alarming there would
+        # guarantee red builds in every quiet stretch. sources.csv says
+        # when to expect content, so the check follows it.
+        sporadic = not registry.calendar_expected(key, today)
+        if sporadic:
+            print(f"[{key}] outside every registry page's expected season; "
+                  "empty or past-only is not a finding")
         if fresh_empty and not sporadic:
             problems.append(f"{key}: 0 events parsed")
         else:
@@ -635,8 +639,11 @@ def main() -> int:
     changed = sum(1 for slug in tracker.seen
                   if status["sources"][slug]["changed"] == status["generated"])
     print(f"[status] {len(tracker.seen)} registry pages fetched, {changed} changed")
-    (docs / "sources.html").write_text(sourcespage.render(reg_rows, status, now))
-    (docs / "sources.md").write_text(sourcespage.render_markdown(reg_rows, status))
+    # The Mac archive job writes docs/captures.json (per slug: last checked,
+    # newest capture); Ian commits it with his next push. Read-only here.
+    captures = sourcespage.load_captures(DOCS / "captures.json")
+    (docs / "sources.html").write_text(sourcespage.render(reg_rows, status, now, captures))
+    (docs / "sources.md").write_text(sourcespage.render_markdown(reg_rows, status, captures))
 
     if unhealthy:
         print("BUILD UNHEALTHY:\n  - " + "\n  - ".join(unhealthy))

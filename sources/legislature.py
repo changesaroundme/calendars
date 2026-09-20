@@ -20,9 +20,10 @@ Two quirks drive the design:
   history); the day's snapshot in data/legislature.json is the archive.
 
 * **Hearings are sporadic.** Zero upcoming hearings (or only past ones in
-  the archive) is a normal, healthy state between interim hearing bursts —
-  hence SPORADIC below, which tells build.py to skip the 0-events and
-  no-future-events alarms for this source.
+  the archive) is a normal, healthy state between interim hearing bursts.
+  sources.csv says when to expect content (`every 2 years from 2025
+  Jan-May` on the two Legislature rows); build.py reads that and skips the
+  0-events and no-future-events alarms outside the window.
 
 Cancellations: the row gets class="cancelled" and a CANCELLED note; the
 event is kept with STATUS:CANCELLED (never deleted). REVISED notes ride
@@ -60,10 +61,6 @@ FIXTURES = ROOT / "fixtures"
 ARCHIVE = ROOT / "data" / "legislature.json"
 CENTRAL = ZoneInfo("America/Chicago")
 HEARING_LENGTH = timedelta(hours=3)  # interim hearings routinely run long
-
-# Zero events, or past-only events, is the normal state between hearing
-# bursts — build.py skips the 0-events and no-future alarms when set.
-SPORADIC = True
 
 # Ian's committee watchlist (KB: Calendar Maintenance > Legislature).
 # Matched case-insensitively against the committee cell text, so "Select

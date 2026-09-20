@@ -6,12 +6,15 @@ grouped by organisation; child pages (a board's meeting-content page, a
 survey sub-page) fold into their parent and contribute their stamps.
 The HTML is script-free like the rest of the site; the markdown is the
 same table as an Obsidian page (wikilinked orgs) that Ian copies into the
-vault and publishes when he wants it refreshed. The Archive column is "—" until
-the Mac capture log is published alongside status.json.
+vault and publishes when he wants it refreshed. The Archive column comes from
+docs/captures.json, which the Mac archive job (archive_page.py --due) writes
+and Ian commits; it stays "—" for a page with no capture on record.
 """
 from __future__ import annotations
 
 import html
+import json
+import pathlib
 from datetime import datetime, timezone
 
 from caltools.ics import CENTRAL
@@ -66,8 +69,30 @@ def _latest(stamps: list[datetime | None]) -> datetime | None:
     return max(real) if real else None
 
 
-def render(rows: list[dict[str, str]], status: dict, now: datetime) -> str:
+def load_captures(path: pathlib.Path) -> dict:
+    """docs/captures.json -> {slug: {"checked", "captured", "file"}}; {} when absent."""
+    try:
+        return json.loads(path.read_text()).get("sources", {})
+    except (OSError, ValueError, AttributeError):
+        return {}
+
+
+def _stamps(group: list[dict[str, str]], stamps: dict, captures: dict):
+    """Newest checked / changed / captured across a page and its children, plus
+    the public URL of that newest capture when the archive is in object storage."""
+    checked = _latest([_parse(stamps.get(g["slug"], {}).get("checked")) for g in group])
+    changed = _latest([_parse(stamps.get(g["slug"], {}).get("changed")) for g in group])
+    caps = [(_parse(captures.get(g["slug"], {}).get("captured")), captures.get(g["slug"], {}).get("url", ""))
+            for g in group]
+    caps = [c for c in caps if c[0]]
+    captured, url = max(caps) if caps else (None, "")
+    return checked, changed, captured, url
+
+
+def render(rows: list[dict[str, str]], status: dict, now: datetime,
+           captures: dict | None = None) -> str:
     stamps = status.get("sources", {})
+    captures = captures or {}
     children: dict[str, list[dict[str, str]]] = {}
     for r in rows:
         if r["parent"]:
@@ -89,15 +114,15 @@ def render(rows: list[dict[str, str]], status: dict, now: datetime) -> str:
                     "<th>Last changed</th><th>Archive</th></tr></thead><tbody>")
         for r in sorted(pages, key=lambda x: x["name"].lower()):
             group = [r] + children.get(r["slug"], [])
-            checked = _latest([_parse(stamps.get(g["slug"], {}).get("checked")) for g in group])
-            changed = _latest([_parse(stamps.get(g["slug"], {}).get("changed")) for g in group])
+            checked, changed, captured, cap_url = _stamps(group, stamps, captures)
             name = html.escape(r["name"])
             if r["status"] == "paused":
                 name += ' <span class="tag">paused</span>'
+            archive = (f'<a href="{html.escape(cap_url)}">{fmt(captured)}</a>' if cap_url else fmt(captured))
             body.append(
                 f'<tr><td><a href="{html.escape(r["url"])}">{name}</a></td>'
                 f'<td>{fmt(checked)}</td><td>{fmt(changed)}</td>'
-                f'<td>{"—"}</td></tr>')
+                f'<td>{archive}</td></tr>')
         body.append("</tbody></table>")
 
     generated = _parse(status.get("generated")) or now
@@ -126,10 +151,11 @@ def render(rows: list[dict[str, str]], status: dict, now: datetime) -> str:
 <h1>Pages we watch</h1>
 <p class="meta">Every public page the calendars and the web archive are built from.
 <b>Checked</b> is the last time the build read the page; <b>Last changed</b> is the
-last time its content differed from the previous read. Updated {fmt(generated)} (Central).</p>
+last time its content differed from the previous read; <b>Archive</b> is the newest saved copy
+of the page in the web archive (linked once the archive is online). Updated {fmt(generated)} (Central).</p>
 {chr(10).join(body)}
 <footer>Generated from <a href="https://github.com/changesaroundme/calendars/blob/main/sources.csv">sources.csv</a>
-and <a href="./status.json">status.json</a>. The Archive column fills in once capture times are published.
+and <a href="./status.json">status.json</a>, with capture times from <a href="./captures.json">captures.json</a>.
 A <a href="{KB}">Changes Around Me</a> project.</footer>
 </body>
 </html>
@@ -144,10 +170,12 @@ def fmt_md(dt: datetime | None) -> str:
     return f"{local.day} {local:%b %Y %H:%M}"
 
 
-def render_markdown(rows: list[dict[str, str]], status: dict) -> str:
+def render_markdown(rows: list[dict[str, str]], status: dict,
+                    captures: dict | None = None) -> str:
     """One Obsidian table of every public page: Org | Page | Checked | Last changed | Archive.
     Written to docs/sources.md by the build; the vault copy is a plain file copy."""
     stamps = status.get("sources", {})
+    captures = captures or {}
     children: dict[str, list[dict[str, str]]] = {}
     for r in rows:
         if r["parent"]:
@@ -159,7 +187,8 @@ def render_markdown(rows: list[dict[str, str]], status: dict) -> str:
     lines = [
         f"*Every public page the calendars and the web archive are built from. "
         f"**Checked** is the last time the build read the page; **Last changed** is the last time "
-        f"its content differed from the previous read. Generated {fmt_md(generated)} — "
+        f"its content differed from the previous read; **Archive** is the newest saved copy of the page "
+        f"in the web archive. Generated {fmt_md(generated)} — "
         f"regenerated on every build as `docs/sources.md` in the calendars repo; [[Links]] is a copy of that file.*",
         "",
         "| Org | Page | Checked | Last changed | Archive |",
@@ -167,11 +196,11 @@ def render_markdown(rows: list[dict[str, str]], status: dict) -> str:
     ]
     for r in public:
         group = [r] + children.get(r["slug"], [])
-        checked = _latest([_parse(stamps.get(g["slug"], {}).get("checked")) for g in group])
-        changed = _latest([_parse(stamps.get(g["slug"], {}).get("changed")) for g in group])
+        checked, changed, captured, cap_url = _stamps(group, stamps, captures)
         org = f"[[{ORG_PAGE}#{ORG_ANCHORS.get(r['org'], r['org'])}\\|{r['org']}]]"
         name = r["name"].replace("|", "\\|")
         if r["status"] == "paused":
             name += " *(paused)*"
-        lines.append(f"| {org} | [{name}]({r['url']}) | {fmt_md(checked)} | {fmt_md(changed)} | — |")
+        archive = f"[{fmt_md(captured)}]({cap_url})" if cap_url else fmt_md(captured)
+        lines.append(f"| {org} | [{name}]({r['url']}) | {fmt_md(checked)} | {fmt_md(changed)} | {archive} |")
     return "\n".join(lines) + "\n"

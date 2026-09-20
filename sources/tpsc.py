@@ -18,7 +18,8 @@ plugin and no ICS; what exists is:
 
 Lead time is whatever the coalition gives (observed: 1 day to 4 weeks for
 meetings, days for webinars, ~4 months for the Forum), and posts are
-sporadic — SPORADIC tells build.py an empty-future fetch is normal.
+sporadic — the TPSC rows in sources.csv say `expect: sporadic`, which
+tells build.py an empty-future fetch is normal.
 
 Identity: explicit uids from kind + date (tpsc-coalition-meeting-20260820),
 so retitles never fork an event. Virtual events carry no location (the
@@ -37,7 +38,6 @@ from bs4 import BeautifulSoup
 from caltools.model import Event
 
 SOURCE = "tpsc"
-SPORADIC = True
 FIXTURES = pathlib.Path(__file__).resolve().parent.parent / "fixtures"
 SITE = "https://www.texaspedsafety.org"
 POSTS_API = (f"{SITE}/wp-json/wp/v2/posts?per_page=30"

@@ -131,6 +131,17 @@ def expected(slug: str, today: date | None = None) -> bool:
     return expected_now(row["expect"] if row else "always", today or date.today())
 
 
+def calendar_expected(calendar: str, today: date | None = None) -> bool:
+    """Should this calendar have events right now? True when any active
+    registry page feeding it is in its `expect` window — build.py's
+    zero-events and no-future-events checks stay quiet otherwise (the
+    Legislature between sessions, TPSC between posts). A calendar with no
+    registry rows is treated as always expected."""
+    today = today or date.today()
+    pages = [r for r in rows() if r["calendar"] == calendar and r["status"] == "active"]
+    return not pages or any(expected_now(r["expect"], today) for r in pages)
+
+
 def parse_mode(slug: str) -> str:
     """The registry's `parse` value for a slug ('' when unregistered). Adapters
     use it to stand down from a page whose events are curated by hand
