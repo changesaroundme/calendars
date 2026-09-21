@@ -39,7 +39,7 @@ from caltools import registry
 from caltools.model import Event
 
 SOURCE = "lcra"
-COMMENT_SLUG = "lcra-water-public-comment"     # sources.csv row for the comment page
+COMMENT_SLUG = "lcra-water-public-comment"     # sources.yaml page for the comment page
 FIXTURES = pathlib.Path(__file__).resolve().parent.parent / "fixtures"
 SCHEDULE_URL = "https://www.lcra.org/about/leadership/board-meeting-schedule/"
 COMMENT_URL = ("https://www.lcra.org/water/"
@@ -425,7 +425,7 @@ def fetch(session) -> list[Event]:
     resp = session.get(COMMENT_URL, timeout=30)   # fetched either way: the Checked stamp
     resp.raise_for_status()
     if registry.parse_mode(COMMENT_SLUG) in ("claude", "manual"):
-        print(f"[{SOURCE}] comment page is curated by hand (sources.csv parse="
+        print(f"[{SOURCE}] comment page is curated by hand (sources.yaml parse="
               f"{registry.parse_mode(COMMENT_SLUG)}); not parsed")
         return events
     return events + finalize(parse_comment_page(resp.text))

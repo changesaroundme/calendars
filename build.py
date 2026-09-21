@@ -400,18 +400,18 @@ def main() -> int:
     # counted a meeting held earlier that same day as already past.
     today = now.astimezone(CENTRAL).date()
 
-    # sources.csv (the page registry) is hand-edited in a grid, so every
+    # sources.yaml (the page registry) is hand-edited, so every
     # build checks it and names the offending row. Offline (the pre-push
     # check) that is fatal; live it is a soft alarm like any other health
     # problem -- nothing reads the registry yet, so a stray comma must not
     # stop the feeds publishing.
     if offline:
         registry.selftest()
-    reg_rows = registry.load(ROOT / "sources.csv")
+    reg_rows = registry.load(registry.REGISTRY)
     reg_problems = registry.validate(reg_rows, set(CALENDARS) | {"openmeetings"}, today)
     for prob in reg_problems:
         print(f"[registry] {prob}")
-        unhealthy.append(f"sources.csv {prob}")
+        unhealthy.append(f"sources.yaml {prob}")
     if reg_problems and offline:
         return 1
     # Every live response passes through here; docs/status.json is written
@@ -524,7 +524,7 @@ def main() -> int:
         # A calendar whose registry pages are all outside their `expect`
         # window (legislature between sessions, TPSC between posts) is
         # legitimately empty — or past-only; alarming there would
-        # guarantee red builds in every quiet stretch. sources.csv says
+        # guarantee red builds in every quiet stretch. sources.yaml says
         # when to expect content, so the check follows it.
         sporadic = not registry.calendar_expected(key, today)
         if sporadic:

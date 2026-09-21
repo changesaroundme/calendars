@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-20T20:56:10Z",
+ "generated": "2026-09-21T03:26:59Z",
  "public_url": "https://archive.changesaroundme.com",
  "sources": {
   "_unlisted/East Riverside Corridor Planning Initiative Survey - Round 2": {
@@ -3263,18 +3263,13 @@
   "lcra-water-public-comment": {
    "captures": [
     {
-     "stamp": "2026-09-20-1108",
-     "url": "https://archive.changesaroundme.com/lcra-water-public-comment/2026-09-20-1108.pdf",
-     "size": 14228
-    },
-    {
-     "stamp": "2026-09-18-2350",
-     "url": "https://archive.changesaroundme.com/lcra-water-public-comment/2026-09-18-2350.pdf",
-     "size": 12640
+     "stamp": "2026-09-20-2146",
+     "url": "https://archive.changesaroundme.com/lcra-water-public-comment/2026-09-20-2146.pdf",
+     "size": 79562
     }
    ],
    "files": [],
-   "latest_key": "lcra-water-public-comment/2026-09-20-1108.pdf",
+   "latest_key": "lcra-water-public-comment/2026-09-20-2146.pdf",
    "latest": "https://archive.changesaroundme.com/lcra-water-public-comment/latest.pdf"
   },
   "txdot-bike-ped-coordinators": {

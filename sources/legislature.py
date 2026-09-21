@@ -21,7 +21,7 @@ Two quirks drive the design:
 
 * **Hearings are sporadic.** Zero upcoming hearings (or only past ones in
   the archive) is a normal, healthy state between interim hearing bursts.
-  sources.csv says when to expect content (`every 2 years from 2025
+  sources.yaml says when to expect content (`every 2 years from 2025
   Jan-May` on the two Legislature rows); build.py reads that and skips the
   0-events and no-future-events alarms outside the window.
 

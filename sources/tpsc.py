@@ -18,7 +18,7 @@ plugin and no ICS; what exists is:
 
 Lead time is whatever the coalition gives (observed: 1 day to 4 weeks for
 meetings, days for webinars, ~4 months for the Forum), and posts are
-sporadic — the TPSC rows in sources.csv say `expect: sporadic`, which
+sporadic — the TPSC pages in sources.yaml say `expect: sporadic`, which
 tells build.py an empty-future fetch is normal.
 
 Identity: explicit uids from kind + date (tpsc-coalition-meeting-20260820),

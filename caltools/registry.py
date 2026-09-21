@@ -1,14 +1,34 @@
-"""sources.csv — the registry of every page this project monitors.
+"""sources.yaml — the registry of every page this project monitors.
 
-One row per page, fourteen single-line columns, hand-edited in a grid
-editor. The CSV holds current state only: git is the change history, and
+Grouped by organisation, one mapping per page, child pages nested under
+their parent; per-organisation and file-wide `defaults` mean a page states
+only what is unusual about it. load() flattens that into one dict per page
+(the "rows" the build, the archive script and the sources page consume),
+with `org` and `parent` filled in from the structure and every value a
+string. The file holds current state only: git is the change history, and
 runtime state (last checked, last changed, captures) lives in generated
-files. Nothing reads the registry yet beyond this validator; adapters and
-the archive script will move onto it one at a time.
+files.
 
-validate() returns problems as strings naming the row (1-based line
-number in the file, plus the slug where one exists) so a bad save is
-findable from the CI log without opening the file.
+    defaults:                                # file-wide; an organisation may override
+      status: active
+      calendar-pages: {expect: always, check: twice daily, archive: no}   # pages with `calendar:`
+      other-pages: {expect: sporadic, check: every 3 days, archive: yes}  # everything else
+    organizations:
+      CapMetro:
+        name: Capital Metropolitan Transportation Authority (CapMetro)
+        page: Organizations/CapMetro           # vault page (Links/Archive embeds)
+        defaults: {parse: html}                # for this organisation's pages
+        pages:
+          - slug: capmetro-service-changes
+            name: Service changes
+            url: https://www.capmetro.org/servicechange
+            added: 2026-09-21
+            note: free text, never read by code
+            children:
+              - {slug: ..., name: ..., url: ..., added: ...}
+
+validate() returns problems as strings naming the page by slug so a bad
+edit is findable from the CI log without opening the file.
 
 Tracker is the CI half of docs/status.json: it listens to every response
 the build's requests.Session receives, maps the URL back to a registry
@@ -19,7 +39,6 @@ sources page merges the two, so the two writers never touch one file.
 """
 from __future__ import annotations
 
-import csv
 import hashlib
 import json
 import pathlib
@@ -28,13 +47,16 @@ from datetime import date, datetime, timezone
 from urllib.parse import urlparse
 
 COLUMNS = ["slug", "org", "name", "url", "calendar", "expect", "check",
-           "archive", "parse", "status", "public", "parent", "runner", "added"]
-ORGS = {"ATP", "CoA", "CapMetro", "CAMPO", "CTRMA", "LCRA", "PUC", "TxDOT",
-        "TPSC", "TTC", "Legislature", "SOS"}
+           "archive", "parse", "status", "public", "parent", "added", "note"]
+PAGE_KEYS = set(COLUMNS) - {"org", "parent"} | {"children"}
+DEFAULTABLE = ["expect", "check", "archive", "parse", "status", "public"]
+# A page with `calendar:` is fetched by the build; one without exists to be
+# archived. `defaults` may set a value for all pages, or per kind:
+KINDS = {"calendar-pages": True, "other-pages": False}
+ORG_KEYS = {"name", "page", "defaults", "pages"}
 PARSE = {"ics", "rss", "api", "html", "html-table", "pdf", "claude",
          "manual", "none"}
 STATUS = {"active", "paused", "retired"}
-RUNNER = {"ci", "mac", "manual"}
 YESNO = {"yes", "no"}
 SLUG_RE = re.compile(r"[a-z0-9]+(-[a-z0-9]+)*")
 MONTHS = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
@@ -79,9 +101,90 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 _ROWS: list[dict[str, str]] | None = None
 
 
-def load(path: pathlib.Path) -> list[dict[str, str]]:
-    with open(path, newline="", encoding="utf-8") as f:
-        return list(csv.DictReader(f))
+REGISTRY = ROOT / "sources.yaml"
+_ORGS: dict[str, dict[str, str]] = {}          # code -> {name, page}, in file order
+
+
+def _text(v) -> str:
+    """Every cell is a string downstream; YAML turns yes/no into booleans and
+    2026-09-21 into a date, so undo that."""
+    if v is None:
+        return ""
+    if isinstance(v, bool):
+        return "yes" if v else "no"
+    if isinstance(v, (date, datetime)):
+        return v.isoformat()[:10]
+    return str(v)
+
+
+def parse(doc: dict) -> tuple[list[dict[str, str]], dict[str, dict[str, str]], list[str]]:
+    """The YAML document -> (rows, orgs, structural problems). Rows are one
+    flat dict per page in file order; a problem here means the file's shape
+    is wrong (validate() then judges the values)."""
+    rows, orgs, problems = [], {}, []
+    if not isinstance(doc, dict):
+        return rows, orgs, ["sources.yaml: top level must be a mapping"]
+    for key in doc:
+        if key not in ("defaults", "organizations"):
+            problems.append(f"sources.yaml: unknown top-level key {key!r}")
+    file_defaults = doc.get("defaults") or {}
+    for code, org in (doc.get("organizations") or {}).items():
+        org = org or {}
+        for key in org:
+            if key not in ORG_KEYS:
+                problems.append(f"{code}: unknown key {key!r} (expected {sorted(ORG_KEYS)})")
+        orgs[code] = {"name": _text(org.get("name")) or code, "page": _text(org.get("page"))}
+        layers = [file_defaults, org.get("defaults") or {}]
+        for layer in layers:
+            for bad in [k for k in layer if k not in DEFAULTABLE and k not in KINDS]:
+                problems.append(f"{code}: defaults cannot set {bad!r}")
+            for kind in KINDS:
+                for bad in [k for k in (layer.get(kind) or {}) if k not in DEFAULTABLE]:
+                    problems.append(f"{code}: defaults.{kind} cannot set {bad!r}")
+
+        def page_row(p, parent: str, n: int) -> dict[str, str]:
+            if not isinstance(p, dict):
+                problems.append(f"{code} page #{n}: not a mapping")
+                return {}
+            tag = _text(p.get("slug")) or f"{code} page #{n}"
+            for key in p:
+                if key not in PAGE_KEYS:
+                    problems.append(f"{tag}: unknown key {key!r}")
+            kind = "calendar-pages" if p.get("calendar") else "other-pages"
+            defaults: dict = {}
+            for layer in layers:                 # file then organisation; all-pages then this kind
+                defaults.update({k: v for k, v in layer.items() if k in DEFAULTABLE})
+                defaults.update(layer.get(kind) or {})
+            row = {c: _text(p.get(c, defaults.get(c))) for c in COLUMNS}
+            row.update(org=code, parent=parent)
+            return row
+
+        for n, p in enumerate(org.get("pages") or [], 1):
+            row = page_row(p, "", n)
+            if not row:
+                continue
+            rows.append(row)
+            for m, c in enumerate(p.get("children") or [], 1):
+                child = page_row(c, row["slug"], m)
+                if child:
+                    if c.get("children"):
+                        problems.append(f"{child['slug']}: children cannot have children")
+                    rows.append(child)
+    return rows, orgs, problems
+
+
+def load(path: pathlib.Path = REGISTRY) -> list[dict[str, str]]:
+    """The registry as flat rows. Structural problems raise, since nothing
+    downstream can work with a misshapen file; value problems are validate()'s."""
+    import yaml
+    with open(path, encoding="utf-8") as f:
+        doc = yaml.safe_load(f)
+    rows, orgs, problems = parse(doc)
+    if problems:
+        raise ValueError("; ".join(problems))
+    _ORGS.clear()
+    _ORGS.update(orgs)
+    return rows
 
 
 def rows() -> list[dict[str, str]]:
@@ -89,10 +192,17 @@ def rows() -> list[dict[str, str]]:
     global _ROWS
     if _ROWS is None:
         try:
-            _ROWS = load(ROOT / "sources.csv")
-        except OSError:
+            _ROWS = load(REGISTRY)
+        except (OSError, ValueError):
             _ROWS = []
     return _ROWS
+
+
+def orgs() -> dict[str, dict[str, str]]:
+    """Organisation code -> {name, page} in file order (the display order)."""
+    if not _ORGS:
+        rows()
+    return dict(_ORGS)
 
 
 def expected_now(expect: str, today: date) -> bool:
@@ -156,34 +266,32 @@ def validate(rows: list[dict[str, str]], calendars: set[str],
     today = today or date.today()
     problems: list[str] = []
     if not rows:
-        return ["sources.csv: no rows"]
-    header = list(rows[0].keys())
-    if header != COLUMNS:
-        return [f"sources.csv: columns are {header}, expected {COLUMNS}"]
+        return ["sources.yaml: no pages"]
+    missing = [c for c in COLUMNS if c not in rows[0]]
+    if missing:
+        return [f"sources.yaml: rows lack {missing}"]
 
     slugs = [r["slug"] for r in rows]
-    seen_slug: dict[str, int] = {}
-    seen_url: dict[str, int] = {}
-    for i, r in enumerate(rows, start=2):        # line 1 is the header
-        tag = f"line {i} ({r['slug'] or '?'})"
+    seen_slug: dict[str, str] = {}
+    seen_url: dict[str, str] = {}
+    known_orgs = set(_ORGS) | {r["org"] for r in rows}
+    for i, r in enumerate(rows, start=1):
+        tag = f"page {i} ({r['slug'] or '?'})"
 
         def bad(msg: str) -> None:
             problems.append(f"{tag}: {msg}")
 
         for k, v in r.items():
-            if v is None:
-                bad(f"too many cells")
-                break
-            if "\n" in v or "\r" in v:
+            if k != "note" and ("\n" in v or "\r" in v):
                 bad(f"{k} spans lines")
             if v != v.strip():
                 bad(f"{k} has leading/trailing whitespace")
         if not SLUG_RE.fullmatch(r["slug"]):
             bad("slug must be kebab-case a-z0-9")
         if r["slug"] in seen_slug:
-            bad(f"duplicate slug (also line {seen_slug[r['slug']]})")
-        seen_slug.setdefault(r["slug"], i)
-        if r["org"] not in ORGS:
+            bad(f"duplicate slug (also {seen_slug[r['slug']]})")
+        seen_slug.setdefault(r["slug"], tag)
+        if r["org"] not in known_orgs:
             bad(f"unknown org {r['org']!r}")
         if not r["name"]:
             bad("name is empty")
@@ -191,8 +299,8 @@ def validate(rows: list[dict[str, str]], calendars: set[str],
         if u.scheme != "https" or not u.netloc or " " in r["url"]:
             bad(f"bad url {r['url']!r}")
         if r["url"] in seen_url:
-            bad(f"duplicate url (also line {seen_url[r['url']]})")
-        seen_url.setdefault(r["url"], i)
+            bad(f"duplicate url (also {seen_url[r['url']]})")
+        seen_url.setdefault(r["url"], tag)
         if r["calendar"] and r["calendar"] not in calendars:
             bad(f"unknown calendar {r['calendar']!r}")
         spec = parse_expect(r["expect"])
@@ -218,8 +326,6 @@ def validate(rows: list[dict[str, str]], calendars: set[str],
                 bad(f"unknown parent {r['parent']!r}")
             elif r["parent"] == r["slug"]:
                 bad("parent is itself")
-        if r["runner"] not in RUNNER:
-            bad(f"unknown runner {r['runner']!r}")
         try:
             added = date.fromisoformat(r["added"])
             if added > today:
@@ -240,7 +346,7 @@ def selftest() -> None:
         "coa-planning-commission", "CoA", "Planning Commission",
         "https://www.austintexas.gov/boards-commissions/board/planning-commission",
         "austin", "always", "twice daily", "no", "html", "active", "yes", "",
-        "ci", "2026-07-25"]))
+        "2026-07-25", ""]))
     cals = {"austin"}
     assert validate([good], cals) == [], validate([good], cals)
     dup = dict(good, url="https://example.com/x")
@@ -252,10 +358,34 @@ def selftest() -> None:
     probs = validate([good, dup, bad_url, orphan, future], cals,
                      today=date(2026, 9, 8))
     hits = [p for p in probs if "duplicate slug" in p]
-    assert hits and "line 3" in hits[0], probs
-    assert any("bad url" in p and "line 4" in p for p in probs), probs
-    assert any("neither fetched nor archived" in p and "line 5" in p for p in probs), probs
-    assert any("in the future" in p and "line 6" in p for p in probs), probs
+    assert hits and hits[0].startswith("page 2 ") and "page 1 " in hits[0], probs
+    assert any("bad url" in p and p.startswith("page 3 (coa-x)") for p in probs), probs
+    assert any("neither fetched nor archived" in p and "(coa-y)" in p for p in probs), probs
+    assert any("in the future" in p and "(coa-z)" in p for p in probs), probs
+    # The YAML shape: defaults layer (file < organisation < page), children
+    # inherit org and parent, yes/no and dates come back as text, and a
+    # misplaced key is a structural problem.
+    doc = {"defaults": {"status": "active", "public": True, "parse": "none",
+                        "calendar-pages": {"expect": "always", "check": "twice daily", "archive": False},
+                        "other-pages": {"expect": "sporadic", "check": "every 3 days", "archive": True}},
+           "organizations": {"CoA": {"name": "City of Austin (CoA)", "page": "Organizations/City of Austin",
+                                     "defaults": {"calendar-pages": {"parse": "html"}},
+                                     "pages": [{"slug": "coa-a", "name": "A", "url": "https://x.gov/a",
+                                                "added": date(2026, 9, 21), "calendar": "austin",
+                                                "children": [{"slug": "coa-a-1", "name": "A1",
+                                                              "url": "https://x.gov/a/1", "added": "2026-09-21",
+                                                              "note": "kept\nas is"}]}]}}}
+    rs, og, pr = parse(doc)
+    assert pr == [], pr
+    assert [r["slug"] for r in rs] == ["coa-a", "coa-a-1"]
+    assert rs[0]["archive"] == "no" and rs[0]["parse"] == "html" and rs[0]["check"] == "twice daily"
+    assert rs[1]["archive"] == "yes" and rs[1]["parse"] == "none" and rs[1]["public"] == "yes"
+    assert rs[1]["parent"] == "coa-a" and rs[1]["org"] == "CoA" and rs[1]["expect"] == "sporadic"
+    assert rs[0]["added"] == "2026-09-21" and rs[1]["note"] == "kept\nas is"
+    assert og == {"CoA": {"name": "City of Austin (CoA)", "page": "Organizations/City of Austin"}}
+    assert validate(rs, cals) == [], validate(rs, cals)
+    _, _, pr = parse({"organizations": {"CoA": {"pages": [{"slug": "x", "runner": "ci"}]}}})
+    assert any("unknown key 'runner'" in p for p in pr), pr
     # Seasonal expectation windows.
     assert expected_now("always", date(2026, 3, 1))
     assert not expected_now("sporadic", date(2026, 3, 1))

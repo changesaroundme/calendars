@@ -1,0 +1,536 @@
+# sources.yaml — every page Changes Around Me monitors: what feeds a calendar,
+# what the web archive captures, and what the Links page lists. Grouped by
+# organisation; a child page (a board's meeting-content page, a survey sub-page)
+# nests under its parent and shares its line in the Links table. A page states
+# only what differs from the defaults: file-wide, then the organisation's, each
+# either for all pages or for one kind — `calendar-pages` (the page has a
+# `calendar:`, so the build fetches it) or `other-pages` (kept for the archive).
+#
+#   calendar  which .ics it feeds                 expect   always | sporadic | every N year(s) [from YYYY] Mon[-Mon] | ...
+#   check     twice daily | daily | weekly | every N days
+#   archive   yes/no — the archive job keeps PDF captures of it
+#   parse     ics | rss | api | html | html-table | pdf | claude | manual | none
+#   status    active | paused | retired         public   yes/no — listed on the Links page
+#   added     YYYY-MM-DD                         note     free text, never read by code
+#
+# The build validates this file on every run (caltools/registry.py).
+
+defaults:
+  status: active
+  public: yes
+  calendar-pages: {expect: always, check: twice daily, archive: no, parse: html}
+  other-pages: {expect: sporadic, check: every 3 days, archive: yes, parse: none}
+
+organizations:
+  CoA:
+    name: City of Austin (CoA)
+    page: Organizations/City of Austin
+    pages:
+      - slug: coa-council-legistar-calendar
+        name: City Council Legistar calendar
+        url: https://austintexas.legistar.com/Calendar.aspx
+        calendar: austin
+        added: 2026-07-25
+      - slug: coa-council-legistar-api
+        name: City Council Legistar Web API
+        url: https://webapi.legistar.com/v1/austintexas/events
+        calendar: austin
+        parse: api
+        public: no
+        added: 2026-07-25
+      - slug: coa-council-annual-schedule-pdf
+        name: Council annual meeting schedule (EDIMS PDF)
+        url: https://services.austintexas.gov/edims/document.cfm?id=462100
+        calendar: austin
+        expect: every 1 year Jan
+        parse: pdf
+        added: 2026-07-25
+      - slug: coa-airport-advisory-commission
+        name: Airport Advisory Commission
+        url: https://www.austintexas.gov/boards-commissions/board/airport-advisory-commission
+        calendar: austin
+        added: 2026-07-25
+        children:
+          - slug: coa-airport-advisory-commission-meetings
+            name: Airport Advisory Commission — meeting content
+            url: https://www.austintexas.gov/boards-commissions/meetings/7_1
+            calendar: austin
+            added: 2026-07-25
+      - slug: coa-integrated-water-resource-planning-task-force
+        name: Austin Integrated Water Resource Planning Community Task Force
+        url: https://www.austintexas.gov/boards-commissions/board/austin-integrated-water-resource-planning-community-task-force
+        calendar: austin
+        added: 2026-07-25
+        children:
+          - slug: coa-integrated-water-resource-planning-task-force-meetings
+            name: Austin Integrated Water Resource Planning Community Task Force — meeting content
+            url: https://www.austintexas.gov/boards-commissions/meetings/132_1
+            calendar: austin
+            added: 2026-07-25
+      - slug: coa-bond-oversight-commission
+        name: Bond Oversight Commission
+        url: https://www.austintexas.gov/boards-commissions/board/bond-oversight-commission
+        calendar: austin
+        added: 2026-08-09
+        children:
+          - slug: coa-bond-oversight-commission-meetings
+            name: Bond Oversight Commission — meeting content
+            url: https://www.austintexas.gov/boards-commissions/meetings/2_1
+            calendar: austin
+            added: 2026-08-09
+      - slug: coa-design-commission
+        name: Design Commission
+        url: https://www.austintexas.gov/boards-commissions/board/design-commission
+        calendar: austin
+        added: 2026-07-25
+        children:
+          - slug: coa-design-commission-meetings
+            name: Design Commission — meeting content
+            url: https://www.austintexas.gov/boards-commissions/meetings/22_1
+            calendar: austin
+            added: 2026-07-25
+      - slug: coa-electric-utility-commission
+        name: Electric Utility Commission
+        url: https://www.austintexas.gov/boards-commissions/board/electric-utility-commission
+        calendar: austin
+        added: 2026-08-09
+        children:
+          - slug: coa-electric-utility-commission-meetings
+            name: Electric Utility Commission — meeting content
+            url: https://www.austintexas.gov/boards-commissions/meetings/27_1
+            calendar: austin
+            added: 2026-08-09
+      - slug: coa-environmental-commission
+        name: Environmental Commission
+        url: https://www.austintexas.gov/boards-commissions/board/environmental-commission
+        calendar: austin
+        added: 2026-08-09
+        children:
+          - slug: coa-environmental-commission-meetings
+            name: Environmental Commission — meeting content
+            url: https://www.austintexas.gov/boards-commissions/meetings/28_1
+            calendar: austin
+            added: 2026-08-09
+      - slug: coa-historic-landmark-commission
+        name: Historic Landmark Commission
+        url: https://www.austintexas.gov/boards-commissions/board/historic-landmark-commission
+        calendar: austin
+        added: 2026-08-09
+        children:
+          - slug: coa-historic-landmark-commission-meetings
+            name: Historic Landmark Commission — meeting content
+            url: https://www.austintexas.gov/boards-commissions/meetings/31_1
+            calendar: austin
+            added: 2026-08-09
+      - slug: coa-planning-commission
+        name: Planning Commission
+        url: https://www.austintexas.gov/boards-commissions/board/planning-commission
+        calendar: austin
+        added: 2026-07-25
+        children:
+          - slug: coa-planning-commission-meetings
+            name: Planning Commission — meeting content
+            url: https://www.austintexas.gov/boards-commissions/meetings/40_1
+            calendar: austin
+            added: 2026-07-25
+      - slug: coa-small-area-planning-joint-committee
+        name: Small Area Planning Joint Committee
+        url: https://www.austintexas.gov/boards-commissions/board/small-area-planning-joint-committee
+        calendar: austin
+        added: 2026-08-09
+        children:
+          - slug: coa-small-area-planning-joint-committee-meetings
+            name: Small Area Planning Joint Committee — meeting content
+            url: https://www.austintexas.gov/boards-commissions/meetings/139_1
+            calendar: austin
+            added: 2026-08-09
+      - slug: coa-urban-transportation-commission
+        name: Urban Transportation Commission
+        url: https://www.austintexas.gov/boards-commissions/board/urban-transportation-commission
+        calendar: austin
+        added: 2026-07-25
+        children:
+          - slug: coa-urban-transportation-commission-meetings
+            name: Urban Transportation Commission — meeting content
+            url: https://www.austintexas.gov/boards-commissions/meetings/50_1
+            calendar: austin
+            added: 2026-07-25
+      - slug: coa-water-and-wastewater-commission
+        name: Water and Wastewater Commission
+        url: https://www.austintexas.gov/boards-commissions/board/water-and-wastewater-commission
+        calendar: austin
+        added: 2026-08-09
+        children:
+          - slug: coa-water-and-wastewater-commission-meetings
+            name: Water and Wastewater Commission — meeting content
+            url: https://www.austintexas.gov/boards-commissions/meetings/52_1
+            calendar: austin
+            added: 2026-08-09
+      - slug: coa-bicycle-advisory-council
+        name: Bicycle Advisory Council
+        url: https://www.austintexas.gov/council/bicycle-advisory-council
+        calendar: austin
+        added: 2026-07-28
+        children:
+          - slug: coa-bicycle-advisory-council-meetings
+            name: Bicycle Advisory Council — meeting content
+            url: https://www.austintexas.gov/boards-commissions/meetings/110_1
+            calendar: austin
+            added: 2026-07-28
+      - slug: coa-pedestrian-advisory-council
+        name: Pedestrian Advisory Council
+        url: https://www.austintexas.gov/council/pedestrian-advisory-council
+        calendar: austin
+        added: 2026-07-28
+        children:
+          - slug: coa-pedestrian-advisory-council-meetings
+            name: Pedestrian Advisory Council — meeting content
+            url: https://www.austintexas.gov/boards-commissions/meetings/121_1
+            calendar: austin
+            added: 2026-07-28
+      - slug: coa-speak-up-austin-events
+        name: Speak Up Austin events
+        url: https://publicinput.com/Portal/F1211#events
+        expect: always
+        archive: no
+        parse: manual
+        added: 2026-07-25
+      - slug: coa-2908-south-congress
+        name: 2908 South Congress
+        url: https://www.speakupaustin.org/2908SouthCongress
+        added: 2026-09-01
+      - slug: coa-barton-springs-road-bridge
+        name: Barton Springs Road Bridge project
+        url: https://publicinput.com/x45024
+        added: 2026-09-01
+      - slug: coa-burnet-road-corridor
+        name: Burnet Road corridor project
+        url: https://publicinput.com/n73647
+        added: 2026-09-01
+      - slug: coa-citywide-density-bonus
+        name: C20-2024-004 Citywide Density Bonus Program
+        url: https://www.speakupaustin.org/Citywidedb
+        added: 2026-09-01
+      - slug: coa-central-city-district-plan
+        name: Central City District Plan
+        url: https://www.speakupaustin.org/centralcity
+        added: 2026-09-01
+      - slug: coa-cesar-chavez-renaming
+        name: César Chávez Street Renaming
+        url: https://www.speakupaustin.org/renaming-cesar-chavez-project
+        added: 2026-09-01
+        children:
+          - slug: coa-cesar-chavez-renaming-survey
+            name: César Chávez Street Renaming Survey
+            url: https://www.speakupaustin.org/r31038
+            added: 2026-09-01
+      - slug: coa-east-austin-historic-resource-survey
+        name: East Austin Historic Resource Survey
+        url: https://www.speakupaustin.org/eastaustinsurvey
+        added: 2026-09-01
+      - slug: coa-east-austin-parking-survey
+        name: "East Austin Parking: Community survey questions"
+        url: https://publicinput.com/East-Austin-Parking
+        added: 2026-09-01
+      - slug: coa-east-riverside-corridor-planning
+        name: East Riverside Corridor Planning Initiative
+        url: https://www.speakupaustin.org/ERCPlanning
+        added: 2026-09-01
+      - slug: coa-etod-overlay-phase-2
+        name: Equitable Transit-Oriented Development (ETOD) Overlay Phase 2
+        url: https://www.speakupaustin.org/etodoverlayphase2
+        added: 2026-09-01
+      - slug: coa-great-streets-plan-update
+        name: Great Streets Plan Update
+        url: https://www.speakupaustin.org/GreatStreetsUpdate
+        added: 2026-09-01
+      - slug: coa-green-infrastructure-initiative
+        name: Green Infrastructure Initiative
+        url: https://www.speakupaustin.org/greeninfrastructure
+        added: 2026-09-01
+      - slug: coa-grove-riverside-site
+        name: Grove-Riverside Site
+        url: https://www.speakupaustin.org/Grove-Riverside
+        added: 2026-09-01
+      - slug: coa-i35-central-samp
+        name: I-35 Central Small Area Mobility Plan
+        url: https://www.speakupaustin.org/i35samp
+        added: 2026-09-01
+      - slug: coa-imagine-austin-update
+        name: Imagine Austin Update
+        url: https://www.speakupaustin.org/imagineaustin
+        added: 2026-09-01
+      - slug: coa-northeast-district-plan
+        name: Northeast District Plan
+        url: https://www.speakupaustin.org/northeastdistrict
+        added: 2026-09-01
+      - slug: coa-our-future-35
+        name: Our Future 35
+        url: https://www.speakupaustin.org/of35
+        added: 2026-09-01
+      - slug: coa-shape-austins-2026-bond
+        name: Shape Austin's 2026 Bond
+        url: https://speakupaustin.org/bond2026
+        added: 2026-09-01
+      - slug: coa-urban-trails-wayfinding-survey
+        name: Urban Trails Wayfinding Survey
+        url: https://www.speakupaustin.org/m45528
+        added: 2026-09-01
+      - slug: coa-austin-energy-resource-generation-plan-2035
+        name: Austin Energy Resource, Generation and Climate Protection Plan 2035
+        url: https://publicinput.com/generation
+        added: 2026-09-01
+      - slug: coa-all-ages-abilities-bicycle-network
+        name: All Ages and Abilities Bicycle Priority Network
+        url: https://storymaps.arcgis.com/stories/564b8e6d18aa4dd49863c1fc98e31535
+        added: 2026-09-02
+      - slug: coa-mokan-trail
+        name: MoKan Trail
+        url: https://data.austintexas.gov/stories/s/MoKan-Trail/9h7i-xcr8/
+        added: 2026-09-02
+      - slug: coa-shaping-economic-development-policy
+        name: Shaping Austin's Economic Development Policy
+        url: https://www.austintexas.gov/AustinEconomicPolicy
+        added: 2026-09-05
+      - slug: coa-transit-enhancement-infrastructure-report
+        name: Transit Enhancement Infrastructure Report
+        url: https://www.austintexas.gov/transportation-public-works/transit-enhancement-infrastructure-report
+        added: 2026-09-02
+      - slug: coa-urban-trails-plan
+        name: Urban Trails Plan
+        url: https://www.austintexas.gov/transportation-public-works/urban-trails-plan
+        added: 2026-09-01
+      - slug: coa-airport-corridor
+        name: Airport Corridor Webpage
+        url: https://experience.arcgis.com/experience/e937439aa3ce44b6b95172e2ae119cb7/page/Home
+        added: 2026-09-02
+
+  ATP:
+    name: Austin Transit Partnership (ATP)
+    page: Organizations/Austin Transit Partnership
+    pages:
+      - slug: atp-events-ical
+        name: Events (Tribe iCal feed)
+        url: https://www.atptx.org/?post_type=tribe_events&ical=1&eventDisplay=list
+        calendar: atp
+        parse: ics
+        public: no
+        added: 2026-07-25
+      - slug: atp-escribe-portal
+        name: Board agendas (eScribe portal)
+        url: https://pub-atptx.escribemeetings.com/?FillWidth=1
+        calendar: atp
+        added: 2026-08-18
+      - slug: atp-community-advisory-committee
+        name: Community Advisory Committee
+        url: https://www.projectconnect.com/community-advisory-committee/
+        calendar: atp
+        added: 2026-08-09
+      - slug: atp-feis-record-of-decision
+        name: Final Environmental Impact Statement / Record of Decision
+        url: https://www.atptx.org/milestones/atp-releases-final-environmental-impact-statement-record-of-decision/
+        added: 2026-09-10
+      - slug: atp-light-rail-progress-update
+        name: Austin Light Rail Progress Update (DEIS)
+        url: https://www.atptx.org/milestones/austin-light-rail-progress-update/
+        added: 2026-09-10
+      - slug: atp-environmental-review
+        name: Planning & Environmental Documents
+        url: https://www.atptx.org/resources/environmental-review/
+        added: 2026-09-10
+
+  CapMetro:
+    name: Capital Metropolitan Transportation Authority (CapMetro)
+    page: Organizations/CapMetro
+    pages:
+      - slug: capmetro-legistar-calendar
+        name: Legistar calendar
+        url: https://capmetrotx.legistar.com/Calendar.aspx
+        calendar: capmetro
+        added: 2026-07-19
+      - slug: capmetro-legistar-api
+        name: Legistar Web API events
+        url: https://webapi.legistar.com/v1/capmetrotx/events
+        calendar: capmetro
+        parse: api
+        public: no
+        added: 2026-07-19
+      - slug: capmetro-rail-and-trail-improvements
+        name: Rail and Trail Improvements
+        url: https://publicinput.com/railandtrails
+        added: 2026-09-01
+        children:
+          - slug: capmetro-rail-trail-navasota-e7th
+            name: "Rail and Trail Improvements: Navasota St to E 7th St"
+            url: https://storymaps.arcgis.com/stories/0c07fae43ac848358a6aa63a3be27d7a
+            added: 2026-09-02
+      - slug: capmetro-rail-improvements
+        name: Rail Improvements
+        url: https://publicinput.com/CapMetroRailImprovements
+        added: 2026-09-01
+      - slug: capmetro-red-line-trail-study
+        name: Red Line Trail Study
+        url: https://storymaps.arcgis.com/stories/476619a08688420b8132a2f3fbb496e2
+        added: 2026-09-02
+      - slug: capmetro-service-changes
+        name: Service changes
+        url: https://www.capmetro.org/servicechange
+        added: 2026-09-20
+        children:
+          - slug: capmetro-service-changes-jan-2027
+            name: Proposed January 2027 service changes
+            url: https://www.capmetro.org/servicechange/proposed-january-2027-service-changes
+            added: 2026-09-20
+          - slug: capmetro-service-changes-aug-2026
+            name: August 2026 service changes
+            url: https://www.capmetro.org/servicechange/august-2026-service-changes
+            added: 2026-09-20
+      - slug: capmetro-fare-increase
+        name: Fare Increase
+        url: https://www.capmetro.org/fare/general-fares-overview/fare-increase
+        added: 2026-09-20
+
+  CAMPO:
+    name: Capital Area Metropolitan Planning Organization (CAMPO)
+    page: Organizations/CAMPO
+    pages:
+      - slug: campo-events-ical
+        name: Events (Tribe iCal feed)
+        url: https://www.campotexas.org/?post_type=tribe_events&ical=1&eventDisplay=list
+        calendar: campo
+        parse: ics
+        public: no
+        added: 2026-07-19
+      - slug: campo-meeting-agendas
+        name: Meeting agendas
+        url: https://www.campotexas.org/resource-category/meeting-agendas/
+        calendar: campo
+        added: 2026-08-09
+
+  CTRMA:
+    name: Central Texas Regional Mobility Authority (CTRMA)
+    pages:
+      - slug: ctrma-board-upcoming
+        name: Board meetings (upcoming)
+        url: https://www.mobilityauthority.com/board-meetings/upcoming/
+        calendar: ctrma
+        added: 2026-07-19
+
+  LCRA:
+    name: Lower Colorado River Authority (LCRA)
+    page: Organizations/Lower Colorado River Authority
+    pages:
+      - slug: lcra-board-schedule
+        name: Board meeting schedule
+        url: https://www.lcra.org/about/leadership/board-meeting-schedule/
+        calendar: lcra
+        parse: html-table
+        added: 2026-07-19
+      - slug: lcra-water-public-comment
+        name: Water rules and permits open for public comment
+        url: https://www.lcra.org/water/water-related-rules-and-regulations-for-public-comment/
+        calendar: lcra
+        expect: sporadic
+        check: daily
+        archive: yes
+        parse: claude
+        added: 2026-08-03
+
+  TxDOT:
+    name: Texas Department of Transportation (TxDOT)
+    page: Organizations/Texas Department of Transportation
+    defaults: {calendar-pages: {parse: html-table}}
+    pages:
+      - slug: txdot-utp-public-involvement
+        name: UTP public involvement
+        url: https://www.txdot.gov/projects/planning/utp/utp-public-involvement.html
+        calendar: txdotev
+        expect: every 1 year Jun-Aug
+        check: weekly
+        archive: yes
+        parse: html
+        added: 2026-07-26
+      - slug: txdot-bpac
+        name: Bicycle and Pedestrian Advisory Committee
+        url: https://www.txdot.gov/about/advisory-committees/bicycle-pedestrian-advisory-committee.html
+        calendar: txdotev
+        added: 2026-07-26
+      - slug: txdot-ptac
+        name: Public Transportation Advisory Committee
+        url: https://www.txdot.gov/about/advisory-committees/public-transportation-advisory-committee.html
+        calendar: txdotev
+        added: 2026-07-26
+      - slug: txdot-hearings-meetings
+        name: Hearings and meetings index
+        url: https://www.txdot.gov/projects/hearings-meetings.html
+        calendar: txdotev
+        added: 2026-07-28
+      - slug: txdot-bike-ped-coordinators
+        name: Bicycle and pedestrian coordinators
+        url: https://www.txdot.gov/about/advisory-committees/bicycle-pedestrian-advisory-committee/regional-coordination-planning.html
+        added: 2026-09-01
+
+  TTC:
+    name: Texas Transportation Commission (TTC)
+    pages:
+      - slug: ttc-meeting-dates
+        name: Meeting dates and agendas
+        url: https://www.txdot.gov/about/leadership/texas-transportation-commission/meeting-dates-agendas.html
+        calendar: txdot
+        parse: html-table
+        added: 2026-07-19
+
+  PUC:
+    name: Public Utility Commission of Texas (PUC or PUCT)
+    pages:
+      - slug: puc-calendar-rss
+        name: Commission calendar RSS
+        url: https://www.puc.texas.gov/agency/calendar/getcalendarrss/
+        calendar: puc
+        parse: rss
+        public: no
+        added: 2026-08-17
+      - slug: puc-broadcasts
+        name: Broadcasts
+        url: https://www.puc.texas.gov/agency/calendar/broadcasts/
+        calendar: puc
+        added: 2026-08-17
+
+  Legislature:
+    name: Texas Legislature
+    defaults: {calendar-pages: {expect: every 2 years from 2025 Jan-May}}
+    pages:
+      - slug: legislature-senate-events
+        name: Senate committee events
+        url: https://senate.texas.gov/events.php
+        calendar: legislature
+        added: 2026-07-28
+      - slug: legislature-house-meetings-upcoming
+        name: House committee meetings (upcoming)
+        url: https://capitol.texas.gov/Committees/MeetingsUpcoming.aspx?Chamber=H
+        calendar: legislature
+        added: 2026-08-15
+
+  TPSC:
+    name: Texas Pedestrian Safety Coalition (TPSC)
+    defaults: {public: no, calendar-pages: {expect: sporadic, parse: api}}
+    pages:
+      - slug: tpsc-wp-posts
+        name: Announcements (WP REST posts)
+        url: https://www.texaspedsafety.org/wp-json/wp/v2/posts
+        calendar: tpsc
+        added: 2026-09-05
+      - slug: tpsc-wp-pages
+        name: Coalition meeting pages (WP REST)
+        url: https://www.texaspedsafety.org/wp-json/wp/v2/pages
+        calendar: tpsc
+        added: 2026-09-05
+
+  SOS:
+    name: Texas Secretary of State (SOS)
+    pages:
+      - slug: sos-open-meetings
+        name: Texas Register open meetings (UNT mirror)
+        url: https://texinfo.library.unt.edu/texasregister/openmeetings/OpenMeetings.html
+        calendar: openmeetings
+        added: 2026-07-26

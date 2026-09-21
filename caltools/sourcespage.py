@@ -1,6 +1,6 @@
 """docs/sources.html + docs/sources.md — the public "what we watch" table.
 
-Generated on every build from sources.csv (what) and docs/status.json
+Generated on every build from sources.yaml (what) and docs/status.json
 (when it was last checked / last changed). One row per public page,
 grouped by organisation; child pages (a board's meeting-content page, a
 survey sub-page) fold into their parent and contribute their stamps.
@@ -19,33 +19,27 @@ import json
 import pathlib
 from datetime import datetime, timezone
 
+from caltools import registry
 from caltools.ics import CENTRAL
 
 KB = "https://changesaroundme.com"
 ORG_PAGE = "Organizations"          # vault page the markdown wikilinks point at
-# Organizations page anchors (Obsidian Publish joins heading words with +).
-ORG_ANCHORS = {
-    "ATP": "Austin Transit Partnership (ATP)",
-    "CoA": "City of Austin (CoA)",
-    "CapMetro": "Capital Metropolitan Transportation Authority (CapMetro)",
-    "CAMPO": "Capital Area Metropolitan Planning Organization (CAMPO)",
-    "CTRMA": "Central Texas Regional Mobility Authority (CTRMA)",
-    "LCRA": "Lower Colorado River Authority (LCRA)",
-    "PUC": "Public Utility Commission of Texas (PUC or PUCT)",
-    "TxDOT": "Texas Department of Transportation (TxDOT)",
-    "TPSC": "Texas Pedestrian Safety Coalition (TPSC)",
-    "TTC": "Texas Transportation Commission (TTC)",
-    "Legislature": "Texas Legislature",
-    "SOS": "Texas Secretary of State (SOS)",
-}
-# Display order: local first, then regional, then state.
-ORG_ORDER = ["CoA", "ATP", "CapMetro", "CAMPO", "CTRMA", "LCRA",
-             "TxDOT", "TTC", "PUC", "Legislature", "TPSC", "SOS"]
+
+
+def org_name(org: str) -> str:
+    """The organisation's full name from sources.yaml — also the heading on
+    the vault's Organizations page (Obsidian Publish joins its words with +)."""
+    return registry.orgs().get(org, {}).get("name") or org
+
+
+def org_order() -> dict[str, int]:
+    """Display order = the order organisations appear in sources.yaml
+    (local first, then regional, then state)."""
+    return {o: i for i, o in enumerate(registry.orgs())}
 
 
 def org_link(org: str) -> str:
-    heading = ORG_ANCHORS.get(org, org)
-    return f'<a href="{KB}/Organizations#{heading.replace(" ", "+")}">{html.escape(org)}</a>'
+    return f'<a href="{KB}/Organizations#{org_name(org).replace(" ", "+")}">{html.escape(org)}</a>'
 
 
 def _parse(stamp: str | None) -> datetime | None:
@@ -107,7 +101,7 @@ def render(rows: list[dict[str, str]], status: dict, now: datetime,
         by_org.setdefault(r["org"], []).append(r)
 
     body = []
-    for org in ORG_ORDER + sorted(set(by_org) - set(ORG_ORDER)):
+    for org in sorted(by_org, key=lambda o: (org_order().get(o, 99), o)):
         pages = by_org.get(org)
         if not pages:
             continue
@@ -156,7 +150,7 @@ def render(rows: list[dict[str, str]], status: dict, now: datetime,
 last time its content differed from the previous read; <b>Archive</b> is the newest saved copy
 of the page in the web archive (linked once the archive is online). Updated {fmt(generated)} (Central).</p>
 {chr(10).join(body)}
-<footer>Generated from <a href="https://github.com/changesaroundme/calendars/blob/main/sources.csv">sources.csv</a>
+<footer>Generated from <a href="https://github.com/changesaroundme/calendars/blob/main/sources.yaml">sources.yaml</a>
 and <a href="./status.json">status.json</a>, with capture times from <a href="./captures.json">captures.json</a>.
 A <a href="{KB}">Changes Around Me</a> project.</footer>
 </body>
@@ -182,7 +176,7 @@ def render_markdown(rows: list[dict[str, str]], status: dict,
     for r in rows:
         if r["parent"]:
             children.setdefault(r["parent"], []).append(r)
-    order = {o: i for i, o in enumerate(ORG_ORDER)}
+    order = org_order()
     public = [r for r in rows if r["public"] == "yes" and not r["parent"] and r["status"] != "retired"]
     public.sort(key=lambda r: (order.get(r["org"], 99), r["name"].lower()))
     generated = _parse(status.get("generated"))
@@ -199,7 +193,7 @@ def render_markdown(rows: list[dict[str, str]], status: dict,
     for r in public:
         group = [r] + children.get(r["slug"], [])
         checked, changed, captured, cap_url = _stamps(group, stamps, captures)
-        org = f"[[{ORG_PAGE}#{ORG_ANCHORS.get(r['org'], r['org'])}\\|{r['org']}]]"
+        org = f"[[{ORG_PAGE}#{org_name(r['org'])}\\|{r['org']}]]"
         name = r["name"].replace("|", "\\|")
         if r["status"] == "paused":
             name += " *(paused)*"
@@ -239,7 +233,7 @@ def render_archive_markdown(rows: list[dict[str, str]], archive: dict) -> str:
     sources = archive.get("sources", {})
     generated = _parse(archive.get("generated"))
     by_slug = {r["slug"]: r for r in rows}
-    order = {o: i for i, o in enumerate(ORG_ORDER)}
+    order = org_order()
     lines = [
         f"*Every saved copy in the web archive, oldest to newest. Each page's **latest** link always "
         f"points at its newest copy, so it can be cited even after the page itself changes or "
@@ -255,7 +249,7 @@ def render_archive_markdown(rows: list[dict[str, str]], archive: dict) -> str:
         r, entry = by_slug[slug], sources[slug]
         if r["org"] != org:
             org = r["org"]
-            lines += ["", f"## {ORG_ANCHORS.get(org, org)}"]
+            lines += ["", f"## {org_name(org)}"]
         name = r["name"] + (" *(retired)*" if r["status"] == "retired" else "")
         head = f"### {name}"
         latest = entry.get("latest")
@@ -266,7 +260,7 @@ def render_archive_markdown(rows: list[dict[str, str]], archive: dict) -> str:
         _append_entries(lines, entry)
     if unlisted:
         lines += ["", "## Not in the registry",
-                  "", "*Folders in the archive with no row in `sources.csv` — kept, but not checked or refreshed.*"]
+                  "", "*Folders in the archive with no page in `sources.yaml` — kept, but not checked or refreshed.*"]
         for slug in unlisted:
             lines += ["", f"### {slug.removeprefix('_unlisted/')}"]
             _append_entries(lines, sources[slug])
