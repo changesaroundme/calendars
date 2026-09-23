@@ -1,4 +1,4 @@
-*Every saved copy in the web archive, oldest to newest. Each page's **latest** link always points at its newest copy, so it can be cited even after the page itself changes or disappears; the dated links are the individual captures, and the files are the documents the page linked to, saved when first seen. Updated 20 Sep 2026 15:56 — regenerated on every build as `docs/archive.md` in the calendars repo; [[Archive]] is a copy of that file.*
+*Every saved copy in the web archive, oldest to newest. Each page's **latest** link always points at its newest copy, so it can be cited even after the page itself changes or disappears; the dated links are the individual captures, and the files are the documents the page linked to, saved when first seen. Updated 21 Sep 2026 23:01 — regenerated on every build as `docs/archive.md` in the calendars repo; [[Archive]] is a copy of that file.*
 
 ## City of Austin (CoA)
 
@@ -557,6 +557,41 @@ Files:
 - [References_January2025.pdf](https://archive.changesaroundme.com/atp-light-rail-progress-update/files/2026-09-20-1339/References_January2025.pdf) — 20 Sep 2026 13:39, 0.3 MB
 - [TableofContents_Acronyms_Abbreviations_January2025.pdf](https://archive.changesaroundme.com/atp-light-rail-progress-update/files/2026-09-20-1339/TableofContents_Acronyms_Abbreviations_January2025.pdf) — 20 Sep 2026 13:39, 0.2 MB
 
+### Board Briefs
+
+[page](https://www.atptx.org/resources/board-briefs/) · [latest copy](https://archive.changesaroundme.com/atp-board-briefs/latest.pdf)
+
+Captures: [21 Sep 2026 06:35](https://archive.changesaroundme.com/atp-board-briefs/2026-09-21-0635.pdf)
+
+Files:
+- [20221031_PCON_BoardBrief_Final.pdf](https://archive.changesaroundme.com/atp-board-briefs/files/2026-09-21-0635/20221031_PCON_BoardBrief_Final.pdf) — 21 Sep 2026 06:35, 0.3 MB
+- [Project-Connect-Board-Brief-Aug-2022.pdf](https://archive.changesaroundme.com/atp-board-briefs/files/2026-09-21-0635/Project-Connect-Board-Brief-Aug-2022.pdf) — 21 Sep 2026 06:35, 0.3 MB
+- [Project-Connect-Board-Brief_082323_Final.pdf](https://archive.changesaroundme.com/atp-board-briefs/files/2026-09-21-0635/Project-Connect-Board-Brief_082323_Final.pdf) — 21 Sep 2026 06:35, 0.4 MB
+- [Project-Connect-Board-Brief_20230920_Final_rev2.pdf](https://archive.changesaroundme.com/atp-board-briefs/files/2026-09-21-0635/Project-Connect-Board-Brief_20230920_Final_rev2.pdf) — 21 Sep 2026 06:35, 0.4 MB
+- [Project-Connect-Board-Brief_20231018_final.pdf](https://archive.changesaroundme.com/atp-board-briefs/files/2026-09-21-0635/Project-Connect-Board-Brief_20231018_final.pdf) — 21 Sep 2026 06:35, 0.6 MB
+- [Project-Connect-Board-Brief_Apr2023_-FINAL.pdf](https://archive.changesaroundme.com/atp-board-briefs/files/2026-09-21-0635/Project-Connect-Board-Brief_Apr2023_-FINAL.pdf) — 21 Sep 2026 06:35, 0.6 MB
+- [Project-Connect-Board-Brief_Dec2022_-FINAL.pdf](https://archive.changesaroundme.com/atp-board-briefs/files/2026-09-21-0635/Project-Connect-Board-Brief_Dec2022_-FINAL.pdf) — 21 Sep 2026 06:35, 0.5 MB
+- [Project-Connect-Board-Brief_Dec2023_Final_V2.pdf](https://archive.changesaroundme.com/atp-board-briefs/files/2026-09-21-0635/Project-Connect-Board-Brief_Dec2023_Final_V2.pdf) — 21 Sep 2026 06:35, 0.7 MB
+- [Project-Connect-Board-Brief_Feb2023_-FINAL.pdf](https://archive.changesaroundme.com/atp-board-briefs/files/2026-09-21-0635/Project-Connect-Board-Brief_Feb2023_-FINAL.pdf) — 21 Sep 2026 06:35, 0.7 MB
+- [Project-Connect-Board-Brief_Feb2024-FINAL-1.pdf](https://archive.changesaroundme.com/atp-board-briefs/files/2026-09-21-0635/Project-Connect-Board-Brief_Feb2024-FINAL-1.pdf) — 21 Sep 2026 06:35, 1.2 MB
+- [Project-Connect-Board-Brief_Jan2023_-FINAL2.pdf](https://archive.changesaroundme.com/atp-board-briefs/files/2026-09-21-0635/Project-Connect-Board-Brief_Jan2023_-FINAL2.pdf) — 21 Sep 2026 06:35, 0.4 MB
+- [Project-Connect-Board-Brief_Jan2024-FINAL.pdf](https://archive.changesaroundme.com/atp-board-briefs/files/2026-09-21-0635/Project-Connect-Board-Brief_Jan2024-FINAL.pdf) — 21 Sep 2026 06:35, 0.7 MB
+- [Project-Connect-Board-Brief_Mar2023_-Final.pdf](https://archive.changesaroundme.com/atp-board-briefs/files/2026-09-21-0635/Project-Connect-Board-Brief_Mar2023_-Final.pdf) — 21 Sep 2026 06:35, 0.5 MB
+- [Project-Connect-Board-Brief_May2023_-FINAL_2.pdf](https://archive.changesaroundme.com/atp-board-briefs/files/2026-09-21-0635/Project-Connect-Board-Brief_May2023_-FINAL_2.pdf) — 21 Sep 2026 06:35, 0.5 MB
+- [Project-Connect-Board-Brief_Nov2022_FINAL.pdf](https://archive.changesaroundme.com/atp-board-briefs/files/2026-09-21-0635/Project-Connect-Board-Brief_Nov2022_FINAL.pdf) — 21 Sep 2026 06:35, 0.5 MB
+- [Project-Connect-Board-Brief_Nov2022_FINAL.pdf](https://archive.changesaroundme.com/atp-board-briefs/files/2026-09-21-0635/Project-Connect-Board-Brief_Nov2022_FINAL.pdf) — 21 Sep 2026 06:35, 0.5 MB
+- [Project-Connect-Board-Brief_SEPT-2022-FINAL.pdf](https://archive.changesaroundme.com/atp-board-briefs/files/2026-09-21-0635/Project-Connect-Board-Brief_SEPT-2022-FINAL.pdf) — 21 Sep 2026 06:35, 0.4 MB
+- [Project-Connect-Status-Report-ATP-Board-Brief-June-2026.pdf](https://archive.changesaroundme.com/atp-board-briefs/files/2026-09-21-0635/Project-Connect-Status-Report-ATP-Board-Brief-June-2026.pdf) — 21 Sep 2026 06:35, 0.4 MB
+- [Project-Connect-Status-Report-ATP-Board-Brief-March-2025_FINAL.pdf](https://archive.changesaroundme.com/atp-board-briefs/files/2026-09-21-0635/Project-Connect-Status-Report-ATP-Board-Brief-March-2025_FINAL.pdf) — 21 Sep 2026 06:35, 0.7 MB
+- [Project-Connect-Status-Report-ATP-Board-Brief-May-2024.pdf](https://archive.changesaroundme.com/atp-board-briefs/files/2026-09-21-0635/Project-Connect-Status-Report-ATP-Board-Brief-May-2024.pdf) — 21 Sep 2026 06:35, 0.6 MB
+- [Project-Connect-Status-Report-ATP-Board-Brief-Sept-2024_WEB-FINAL.pdf](https://archive.changesaroundme.com/atp-board-briefs/files/2026-09-21-0635/Project-Connect-Status-Report-ATP-Board-Brief-Sept-2024_WEB-FINAL.pdf) — 21 Sep 2026 06:35, 0.8 MB
+- [Project-Connect-Status-Report-_-ATP-Board-Brief-July-2024.pdf](https://archive.changesaroundme.com/atp-board-briefs/files/2026-09-21-0635/Project-Connect-Status-Report-_-ATP-Board-Brief-July-2024.pdf) — 21 Sep 2026 06:35, 0.6 MB
+- [Project-Connect-Status-Report-_-ATP-Board-Brief-Sept-2025.pdf](https://archive.changesaroundme.com/atp-board-briefs/files/2026-09-21-0635/Project-Connect-Status-Report-_-ATP-Board-Brief-Sept-2025.pdf) — 21 Sep 2026 06:35, 0.5 MB
+- [Project-Connect-Status-Report-_ATP-Board-Brief-April-2026.pdf](https://archive.changesaroundme.com/atp-board-briefs/files/2026-09-21-0635/Project-Connect-Status-Report-_ATP-Board-Brief-April-2026.pdf) — 21 Sep 2026 06:35, 0.3 MB
+- [Project-Connect-Status-Report_ATP-Board-Brief-July-2025.pdf](https://archive.changesaroundme.com/atp-board-briefs/files/2026-09-21-0635/Project-Connect-Status-Report_ATP-Board-Brief-July-2025.pdf) — 21 Sep 2026 06:35, 1.7 MB
+- [Project-Connect-Status-Report_ATP-Board-Brief-Nov-2024.pdf](https://archive.changesaroundme.com/atp-board-briefs/files/2026-09-21-0635/Project-Connect-Status-Report_ATP-Board-Brief-Nov-2024.pdf) — 21 Sep 2026 06:35, 0.6 MB
+- [aProject-Connect-Board-Brief_072023_Draft_July-18-2023_Final-PDF.pdf](https://archive.changesaroundme.com/atp-board-briefs/files/2026-09-21-0635/aProject-Connect-Board-Brief_072023_Draft_July-18-2023_Final-PDF.pdf) — 21 Sep 2026 06:35, 0.3 MB
+
 ### Final Environmental Impact Statement / Record of Decision
 
 [page](https://www.atptx.org/milestones/atp-releases-final-environmental-impact-statement-record-of-decision/) · [latest copy](https://archive.changesaroundme.com/atp-feis-record-of-decision/latest.pdf)
@@ -633,6 +668,12 @@ Files:
 - [ATPScoping_FullReport_FINAL.pdf](https://archive.changesaroundme.com/atp-feis-record-of-decision/files/2026-09-20-1331/ATPScoping_FullReport_FINAL.pdf) — 20 Sep 2026 13:31, 31.2 MB
 - [ATPScoping_Summary_Report_ES_FINAL.pdf](https://archive.changesaroundme.com/atp-feis-record-of-decision/files/2026-09-20-1331/ATPScoping_Summary_Report_ES_FINAL.pdf) — 20 Sep 2026 13:31, 1.5 MB
 
+### Landing Page
+
+[page](https://www.atptx.org/) · [latest copy](https://archive.changesaroundme.com/atp-landing-page/latest.pdf)
+
+Captures: [21 Sep 2026 06:34](https://archive.changesaroundme.com/atp-landing-page/2026-09-21-0634.pdf)
+
 ### Planning & Environmental Documents
 
 [page](https://www.atptx.org/resources/environmental-review/) · [latest copy](https://archive.changesaroundme.com/atp-environmental-review/latest.pdf)
@@ -654,6 +695,46 @@ Files:
 - [Title-VI-Equity-Analysis.pdf](https://archive.changesaroundme.com/atp-environmental-review/files/2026-09-19-0024/Title-VI-Equity-Analysis.pdf) — 19 Sep 2026 00:24, 4.0 MB
 
 ## Capital Metropolitan Transportation Authority (CapMetro)
+
+### August 2026 service changes
+
+[page](https://www.capmetro.org/servicechange/august-2026-service-changes) · [latest copy](https://archive.changesaroundme.com/capmetro-service-changes-aug-2026/latest.pdf)
+
+Captures: [21 Sep 2026 22:56](https://archive.changesaroundme.com/capmetro-service-changes-aug-2026/2026-09-21-2256.pdf)
+
+Files:
+- [001.pdf](https://archive.changesaroundme.com/capmetro-service-changes-aug-2026/files/2026-09-21-2257/001.pdf) — 21 Sep 2026 22:57, 0.9 MB
+- [002.pdf](https://archive.changesaroundme.com/capmetro-service-changes-aug-2026/files/2026-09-21-2257/002.pdf) — 21 Sep 2026 22:57, 0.7 MB
+- [004.pdf](https://archive.changesaroundme.com/capmetro-service-changes-aug-2026/files/2026-09-21-2257/004.pdf) — 21 Sep 2026 22:57, 0.6 MB
+- [007.pdf](https://archive.changesaroundme.com/capmetro-service-changes-aug-2026/files/2026-09-21-2257/007.pdf) — 21 Sep 2026 22:57, 1.4 MB
+- [010.pdf](https://archive.changesaroundme.com/capmetro-service-changes-aug-2026/files/2026-09-21-2257/010.pdf) — 21 Sep 2026 22:57, 1.2 MB
+- [030.pdf](https://archive.changesaroundme.com/capmetro-service-changes-aug-2026/files/2026-09-21-2257/030.pdf) — 21 Sep 2026 22:57, 1.1 MB
+- [111.pdf](https://archive.changesaroundme.com/capmetro-service-changes-aug-2026/files/2026-09-21-2257/111.pdf) — 21 Sep 2026 22:57, 0.5 MB
+- [217.pdf](https://archive.changesaroundme.com/capmetro-service-changes-aug-2026/files/2026-09-21-2257/217.pdf) — 21 Sep 2026 22:57, 0.7 MB
+- [228.pdf](https://archive.changesaroundme.com/capmetro-service-changes-aug-2026/files/2026-09-21-2257/228.pdf) — 21 Sep 2026 22:57, 0.5 MB
+- [271.pdf](https://archive.changesaroundme.com/capmetro-service-changes-aug-2026/files/2026-09-21-2257/271.pdf) — 21 Sep 2026 22:57, 0.8 MB
+- [300.pdf](https://archive.changesaroundme.com/capmetro-service-changes-aug-2026/files/2026-09-21-2257/300.pdf) — 21 Sep 2026 22:57, 1.6 MB
+- [311.pdf](https://archive.changesaroundme.com/capmetro-service-changes-aug-2026/files/2026-09-21-2257/311.pdf) — 21 Sep 2026 22:57, 1.4 MB
+- [322.pdf](https://archive.changesaroundme.com/capmetro-service-changes-aug-2026/files/2026-09-21-2257/322.pdf) — 21 Sep 2026 22:57, 1.2 MB
+- [337.pdf](https://archive.changesaroundme.com/capmetro-service-changes-aug-2026/files/2026-09-21-2257/337.pdf) — 21 Sep 2026 22:57, 1.4 MB
+- [466.pdf](https://archive.changesaroundme.com/capmetro-service-changes-aug-2026/files/2026-09-21-2257/466.pdf) — 21 Sep 2026 22:57, 0.8 MB
+- [600s.pdf](https://archive.changesaroundme.com/capmetro-service-changes-aug-2026/files/2026-09-21-2257/600s.pdf) — 21 Sep 2026 22:57, 1.5 MB
+- [985.pdf](https://archive.changesaroundme.com/capmetro-service-changes-aug-2026/files/2026-09-21-2257/985.pdf) — 21 Sep 2026 22:57, 1.0 MB
+
+### Fare Increase
+
+[page](https://www.capmetro.org/fare/general-fares-overview/fare-increase) · [latest copy](https://archive.changesaroundme.com/capmetro-fare-increase/latest.pdf)
+
+Captures: [21 Sep 2026 09:39](https://archive.changesaroundme.com/capmetro-fare-increase/2026-09-21-0939.pdf), [21 Sep 2026 22:57](https://archive.changesaroundme.com/capmetro-fare-increase/2026-09-21-2257.pdf)
+
+### Proposed January 2027 service changes
+
+[page](https://www.capmetro.org/servicechange/proposed-january-2027-service-changes) · [latest copy](https://archive.changesaroundme.com/capmetro-service-changes-jan-2027/latest.pdf)
+
+Captures: [21 Sep 2026 22:55](https://archive.changesaroundme.com/capmetro-service-changes-jan-2027/2026-09-21-2255.pdf)
+
+Files:
+- [proposed_jan2027_railschedule_weekday.pdf](https://archive.changesaroundme.com/capmetro-service-changes-jan-2027/files/2026-09-21-2256/proposed_jan2027_railschedule_weekday.pdf) — 21 Sep 2026 22:56, 0.2 MB
 
 ### Rail and Trail Improvements
 
@@ -699,13 +780,40 @@ Files:
 - [Design-Guidelines-for-a-Trail-Project-within-CapMetro-Rail-Right-of-Way.pdf](https://archive.changesaroundme.com/capmetro-red-line-trail-study/files/2026-09-19-0023/Design-Guidelines-for-a-Trail-Project-within-CapMetro-Rail-Right-of-Way.pdf) — 19 Sep 2026 00:23, 0.4 MB
 - [Trail-Project-within-CapMetro-Rail-Right-of-Way-Standard-Operating-Procedures.pdf](https://archive.changesaroundme.com/capmetro-red-line-trail-study/files/2026-09-19-0023/Trail-Project-within-CapMetro-Rail-Right-of-Way-Standard-Operating-Procedures.pdf) — 19 Sep 2026 00:23, 0.4 MB
 
+### Service changes
+
+[page](https://www.capmetro.org/servicechange) · [latest copy](https://archive.changesaroundme.com/capmetro-service-changes/latest.pdf)
+
+Captures: [21 Sep 2026 22:55](https://archive.changesaroundme.com/capmetro-service-changes/2026-09-21-2255.pdf)
+
+## Capital Area Metropolitan Planning Organization (CAMPO)
+
+### 2027-2030 Tip Amendments Open House – Fall 2026
+
+[page](https://www.campotexas.org/open-house/2027-2030-tip-amendments-open-house-fall-2026/) · [latest copy](https://archive.changesaroundme.com/campo-2026-fall-tip-amendments/latest.pdf)
+
+Captures: [21 Sep 2026 22:59](https://archive.changesaroundme.com/campo-2026-fall-tip-amendments/2026-09-21-2259.pdf)
+
+Files:
+- [FINAL_TIP_Fall-2026_English.pdf](https://archive.changesaroundme.com/campo-2026-fall-tip-amendments/files/2026-09-21-2259/FINAL_TIP_Fall-2026_English.pdf) — 21 Sep 2026 22:59, 1.6 MB
+- [FINAL_TIP_OTONO-2026-1.pdf](https://archive.changesaroundme.com/campo-2026-fall-tip-amendments/files/2026-09-21-2259/FINAL_TIP_OTONO-2026-1.pdf) — 21 Sep 2026 22:59, 3.1 MB
+
+### CURRENT OUTREACH OPPORTUNITIES
+
+[page](https://www.campotexas.org/get-involved/) · [latest copy](https://archive.changesaroundme.com/campo-get-involved/latest.pdf)
+
+Captures: [21 Sep 2026 22:58](https://archive.changesaroundme.com/campo-get-involved/2026-09-21-2258.pdf)
+
+Files:
+- [PPP-2025-Final.pdf](https://archive.changesaroundme.com/campo-get-involved/files/2026-09-21-2258/PPP-2025-Final.pdf) — 21 Sep 2026 22:58, 10.6 MB
+
 ## Lower Colorado River Authority (LCRA)
 
 ### Water rules and permits open for public comment
 
 [page](https://www.lcra.org/water/water-related-rules-and-regulations-for-public-comment/) · [latest copy](https://archive.changesaroundme.com/lcra-water-public-comment/latest.pdf)
 
-Captures: [18 Sep 2026 23:50](https://archive.changesaroundme.com/lcra-water-public-comment/2026-09-18-2350.pdf), [20 Sep 2026 11:08](https://archive.changesaroundme.com/lcra-water-public-comment/2026-09-20-1108.pdf)
+Captures: [20 Sep 2026 21:46](https://archive.changesaroundme.com/lcra-water-public-comment/2026-09-20-2146.pdf)
 
 ## Texas Department of Transportation (TxDOT)
 
@@ -729,7 +837,7 @@ Files:
 
 ## Not in the registry
 
-*Folders in the archive with no row in `sources.csv` — kept, but not checked or refreshed.*
+*Folders in the archive with no page in `sources.yaml` — kept, but not checked or refreshed.*
 
 ### East Riverside Corridor Planning Initiative Survey - Round 2
 
