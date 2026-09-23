@@ -1,6 +1,13 @@
 {
- "generated": "2026-09-21T03:26:56Z",
+ "generated": "2026-09-22T04:00:21Z",
  "sources": {
+  "atp-board-briefs": {
+   "checked": "2026-09-21T11:34:55Z",
+   "folder": "Board Briefs Archives",
+   "captured": "2026-09-21T11:35:00Z",
+   "file": "Board Briefs Archives - 2026-09-21 0635.pdf",
+   "url": "https://archive.changesaroundme.com/atp-board-briefs/latest.pdf"
+  },
   "atp-environmental-review": {
    "checked": "2026-09-20T17:04:09Z",
    "captured": "2026-09-20T16:34:00Z",
@@ -15,12 +22,40 @@
    "folder": "ATP Releases Final Environmental Impact Statement Record of Decision",
    "url": "https://archive.changesaroundme.com/atp-feis-record-of-decision/latest.pdf"
   },
+  "atp-landing-page": {
+   "checked": "2026-09-21T11:34:17Z",
+   "folder": "Home",
+   "captured": "2026-09-21T11:34:00Z",
+   "file": "Home - 2026-09-21 0634.pdf",
+   "url": "https://archive.changesaroundme.com/atp-landing-page/latest.pdf"
+  },
   "atp-light-rail-progress-update": {
    "checked": "2026-09-20T17:04:01Z",
    "captured": "2026-09-20T16:33:00Z",
    "file": "Austin Light Rail Progress Update - 2026-09-20 1133.pdf",
    "folder": "Austin Light Rail Progress Update",
    "url": "https://archive.changesaroundme.com/atp-light-rail-progress-update/latest.pdf"
+  },
+  "campo-2026-fall-tip-amendments": {
+   "checked": "2026-09-22T03:59:07Z",
+   "folder": "2027-2030 TIP Amendments Open House - Fall 2026 - CAMPO",
+   "captured": "2026-09-22T03:59:00Z",
+   "file": "2027-2030 TIP Amendments Open House - Fall 2026 - CAMPO - 2026-09-21 2259.pdf",
+   "url": "https://archive.changesaroundme.com/campo-2026-fall-tip-amendments/latest.pdf"
+  },
+  "campo-get-involved": {
+   "checked": "2026-09-22T03:58:05Z",
+   "folder": "Current Outreach Opportunities - CAMPO",
+   "captured": "2026-09-22T03:58:00Z",
+   "file": "Current Outreach Opportunities - CAMPO - 2026-09-21 2258.pdf",
+   "url": "https://archive.changesaroundme.com/campo-get-involved/latest.pdf"
+  },
+  "capmetro-fare-increase": {
+   "checked": "2026-09-22T03:57:28Z",
+   "folder": "Fare Increase 2027 and 2029 Capital Metro Austin Public Transit",
+   "captured": "2026-09-22T03:57:00Z",
+   "file": "Fare Increase 2027 and 2029 Capital Metro Austin Public Transit - 2026-09-21 2257.pdf",
+   "url": "https://archive.changesaroundme.com/capmetro-fare-increase/latest.pdf"
   },
   "capmetro-rail-and-trail-improvements": {
    "checked": "2026-09-20T17:01:36Z",
@@ -49,6 +84,27 @@
    "file": "Red Line Trail Study - 2026-09-20 1132.pdf",
    "folder": "Red Line Trail Study",
    "url": "https://archive.changesaroundme.com/capmetro-red-line-trail-study/latest.pdf"
+  },
+  "capmetro-service-changes": {
+   "checked": "2026-09-22T03:55:10Z",
+   "folder": "Service Changes Capital Metro Austin Public Transit",
+   "captured": "2026-09-22T03:55:00Z",
+   "file": "Service Changes Capital Metro Austin Public Transit - 2026-09-21 2255.pdf",
+   "url": "https://archive.changesaroundme.com/capmetro-service-changes/latest.pdf"
+  },
+  "capmetro-service-changes-aug-2026": {
+   "checked": "2026-09-22T03:56:13Z",
+   "folder": "Approved August 2026 Service Changes Capital Metro Austin Public Transit",
+   "captured": "2026-09-22T03:56:00Z",
+   "file": "Approved August 2026 Service Changes Capital Metro Austin Public Transit - 2026-09-21 2256.pdf",
+   "url": "https://archive.changesaroundme.com/capmetro-service-changes-aug-2026/latest.pdf"
+  },
+  "capmetro-service-changes-jan-2027": {
+   "checked": "2026-09-22T03:55:41Z",
+   "folder": "Proposed January 2027 Service Changes Capital Metro Austin Public Transit",
+   "captured": "2026-09-22T03:55:00Z",
+   "file": "Proposed January 2027 Service Changes Capital Metro Austin Public Transit - 2026-09-21 2255.pdf",
+   "url": "https://archive.changesaroundme.com/capmetro-service-changes-jan-2027/latest.pdf"
   },
   "coa-2908-south-congress": {
    "checked": "2026-09-20T16:49:56Z",
@@ -240,9 +296,9 @@
    "url": "https://archive.changesaroundme.com/coa-urban-trails-wayfinding-survey/latest.pdf"
   },
   "lcra-water-public-comment": {
-   "checked": "2026-09-20T16:49:37Z",
-   "captured": "2026-09-20T16:08:00Z",
-   "file": "Water-Related Rules and Regulations for Public Comment - LCRA - Energy Water Community - 2026-09-20 1108.pdf",
+   "checked": "2026-09-22T04:00:10Z",
+   "captured": "2026-09-21T02:46:00Z",
+   "file": "Water-Related Rules and Regulations for Public Comment - LCRA - Energy Water Community - 2026-09-20 2146.pdf",
    "folder": "Water-Related Rules and Regulations for Public Comment - LCRA - Energy Water Community",
    "url": "https://archive.changesaroundme.com/lcra-water-public-comment/latest.pdf"
   },

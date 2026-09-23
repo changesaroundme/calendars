@@ -6,12 +6,15 @@
 # either for all pages or for one kind — `calendar-pages` (the page has a
 # `calendar:`, so the build fetches it) or `other-pages` (kept for the archive).
 #
-#   calendar  which .ics it feeds                 expect   always | sporadic | every N year(s) [from YYYY] Mon[-Mon] | ...
+#   calendar  which .ics it feeds
+#   expect   always | sporadic | every N year(s) [from YYYY] Mon[-Mon] | ...
 #   check     twice daily | daily | weekly | every N days
 #   archive   yes/no — the archive job keeps PDF captures of it
 #   parse     ics | rss | api | html | html-table | pdf | claude | manual | none
-#   status    active | paused | retired         public   yes/no — listed on the Links page
-#   added     YYYY-MM-DD                         note     free text, never read by code
+#   status    active | paused | retired
+#   public   yes/no — listed on the Links page
+#   added     YYYY-MM-DD
+#   note     free text, never read by code
 #
 # The build validates this file on every run (caltools/registry.py).
 
@@ -338,6 +341,14 @@ organizations:
         name: Planning & Environmental Documents
         url: https://www.atptx.org/resources/environmental-review/
         added: 2026-09-10
+      - slug: atp-landing-page
+        name: Landing Page
+        url: https://www.atptx.org/
+        added: 2026-09-20
+      - slug: atp-board-briefs
+        name: Board Briefs
+        url: https://www.atptx.org/resources/board-briefs/
+        added: 2026-09-20
 
   CapMetro:
     name: Capital Metropolitan Transportation Authority (CapMetro)
@@ -406,6 +417,14 @@ organizations:
         url: https://www.campotexas.org/resource-category/meeting-agendas/
         calendar: campo
         added: 2026-08-09
+      - slug: campo-get-involved
+        name: CURRENT OUTREACH OPPORTUNITIES
+        url: https://www.campotexas.org/get-involved/
+        added: 2026-09-20
+      - slug: campo-2026-fall-tip-amendments
+        name: 2027-2030 Tip Amendments Open House – Fall 2026
+        url : https://www.campotexas.org/open-house/2027-2030-tip-amendments-open-house-fall-2026/
+        added: 2026-09-20
 
   CTRMA:
     name: Central Texas Regional Mobility Authority (CTRMA)

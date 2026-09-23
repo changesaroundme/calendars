@@ -161,7 +161,7 @@ A <a href="{KB}">Changes Around Me</a> project.</footer>
 def fmt_md(dt: datetime | None) -> str:
     """Vault table style (Brief 2 sample): `6 Sep 2026 09:00`, Central."""
     if dt is None:
-        return "—"
+        return "–"
     local = dt.astimezone(CENTRAL)
     return f"{local.day} {local:%b %Y %H:%M}"
 
