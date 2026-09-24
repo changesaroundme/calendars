@@ -1,16 +1,16 @@
 {
- "generated": "2026-09-23T11:30:18Z",
+ "generated": "2026-09-24T12:09:03Z",
  "sources": {
   "atp-board-briefs": {
-   "checked": "2026-09-21T11:34:55Z",
+   "checked": "2026-09-24T12:05:34Z",
    "folder": "Board Briefs Archives",
-   "captured": "2026-09-21T11:35:00Z",
-   "file": "Board Briefs Archives - 2026-09-21 0635.pdf",
+   "captured": "2026-09-24T12:05:00Z",
+   "file": "Board Briefs Archives - 2026-09-24 0705.pdf",
    "url": "https://archive.changesaroundme.com/atp-board-briefs/latest.pdf",
    "since": "2026-09-21T11:35:00Z"
   },
   "atp-environmental-review": {
-   "checked": "2026-09-20T17:04:09Z",
+   "checked": "2026-09-24T12:05:11Z",
    "captured": "2026-09-20T16:34:00Z",
    "file": "Planning Environmental Documents Archives - 2026-09-20 1134.pdf",
    "folder": "Planning Environmental Documents Archives",
@@ -18,7 +18,7 @@
    "since": "2026-09-19T05:06:00Z"
   },
   "atp-feis-record-of-decision": {
-   "checked": "2026-09-20T17:03:53Z",
+   "checked": "2026-09-24T12:04:32Z",
    "captured": "2026-09-20T16:33:00Z",
    "file": "ATP Releases Final Environmental Impact Statement Record of Decision - 2026-09-20 1133.pdf",
    "folder": "ATP Releases Final Environmental Impact Statement Record of Decision",
@@ -26,7 +26,7 @@
    "since": "2026-09-19T05:05:00Z"
   },
   "atp-landing-page": {
-   "checked": "2026-09-21T11:34:17Z",
+   "checked": "2026-09-24T12:05:21Z",
    "folder": "Home",
    "captured": "2026-09-21T11:34:00Z",
    "file": "Home - 2026-09-21 0634.pdf",
@@ -34,7 +34,7 @@
    "since": "2026-09-21T11:34:00Z"
   },
   "atp-light-rail-progress-update": {
-   "checked": "2026-09-20T17:04:01Z",
+   "checked": "2026-09-24T12:04:53Z",
    "captured": "2026-09-20T16:33:00Z",
    "file": "Austin Light Rail Progress Update - 2026-09-20 1133.pdf",
    "folder": "Austin Light Rail Progress Update",
@@ -66,7 +66,7 @@
    "since": "2026-09-21T14:39:00Z"
   },
   "capmetro-rail-and-trail-improvements": {
-   "checked": "2026-09-20T17:01:36Z",
+   "checked": "2026-09-24T12:05:57Z",
    "captured": "2026-09-20T16:30:00Z",
    "file": "Rail and Trail Improvements - 2026-09-20 1130.pdf",
    "folder": "Rail and Trail Improvements",
@@ -74,15 +74,15 @@
    "since": "2026-09-01T21:53:00Z"
   },
   "capmetro-rail-improvements": {
-   "checked": "2026-09-20T17:02:57Z",
-   "captured": "2026-09-20T16:31:00Z",
-   "file": "Rail Improvements - 2026-09-20 1131.pdf",
+   "checked": "2026-09-24T12:06:36Z",
+   "captured": "2026-09-24T12:06:00Z",
+   "file": "Rail Improvements - 2026-09-24 0706.pdf",
    "folder": "Rail Improvements",
    "url": "https://archive.changesaroundme.com/capmetro-rail-improvements/latest.pdf",
    "since": "2026-09-01T21:52:00Z"
   },
   "capmetro-rail-trail-navasota-e7th": {
-   "checked": "2026-09-20T17:03:12Z",
+   "checked": "2026-09-24T12:06:20Z",
    "captured": "2026-09-20T16:32:00Z",
    "file": "Rail and Trail Improvements Navasota St to E 7th St - 2026-09-20 1132.pdf",
    "folder": "Rail and Trail Improvements Navasota St to E 7th St",
@@ -90,9 +90,9 @@
    "since": "2026-09-02T18:31:00Z"
   },
   "capmetro-red-line-trail-study": {
-   "checked": "2026-09-20T17:03:20Z",
-   "captured": "2026-09-20T16:32:00Z",
-   "file": "Red Line Trail Study - 2026-09-20 1132.pdf",
+   "checked": "2026-09-24T12:07:37Z",
+   "captured": "2026-09-24T12:07:00Z",
+   "file": "Red Line Trail Study - 2026-09-24 0707.pdf",
    "folder": "Red Line Trail Study",
    "url": "https://archive.changesaroundme.com/capmetro-red-line-trail-study/latest.pdf",
    "since": "2026-09-02T18:54:00Z"
@@ -122,23 +122,23 @@
    "since": "2026-09-22T03:55:00Z"
   },
   "coa-2908-south-congress": {
-   "checked": "2026-09-20T16:49:56Z",
-   "captured": "2026-09-20T16:08:00Z",
-   "file": "2908 South Congress - 2026-09-20 1108.pdf",
+   "checked": "2026-09-24T11:30:07Z",
+   "captured": "2026-09-24T11:30:00Z",
+   "file": "2908 South Congress - 2026-09-24 0630.pdf",
    "folder": "2908 South Congress",
    "url": "https://archive.changesaroundme.com/coa-2908-south-congress/latest.pdf",
    "since": "2026-09-01T21:34:00Z"
   },
   "coa-airport-corridor": {
-   "checked": "2026-09-20T17:01:32Z",
-   "captured": "2026-09-20T16:30:00Z",
-   "file": "Airport Corridor Webpage - 2026-09-20 1130.pdf",
+   "checked": "2026-09-24T12:03:43Z",
+   "captured": "2026-09-20T20:24:00Z",
+   "file": "Airport Corridor Webpage - 2026-09-20 1524.pdf",
    "folder": "Airport Corridor Webpage",
    "url": "https://archive.changesaroundme.com/coa-airport-corridor/latest.pdf",
    "since": "2026-09-02T18:56:00Z"
   },
   "coa-all-ages-abilities-bicycle-network": {
-   "checked": "2026-09-20T17:00:19Z",
+   "checked": "2026-09-24T12:01:29Z",
    "captured": "2026-09-19T05:02:00Z",
    "file": "All Ages and Abilities Bicycle Priority Network - 2026-09-19 0002.pdf",
    "folder": "All Ages and Abilities Bicycle Priority Network",
@@ -146,7 +146,7 @@
    "since": "2026-09-02T18:56:00Z"
   },
   "coa-austin-energy-resource-generation-plan-2035": {
-   "checked": "2026-09-20T16:59:55Z",
+   "checked": "2026-09-24T12:01:04Z",
    "captured": "2026-09-20T16:27:00Z",
    "file": "Austin Energy Resource Generation and Climate Protection Plan 2035 - 2026-09-20 1127.pdf",
    "folder": "Austin Energy Resource Generation and Climate Protection Plan 2035",
@@ -154,7 +154,7 @@
    "since": "2026-09-01T21:34:00Z"
   },
   "coa-barton-springs-road-bridge": {
-   "checked": "2026-09-20T16:50:09Z",
+   "checked": "2026-09-24T11:30:58Z",
    "captured": "2026-09-01T21:36:00Z",
    "file": "Barton Springs Road Bridge project - 2026-09-01 1636.pdf",
    "folder": "Barton Springs Road Bridge project",
@@ -162,7 +162,7 @@
    "since": "2026-09-01T21:36:00Z"
   },
   "coa-burnet-road-corridor": {
-   "checked": "2026-09-20T16:50:16Z",
+   "checked": "2026-09-24T11:31:05Z",
    "captured": "2026-09-20T16:09:00Z",
    "file": "Burnet Road corridor project - 2026-09-20 1109.pdf",
    "folder": "Burnet Road corridor project",
@@ -170,15 +170,15 @@
    "since": "2026-09-01T21:37:00Z"
   },
   "coa-central-city-district-plan": {
-   "checked": "2026-09-20T16:51:39Z",
-   "captured": "2026-09-20T16:12:00Z",
-   "file": "Central City District Plan - 2026-09-20 1112.pdf",
+   "checked": "2026-09-24T11:50:22Z",
+   "captured": "2026-09-24T11:50:00Z",
+   "file": "Central City District Plan - 2026-09-24 0650.pdf",
    "folder": "Central City District Plan",
    "url": "https://archive.changesaroundme.com/coa-central-city-district-plan/latest.pdf",
    "since": "2026-09-01T21:39:00Z"
   },
   "coa-cesar-chavez-renaming": {
-   "checked": "2026-09-20T16:52:10Z",
+   "checked": "2026-09-24T11:51:38Z",
    "captured": "2026-09-20T16:13:00Z",
    "file": "C\u00e9sar Ch\u00e1vez Street Renaming - 2026-09-20 1113.pdf",
    "folder": "C\u00e9sar Ch\u00e1vez Street Renaming",
@@ -186,7 +186,7 @@
    "since": "2026-09-01T21:40:00Z"
   },
   "coa-cesar-chavez-renaming-survey": {
-   "checked": "2026-09-20T16:52:22Z",
+   "checked": "2026-09-24T11:51:52Z",
    "captured": "2026-09-20T01:00:00Z",
    "file": "C\u00e9sar Ch\u00e1vez Street Renaming Survey - 2026-09-19 2000.pdf",
    "folder": "C\u00e9sar Ch\u00e1vez Street Renaming Survey",
@@ -194,23 +194,23 @@
    "since": "2026-09-01T21:41:00Z"
   },
   "coa-citywide-density-bonus": {
-   "checked": "2026-09-20T16:50:34Z",
+   "checked": "2026-09-24T11:48:30Z",
    "folder": "C20-2024-004 Citywide Density Bonus Program",
-   "captured": "2026-09-20T16:10:00Z",
-   "file": "C20-2024-004 Citywide Density Bonus Program - 2026-09-20 1110.pdf",
+   "captured": "2026-09-24T11:48:00Z",
+   "file": "C20-2024-004 Citywide Density Bonus Program - 2026-09-24 0648.pdf",
    "url": "https://archive.changesaroundme.com/coa-citywide-density-bonus/latest.pdf",
    "since": "2026-09-01T21:37:00Z"
   },
   "coa-east-austin-historic-resource-survey": {
-   "checked": "2026-09-20T16:52:32Z",
-   "captured": "2026-09-20T16:14:00Z",
-   "file": "East Austin Historic Resource Survey - 2026-09-20 1114.pdf",
+   "checked": "2026-09-24T11:52:07Z",
+   "captured": "2026-09-24T11:52:00Z",
+   "file": "East Austin Historic Resource Survey - 2026-09-24 0652.pdf",
    "folder": "East Austin Historic Resource Survey",
    "url": "https://archive.changesaroundme.com/coa-east-austin-historic-resource-survey/latest.pdf",
    "since": "2026-09-01T21:41:00Z"
   },
   "coa-east-austin-parking-survey": {
-   "checked": "2026-09-20T16:52:46Z",
+   "checked": "2026-09-24T11:52:54Z",
    "captured": "2026-09-01T21:42:00Z",
    "file": "East Austin Parking Community survey questions - 2026-09-01 1642.pdf",
    "folder": "East Austin Parking Community survey questions",
@@ -218,7 +218,7 @@
    "since": "2026-09-01T21:42:00Z"
   },
   "coa-east-riverside-corridor-planning": {
-   "checked": "2026-09-20T16:52:53Z",
+   "checked": "2026-09-24T11:53:02Z",
    "captured": "2026-09-20T16:15:00Z",
    "file": "East Riverside Corridor Planning Initiative - 2026-09-20 1115.pdf",
    "folder": "East Riverside Corridor Planning Initiative",
@@ -226,7 +226,7 @@
    "since": "2026-09-01T21:42:00Z"
   },
   "coa-etod-overlay-phase-2": {
-   "checked": "2026-09-20T16:53:21Z",
+   "checked": "2026-09-24T11:53:37Z",
    "captured": "2026-09-20T16:16:00Z",
    "file": "Equitable Transit-Oriented Development ETOD Overlay Phase 2 - 2026-09-20 1116.pdf",
    "folder": "Equitable Transit-Oriented Development ETOD Overlay Phase 2",
@@ -234,7 +234,7 @@
    "since": "2026-09-01T21:45:00Z"
   },
   "coa-great-streets-plan-update": {
-   "checked": "2026-09-20T16:53:53Z",
+   "checked": "2026-09-24T11:54:08Z",
    "captured": "2026-09-20T01:03:00Z",
    "file": "Great Streets Plan Update - 2026-09-19 2003.pdf",
    "folder": "Great Streets Plan Update",
@@ -242,7 +242,7 @@
    "since": "2026-09-01T21:46:00Z"
   },
   "coa-green-infrastructure-initiative": {
-   "checked": "2026-09-20T16:54:07Z",
+   "checked": "2026-09-24T11:54:28Z",
    "captured": "2026-09-01T21:46:00Z",
    "file": "Green Infrastructure Initiative - 2026-09-01 1646.pdf",
    "folder": "Green Infrastructure Initiative",
@@ -250,7 +250,7 @@
    "since": "2026-09-01T21:46:00Z"
   },
   "coa-grove-riverside-site": {
-   "checked": "2026-09-20T16:54:22Z",
+   "checked": "2026-09-24T11:54:43Z",
    "captured": "2026-09-20T16:18:00Z",
    "file": "Grove-Riverside Site - 2026-09-20 1118.pdf",
    "folder": "Grove-Riverside Site",
@@ -258,7 +258,7 @@
    "since": "2026-09-01T21:47:00Z"
   },
   "coa-i35-central-samp": {
-   "checked": "2026-09-20T16:54:33Z",
+   "checked": "2026-09-24T11:54:56Z",
    "captured": "2026-09-20T16:19:00Z",
    "file": "I-35 Central Small Area Mobility Plan - 2026-09-20 1119.pdf",
    "folder": "I-35 Central Small Area Mobility Plan",
@@ -266,7 +266,7 @@
    "since": "2026-09-01T21:47:00Z"
   },
   "coa-imagine-austin-update": {
-   "checked": "2026-09-20T16:54:43Z",
+   "checked": "2026-09-24T11:55:07Z",
    "captured": "2026-09-20T16:19:00Z",
    "file": "Imagine Austin Update - 2026-09-20 1119.pdf",
    "folder": "Imagine Austin Update",
@@ -274,7 +274,7 @@
    "since": "2026-09-01T21:48:00Z"
   },
   "coa-mokan-trail": {
-   "checked": "2026-09-20T17:00:53Z",
+   "checked": "2026-09-24T12:01:45Z",
    "captured": "2026-09-02T20:48:00Z",
    "file": "MoKan Trail - 2026-09-02 1548.pdf",
    "folder": "MoKan Trail",
@@ -282,7 +282,7 @@
    "since": "2026-09-02T20:48:00Z"
   },
   "coa-northeast-district-plan": {
-   "checked": "2026-09-20T16:55:14Z",
+   "checked": "2026-09-24T11:55:38Z",
    "captured": "2026-09-20T16:20:00Z",
    "file": "Northeast District Plan - 2026-09-20 1120.pdf",
    "folder": "Northeast District Plan",
@@ -290,7 +290,7 @@
    "since": "2026-09-01T21:49:00Z"
   },
   "coa-our-future-35": {
-   "checked": "2026-09-20T16:55:31Z",
+   "checked": "2026-09-24T11:55:57Z",
    "captured": "2026-09-20T16:21:00Z",
    "file": "Our Future 35 - 2026-09-20 1121.pdf",
    "folder": "Our Future 35",
@@ -298,7 +298,7 @@
    "since": "2026-09-01T21:50:00Z"
   },
   "coa-shape-austins-2026-bond": {
-   "checked": "2026-09-20T16:59:17Z",
+   "checked": "2026-09-24T11:59:58Z",
    "captured": "2026-09-20T16:26:00Z",
    "file": "Shape Austins 2026 Bond - 2026-09-20 1126.pdf",
    "folder": "Shape Austins 2026 Bond",
@@ -306,7 +306,7 @@
    "since": "2026-09-01T21:54:00Z"
   },
   "coa-shaping-economic-development-policy": {
-   "checked": "2026-09-20T17:01:02Z",
+   "checked": "2026-09-24T12:01:57Z",
    "captured": "2026-09-20T16:28:00Z",
    "file": "Shaping Austins Economic Development Policy - 2026-09-20 1128.pdf",
    "folder": "Shaping Austins Economic Development Policy",
@@ -314,7 +314,7 @@
    "since": "2026-09-05T14:22:00Z"
   },
   "coa-transit-enhancement-infrastructure-report": {
-   "checked": "2026-09-20T17:01:09Z",
+   "checked": "2026-09-24T12:02:14Z",
    "captured": "2026-09-20T16:28:00Z",
    "file": "Transit Enhancement Infrastructure Report - 2026-09-20 1128.pdf",
    "folder": "Transit Enhancement Infrastructure Report",
@@ -322,7 +322,7 @@
    "since": "2026-09-02T20:47:00Z"
   },
   "coa-urban-trails-plan": {
-   "checked": "2026-09-20T17:01:24Z",
+   "checked": "2026-09-24T12:03:01Z",
    "captured": "2026-09-20T16:29:00Z",
    "file": "Urban Trails Plan - 2026-09-20 1129.pdf",
    "folder": "Urban Trails Plan",
@@ -330,7 +330,7 @@
    "since": "2026-09-01T21:54:00Z"
   },
   "coa-urban-trails-wayfinding-survey": {
-   "checked": "2026-09-20T16:59:47Z",
+   "checked": "2026-09-24T12:00:56Z",
    "captured": "2026-09-19T05:01:00Z",
    "file": "Urban Trails Wayfinding Survey - 2026-09-19 0001.pdf",
    "folder": "Urban Trails Wayfinding Survey",
@@ -338,7 +338,7 @@
    "since": "2026-09-01T21:55:00Z"
   },
   "lcra-water-public-comment": {
-   "checked": "2026-09-23T11:30:08Z",
+   "checked": "2026-09-24T12:08:42Z",
    "captured": "2026-09-21T02:46:00Z",
    "file": "Water-Related Rules and Regulations for Public Comment - LCRA - Energy Water Community - 2026-09-20 2146.pdf",
    "folder": "Water-Related Rules and Regulations for Public Comment - LCRA - Energy Water Community",
@@ -346,7 +346,7 @@
    "since": "2026-09-19T04:50:00Z"
   },
   "txdot-bike-ped-coordinators": {
-   "checked": "2026-09-20T16:49:51Z",
+   "checked": "2026-09-24T12:08:52Z",
    "captured": "2026-09-20T16:08:00Z",
    "file": "Bicycle and pedestrian coordinators - 2026-09-20 1108.pdf",
    "folder": "Bicycle and pedestrian coordinators",

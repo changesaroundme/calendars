@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-24T04:27:27Z",
+ "generated": "2026-09-24T20:42:59Z",
  "public_url": "https://archive.changesaroundme.com",
  "sources": {
   "_unlisted/East Riverside Corridor Planning Initiative Survey - Round 2": {
@@ -24,12 +24,24 @@
   "atp-board-briefs": {
    "captures": [
     {
+     "stamp": "2026-09-24-0705",
+     "url": "https://archive.changesaroundme.com/atp-board-briefs/2026-09-24-0705.pdf",
+     "size": 87360,
+     "changed_lines": 1
+    },
+    {
      "stamp": "2026-09-21-0635",
      "url": "https://archive.changesaroundme.com/atp-board-briefs/2026-09-21-0635.pdf",
      "size": 85770
     }
    ],
    "files": [
+    {
+     "stamp": "2026-09-24-0705",
+     "url": "https://archive.changesaroundme.com/atp-board-briefs/files/2026-09-24-0705/Project-Connect-Status-Report-ATP-Board-Brief-Sept.-2026.pdf",
+     "size": 672016,
+     "name": "Project-Connect-Status-Report-ATP-Board-Brief-Sept.-2026.pdf"
+    },
     {
      "stamp": "2026-09-21-0635",
      "url": "https://archive.changesaroundme.com/atp-board-briefs/files/2026-09-21-0635/aProject-Connect-Board-Brief_072023_Draft_July-18-2023_Final-PDF.pdf",
@@ -193,7 +205,7 @@
      "name": "20221031_PCON_BoardBrief_Final.pdf"
     }
    ],
-   "latest_key": "atp-board-briefs/2026-09-21-0635.pdf",
+   "latest_key": "atp-board-briefs/2026-09-24-0705.pdf",
    "latest": "https://archive.changesaroundme.com/atp-board-briefs/latest.pdf"
   },
   "atp-environmental-review": {
@@ -1183,6 +1195,12 @@
   "capmetro-rail-improvements": {
    "captures": [
     {
+     "stamp": "2026-09-24-0706",
+     "url": "https://archive.changesaroundme.com/capmetro-rail-improvements/2026-09-24-0706.pdf",
+     "size": 4150729,
+     "changed_lines": 10
+    },
+    {
      "stamp": "2026-09-20-1131",
      "url": "https://archive.changesaroundme.com/capmetro-rail-improvements/2026-09-20-1131.pdf",
      "size": 3330212
@@ -1202,7 +1220,7 @@
      "name": "20230731 Plaza Saltillo and Pleasant Valley Presentation.pdf"
     }
    ],
-   "latest_key": "capmetro-rail-improvements/2026-09-20-1131.pdf",
+   "latest_key": "capmetro-rail-improvements/2026-09-24-0706.pdf",
    "latest": "https://archive.changesaroundme.com/capmetro-rail-improvements/latest.pdf"
   },
   "capmetro-rail-trail-navasota-e7th": {
@@ -1398,6 +1416,12 @@
   "coa-2908-south-congress": {
    "captures": [
     {
+     "stamp": "2026-09-24-0630",
+     "url": "https://archive.changesaroundme.com/coa-2908-south-congress/2026-09-24-0630.pdf",
+     "size": 1775613,
+     "changed_lines": 7
+    },
+    {
      "stamp": "2026-09-20-1108",
      "url": "https://archive.changesaroundme.com/coa-2908-south-congress/2026-09-20-1108.pdf",
      "size": 1937803
@@ -1416,7 +1440,7 @@
      "name": "Deletta Dean_ Director_ Austin Housing.PDF"
     }
    ],
-   "latest_key": "coa-2908-south-congress/2026-09-20-1108.pdf",
+   "latest_key": "coa-2908-south-congress/2026-09-24-0630.pdf",
    "latest": "https://archive.changesaroundme.com/coa-2908-south-congress/latest.pdf"
   },
   "coa-airport-corridor": {
@@ -1617,6 +1641,12 @@
   "coa-central-city-district-plan": {
    "captures": [
     {
+     "stamp": "2026-09-24-0650",
+     "url": "https://archive.changesaroundme.com/coa-central-city-district-plan/2026-09-24-0650.pdf",
+     "size": 5256593,
+     "changed_lines": 62
+    },
+    {
      "stamp": "2026-09-20-1112",
      "url": "https://archive.changesaroundme.com/coa-central-city-district-plan/2026-09-20-1112.pdf",
      "size": 5574503
@@ -1628,6 +1658,24 @@
     }
    ],
    "files": [
+    {
+     "stamp": "2026-09-24-0651",
+     "url": "https://archive.changesaroundme.com/coa-central-city-district-plan/files/2026-09-24-0651/Open%20House%20_3%20Presentation.pdf",
+     "size": 25659660,
+     "name": "Open House _3 Presentation.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0651",
+     "url": "https://archive.changesaroundme.com/coa-central-city-district-plan/files/2026-09-24-0651/260914_Austin%20CCD_Open%20House%203_Boards_48x36_v3.pdf",
+     "size": 8792830,
+     "name": "260914_Austin CCD_Open House 3_Boards_48x36_v3.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0651",
+     "url": "https://archive.changesaroundme.com/coa-central-city-district-plan/files/2026-09-24-0651/2016-South-Central-Waterfront-Vision-Framework.pdf",
+     "size": 24703,
+     "name": "2016-South-Central-Waterfront-Vision-Framework.pdf"
+    },
     {
      "stamp": "2026-09-20-1151",
      "url": "https://archive.changesaroundme.com/coa-central-city-district-plan/files/2026-09-20-1151/2016-South-Central-Waterfront-Vision-Framework.pdf",
@@ -1737,7 +1785,7 @@
      "name": "20100624-151_ Agenda Backup (Master Plan  - Part 1).PDF"
     }
    ],
-   "latest_key": "coa-central-city-district-plan/2026-09-20-1112.pdf",
+   "latest_key": "coa-central-city-district-plan/2026-09-24-0650.pdf",
    "latest": "https://archive.changesaroundme.com/coa-central-city-district-plan/latest.pdf"
   },
   "coa-cesar-chavez-renaming": {
@@ -1780,6 +1828,12 @@
     }
    ],
    "files": [
+    {
+     "stamp": "2026-09-24-0652",
+     "url": "https://archive.changesaroundme.com/coa-cesar-chavez-renaming-survey/files/2026-09-24-0652/Street_Naming_Standards.pdf",
+     "size": 24565,
+     "name": "Street_Naming_Standards.pdf"
+    },
     {
      "stamp": "2026-09-20-1152",
      "url": "https://archive.changesaroundme.com/coa-cesar-chavez-renaming-survey/files/2026-09-20-1152/Street_Naming_Standards.pdf",
@@ -1896,6 +1950,12 @@
   "coa-east-austin-historic-resource-survey": {
    "captures": [
     {
+     "stamp": "2026-09-24-0652",
+     "url": "https://archive.changesaroundme.com/coa-east-austin-historic-resource-survey/2026-09-24-0652.pdf",
+     "size": 1903781,
+     "changed_lines": 21
+    },
+    {
      "stamp": "2026-09-20-1114",
      "url": "https://archive.changesaroundme.com/coa-east-austin-historic-resource-survey/2026-09-20-1114.pdf",
      "size": 2255618
@@ -1914,7 +1974,7 @@
      "name": "Mini-Grant Application Questions_East Austin Historic Resource Survey.pdf"
     }
    ],
-   "latest_key": "coa-east-austin-historic-resource-survey/2026-09-20-1114.pdf",
+   "latest_key": "coa-east-austin-historic-resource-survey/2026-09-24-0652.pdf",
    "latest": "https://archive.changesaroundme.com/coa-east-austin-historic-resource-survey/latest.pdf"
   },
   "coa-east-austin-parking-survey": {
@@ -2574,6 +2634,12 @@
    ],
    "files": [
     {
+     "stamp": "2026-09-24-0700",
+     "url": "https://archive.changesaroundme.com/coa-shape-austins-2026-bond/files/2026-09-24-0700/2025_12_15_%20Regular%20Meeting%20Backup_%202026%20Bond%20Election%20Advisory%20Task%20Force.PDF",
+     "size": 369755,
+     "name": "2025_12_15_ Regular Meeting Backup_ 2026 Bond Election Advisory Task Force.PDF"
+    },
+    {
      "stamp": "2026-09-20-1159",
      "url": "https://archive.changesaroundme.com/coa-shape-austins-2026-bond/files/2026-09-20-1159/2025_12_15_%20Regular%20Meeting%20Backup_%202026%20Bond%20Election%20Advisory%20Task%20Force.PDF",
      "size": 369755,
@@ -2701,6 +2767,204 @@
     }
    ],
    "files": [
+    {
+     "stamp": "2026-09-24-0702",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-24-0702/Transit-Enhancement-Infrastructure-Report_Final.pdf",
+     "size": 24709,
+     "name": "Transit-Enhancement-Infrastructure-Report_Final.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0702",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-24-0702/TEP-Woodward.pdf",
+     "size": 24499,
+     "name": "TEP-Woodward.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0702",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-24-0702/TEP-StJohns.pdf",
+     "size": 24493,
+     "name": "TEP-StJohns.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0702",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-24-0702/TEP-Springdale.pdf",
+     "size": 24511,
+     "name": "TEP-Springdale.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0702",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-24-0702/TEP-SouthparkMeadows.pdf",
+     "size": 24547,
+     "name": "TEP-SouthparkMeadows.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0702",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-24-0702/TEP-SouthFirstBenWhite.pdf",
+     "size": 24559,
+     "name": "TEP-SouthFirstBenWhite.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0702",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-24-0702/TEP-SouthFirst.pdf",
+     "size": 24511,
+     "name": "TEP-SouthFirst.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0702",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-24-0702/TEP-ShadyLane.pdf",
+     "size": 24505,
+     "name": "TEP-ShadyLane.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0702",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-24-0702/TEP-Seventh.pdf",
+     "size": 24493,
+     "name": "TEP-Seventh.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0702",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-24-0702/TEP-Rutherford.pdf",
+     "size": 24511,
+     "name": "TEP-Rutherford.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0702",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-24-0702/TEP-Rundberg.pdf",
+     "size": 24499,
+     "name": "TEP-Rundberg.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0702",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-24-0702/TEP-RedRiver45th.pdf",
+     "size": 24523,
+     "name": "TEP-RedRiver45th.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0702",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-24-0702/TEP-PleasantValley.pdf",
+     "size": 24535,
+     "name": "TEP-PleasantValley.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0702",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-24-0702/TEP-Oltorf.pdf",
+     "size": 24487,
+     "name": "TEP-Oltorf.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0702",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-24-0702/TEP-Montopolis.pdf",
+     "size": 24511,
+     "name": "TEP-Montopolis.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0702",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-24-0702/TEP-Manor2.pdf",
+     "size": 24487,
+     "name": "TEP-Manor2.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0702",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-24-0702/TEP-Manor.pdf",
+     "size": 24481,
+     "name": "TEP-Manor.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0702",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-24-0702/TEP-Loyola.pdf",
+     "size": 24487,
+     "name": "TEP-Loyola.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0702",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-24-0702/TEP-Lavaca.pdf",
+     "size": 24487,
+     "name": "TEP-Lavaca.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0702",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-24-0702/TEP-LakeAustinBlvd.pdf",
+     "size": 24535,
+     "name": "TEP-LakeAustinBlvd.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0702",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-24-0702/TEP-Jollyville.pdf",
+     "size": 24511,
+     "name": "TEP-Jollyville.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0702",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-24-0702/TEP-HowardLane.pdf",
+     "size": 24511,
+     "name": "TEP-HowardLane.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0702",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-24-0702/TEP-Guadalupe.pdf",
+     "size": 24505,
+     "name": "TEP-Guadalupe.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0702",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-24-0702/TEP-DeanKeeton.pdf",
+     "size": 24511,
+     "name": "TEP-DeanKeeton.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0702",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-24-0702/TEP-CesarChavez.pdf",
+     "size": 24517,
+     "name": "TEP-CesarChavez.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0702",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-24-0702/TEP-Cameron.pdf",
+     "size": 24493,
+     "name": "TEP-Cameron.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0702",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-24-0702/TEP-BluffSprings.pdf",
+     "size": 24523,
+     "name": "TEP-BluffSprings.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0702",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-24-0702/TEP-Allandale.pdf",
+     "size": 24505,
+     "name": "TEP-Allandale.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0702",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-24-0702/TEP-51stStreet.pdf",
+     "size": 24511,
+     "name": "TEP-51stStreet.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0702",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-24-0702/Equity_Analysis_Zones_Final_Report.pdf",
+     "size": 24631,
+     "name": "Equity_Analysis_Zones_Final_Report.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0702",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-24-0702/Appendix3_TEPSummary-Round2-03.26.24.pdf",
+     "size": 24643,
+     "name": "Appendix3_TEPSummary-Round2-03.26.24.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0702",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-24-0702/Appendix2_TEPSummary-Round1-03.26.24.pdf",
+     "size": 24643,
+     "name": "Appendix2_TEPSummary-Round1-03.26.24.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0702",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-24-0702/Appendix1_Toolbox.pdf",
+     "size": 24529,
+     "name": "Appendix1_Toolbox.pdf"
+    },
     {
      "stamp": "2026-09-20-1201",
      "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-20-1201/Transit-Enhancement-Infrastructure-Report_Final.pdf",
@@ -3320,6 +3584,48 @@
     }
    ],
    "files": [
+    {
+     "stamp": "2026-09-24-0703",
+     "url": "https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-09-24-0703/2023_Urban_Trails_Plan_Appendix_G.pdf",
+     "size": 24625,
+     "name": "2023_Urban_Trails_Plan_Appendix_G.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0703",
+     "url": "https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-09-24-0703/2023_Urban_Trails_Plan_Appendix_F.pdf",
+     "size": 24625,
+     "name": "2023_Urban_Trails_Plan_Appendix_F.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0703",
+     "url": "https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-09-24-0703/2023_Urban_Trails_Plan_Appendix_E.pdf",
+     "size": 24625,
+     "name": "2023_Urban_Trails_Plan_Appendix_E.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0703",
+     "url": "https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-09-24-0703/2023_Urban_Trails_Plan_Appendix_D.pdf",
+     "size": 24625,
+     "name": "2023_Urban_Trails_Plan_Appendix_D.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0703",
+     "url": "https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-09-24-0703/2023_Urban_Trails_Plan_Appendix_C.pdf",
+     "size": 24625,
+     "name": "2023_Urban_Trails_Plan_Appendix_C.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0703",
+     "url": "https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-09-24-0703/2023_Urban_Trails_Plan_Appendix_B.pdf",
+     "size": 24625,
+     "name": "2023_Urban_Trails_Plan_Appendix_B.pdf"
+    },
+    {
+     "stamp": "2026-09-24-0703",
+     "url": "https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-09-24-0703/2023_Urban_Trails_Plan_Appendix_A.pdf",
+     "size": 24625,
+     "name": "2023_Urban_Trails_Plan_Appendix_A.pdf"
+    },
     {
      "stamp": "2026-09-20-1201",
      "url": "https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-09-20-1201/2023_Urban_Trails_Plan_Appendix_G.pdf",
