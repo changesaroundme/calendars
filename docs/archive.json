@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-22T04:01:56Z",
+ "generated": "2026-09-24T04:27:27Z",
  "public_url": "https://archive.changesaroundme.com",
  "sources": {
   "_unlisted/East Riverside Corridor Planning Initiative Survey - Round 2": {
@@ -202,11 +202,6 @@
      "stamp": "2026-09-20-1134",
      "url": "https://archive.changesaroundme.com/atp-environmental-review/2026-09-20-1134.pdf",
      "size": 83337
-    },
-    {
-     "stamp": "2026-09-19-0006",
-     "url": "https://archive.changesaroundme.com/atp-environmental-review/2026-09-19-0006.pdf",
-     "size": 82736
     }
    ],
    "files": [
@@ -292,11 +287,6 @@
      "stamp": "2026-09-20-1133",
      "url": "https://archive.changesaroundme.com/atp-feis-record-of-decision/2026-09-20-1133.pdf",
      "size": 294582
-    },
-    {
-     "stamp": "2026-09-19-0005",
-     "url": "https://archive.changesaroundme.com/atp-feis-record-of-decision/2026-09-19-0005.pdf",
-     "size": 294606
     }
    ],
    "files": [
@@ -730,11 +720,6 @@
      "stamp": "2026-09-20-1133",
      "url": "https://archive.changesaroundme.com/atp-light-rail-progress-update/2026-09-20-1133.pdf",
      "size": 240161
-    },
-    {
-     "stamp": "2026-09-19-0005",
-     "url": "https://archive.changesaroundme.com/atp-light-rail-progress-update/2026-09-19-0005.pdf",
-     "size": 240211
     }
    ],
    "files": [
@@ -1134,11 +1119,6 @@
      "stamp": "2026-09-21-2257",
      "url": "https://archive.changesaroundme.com/capmetro-fare-increase/2026-09-21-2257.pdf",
      "size": 1516546
-    },
-    {
-     "stamp": "2026-09-21-0939",
-     "url": "https://archive.changesaroundme.com/capmetro-fare-increase/2026-09-21-0939.pdf",
-     "size": 1529750
     }
    ],
    "files": [],
@@ -1151,11 +1131,6 @@
      "stamp": "2026-09-20-1130",
      "url": "https://archive.changesaroundme.com/capmetro-rail-and-trail-improvements/2026-09-20-1130.pdf",
      "size": 3654048
-    },
-    {
-     "stamp": "2026-09-01-1653",
-     "url": "https://archive.changesaroundme.com/capmetro-rail-and-trail-improvements/2026-09-01-1653.pdf",
-     "size": 4082032
     }
    ],
    "files": [
@@ -1211,11 +1186,6 @@
      "stamp": "2026-09-20-1131",
      "url": "https://archive.changesaroundme.com/capmetro-rail-improvements/2026-09-20-1131.pdf",
      "size": 3330212
-    },
-    {
-     "stamp": "2026-09-01-1652",
-     "url": "https://archive.changesaroundme.com/capmetro-rail-improvements/2026-09-01-1652.pdf",
-     "size": 4071850
     }
    ],
    "files": [
@@ -1241,16 +1211,6 @@
      "stamp": "2026-09-20-1132",
      "url": "https://archive.changesaroundme.com/capmetro-rail-trail-navasota-e7th/2026-09-20-1132.pdf",
      "size": 4057354
-    },
-    {
-     "stamp": "2026-09-19-0004",
-     "url": "https://archive.changesaroundme.com/capmetro-rail-trail-navasota-e7th/2026-09-19-0004.pdf",
-     "size": 4065803
-    },
-    {
-     "stamp": "2026-09-02-1331",
-     "url": "https://archive.changesaroundme.com/capmetro-rail-trail-navasota-e7th/2026-09-02-1331.pdf",
-     "size": 7066784
     }
    ],
    "files": [
@@ -1270,16 +1230,6 @@
      "stamp": "2026-09-20-1132",
      "url": "https://archive.changesaroundme.com/capmetro-red-line-trail-study/2026-09-20-1132.pdf",
      "size": 12596005
-    },
-    {
-     "stamp": "2026-09-19-0004",
-     "url": "https://archive.changesaroundme.com/capmetro-red-line-trail-study/2026-09-19-0004.pdf",
-     "size": 12659804
-    },
-    {
-     "stamp": "2026-09-02-1354",
-     "url": "https://archive.changesaroundme.com/capmetro-red-line-trail-study/2026-09-02-1354.pdf",
-     "size": 8699710
     }
    ],
    "files": [
@@ -1453,11 +1403,6 @@
      "size": 1937803
     },
     {
-     "stamp": "2026-09-18-2350",
-     "url": "https://archive.changesaroundme.com/coa-2908-south-congress/2026-09-18-2350.pdf",
-     "size": 1986498
-    },
-    {
      "stamp": "2026-09-01-1634",
      "url": "https://archive.changesaroundme.com/coa-2908-south-congress/2026-09-01-1634.pdf",
      "size": 789618
@@ -1480,21 +1425,6 @@
      "stamp": "2026-09-20-1524",
      "url": "https://archive.changesaroundme.com/coa-airport-corridor/2026-09-20-1524.pdf",
      "size": 4355610
-    },
-    {
-     "stamp": "2026-09-20-1350",
-     "url": "https://archive.changesaroundme.com/coa-airport-corridor/2026-09-20-1350.pdf",
-     "size": 4357839
-    },
-    {
-     "stamp": "2026-09-20-1130",
-     "url": "https://archive.changesaroundme.com/coa-airport-corridor/2026-09-20-1130.pdf",
-     "size": 1803671
-    },
-    {
-     "stamp": "2026-09-02-1356",
-     "url": "https://archive.changesaroundme.com/coa-airport-corridor/2026-09-02-1356.pdf",
-     "size": 1807497
     }
    ],
    "files": [
@@ -1514,11 +1444,6 @@
      "stamp": "2026-09-19-0002",
      "url": "https://archive.changesaroundme.com/coa-all-ages-abilities-bicycle-network/2026-09-19-0002.pdf",
      "size": 2941107
-    },
-    {
-     "stamp": "2026-09-02-1356",
-     "url": "https://archive.changesaroundme.com/coa-all-ages-abilities-bicycle-network/2026-09-02-1356.pdf",
-     "size": 3112592
     }
    ],
    "files": [],
@@ -1531,11 +1456,6 @@
      "stamp": "2026-09-20-1127",
      "url": "https://archive.changesaroundme.com/coa-austin-energy-resource-generation-plan-2035/2026-09-20-1127.pdf",
      "size": 6080790
-    },
-    {
-     "stamp": "2026-09-01-1634",
-     "url": "https://archive.changesaroundme.com/coa-austin-energy-resource-generation-plan-2035/2026-09-01-1634.pdf",
-     "size": 6162500
     }
    ],
    "files": [
@@ -1639,11 +1559,6 @@
      "stamp": "2026-09-20-1109",
      "url": "https://archive.changesaroundme.com/coa-burnet-road-corridor/2026-09-20-1109.pdf",
      "size": 1669280
-    },
-    {
-     "stamp": "2026-09-01-1637",
-     "url": "https://archive.changesaroundme.com/coa-burnet-road-corridor/2026-09-01-1637.pdf",
-     "size": 1649683
     }
    ],
    "files": [
@@ -1705,11 +1620,6 @@
      "stamp": "2026-09-20-1112",
      "url": "https://archive.changesaroundme.com/coa-central-city-district-plan/2026-09-20-1112.pdf",
      "size": 5574503
-    },
-    {
-     "stamp": "2026-09-18-2352",
-     "url": "https://archive.changesaroundme.com/coa-central-city-district-plan/2026-09-18-2352.pdf",
-     "size": 6031403
     },
     {
      "stamp": "2026-09-01-1639",
@@ -1836,11 +1746,6 @@
      "stamp": "2026-09-20-1113",
      "url": "https://archive.changesaroundme.com/coa-cesar-chavez-renaming/2026-09-20-1113.pdf",
      "size": 660694
-    },
-    {
-     "stamp": "2026-09-01-1640",
-     "url": "https://archive.changesaroundme.com/coa-cesar-chavez-renaming/2026-09-01-1640.pdf",
-     "size": 647867
     }
    ],
    "files": [
@@ -1872,11 +1777,6 @@
      "stamp": "2026-09-19-2000",
      "url": "https://archive.changesaroundme.com/coa-cesar-chavez-renaming-survey/2026-09-19-2000.pdf",
      "size": 901203
-    },
-    {
-     "stamp": "2026-09-01-1641",
-     "url": "https://archive.changesaroundme.com/coa-cesar-chavez-renaming-survey/2026-09-01-1641.pdf",
-     "size": 847374
     }
    ],
    "files": [
@@ -1916,11 +1816,6 @@
   },
   "coa-citywide-density-bonus": {
    "captures": [
-    {
-     "stamp": "2026-09-20-1110",
-     "url": "https://archive.changesaroundme.com/coa-citywide-density-bonus/2026-09-20-1110.pdf",
-     "size": 3262259
-    },
     {
      "stamp": "2026-09-01-1637",
      "url": "https://archive.changesaroundme.com/coa-citywide-density-bonus/2026-09-01-1637.pdf",
@@ -1995,7 +1890,7 @@
      "name": "20250605-080_ Resolution.PDF"
     }
    ],
-   "latest_key": "coa-citywide-density-bonus/2026-09-20-1110.pdf",
+   "latest_key": "coa-citywide-density-bonus/2026-09-01-1637.pdf",
    "latest": "https://archive.changesaroundme.com/coa-citywide-density-bonus/latest.pdf"
   },
   "coa-east-austin-historic-resource-survey": {
@@ -2004,11 +1899,6 @@
      "stamp": "2026-09-20-1114",
      "url": "https://archive.changesaroundme.com/coa-east-austin-historic-resource-survey/2026-09-20-1114.pdf",
      "size": 2255618
-    },
-    {
-     "stamp": "2026-09-18-2354",
-     "url": "https://archive.changesaroundme.com/coa-east-austin-historic-resource-survey/2026-09-18-2354.pdf",
-     "size": 2374316
     },
     {
      "stamp": "2026-09-01-1641",
@@ -2045,11 +1935,6 @@
      "stamp": "2026-09-20-1115",
      "url": "https://archive.changesaroundme.com/coa-east-riverside-corridor-planning/2026-09-20-1115.pdf",
      "size": 4123628
-    },
-    {
-     "stamp": "2026-09-18-2355",
-     "url": "https://archive.changesaroundme.com/coa-east-riverside-corridor-planning/2026-09-18-2355.pdf",
-     "size": 4085183
     },
     {
      "stamp": "2026-09-01-1642",
@@ -2134,11 +2019,6 @@
      "stamp": "2026-09-20-1116",
      "url": "https://archive.changesaroundme.com/coa-etod-overlay-phase-2/2026-09-20-1116.pdf",
      "size": 3892921
-    },
-    {
-     "stamp": "2026-09-01-1645",
-     "url": "https://archive.changesaroundme.com/coa-etod-overlay-phase-2/2026-09-01-1645.pdf",
-     "size": 4011249
     }
    ],
    "files": [
@@ -2182,11 +2062,6 @@
      "stamp": "2026-09-19-2003",
      "url": "https://archive.changesaroundme.com/coa-great-streets-plan-update/2026-09-19-2003.pdf",
      "size": 4028184
-    },
-    {
-     "stamp": "2026-09-01-1646",
-     "url": "https://archive.changesaroundme.com/coa-great-streets-plan-update/2026-09-01-1646.pdf",
-     "size": 3976554
     }
    ],
    "files": [
@@ -2261,11 +2136,6 @@
      "stamp": "2026-09-20-1118",
      "url": "https://archive.changesaroundme.com/coa-grove-riverside-site/2026-09-20-1118.pdf",
      "size": 1976092
-    },
-    {
-     "stamp": "2026-09-01-1647",
-     "url": "https://archive.changesaroundme.com/coa-grove-riverside-site/2026-09-01-1647.pdf",
-     "size": 1818793
     }
    ],
    "files": [],
@@ -2278,11 +2148,6 @@
      "stamp": "2026-09-20-1119",
      "url": "https://archive.changesaroundme.com/coa-i35-central-samp/2026-09-20-1119.pdf",
      "size": 1225708
-    },
-    {
-     "stamp": "2026-09-18-2358",
-     "url": "https://archive.changesaroundme.com/coa-i35-central-samp/2026-09-18-2358.pdf",
-     "size": 1237905
     },
     {
      "stamp": "2026-09-01-1647",
@@ -2307,11 +2172,6 @@
      "stamp": "2026-09-20-1119",
      "url": "https://archive.changesaroundme.com/coa-imagine-austin-update/2026-09-20-1119.pdf",
      "size": 1638497
-    },
-    {
-     "stamp": "2026-09-18-2358",
-     "url": "https://archive.changesaroundme.com/coa-imagine-austin-update/2026-09-18-2358.pdf",
-     "size": 1938887
     },
     {
      "stamp": "2026-09-01-1648",
@@ -2390,11 +2250,6 @@
      "stamp": "2026-09-20-1120",
      "url": "https://archive.changesaroundme.com/coa-northeast-district-plan/2026-09-20-1120.pdf",
      "size": 1797071
-    },
-    {
-     "stamp": "2026-09-01-1649",
-     "url": "https://archive.changesaroundme.com/coa-northeast-district-plan/2026-09-01-1649.pdf",
-     "size": 2470069
     }
    ],
    "files": [
@@ -2468,16 +2323,6 @@
      "stamp": "2026-09-20-1121",
      "url": "https://archive.changesaroundme.com/coa-our-future-35/2026-09-20-1121.pdf",
      "size": 14046300
-    },
-    {
-     "stamp": "2026-09-19-0015",
-     "url": "https://archive.changesaroundme.com/coa-our-future-35/2026-09-19-0015.pdf",
-     "size": 13973945
-    },
-    {
-     "stamp": "2026-09-01-1650",
-     "url": "https://archive.changesaroundme.com/coa-our-future-35/2026-09-01-1650.pdf",
-     "size": 13969936
     }
    ],
    "files": [
@@ -2725,11 +2570,6 @@
      "stamp": "2026-09-20-1126",
      "url": "https://archive.changesaroundme.com/coa-shape-austins-2026-bond/2026-09-20-1126.pdf",
      "size": 886809
-    },
-    {
-     "stamp": "2026-09-01-1654",
-     "url": "https://archive.changesaroundme.com/coa-shape-austins-2026-bond/2026-09-01-1654.pdf",
-     "size": 1325793
     }
    ],
    "files": [
@@ -2827,11 +2667,6 @@
      "stamp": "2026-09-20-1128",
      "url": "https://archive.changesaroundme.com/coa-shaping-economic-development-policy/2026-09-20-1128.pdf",
      "size": 3986949
-    },
-    {
-     "stamp": "2026-09-05-0922",
-     "url": "https://archive.changesaroundme.com/coa-shaping-economic-development-policy/2026-09-05-0922.pdf",
-     "size": 3998535
     }
    ],
    "files": [
@@ -2863,11 +2698,6 @@
      "stamp": "2026-09-20-1128",
      "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/2026-09-20-1128.pdf",
      "size": 6282194
-    },
-    {
-     "stamp": "2026-09-02-1547",
-     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/2026-09-02-1547.pdf",
-     "size": 6351492
     }
    ],
    "files": [
@@ -3487,11 +3317,6 @@
      "stamp": "2026-09-20-1129",
      "url": "https://archive.changesaroundme.com/coa-urban-trails-plan/2026-09-20-1129.pdf",
      "size": 48271485
-    },
-    {
-     "stamp": "2026-09-01-1654",
-     "url": "https://archive.changesaroundme.com/coa-urban-trails-plan/2026-09-01-1654.pdf",
-     "size": 48462614
     }
    ],
    "files": [
@@ -3642,7 +3467,8 @@
     {
      "stamp": "2026-09-19-0001",
      "url": "https://archive.changesaroundme.com/coa-urban-trails-wayfinding-survey/2026-09-19-0001.pdf",
-     "size": 1027589
+     "size": 1027589,
+     "changed_lines": 35
     },
     {
      "stamp": "2026-09-01-1655",
@@ -3672,11 +3498,6 @@
      "stamp": "2026-09-20-1108",
      "url": "https://archive.changesaroundme.com/txdot-bike-ped-coordinators/2026-09-20-1108.pdf",
      "size": 1341321
-    },
-    {
-     "stamp": "2026-09-01-1636",
-     "url": "https://archive.changesaroundme.com/txdot-bike-ped-coordinators/2026-09-01-1636.pdf",
-     "size": 1392646
     }
    ],
    "files": [],
@@ -3689,11 +3510,6 @@
      "stamp": "2026-09-20-1108",
      "url": "https://archive.changesaroundme.com/txdot-utp-public-involvement/2026-09-20-1108.pdf",
      "size": 1785164
-    },
-    {
-     "stamp": "2026-09-02-1357",
-     "url": "https://archive.changesaroundme.com/txdot-utp-public-involvement/2026-09-02-1357.pdf",
-     "size": 1823136
     }
    ],
    "files": [

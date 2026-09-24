@@ -456,35 +456,49 @@ def selftest() -> None:
     # Email addresses are not Java identity hashes.
     assert normalize(b"mail first.last@cafe.org now") == b"mail first.last@cafe.org now"
     assert body_hash(b"x").startswith(HASH_SCHEME + ":")
-    # A hash from an older scheme re-stamps (baseline reset); a same-scheme
-    # difference re-stamps; the same hash keeps the old stamp.
+    # Markup, scripts and attributes are not content; visible text is.
+    assert body_hash(b'<html><body><p id="a1">Board meets <b>May 5</b></p><script>t=1</script></body></html>') == \
+        body_hash(b'<!DOCTYPE html>\n<html><head><title>x</title></head><body><p id="z9">Board   meets <b>May 5</b></p><script>t=2</script></body></html>')
+    assert body_hash(b'<html><body><p>Board meets May 5</p></body></html>') != \
+        body_hash(b'<html><body><p>Board meets May 6</p></body></html>')
+    assert visible_text(b'{"a": "<html>"}') == b'{"a": "<html>"}'
+    # A hash from an older scheme (or a new page) clears changed and starts
+    # since; a same-scheme difference stamps changed; the same hash keeps it.
     import tempfile
     with tempfile.TemporaryDirectory() as td:
         prior = pathlib.Path(td) / "old.json"
         prior.write_text(json.dumps({"sources": {
-            "a": {"checked": "2026-01-01T00:00:00Z", "changed": "2025-12-01T00:00:00Z", "hash": "sha256:old"},
+            "a": {"checked": "2026-01-01T00:00:00Z", "changed": "2025-12-01T00:00:00Z", "hash": "sha256v2:old"},
             "b": {"checked": "2026-01-01T00:00:00Z", "changed": "2025-12-01T00:00:00Z", "hash": body_hash(b"same")},
             "c": {"checked": "2026-01-01T00:00:00Z", "changed": "2025-12-01T00:00:00Z", "hash": body_hash(b"was")},
         }}))
         t = Tracker([])
         t.seen = {"a": body_hash(b"x"), "b": body_hash(b"same"), "c": body_hash(b"now")}
         doc = t.write(pathlib.Path(td) / "new.json", prior, datetime(2026, 2, 1, tzinfo=timezone.utc))
-        assert doc["sources"]["a"]["changed"] == "2026-02-01T00:00:00Z"
-        assert doc["sources"]["b"]["changed"] == "2025-12-01T00:00:00Z"
-        assert doc["sources"]["c"]["changed"] == "2026-02-01T00:00:00Z"
+        a, b, c = (doc["sources"][k] for k in "abc")
+        assert a["changed"] is None and a["since"] == "2026-02-01T00:00:00Z"
+        assert b["changed"] == "2025-12-01T00:00:00Z" and b["since"] == "2025-12-01T00:00:00Z"
+        assert c["changed"] == "2026-02-01T00:00:00Z"
 
 
 # ---------------------------------------------------------------------------
 # docs/status.json — per-slug "checked" / "changed", from the live session
 # ---------------------------------------------------------------------------
 
-# Per-request noise that must not read as a page change. Each pattern was
+# What counts as a page change. An HTML page is hashed on its visible text
+# only — scripts, styles, attributes and markup are dropped first — because
+# raw-HTML hashing registered a "change" on most builds (Sep 2026: 36 of 51
+# pages, from tokens in scripts and attributes no reader sees). Feeds (iCal,
+# RSS, JSON) are hashed as served. Per-request noise that must not read as a
+# page change in either is blanked by _NOISE. Each pattern was
 # found by fetching the page twice and diffing (Sep 2026); the (site) note
 # says where it came from. Blank the noise, hash what is left. HASH_SCHEME
-# bumps whenever this list changes; the first build after a bump re-stamps
-# every page (a deliberate baseline reset — one clean "changed" date beats
-# carrying forward stamps the old hashing polluted).
-HASH_SCHEME = "sha256v2"
+# bumps whenever this hashing changes; the first build after a bump resets
+# every page's baseline: "changed" is cleared and "since" set to that build
+# (no change seen since then), rather than stamping every page as changed.
+HASH_SCHEME = "sha256v3"
+_HTML_SNIFF = re.compile(rb"^\s*(?:<!--.*?-->\s*)*<(?:!doctype\s+html|html|head|body)\b", re.I | re.S)
+_DROP_TAGS = ("script", "style", "noscript", "template", "svg", "head", "iframe")
 _NOISE = [
     # ASP.NET (Legistar, eSCRIBE, PUC): viewstate blobs differ per response.
     (rb'(name="__(?:VIEWSTATE|VIEWSTATEGENERATOR|EVENTVALIDATION)"[^>]*?value=")[^"]*(")',
@@ -516,6 +530,19 @@ def normalize(body: bytes) -> bytes:
     return body
 
 
+def visible_text(body: bytes) -> bytes:
+    """An HTML document's readable text, one non-empty line per block, with
+    whitespace collapsed; anything that is not HTML comes back unchanged."""
+    if not _HTML_SNIFF.match(body[:4096]):
+        return body
+    from bs4 import BeautifulSoup
+    soup = BeautifulSoup(body, "html.parser")
+    for tag in soup(list(_DROP_TAGS)):
+        tag.decompose()
+    lines = (" ".join(l.split()) for l in soup.get_text("\n").splitlines())
+    return "\n".join(l for l in lines if l).encode("utf-8")
+
+
 def _norm(url: str) -> str:
     u = urlparse(url)
     return f"{u.scheme.lower()}://{u.netloc.lower()}{u.path.rstrip('/') or '/'}" + (
@@ -536,7 +563,7 @@ def match_slug(url: str, rows: list[dict[str, str]]) -> str | None:
 
 
 def body_hash(body: bytes) -> str:
-    return f"{HASH_SCHEME}:" + hashlib.sha256(normalize(body)).hexdigest()
+    return f"{HASH_SCHEME}:" + hashlib.sha256(normalize(visible_text(body))).hexdigest()
 
 
 
@@ -559,7 +586,10 @@ class Tracker:
 
     def write(self, out: pathlib.Path, prior_path: pathlib.Path, now: datetime) -> dict:
         """Merge this build's fetches into the previous status.json and write it.
-        Slugs not fetched this build keep their previous entry untouched."""
+        Slugs not fetched this build keep their previous entry untouched.
+        Per slug: checked (last fetch), changed (last build whose hash differed
+        from the one before; null while none has), since (when the current
+        hashing first saw the page: "no change since" reads from here), hash."""
         prior: dict = {}
         if prior_path.exists():
             try:
@@ -570,11 +600,15 @@ class Tracker:
         sources = dict(prior)
         for slug, h in self.seen.items():
             old = prior.get(slug, {})
-            sources[slug] = {
-                "checked": stamp,
-                "changed": old.get("changed", stamp) if old.get("hash") == h else stamp,
-                "hash": h,
-            }
+            same_scheme = str(old.get("hash", "")).split(":", 1)[0] == HASH_SCHEME
+            if not same_scheme:                 # new page, or a hashing change: baseline only
+                entry = {"checked": stamp, "changed": None, "since": stamp, "hash": h}
+            else:
+                entry = {"checked": stamp,
+                         "changed": old.get("changed") if old.get("hash") == h else stamp,
+                         "since": old.get("since") or old.get("changed") or stamp,
+                         "hash": h}
+            sources[slug] = entry
         doc = {"generated": stamp,
                "sources": {k: sources[k] for k in sorted(sources)}}
         out.write_text(json.dumps(doc, indent=1) + "\n")
