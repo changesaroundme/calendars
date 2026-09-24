@@ -3342,6 +3342,19 @@
  },
  {
   "source": "austin",
+  "summary": "Austin Water - Open House on Large Water Users",
+  "start": "2026-10-05T17:30:00",
+  "end": "2026-10-05T19:30:00",
+  "location": "Room 1405 Event Center, City of Austin Permitting and Development Center, 6310 Wilhelmina Delco Dr, Austin, TX 78752",
+  "url": "https://www.austintexas.gov/water/news/austin-water-invites-community-open-house-large-water-users",
+  "status": "CONFIRMED",
+  "kind": "engagement",
+  "uid": "austin-water-open-house-on-large-water-users-20261005T1730@calendars.changesaroundme.com",
+  "description": "Open house, 5:30-7:30pm CDT, on proposed policy concepts for large water users in Austin Water's service area: updated definitions of high-impact water users, a stronger development review for new large customers, required water conservation plans, expanded reclaimed-water and onsite-reuse requirements, and water budgets with monitoring. Feedback from the open house shapes the recommendations Austin Water takes to City Council.",
+  "all_day": false
+ },
+ {
+  "source": "austin",
   "summary": "CoA: Pedestrian Advisory Council",
   "start": "2026-10-05T18:00:00",
   "end": "2026-10-05T21:00:00",
