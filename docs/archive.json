@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-24T20:42:59Z",
+ "generated": "2026-09-25T11:36:16Z",
  "public_url": "https://archive.changesaroundme.com",
  "sources": {
   "_unlisted/East Riverside Corridor Planning Initiative Survey - Round 2": {
@@ -207,6 +207,18 @@
    ],
    "latest_key": "atp-board-briefs/2026-09-24-0705.pdf",
    "latest": "https://archive.changesaroundme.com/atp-board-briefs/latest.pdf"
+  },
+  "atp-board-meeting-info": {
+   "captures": [
+    {
+     "stamp": "2026-09-25-0630",
+     "url": "https://archive.changesaroundme.com/atp-board-meeting-info/2026-09-25-0630.pdf",
+     "size": 147140
+    }
+   ],
+   "files": [],
+   "latest_key": "atp-board-meeting-info/2026-09-25-0630.pdf",
+   "latest": "https://archive.changesaroundme.com/atp-board-meeting-info/latest.pdf"
   },
   "atp-environmental-review": {
    "captures": [
@@ -1081,6 +1093,18 @@
    "latest_key": "atp-light-rail-progress-update/2026-09-20-1133.pdf",
    "latest": "https://archive.changesaroundme.com/atp-light-rail-progress-update/latest.pdf"
   },
+  "atp-milestones": {
+   "captures": [
+    {
+     "stamp": "2026-09-25-0630",
+     "url": "https://archive.changesaroundme.com/atp-milestones/2026-09-25-0630.pdf",
+     "size": 2699147
+    }
+   ],
+   "files": [],
+   "latest_key": "atp-milestones/2026-09-25-0630.pdf",
+   "latest": "https://archive.changesaroundme.com/atp-milestones/latest.pdf"
+  },
   "campo-2026-fall-tip-amendments": {
    "captures": [
     {
@@ -1109,6 +1133,12 @@
   "campo-get-involved": {
    "captures": [
     {
+     "stamp": "2026-09-25-0632",
+     "url": "https://archive.changesaroundme.com/campo-get-involved/2026-09-25-0632.pdf",
+     "size": 2638270,
+     "changed_lines": 2
+    },
+    {
      "stamp": "2026-09-21-2258",
      "url": "https://archive.changesaroundme.com/campo-get-involved/2026-09-21-2258.pdf",
      "size": 1644446
@@ -1122,8 +1152,33 @@
      "name": "PPP-2025-Final.pdf"
     }
    ],
-   "latest_key": "campo-get-involved/2026-09-21-2258.pdf",
+   "latest_key": "campo-get-involved/2026-09-25-0632.pdf",
    "latest": "https://archive.changesaroundme.com/campo-get-involved/latest.pdf"
+  },
+  "capmetro-board-meetings": {
+   "captures": [
+    {
+     "stamp": "2026-09-25-0631",
+     "url": "https://archive.changesaroundme.com/capmetro-board-meetings/2026-09-25-0631.pdf",
+     "size": 258345
+    }
+   ],
+   "files": [
+    {
+     "stamp": "2026-09-25-0632",
+     "url": "https://archive.changesaroundme.com/capmetro-board-meetings/files/2026-09-25-0632/community-involvement-policy_8-2019.pdf",
+     "size": 253358,
+     "name": "community-involvement-policy_8-2019.pdf"
+    },
+    {
+     "stamp": "2026-09-25-0632",
+     "url": "https://archive.changesaroundme.com/capmetro-board-meetings/files/2026-09-25-0632/PublicInvolvementPolicy.docx",
+     "size": 88794,
+     "name": "PublicInvolvementPolicy.docx"
+    }
+   ],
+   "latest_key": "capmetro-board-meetings/2026-09-25-0631.pdf",
+   "latest": "https://archive.changesaroundme.com/capmetro-board-meetings/latest.pdf"
   },
   "capmetro-fare-increase": {
    "captures": [
@@ -3789,13 +3844,19 @@
   "lcra-water-public-comment": {
    "captures": [
     {
+     "stamp": "2026-09-25-0635",
+     "url": "https://archive.changesaroundme.com/lcra-water-public-comment/2026-09-25-0635.pdf",
+     "size": 69011,
+     "changed_lines": 6
+    },
+    {
      "stamp": "2026-09-20-2146",
      "url": "https://archive.changesaroundme.com/lcra-water-public-comment/2026-09-20-2146.pdf",
      "size": 79562
     }
    ],
    "files": [],
-   "latest_key": "lcra-water-public-comment/2026-09-20-2146.pdf",
+   "latest_key": "lcra-water-public-comment/2026-09-25-0635.pdf",
    "latest": "https://archive.changesaroundme.com/lcra-water-public-comment/latest.pdf"
   },
   "txdot-bike-ped-coordinators": {
