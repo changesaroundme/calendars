@@ -1,4 +1,4 @@
-*Every saved copy in the web archive, oldest to newest. Each page's **latest** link always points at its newest copy, so it can be cited even after the page itself changes or disappears; the dated links are the individual captures, and the files are the documents the page linked to, saved when first seen. Updated 24 Sep 2026 15:42 — regenerated on every build as `docs/archive.md` in the calendars repo; [[Archive]] is a copy of that file.*
+*Every saved copy in the web archive, oldest to newest. Each page's **latest** link always points at its newest copy, so it can be cited even after the page itself changes or disappears; the dated links are the individual captures, and the files are the documents the page linked to, saved when first seen. Updated 25 Sep 2026 06:36 — regenerated on every build as `docs/archive.md` in the calendars repo; [[Archive]] is a copy of that file.*
 
 ## City of Austin (CoA)
 
@@ -638,6 +638,12 @@ Files:
 - [aProject-Connect-Board-Brief_072023_Draft_July-18-2023_Final-PDF.pdf](https://archive.changesaroundme.com/atp-board-briefs/files/2026-09-21-0635/aProject-Connect-Board-Brief_072023_Draft_July-18-2023_Final-PDF.pdf) — 21 Sep 2026 06:35, 0.3 MB
 - [Project-Connect-Status-Report-ATP-Board-Brief-Sept.-2026.pdf](https://archive.changesaroundme.com/atp-board-briefs/files/2026-09-24-0705/Project-Connect-Status-Report-ATP-Board-Brief-Sept.-2026.pdf) — 24 Sep 2026 07:05, 0.7 MB
 
+### Board Meeting Calendar & Information
+
+[page](https://www.atptx.org/board-meeting-calendar-and-information/) · [latest copy](https://archive.changesaroundme.com/atp-board-meeting-info/latest.pdf)
+
+Captures: [25 Sep 2026 06:30](https://archive.changesaroundme.com/atp-board-meeting-info/2026-09-25-0630.pdf)
+
 ### Final Environmental Impact Statement / Record of Decision
 
 [page](https://www.atptx.org/milestones/atp-releases-final-environmental-impact-statement-record-of-decision/) · [latest copy](https://archive.changesaroundme.com/atp-feis-record-of-decision/latest.pdf)
@@ -740,6 +746,12 @@ Files:
 - [Project_Connect_Vision_Plan_102618_v12.pdf](https://archive.changesaroundme.com/atp-environmental-review/files/2026-09-19-0024/Project_Connect_Vision_Plan_102618_v12.pdf) — 19 Sep 2026 00:24, 2.5 MB
 - [Title-VI-Equity-Analysis.pdf](https://archive.changesaroundme.com/atp-environmental-review/files/2026-09-19-0024/Title-VI-Equity-Analysis.pdf) — 19 Sep 2026 00:24, 4.0 MB
 
+### Progress Milestones
+
+[page](https://www.atptx.org/milestones/) · [latest copy](https://archive.changesaroundme.com/atp-milestones/latest.pdf)
+
+Captures: [25 Sep 2026 06:30](https://archive.changesaroundme.com/atp-milestones/2026-09-25-0630.pdf)
+
 ## Capital Metropolitan Transportation Authority (CapMetro)
 
 ### August 2026 service changes
@@ -766,6 +778,16 @@ Files:
 - [466.pdf](https://archive.changesaroundme.com/capmetro-service-changes-aug-2026/files/2026-09-21-2257/466.pdf) — 21 Sep 2026 22:57, 0.8 MB
 - [600s.pdf](https://archive.changesaroundme.com/capmetro-service-changes-aug-2026/files/2026-09-21-2257/600s.pdf) — 21 Sep 2026 22:57, 1.5 MB
 - [985.pdf](https://archive.changesaroundme.com/capmetro-service-changes-aug-2026/files/2026-09-21-2257/985.pdf) — 21 Sep 2026 22:57, 1.0 MB
+
+### Board Meetings
+
+[page](https://www.capmetro.org/public-involvement/board-meetings) · [latest copy](https://archive.changesaroundme.com/capmetro-board-meetings/latest.pdf)
+
+Captures: [25 Sep 2026 06:31](https://archive.changesaroundme.com/capmetro-board-meetings/2026-09-25-0631.pdf)
+
+Files:
+- [PublicInvolvementPolicy.docx](https://archive.changesaroundme.com/capmetro-board-meetings/files/2026-09-25-0632/PublicInvolvementPolicy.docx) — 25 Sep 2026 06:32, 89 KB
+- [community-involvement-policy_8-2019.pdf](https://archive.changesaroundme.com/capmetro-board-meetings/files/2026-09-25-0632/community-involvement-policy_8-2019.pdf) — 25 Sep 2026 06:32, 0.3 MB
 
 ### Fare Increase
 
@@ -848,7 +870,7 @@ Files:
 
 [page](https://www.campotexas.org/get-involved/) · [latest copy](https://archive.changesaroundme.com/campo-get-involved/latest.pdf)
 
-Captures: [21 Sep 2026 22:58](https://archive.changesaroundme.com/campo-get-involved/2026-09-21-2258.pdf)
+Captures: [21 Sep 2026 22:58](https://archive.changesaroundme.com/campo-get-involved/2026-09-21-2258.pdf), [25 Sep 2026 06:32](https://archive.changesaroundme.com/campo-get-involved/2026-09-25-0632.pdf)
 
 Files:
 - [PPP-2025-Final.pdf](https://archive.changesaroundme.com/campo-get-involved/files/2026-09-21-2258/PPP-2025-Final.pdf) — 21 Sep 2026 22:58, 10.6 MB
@@ -859,7 +881,7 @@ Files:
 
 [page](https://www.lcra.org/water/water-related-rules-and-regulations-for-public-comment/) · [latest copy](https://archive.changesaroundme.com/lcra-water-public-comment/latest.pdf)
 
-Captures: [20 Sep 2026 21:46](https://archive.changesaroundme.com/lcra-water-public-comment/2026-09-20-2146.pdf)
+Captures: [20 Sep 2026 21:46](https://archive.changesaroundme.com/lcra-water-public-comment/2026-09-20-2146.pdf), [25 Sep 2026 06:35](https://archive.changesaroundme.com/lcra-water-public-comment/2026-09-25-0635.pdf)
 
 ## Texas Department of Transportation (TxDOT)
 
