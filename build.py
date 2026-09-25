@@ -358,10 +358,89 @@ def has_future_events(events: list[Event], today: date) -> bool:
     return any(event_day(e) >= today for e in events)
 
 
+# A fetch that fails on the network (refused, timed out, 5xx through all
+# retries) only turns the build red once it has kept failing for
+# NETWORK_GRACE: every one of the red builds 18-25 Sep 2026 after the LCRA fix
+# was a single site blipping once (senate.texas.gov refusing connections twice,
+# EDIMS and campotexas.org timing out) and each cost Ian a failure email.
+# Until then it is a warning in the log and the run summary. First-failure
+# times live in data/health.json (committed with the snapshots); a build where
+# the fetch works drops the entry.
+NETWORK_GRACE = timedelta(hours=20)
+_NETWORK_RE = re.compile(
+    r"Connection refused|Read timed out|ConnectTimeout|timed out|Max retries exceeded"
+    r"|RemoteDisconnected|Connection reset|Connection aborted|Temporary failure in name resolution"
+    r"|Name or service not known|too many 5\d\d error responses|\b50[234] Server Error")
+_EXC_START = re.compile(r"\s*[(:]?\s*(HTTPS?ConnectionPool|\('Connection|Connection|Read timed out|\[Errno)")
+
+
+def network_signature(problem: str) -> str | None:
+    """'legislature: fetch failed (HTTPSConnectionPool(...))' ->
+    'legislature: fetch failed' for a network failure; None for anything else."""
+    if not _NETWORK_RE.search(problem):
+        return None
+    m = _EXC_START.search(problem)
+    return (problem[:m.start()] if m else problem).rstrip(" (:") or problem
+
+
+def grace_network_failures(problems: list[str], health_path: pathlib.Path,
+                           now: datetime) -> tuple[list[str], list[str]]:
+    """Split problems into (unhealthy, warnings) and rewrite health_path:
+    a network failure younger than NETWORK_GRACE is only a warning."""
+    try:
+        seen = json.loads(health_path.read_text()).get("network", {})
+    except (OSError, ValueError, AttributeError):
+        seen = {}
+    unhealthy, warnings, current = [], [], {}
+    for prob in problems:
+        sig = network_signature(prob)
+        if sig is None:
+            unhealthy.append(prob)
+            continue
+        first = seen.get(sig) or now.strftime("%Y-%m-%dT%H:%M:%SZ")
+        current[sig] = first
+        since = datetime.strptime(first, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+        if now - since >= NETWORK_GRACE:
+            unhealthy.append(f"{prob} [failing since {first}]")
+        else:
+            warnings.append(prob)
+    if current or seen:
+        health_path.write_text(json.dumps({"network": dict(sorted(current.items()))}, indent=1) + "\n")
+    return unhealthy, warnings
+
+
+def _selftest_network_grace() -> None:
+    import tempfile
+    t0 = datetime(2026, 9, 25, 12, tzinfo=timezone.utc)
+    refused = ("legislature: fetch failed (HTTPSConnectionPool(host='senate.texas.gov', port=443): Max retries "
+               "exceeded with url: /events.php (Caused by NewConnectionError(\"...: [Errno 111] Connection refused\")))")
+    timeout = ("austin: annual PDF fetch failed, using bundled copy (HTTPSConnectionPool(host='services."
+               "austintexas.gov', port=443): Read timed out. (read timeout=30))")
+    board = "austin: board fetch failed (Design Commission): HTTPSConnectionPool(host='x'): Read timed out."
+    parse = "lcra: 0 events parsed"
+    assert network_signature(refused) == "legislature: fetch failed"
+    assert network_signature(timeout) == "austin: annual PDF fetch failed, using bundled copy"
+    assert network_signature(board) == "austin: board fetch failed (Design Commission)"
+    assert network_signature(parse) is None
+    with tempfile.TemporaryDirectory() as td:
+        h = pathlib.Path(td) / "health.json"
+        bad, warn = grace_network_failures([refused, parse], h, t0)
+        assert bad == [parse] and warn == [refused]                     # first failure: a warning
+        bad, warn = grace_network_failures([refused], h, t0 + timedelta(hours=12))
+        assert bad == [] and warn == [refused]                          # still inside the grace
+        bad, warn = grace_network_failures([refused], h, t0 + timedelta(hours=21))
+        assert len(bad) == 1 and "failing since 2026-09-25T12:00:00Z" in bad[0]
+        bad, warn = grace_network_failures([], h, t0 + timedelta(hours=22))
+        assert json.loads(h.read_text()) == {"network": {}}             # recovered: cleared
+        bad, warn = grace_network_failures([refused], h, t0 + timedelta(hours=23))
+        assert bad == [] and warn == [refused]                          # a new blip starts over
+
+
 def main() -> int:
     offline = "--offline" in sys.argv
     if offline:
         _selftest_monotone_merge()  # the 2026-08-25 decay incident as a test
+        _selftest_network_grace()
     now = datetime.now(timezone.utc)
     session = requests.Session()
     session.headers["User-Agent"] = USER_AGENT
@@ -649,6 +728,20 @@ def main() -> int:
     archive = sourcespage.load_archive(DOCS / "archive.json")
     if archive:
         (docs / "archive.md").write_text(sourcespage.render_archive_markdown(reg_rows, archive))
+
+    if not offline:
+        unhealthy, warnings = grace_network_failures(unhealthy, data / "health.json", now)
+        if warnings:
+            print("NETWORK FAILURES (warning only until they persist "
+                  f"{NETWORK_GRACE.total_seconds() / 3600:g} h):\n  - " + "\n  - ".join(warnings))
+            for prob in warnings:
+                print("::warning title=Fetch failed (transient?)::"
+                      + prob.replace("%", "%25").replace("\n", " "))
+            summary = os.environ.get("GITHUB_STEP_SUMMARY")
+            if summary:
+                with open(summary, "a") as f:
+                    f.write("### Fetch failures (not failing the build yet)\n\n"
+                            + "\n".join(f"- {p}" for p in warnings) + "\n\n")
 
     if unhealthy:
         print("BUILD UNHEALTHY:\n  - " + "\n  - ".join(unhealthy))
