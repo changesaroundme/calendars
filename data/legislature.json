@@ -157,6 +157,19 @@
  },
  {
   "source": "legislature",
+  "summary": "Texas House: Agriculture & Livestock",
+  "start": "2026-10-02T10:00:00",
+  "end": "2026-10-02T13:00:00",
+  "location": "Room E2.012, Texas Capitol Extension, 1100 Congress Ave., Austin, TX 78701",
+  "url": "https://capitol.texas.gov/tlodocs/89R/schedules/html/C0202026100210001.HTM",
+  "status": "CONFIRMED",
+  "kind": "hearing",
+  "uid": "legislature-house-agriculture-livestock-20261002T1000@calendars.changesaroundme.com",
+  "description": "Summary Agenda\n\n1. ** To accommodate all attendees wishing to testify, public testimony may be limited at the discretion of the chair. **\n2. Study: \"Invasive Species\"\n3. Examine: \"Market Development and Expansion of Texas-Grown Products\"\n4. Agency Oversight\n\n\u2014\n\nElectronic public comments: https://comments.house.texas.gov/home?c=c020",
+  "all_day": false
+ },
+ {
+  "source": "legislature",
   "summary": "Texas House: Natural Resources",
   "start": "2026-10-06T10:00:00",
   "end": "2026-10-06T13:00:00",
