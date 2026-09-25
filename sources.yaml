@@ -349,6 +349,14 @@ organizations:
         name: Board Briefs
         url: https://www.atptx.org/resources/board-briefs/
         added: 2026-09-20
+      - slug: atp-board-meeting-info
+        name: Board Meeting Calendar & Information
+        url: https://www.atptx.org/board-meeting-calendar-and-information/
+        added: 2026-09-24
+      - slug: atp-milestones
+        name: Progress Milestones
+        url: https://www.atptx.org/milestones/
+        added: 2026-09-24
 
   CapMetro:
     name: Capital Metropolitan Transportation Authority (CapMetro)
@@ -400,6 +408,10 @@ organizations:
         name: Fare Increase
         url: https://www.capmetro.org/fare/general-fares-overview/fare-increase
         added: 2026-09-20
+      - slug: capmetro-board-meetings
+        name: Board Meetings
+        url: https://www.capmetro.org/public-involvement/board-meetings
+        added: 2026-09-24
 
   CAMPO:
     name: Capital Area Metropolitan Planning Organization (CAMPO)
