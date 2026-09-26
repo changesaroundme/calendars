@@ -307,6 +307,11 @@ organizations:
         name: Airport Corridor Webpage
         url: https://experience.arcgis.com/experience/e937439aa3ce44b6b95172e2ae119cb7/page/Home
         added: 2026-09-02
+      - slug: coa-eilers-park-survey-1
+        name: Eilers (Deep Eddy) Neighborhood Park Concept Plan Survey 1
+        url: https://publicinput.com/eilers1
+        added: 2026-09-25
+        note: Austin Parks; survey closed, results shown. Sign-up for updates at publicinput.com/eilerspark-signup.
       - slug: coa-mobility-bond-projects-map
         name: Mobility Bond Projects by Program (complete and under construction)
         url: https://experience.arcgis.com/experience/20e20f448eda42cdba9aa26102930d54/
