@@ -1,4 +1,4 @@
-*Every saved copy in the web archive, oldest to newest. Each page's **latest** link always points at its newest copy, so it can be cited even after the page itself changes or disappears; the dated links are the individual captures, and the files are the documents the page linked to, saved when first seen. Updated 25 Sep 2026 06:36 — regenerated on every build as `docs/archive.md` in the calendars repo; [[Archive]] is a copy of that file.*
+*Every saved copy in the web archive, oldest to newest. Each page's **latest** link always points at its newest copy, so it can be cited even after the page itself changes or disappears; the dated links are the individual captures, and the files are the documents the page linked to, saved when first seen. Updated 26 Sep 2026 09:50 — regenerated on every build as `docs/archive.md` in the calendars repo; [[Archive]] is a copy of that file.*
 
 ## City of Austin (CoA)
 
@@ -176,6 +176,12 @@ Files:
 - [ETOD Policy Plan-Accepted 2023.pdf](https://archive.changesaroundme.com/coa-east-riverside-corridor-planning/files/2026-09-19-0011/ETOD%20Policy%20Plan-Accepted%202023.pdf) — 19 Sep 2026 00:11, 13.6 MB
 - [Resolution No. 20240201-054 (ETOD Overlay).pdf](https://archive.changesaroundme.com/coa-east-riverside-corridor-planning/files/2026-09-19-0011/Resolution%20No.%2020240201-054%20%28ETOD%20Overlay%29.pdf) — 19 Sep 2026 00:11, 2.9 MB
 
+### Eilers (Deep Eddy) Neighborhood Park Concept Plan Survey 1
+
+[page](https://publicinput.com/eilers1) · [latest copy](https://archive.changesaroundme.com/coa-eilers-park-survey-1/latest.pdf)
+
+Captures: [26 Sep 2026 06:39](https://archive.changesaroundme.com/coa-eilers-park-survey-1/2026-09-26-0639.pdf)
+
 ### Equitable Transit-Oriented Development (ETOD) Overlay Phase 2
 
 [page](https://www.speakupaustin.org/etodoverlayphase2) · [latest copy](https://archive.changesaroundme.com/coa-etod-overlay-phase-2/latest.pdf)
@@ -243,6 +249,12 @@ Files:
 - [Imagine Austin_2018.pdf](https://archive.changesaroundme.com/coa-imagine-austin-update/files/2026-09-19-0014/Imagine%20Austin_2018.pdf) — 19 Sep 2026 00:14, 27.6 MB
 - [ImagineAustin_CommunityWorkingGroup_Kick-offMeeting_Presentation_05.26.2026.pdf](https://archive.changesaroundme.com/coa-imagine-austin-update/files/2026-09-19-0014/ImagineAustin_CommunityWorkingGroup_Kick-offMeeting_Presentation_05.26.2026.pdf) — 19 Sep 2026 00:14, 3.5 MB
 - [ImagineAustin_CommunityWorkingGroup_Meeting 01_Presentation_07.16.2026.pdf](https://archive.changesaroundme.com/coa-imagine-austin-update/files/2026-09-19-0014/ImagineAustin_CommunityWorkingGroup_Meeting%2001_Presentation_07.16.2026.pdf) — 19 Sep 2026 00:14, 11.8 MB
+
+### Mobility Bond Projects by Program (complete and under construction)
+
+[page](https://experience.arcgis.com/experience/20e20f448eda42cdba9aa26102930d54/) · [latest copy](https://archive.changesaroundme.com/coa-mobility-bond-projects-map/latest.pdf)
+
+Captures: [26 Sep 2026 06:43](https://archive.changesaroundme.com/coa-mobility-bond-projects-map/2026-09-26-0643.pdf)
 
 ### MoKan Trail
 
@@ -902,6 +914,269 @@ Files:
 - [07292026-2027utp-public-hearing.pptx](https://archive.changesaroundme.com/txdot-utp-public-involvement/files/2026-09-20-1149/07292026-2027utp-public-hearing.pptx) — 20 Sep 2026 11:49, 4.4 MB
 - [2027-utp-combined-comments-log.xlsx](https://archive.changesaroundme.com/txdot-utp-public-involvement/files/2026-09-20-1149/2027-utp-combined-comments-log.xlsx) — 20 Sep 2026 11:49, 1.1 MB
 - [agenda.pdf](https://archive.changesaroundme.com/txdot-utp-public-involvement/files/2026-09-20-1149/agenda.pdf) — 20 Sep 2026 11:49, 0.3 MB
+
+## Electric Reliability Council of Texas (ERCOT)
+
+### Board of Directors
+
+[page](https://www.ercot.com/committees/board) · [latest copy](https://archive.changesaroundme.com/ercot-board/latest.pdf)
+
+Captures: [26 Sep 2026 09:29](https://archive.changesaroundme.com/ercot-board/2026-09-26-0929.pdf)
+
+Files:
+- [ERCOT-Monthly-Operational-Overview-April-2026.pdf](https://archive.changesaroundme.com/ercot-board/files/2026-09-26-0930/ERCOT-Monthly-Operational-Overview-April-2026.pdf) — 26 Sep 2026 09:30, 1.2 MB
+- [ERCOT-Monthly-Operational-Overview-August-2026.pdf](https://archive.changesaroundme.com/ercot-board/files/2026-09-26-0930/ERCOT-Monthly-Operational-Overview-August-2026.pdf) — 26 Sep 2026 09:30, 1.6 MB
+- [ERCOT-Monthly-Operational-Overview-February-2026.pdf](https://archive.changesaroundme.com/ercot-board/files/2026-09-26-0930/ERCOT-Monthly-Operational-Overview-February-2026.pdf) — 26 Sep 2026 09:30, 0.8 MB
+- [ERCOT-Monthly-Operational-Overview-Final-May-2026.pdf](https://archive.changesaroundme.com/ercot-board/files/2026-09-26-0930/ERCOT-Monthly-Operational-Overview-Final-May-2026.pdf) — 26 Sep 2026 09:30, 1.2 MB
+- [ERCOT-Monthly-Operational-Overview-January-2026.pdf](https://archive.changesaroundme.com/ercot-board/files/2026-09-26-0930/ERCOT-Monthly-Operational-Overview-January-2026.pdf) — 26 Sep 2026 09:30, 1.0 MB
+- [ERCOT-Monthly-Operational-Overview-July-2026.pdf](https://archive.changesaroundme.com/ercot-board/files/2026-09-26-0930/ERCOT-Monthly-Operational-Overview-July-2026.pdf) — 26 Sep 2026 09:30, 1.4 MB
+- [ERCOT-Monthly-Operational-Overview-June-2026.pdf](https://archive.changesaroundme.com/ercot-board/files/2026-09-26-0930/ERCOT-Monthly-Operational-Overview-June-2026.pdf) — 26 Sep 2026 09:30, 1.1 MB
+- [ERCOT-Monthly-Operational-Overview-March-2026.pdf](https://archive.changesaroundme.com/ercot-board/files/2026-09-26-0930/ERCOT-Monthly-Operational-Overview-March-2026.pdf) — 26 Sep 2026 09:30, 1.2 MB
+
+### News Releases
+
+[page](https://www.ercot.com/news/releases) · [latest copy](https://archive.changesaroundme.com/ercot-news-releases/latest.pdf)
+
+Captures: [26 Sep 2026 09:27](https://archive.changesaroundme.com/ercot-news-releases/2026-09-26-0927.pdf)
+
+### Trending Topics
+
+[page](https://www.ercot.com/news/trendingtopics) · [latest copy](https://archive.changesaroundme.com/ercot-trending-topics/latest.pdf)
+
+Captures: [26 Sep 2026 07:25](https://archive.changesaroundme.com/ercot-trending-topics/2026-09-26-0725.pdf)
+
+Files:
+- [ERCOT-Ancillary-Services-Trending-Topic.pdf](https://archive.changesaroundme.com/ercot-trending-topics/files/2026-09-26-0725/ERCOT-Ancillary-Services-Trending-Topic.pdf) — 26 Sep 2026 07:25, 0.9 MB
+- [ERCOT-Trending-Topic-Grid-Reliability-Data-Centers-Net-Metering-Arrangements.pdf](https://archive.changesaroundme.com/ercot-trending-topics/files/2026-09-26-0725/ERCOT-Trending-Topic-Grid-Reliability-Data-Centers-Net-Metering-Arrangements.pdf) — 26 Sep 2026 07:25, 0.6 MB
+- [ERCOT-Trending-Topic-RTC-B.pdf](https://archive.changesaroundme.com/ercot-trending-topics/files/2026-09-26-0725/ERCOT-Trending-Topic-RTC-B.pdf) — 26 Sep 2026 07:25, 0.3 MB
+- [ERCOT-Trending-Topic-Reliability-Standard.pdf](https://archive.changesaroundme.com/ercot-trending-topics/files/2026-09-26-0725/ERCOT-Trending-Topic-Reliability-Standard.pdf) — 26 Sep 2026 07:25, 0.3 MB
+- [ERCOT-Trending-Topic-Ride-Through.pdf](https://archive.changesaroundme.com/ercot-trending-topics/files/2026-09-26-0725/ERCOT-Trending-Topic-Ride-Through.pdf) — 26 Sep 2026 07:25, 0.4 MB
+- [ERCOT-Trending-Topic-WEATHERIZATION-04-17-2021.pdf](https://archive.changesaroundme.com/ercot-trending-topics/files/2026-09-26-0725/ERCOT-Trending-Topic-WEATHERIZATION-04-17-2021.pdf) — 26 Sep 2026 07:25, 0.8 MB
+- [ERCOT_Trending_Topic-Transmission-Planning-Process.pdf](https://archive.changesaroundme.com/ercot-trending-topics/files/2026-09-26-0725/ERCOT_Trending_Topic-Transmission-Planning-Process.pdf) — 26 Sep 2026 07:25, 1.4 MB
+- [ERCOT_Trending_Topic_345-kV_vs_765-kV_Transmission.pdf](https://archive.changesaroundme.com/ercot-trending-topics/files/2026-09-26-0725/ERCOT_Trending_Topic_345-kV_vs_765-kV_Transmission.pdf) — 26 Sep 2026 07:25, 0.9 MB
+- [ERCOT_Trending_Topic_ERCOT_2026-2027-Biennial-Budget.pdf](https://archive.changesaroundme.com/ercot-trending-topics/files/2026-09-26-0725/ERCOT_Trending_Topic_ERCOT_2026-2027-Biennial-Budget.pdf) — 26 Sep 2026 07:25, 2.2 MB
+- [ERCOT_Trending_Topic_Reliability_Solutions_Aging_Resources.pdf](https://archive.changesaroundme.com/ercot-trending-topics/files/2026-09-26-0725/ERCOT_Trending_Topic_Reliability_Solutions_Aging_Resources.pdf) — 26 Sep 2026 07:25, 0.5 MB
+- [Trending-Topics-ERCOT-s-New-Batch-Connection-Process-for-Large-Electricity-Users-v2.pdf](https://archive.changesaroundme.com/ercot-trending-topics/files/2026-09-26-0725/Trending-Topics-ERCOT-s-New-Batch-Connection-Process-for-Large-Electricity-Users-v2.pdf) — 26 Sep 2026 07:25, 0.5 MB
+
+### Trending Topics 2018
+
+[page](https://www.ercot.com/news/trendingtopics/2018) · [latest copy](https://archive.changesaroundme.com/ercot-trending-topics-2018/latest.pdf)
+
+Captures: [26 Sep 2026 09:16](https://archive.changesaroundme.com/ercot-trending-topics-2018/2026-09-26-0916.pdf)
+
+Files:
+- [2018_Summer_Performance_One_Pager_FINAL.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2018/files/2026-09-26-0927/2018_Summer_Performance_One_Pager_FINAL.pdf) — 26 Sep 2026 09:27, 0.2 MB
+- [Legislative_and_PUCT_Briefing_-_Emerging_Grid_Issues_-_revised_1-2-19.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2018/files/2026-09-26-0927/Legislative_and_PUCT_Briefing_-_Emerging_Grid_Issues_-_revised_1-2-19.pdf) — 26 Sep 2026 09:27, 2.2 MB
+- [MERM_Charts_FINAL3.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2018/files/2026-09-26-0927/MERM_Charts_FINAL3.pdf) — 26 Sep 2026 09:27, 0.2 MB
+- [Marginal_Losses_One_Pager_FINAL3.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2018/files/2026-09-26-0927/Marginal_Losses_One_Pager_FINAL3.pdf) — 26 Sep 2026 09:27, 90 KB
+- [PSCAD_and_Renewable_Gen_Studies_One_Pager_FINAL.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2018/files/2026-09-26-0927/PSCAD_and_Renewable_Gen_Studies_One_Pager_FINAL.pdf) — 26 Sep 2026 09:27, 0.1 MB
+
+### Trending Topics 2019
+
+[page](https://www.ercot.com/news/trendingtopics/2019) · [latest copy](https://archive.changesaroundme.com/ercot-trending-topics-2019/latest.pdf)
+
+Captures: [26 Sep 2026 08:55](https://archive.changesaroundme.com/ercot-trending-topics-2019/2026-09-26-0855.pdf)
+
+Files:
+- [August_PUC_Presentation_FINAL.PDF](https://archive.changesaroundme.com/ercot-trending-topics-2019/files/2026-09-26-0855/August_PUC_Presentation_FINAL.PDF) — 26 Sep 2026 08:55, 0.3 MB
+- [EEA_OnePager_FINAL_June2019.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2019/files/2026-09-26-0855/EEA_OnePager_FINAL_June2019.pdf) — 26 Sep 2026 08:55, 0.2 MB
+- [ERCOT_Briefing.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2019/files/2026-09-26-0855/ERCOT_Briefing.pdf) — 26 Sep 2026 08:55, 0.7 MB
+- [Final_RTC_PUCT_OM_FINAL.PDF](https://archive.changesaroundme.com/ercot-trending-topics-2019/files/2026-09-26-0855/Final_RTC_PUCT_OM_FINAL.PDF) — 26 Sep 2026 08:55, 0.3 MB
+- [Growth_of_utility-scale_solar_resources_in_the_ERCOT_region_July_2019.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2019/files/2026-09-26-0855/Growth_of_utility-scale_solar_resources_in_the_ERCOT_region_July_2019.pdf) — 26 Sep 2026 08:55, 0.4 MB
+- [Market_Structure_OnePager_FINAL_Revised.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2019/files/2026-09-26-0855/Market_Structure_OnePager_FINAL_Revised.pdf) — 26 Sep 2026 08:55, 0.2 MB
+- [May_30_Pricing_Event_One_Pager_FINAL2.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2019/files/2026-09-26-0855/May_30_Pricing_Event_One_Pager_FINAL2.pdf) — 26 Sep 2026 08:55, 0.2 MB
+- [NERC_MRC_11.05.19_ERCOT_PUC.PDF](https://archive.changesaroundme.com/ercot-trending-topics-2019/files/2026-09-26-0855/NERC_MRC_11.05.19_ERCOT_PUC.PDF) — 26 Sep 2026 08:55, 1.2 MB
+- [ProtectingERCOTsElectricSystemFromCyberAttack.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2019/files/2026-09-26-0855/ProtectingERCOTsElectricSystemFromCyberAttack.pdf) — 26 Sep 2026 08:55, 0.2 MB
+- [RTC_One_Pager_FINAL_3.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2019/files/2026-09-26-0855/RTC_One_Pager_FINAL_3.pdf) — 26 Sep 2026 08:55, 0.2 MB
+- [Review_of_ERCOT_Summer_2019_-_PUC_Workshop_-_FINAL_10-8-19.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2019/files/2026-09-26-0855/Review_of_ERCOT_Summer_2019_-_PUC_Workshop_-_FINAL_10-8-19.pdf) — 26 Sep 2026 08:55, 2.7 MB
+- [Shoulder_months_FINAL.PDF](https://archive.changesaroundme.com/ercot-trending-topics-2019/files/2026-09-26-0855/Shoulder_months_FINAL.PDF) — 26 Sep 2026 08:55, 0.2 MB
+- [Transmission_improvements_underway_July_2019.docx.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2019/files/2026-09-26-0855/Transmission_improvements_underway_July_2019.docx.pdf) — 26 Sep 2026 08:55, 0.5 MB
+- [Wind_One_Pager_Revised_July_2019.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2019/files/2026-09-26-0855/Wind_One_Pager_Revised_July_2019.pdf) — 26 Sep 2026 08:55, 0.3 MB
+
+### Trending Topics 2020
+
+[page](https://www.ercot.com/news/trendingtopics/2020) · [latest copy](https://archive.changesaroundme.com/ercot-trending-topics-2020/latest.pdf)
+
+Captures: [26 Sep 2026 08:39](https://archive.changesaroundme.com/ercot-trending-topics-2020/2026-09-26-0839.pdf)
+
+Files:
+- [2020_Accomplishments_FINAL.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/2020_Accomplishments_FINAL.pdf) — 26 Sep 2026 08:55, 0.8 MB
+- [27706_ERCOT_Ltr_to_Commissioners_-_November_2020_Supplemental_Status_Upd....pdf](https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/27706_ERCOT_Ltr_to_Commissioners_-_November_2020_Supplemental_Status_Upd....pdf) — 26 Sep 2026 08:55, 1.4 MB
+- [27706_ERCOT_s_Letter_to_Commissioners_-_Permian_Basin_Improvement_Ideas.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/27706_ERCOT_s_Letter_to_Commissioners_-_Permian_Basin_Improvement_Ideas.pdf) — 26 Sep 2026 08:55, 0.4 MB
+- [48540_-_ERCOT_RTC_Update_2020.12.10.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/48540_-_ERCOT_RTC_Update_2020.12.10.pdf) — 26 Sep 2026 08:55, 0.3 MB
+- [49852_ERCOT_Update_Demand_Response_Summer_2019_Assessment.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/49852_ERCOT_Update_Demand_Response_Summer_2019_Assessment.pdf) — 26 Sep 2026 08:55, 1.7 MB
+- [DG_and_DR_in_ERCOT_FINAL2.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/DG_and_DR_in_ERCOT_FINAL2.pdf) — 26 Sep 2026 08:55, 67 KB
+- [EEA_Levels_FINAL_REVISED_9-14-20.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/EEA_Levels_FINAL_REVISED_9-14-20.pdf) — 26 Sep 2026 08:55, 66 KB
+- [EEA_OnePager_updated_9-4-20.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/EEA_OnePager_updated_9-4-20.pdf) — 26 Sep 2026 08:55, 0.2 MB
+- [EEA_Tools_One_Pager_Summer_2020_FINAL3.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/EEA_Tools_One_Pager_Summer_2020_FINAL3.pdf) — 26 Sep 2026 08:55, 0.7 MB
+- [EEA_Tools_One_Pager_Summer_2020_FINAL_SPANISH.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/EEA_Tools_One_Pager_Summer_2020_FINAL_SPANISH.pdf) — 26 Sep 2026 08:55, 0.8 MB
+- [ERCOT_COVID-19_Analysis_Sept_1.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/ERCOT_COVID-19_Analysis_Sept_1.pdf) — 26 Sep 2026 08:55, 0.7 MB
+- [ERCOT_Energy_Emergency_Alert_Communications_Matrix_October_2020.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/ERCOT_Energy_Emergency_Alert_Communications_Matrix_October_2020.pdf) — 26 Sep 2026 08:55, 0.2 MB
+- [ERCOT_Pandemic_Planning_Actions_for_COVID19_9-17-20_FINAL.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/ERCOT_Pandemic_Planning_Actions_for_COVID19_9-17-20_FINAL.pdf) — 26 Sep 2026 08:55, 0.2 MB
+- [ERCOT_Pandemic_Preparedness_Plan_20200204_Redacted_Public.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/ERCOT_Pandemic_Preparedness_Plan_20200204_Redacted_Public.pdf) — 26 Sep 2026 08:55, 0.3 MB
+- [ERCOT_Updates_to_TAC_on_Issues_and_Projects_FINAL.pptx.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/ERCOT_Updates_to_TAC_on_Issues_and_Projects_FINAL.pptx.pdf) — 26 Sep 2026 08:55, 0.4 MB
+- [ESRs_and_DGRs_FINAL_10-13-20.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/ESRs_and_DGRs_FINAL_10-13-20.pdf) — 26 Sep 2026 08:55, 0.3 MB
+- [GCPA_-_Looking_Past_the_Peak-2020_Summer_Review.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/GCPA_-_Looking_Past_the_Peak-2020_Summer_Review.pdf) — 26 Sep 2026 08:55, 0.9 MB
+- [GEWG_OnePager_FINAL_11-23-2020.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/GEWG_OnePager_FINAL_11-23-2020.pdf) — 26 Sep 2026 08:55, 0.2 MB
+- [House_State_Affairs_1_30_20_FINAL.PDF](https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/House_State_Affairs_1_30_20_FINAL.PDF) — 26 Sep 2026 08:55, 0.3 MB
+- [Market_Structure_OnePager_FINAL_Revised.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/Market_Structure_OnePager_FINAL_Revised.pdf) — 26 Sep 2026 08:55, 0.2 MB
+- [NARUC_RA_Lasher.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/NARUC_RA_Lasher.pdf) — 26 Sep 2026 08:55, 0.7 MB
+- [Passport_Program_FINAL_10-13-20.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/Passport_Program_FINAL_10-13-20.pdf) — 26 Sep 2026 08:55, 0.3 MB
+- [Pricing_in_ERCOT_FINAL.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/Pricing_in_ERCOT_FINAL.pdf) — 26 Sep 2026 08:55, 0.1 MB
+- [ProtectingERCOTsElectricSystemFromCyberAttack.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/ProtectingERCOTsElectricSystemFromCyberAttack.pdf) — 26 Sep 2026 08:55, 0.2 MB
+- [SWAGIT_one_pager_FINAL2.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/SWAGIT_one_pager_FINAL2.pdf) — 26 Sep 2026 08:55, 0.2 MB
+- [Senate_B_C_2_6_20_FINAL.PDF](https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/Senate_B_C_2_6_20_FINAL.PDF) — 26 Sep 2026 08:55, 0.3 MB
+- [Shoulder_months_FINAL.PDF](https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/Shoulder_months_FINAL.PDF) — 26 Sep 2026 08:55, 0.2 MB
+- [Solar_One_Pager_June_2020_.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/Solar_One_Pager_June_2020_.pdf) — 26 Sep 2026 08:55, 0.3 MB
+- [Transmission_Planning_One_Pager_FINAL.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/Transmission_Planning_One_Pager_FINAL.pdf) — 26 Sep 2026 08:55, 0.4 MB
+- [West_Texas_One_Pager_May_2020.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/West_Texas_One_Pager_May_2020.pdf) — 26 Sep 2026 08:55, 0.2 MB
+- [Wind_One_Pager_June_2020.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/Wind_One_Pager_June_2020.pdf) — 26 Sep 2026 08:55, 0.2 MB
+
+### Trending Topics 2021
+
+[page](https://www.ercot.com/news/trendingtopics/2021) · [latest copy](https://archive.changesaroundme.com/ercot-trending-topics-2021/latest.pdf)
+
+Captures: [26 Sep 2026 08:29](https://archive.changesaroundme.com/ercot-trending-topics-2021/2026-09-26-0829.pdf)
+
+Files:
+- [2020_Accomplishments_FINAL.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/2020_Accomplishments_FINAL.pdf) — 26 Sep 2026 08:39, 0.8 MB
+- [2020_LTSA_Report.zip](https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/2020_LTSA_Report.zip) — 26 Sep 2026 08:39, 6.3 MB
+- [2020_Report_on_Existing_and_Potential_Electric_System_Constraints_and_Needs.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/2020_Report_on_Existing_and_Potential_Electric_System_Constraints_and_Needs.pdf) — 26 Sep 2026 08:39, 3.0 MB
+- [2021_EEA_Overview_Final.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/2021_EEA_Overview_Final.pdf) — 26 Sep 2026 08:39, 0.3 MB
+- [2021_EEA_Overview_Spanish_Final.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/2021_EEA_Overview_Spanish_Final.pdf) — 26 Sep 2026 08:39, 0.2 MB
+- [27706_ERCOT_Ltr_to_Commissioners_-_November_2020_Supplemental_Status_Upd....pdf](https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/27706_ERCOT_Ltr_to_Commissioners_-_November_2020_Supplemental_Status_Upd....pdf) — 26 Sep 2026 08:39, 1.4 MB
+- [48540_-_ERCOT_RTC_Update_2020.12.10.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/48540_-_ERCOT_RTC_Update_2020.12.10.pdf) — 26 Sep 2026 08:39, 0.3 MB
+- [51617__ERCOT_Resource_Outage_Approval_Process.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/51617__ERCOT_Resource_Outage_Approval_Process.pdf) — 26 Sep 2026 08:39, 1.0 MB
+- [DG_and_DR_in_ERCOT_2021.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/DG_and_DR_in_ERCOT_2021.pdf) — 26 Sep 2026 08:39, 68 KB
+- [ERCOT_Demand_Response__Summary_PUCT_Working_Session_091621.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/ERCOT_Demand_Response__Summary_PUCT_Working_Session_091621.pdf) — 26 Sep 2026 08:39, 0.3 MB
+- [ERCOT_Energy_Emergency_Alert_Communications_Matrix_October_2020.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/ERCOT_Energy_Emergency_Alert_Communications_Matrix_October_2020.pdf) — 26 Sep 2026 08:39, 0.2 MB
+- [ERCOT_Roadmap_October_15_2021_Update.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/ERCOT_Roadmap_October_15_2021_Update.pdf) — 26 Sep 2026 08:39, 0.3 MB
+- [ERCOT_Transmission_Planning_Overview_072621.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/ERCOT_Transmission_Planning_Overview_072621.pdf) — 26 Sep 2026 08:39, 2.1 MB
+- [ESRs_and_DGRs_FINAL_10-13-20.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/ESRs_and_DGRs_FINAL_10-13-20.pdf) — 26 Sep 2026 08:39, 0.3 MB
+- [Energy_Conservation_FINAL_SPANISH_8.12.2021.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/Energy_Conservation_FINAL_SPANISH_8.12.2021.pdf) — 26 Sep 2026 08:39, 57 KB
+- [Existing_Load_Shed_Process_072621.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/Existing_Load_Shed_Process_072621.pdf) — 26 Sep 2026 08:39, 0.2 MB
+- [GEWG_OnePager_FINAL_11-23-2020.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/GEWG_OnePager_FINAL_11-23-2020.pdf) — 26 Sep 2026 08:39, 0.2 MB
+- [Gov_Abbott_LTR_070821Final.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/Gov_Abbott_LTR_070821Final.pdf) — 26 Sep 2026 08:39, 0.5 MB
+- [Market_Structure_OnePager_FINAL_Revised.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/Market_Structure_OnePager_FINAL_Revised.pdf) — 26 Sep 2026 08:39, 0.2 MB
+- [Media_Call_EEA_Deck_for_May_6_2021_FINAL.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/Media_Call_EEA_Deck_for_May_6_2021_FINAL.pdf) — 26 Sep 2026 08:39, 0.6 MB
+- [PUCT_Work_Session_August_ERCOT_082621.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/PUCT_Work_Session_August_ERCOT_082621.pdf) — 26 Sep 2026 08:39, 0.1 MB
+- [Pricing_in_ERCOT_FINAL.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/Pricing_in_ERCOT_FINAL.pdf) — 26 Sep 2026 08:39, 0.1 MB
+- [ProtectingERCOTsElectricSystemFromCyberAttack.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/ProtectingERCOTsElectricSystemFromCyberAttack.pdf) — 26 Sep 2026 08:39, 0.2 MB
+- [Shoulder_months___high_prices_FINAL_4.27.2021.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/Shoulder_months___high_prices_FINAL_4.27.2021.pdf) — 26 Sep 2026 08:39, 0.2 MB
+- [Solar_One_Pager_June_2020_.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/Solar_One_Pager_June_2020_.pdf) — 26 Sep 2026 08:39, 0.3 MB
+- [Summer_2021_Overview_10.07.21.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/Summer_2021_Overview_10.07.21.pdf) — 26 Sep 2026 08:39, 0.4 MB
+- [Summer_Readiness_Workshop_Presentation_5.3.2021.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/Summer_Readiness_Workshop_Presentation_5.3.2021.pdf) — 26 Sep 2026 08:39, 0.5 MB
+- [Texas_Climate_101_Winter_Temp_Extremes_081221_PUC_Work_Session.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/Texas_Climate_101_Winter_Temp_Extremes_081221_PUC_Work_Session.pdf) — 26 Sep 2026 08:39, 0.3 MB
+- [Transmission_Planning_One_Pager_FINAL.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/Transmission_Planning_One_Pager_FINAL.pdf) — 26 Sep 2026 08:39, 0.4 MB
+- [Use-of-Energy-Conservation-2024.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/Use-of-Energy-Conservation-2024.pdf) — 26 Sep 2026 08:39, 0.2 MB
+- [West_Texas_One_Pager_May_2020.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/West_Texas_One_Pager_May_2020.pdf) — 26 Sep 2026 08:39, 0.2 MB
+- [Wind_One_Pager_June_2020.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/Wind_One_Pager_June_2020.pdf) — 26 Sep 2026 08:39, 0.2 MB
+
+### Trending Topics 2022
+
+[page](https://www.ercot.com/news/trendingtopics/2022) · [latest copy](https://archive.changesaroundme.com/ercot-trending-topics-2022/latest.pdf)
+
+Captures: [26 Sep 2026 07:44](https://archive.changesaroundme.com/ercot-trending-topics-2022/2026-09-26-0744.pdf)
+
+Files:
+- [2020_Accomplishments_FINAL.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/2020_Accomplishments_FINAL.pdf) — 26 Sep 2026 08:00, 0.8 MB
+- [2020_LTSA_Report.zip](https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/2020_LTSA_Report.zip) — 26 Sep 2026 08:00, 6.3 MB
+- [2020_Report_on_Existing_and_Potential_Electric_System_Constraints_and_Needs.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/2020_Report_on_Existing_and_Potential_Electric_System_Constraints_and_Needs.pdf) — 26 Sep 2026 08:00, 3.0 MB
+- [20220621 Joint ISORTOs Comments EPA Ozone NAAQS Proposed Rule SPP ERCOT MISO PJM.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/20220621%20Joint%20ISORTOs%20Comments%20EPA%20Ozone%20NAAQS%20Proposed%20Rule%20SPP%20ERCOT%20MISO%20PJM.pdf) — 26 Sep 2026 08:00, 0.5 MB
+- [2023 EEA Overview Final Spanish- June 2023.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/2023%20EEA%20Overview%20Final%20Spanish-%20June%202023.pdf) — 26 Sep 2026 08:00, 0.2 MB
+- [2026-Energy-Emergency-Alert-Overview.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/2026-Energy-Emergency-Alert-Overview.pdf) — 26 Sep 2026 08:00, 0.2 MB
+- [48540_-_ERCOT_RTC_Update_2020.12.10.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/48540_-_ERCOT_RTC_Update_2020.12.10.pdf) — 26 Sep 2026 08:00, 0.3 MB
+- [51617__ERCOT_Resource_Outage_Approval_Process.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/51617__ERCOT_Resource_Outage_Approval_Process.pdf) — 26 Sep 2026 08:00, 1.0 MB
+- [87th-Legislative-Session-ERCOT-Status-June-2023.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/87th-Legislative-Session-ERCOT-Status-June-2023.pdf) — 26 Sep 2026 08:00, 0.4 MB
+- [DG_and_DR_in_ERCOT_2021.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/DG_and_DR_in_ERCOT_2021.pdf) — 26 Sep 2026 08:00, 68 KB
+- [ERCOT-Comments-EPA-Ozone-Transport-FIP.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/ERCOT-Comments-EPA-Ozone-Transport-FIP.pdf) — 26 Sep 2026 08:00, 0.3 MB
+- [ERCOT_Demand_Response__Summary_PUCT_Working_Session_091621.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/ERCOT_Demand_Response__Summary_PUCT_Working_Session_091621.pdf) — 26 Sep 2026 08:00, 0.3 MB
+- [ERCOT_Transmission_Planning_Overview_072621.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/ERCOT_Transmission_Planning_Overview_072621.pdf) — 26 Sep 2026 08:00, 2.1 MB
+- [ESRs_and_DGRs_FINAL_10-13-20.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/ESRs_and_DGRs_FINAL_10-13-20.pdf) — 26 Sep 2026 08:00, 0.3 MB
+- [Energy_Conservation_FINAL_SPANISH_8.12.2021.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/Energy_Conservation_FINAL_SPANISH_8.12.2021.pdf) — 26 Sep 2026 08:00, 57 KB
+- [Existing_Load_Shed_Process_072621.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/Existing_Load_Shed_Process_072621.pdf) — 26 Sep 2026 08:00, 0.2 MB
+- [GEWG_OnePager_FINAL_11-23-2020.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/GEWG_OnePager_FINAL_11-23-2020.pdf) — 26 Sep 2026 08:00, 0.2 MB
+- [Market_Structure_OnePager_FINAL_Revised.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/Market_Structure_OnePager_FINAL_Revised.pdf) — 26 Sep 2026 08:00, 0.2 MB
+- [Media_Call_EEA_Deck_for_May_6_2021_FINAL.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/Media_Call_EEA_Deck_for_May_6_2021_FINAL.pdf) — 26 Sep 2026 08:00, 0.6 MB
+- [PUCT_Work_Session_August_ERCOT_082621.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/PUCT_Work_Session_August_ERCOT_082621.pdf) — 26 Sep 2026 08:00, 0.1 MB
+- [Pricing_in_ERCOT_FINAL.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/Pricing_in_ERCOT_FINAL.pdf) — 26 Sep 2026 08:00, 0.1 MB
+- [ProtectingERCOTsElectricSystemFromCyberAttack.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/ProtectingERCOTsElectricSystemFromCyberAttack.pdf) — 26 Sep 2026 08:00, 0.2 MB
+- [Senator Warren Information Request.zip](https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/Senator%20Warren%20Information%20Request.zip) — 26 Sep 2026 08:00, 0.6 MB
+- [Shoulder_months___high_prices_FINAL_4.27.2021.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/Shoulder_months___high_prices_FINAL_4.27.2021.pdf) — 26 Sep 2026 08:00, 0.2 MB
+- [Solar_One_Pager_June_2020_.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/Solar_One_Pager_June_2020_.pdf) — 26 Sep 2026 08:00, 0.3 MB
+- [Summer_2021_Overview_10.07.21.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/Summer_2021_Overview_10.07.21.pdf) — 26 Sep 2026 08:00, 0.4 MB
+- [Summer_Readiness_Workshop_Presentation_5.3.2021.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/Summer_Readiness_Workshop_Presentation_5.3.2021.pdf) — 26 Sep 2026 08:00, 0.5 MB
+- [Texas_Climate_101_Winter_Temp_Extremes_081221_PUC_Work_Session.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/Texas_Climate_101_Winter_Temp_Extremes_081221_PUC_Work_Session.pdf) — 26 Sep 2026 08:00, 0.3 MB
+- [Transmission_Planning_One_Pager_FINAL.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/Transmission_Planning_One_Pager_FINAL.pdf) — 26 Sep 2026 08:00, 0.4 MB
+- [Use-of-Energy-Conservation-2024.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/Use-of-Energy-Conservation-2024.pdf) — 26 Sep 2026 08:00, 0.2 MB
+- [West_Texas_One_Pager_May_2020.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/West_Texas_One_Pager_May_2020.pdf) — 26 Sep 2026 08:00, 0.2 MB
+- [Wind_One_Pager_June_2020.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/Wind_One_Pager_June_2020.pdf) — 26 Sep 2026 08:00, 0.2 MB
+
+### Trending Topics 2023
+
+[page](https://www.ercot.com/news/trendingtopics/2023) · [latest copy](https://archive.changesaroundme.com/ercot-trending-topics-2023/latest.pdf)
+
+Captures: [26 Sep 2026 07:27](https://archive.changesaroundme.com/ercot-trending-topics-2023/2026-09-26-0727.pdf)
+
+Files:
+- [2020_Accomplishments_FINAL.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/2020_Accomplishments_FINAL.pdf) — 26 Sep 2026 07:44, 0.8 MB
+- [2020_LTSA_Report.zip](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/2020_LTSA_Report.zip) — 26 Sep 2026 07:44, 6.3 MB
+- [2020_Report_on_Existing_and_Potential_Electric_System_Constraints_and_Needs.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/2020_Report_on_Existing_and_Potential_Electric_System_Constraints_and_Needs.pdf) — 26 Sep 2026 07:44, 3.0 MB
+- [20220621 Joint ISORTOs Comments EPA Ozone NAAQS Proposed Rule SPP ERCOT MISO PJM.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/20220621%20Joint%20ISORTOs%20Comments%20EPA%20Ozone%20NAAQS%20Proposed%20Rule%20SPP%20ERCOT%20MISO%20PJM.pdf) — 26 Sep 2026 07:44, 0.5 MB
+- [2023 EEA Overview Final Spanish- June 2023.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/2023%20EEA%20Overview%20Final%20Spanish-%20June%202023.pdf) — 26 Sep 2026 07:44, 0.2 MB
+- [2026-Energy-Emergency-Alert-Overview.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/2026-Energy-Emergency-Alert-Overview.pdf) — 26 Sep 2026 07:44, 0.2 MB
+- [27706_ERCOT_Ltr_to_Commissioners_-_November_2020_Supplemental_Status_Upd....pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/27706_ERCOT_Ltr_to_Commissioners_-_November_2020_Supplemental_Status_Upd....pdf) — 26 Sep 2026 07:44, 1.4 MB
+- [48540_-_ERCOT_RTC_Update_2020.12.10.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/48540_-_ERCOT_RTC_Update_2020.12.10.pdf) — 26 Sep 2026 07:44, 0.3 MB
+- [51617__ERCOT_Resource_Outage_Approval_Process.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/51617__ERCOT_Resource_Outage_Approval_Process.pdf) — 26 Sep 2026 07:44, 1.0 MB
+- [87th-Legislative-Session-ERCOT-Status-June-2023.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/87th-Legislative-Session-ERCOT-Status-June-2023.pdf) — 26 Sep 2026 07:44, 0.4 MB
+- [88th Legislative Session - ERCOT Status.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/88th%20Legislative%20Session%20-%20ERCOT%20Status.pdf) — 26 Sep 2026 07:44, 0.5 MB
+- [Ancillary-Services-Handout.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/Ancillary-Services-Handout.pdf) — 26 Sep 2026 07:44, 1.8 MB
+- [DG_and_DR_in_ERCOT_2025.pptx](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/DG_and_DR_in_ERCOT_2025.pptx) — 26 Sep 2026 07:44, 66 KB
+- [December-2022-Cold-Weather-Operations-Public-Report.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/December-2022-Cold-Weather-Operations-Public-Report.pdf) — 26 Sep 2026 07:44, 1.9 MB
+- [ERCOT-Comments-EPA-Ozone-Transport-FIP.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/ERCOT-Comments-EPA-Ozone-Transport-FIP.pdf) — 26 Sep 2026 07:44, 0.3 MB
+- [ERCOT-Comments-on-DOE-Transmission-Needs-Study-Public.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/ERCOT-Comments-on-DOE-Transmission-Needs-Study-Public.pdf) — 26 Sep 2026 07:44, 0.3 MB
+- [ERCOT_Demand_Response__Summary_Spring_2023-update.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/ERCOT_Demand_Response__Summary_Spring_2023-update.pdf) — 26 Sep 2026 07:44, 0.3 MB
+- [ERCOT_TXANS_One_pager.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/ERCOT_TXANS_One_pager.pdf) — 26 Sep 2026 07:44, 0.5 MB
+- [ERCOT_Transmission_Planning_Overview_072621.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/ERCOT_Transmission_Planning_Overview_072621.pdf) — 26 Sep 2026 07:44, 2.1 MB
+- [ESRs_and_DGRs_FINAL_10-13-20.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/ESRs_and_DGRs_FINAL_10-13-20.pdf) — 26 Sep 2026 07:44, 0.3 MB
+- [Energy_Conservation_FINAL_SPANISH_8.12.2021.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/Energy_Conservation_FINAL_SPANISH_8.12.2021.pdf) — 26 Sep 2026 07:44, 57 KB
+- [Existing_Load_Shed_Process_072621.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/Existing_Load_Shed_Process_072621.pdf) — 26 Sep 2026 07:44, 0.2 MB
+- [GEWG_OnePager_FINAL_11-23-2020.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/GEWG_OnePager_FINAL_11-23-2020.pdf) — 26 Sep 2026 07:44, 0.2 MB
+- [Gov_Abbott_LTR_070821Final.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/Gov_Abbott_LTR_070821Final.pdf) — 26 Sep 2026 07:44, 0.5 MB
+- [Market_Structure_OnePager_FINAL_Revised.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/Market_Structure_OnePager_FINAL_Revised.pdf) — 26 Sep 2026 07:44, 0.2 MB
+- [Media_Call_EEA_Deck_for_May_6_2021_FINAL.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/Media_Call_EEA_Deck_for_May_6_2021_FINAL.pdf) — 26 Sep 2026 07:44, 0.6 MB
+- [PUCT_Work_Session_August_ERCOT_082621.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/PUCT_Work_Session_August_ERCOT_082621.pdf) — 26 Sep 2026 07:44, 0.1 MB
+- [Pricing_in_ERCOT_FINAL.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/Pricing_in_ERCOT_FINAL.pdf) — 26 Sep 2026 07:44, 0.1 MB
+- [ProtectingERCOTsElectricSystemFromCyberAttack.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/ProtectingERCOTsElectricSystemFromCyberAttack.pdf) — 26 Sep 2026 07:44, 0.2 MB
+- [Roadmap to Improving Grid Reliability - Jan 26 2023.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/Roadmap%20to%20Improving%20Grid%20Reliability%20-%20Jan%2026%202023.pdf) — 26 Sep 2026 07:44, 0.4 MB
+- [Senator Warren Information Request.zip](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/Senator%20Warren%20Information%20Request.zip) — 26 Sep 2026 07:44, 0.6 MB
+- [Shoulder_months___high_prices_FINAL_4.27.2021.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/Shoulder_months___high_prices_FINAL_4.27.2021.pdf) — 26 Sep 2026 07:44, 0.2 MB
+- [Solar_One_Pager_June_2020_.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/Solar_One_Pager_June_2020_.pdf) — 26 Sep 2026 07:44, 0.3 MB
+- [Summer_2021_Overview_10.07.21.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/Summer_2021_Overview_10.07.21.pdf) — 26 Sep 2026 07:44, 0.4 MB
+- [Summer_Readiness_Workshop_Presentation_5.3.2021.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/Summer_Readiness_Workshop_Presentation_5.3.2021.pdf) — 26 Sep 2026 07:44, 0.5 MB
+- [Texas_Climate_101_Winter_Temp_Extremes_081221_PUC_Work_Session.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/Texas_Climate_101_Winter_Temp_Extremes_081221_PUC_Work_Session.pdf) — 26 Sep 2026 07:44, 0.3 MB
+- [Transmission_Planning_One_Pager_FINAL.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/Transmission_Planning_One_Pager_FINAL.pdf) — 26 Sep 2026 07:44, 0.4 MB
+- [Use-of-Energy-Conservation-2024.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/Use-of-Energy-Conservation-2024.pdf) — 26 Sep 2026 07:44, 0.2 MB
+- [West_Texas_One_Pager_May_2020.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/West_Texas_One_Pager_May_2020.pdf) — 26 Sep 2026 07:44, 0.2 MB
+- [Wind_One_Pager_June_2020.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/Wind_One_Pager_June_2020.pdf) — 26 Sep 2026 07:44, 0.2 MB
+
+### Trending Topics 2024
+
+[page](https://www.ercot.com/news/trendingtopics/2024) · [latest copy](https://archive.changesaroundme.com/ercot-trending-topics-2024/latest.pdf)
+
+Captures: [26 Sep 2026 07:25](https://archive.changesaroundme.com/ercot-trending-topics-2024/2026-09-26-0725.pdf)
+
+Files:
+- [ERCOT-Ancillary-Services-Trending-Topic.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2024/files/2026-09-26-0726/ERCOT-Ancillary-Services-Trending-Topic.pdf) — 26 Sep 2026 07:26, 0.9 MB
+- [ERCOT-Trending-Topic-RTC-B.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2024/files/2026-09-26-0726/ERCOT-Trending-Topic-RTC-B.pdf) — 26 Sep 2026 07:26, 0.3 MB
+- [ERCOT_Trending_Topic_AAN.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2024/files/2026-09-26-0726/ERCOT_Trending_Topic_AAN.pdf) — 26 Sep 2026 07:26, 0.1 MB
+- [ERCOT_Trending_Topic_ECRS.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2024/files/2026-09-26-0726/ERCOT_Trending_Topic_ECRS.pdf) — 26 Sep 2026 07:26, 0.3 MB
+- [ERCOT_Trending_Topic_GTCs.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2024/files/2026-09-26-0726/ERCOT_Trending_Topic_GTCs.pdf) — 26 Sep 2026 07:26, 0.3 MB
+- [ERCOT_Trending_Topic_Load_Shed.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2024/files/2026-09-26-0726/ERCOT_Trending_Topic_Load_Shed.pdf) — 26 Sep 2026 07:26, 0.1 MB
+- [ERCOT_Trending_Topic_RFP.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2024/files/2026-09-26-0726/ERCOT_Trending_Topic_RFP.pdf) — 26 Sep 2026 07:26, 0.3 MB
+- [ERCOT_Trending_topic_RMR.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2024/files/2026-09-26-0726/ERCOT_Trending_topic_RMR.pdf) — 26 Sep 2026 07:26, 0.1 MB
+- [Reliability-Plan-For-The-Permian-Basin-Region.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2024/files/2026-09-26-0726/Reliability-Plan-For-The-Permian-Basin-Region.pdf) — 26 Sep 2026 07:26, 0.2 MB
+- [rfp-mra-rmr.pdf](https://archive.changesaroundme.com/ercot-trending-topics-2024/files/2026-09-26-0726/rfp-mra-rmr.pdf) — 26 Sep 2026 07:26, 0.2 MB
 
 ## Not in the registry
 
