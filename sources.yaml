@@ -307,6 +307,14 @@ organizations:
         name: Airport Corridor Webpage
         url: https://experience.arcgis.com/experience/e937439aa3ce44b6b95172e2ae119cb7/page/Home
         added: 2026-09-02
+      - slug: coa-mobility-bond-projects-map
+        name: Mobility Bond Projects by Program (complete and under construction)
+        url: https://experience.arcgis.com/experience/20e20f448eda42cdba9aa26102930d54/
+        added: 2026-09-25
+        note: >-
+          ArcGIS Experience Builder map; the content is ~17 feature layers
+          (Moped project components, Corridor Program, sidewalks, SRTS, urban
+          trails) — watch the data, not the picture (see brief).
 
   ATP:
     name: Austin Transit Partnership (ATP)
@@ -526,6 +534,15 @@ organizations:
         url: https://www.puc.texas.gov/agency/calendar/broadcasts/
         calendar: puc
         added: 2026-08-17
+
+  ERCOT:
+    name: Electric Reliability Council of Texas (ERCOT)
+    page: Organizations/ERCOT
+    pages:
+      - slug: ercot-trending-topics
+        name: Trending Topics
+        url: https://www.ercot.com/news/trendingtopics
+        added: 2026-09-25
 
   Legislature:
     name: Texas Legislature
