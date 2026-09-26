@@ -543,6 +543,46 @@ organizations:
         name: Trending Topics
         url: https://www.ercot.com/news/trendingtopics
         added: 2026-09-25
+        note: >-
+          The current page lists this and last year's explainers; "View Other
+          Years" links to one static page per year, kept as children — their
+          PDFs are archived like any linked document.
+        children:
+          - slug: ercot-trending-topics-2024
+            name: Trending Topics 2024
+            url: https://www.ercot.com/news/trendingtopics/2024
+            check: every 30 days
+            added: 2026-09-25
+          - slug: ercot-trending-topics-2023
+            name: Trending Topics 2023
+            url: https://www.ercot.com/news/trendingtopics/2023
+            check: every 30 days
+            added: 2026-09-25
+          - slug: ercot-trending-topics-2022
+            name: Trending Topics 2022
+            url: https://www.ercot.com/news/trendingtopics/2022
+            check: every 30 days
+            added: 2026-09-25
+          - slug: ercot-trending-topics-2021
+            name: Trending Topics 2021
+            url: https://www.ercot.com/news/trendingtopics/2021
+            check: every 30 days
+            added: 2026-09-25
+          - slug: ercot-trending-topics-2020
+            name: Trending Topics 2020
+            url: https://www.ercot.com/news/trendingtopics/2020
+            check: every 30 days
+            added: 2026-09-25
+          - slug: ercot-trending-topics-2019
+            name: Trending Topics 2019
+            url: https://www.ercot.com/news/trendingtopics/2019
+            check: every 30 days
+            added: 2026-09-25
+          - slug: ercot-trending-topics-2018
+            name: Trending Topics 2018
+            url: https://www.ercot.com/news/trendingtopics/2018
+            check: every 30 days
+            added: 2026-09-25
 
   Legislature:
     name: Texas Legislature
