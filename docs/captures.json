@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-25T11:36:09Z",
+ "generated": "2026-09-26T14:30:46Z",
  "sources": {
   "atp-board-briefs": {
    "checked": "2026-09-24T12:05:34Z",
@@ -249,6 +249,14 @@
    "url": "https://archive.changesaroundme.com/coa-east-riverside-corridor-planning/latest.pdf",
    "since": "2026-09-01T21:42:00Z"
   },
+  "coa-eilers-park-survey-1": {
+   "checked": "2026-09-26T11:39:31Z",
+   "folder": "Eilers Neighborhood Park Concept Plan Survey 1",
+   "captured": "2026-09-26T11:39:00Z",
+   "file": "Eilers Neighborhood Park Concept Plan Survey 1 - 2026-09-26 0639.pdf",
+   "since": "2026-09-26T11:39:00Z",
+   "url": "https://archive.changesaroundme.com/coa-eilers-park-survey-1/latest.pdf"
+  },
   "coa-etod-overlay-phase-2": {
    "checked": "2026-09-24T11:53:37Z",
    "captured": "2026-09-20T16:16:00Z",
@@ -296,6 +304,14 @@
    "folder": "Imagine Austin Update",
    "url": "https://archive.changesaroundme.com/coa-imagine-austin-update/latest.pdf",
    "since": "2026-09-01T21:48:00Z"
+  },
+  "coa-mobility-bond-projects-map": {
+   "checked": "2026-09-26T11:39:55Z",
+   "folder": "Mobility Bond Projects by Program - Complete and Construction",
+   "captured": "2026-09-26T11:43:00Z",
+   "file": "Mobility Bond Projects by Program - Complete and Construction - 2026-09-26 0643.pdf",
+   "since": "2026-09-26T11:43:00Z",
+   "url": "https://archive.changesaroundme.com/coa-mobility-bond-projects-map/latest.pdf"
   },
   "coa-mokan-trail": {
    "checked": "2026-09-24T12:01:45Z",
@@ -361,8 +377,88 @@
    "url": "https://archive.changesaroundme.com/coa-urban-trails-wayfinding-survey/latest.pdf",
    "since": "2026-09-01T21:55:00Z"
   },
+  "ercot-board": {
+   "checked": "2026-09-26T14:28:10Z",
+   "folder": "Board of Directors",
+   "captured": "2026-09-26T14:29:00Z",
+   "file": "Board of Directors - 2026-09-26 0929.pdf",
+   "since": "2026-09-26T14:29:00Z",
+   "url": "https://archive.changesaroundme.com/ercot-board/latest.pdf"
+  },
+  "ercot-news-releases": {
+   "checked": "2026-09-26T14:27:43Z",
+   "folder": "News Releases",
+   "captured": "2026-09-26T14:27:00Z",
+   "file": "News Releases - 2026-09-26 0927.pdf",
+   "since": "2026-09-26T14:27:00Z",
+   "url": "https://archive.changesaroundme.com/ercot-news-releases/latest.pdf"
+  },
+  "ercot-trending-topics": {
+   "checked": "2026-09-26T12:25:22Z",
+   "folder": "Trending Topics",
+   "captured": "2026-09-26T12:25:00Z",
+   "file": "Trending Topics - 2026-09-26 0725.pdf",
+   "since": "2026-09-26T12:25:00Z",
+   "url": "https://archive.changesaroundme.com/ercot-trending-topics/latest.pdf"
+  },
+  "ercot-trending-topics-2018": {
+   "checked": "2026-09-26T14:16:30Z",
+   "folder": "Trending Topics 2018",
+   "captured": "2026-09-26T14:16:00Z",
+   "file": "Trending Topics 2018 - 2026-09-26 0916.pdf",
+   "since": "2026-09-26T14:16:00Z",
+   "url": "https://archive.changesaroundme.com/ercot-trending-topics-2018/latest.pdf"
+  },
+  "ercot-trending-topics-2019": {
+   "checked": "2026-09-26T13:55:22Z",
+   "folder": "Trending Topics 2019",
+   "captured": "2026-09-26T13:55:00Z",
+   "file": "Trending Topics 2019 - 2026-09-26 0855.pdf",
+   "since": "2026-09-26T13:55:00Z",
+   "url": "https://archive.changesaroundme.com/ercot-trending-topics-2019/latest.pdf"
+  },
+  "ercot-trending-topics-2020": {
+   "checked": "2026-09-26T13:39:42Z",
+   "folder": "Trending Topics 2020",
+   "captured": "2026-09-26T13:39:00Z",
+   "file": "Trending Topics 2020 - 2026-09-26 0839.pdf",
+   "since": "2026-09-26T13:39:00Z",
+   "url": "https://archive.changesaroundme.com/ercot-trending-topics-2020/latest.pdf"
+  },
+  "ercot-trending-topics-2021": {
+   "checked": "2026-09-26T13:29:10Z",
+   "folder": "Trending Topics 2021",
+   "captured": "2026-09-26T13:29:00Z",
+   "file": "Trending Topics 2021 - 2026-09-26 0829.pdf",
+   "since": "2026-09-26T13:29:00Z",
+   "url": "https://archive.changesaroundme.com/ercot-trending-topics-2021/latest.pdf"
+  },
+  "ercot-trending-topics-2022": {
+   "checked": "2026-09-26T12:44:49Z",
+   "folder": "2022 Trending Topics",
+   "captured": "2026-09-26T12:44:00Z",
+   "file": "2022 Trending Topics - 2026-09-26 0744.pdf",
+   "since": "2026-09-26T12:44:00Z",
+   "url": "https://archive.changesaroundme.com/ercot-trending-topics-2022/latest.pdf"
+  },
+  "ercot-trending-topics-2023": {
+   "checked": "2026-09-26T12:26:12Z",
+   "folder": "2023 Trending Topics",
+   "captured": "2026-09-26T12:27:00Z",
+   "file": "2023 Trending Topics - 2026-09-26 0727.pdf",
+   "since": "2026-09-26T12:27:00Z",
+   "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/latest.pdf"
+  },
+  "ercot-trending-topics-2024": {
+   "checked": "2026-09-26T12:25:42Z",
+   "folder": "Trending Topics 2024",
+   "captured": "2026-09-26T12:25:00Z",
+   "file": "Trending Topics 2024 - 2026-09-26 0725.pdf",
+   "since": "2026-09-26T12:25:00Z",
+   "url": "https://archive.changesaroundme.com/ercot-trending-topics-2024/latest.pdf"
+  },
   "lcra-water-public-comment": {
-   "checked": "2026-09-25T11:35:23Z",
+   "checked": "2026-09-26T12:25:13Z",
    "captured": "2026-09-25T11:35:00Z",
    "file": "Water-Related Rules and Regulations for Public Comment - LCRA - Energy Water Community - 2026-09-25 0635.pdf",
    "folder": "Water-Related Rules and Regulations for Public Comment - LCRA - Energy Water Community",

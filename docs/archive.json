@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-25T11:36:16Z",
+ "generated": "2026-09-26T14:50:14Z",
  "public_url": "https://archive.changesaroundme.com",
  "sources": {
   "_unlisted/East Riverside Corridor Planning Initiative Survey - Round 2": {
@@ -2128,6 +2128,18 @@
    "latest_key": "coa-east-riverside-corridor-planning/2026-09-20-1115.pdf",
    "latest": "https://archive.changesaroundme.com/coa-east-riverside-corridor-planning/latest.pdf"
   },
+  "coa-eilers-park-survey-1": {
+   "captures": [
+    {
+     "stamp": "2026-09-26-0639",
+     "url": "https://archive.changesaroundme.com/coa-eilers-park-survey-1/2026-09-26-0639.pdf",
+     "size": 2945426
+    }
+   ],
+   "files": [],
+   "latest_key": "coa-eilers-park-survey-1/2026-09-26-0639.pdf",
+   "latest": "https://archive.changesaroundme.com/coa-eilers-park-survey-1/latest.pdf"
+  },
   "coa-etod-overlay-phase-2": {
    "captures": [
     {
@@ -2346,6 +2358,18 @@
    ],
    "latest_key": "coa-imagine-austin-update/2026-09-20-1119.pdf",
    "latest": "https://archive.changesaroundme.com/coa-imagine-austin-update/latest.pdf"
+  },
+  "coa-mobility-bond-projects-map": {
+   "captures": [
+    {
+     "stamp": "2026-09-26-0643",
+     "url": "https://archive.changesaroundme.com/coa-mobility-bond-projects-map/2026-09-26-0643.pdf",
+     "size": 219640
+    }
+   ],
+   "files": [],
+   "latest_key": "coa-mobility-bond-projects-map/2026-09-26-0643.pdf",
+   "latest": "https://archive.changesaroundme.com/coa-mobility-bond-projects-map/latest.pdf"
   },
   "coa-mokan-trail": {
    "captures": [
@@ -3840,6 +3864,1233 @@
    "files": [],
    "latest_key": "coa-urban-trails-wayfinding-survey/2026-09-19-0001.pdf",
    "latest": "https://archive.changesaroundme.com/coa-urban-trails-wayfinding-survey/latest.pdf"
+  },
+  "ercot-board": {
+   "captures": [
+    {
+     "stamp": "2026-09-26-0929",
+     "url": "https://archive.changesaroundme.com/ercot-board/2026-09-26-0929.pdf",
+     "size": 92075
+    }
+   ],
+   "files": [
+    {
+     "stamp": "2026-09-26-0930",
+     "url": "https://archive.changesaroundme.com/ercot-board/files/2026-09-26-0930/ERCOT-Monthly-Operational-Overview-March-2026.pdf",
+     "size": 1200217,
+     "name": "ERCOT-Monthly-Operational-Overview-March-2026.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0930",
+     "url": "https://archive.changesaroundme.com/ercot-board/files/2026-09-26-0930/ERCOT-Monthly-Operational-Overview-June-2026.pdf",
+     "size": 1122925,
+     "name": "ERCOT-Monthly-Operational-Overview-June-2026.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0930",
+     "url": "https://archive.changesaroundme.com/ercot-board/files/2026-09-26-0930/ERCOT-Monthly-Operational-Overview-July-2026.pdf",
+     "size": 1419950,
+     "name": "ERCOT-Monthly-Operational-Overview-July-2026.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0930",
+     "url": "https://archive.changesaroundme.com/ercot-board/files/2026-09-26-0930/ERCOT-Monthly-Operational-Overview-January-2026.pdf",
+     "size": 1006077,
+     "name": "ERCOT-Monthly-Operational-Overview-January-2026.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0930",
+     "url": "https://archive.changesaroundme.com/ercot-board/files/2026-09-26-0930/ERCOT-Monthly-Operational-Overview-Final-May-2026.pdf",
+     "size": 1228846,
+     "name": "ERCOT-Monthly-Operational-Overview-Final-May-2026.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0930",
+     "url": "https://archive.changesaroundme.com/ercot-board/files/2026-09-26-0930/ERCOT-Monthly-Operational-Overview-February-2026.pdf",
+     "size": 844743,
+     "name": "ERCOT-Monthly-Operational-Overview-February-2026.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0930",
+     "url": "https://archive.changesaroundme.com/ercot-board/files/2026-09-26-0930/ERCOT-Monthly-Operational-Overview-August-2026.pdf",
+     "size": 1586391,
+     "name": "ERCOT-Monthly-Operational-Overview-August-2026.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0930",
+     "url": "https://archive.changesaroundme.com/ercot-board/files/2026-09-26-0930/ERCOT-Monthly-Operational-Overview-April-2026.pdf",
+     "size": 1239697,
+     "name": "ERCOT-Monthly-Operational-Overview-April-2026.pdf"
+    }
+   ],
+   "latest_key": "ercot-board/2026-09-26-0929.pdf",
+   "latest": "https://archive.changesaroundme.com/ercot-board/latest.pdf"
+  },
+  "ercot-news-releases": {
+   "captures": [
+    {
+     "stamp": "2026-09-26-0927",
+     "url": "https://archive.changesaroundme.com/ercot-news-releases/2026-09-26-0927.pdf",
+     "size": 65270
+    }
+   ],
+   "files": [],
+   "latest_key": "ercot-news-releases/2026-09-26-0927.pdf",
+   "latest": "https://archive.changesaroundme.com/ercot-news-releases/latest.pdf"
+  },
+  "ercot-trending-topics": {
+   "captures": [
+    {
+     "stamp": "2026-09-26-0725",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics/2026-09-26-0725.pdf",
+     "size": 67161
+    }
+   ],
+   "files": [
+    {
+     "stamp": "2026-09-26-0725",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics/files/2026-09-26-0725/Trending-Topics-ERCOT-s-New-Batch-Connection-Process-for-Large-Electricity-Users-v2.pdf",
+     "size": 460691,
+     "name": "Trending-Topics-ERCOT-s-New-Batch-Connection-Process-for-Large-Electricity-Users-v2.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0725",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics/files/2026-09-26-0725/ERCOT_Trending_Topic_Reliability_Solutions_Aging_Resources.pdf",
+     "size": 487712,
+     "name": "ERCOT_Trending_Topic_Reliability_Solutions_Aging_Resources.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0725",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics/files/2026-09-26-0725/ERCOT_Trending_Topic_ERCOT_2026-2027-Biennial-Budget.pdf",
+     "size": 2182580,
+     "name": "ERCOT_Trending_Topic_ERCOT_2026-2027-Biennial-Budget.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0725",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics/files/2026-09-26-0725/ERCOT_Trending_Topic_345-kV_vs_765-kV_Transmission.pdf",
+     "size": 859344,
+     "name": "ERCOT_Trending_Topic_345-kV_vs_765-kV_Transmission.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0725",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics/files/2026-09-26-0725/ERCOT_Trending_Topic-Transmission-Planning-Process.pdf",
+     "size": 1382625,
+     "name": "ERCOT_Trending_Topic-Transmission-Planning-Process.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0725",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics/files/2026-09-26-0725/ERCOT-Trending-Topic-WEATHERIZATION-04-17-2021.pdf",
+     "size": 834205,
+     "name": "ERCOT-Trending-Topic-WEATHERIZATION-04-17-2021.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0725",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics/files/2026-09-26-0725/ERCOT-Trending-Topic-Ride-Through.pdf",
+     "size": 447027,
+     "name": "ERCOT-Trending-Topic-Ride-Through.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0725",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics/files/2026-09-26-0725/ERCOT-Trending-Topic-Reliability-Standard.pdf",
+     "size": 335291,
+     "name": "ERCOT-Trending-Topic-Reliability-Standard.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0725",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics/files/2026-09-26-0725/ERCOT-Trending-Topic-RTC-B.pdf",
+     "size": 317621,
+     "name": "ERCOT-Trending-Topic-RTC-B.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0725",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics/files/2026-09-26-0725/ERCOT-Trending-Topic-Grid-Reliability-Data-Centers-Net-Metering-Arrangements.pdf",
+     "size": 593553,
+     "name": "ERCOT-Trending-Topic-Grid-Reliability-Data-Centers-Net-Metering-Arrangements.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0725",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics/files/2026-09-26-0725/ERCOT-Ancillary-Services-Trending-Topic.pdf",
+     "size": 929117,
+     "name": "ERCOT-Ancillary-Services-Trending-Topic.pdf"
+    }
+   ],
+   "latest_key": "ercot-trending-topics/2026-09-26-0725.pdf",
+   "latest": "https://archive.changesaroundme.com/ercot-trending-topics/latest.pdf"
+  },
+  "ercot-trending-topics-2018": {
+   "captures": [
+    {
+     "stamp": "2026-09-26-0916",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2018/2026-09-26-0916.pdf",
+     "size": 64425
+    }
+   ],
+   "files": [
+    {
+     "stamp": "2026-09-26-0927",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2018/files/2026-09-26-0927/PSCAD_and_Renewable_Gen_Studies_One_Pager_FINAL.pdf",
+     "size": 117904,
+     "name": "PSCAD_and_Renewable_Gen_Studies_One_Pager_FINAL.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0927",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2018/files/2026-09-26-0927/Marginal_Losses_One_Pager_FINAL3.pdf",
+     "size": 90418,
+     "name": "Marginal_Losses_One_Pager_FINAL3.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0927",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2018/files/2026-09-26-0927/MERM_Charts_FINAL3.pdf",
+     "size": 199219,
+     "name": "MERM_Charts_FINAL3.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0927",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2018/files/2026-09-26-0927/Legislative_and_PUCT_Briefing_-_Emerging_Grid_Issues_-_revised_1-2-19.pdf",
+     "size": 2167965,
+     "name": "Legislative_and_PUCT_Briefing_-_Emerging_Grid_Issues_-_revised_1-2-19.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0927",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2018/files/2026-09-26-0927/2018_Summer_Performance_One_Pager_FINAL.pdf",
+     "size": 235231,
+     "name": "2018_Summer_Performance_One_Pager_FINAL.pdf"
+    }
+   ],
+   "latest_key": "ercot-trending-topics-2018/2026-09-26-0916.pdf",
+   "latest": "https://archive.changesaroundme.com/ercot-trending-topics-2018/latest.pdf"
+  },
+  "ercot-trending-topics-2019": {
+   "captures": [
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2019/2026-09-26-0855.pdf",
+     "size": 71872
+    }
+   ],
+   "files": [
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2019/files/2026-09-26-0855/Wind_One_Pager_Revised_July_2019.pdf",
+     "size": 334004,
+     "name": "Wind_One_Pager_Revised_July_2019.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2019/files/2026-09-26-0855/Transmission_improvements_underway_July_2019.docx.pdf",
+     "size": 500778,
+     "name": "Transmission_improvements_underway_July_2019.docx.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2019/files/2026-09-26-0855/Shoulder_months_FINAL.PDF",
+     "size": 158483,
+     "name": "Shoulder_months_FINAL.PDF"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2019/files/2026-09-26-0855/Review_of_ERCOT_Summer_2019_-_PUC_Workshop_-_FINAL_10-8-19.pdf",
+     "size": 2662102,
+     "name": "Review_of_ERCOT_Summer_2019_-_PUC_Workshop_-_FINAL_10-8-19.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2019/files/2026-09-26-0855/RTC_One_Pager_FINAL_3.pdf",
+     "size": 158835,
+     "name": "RTC_One_Pager_FINAL_3.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2019/files/2026-09-26-0855/ProtectingERCOTsElectricSystemFromCyberAttack.pdf",
+     "size": 182969,
+     "name": "ProtectingERCOTsElectricSystemFromCyberAttack.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2019/files/2026-09-26-0855/NERC_MRC_11.05.19_ERCOT_PUC.PDF",
+     "size": 1160775,
+     "name": "NERC_MRC_11.05.19_ERCOT_PUC.PDF"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2019/files/2026-09-26-0855/May_30_Pricing_Event_One_Pager_FINAL2.pdf",
+     "size": 240797,
+     "name": "May_30_Pricing_Event_One_Pager_FINAL2.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2019/files/2026-09-26-0855/Market_Structure_OnePager_FINAL_Revised.pdf",
+     "size": 228949,
+     "name": "Market_Structure_OnePager_FINAL_Revised.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2019/files/2026-09-26-0855/Growth_of_utility-scale_solar_resources_in_the_ERCOT_region_July_2019.pdf",
+     "size": 392440,
+     "name": "Growth_of_utility-scale_solar_resources_in_the_ERCOT_region_July_2019.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2019/files/2026-09-26-0855/Final_RTC_PUCT_OM_FINAL.PDF",
+     "size": 261862,
+     "name": "Final_RTC_PUCT_OM_FINAL.PDF"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2019/files/2026-09-26-0855/ERCOT_Briefing.pdf",
+     "size": 724268,
+     "name": "ERCOT_Briefing.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2019/files/2026-09-26-0855/EEA_OnePager_FINAL_June2019.pdf",
+     "size": 245238,
+     "name": "EEA_OnePager_FINAL_June2019.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2019/files/2026-09-26-0855/August_PUC_Presentation_FINAL.PDF",
+     "size": 330472,
+     "name": "August_PUC_Presentation_FINAL.PDF"
+    }
+   ],
+   "latest_key": "ercot-trending-topics-2019/2026-09-26-0855.pdf",
+   "latest": "https://archive.changesaroundme.com/ercot-trending-topics-2019/latest.pdf"
+  },
+  "ercot-trending-topics-2020": {
+   "captures": [
+    {
+     "stamp": "2026-09-26-0839",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2020/2026-09-26-0839.pdf",
+     "size": 78923
+    }
+   ],
+   "files": [
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/Wind_One_Pager_June_2020.pdf",
+     "size": 241541,
+     "name": "Wind_One_Pager_June_2020.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/West_Texas_One_Pager_May_2020.pdf",
+     "size": 231387,
+     "name": "West_Texas_One_Pager_May_2020.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/Transmission_Planning_One_Pager_FINAL.pdf",
+     "size": 406460,
+     "name": "Transmission_Planning_One_Pager_FINAL.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/Solar_One_Pager_June_2020_.pdf",
+     "size": 347456,
+     "name": "Solar_One_Pager_June_2020_.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/Shoulder_months_FINAL.PDF",
+     "size": 158483,
+     "name": "Shoulder_months_FINAL.PDF"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/Senate_B_C_2_6_20_FINAL.PDF",
+     "size": 331370,
+     "name": "Senate_B_C_2_6_20_FINAL.PDF"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/SWAGIT_one_pager_FINAL2.pdf",
+     "size": 188135,
+     "name": "SWAGIT_one_pager_FINAL2.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/ProtectingERCOTsElectricSystemFromCyberAttack.pdf",
+     "size": 182969,
+     "name": "ProtectingERCOTsElectricSystemFromCyberAttack.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/Pricing_in_ERCOT_FINAL.pdf",
+     "size": 128914,
+     "name": "Pricing_in_ERCOT_FINAL.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/Passport_Program_FINAL_10-13-20.pdf",
+     "size": 251194,
+     "name": "Passport_Program_FINAL_10-13-20.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/NARUC_RA_Lasher.pdf",
+     "size": 716402,
+     "name": "NARUC_RA_Lasher.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/Market_Structure_OnePager_FINAL_Revised.pdf",
+     "size": 228949,
+     "name": "Market_Structure_OnePager_FINAL_Revised.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/House_State_Affairs_1_30_20_FINAL.PDF",
+     "size": 330840,
+     "name": "House_State_Affairs_1_30_20_FINAL.PDF"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/GEWG_OnePager_FINAL_11-23-2020.pdf",
+     "size": 164419,
+     "name": "GEWG_OnePager_FINAL_11-23-2020.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/GCPA_-_Looking_Past_the_Peak-2020_Summer_Review.pdf",
+     "size": 851011,
+     "name": "GCPA_-_Looking_Past_the_Peak-2020_Summer_Review.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/ESRs_and_DGRs_FINAL_10-13-20.pdf",
+     "size": 341679,
+     "name": "ESRs_and_DGRs_FINAL_10-13-20.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/ERCOT_Updates_to_TAC_on_Issues_and_Projects_FINAL.pptx.pdf",
+     "size": 402248,
+     "name": "ERCOT_Updates_to_TAC_on_Issues_and_Projects_FINAL.pptx.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/ERCOT_Pandemic_Preparedness_Plan_20200204_Redacted_Public.pdf",
+     "size": 315693,
+     "name": "ERCOT_Pandemic_Preparedness_Plan_20200204_Redacted_Public.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/ERCOT_Pandemic_Planning_Actions_for_COVID19_9-17-20_FINAL.pdf",
+     "size": 214688,
+     "name": "ERCOT_Pandemic_Planning_Actions_for_COVID19_9-17-20_FINAL.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/ERCOT_Energy_Emergency_Alert_Communications_Matrix_October_2020.pdf",
+     "size": 214391,
+     "name": "ERCOT_Energy_Emergency_Alert_Communications_Matrix_October_2020.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/ERCOT_COVID-19_Analysis_Sept_1.pdf",
+     "size": 669337,
+     "name": "ERCOT_COVID-19_Analysis_Sept_1.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/EEA_Tools_One_Pager_Summer_2020_FINAL_SPANISH.pdf",
+     "size": 779479,
+     "name": "EEA_Tools_One_Pager_Summer_2020_FINAL_SPANISH.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/EEA_Tools_One_Pager_Summer_2020_FINAL3.pdf",
+     "size": 684110,
+     "name": "EEA_Tools_One_Pager_Summer_2020_FINAL3.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/EEA_OnePager_updated_9-4-20.pdf",
+     "size": 247733,
+     "name": "EEA_OnePager_updated_9-4-20.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/EEA_Levels_FINAL_REVISED_9-14-20.pdf",
+     "size": 65501,
+     "name": "EEA_Levels_FINAL_REVISED_9-14-20.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/DG_and_DR_in_ERCOT_FINAL2.pdf",
+     "size": 66929,
+     "name": "DG_and_DR_in_ERCOT_FINAL2.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/49852_ERCOT_Update_Demand_Response_Summer_2019_Assessment.pdf",
+     "size": 1748192,
+     "name": "49852_ERCOT_Update_Demand_Response_Summer_2019_Assessment.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/48540_-_ERCOT_RTC_Update_2020.12.10.pdf",
+     "size": 261218,
+     "name": "48540_-_ERCOT_RTC_Update_2020.12.10.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/27706_ERCOT_s_Letter_to_Commissioners_-_Permian_Basin_Improvement_Ideas.pdf",
+     "size": 438718,
+     "name": "27706_ERCOT_s_Letter_to_Commissioners_-_Permian_Basin_Improvement_Ideas.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/27706_ERCOT_Ltr_to_Commissioners_-_November_2020_Supplemental_Status_Upd....pdf",
+     "size": 1426924,
+     "name": "27706_ERCOT_Ltr_to_Commissioners_-_November_2020_Supplemental_Status_Upd....pdf"
+    },
+    {
+     "stamp": "2026-09-26-0855",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2020/files/2026-09-26-0855/2020_Accomplishments_FINAL.pdf",
+     "size": 812845,
+     "name": "2020_Accomplishments_FINAL.pdf"
+    }
+   ],
+   "latest_key": "ercot-trending-topics-2020/2026-09-26-0839.pdf",
+   "latest": "https://archive.changesaroundme.com/ercot-trending-topics-2020/latest.pdf"
+  },
+  "ercot-trending-topics-2021": {
+   "captures": [
+    {
+     "stamp": "2026-09-26-0829",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2021/2026-09-26-0829.pdf",
+     "size": 79495
+    }
+   ],
+   "files": [
+    {
+     "stamp": "2026-09-26-0839",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/Wind_One_Pager_June_2020.pdf",
+     "size": 241541,
+     "name": "Wind_One_Pager_June_2020.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0839",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/West_Texas_One_Pager_May_2020.pdf",
+     "size": 231387,
+     "name": "West_Texas_One_Pager_May_2020.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0839",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/Use-of-Energy-Conservation-2024.pdf",
+     "size": 186509,
+     "name": "Use-of-Energy-Conservation-2024.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0839",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/Transmission_Planning_One_Pager_FINAL.pdf",
+     "size": 406460,
+     "name": "Transmission_Planning_One_Pager_FINAL.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0839",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/Texas_Climate_101_Winter_Temp_Extremes_081221_PUC_Work_Session.pdf",
+     "size": 288564,
+     "name": "Texas_Climate_101_Winter_Temp_Extremes_081221_PUC_Work_Session.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0839",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/Summer_Readiness_Workshop_Presentation_5.3.2021.pdf",
+     "size": 545534,
+     "name": "Summer_Readiness_Workshop_Presentation_5.3.2021.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0839",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/Summer_2021_Overview_10.07.21.pdf",
+     "size": 371993,
+     "name": "Summer_2021_Overview_10.07.21.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0839",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/Solar_One_Pager_June_2020_.pdf",
+     "size": 347456,
+     "name": "Solar_One_Pager_June_2020_.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0839",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/Shoulder_months___high_prices_FINAL_4.27.2021.pdf",
+     "size": 153827,
+     "name": "Shoulder_months___high_prices_FINAL_4.27.2021.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0839",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/ProtectingERCOTsElectricSystemFromCyberAttack.pdf",
+     "size": 182969,
+     "name": "ProtectingERCOTsElectricSystemFromCyberAttack.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0839",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/Pricing_in_ERCOT_FINAL.pdf",
+     "size": 128914,
+     "name": "Pricing_in_ERCOT_FINAL.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0839",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/PUCT_Work_Session_August_ERCOT_082621.pdf",
+     "size": 137425,
+     "name": "PUCT_Work_Session_August_ERCOT_082621.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0839",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/Media_Call_EEA_Deck_for_May_6_2021_FINAL.pdf",
+     "size": 573629,
+     "name": "Media_Call_EEA_Deck_for_May_6_2021_FINAL.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0839",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/Market_Structure_OnePager_FINAL_Revised.pdf",
+     "size": 228949,
+     "name": "Market_Structure_OnePager_FINAL_Revised.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0839",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/Gov_Abbott_LTR_070821Final.pdf",
+     "size": 538720,
+     "name": "Gov_Abbott_LTR_070821Final.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0839",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/GEWG_OnePager_FINAL_11-23-2020.pdf",
+     "size": 164419,
+     "name": "GEWG_OnePager_FINAL_11-23-2020.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0839",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/Existing_Load_Shed_Process_072621.pdf",
+     "size": 233928,
+     "name": "Existing_Load_Shed_Process_072621.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0839",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/Energy_Conservation_FINAL_SPANISH_8.12.2021.pdf",
+     "size": 57185,
+     "name": "Energy_Conservation_FINAL_SPANISH_8.12.2021.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0839",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/ESRs_and_DGRs_FINAL_10-13-20.pdf",
+     "size": 341679,
+     "name": "ESRs_and_DGRs_FINAL_10-13-20.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0839",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/ERCOT_Transmission_Planning_Overview_072621.pdf",
+     "size": 2067025,
+     "name": "ERCOT_Transmission_Planning_Overview_072621.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0839",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/ERCOT_Roadmap_October_15_2021_Update.pdf",
+     "size": 288867,
+     "name": "ERCOT_Roadmap_October_15_2021_Update.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0839",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/ERCOT_Energy_Emergency_Alert_Communications_Matrix_October_2020.pdf",
+     "size": 214391,
+     "name": "ERCOT_Energy_Emergency_Alert_Communications_Matrix_October_2020.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0839",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/ERCOT_Demand_Response__Summary_PUCT_Working_Session_091621.pdf",
+     "size": 275642,
+     "name": "ERCOT_Demand_Response__Summary_PUCT_Working_Session_091621.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0839",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/DG_and_DR_in_ERCOT_2021.pdf",
+     "size": 67770,
+     "name": "DG_and_DR_in_ERCOT_2021.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0839",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/51617__ERCOT_Resource_Outage_Approval_Process.pdf",
+     "size": 1015828,
+     "name": "51617__ERCOT_Resource_Outage_Approval_Process.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0839",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/48540_-_ERCOT_RTC_Update_2020.12.10.pdf",
+     "size": 261218,
+     "name": "48540_-_ERCOT_RTC_Update_2020.12.10.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0839",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/27706_ERCOT_Ltr_to_Commissioners_-_November_2020_Supplemental_Status_Upd....pdf",
+     "size": 1426924,
+     "name": "27706_ERCOT_Ltr_to_Commissioners_-_November_2020_Supplemental_Status_Upd....pdf"
+    },
+    {
+     "stamp": "2026-09-26-0839",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/2021_EEA_Overview_Spanish_Final.pdf",
+     "size": 167036,
+     "name": "2021_EEA_Overview_Spanish_Final.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0839",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/2021_EEA_Overview_Final.pdf",
+     "size": 342578,
+     "name": "2021_EEA_Overview_Final.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0839",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/2020_Report_on_Existing_and_Potential_Electric_System_Constraints_and_Needs.pdf",
+     "size": 2998387,
+     "name": "2020_Report_on_Existing_and_Potential_Electric_System_Constraints_and_Needs.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0839",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/2020_LTSA_Report.zip",
+     "size": 6281209,
+     "name": "2020_LTSA_Report.zip"
+    },
+    {
+     "stamp": "2026-09-26-0839",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2021/files/2026-09-26-0839/2020_Accomplishments_FINAL.pdf",
+     "size": 812845,
+     "name": "2020_Accomplishments_FINAL.pdf"
+    }
+   ],
+   "latest_key": "ercot-trending-topics-2021/2026-09-26-0829.pdf",
+   "latest": "https://archive.changesaroundme.com/ercot-trending-topics-2021/latest.pdf"
+  },
+  "ercot-trending-topics-2022": {
+   "captures": [
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2022/2026-09-26-0744.pdf",
+     "size": 80876
+    }
+   ],
+   "files": [
+    {
+     "stamp": "2026-09-26-0800",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/Wind_One_Pager_June_2020.pdf",
+     "size": 241541,
+     "name": "Wind_One_Pager_June_2020.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0800",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/West_Texas_One_Pager_May_2020.pdf",
+     "size": 231387,
+     "name": "West_Texas_One_Pager_May_2020.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0800",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/Use-of-Energy-Conservation-2024.pdf",
+     "size": 186509,
+     "name": "Use-of-Energy-Conservation-2024.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0800",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/Transmission_Planning_One_Pager_FINAL.pdf",
+     "size": 406460,
+     "name": "Transmission_Planning_One_Pager_FINAL.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0800",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/Texas_Climate_101_Winter_Temp_Extremes_081221_PUC_Work_Session.pdf",
+     "size": 288564,
+     "name": "Texas_Climate_101_Winter_Temp_Extremes_081221_PUC_Work_Session.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0800",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/Summer_Readiness_Workshop_Presentation_5.3.2021.pdf",
+     "size": 545534,
+     "name": "Summer_Readiness_Workshop_Presentation_5.3.2021.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0800",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/Summer_2021_Overview_10.07.21.pdf",
+     "size": 371993,
+     "name": "Summer_2021_Overview_10.07.21.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0800",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/Solar_One_Pager_June_2020_.pdf",
+     "size": 347456,
+     "name": "Solar_One_Pager_June_2020_.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0800",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/Shoulder_months___high_prices_FINAL_4.27.2021.pdf",
+     "size": 153827,
+     "name": "Shoulder_months___high_prices_FINAL_4.27.2021.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0800",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/Senator%20Warren%20Information%20Request.zip",
+     "size": 586973,
+     "name": "Senator Warren Information Request.zip"
+    },
+    {
+     "stamp": "2026-09-26-0800",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/ProtectingERCOTsElectricSystemFromCyberAttack.pdf",
+     "size": 182969,
+     "name": "ProtectingERCOTsElectricSystemFromCyberAttack.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0800",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/Pricing_in_ERCOT_FINAL.pdf",
+     "size": 128914,
+     "name": "Pricing_in_ERCOT_FINAL.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0800",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/PUCT_Work_Session_August_ERCOT_082621.pdf",
+     "size": 137425,
+     "name": "PUCT_Work_Session_August_ERCOT_082621.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0800",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/Media_Call_EEA_Deck_for_May_6_2021_FINAL.pdf",
+     "size": 573629,
+     "name": "Media_Call_EEA_Deck_for_May_6_2021_FINAL.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0800",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/Market_Structure_OnePager_FINAL_Revised.pdf",
+     "size": 228949,
+     "name": "Market_Structure_OnePager_FINAL_Revised.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0800",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/GEWG_OnePager_FINAL_11-23-2020.pdf",
+     "size": 164419,
+     "name": "GEWG_OnePager_FINAL_11-23-2020.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0800",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/Existing_Load_Shed_Process_072621.pdf",
+     "size": 233928,
+     "name": "Existing_Load_Shed_Process_072621.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0800",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/Energy_Conservation_FINAL_SPANISH_8.12.2021.pdf",
+     "size": 57185,
+     "name": "Energy_Conservation_FINAL_SPANISH_8.12.2021.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0800",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/ESRs_and_DGRs_FINAL_10-13-20.pdf",
+     "size": 341679,
+     "name": "ESRs_and_DGRs_FINAL_10-13-20.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0800",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/ERCOT_Transmission_Planning_Overview_072621.pdf",
+     "size": 2067025,
+     "name": "ERCOT_Transmission_Planning_Overview_072621.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0800",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/ERCOT_Demand_Response__Summary_PUCT_Working_Session_091621.pdf",
+     "size": 275642,
+     "name": "ERCOT_Demand_Response__Summary_PUCT_Working_Session_091621.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0800",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/ERCOT-Comments-EPA-Ozone-Transport-FIP.pdf",
+     "size": 342357,
+     "name": "ERCOT-Comments-EPA-Ozone-Transport-FIP.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0800",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/DG_and_DR_in_ERCOT_2021.pdf",
+     "size": 67770,
+     "name": "DG_and_DR_in_ERCOT_2021.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0800",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/87th-Legislative-Session-ERCOT-Status-June-2023.pdf",
+     "size": 428907,
+     "name": "87th-Legislative-Session-ERCOT-Status-June-2023.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0800",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/51617__ERCOT_Resource_Outage_Approval_Process.pdf",
+     "size": 1015828,
+     "name": "51617__ERCOT_Resource_Outage_Approval_Process.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0800",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/48540_-_ERCOT_RTC_Update_2020.12.10.pdf",
+     "size": 261218,
+     "name": "48540_-_ERCOT_RTC_Update_2020.12.10.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0800",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/2026-Energy-Emergency-Alert-Overview.pdf",
+     "size": 218484,
+     "name": "2026-Energy-Emergency-Alert-Overview.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0800",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/2023%20EEA%20Overview%20Final%20Spanish-%20June%202023.pdf",
+     "size": 218188,
+     "name": "2023 EEA Overview Final Spanish- June 2023.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0800",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/20220621%20Joint%20ISORTOs%20Comments%20EPA%20Ozone%20NAAQS%20Proposed%20Rule%20SPP%20ERCOT%20MISO%20PJM.pdf",
+     "size": 538883,
+     "name": "20220621 Joint ISORTOs Comments EPA Ozone NAAQS Proposed Rule SPP ERCOT MISO PJM.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0800",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/2020_Report_on_Existing_and_Potential_Electric_System_Constraints_and_Needs.pdf",
+     "size": 2998387,
+     "name": "2020_Report_on_Existing_and_Potential_Electric_System_Constraints_and_Needs.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0800",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/2020_LTSA_Report.zip",
+     "size": 6281209,
+     "name": "2020_LTSA_Report.zip"
+    },
+    {
+     "stamp": "2026-09-26-0800",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2022/files/2026-09-26-0800/2020_Accomplishments_FINAL.pdf",
+     "size": 812845,
+     "name": "2020_Accomplishments_FINAL.pdf"
+    }
+   ],
+   "latest_key": "ercot-trending-topics-2022/2026-09-26-0744.pdf",
+   "latest": "https://archive.changesaroundme.com/ercot-trending-topics-2022/latest.pdf"
+  },
+  "ercot-trending-topics-2023": {
+   "captures": [
+    {
+     "stamp": "2026-09-26-0727",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/2026-09-26-0727.pdf",
+     "size": 90841
+    }
+   ],
+   "files": [
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/Wind_One_Pager_June_2020.pdf",
+     "size": 241541,
+     "name": "Wind_One_Pager_June_2020.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/West_Texas_One_Pager_May_2020.pdf",
+     "size": 231387,
+     "name": "West_Texas_One_Pager_May_2020.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/Use-of-Energy-Conservation-2024.pdf",
+     "size": 186509,
+     "name": "Use-of-Energy-Conservation-2024.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/Transmission_Planning_One_Pager_FINAL.pdf",
+     "size": 406460,
+     "name": "Transmission_Planning_One_Pager_FINAL.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/Texas_Climate_101_Winter_Temp_Extremes_081221_PUC_Work_Session.pdf",
+     "size": 288564,
+     "name": "Texas_Climate_101_Winter_Temp_Extremes_081221_PUC_Work_Session.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/Summer_Readiness_Workshop_Presentation_5.3.2021.pdf",
+     "size": 545534,
+     "name": "Summer_Readiness_Workshop_Presentation_5.3.2021.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/Summer_2021_Overview_10.07.21.pdf",
+     "size": 371993,
+     "name": "Summer_2021_Overview_10.07.21.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/Solar_One_Pager_June_2020_.pdf",
+     "size": 347456,
+     "name": "Solar_One_Pager_June_2020_.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/Shoulder_months___high_prices_FINAL_4.27.2021.pdf",
+     "size": 153827,
+     "name": "Shoulder_months___high_prices_FINAL_4.27.2021.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/Senator%20Warren%20Information%20Request.zip",
+     "size": 586973,
+     "name": "Senator Warren Information Request.zip"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/Roadmap%20to%20Improving%20Grid%20Reliability%20-%20Jan%2026%202023.pdf",
+     "size": 369250,
+     "name": "Roadmap to Improving Grid Reliability - Jan 26 2023.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/ProtectingERCOTsElectricSystemFromCyberAttack.pdf",
+     "size": 182969,
+     "name": "ProtectingERCOTsElectricSystemFromCyberAttack.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/Pricing_in_ERCOT_FINAL.pdf",
+     "size": 128914,
+     "name": "Pricing_in_ERCOT_FINAL.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/PUCT_Work_Session_August_ERCOT_082621.pdf",
+     "size": 137425,
+     "name": "PUCT_Work_Session_August_ERCOT_082621.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/Media_Call_EEA_Deck_for_May_6_2021_FINAL.pdf",
+     "size": 573629,
+     "name": "Media_Call_EEA_Deck_for_May_6_2021_FINAL.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/Market_Structure_OnePager_FINAL_Revised.pdf",
+     "size": 228949,
+     "name": "Market_Structure_OnePager_FINAL_Revised.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/Gov_Abbott_LTR_070821Final.pdf",
+     "size": 538720,
+     "name": "Gov_Abbott_LTR_070821Final.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/GEWG_OnePager_FINAL_11-23-2020.pdf",
+     "size": 164419,
+     "name": "GEWG_OnePager_FINAL_11-23-2020.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/Existing_Load_Shed_Process_072621.pdf",
+     "size": 233928,
+     "name": "Existing_Load_Shed_Process_072621.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/Energy_Conservation_FINAL_SPANISH_8.12.2021.pdf",
+     "size": 57185,
+     "name": "Energy_Conservation_FINAL_SPANISH_8.12.2021.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/ESRs_and_DGRs_FINAL_10-13-20.pdf",
+     "size": 341679,
+     "name": "ESRs_and_DGRs_FINAL_10-13-20.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/ERCOT_Transmission_Planning_Overview_072621.pdf",
+     "size": 2067025,
+     "name": "ERCOT_Transmission_Planning_Overview_072621.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/ERCOT_TXANS_One_pager.pdf",
+     "size": 497771,
+     "name": "ERCOT_TXANS_One_pager.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/ERCOT_Demand_Response__Summary_Spring_2023-update.pdf",
+     "size": 311501,
+     "name": "ERCOT_Demand_Response__Summary_Spring_2023-update.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/ERCOT-Comments-on-DOE-Transmission-Needs-Study-Public.pdf",
+     "size": 254923,
+     "name": "ERCOT-Comments-on-DOE-Transmission-Needs-Study-Public.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/ERCOT-Comments-EPA-Ozone-Transport-FIP.pdf",
+     "size": 342357,
+     "name": "ERCOT-Comments-EPA-Ozone-Transport-FIP.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/December-2022-Cold-Weather-Operations-Public-Report.pdf",
+     "size": 1928756,
+     "name": "December-2022-Cold-Weather-Operations-Public-Report.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/DG_and_DR_in_ERCOT_2025.pptx",
+     "size": 66357,
+     "name": "DG_and_DR_in_ERCOT_2025.pptx"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/Ancillary-Services-Handout.pdf",
+     "size": 1842982,
+     "name": "Ancillary-Services-Handout.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/88th%20Legislative%20Session%20-%20ERCOT%20Status.pdf",
+     "size": 493943,
+     "name": "88th Legislative Session - ERCOT Status.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/87th-Legislative-Session-ERCOT-Status-June-2023.pdf",
+     "size": 428907,
+     "name": "87th-Legislative-Session-ERCOT-Status-June-2023.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/51617__ERCOT_Resource_Outage_Approval_Process.pdf",
+     "size": 1015828,
+     "name": "51617__ERCOT_Resource_Outage_Approval_Process.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/48540_-_ERCOT_RTC_Update_2020.12.10.pdf",
+     "size": 261218,
+     "name": "48540_-_ERCOT_RTC_Update_2020.12.10.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/27706_ERCOT_Ltr_to_Commissioners_-_November_2020_Supplemental_Status_Upd....pdf",
+     "size": 1426924,
+     "name": "27706_ERCOT_Ltr_to_Commissioners_-_November_2020_Supplemental_Status_Upd....pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/2026-Energy-Emergency-Alert-Overview.pdf",
+     "size": 218484,
+     "name": "2026-Energy-Emergency-Alert-Overview.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/2023%20EEA%20Overview%20Final%20Spanish-%20June%202023.pdf",
+     "size": 218188,
+     "name": "2023 EEA Overview Final Spanish- June 2023.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/20220621%20Joint%20ISORTOs%20Comments%20EPA%20Ozone%20NAAQS%20Proposed%20Rule%20SPP%20ERCOT%20MISO%20PJM.pdf",
+     "size": 538883,
+     "name": "20220621 Joint ISORTOs Comments EPA Ozone NAAQS Proposed Rule SPP ERCOT MISO PJM.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/2020_Report_on_Existing_and_Potential_Electric_System_Constraints_and_Needs.pdf",
+     "size": 2998387,
+     "name": "2020_Report_on_Existing_and_Potential_Electric_System_Constraints_and_Needs.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/2020_LTSA_Report.zip",
+     "size": 6281209,
+     "name": "2020_LTSA_Report.zip"
+    },
+    {
+     "stamp": "2026-09-26-0744",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2023/files/2026-09-26-0744/2020_Accomplishments_FINAL.pdf",
+     "size": 812845,
+     "name": "2020_Accomplishments_FINAL.pdf"
+    }
+   ],
+   "latest_key": "ercot-trending-topics-2023/2026-09-26-0727.pdf",
+   "latest": "https://archive.changesaroundme.com/ercot-trending-topics-2023/latest.pdf"
+  },
+  "ercot-trending-topics-2024": {
+   "captures": [
+    {
+     "stamp": "2026-09-26-0725",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2024/2026-09-26-0725.pdf",
+     "size": 73145
+    }
+   ],
+   "files": [
+    {
+     "stamp": "2026-09-26-0726",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2024/files/2026-09-26-0726/rfp-mra-rmr.pdf",
+     "size": 215085,
+     "name": "rfp-mra-rmr.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0726",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2024/files/2026-09-26-0726/Reliability-Plan-For-The-Permian-Basin-Region.pdf",
+     "size": 198478,
+     "name": "Reliability-Plan-For-The-Permian-Basin-Region.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0726",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2024/files/2026-09-26-0726/ERCOT_Trending_topic_RMR.pdf",
+     "size": 106713,
+     "name": "ERCOT_Trending_topic_RMR.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0726",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2024/files/2026-09-26-0726/ERCOT_Trending_Topic_RFP.pdf",
+     "size": 303951,
+     "name": "ERCOT_Trending_Topic_RFP.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0726",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2024/files/2026-09-26-0726/ERCOT_Trending_Topic_Load_Shed.pdf",
+     "size": 109395,
+     "name": "ERCOT_Trending_Topic_Load_Shed.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0726",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2024/files/2026-09-26-0726/ERCOT_Trending_Topic_GTCs.pdf",
+     "size": 313844,
+     "name": "ERCOT_Trending_Topic_GTCs.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0726",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2024/files/2026-09-26-0726/ERCOT_Trending_Topic_ECRS.pdf",
+     "size": 308887,
+     "name": "ERCOT_Trending_Topic_ECRS.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0726",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2024/files/2026-09-26-0726/ERCOT_Trending_Topic_AAN.pdf",
+     "size": 115183,
+     "name": "ERCOT_Trending_Topic_AAN.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0726",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2024/files/2026-09-26-0726/ERCOT-Trending-Topic-RTC-B.pdf",
+     "size": 317621,
+     "name": "ERCOT-Trending-Topic-RTC-B.pdf"
+    },
+    {
+     "stamp": "2026-09-26-0726",
+     "url": "https://archive.changesaroundme.com/ercot-trending-topics-2024/files/2026-09-26-0726/ERCOT-Ancillary-Services-Trending-Topic.pdf",
+     "size": 929117,
+     "name": "ERCOT-Ancillary-Services-Trending-Topic.pdf"
+    }
+   ],
+   "latest_key": "ercot-trending-topics-2024/2026-09-26-0725.pdf",
+   "latest": "https://archive.changesaroundme.com/ercot-trending-topics-2024/latest.pdf"
   },
   "lcra-water-public-comment": {
    "captures": [
