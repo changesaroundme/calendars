@@ -544,6 +544,21 @@ organizations:
     name: Electric Reliability Council of Texas (ERCOT)
     page: Organizations/ERCOT
     pages:
+      - slug: ercot-board-ical
+        name: Board of Directors meetings (iCal feed)
+        url: https://www.ercot.com/ical/meetings?host_id=board
+        calendar: ercot
+        parse: ics
+        public: no
+        added: 2026-09-25
+      - slug: ercot-llwg-ical
+        name: Large Load Working Group meetings (iCal feed)
+        url: https://www.ercot.com/ical/meetings?host_id=llwg
+        calendar: ercot
+        parse: ics
+        expect: sporadic
+        public: no
+        added: 2026-09-25
       - slug: ercot-trending-topics
         name: Trending Topics
         url: https://www.ercot.com/news/trendingtopics
@@ -588,6 +603,14 @@ organizations:
             url: https://www.ercot.com/news/trendingtopics/2018
             check: every 30 days
             added: 2026-09-25
+      - slug: ercot-news-releases
+        name: News Releases
+        url: https://www.ercot.com/news/releases
+        added: 2026-09-25
+      - slug: ercot-board
+        name: Board of Directors
+        url: https://www.ercot.com/committees/board
+        added: 2026-09-25
 
   Legislature:
     name: Texas Legislature

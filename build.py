@@ -36,7 +36,8 @@ from caltools import registry, sourcespage
 from caltools.ics import CENTRAL, emit
 from caltools.model import Event
 from sources import (atp, austin, campo, capmetro, ctrma, curated, lcra,
-                     legislature, openmeetings, puc, tpsc, txdot, txdotev)
+                     legislature, openmeetings, puc, tpsc, txdot, txdotev,
+                     ercot)
 
 ROOT = pathlib.Path(__file__).parent
 DOCS = ROOT / "docs"
@@ -63,6 +64,9 @@ CALENDARS = {
     # Texas Pedestrian Safety Coalition (TTI-hosted; added 2026-09-04) —
     # neutral grey with the other post-palette orgs.
     "tpsc": ("CAM - TPSC", tpsc, "#6E6E6E"),
+    # ERCOT committee feeds (added 2026-09-25) — neutral grey with the other
+    # post-palette orgs.
+    "ercot": ("CAM - ERCOT", ercot, "#6E6E6E"),
 }
 # All 8 validated categorical slots are now assigned to orgs; the combined
 # feeds get a neutral (they never appear next to org colors in the embed).

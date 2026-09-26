@@ -1,0 +1,113 @@
+BEGIN:VCALENDAR
+PRODID:-//Events Calendar//iCal4j 1.0//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+DTSTAMP:20260926T040127Z
+DTSTART;TZID=America/Chicago:20261207T150000
+DTEND:20261207T170000
+SUMMARY:Board of Directors Meeting
+UID:68bbe1f8-4ea3-443e-b30c-c79095f8a3df
+DESCRIPTION:For more information: https://www.ercot.com/calendar/12072026-Board-of-Directors-Meeting
+LOCATION:[ERCOT Austin\,  Boardroom B]
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260926T040127Z
+DTSTART;TZID=America/Chicago:20261208T150000
+DTEND:20261208T170000
+SUMMARY:Board of Directors Meeting
+UID:a820051a-bdbc-41bc-9d45-867d5354f514
+DESCRIPTION:For more information: https://www.ercot.com/calendar/12082026-Board-of-Directors-Meeting
+LOCATION:[ERCOT Austin\,  Boardroom B]
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260926T040127Z
+DTSTART;TZID=America/Chicago:20270208T143000
+DTEND:20270208T170000
+SUMMARY:Board of Directors Meeting
+UID:9443b2d4-e76f-4252-a8fc-bb02232555f0
+DESCRIPTION:For more information: https://www.ercot.com/calendar/02082027-Board-of-Directors-Meeting
+LOCATION:[ERCOT Austin\,  Boardroom B and C]
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260926T040127Z
+DTSTART;TZID=America/Chicago:20270209T083000
+DTEND:20270209T170000
+SUMMARY:Board of Directors Meeting
+UID:888f2e6f-6c6f-49f2-a0fa-5e7a8c844f4c
+DESCRIPTION:For more information: https://www.ercot.com/calendar/02092027-Board-of-Directors-Meeting
+LOCATION:[ERCOT Austin\,  Boardroom B and C]
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260926T040127Z
+DTSTART;TZID=America/Chicago:20270412T143000
+DTEND:20270412T170000
+SUMMARY:Board of Directors Meeting
+UID:306cc379-d325-4b4a-839a-cdb7ea2a5794
+DESCRIPTION:For more information: https://www.ercot.com/calendar/04122027-Board-of-Directors-Meeting
+LOCATION:[ERCOT Austin\,  Boardroom B and C]
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260926T040127Z
+DTSTART;TZID=America/Chicago:20270413T083000
+DTEND:20270413T170000
+SUMMARY:Board of Directors Meeting
+UID:348d5d8a-0c99-4c11-b945-e3b2ce29732a
+DESCRIPTION:For more information: https://www.ercot.com/calendar/04132027-Board-of-Directors-Meeting
+LOCATION:[ERCOT Austin\,  Boardroom B and C]
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260926T040127Z
+DTSTART;TZID=America/Chicago:20270621T143000
+DTEND:20270621T170000
+SUMMARY:Board of Directors Meeting
+UID:57a25bbd-cd65-458d-98da-8b67e80e1776
+DESCRIPTION:For more information: https://www.ercot.com/calendar/06212027-Board-of-Directors-Meeting
+LOCATION:[ERCOT Austin\,  Boardroom B and C]
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260926T040127Z
+DTSTART;TZID=America/Chicago:20270622T083000
+DTEND:20270622T170000
+SUMMARY:Board of Directors Meeting
+UID:9ab8e2ca-b335-40d2-96ab-7215ce612f6f
+DESCRIPTION:For more information: https://www.ercot.com/calendar/06222027-Board-of-Directors-Meeting
+LOCATION:[ERCOT Austin\,  Boardroom B and C]
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260926T040127Z
+DTSTART;TZID=America/Chicago:20270920T143000
+DTEND:20270920T170000
+SUMMARY:Board of Directors Meeting
+UID:9bb8133b-8084-4ac8-b6d9-23c3544c0e51
+DESCRIPTION:For more information: https://www.ercot.com/calendar/09202027-Board-of-Directors-Meeting
+LOCATION:[ERCOT Austin\,  Boardroom B and C]
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260926T040127Z
+DTSTART;TZID=America/Chicago:20270921T083000
+DTEND:20270921T170000
+SUMMARY:Board of Directors Meeting
+UID:79b7ebe4-5d87-4d26-b202-6878012cd2a9
+DESCRIPTION:For more information: https://www.ercot.com/calendar/09212027-Board-of-Directors-Meeting
+LOCATION:[ERCOT Austin\,  Boardroom B and C]
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260926T040127Z
+DTSTART;TZID=America/Chicago:20271206T143000
+DTEND:20271206T170000
+SUMMARY:Board of Directors Meeting
+UID:a60dd699-4fb9-48df-86f3-f49696c86799
+DESCRIPTION:For more information: https://www.ercot.com/calendar/12062027-Board-of-Directors-Meeting
+LOCATION:[ERCOT Austin\,  Boardroom B and C]
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260926T040127Z
+DTSTART;TZID=America/Chicago:20271207T083000
+DTEND:20271207T170000
+SUMMARY:Board of Directors Meeting
+UID:ffd86983-e6e0-4762-81bf-8f0d6ee057f2
+DESCRIPTION:For more information: https://www.ercot.com/calendar/12072027-Board-of-Directors-Meeting
+LOCATION:[ERCOT Austin\,  Boardroom B and C]
+END:VEVENT
+END:VCALENDAR
