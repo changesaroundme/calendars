@@ -459,6 +459,21 @@ organizations:
         url: https://www.mobilityauthority.com/board-meetings/upcoming/
         calendar: ctrma
         added: 2026-07-19
+      - slug: ctrma-290-extension
+        name: 290 Extension Project
+        url: https://290extensionproject.com/
+        added: 2026-09-26
+        note: >-
+          Environmental study of a 15-mile toll extension of US 290 from SH 130
+          to east of SH 95 South (Travis to Bastrop County), with TxDOT. Its
+          open houses reach the TxDOT Events calendar through the hearings
+          index scraper.
+        children:
+          - slug: ctrma-290-extension-open-house
+            name: 290 Extension open house (fall 2026)
+            url: https://290extensionproject.com/openhouse/
+            check: daily
+            added: 2026-09-26
 
   LCRA:
     name: Lower Colorado River Authority (LCRA)

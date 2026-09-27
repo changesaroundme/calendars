@@ -488,3 +488,20 @@
     billion of transportation construction. Mingling on the City Hall plaza
     from 2pm CDT, with coffee and tacos and partner staff answering
     questions; brief remarks from officials at 3pm, then a photo opportunity.
+
+# --- added 2026-09-26 (290 Extension Project, link via chat) -----------------
+# Source: https://290extensionproject.com/openhouse/ — the Elgin (29 Sep) and
+# Manor (1 Oct) open houses are already scraped onto txdotev from TxDOT's
+# hearings index; the deadline below is from that TxDOT notice.
+
+- summary: "CTRMA - 290 Extension public comments close"
+  start: 2026-10-30
+  org: txdotev
+  url: https://290extensionproject.com/openhouse/
+  kind: comment-window
+  description: |
+    Last day to comment on the Mobility Authority's proposed design for
+    extending US 290 as a toll road from SH 130 to east of SH 95 South
+    (Travis and Bastrop counties). In-person open houses were in Elgin
+    (29 Sep) and Manor (1 Oct); the virtual open house runs 29 Sep - 30 Oct 2026.
+    Details and how to comment: https://290extensionproject.com/openhouse/
