@@ -3368,6 +3368,19 @@
  },
  {
   "source": "austin",
+  "summary": "City Council: Public Safety Committee",
+  "start": "2026-10-05T14:00:00",
+  "end": "2026-10-05T16:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4215&GID=684&G=4BED8896-C64D-4912-8005-D624C5197AA5",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-public-safety-committee-20261005T1400@calendars.changesaroundme.com",
+  "description": "Summary Agenda\n\nBriefings:\n- Emergency response to the April 13, 2025, northwest Austin house explosion incident in the Great Hills Neighborhood\n- Improvements to warning notifications and alerts for residents during active emergencies\n- Wildfire prevention and mitigation strategies utilized by the City\n\n\u2014\n\nAgenda: https://austintexas.legistar1.com/austintexas/meetings/2026/10/4215_A_Public_Safety_Committee_26-10-05_Committee_Agenda.pdf",
+  "all_day": false
+ },
+ {
+  "source": "austin",
   "summary": "Austin Water - Open House on Large Water Users",
   "start": "2026-10-05T17:30:00",
   "end": "2026-10-05T19:30:00",
