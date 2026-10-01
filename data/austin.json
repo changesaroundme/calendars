@@ -3407,6 +3407,19 @@
  },
  {
   "source": "austin",
+  "summary": "City Council: Work Session",
+  "start": "2026-10-06T09:00:00",
+  "end": "2026-10-06T11:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4124&GID=684&G=4BED8896-C64D-4912-8005-D624C5197AA5",
+  "status": "CONFIRMED",
+  "kind": "work-session",
+  "uid": "austin-city-council-work-session-20261006T0900@calendars.changesaroundme.com",
+  "description": "Summary Agenda\n\nBriefings:\nB1: The No Wrong Door initiative, a coordinated crisis response program connecting high-utilizer individuals with permanent supportive services, including housing,\u2026\n\nE1. Discuss legal issues related to Levins et al. v. City of Austin et al., D-1-GN-26-009327, in the 53rd District Court in Travis County, Texas concerning legal c\u2026 (26-2910, Executive Session)\n\n\u2014\n\nAgenda: https://austintexas.legistar1.com/austintexas/meetings/2026/10/4124_A_City_Council_Work_Session_26-10-06_City_Council_Agenda.pdf",
+  "all_day": false
+ },
+ {
+  "source": "austin",
   "summary": "CoA: Urban Transportation Commission",
   "start": "2026-10-06T17:00:00",
   "end": "2026-10-06T20:00:00",
@@ -3415,7 +3428,7 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-urban-transportation-commission-20261006@calendars.changesaroundme.com",
-  "description": "Typical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).",
+  "description": "Summary Agenda\n\n1 briefing:\n- Curb Management Study Briefing. Presentation\n\n2 discussion and action items:\n\n#3: The Mayor\u2019s Public Spaces Task Force Outcomes Report\n\n#4: Discussion and approval of 2027 Urban Transportation Commission meeting dates\n\n5 updates:\n- Update from Commissioner Chen from the Downtown Commission regarding actions taken at the August 19, 2026, and September 16, 2026, meetings.\n- Update from Commissioner Prasad from the Joint Sustainability Committee regarding actions taken at the August 26, 2026, and September 23, 2026, meetings.\n- Update from Commissioner Schumacher from the Bicycle Advisory Council regarding actions taken at the August 18, 2026, and September 15, 2026, meetings.\n- Update from Commissioner Kavelman from the Pedestrian Advisory Council regarding actions taken at the August 3, 2026, and September 15, 2026, meetings.\n- Update from Chair Somers from the Community Advisory Committee of the Austin Transit Partnership Board regarding actions taken at the August 13, 2026, and September 10, 2026, meetings.\n\n\u2014\n\nAgenda: https://services.austintexas.gov/edims/document.cfm?id=482168",
   "all_day": false
  },
  {
