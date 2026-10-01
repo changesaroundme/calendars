@@ -3433,6 +3433,19 @@
  },
  {
   "source": "austin",
+  "summary": "City Council: Public Health Committee",
+  "start": "2026-10-07T10:00:00",
+  "end": "2026-10-07T12:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4226&GID=684&G=4BED8896-C64D-4912-8005-D624C5197AA5",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-public-health-committee-20261007T1000@calendars.changesaroundme.com",
+  "description": "Summary Agenda\n\n3. Discussion and possible action on social services strategy that will include issue area, compliance, and policy discussion. (26-2675, Discussion and Possible Action)\n4. Discussion and possible action regarding updates to the No Wrong Door initiative, a coordinated crisis response program, identifying permanent supportive solut\u2026 (26-2681, Discussion and Possible Action)\n\nBriefings:\n- Briefing by Central Health on the Fiscal Year 2025 - 2026 Year of Access accomplishments, Fiscal Year 2026 - 2027 Budget investments highlights, and Mental Hea\u2026\n\n\u2014\n\nAgenda: https://austintexas.legistar1.com/austintexas/meetings/2026/10/4226_A_Public_Health_Committee___26-10-07_Committee_Agenda.pdf",
+  "all_day": false
+ },
+ {
+  "source": "austin",
   "summary": "CoA: Environmental Commission",
   "start": "2026-10-07T18:00:00",
   "end": "2026-10-07T21:00:00",
@@ -3441,7 +3454,7 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-environmental-commission-20261007@calendars.changesaroundme.com",
-  "description": "Typical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).",
+  "description": "Summary Agenda\n\n3 discussion and action items:\n\n#4: Approve a recommendation to Council from the Dog\u2019s Head Working Group regarding the regulating plan for the area commonly known as Dog's Head, bounded by the Co\u2026\n\n#5: Approve a recommendation to Council regarding development agreement amendments for the area commonly known as Dog's Head, bounded by the Colorado River, US High\u2026\n\n#6: Approve the 2027 annual schedule of the Environmental Commission\n\n\u2014\n\nAgenda: https://services.austintexas.gov/edims/document.cfm?id=482206",
   "all_day": false
  },
  {
@@ -3463,11 +3476,11 @@
   "start": "2026-10-08T10:00:00",
   "end": "2026-10-08T12:00:00",
   "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
-  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4078&GID=684&G=4BED8896-C64D-4912-8005-D624C5197AA5",
+  "url": "https://austintexas.legistar.com/Calendar.aspx",
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-city-council-20261008T1000@calendars.changesaroundme.com",
-  "description": "Summary Agenda\n\n- 19 consent items\n- 4 zoning and neighborhood plan amendments items\n- 3 items from council\n- 2 eminent domain  items\n- 1 ahfc meeting item\n- 1 public hearing item",
+  "description": "",
   "all_day": false
  },
  {

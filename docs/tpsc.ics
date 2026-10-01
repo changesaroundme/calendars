@@ -26,27 +26,8 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:tpsc-coalition-meeting-20250930@calendars.changesaroundme.com
-DTSTAMP:20261001T021120Z
-DTSTART;TZID=America/Chicago:20250930T100000
-DTEND;TZID=America/Chicago:20250930T113000
-SUMMARY:TPSC: Coalition Meeting
-URL:https://www.texaspedsafety.org/september-2025-texas-pedestrian-safety-c
- oalition-meeting/
-DESCRIPTION:Virtual meeting (Microsoft Teams)\n\n—\n\nSummary Agenda\n\n1
- 0:10 Review of Texas Pedestrian & Bicycle Safety Assessment\n10:20 Results
-  of Texas Pedestrian & Bicycle Safety Assessment\n10:30 Review of Priority
-  Recommendations from Texas Pedestrian & Bicycle Safety Assessment (Engine
- ering)\n11:10 Next Steps for Texas Pedestrian Safety Task Force\n11:20 Sta
- keholder Updates\n\n—\n\nSlides: https://www.texaspedsafety.org/wp-conte
- nt/uploads/2025/10/TPSC-Meeting-September-30-2025.pdf\nTranscript: https:/
- /www.texaspedsafety.org/wp-content/uploads/2025/10/TPSC-Meeting.docx
-CATEGORIES:regular
-X-CAM-ORG:tpsc
-END:VEVENT
-BEGIN:VEVENT
 UID:tpsc-coalition-meeting-20251211@calendars.changesaroundme.com
-DTSTAMP:20261001T021120Z
+DTSTAMP:20261001T172249Z
 DTSTART;TZID=America/Chicago:20251211T100000
 DTEND;TZID=America/Chicago:20251211T113000
 SUMMARY:TPSC: Coalition Meeting
@@ -65,7 +46,7 @@ X-CAM-ORG:tpsc
 END:VEVENT
 BEGIN:VEVENT
 UID:tpsc-forum-20260506@calendars.changesaroundme.com
-DTSTAMP:20261001T021120Z
+DTSTAMP:20261001T172249Z
 DTSTART;VALUE=DATE:20260506
 SUMMARY:TPSC: Texas Pedestrian Safety Forum
 LOCATION:AT&T Center\, Austin\, TX
@@ -78,7 +59,7 @@ X-CAM-ORG:tpsc
 END:VEVENT
 BEGIN:VEVENT
 UID:tpsc-coalition-meeting-20260820@calendars.changesaroundme.com
-DTSTAMP:20261001T021120Z
+DTSTAMP:20261001T172249Z
 DTSTART;TZID=America/Chicago:20260820T100000
 DTEND;TZID=America/Chicago:20260820T113000
 SUMMARY:TPSC: Coalition Meeting
@@ -101,7 +82,7 @@ X-CAM-ORG:tpsc
 END:VEVENT
 BEGIN:VEVENT
 UID:tpsc-webinar-20260826@calendars.changesaroundme.com
-DTSTAMP:20261001T021120Z
+DTSTAMP:20261001T172249Z
 DTSTART;TZID=America/Chicago:20260826T133000
 DTEND;TZID=America/Chicago:20260826T143000
 SUMMARY:TPSC: Webinar – What does Texas’ New Sidewalk User Law Really M
@@ -115,7 +96,7 @@ X-CAM-ORG:tpsc
 END:VEVENT
 BEGIN:VEVENT
 UID:tpsc-webinar-20260915@calendars.changesaroundme.com
-DTSTAMP:20261001T021120Z
+DTSTAMP:20261001T172249Z
 DTSTART;VALUE=DATE:20260915
 SUMMARY:TPSC: Webinar – SafeAcross: A Plug-and-Play Pedestrian Safety Ini
  tiative​
@@ -128,7 +109,7 @@ X-CAM-ORG:tpsc
 END:VEVENT
 BEGIN:VEVENT
 UID:tpsc-webinar-20260917@calendars.changesaroundme.com
-DTSTAMP:20261001T021120Z
+DTSTAMP:20261001T172249Z
 DTSTART;VALUE=DATE:20260917
 SUMMARY:TPSC: Webinar – Understanding the Impact of Vehicle Design on Ped
  estrian Safety
@@ -141,7 +122,7 @@ X-CAM-ORG:tpsc
 END:VEVENT
 BEGIN:VEVENT
 UID:tpsc-coalition-meeting-20260929@calendars.changesaroundme.com
-DTSTAMP:20261001T021120Z
+DTSTAMP:20261001T172249Z
 DTSTART;TZID=America/Chicago:20260929T100000
 DTEND;TZID=America/Chicago:20260929T113000
 SUMMARY:TPSC: Coalition Meeting
