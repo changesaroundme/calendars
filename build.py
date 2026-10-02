@@ -37,7 +37,7 @@ from caltools.ics import CENTRAL, emit
 from caltools.model import Event
 from sources import (atp, austin, campo, capmetro, ctrma, curated, lcra,
                      legislature, openmeetings, puc, tpsc, txdot, txdotev,
-                     ercot)
+                     ercot, trailcons)
 
 ROOT = pathlib.Path(__file__).parent
 DOCS = ROOT / "docs"
@@ -67,6 +67,10 @@ CALENDARS = {
     # ERCOT committee feeds (added 2026-09-25) — neutral grey with the other
     # post-palette orgs.
     "ercot": ("CAM - ERCOT", ercot, "#6E6E6E"),
+    # The Trail Conservancy (added 2026-10-01) — community-engagement events
+    # only, from its events REST API. "Trail Cons.", not TTC: that is the
+    # Texas Transportation Commission here. Neutral grey with the others.
+    "trailcons": ("CAM - Trail Cons.", trailcons, "#6E6E6E"),
 }
 # All 8 validated categorical slots are now assigned to orgs; the combined
 # feeds get a neutral (they never appear next to org colors in the embed).

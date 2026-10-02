@@ -25,6 +25,7 @@
     --org-puc:     #6e6e6e;
     --org-tpsc:    #6e6e6e;
     --org-ercot:   #6e6e6e;
+    --org-trailcons: #6e6e6e;
   }
   /* Dark values apply via OS setting (unless ?theme=light) or ?theme=dark. */
   @media (prefers-color-scheme: dark) {
@@ -46,6 +47,7 @@
       --org-puc:     #9a9a91;
     --org-tpsc:    #9a9a91;
     --org-ercot:   #9a9a91;
+    --org-trailcons: #9a9a91;
     }
   }
   :root[data-theme="dark"] {
@@ -66,6 +68,7 @@
     --org-puc:     #9a9a91;
     --org-tpsc:    #9a9a91;
     --org-ercot:   #9a9a91;
+    --org-trailcons: #9a9a91;
   }
   /* Natural height: the page grows to fit the grid (a 6-week month
      renders in full instead of scrolling internally — Ian, 2026-08-18).
@@ -164,6 +167,7 @@ const ORGS = [
   { key: "puc",     label: "PUC",     match: u => u.startsWith("puc-") },
   { key: "tpsc",    label: "TPSC",    match: u => u.startsWith("tpsc-") },
   { key: "ercot",   label: "ERCOT",   match: u => u.startsWith("ercot-") },
+  { key: "trailcons", label: "Trail Cons.", match: u => u.startsWith("trailcons-") },
 ];
 const hidden = new Set();
 

@@ -13,7 +13,7 @@
 #   start:     (required) 2026-09-15 for all-day, 2026-09-15 17:30 for timed
 #   org:       (required) which calendar it lands in — one of:
 #              campo capmetro txdot lcra ctrma austin atp txdotev
-#              legislature puc
+#              legislature puc tpsc ercot trailcons
 #   end:       optional. Timed events default to start + 2h. For multi-day
 #              all-day events, `end:` is the LAST day (inclusive).
 #   location:  optional street address

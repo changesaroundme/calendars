@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-26T14:50:14Z",
+ "generated": "2026-10-02T11:40:41Z",
  "public_url": "https://archive.changesaroundme.com",
  "sources": {
   "_unlisted/East Riverside Corridor Planning Initiative Survey - Round 2": {
@@ -20,6 +20,68 @@
    ],
    "latest_key": "_unlisted/East Riverside Corridor Planning Initiative Survey - Round 2/2026-09-07-2351.pdf",
    "latest": "https://archive.changesaroundme.com/_unlisted/East%20Riverside%20Corridor%20Planning%20Initiative%20Survey%20-%20Round%202/latest.pdf"
+  },
+  "_unlisted/Project Open House": {
+   "captures": [
+    {
+     "stamp": "2026-09-27-0656",
+     "url": "https://archive.changesaroundme.com/_unlisted/Project%20Open%20House/2026-09-27-0656.pdf",
+     "size": 294610
+    }
+   ],
+   "files": [],
+   "latest_key": "_unlisted/Project Open House/2026-09-27-0656.pdf",
+   "latest": "https://archive.changesaroundme.com/_unlisted/Project%20Open%20House/latest.pdf"
+  },
+  "_unlisted/Proposed January 2027 Service Changes Capital Metro Austin Public Transit": {
+   "captures": [
+    {
+     "stamp": "2026-09-21-2255",
+     "url": "https://archive.changesaroundme.com/_unlisted/Proposed%20January%202027%20Service%20Changes%20Capital%20Metro%20Austin%20Public%20Transit/2026-09-21-2255.pdf",
+     "size": 320582
+    }
+   ],
+   "files": [
+    {
+     "stamp": "2026-09-21-2256",
+     "url": "https://archive.changesaroundme.com/_unlisted/Proposed%20January%202027%20Service%20Changes%20Capital%20Metro%20Austin%20Public%20Transit/files/2026-09-21-2256/proposed_jan2027_railschedule_weekday.pdf",
+     "size": 179613,
+     "name": "proposed_jan2027_railschedule_weekday.pdf"
+    }
+   ],
+   "latest_key": "_unlisted/Proposed January 2027 Service Changes Capital Metro Austin Public Transit/2026-09-21-2255.pdf",
+   "latest": "https://archive.changesaroundme.com/_unlisted/Proposed%20January%202027%20Service%20Changes%20Capital%20Metro%20Austin%20Public%20Transit/latest.pdf"
+  },
+  "_unlisted/Shaping Austins Economic Development Policy": {
+   "captures": [
+    {
+     "stamp": "2026-09-20-1128",
+     "url": "https://archive.changesaroundme.com/_unlisted/Shaping%20Austins%20Economic%20Development%20Policy/2026-09-20-1128.pdf",
+     "size": 3986949
+    }
+   ],
+   "files": [
+    {
+     "stamp": "2026-09-19-0022",
+     "url": "https://archive.changesaroundme.com/_unlisted/Shaping%20Austins%20Economic%20Development%20Policy/files/2026-09-19-0022/FY-2026-27-Proposed-Budget-Vol-II.pdf",
+     "size": 24303,
+     "name": "FY-2026-27-Proposed-Budget-Vol-II.pdf"
+    },
+    {
+     "stamp": "2026-09-19-0022",
+     "url": "https://archive.changesaroundme.com/_unlisted/Shaping%20Austins%20Economic%20Development%20Policy/files/2026-09-19-0022/FY-2026-27-Proposed-Budget-Vol-I.pdf",
+     "size": 24298,
+     "name": "FY-2026-27-Proposed-Budget-Vol-I.pdf"
+    },
+    {
+     "stamp": "2026-09-19-0022",
+     "url": "https://archive.changesaroundme.com/_unlisted/Shaping%20Austins%20Economic%20Development%20Policy/files/2026-09-19-0022/20260507-024_%20Agenda%20Backup_%20Revised%20Exhibit%20A%20V2%20-%20Clean.PDF",
+     "size": 52500,
+     "name": "20260507-024_ Agenda Backup_ Revised Exhibit A V2 - Clean.PDF"
+    }
+   ],
+   "latest_key": "_unlisted/Shaping Austins Economic Development Policy/2026-09-20-1128.pdf",
+   "latest": "https://archive.changesaroundme.com/_unlisted/Shaping%20Austins%20Economic%20Development%20Policy/latest.pdf"
   },
   "atp-board-briefs": {
    "captures": [
@@ -1165,6 +1227,12 @@
    ],
    "files": [
     {
+     "stamp": "2026-10-02-0635",
+     "url": "https://archive.changesaroundme.com/capmetro-board-meetings/files/2026-10-02-0635/community-involvement-policy_8-2019.pdf",
+     "size": 253357,
+     "name": "community-involvement-policy_8-2019.pdf"
+    },
+    {
      "stamp": "2026-09-25-0632",
      "url": "https://archive.changesaroundme.com/capmetro-board-meetings/files/2026-09-25-0632/community-involvement-policy_8-2019.pdf",
      "size": 253358,
@@ -1183,13 +1251,26 @@
   "capmetro-fare-increase": {
    "captures": [
     {
+     "stamp": "2026-10-02-0634",
+     "url": "https://archive.changesaroundme.com/capmetro-fare-increase/2026-10-02-0634.pdf",
+     "size": 1298661,
+     "changed_lines": 108
+    },
+    {
      "stamp": "2026-09-21-2257",
      "url": "https://archive.changesaroundme.com/capmetro-fare-increase/2026-09-21-2257.pdf",
      "size": 1516546
     }
    ],
-   "files": [],
-   "latest_key": "capmetro-fare-increase/2026-09-21-2257.pdf",
+   "files": [
+    {
+     "stamp": "2026-10-02-0635",
+     "url": "https://archive.changesaroundme.com/capmetro-fare-increase/files/2026-10-02-0635/rfid-card-program-packet.pdf",
+     "size": 133153,
+     "name": "rfid-card-program-packet.pdf"
+    }
+   ],
+   "latest_key": "capmetro-fare-increase/2026-10-02-0634.pdf",
    "latest": "https://archive.changesaroundme.com/capmetro-fare-increase/latest.pdf"
   },
   "capmetro-rail-and-trail-improvements": {
@@ -1202,6 +1283,36 @@
    ],
    "files": [
     {
+     "stamp": "2026-09-27-0655",
+     "url": "https://archive.changesaroundme.com/capmetro-rail-and-trail-improvements/files/2026-09-27-0655/Red%20Line%20Trail%20Rendering.jpg",
+     "size": 21979829,
+     "name": "Red Line Trail Rendering.jpg"
+    },
+    {
+     "stamp": "2026-09-27-0655",
+     "url": "https://archive.changesaroundme.com/capmetro-rail-and-trail-improvements/files/2026-09-27-0655/Plaza%20Satillo%20Station%20Rendering.jpg",
+     "size": 20286210,
+     "name": "Plaza Satillo Station Rendering.jpg"
+    },
+    {
+     "stamp": "2026-09-27-0655",
+     "url": "https://archive.changesaroundme.com/capmetro-rail-and-trail-improvements/files/2026-09-27-0655/Key%20Map%20Rendering%20-%20Exhibit%203.jpg",
+     "size": 5166028,
+     "name": "Key Map Rendering - Exhibit 3.jpg"
+    },
+    {
+     "stamp": "2026-09-27-0655",
+     "url": "https://archive.changesaroundme.com/capmetro-rail-and-trail-improvements/files/2026-09-27-0655/Key%20Map%20Rendering%20-%20Exhibit%202.jpg",
+     "size": 4847910,
+     "name": "Key Map Rendering - Exhibit 2.jpg"
+    },
+    {
+     "stamp": "2026-09-27-0655",
+     "url": "https://archive.changesaroundme.com/capmetro-rail-and-trail-improvements/files/2026-09-27-0655/Key%20Map%20Rendering%20-%20Exhibit%201.jpg",
+     "size": 5500732,
+     "name": "Key Map Rendering - Exhibit 1.jpg"
+    },
+    {
      "stamp": "2026-09-19-0022",
      "url": "https://archive.changesaroundme.com/capmetro-rail-and-trail-improvements/files/2026-09-19-0022/FAQ_s%20Document.pdf",
      "size": 204809,
@@ -1212,36 +1323,6 @@
      "url": "https://archive.changesaroundme.com/capmetro-rail-and-trail-improvements/files/2026-09-19-0003/East_5th_Street_Community_Feedback_Report_9.23.24.pdf",
      "size": 6415464,
      "name": "East_5th_Street_Community_Feedback_Report_9.23.24.pdf"
-    },
-    {
-     "stamp": "2026-09-01-1621",
-     "url": "https://archive.changesaroundme.com/capmetro-rail-and-trail-improvements/files/2026-09-01-1621/Red%20Line%20Trail%20Rendering.jpg",
-     "size": 21979829,
-     "name": "Red Line Trail Rendering.jpg"
-    },
-    {
-     "stamp": "2026-09-01-1621",
-     "url": "https://archive.changesaroundme.com/capmetro-rail-and-trail-improvements/files/2026-09-01-1621/Plaza%20Satillo%20Station%20Rendering.jpg",
-     "size": 20286210,
-     "name": "Plaza Satillo Station Rendering.jpg"
-    },
-    {
-     "stamp": "2026-09-01-1620",
-     "url": "https://archive.changesaroundme.com/capmetro-rail-and-trail-improvements/files/2026-09-01-1620/Key%20Map%20Rendering%20-%20Exhibit%203.jpg",
-     "size": 5166028,
-     "name": "Key Map Rendering - Exhibit 3.jpg"
-    },
-    {
-     "stamp": "2026-09-01-1620",
-     "url": "https://archive.changesaroundme.com/capmetro-rail-and-trail-improvements/files/2026-09-01-1620/Key%20Map%20Rendering%20-%20Exhibit%202.jpg",
-     "size": 4847910,
-     "name": "Key Map Rendering - Exhibit 2.jpg"
-    },
-    {
-     "stamp": "2026-09-01-1620",
-     "url": "https://archive.changesaroundme.com/capmetro-rail-and-trail-improvements/files/2026-09-01-1620/Key%20Map%20Rendering%20-%20Exhibit%201.jpg",
-     "size": 5500732,
-     "name": "Key Map Rendering - Exhibit 1.jpg"
     }
    ],
    "latest_key": "capmetro-rail-and-trail-improvements/2026-09-20-1130.pdf",
@@ -1300,6 +1381,12 @@
   "capmetro-red-line-trail-study": {
    "captures": [
     {
+     "stamp": "2026-10-01-0638",
+     "url": "https://archive.changesaroundme.com/capmetro-red-line-trail-study/2026-10-01-0638.pdf",
+     "size": 12399265,
+     "changed_lines": 4
+    },
+    {
      "stamp": "2026-09-20-1132",
      "url": "https://archive.changesaroundme.com/capmetro-red-line-trail-study/2026-09-20-1132.pdf",
      "size": 12596005
@@ -1319,11 +1406,17 @@
      "name": "Design-Guidelines-for-a-Trail-Project-within-CapMetro-Rail-Right-of-Way.pdf"
     }
    ],
-   "latest_key": "capmetro-red-line-trail-study/2026-09-20-1132.pdf",
+   "latest_key": "capmetro-red-line-trail-study/2026-10-01-0638.pdf",
    "latest": "https://archive.changesaroundme.com/capmetro-red-line-trail-study/latest.pdf"
   },
   "capmetro-service-changes": {
    "captures": [
+    {
+     "stamp": "2026-10-02-0631",
+     "url": "https://archive.changesaroundme.com/capmetro-service-changes/2026-10-02-0631.pdf",
+     "size": 185708,
+     "changed_lines": 2
+    },
     {
      "stamp": "2026-09-21-2255",
      "url": "https://archive.changesaroundme.com/capmetro-service-changes/2026-09-21-2255.pdf",
@@ -1331,7 +1424,7 @@
     }
    ],
    "files": [],
-   "latest_key": "capmetro-service-changes/2026-09-21-2255.pdf",
+   "latest_key": "capmetro-service-changes/2026-10-02-0631.pdf",
    "latest": "https://archive.changesaroundme.com/capmetro-service-changes/latest.pdf"
   },
   "capmetro-service-changes-aug-2026": {
@@ -1452,24 +1545,36 @@
   "capmetro-service-changes-jan-2027": {
    "captures": [
     {
-     "stamp": "2026-09-21-2255",
-     "url": "https://archive.changesaroundme.com/capmetro-service-changes-jan-2027/2026-09-21-2255.pdf",
-     "size": 320582
+     "stamp": "2026-10-02-0633",
+     "url": "https://archive.changesaroundme.com/capmetro-service-changes-jan-2027/2026-10-02-0633.pdf",
+     "size": 308681,
+     "changed_lines": 2
+    },
+    {
+     "stamp": "2026-09-29-0657",
+     "url": "https://archive.changesaroundme.com/capmetro-service-changes-jan-2027/2026-09-29-0657.pdf",
+     "size": 308012
     }
    ],
    "files": [
     {
-     "stamp": "2026-09-21-2256",
-     "url": "https://archive.changesaroundme.com/capmetro-service-changes-jan-2027/files/2026-09-21-2256/proposed_jan2027_railschedule_weekday.pdf",
+     "stamp": "2026-09-29-0712",
+     "url": "https://archive.changesaroundme.com/capmetro-service-changes-jan-2027/files/2026-09-29-0712/proposed_jan2027_railschedule_weekday.pdf",
      "size": 179613,
      "name": "proposed_jan2027_railschedule_weekday.pdf"
     }
    ],
-   "latest_key": "capmetro-service-changes-jan-2027/2026-09-21-2255.pdf",
+   "latest_key": "capmetro-service-changes-jan-2027/2026-10-02-0633.pdf",
    "latest": "https://archive.changesaroundme.com/capmetro-service-changes-jan-2027/latest.pdf"
   },
   "coa-2908-south-congress": {
    "captures": [
+    {
+     "stamp": "2026-09-27-0630",
+     "url": "https://archive.changesaroundme.com/coa-2908-south-congress/2026-09-27-0630.pdf",
+     "size": 1108532,
+     "changed_lines": 23
+    },
     {
      "stamp": "2026-09-24-0630",
      "url": "https://archive.changesaroundme.com/coa-2908-south-congress/2026-09-24-0630.pdf",
@@ -1495,7 +1600,7 @@
      "name": "Deletta Dean_ Director_ Austin Housing.PDF"
     }
    ],
-   "latest_key": "coa-2908-south-congress/2026-09-24-0630.pdf",
+   "latest_key": "coa-2908-south-congress/2026-09-27-0630.pdf",
    "latest": "https://archive.changesaroundme.com/coa-2908-south-congress/latest.pdf"
   },
   "coa-airport-corridor": {
@@ -1628,7 +1733,14 @@
      "size": 248557
     }
    ],
-   "files": [],
+   "files": [
+    {
+     "stamp": "2026-09-27-0632",
+     "url": "https://archive.changesaroundme.com/coa-barton-springs-road-bridge/files/2026-09-27-0632/BSRB%20BCER%20Public%20Release%20Redacted_Prepared%20for%20Accessibility_Updated%20on%205-15-26.pdf",
+     "size": 102740267,
+     "name": "BSRB BCER Public Release Redacted_Prepared for Accessibility_Updated on 5-15-26.pdf"
+    }
+   ],
    "latest_key": "coa-barton-springs-road-bridge/2026-09-01-1636.pdf",
    "latest": "https://archive.changesaroundme.com/coa-barton-springs-road-bridge/latest.pdf"
   },
@@ -1641,6 +1753,12 @@
     }
    ],
    "files": [
+    {
+     "stamp": "2026-09-27-0633",
+     "url": "https://archive.changesaroundme.com/coa-burnet-road-corridor/files/2026-09-27-0633/CDS-Action-Plan-Map.pdf",
+     "size": 89767867,
+     "name": "CDS-Action-Plan-Map.pdf"
+    },
     {
      "stamp": "2026-09-19-0007",
      "url": "https://archive.changesaroundme.com/coa-burnet-road-corridor/files/2026-09-19-0007/North%20Lamar%20-%20Burnet%20Corridor%20Report%20-%202013-12.pdf",
@@ -1696,6 +1814,18 @@
   "coa-central-city-district-plan": {
    "captures": [
     {
+     "stamp": "2026-09-30-0755",
+     "url": "https://archive.changesaroundme.com/coa-central-city-district-plan/2026-09-30-0755.pdf",
+     "size": 6216610,
+     "changed_lines": 1
+    },
+    {
+     "stamp": "2026-09-27-0640",
+     "url": "https://archive.changesaroundme.com/coa-central-city-district-plan/2026-09-27-0640.pdf",
+     "size": 6932086,
+     "changed_lines": 50
+    },
+    {
      "stamp": "2026-09-24-0650",
      "url": "https://archive.changesaroundme.com/coa-central-city-district-plan/2026-09-24-0650.pdf",
      "size": 5256593,
@@ -1713,6 +1843,36 @@
     }
    ],
    "files": [
+    {
+     "stamp": "2026-09-30-0801",
+     "url": "https://archive.changesaroundme.com/coa-central-city-district-plan/files/2026-09-30-0801/2016-South-Central-Waterfront-Vision-Framework.pdf",
+     "size": 24703,
+     "name": "2016-South-Central-Waterfront-Vision-Framework.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0641",
+     "url": "https://archive.changesaroundme.com/coa-central-city-district-plan/files/2026-09-27-0641/gsrc-np.pdf",
+     "size": 11430654,
+     "name": "gsrc-np.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0641",
+     "url": "https://archive.changesaroundme.com/coa-central-city-district-plan/files/2026-09-27-0641/ca-combined-np.pdf",
+     "size": 18129499,
+     "name": "ca-combined-np.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0641",
+     "url": "https://archive.changesaroundme.com/coa-central-city-district-plan/files/2026-09-27-0641/bouldin-np.pdf",
+     "size": 15867325,
+     "name": "bouldin-np.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0641",
+     "url": "https://archive.changesaroundme.com/coa-central-city-district-plan/files/2026-09-27-0641/2016-South-Central-Waterfront-Vision-Framework.pdf",
+     "size": 24703,
+     "name": "2016-South-Central-Waterfront-Vision-Framework.pdf"
+    },
     {
      "stamp": "2026-09-24-0651",
      "url": "https://archive.changesaroundme.com/coa-central-city-district-plan/files/2026-09-24-0651/Open%20House%20_3%20Presentation.pdf",
@@ -1840,7 +2000,7 @@
      "name": "20100624-151_ Agenda Backup (Master Plan  - Part 1).PDF"
     }
    ],
-   "latest_key": "coa-central-city-district-plan/2026-09-24-0650.pdf",
+   "latest_key": "coa-central-city-district-plan/2026-09-30-0755.pdf",
    "latest": "https://archive.changesaroundme.com/coa-central-city-district-plan/latest.pdf"
   },
   "coa-cesar-chavez-renaming": {
@@ -1884,6 +2044,18 @@
    ],
    "files": [
     {
+     "stamp": "2026-09-30-0820",
+     "url": "https://archive.changesaroundme.com/coa-cesar-chavez-renaming-survey/files/2026-09-30-0820/Street_Naming_Standards.pdf",
+     "size": 24565,
+     "name": "Street_Naming_Standards.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0642",
+     "url": "https://archive.changesaroundme.com/coa-cesar-chavez-renaming-survey/files/2026-09-27-0642/Street_Naming_Standards.pdf",
+     "size": 24565,
+     "name": "Street_Naming_Standards.pdf"
+    },
+    {
      "stamp": "2026-09-24-0652",
      "url": "https://archive.changesaroundme.com/coa-cesar-chavez-renaming-survey/files/2026-09-24-0652/Street_Naming_Standards.pdf",
      "size": 24565,
@@ -1925,6 +2097,12 @@
   },
   "coa-citywide-density-bonus": {
    "captures": [
+    {
+     "stamp": "2026-09-27-0634",
+     "url": "https://archive.changesaroundme.com/coa-citywide-density-bonus/2026-09-27-0634.pdf",
+     "size": 3262261,
+     "changed_lines": 299
+    },
     {
      "stamp": "2026-09-01-1637",
      "url": "https://archive.changesaroundme.com/coa-citywide-density-bonus/2026-09-01-1637.pdf",
@@ -1999,11 +2177,17 @@
      "name": "20250605-080_ Resolution.PDF"
     }
    ],
-   "latest_key": "coa-citywide-density-bonus/2026-09-01-1637.pdf",
+   "latest_key": "coa-citywide-density-bonus/2026-09-27-0634.pdf",
    "latest": "https://archive.changesaroundme.com/coa-citywide-density-bonus/latest.pdf"
   },
   "coa-east-austin-historic-resource-survey": {
    "captures": [
+    {
+     "stamp": "2026-09-30-0820",
+     "url": "https://archive.changesaroundme.com/coa-east-austin-historic-resource-survey/2026-09-30-0820.pdf",
+     "size": 2017619,
+     "changed_lines": 1
+    },
     {
      "stamp": "2026-09-24-0652",
      "url": "https://archive.changesaroundme.com/coa-east-austin-historic-resource-survey/2026-09-24-0652.pdf",
@@ -2029,7 +2213,7 @@
      "name": "Mini-Grant Application Questions_East Austin Historic Resource Survey.pdf"
     }
    ],
-   "latest_key": "coa-east-austin-historic-resource-survey/2026-09-24-0652.pdf",
+   "latest_key": "coa-east-austin-historic-resource-survey/2026-09-30-0820.pdf",
    "latest": "https://archive.changesaroundme.com/coa-east-austin-historic-resource-survey/latest.pdf"
   },
   "coa-east-austin-parking-survey": {
@@ -2131,13 +2315,19 @@
   "coa-eilers-park-survey-1": {
    "captures": [
     {
+     "stamp": "2026-10-02-0630",
+     "url": "https://archive.changesaroundme.com/coa-eilers-park-survey-1/2026-10-02-0630.pdf",
+     "size": 2946198,
+     "changed_lines": 2
+    },
+    {
      "stamp": "2026-09-26-0639",
      "url": "https://archive.changesaroundme.com/coa-eilers-park-survey-1/2026-09-26-0639.pdf",
      "size": 2945426
     }
    ],
    "files": [],
-   "latest_key": "coa-eilers-park-survey-1/2026-09-26-0639.pdf",
+   "latest_key": "coa-eilers-park-survey-1/2026-10-02-0630.pdf",
    "latest": "https://archive.changesaroundme.com/coa-eilers-park-survey-1/latest.pdf"
   },
   "coa-etod-overlay-phase-2": {
@@ -2230,6 +2420,12 @@
    ],
    "files": [
     {
+     "stamp": "2026-09-27-0644",
+     "url": "https://archive.changesaroundme.com/coa-green-infrastructure-initiative/files/2026-09-27-0644/TARP_Quarterly-Report-December-2025.pdf",
+     "size": 299585,
+     "name": "TARP_Quarterly-Report-December-2025.pdf"
+    },
+    {
      "stamp": "2026-09-19-0013",
      "url": "https://archive.changesaroundme.com/coa-green-infrastructure-initiative/files/2026-09-19-0013/Richard%20Mendoza_%20PE_%20Director_%20Transportation%20and%20Public%20Works%20Department%20.PDF",
      "size": 218737,
@@ -2284,6 +2480,12 @@
    ],
    "files": [
     {
+     "stamp": "2026-09-27-0644",
+     "url": "https://archive.changesaroundme.com/coa-i35-central-samp/files/2026-09-27-0644/I-35-Central-Small-Area-Mobility-Plan.pdf",
+     "size": 31695556,
+     "name": "I-35-Central-Small-Area-Mobility-Plan.pdf"
+    },
+    {
      "stamp": "2026-09-01-1529",
      "url": "https://archive.changesaroundme.com/coa-i35-central-samp/files/2026-09-01-1529/Draft_I35%20Central%20SAMP.pdf",
      "size": 32593155,
@@ -2296,6 +2498,18 @@
   "coa-imagine-austin-update": {
    "captures": [
     {
+     "stamp": "2026-09-30-0907",
+     "url": "https://archive.changesaroundme.com/coa-imagine-austin-update/2026-09-30-0907.pdf",
+     "size": 3038528,
+     "changed_lines": 23
+    },
+    {
+     "stamp": "2026-09-27-0644",
+     "url": "https://archive.changesaroundme.com/coa-imagine-austin-update/2026-09-27-0644.pdf",
+     "size": 1681802,
+     "changed_lines": 2
+    },
+    {
      "stamp": "2026-09-20-1119",
      "url": "https://archive.changesaroundme.com/coa-imagine-austin-update/2026-09-20-1119.pdf",
      "size": 1638497
@@ -2307,6 +2521,12 @@
     }
    ],
    "files": [
+    {
+     "stamp": "2026-09-27-0645",
+     "url": "https://archive.changesaroundme.com/coa-imagine-austin-update/files/2026-09-27-0645/ImagineAustin_%20CommunityWorkingGroup_Meeting3_Presentation_09.24.2026.pdf",
+     "size": 10551462,
+     "name": "ImagineAustin_ CommunityWorkingGroup_Meeting3_Presentation_09.24.2026.pdf"
+    },
     {
      "stamp": "2026-09-19-0014",
      "url": "https://archive.changesaroundme.com/coa-imagine-austin-update/files/2026-09-19-0014/ImagineAustin_CommunityWorkingGroup_Meeting%2001_Presentation_07.16.2026.pdf",
@@ -2356,7 +2576,7 @@
      "name": "20231212-B001_ Agenda Backup_ Presentation.PDF"
     }
    ],
-   "latest_key": "coa-imagine-austin-update/2026-09-20-1119.pdf",
+   "latest_key": "coa-imagine-austin-update/2026-09-30-0907.pdf",
    "latest": "https://archive.changesaroundme.com/coa-imagine-austin-update/latest.pdf"
   },
   "coa-mobility-bond-projects-map": {
@@ -2382,6 +2602,1171 @@
    "files": [],
    "latest_key": "coa-mokan-trail/2026-09-02-1548.pdf",
    "latest": "https://archive.changesaroundme.com/coa-mokan-trail/latest.pdf"
+  },
+  "coa-neighborhood-plan-amendment-cases": {
+   "captures": [
+    {
+     "stamp": "2026-10-02-0631",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plan-amendment-cases/2026-10-02-0631.pdf",
+     "size": 2495438,
+     "changed_lines": 3
+    },
+    {
+     "stamp": "2026-09-28-0925",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plan-amendment-cases/2026-09-28-0925.pdf",
+     "size": 2481522
+    }
+   ],
+   "files": [],
+   "latest_key": "coa-neighborhood-plan-amendment-cases/2026-10-02-0631.pdf",
+   "latest": "https://archive.changesaroundme.com/coa-neighborhood-plan-amendment-cases/latest.pdf"
+  },
+  "coa-neighborhood-plans-resources": {
+   "captures": [
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/2026-09-27-1904.pdf",
+     "size": 27060032
+    }
+   ],
+   "files": [
+    {
+     "stamp": "2026-10-01-0634",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-10-01-0634/2026-Restricted-Front-Side-Yard-Parking-Application_Fillable.pdf",
+     "size": 24438,
+     "name": "2026-Restricted-Front-Side-Yard-Parking-Application_Fillable.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0634",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-10-01-0634/2026-Mobile-Food-Vendor-Application_Fillable.pdf",
+     "size": 24358,
+     "name": "2026-Mobile-Food-Vendor-Application_Fillable.pdf"
+    },
+    {
+     "stamp": "2026-09-28-0712",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-28-0712/2026-Restricted-Front-Side-Yard-Parking-Application_Fillable.pdf",
+     "size": 24438,
+     "name": "2026-Restricted-Front-Side-Yard-Parking-Application_Fillable.pdf"
+    },
+    {
+     "stamp": "2026-09-28-0712",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-28-0712/2026-Mobile-Food-Vendor-Application_Fillable.pdf",
+     "size": 24358,
+     "name": "2026-Mobile-Food-Vendor-Application_Fillable.pdf"
+    },
+    {
+     "stamp": "2026-09-27-2048",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-2048/nloop_plan_ord.pdf",
+     "size": 203311,
+     "name": "nloop_plan_ord.pdf"
+    },
+    {
+     "stamp": "2026-09-27-2048",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-2048/nloop-np.pdf",
+     "size": 11562632,
+     "name": "nloop-np.pdf"
+    },
+    {
+     "stamp": "2026-09-27-2048",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-2048/nlamar_implementation.pdf",
+     "size": 1082148,
+     "name": "nlamar_implementation.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1910",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1910/2026-Restricted-Front-Side-Yard-Parking-Application_Fillable.pdf",
+     "size": 24438,
+     "name": "2026-Restricted-Front-Side-Yard-Parking-Application_Fillable.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1910",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1910/2026-Mobile-Food-Vendor-Application_Fillable.pdf",
+     "size": 24358,
+     "name": "2026-Mobile-Food-Vendor-Application_Fillable.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/zoning_landuse_chart.pdf",
+     "size": 19528,
+     "name": "zoning_landuse_chart.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/zoning_guide.pdf",
+     "size": 961548,
+     "name": "zoning_guide.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/wp_bylaws.pdf",
+     "size": 225094,
+     "name": "wp_bylaws.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/what_is_a_npct_english_2018.pdf",
+     "size": 237402,
+     "name": "what_is_a_npct_english_2018.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/westgate_bylaws.pdf",
+     "size": 2564961,
+     "name": "westgate_bylaws.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/upper_bcreek_bylaws.pdf",
+     "size": 154660,
+     "name": "upper_bcreek_bylaws.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/upper-bcreek-np.pdf",
+     "size": 22587511,
+     "name": "upper-bcreek-np.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/univ_hills_bylaws.pdf",
+     "size": 50977,
+     "name": "univ_hills_bylaws.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/uhwp_plan_ord_1-27-20.pdf",
+     "size": 112234,
+     "name": "uhwp_plan_ord_1-27-20.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/uhwp_implementation.pdf",
+     "size": 1027965,
+     "name": "uhwp_implementation.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/uhwp-np_Part3.pdf",
+     "size": 24421096,
+     "name": "uhwp-np_Part3.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/uhwp-np_Part2.pdf",
+     "size": 34050543,
+     "name": "uhwp-np_Part2.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/uhwp-np_Part1.pdf",
+     "size": 36763018,
+     "name": "uhwp-np_Part1.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/ubc_plan_ord_1-27-20.pdf",
+     "size": 121303,
+     "name": "ubc_plan_ord_1-27-20.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/ubc_implementation.pdf",
+     "size": 978220,
+     "name": "ubc_implementation.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/stj_bylaws.pdf",
+     "size": 25228,
+     "name": "stj_bylaws.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/southeast-np.pdf",
+     "size": 5931073,
+     "name": "southeast-np.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/southaustin_implementation.pdf",
+     "size": 937068,
+     "name": "southaustin_implementation.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/south_manchaca_bylaws.pdf",
+     "size": 429181,
+     "name": "south_manchaca_bylaws.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/sjch_implementation.pdf",
+     "size": 1045991,
+     "name": "sjch_implementation.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/sjch-np.pdf",
+     "size": 24972694,
+     "name": "sjch-np.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/sec_plan_ord.pdf",
+     "size": 82853,
+     "name": "sec_plan_ord.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/sec_implementation.pdf",
+     "size": 964432,
+     "name": "sec_implementation.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/scongress_bylaws.pdf",
+     "size": 483265,
+     "name": "scongress_bylaws.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/scongress-np.pdf",
+     "size": 10152129,
+     "name": "scongress-np.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/scc_plan_ord.pdf",
+     "size": 78789,
+     "name": "scc_plan_ord.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/scc_implementation.pdf",
+     "size": 912145,
+     "name": "scc_implementation.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/rosewood_plan_ord.pdf",
+     "size": 74231,
+     "name": "rosewood_plan_ord.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/rosewood_implementation.pdf",
+     "size": 950439,
+     "name": "rosewood_implementation.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/rosewood_bylaws.pdf",
+     "size": 26044,
+     "name": "rosewood_bylaws.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/rosewood-np.pdf",
+     "size": 6440645,
+     "name": "rosewood-np.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/role_in_plan_amendments_english.pdf",
+     "size": 173818,
+     "name": "role_in_plan_amendments_english.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/owa_plan_ord.pdf",
+     "size": 193810,
+     "name": "owa_plan_ord.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/owa_implementation.pdf",
+     "size": 929252,
+     "name": "owa_implementation.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/owa_bylaws.pdf",
+     "size": 43608,
+     "name": "owa_bylaws.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/owa-np.pdf",
+     "size": 2411546,
+     "name": "owa-np.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/overview_of__neighborhood_planning_english.pdf",
+     "size": 212447,
+     "name": "overview_of__neighborhood_planning_english.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/oakhill_implementation.pdf",
+     "size": 1002394,
+     "name": "oakhill_implementation.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/oakhill_bylaws.pdf",
+     "size": 705241,
+     "name": "oakhill_bylaws.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/oakhill-np.pdf",
+     "size": 26148033,
+     "name": "oakhill-np.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/nsc_implementation.pdf",
+     "size": 896308,
+     "name": "nsc_implementation.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/npstatus_tab_9-19-18.pdf",
+     "size": 2783421,
+     "name": "npstatus_tab_9-19-18.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/npct_legal_standing_memo.pdf",
+     "size": 56743,
+     "name": "npct_legal_standing_memo.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/nloop_implementation.pdf",
+     "size": 965668,
+     "name": "nloop_implementation.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/nloop_bylaws.pdf",
+     "size": 259050,
+     "name": "nloop_bylaws.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/nlcnpa_adopted_plan_082610.pdf",
+     "size": 20421761,
+     "name": "nlcnpa_adopted_plan_082610.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/neighborhood_infill_tools_map.pdf",
+     "size": 13140833,
+     "name": "neighborhood_infill_tools_map.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/neighborhood_design_tools_map.pdf",
+     "size": 4730147,
+     "name": "neighborhood_design_tools_map.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/nbg_plan_ord.pdf",
+     "size": 192715,
+     "name": "nbg_plan_ord.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/naca_plan_ord_1-27-20.pdf",
+     "size": 112066,
+     "name": "naca_plan_ord_1-27-20.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/naca_implementation.pdf",
+     "size": 914811,
+     "name": "naca_implementation.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/naca_bylaws.pdf",
+     "size": 105609,
+     "name": "naca_bylaws.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/naca-np.pdf",
+     "size": 7756843,
+     "name": "naca-np.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/montopolis_plan_ord2.pdf",
+     "size": 386761,
+     "name": "montopolis_plan_ord2.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/montopolis_implementation.pdf",
+     "size": 883631,
+     "name": "montopolis_implementation.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/montopolis_bylaws.pdf",
+     "size": 177157,
+     "name": "montopolis_bylaws.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/montopolis-np.pdf",
+     "size": 5599325,
+     "name": "montopolis-np.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/mobile_food_vending_faq.pdf",
+     "size": 91359,
+     "name": "mobile_food_vending_faq.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/mfv_app.pdf",
+     "size": 1213595,
+     "name": "mfv_app.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/land_use_and_zoning_english.pdf",
+     "size": 262841,
+     "name": "land_use_and_zoning_english.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/infill_tools.pdf",
+     "size": 2498963,
+     "name": "infill_tools.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/hydepark_plan_ord.pdf",
+     "size": 184456,
+     "name": "hydepark_plan_ord.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/hydepark_implementation.pdf",
+     "size": 912365,
+     "name": "hydepark_implementation.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/hydepark_bylaws.pdf",
+     "size": 551819,
+     "name": "hydepark_bylaws.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/hydepark-np.pdf",
+     "size": 29486993,
+     "name": "hydepark-np.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/how_to_write_plan_amendment_recommendations_english.pdf",
+     "size": 177699,
+     "name": "how_to_write_plan_amendment_recommendations_english.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/holly_implementation.pdf",
+     "size": 907260,
+     "name": "holly_implementation.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/holly-np.pdf",
+     "size": 2502032,
+     "name": "holly-np.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/hhwh_plan_ord_1-27-20.pdf",
+     "size": 104862,
+     "name": "hhwh_plan_ord_1-27-20.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/hhwh_implementation.pdf",
+     "size": 1068454,
+     "name": "hhwh_implementation.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/hhwh_bylaws.pdf",
+     "size": 61748,
+     "name": "hhwh_bylaws.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/hhwh-np.pdf",
+     "size": 21420447,
+     "name": "hhwh-np.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/gsrc_plan_ord_08-25-21A.pdf.pdf",
+     "size": 126978,
+     "name": "gsrc_plan_ord_08-25-21A.pdf.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/gsrc_implementation.pdf",
+     "size": 948497,
+     "name": "gsrc_implementation.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/gsrc_bylaws.pdf",
+     "size": 62474,
+     "name": "gsrc_bylaws.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/gsrc-np.pdf",
+     "size": 11430654,
+     "name": "gsrc-np.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/govalle%20johnston%20terrace%20amendments%20May%202026.pdf",
+     "size": 99900,
+     "name": "govalle johnston terrace amendments May 2026.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/gjt_implementation.pdf",
+     "size": 889091,
+     "name": "gjt_implementation.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/gjt_bylaws.pdf",
+     "size": 116315,
+     "name": "gjt_bylaws.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/eroc_plan_ord.pdf",
+     "size": 88234,
+     "name": "eroc_plan_ord.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/eroc_implementation.pdf",
+     "size": 1027114,
+     "name": "eroc_implementation.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/eroc-np.pdf",
+     "size": 15003975,
+     "name": "eroc-np.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/emlk_plan_ord_9-16-20.pdf",
+     "size": 119093,
+     "name": "emlk_plan_ord_9-16-20.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/emlk_implementation.pdf",
+     "size": 1015563,
+     "name": "emlk_implementation.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/emlk_bylaws.pdf",
+     "size": 147018,
+     "name": "emlk_bylaws.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/ecc_plan_ord_1-27-20.pdf",
+     "size": 88429,
+     "name": "ecc_plan_ord_1-27-20.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/ecc_implementation.pdf",
+     "size": 1044064,
+     "name": "ecc_implementation.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/ecc_bylaws.pdf",
+     "size": 115252,
+     "name": "ecc_bylaws.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/ecc-np.pdf",
+     "size": 6427682,
+     "name": "ecc-np.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/dawson_plan_ord_1-27-20.pdf",
+     "size": 112040,
+     "name": "dawson_plan_ord_1-27-20.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/dawson_implementation.pdf",
+     "size": 895281,
+     "name": "dawson_implementation.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/dawson_bylaws.pdf",
+     "size": 313433,
+     "name": "dawson_bylaws.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/dawson-np.pdf",
+     "size": 4503657,
+     "name": "dawson-np.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/cwa_plan_ord.pdf",
+     "size": 191999,
+     "name": "cwa_plan_ord.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/cwa_implementation.pdf",
+     "size": 1132780,
+     "name": "cwa_implementation.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/cwa_bylaws.pdf",
+     "size": 33415,
+     "name": "cwa_bylaws.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/cwa-combined-np.pdf",
+     "size": 15029213,
+     "name": "cwa-combined-np.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/crestview_bylaws.pdf",
+     "size": 30602,
+     "name": "crestview_bylaws.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/crest_wooten_plan_ord.pdf",
+     "size": 204816,
+     "name": "crest_wooten_plan_ord.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/crest_wooten_implementation.pdf",
+     "size": 922977,
+     "name": "crest_wooten_implementation.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/crest-wooten-np.pdf",
+     "size": 8954648,
+     "name": "crest-wooten-np.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/coronado_hills_bylaws.pdf",
+     "size": 519530,
+     "name": "coronado_hills_bylaws.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/communityorg_2018.pdf",
+     "size": 147085,
+     "name": "communityorg_2018.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/chestnut_plan_ord.pdf",
+     "size": 197548,
+     "name": "chestnut_plan_ord.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/chestnut_implementation.pdf",
+     "size": 916468,
+     "name": "chestnut_implementation.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/chestnut_flum.pdf",
+     "size": 386779,
+     "name": "chestnut_flum.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/chestnut_bylaws%20Rev121420.pdf",
+     "size": 177406,
+     "name": "chestnut_bylaws Rev121420.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/chestnut-np.pdf",
+     "size": 18069817,
+     "name": "chestnut-np.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/centra_east_flum.pdf",
+     "size": 930271,
+     "name": "centra_east_flum.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/cea_plan_ord.pdf",
+     "size": 91268,
+     "name": "cea_plan_ord.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/cea_implementation.pdf",
+     "size": 926476,
+     "name": "cea_implementation.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/cea_bylaws.pdf",
+     "size": 69047,
+     "name": "cea_bylaws.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/cea-np.pdf",
+     "size": 7330864,
+     "name": "cea-np.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/cac_plan_ord.pdf",
+     "size": 228681,
+     "name": "cac_plan_ord.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/cac_implementation.pdf",
+     "size": 968542,
+     "name": "cac_implementation.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/ca-combined-np.pdf",
+     "size": 18129499,
+     "name": "ca-combined-np.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/brent_high_plan_ord.pdf",
+     "size": 213446,
+     "name": "brent_high_plan_ord.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/brent_high_implementation.pdf",
+     "size": 954270,
+     "name": "brent_high_implementation.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/brent_bylaws.pdf",
+     "size": 154108,
+     "name": "brent_bylaws.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/bouldin_plan_ord.pdf",
+     "size": 72537,
+     "name": "bouldin_plan_ord.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/bouldin_implementation.pdf",
+     "size": 917059,
+     "name": "bouldin_implementation.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/bouldin-np.pdf",
+     "size": 15867325,
+     "name": "bouldin-np.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/WNPCT-Bylaws-2024-12-09.pdf",
+     "size": 144810,
+     "name": "WNPCT-Bylaws-2024-12-09.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/Upper_Boggy_Creek_FLUM.pdf",
+     "size": 965171,
+     "name": "Upper_Boggy_Creek_FLUM.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/University_Hills_Windsor_Park.pdf",
+     "size": 2233984,
+     "name": "University_Hills_Windsor_Park.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/St_John_Coronado_Hills_Combined_FLUM.pdf",
+     "size": 820190,
+     "name": "St_John_Coronado_Hills_Combined_FLUM.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/St-John-Coronado-Hills-Cases-Chart.pdf",
+     "size": 147916,
+     "name": "St-John-Coronado-Hills-Cases-Chart.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/Southeast_Combined.pdf",
+     "size": 6142667,
+     "name": "Southeast_Combined.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/South_Congress_Combined_7_9_2025.pdf",
+     "size": 2375788,
+     "name": "South_Congress_Combined_7_9_2025.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/South_Austin_Combined_FLUM.pdf",
+     "size": 4248330,
+     "name": "South_Austin_Combined_FLUM.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/South%20Austin%20Combined_Plan%20and%20Ordinance%20Chart.pdf",
+     "size": 102018,
+     "name": "South Austin Combined_Plan and Ordinance Chart.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/SACNP_FINAL_PMPa.pdf",
+     "size": 41194253,
+     "name": "SACNP_FINAL_PMPa.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/Rosewood_FLUM_April_2026.pdf",
+     "size": 1723695,
+     "name": "Rosewood_FLUM_April_2026.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/PDR_staff_resources_Nov_2018.pdf",
+     "size": 124644,
+     "name": "PDR_staff_resources_Nov_2018.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/Oak_Hill_Combined.pdf",
+     "size": 4887511,
+     "name": "Oak_Hill_Combined.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/Oak-Hill-NPA-Cases-Ord-Chart-Jan-2024.pdf",
+     "size": 127664,
+     "name": "Oak-Hill-NPA-Cases-Ord-Chart-Jan-2024.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/North_Shoal_Creek_FLUM.pdf",
+     "size": 617477,
+     "name": "North_Shoal_Creek_FLUM.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/North_Loop_FLUM.pdf",
+     "size": 1244840,
+     "name": "North_Loop_FLUM.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/North_Lamar_FLUM_7_9_2025.pdf",
+     "size": 3438288,
+     "name": "North_Lamar_FLUM_7_9_2025.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/North_Burnet_Gateway_FLUM_April_2026.pdf",
+     "size": 2024789,
+     "name": "North_Burnet_Gateway_FLUM_April_2026.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/North_Austin_Civic_Association_FLUM_7_9_2025.pdf",
+     "size": 2973368,
+     "name": "North_Austin_Civic_Association_FLUM_7_9_2025.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/North%20Lamar%20Cases%20Spreadsheet.pdf",
+     "size": 126298,
+     "name": "North Lamar Cases Spreadsheet.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/NSCNP_ADOPTED.pdf",
+     "size": 13205269,
+     "name": "NSCNP_ADOPTED.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/NSCNPCTByLaws09252018.pdf",
+     "size": 601386,
+     "name": "NSCNPCTByLaws09252018.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/NPCT_dispute_resolution_instructions.pdf",
+     "size": 761137,
+     "name": "NPCT_dispute_resolution_instructions.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/NPCT_dispute_resolution_complaintform.pdf",
+     "size": 646771,
+     "name": "NPCT_dispute_resolution_complaintform.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/NBG%20plan.pdf",
+     "size": 44994118,
+     "name": "NBG plan.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/Montopolis_FLUM.pdf",
+     "size": 668255,
+     "name": "Montopolis_FLUM.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/Land_Use_Guide_Feb_2024.pdf",
+     "size": 4120174,
+     "name": "Land_Use_Guide_Feb_2024.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/LandUse_Zoning-Combined.pdf",
+     "size": 49094,
+     "name": "LandUse_Zoning-Combined.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/Infill_Options_Booklet_May%202017.pdf",
+     "size": 2498717,
+     "name": "Infill_Options_Booklet_May 2017.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/Holly_FLUM.pdf",
+     "size": 815126,
+     "name": "Holly_FLUM.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/Holly%20Plan%20and%20Ordinance%20Chart%20Feb%207%202022.pdf",
+     "size": 127379,
+     "name": "Holly Plan and Ordinance Chart Feb 7 2022.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/Highland-NPCT-by-laws-as-of-July-21-2025.pdf",
+     "size": 76169,
+     "name": "Highland-NPCT-by-laws-as-of-July-21-2025.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/Heritage_Hills_FLUM.pdf",
+     "size": 2435193,
+     "name": "Heritage_Hills_FLUM.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/Greater_South_River_City_FLUM_7_9_2025.pdf",
+     "size": 1095651,
+     "name": "Greater_South_River_City_FLUM_7_9_2025.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/Govalle_Johnston_Terrace_FLUM_April_2026.pdf",
+     "size": 1590368,
+     "name": "Govalle_Johnston_Terrace_FLUM_April_2026.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/Govalle%20JT%20NP.pdf",
+     "size": 8556310,
+     "name": "Govalle JT NP.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/Fillable_Oct%202023_NPCT_NPA%20application.pdf",
+     "size": 480435,
+     "name": "Fillable_Oct 2023_NPCT_NPA application.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/Fillable_Oct%202023_Final%20Indiv%20PO_npa_application.pdf",
+     "size": 488078,
+     "name": "Fillable_Oct 2023_Final Indiv PO_npa_application.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/East_Riverside_Oltorf_Combined_FLUM.pdf",
+     "size": 4199319,
+     "name": "East_Riverside_Oltorf_Combined_FLUM.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/East_MLK_Combined.pdf",
+     "size": 1284442,
+     "name": "East_MLK_Combined.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/East_Cesar_Chavez_FLUM_7_9_2025.pdf",
+     "size": 893797,
+     "name": "East_Cesar_Chavez_FLUM_7_9_2025.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/EROC-NPCT-Bylaws-Revised-_-Ratified-8-24-22.pdf",
+     "size": 129579,
+     "name": "EROC-NPCT-Bylaws-Revised-_-Ratified-8-24-22.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/EMLK_Final%20Plan%2008-05.pdf",
+     "size": 15065121,
+     "name": "EMLK_Final Plan 08-05.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/Dawson_FLUM_7_9_2025.pdf",
+     "size": 394738,
+     "name": "Dawson_FLUM_7_9_2025.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/Crestview_Wooten_Combined_FLUM_7_9_2025.pdf",
+     "size": 1059118,
+     "name": "Crestview_Wooten_Combined_FLUM_7_9_2025.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/Central_West_Austin_Combined_FLUM_7_9_2025.pdf",
+     "size": 2171150,
+     "name": "Central_West_Austin_Combined_FLUM_7_9_2025.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/Central_Austin_Combined_FLUM_April_2026.pdf",
+     "size": 18563223,
+     "name": "Central_Austin_Combined_FLUM_April_2026.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/CANPAC-bylaws-2021.pdf",
+     "size": 159071,
+     "name": "CANPAC-bylaws-2021.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/CANPAC%20Map.pdf",
+     "size": 175595,
+     "name": "CANPAC Map.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/Bylaws_template__instructions.pdf",
+     "size": 542477,
+     "name": "Bylaws_template__instructions.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/Brentwood_Highland_Combined_FLUM_7_9_2025.pdf",
+     "size": 906583,
+     "name": "Brentwood_Highland_Combined_FLUM_7_9_2025.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/Brentwood-Highland%20Neighborhood%20Plan%20Document.pdf",
+     "size": 13768892,
+     "name": "Brentwood-Highland Neighborhood Plan Document.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/Bouldin_Creek_FLUM_April_2026.pdf",
+     "size": 2136496,
+     "name": "Bouldin_Creek_FLUM_April_2026.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/BCNPCT_Bylaws_2021%20Adopted.pdf",
+     "size": 172625,
+     "name": "BCNPCT_Bylaws_2021 Adopted.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/65024739c9c0-Southeast_Combined_NPA_121018_Approved_ByLaws.pdf",
+     "size": 105703,
+     "name": "65024739c9c0-Southeast_Combined_NPA_121018_Approved_ByLaws.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/2024%20Mobile_Food_Vendor_Regulations_Proposed.pdf",
+     "size": 2395104,
+     "name": "2024 Mobile_Food_Vendor_Regulations_Proposed.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/2022_Front_Yard_Parking_Map.pdf",
+     "size": 5732833,
+     "name": "2022_Front_Yard_Parking_Map.pdf"
+    },
+    {
+     "stamp": "2026-09-27-1904",
+     "url": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/2020_Mobile_Food_Vendor_Regulations_Map.pdf",
+     "size": 3719464,
+     "name": "2020_Mobile_Food_Vendor_Regulations_Map.pdf"
+    }
+   ],
+   "latest_key": "coa-neighborhood-plans-resources/2026-09-27-1904.pdf",
+   "latest": "https://archive.changesaroundme.com/coa-neighborhood-plans-resources/latest.pdf"
   },
   "coa-northeast-district-plan": {
    "captures": [
@@ -2465,6 +3850,12 @@
     }
    ],
    "files": [
+    {
+     "stamp": "2026-09-27-0646",
+     "url": "https://archive.changesaroundme.com/coa-our-future-35/files/2026-09-27-0646/74%20-%2074_Alter-2-FINAL.png",
+     "size": 355363,
+     "name": "74 - 74_Alter-2-FINAL.png"
+    },
     {
      "stamp": "2026-09-20-1155",
      "url": "https://archive.changesaroundme.com/coa-our-future-35/files/2026-09-20-1155/capex-central-final-eis-rod-april17.pdf",
@@ -2692,12 +4083,6 @@
      "url": "https://archive.changesaroundme.com/coa-our-future-35/files/2026-09-19-0016/103%20-%205_6_25_Duchen.pdf",
      "size": 154800,
      "name": "103 - 5_6_25_Duchen.pdf"
-    },
-    {
-     "stamp": "2026-09-01-1608",
-     "url": "https://archive.changesaroundme.com/coa-our-future-35/files/2026-09-01-1608/74%20-%2074_Alter-2-FINAL.png",
-     "size": 355363,
-     "name": "74 - 74_Alter-2-FINAL.png"
     }
    ],
    "latest_key": "coa-our-future-35/2026-09-20-1121.pdf",
@@ -2712,6 +4097,36 @@
     }
    ],
    "files": [
+    {
+     "stamp": "2026-10-01-0630",
+     "url": "https://archive.changesaroundme.com/coa-shape-austins-2026-bond/files/2026-10-01-0630/2025_12_15_%20Regular%20Meeting%20Backup_%202026%20Bond%20Election%20Advisory%20Task%20Force.PDF",
+     "size": 369755,
+     "name": "2025_12_15_ Regular Meeting Backup_ 2026 Bond Election Advisory Task Force.PDF"
+    },
+    {
+     "stamp": "2026-09-27-0650",
+     "url": "https://archive.changesaroundme.com/coa-shape-austins-2026-bond/files/2026-09-27-0650/Vietnamese%20-%202026%20Bond%20Update%20and%20Initial%20Project%20List.xlsx",
+     "size": 24190,
+     "name": "Vietnamese - 2026 Bond Update and Initial Project List.xlsx"
+    },
+    {
+     "stamp": "2026-09-27-0650",
+     "url": "https://archive.changesaroundme.com/coa-shape-austins-2026-bond/files/2026-09-27-0650/Spanish%20-%202026%20Bond%20Update%20and%20Initial%20Project%20List.xlsx",
+     "size": 27593,
+     "name": "Spanish - 2026 Bond Update and Initial Project List.xlsx"
+    },
+    {
+     "stamp": "2026-09-27-0650",
+     "url": "https://archive.changesaroundme.com/coa-shape-austins-2026-bond/files/2026-09-27-0650/Chinese%20Simplified%20-%202026%20Bond%20Update%20and%20Initial%20Project%20List.xlsx",
+     "size": 23014,
+     "name": "Chinese Simplified - 2026 Bond Update and Initial Project List.xlsx"
+    },
+    {
+     "stamp": "2026-09-27-0650",
+     "url": "https://archive.changesaroundme.com/coa-shape-austins-2026-bond/files/2026-09-27-0650/2025_12_15_%20Regular%20Meeting%20Backup_%202026%20Bond%20Election%20Advisory%20Task%20Force.PDF",
+     "size": 369755,
+     "name": "2025_12_15_ Regular Meeting Backup_ 2026 Bond Election Advisory Task Force.PDF"
+    },
     {
      "stamp": "2026-09-24-0700",
      "url": "https://archive.changesaroundme.com/coa-shape-austins-2026-bond/files/2026-09-24-0700/2025_12_15_%20Regular%20Meeting%20Backup_%202026%20Bond%20Election%20Advisory%20Task%20Force.PDF",
@@ -2809,32 +4224,13 @@
   "coa-shaping-economic-development-policy": {
    "captures": [
     {
-     "stamp": "2026-09-20-1128",
-     "url": "https://archive.changesaroundme.com/coa-shaping-economic-development-policy/2026-09-20-1128.pdf",
-     "size": 3986949
+     "stamp": "2026-10-01-0631",
+     "url": "https://archive.changesaroundme.com/coa-shaping-economic-development-policy/2026-10-01-0631.pdf",
+     "size": 152762
     }
    ],
-   "files": [
-    {
-     "stamp": "2026-09-19-0022",
-     "url": "https://archive.changesaroundme.com/coa-shaping-economic-development-policy/files/2026-09-19-0022/FY-2026-27-Proposed-Budget-Vol-II.pdf",
-     "size": 24303,
-     "name": "FY-2026-27-Proposed-Budget-Vol-II.pdf"
-    },
-    {
-     "stamp": "2026-09-19-0022",
-     "url": "https://archive.changesaroundme.com/coa-shaping-economic-development-policy/files/2026-09-19-0022/FY-2026-27-Proposed-Budget-Vol-I.pdf",
-     "size": 24298,
-     "name": "FY-2026-27-Proposed-Budget-Vol-I.pdf"
-    },
-    {
-     "stamp": "2026-09-19-0022",
-     "url": "https://archive.changesaroundme.com/coa-shaping-economic-development-policy/files/2026-09-19-0022/20260507-024_%20Agenda%20Backup_%20Revised%20Exhibit%20A%20V2%20-%20Clean.PDF",
-     "size": 52500,
-     "name": "20260507-024_ Agenda Backup_ Revised Exhibit A V2 - Clean.PDF"
-    }
-   ],
-   "latest_key": "coa-shaping-economic-development-policy/2026-09-20-1128.pdf",
+   "files": [],
+   "latest_key": "coa-shaping-economic-development-policy/2026-10-01-0631.pdf",
    "latest": "https://archive.changesaroundme.com/coa-shaping-economic-development-policy/latest.pdf"
   },
   "coa-transit-enhancement-infrastructure-report": {
@@ -2846,6 +4242,402 @@
     }
    ],
    "files": [
+    {
+     "stamp": "2026-10-01-0632",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-01-0632/Transit-Enhancement-Infrastructure-Report_Final.pdf",
+     "size": 24709,
+     "name": "Transit-Enhancement-Infrastructure-Report_Final.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0632",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-01-0632/TEP-Woodward.pdf",
+     "size": 24499,
+     "name": "TEP-Woodward.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0632",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-01-0632/TEP-StJohns.pdf",
+     "size": 24493,
+     "name": "TEP-StJohns.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0632",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-01-0632/TEP-Springdale.pdf",
+     "size": 24511,
+     "name": "TEP-Springdale.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0632",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-01-0632/TEP-SouthparkMeadows.pdf",
+     "size": 24547,
+     "name": "TEP-SouthparkMeadows.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0632",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-01-0632/TEP-SouthFirstBenWhite.pdf",
+     "size": 24559,
+     "name": "TEP-SouthFirstBenWhite.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0632",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-01-0632/TEP-SouthFirst.pdf",
+     "size": 24511,
+     "name": "TEP-SouthFirst.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0632",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-01-0632/TEP-ShadyLane.pdf",
+     "size": 24505,
+     "name": "TEP-ShadyLane.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0632",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-01-0632/TEP-Seventh.pdf",
+     "size": 24493,
+     "name": "TEP-Seventh.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0632",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-01-0632/TEP-Rutherford.pdf",
+     "size": 24511,
+     "name": "TEP-Rutherford.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0632",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-01-0632/TEP-Rundberg.pdf",
+     "size": 24499,
+     "name": "TEP-Rundberg.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0632",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-01-0632/TEP-RedRiver45th.pdf",
+     "size": 24523,
+     "name": "TEP-RedRiver45th.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0632",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-01-0632/TEP-PleasantValley.pdf",
+     "size": 24535,
+     "name": "TEP-PleasantValley.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0632",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-01-0632/TEP-Oltorf.pdf",
+     "size": 24487,
+     "name": "TEP-Oltorf.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0632",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-01-0632/TEP-Montopolis.pdf",
+     "size": 24511,
+     "name": "TEP-Montopolis.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0632",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-01-0632/TEP-Manor2.pdf",
+     "size": 24487,
+     "name": "TEP-Manor2.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0632",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-01-0632/TEP-Manor.pdf",
+     "size": 24481,
+     "name": "TEP-Manor.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0632",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-01-0632/TEP-Loyola.pdf",
+     "size": 24487,
+     "name": "TEP-Loyola.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0632",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-01-0632/TEP-Lavaca.pdf",
+     "size": 24487,
+     "name": "TEP-Lavaca.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0632",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-01-0632/TEP-LakeAustinBlvd.pdf",
+     "size": 24535,
+     "name": "TEP-LakeAustinBlvd.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0632",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-01-0632/TEP-Jollyville.pdf",
+     "size": 24511,
+     "name": "TEP-Jollyville.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0632",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-01-0632/TEP-HowardLane.pdf",
+     "size": 24511,
+     "name": "TEP-HowardLane.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0632",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-01-0632/TEP-Guadalupe.pdf",
+     "size": 24505,
+     "name": "TEP-Guadalupe.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0632",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-01-0632/TEP-DeanKeeton.pdf",
+     "size": 24511,
+     "name": "TEP-DeanKeeton.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0632",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-01-0632/TEP-CesarChavez.pdf",
+     "size": 24517,
+     "name": "TEP-CesarChavez.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0632",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-01-0632/TEP-Cameron.pdf",
+     "size": 24493,
+     "name": "TEP-Cameron.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0632",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-01-0632/TEP-BluffSprings.pdf",
+     "size": 24523,
+     "name": "TEP-BluffSprings.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0632",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-01-0632/TEP-Allandale.pdf",
+     "size": 24505,
+     "name": "TEP-Allandale.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0632",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-01-0632/TEP-51stStreet.pdf",
+     "size": 24511,
+     "name": "TEP-51stStreet.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0632",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-01-0632/Equity_Analysis_Zones_Final_Report.pdf",
+     "size": 24631,
+     "name": "Equity_Analysis_Zones_Final_Report.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0632",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-01-0632/Appendix3_TEPSummary-Round2-03.26.24.pdf",
+     "size": 24643,
+     "name": "Appendix3_TEPSummary-Round2-03.26.24.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0632",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-01-0632/Appendix2_TEPSummary-Round1-03.26.24.pdf",
+     "size": 24643,
+     "name": "Appendix2_TEPSummary-Round1-03.26.24.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0632",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-01-0632/Appendix1_Toolbox.pdf",
+     "size": 24529,
+     "name": "Appendix1_Toolbox.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-27-0652/Transit-Enhancement-Infrastructure-Report_Final.pdf",
+     "size": 24709,
+     "name": "Transit-Enhancement-Infrastructure-Report_Final.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-27-0652/TEP-Woodward.pdf",
+     "size": 24499,
+     "name": "TEP-Woodward.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-27-0652/TEP-StJohns.pdf",
+     "size": 24493,
+     "name": "TEP-StJohns.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-27-0652/TEP-Springdale.pdf",
+     "size": 24511,
+     "name": "TEP-Springdale.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-27-0652/TEP-SouthparkMeadows.pdf",
+     "size": 24547,
+     "name": "TEP-SouthparkMeadows.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-27-0652/TEP-SouthFirstBenWhite.pdf",
+     "size": 24559,
+     "name": "TEP-SouthFirstBenWhite.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-27-0652/TEP-SouthFirst.pdf",
+     "size": 24511,
+     "name": "TEP-SouthFirst.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-27-0652/TEP-ShadyLane.pdf",
+     "size": 24505,
+     "name": "TEP-ShadyLane.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-27-0652/TEP-Seventh.pdf",
+     "size": 24493,
+     "name": "TEP-Seventh.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-27-0652/TEP-Rutherford.pdf",
+     "size": 24511,
+     "name": "TEP-Rutherford.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-27-0652/TEP-Rundberg.pdf",
+     "size": 24499,
+     "name": "TEP-Rundberg.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-27-0652/TEP-RedRiver45th.pdf",
+     "size": 24523,
+     "name": "TEP-RedRiver45th.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-27-0652/TEP-PleasantValley.pdf",
+     "size": 24535,
+     "name": "TEP-PleasantValley.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-27-0652/TEP-Oltorf.pdf",
+     "size": 24487,
+     "name": "TEP-Oltorf.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-27-0652/TEP-Montopolis.pdf",
+     "size": 24511,
+     "name": "TEP-Montopolis.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-27-0652/TEP-Manor2.pdf",
+     "size": 24487,
+     "name": "TEP-Manor2.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-27-0652/TEP-Manor.pdf",
+     "size": 24481,
+     "name": "TEP-Manor.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-27-0652/TEP-Loyola.pdf",
+     "size": 24487,
+     "name": "TEP-Loyola.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-27-0652/TEP-Lavaca.pdf",
+     "size": 24487,
+     "name": "TEP-Lavaca.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-27-0652/TEP-LakeAustinBlvd.pdf",
+     "size": 24535,
+     "name": "TEP-LakeAustinBlvd.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-27-0652/TEP-Jollyville.pdf",
+     "size": 24511,
+     "name": "TEP-Jollyville.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-27-0652/TEP-HowardLane.pdf",
+     "size": 24511,
+     "name": "TEP-HowardLane.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-27-0652/TEP-Guadalupe.pdf",
+     "size": 24505,
+     "name": "TEP-Guadalupe.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-27-0652/TEP-DeanKeeton.pdf",
+     "size": 24511,
+     "name": "TEP-DeanKeeton.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-27-0652/TEP-CesarChavez.pdf",
+     "size": 24517,
+     "name": "TEP-CesarChavez.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-27-0652/TEP-Cameron.pdf",
+     "size": 24493,
+     "name": "TEP-Cameron.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-27-0652/TEP-BluffSprings.pdf",
+     "size": 24523,
+     "name": "TEP-BluffSprings.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-27-0652/TEP-Allandale.pdf",
+     "size": 24505,
+     "name": "TEP-Allandale.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-27-0652/TEP-51stStreet.pdf",
+     "size": 24511,
+     "name": "TEP-51stStreet.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-27-0652/Equity_Analysis_Zones_Final_Report.pdf",
+     "size": 24631,
+     "name": "Equity_Analysis_Zones_Final_Report.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-27-0652/Appendix3_TEPSummary-Round2-03.26.24.pdf",
+     "size": 24643,
+     "name": "Appendix3_TEPSummary-Round2-03.26.24.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-27-0652/Appendix2_TEPSummary-Round1-03.26.24.pdf",
+     "size": 24643,
+     "name": "Appendix2_TEPSummary-Round1-03.26.24.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-27-0652/Appendix1_Toolbox.pdf",
+     "size": 24529,
+     "name": "Appendix1_Toolbox.pdf"
+    },
     {
      "stamp": "2026-09-24-0702",
      "url": "https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-09-24-0702/Transit-Enhancement-Infrastructure-Report_Final.pdf",
@@ -3664,6 +5456,90 @@
    ],
    "files": [
     {
+     "stamp": "2026-10-01-0633",
+     "url": "https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-10-01-0633/2023_Urban_Trails_Plan_Appendix_G.pdf",
+     "size": 24625,
+     "name": "2023_Urban_Trails_Plan_Appendix_G.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0633",
+     "url": "https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-10-01-0633/2023_Urban_Trails_Plan_Appendix_F.pdf",
+     "size": 24625,
+     "name": "2023_Urban_Trails_Plan_Appendix_F.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0633",
+     "url": "https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-10-01-0633/2023_Urban_Trails_Plan_Appendix_E.pdf",
+     "size": 24625,
+     "name": "2023_Urban_Trails_Plan_Appendix_E.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0633",
+     "url": "https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-10-01-0633/2023_Urban_Trails_Plan_Appendix_D.pdf",
+     "size": 24625,
+     "name": "2023_Urban_Trails_Plan_Appendix_D.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0633",
+     "url": "https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-10-01-0633/2023_Urban_Trails_Plan_Appendix_C.pdf",
+     "size": 24625,
+     "name": "2023_Urban_Trails_Plan_Appendix_C.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0633",
+     "url": "https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-10-01-0633/2023_Urban_Trails_Plan_Appendix_B.pdf",
+     "size": 24625,
+     "name": "2023_Urban_Trails_Plan_Appendix_B.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0633",
+     "url": "https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-10-01-0633/2023_Urban_Trails_Plan_Appendix_A.pdf",
+     "size": 24625,
+     "name": "2023_Urban_Trails_Plan_Appendix_A.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-09-27-0652/2023_Urban_Trails_Plan_Appendix_G.pdf",
+     "size": 24625,
+     "name": "2023_Urban_Trails_Plan_Appendix_G.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-09-27-0652/2023_Urban_Trails_Plan_Appendix_F.pdf",
+     "size": 24625,
+     "name": "2023_Urban_Trails_Plan_Appendix_F.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-09-27-0652/2023_Urban_Trails_Plan_Appendix_E.pdf",
+     "size": 24625,
+     "name": "2023_Urban_Trails_Plan_Appendix_E.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-09-27-0652/2023_Urban_Trails_Plan_Appendix_D.pdf",
+     "size": 24625,
+     "name": "2023_Urban_Trails_Plan_Appendix_D.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-09-27-0652/2023_Urban_Trails_Plan_Appendix_C.pdf",
+     "size": 24625,
+     "name": "2023_Urban_Trails_Plan_Appendix_C.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-09-27-0652/2023_Urban_Trails_Plan_Appendix_B.pdf",
+     "size": 24625,
+     "name": "2023_Urban_Trails_Plan_Appendix_B.pdf"
+    },
+    {
+     "stamp": "2026-09-27-0652",
+     "url": "https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-09-27-0652/2023_Urban_Trails_Plan_Appendix_A.pdf",
+     "size": 24625,
+     "name": "2023_Urban_Trails_Plan_Appendix_A.pdf"
+    },
+    {
      "stamp": "2026-09-24-0703",
      "url": "https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-09-24-0703/2023_Urban_Trails_Plan_Appendix_G.pdf",
      "size": 24625,
@@ -3864,6 +5740,55 @@
    "files": [],
    "latest_key": "coa-urban-trails-wayfinding-survey/2026-09-19-0001.pdf",
    "latest": "https://archive.changesaroundme.com/coa-urban-trails-wayfinding-survey/latest.pdf"
+  },
+  "ctrma-290-extension": {
+   "captures": [
+    {
+     "stamp": "2026-09-30-1212",
+     "url": "https://archive.changesaroundme.com/ctrma-290-extension/2026-09-30-1212.pdf",
+     "size": 1385910,
+     "changed_lines": 12
+    },
+    {
+     "stamp": "2026-09-27-0656",
+     "url": "https://archive.changesaroundme.com/ctrma-290-extension/2026-09-27-0656.pdf",
+     "size": 1384863
+    }
+   ],
+   "files": [],
+   "latest_key": "ctrma-290-extension/2026-09-30-1212.pdf",
+   "latest": "https://archive.changesaroundme.com/ctrma-290-extension/latest.pdf"
+  },
+  "ctrma-290-extension-open-house": {
+   "captures": [
+    {
+     "stamp": "2026-10-02-0637",
+     "url": "https://archive.changesaroundme.com/ctrma-290-extension-open-house/2026-10-02-0637.pdf",
+     "size": 13216531,
+     "changed_lines": 16
+    },
+    {
+     "stamp": "2026-09-30-1214",
+     "url": "https://archive.changesaroundme.com/ctrma-290-extension-open-house/2026-09-30-1214.pdf",
+     "size": 13146574
+    }
+   ],
+   "files": [
+    {
+     "stamp": "2026-10-02-0639",
+     "url": "https://archive.changesaroundme.com/ctrma-290-extension-open-house/files/2026-10-02-0639/20260925_290Ext_OpenHouse_RollPlots_SM-compressed.pdf",
+     "size": 34291243,
+     "name": "20260925_290Ext_OpenHouse_RollPlots_SM-compressed.pdf"
+    },
+    {
+     "stamp": "2026-09-30-1214",
+     "url": "https://archive.changesaroundme.com/ctrma-290-extension-open-house/files/2026-09-30-1214/second-renewed-nepa-assignment-mou.pdf",
+     "size": 513764,
+     "name": "second-renewed-nepa-assignment-mou.pdf"
+    }
+   ],
+   "latest_key": "ctrma-290-extension-open-house/2026-10-02-0637.pdf",
+   "latest": "https://archive.changesaroundme.com/ctrma-290-extension-open-house/latest.pdf"
   },
   "ercot-board": {
    "captures": [
@@ -5109,6 +7034,37 @@
    "files": [],
    "latest_key": "lcra-water-public-comment/2026-09-25-0635.pdf",
    "latest": "https://archive.changesaroundme.com/lcra-water-public-comment/latest.pdf"
+  },
+  "trailcons-holly-shores": {
+   "captures": [
+    {
+     "stamp": "2026-10-01-0645",
+     "url": "https://archive.changesaroundme.com/trailcons-holly-shores/2026-10-01-0645.pdf",
+     "size": 2251557
+    }
+   ],
+   "files": [
+    {
+     "stamp": "2026-10-01-0645",
+     "url": "https://archive.changesaroundme.com/trailcons-holly-shores/files/2026-10-01-0645/Final-Report-3-Holly-Area-Comp-Area-CE_2025-07-16.pdf",
+     "size": 7676652,
+     "name": "Final-Report-3-Holly-Area-Comp-Area-CE_2025-07-16.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0645",
+     "url": "https://archive.changesaroundme.com/trailcons-holly-shores/files/2026-10-01-0645/2025-04-07-Holly-Area-Schematic-Design-30x42-Posters-Small-1.pdf",
+     "size": 10009664,
+     "name": "2025-04-07-Holly-Area-Schematic-Design-30x42-Posters-Small-1.pdf"
+    },
+    {
+     "stamp": "2026-10-01-0645",
+     "url": "https://archive.changesaroundme.com/trailcons-holly-shores/files/2026-10-01-0645/20191205-070_%20Agenda%20Backup_%20Draft%20Ordinance.PDF",
+     "size": 21763,
+     "name": "20191205-070_ Agenda Backup_ Draft Ordinance.PDF"
+    }
+   ],
+   "latest_key": "trailcons-holly-shores/2026-10-01-0645.pdf",
+   "latest": "https://archive.changesaroundme.com/trailcons-holly-shores/latest.pdf"
   },
   "txdot-bike-ped-coordinators": {
    "captures": [

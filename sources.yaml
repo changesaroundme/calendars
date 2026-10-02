@@ -320,6 +320,36 @@ organizations:
           ArcGIS Experience Builder map; the content is ~17 feature layers
           (Moped project components, Corridor Program, sidewalks, SRTS, urban
           trails) — watch the data, not the picture (see brief).
+      - slug: coa-neighborhood-plans-resources
+        name: Neighborhood Plans and Resources
+        url: https://www.austintexas.gov/planning/neighborhood-plans-and-resources
+        added: 2026-09-27
+        note: >-
+          31 plans in accordion tabs, each linking its plan, cases chart,
+          bylaws, FLUM and implementation chart (~183 PDFs on
+          austin.widen.net). FLUMs and case charts are revised in place.
+      - slug: coa-east-oltorf-safety-mobility
+        name: Safety and Mobility Improvements on East Oltorf Street
+        url: https://www.speakupaustin.org/eastoltorf
+        added: 2026-10-02
+        note: >-
+          Pleasant Valley Rd to Montopolis Dr. Survey Sep-Oct 2026 on near-term
+          changes; resurfacing 2027; corridor study 2028.
+      - slug: coa-west-campus-transportation-plan
+        name: West Campus Transportation Plan
+        url: https://www.speakupaustin.org/WestCampus
+        added: 2026-10-02
+        note: >-
+          Small Area Mobility Plan, six phases Jul 2026 - Dec 2027 (final plan).
+      - slug: coa-neighborhood-plan-amendment-cases
+        name: Neighborhood Plan Amendment Cases
+        url: https://publicinput.com/neighborhoodplanamendmentcases
+        added: 2026-09-27
+        note: >-
+          PublicInput hub listing upcoming NPA community meetings, one card per
+          case (NPA-yyyy-nnnn); cards come and go as meetings are scheduled.
+          Archived because that is how a non-calendar page is watched here;
+          a capture is written only when the card list changes.
 
   ATP:
     name: Austin Transit Partnership (ATP)
@@ -626,6 +656,32 @@ organizations:
         name: Board of Directors
         url: https://www.ercot.com/committees/board
         added: 2026-09-25
+
+  TrailCons:
+    name: The Trail Conservancy (Trail Cons.)
+    page: Organizations/The Trail Conservancy
+    pages:
+      - slug: trailcons-engagement-events
+        name: Community engagement and project celebration events (Events Calendar REST API)
+        url: https://thetrailconservancy.org/wp-json/tribe/events/v1/events?categories=community-engagement,project-celebrations
+        calendar: trailcons
+        parse: api
+        expect: sporadic
+        public: no
+        added: 2026-10-01
+        note: >-
+          Only the "Community Engagement" and "Project Celebrations"
+          categories are carried (7 events Apr 2025 - Oct 2026); the rest of
+          TTC's calendar is programming. Ian may add categories later.
+          "Trail Cons." because TTC is the Texas Transportation Commission here.
+      - slug: trailcons-holly-shores
+        name: "Holly Shores: Eastside Family Garden and Lakefront Trail Park"
+        url: https://thetrailconservancy.org/projects/holly-shores-projects/
+        added: 2026-10-01
+        note: >-
+          Elementor tabs (Phase 1-3, Storytelling Project) and FAQ toggles are
+          printed stacked. Engagement reports and idea boards are Adobe
+          Acrobat cloud links, which the archive cannot download.
 
   Legislature:
     name: Texas Legislature
