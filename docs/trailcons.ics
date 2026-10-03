@@ -27,7 +27,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:trailcons-34731@calendars.changesaroundme.com
-DTSTAMP:20261002T163833Z
+DTSTAMP:20261003T020049Z
 DTSTART;TZID=America/Chicago:20251115T090000
 DTEND;TZID=America/Chicago:20251115T103000
 SUMMARY:Trail Cons. - Conversation with the Artist | Eastside Family Garden
@@ -55,7 +55,7 @@ X-CAM-ORG:trailcons
 END:VEVENT
 BEGIN:VEVENT
 UID:trailcons-35769@calendars.changesaroundme.com
-DTSTAMP:20261002T163833Z
+DTSTAMP:20261003T020049Z
 DTSTART;TZID=America/Chicago:20260207T100000
 DTEND;TZID=America/Chicago:20260207T123000
 SUMMARY:Trail Cons. - Wishbone Bridge Ribbon Cutting Celebration
@@ -80,7 +80,7 @@ X-CAM-ORG:trailcons
 END:VEVENT
 BEGIN:VEVENT
 UID:trailcons-37803@calendars.changesaroundme.com
-DTSTAMP:20261002T163833Z
+DTSTAMP:20261003T020049Z
 DTSTART;TZID=America/Chicago:20260826T173000
 DTEND;TZID=America/Chicago:20260826T200000
 SUMMARY:Trail Cons. - Merlin Tuttle Day: Congress Ave. Bat Celebration
@@ -102,7 +102,7 @@ X-CAM-ORG:trailcons
 END:VEVENT
 BEGIN:VEVENT
 UID:trailcons-38238@calendars.changesaroundme.com
-DTSTAMP:20261002T163833Z
+DTSTAMP:20261003T020049Z
 DTSTART;TZID=America/Chicago:20261010T090000
 DTEND;TZID=America/Chicago:20261010T103000
 SUMMARY:Trail Cons. - Open House: Eastside Family Garden Design Concepts
