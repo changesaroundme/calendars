@@ -47,9 +47,9 @@ from datetime import date, datetime, timezone
 from urllib.parse import urlparse
 
 COLUMNS = ["slug", "org", "name", "url", "calendar", "expect", "check",
-           "archive", "parse", "status", "public", "parent", "added", "note"]
+           "archive", "docs", "parse", "status", "public", "parent", "added", "note"]
 PAGE_KEYS = set(COLUMNS) - {"org", "parent"} | {"children"}
-DEFAULTABLE = ["expect", "check", "archive", "parse", "status", "public"]
+DEFAULTABLE = ["expect", "check", "archive", "docs", "parse", "status", "public"]
 # A page with `calendar:` is fetched by the build; one without exists to be
 # archived. `defaults` may set a value for all pages, or per kind:
 KINDS = {"calendar-pages": True, "other-pages": False}
@@ -57,6 +57,10 @@ ORG_KEYS = {"name", "page", "defaults", "pages"}
 PARSE = {"ics", "rss", "api", "html", "html-table", "pdf", "claude",
          "manual", "none"}
 STATUS = {"active", "paused", "retired"}
+# `docs`: which linked documents the archive downloads with a page's capture.
+# all (default) | english — skip translations (a page that offers every PDF in
+# Spanish too: CapMetro's Transit Plan 2035, Oct 2026).
+DOCS = {"all", "english"}
 YESNO = {"yes", "no"}
 SLUG_RE = re.compile(r"[a-z0-9]+(-[a-z0-9]+)*")
 MONTHS = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
@@ -156,7 +160,7 @@ def parse(doc: dict) -> tuple[list[dict[str, str]], dict[str, dict[str, str]], l
                 defaults.update({k: v for k, v in layer.items() if k in DEFAULTABLE})
                 defaults.update(layer.get(kind) or {})
             row = {c: _text(p.get(c, defaults.get(c))) for c in COLUMNS}
-            row.update(org=code, parent=parent)
+            row.update(org=code, parent=parent, docs=row["docs"] or "all")
             return row
 
         for n, p in enumerate(org.get("pages") or [], 1):
@@ -321,6 +325,8 @@ def validate(rows: list[dict[str, str]], calendars: set[str],
             bad(f"unknown status {r['status']!r}")
         if r["public"] not in YESNO:
             bad("public must be yes/no")
+        if r["docs"] not in DOCS:
+            bad(f"unknown docs {r['docs']!r} (expected {sorted(DOCS)})")
         if r["parent"]:
             if r["parent"] not in slugs:
                 bad(f"unknown parent {r['parent']!r}")
@@ -345,7 +351,7 @@ def selftest() -> None:
     good = dict(zip(COLUMNS, [
         "coa-planning-commission", "CoA", "Planning Commission",
         "https://www.austintexas.gov/boards-commissions/board/planning-commission",
-        "austin", "always", "twice daily", "no", "html", "active", "yes", "",
+        "austin", "always", "twice daily", "no", "all", "html", "active", "yes", "",
         "2026-07-25", ""]))
     cals = {"austin"}
     assert validate([good], cals) == [], validate([good], cals)

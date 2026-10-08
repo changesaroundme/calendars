@@ -10,6 +10,8 @@
 #   expect   always | sporadic | every N year(s) [from YYYY] Mon[-Mon] | ...
 #   check     twice daily | daily | weekly | every N days
 #   archive   yes/no — the archive job keeps PDF captures of it
+#   docs     all (default) | english — which linked documents the capture
+#            downloads; english skips the translations a page offers alongside
 #   parse     ics | rss | api | html | html-table | pdf | claude | manual | none
 #   status    active | paused | retired
 #   public   yes/no — listed on the Links page
@@ -81,6 +83,17 @@ organizations:
             url: https://www.austintexas.gov/boards-commissions/meetings/2_1
             calendar: austin
             added: 2026-08-09
+      - slug: coa-building-and-standards-commission
+        name: Building and Standards Commission
+        url: https://www.austintexas.gov/boards-commissions/board/building-and-standards-commission
+        calendar: austin
+        added: 2026-10-07
+        children:
+          - slug: coa-building-and-standards-commission-meetings
+            name: Building and Standards Commission — meeting content
+            url: https://www.austintexas.gov/boards-commissions/meetings/17_1
+            calendar: austin
+            added: 2026-10-07
       - slug: coa-design-commission
         name: Design Commission
         url: https://www.austintexas.gov/boards-commissions/board/design-commission
@@ -341,6 +354,31 @@ organizations:
         added: 2026-10-02
         note: >-
           Small Area Mobility Plan, six phases Jul 2026 - Dec 2027 (final plan).
+      - slug: coa-development-incentives-agreements
+        name: Development Incentives and Agreements (Housing)
+        url: https://www.austintexas.gov/department/development-incentives-and-agreements
+        added: 2026-10-03
+        note: >-
+          Links the applicant guides for Citywide Density Bonus, DB90, DBETOD
+          and Affordability Unlocked, plus the Development Incentive Matrix
+          and SMART Housing fee waivers (Widen files; each revision gets a
+          new URL, so the guides are versioned through this page's captures).
+      - slug: coa-parks-long-range-plan
+        name: Our Parks, Our Future Long Range Plan (PARD)
+        url: https://www.austintexas.gov/parks/our-parks-our-future-long-range-plan
+        added: 2026-10-04
+        note: >-
+          2020-2030 plan adopted Nov 2019. Collapsed sections link the plan (28
+          MB), appendices, background reports and survey reports.
+      - slug: coa-holly-shores-vision-plan
+        name: Holly Shores / Edward Rendon Sr. Park at Festival Beach Vision Plan Implementation (PARD)
+        url: https://www.austintexas.gov/parks/projects/holly-shores-edward-rendon-sr-park-festival-beach-vision-plan-implementation
+        added: 2026-10-04
+        note: >-
+          2014 vision plan for ~99 acres on the north shore; collapsed sections
+          for active, completed and on-hold projects (Camacho Dock, Expedition
+          School, Nash Hernandez, Fiesta Gardens). PARD's side of the Trail
+          Conservancy's Holly Shores work (trailcons-holly-shores).
       - slug: coa-neighborhood-plan-amendment-cases
         name: Neighborhood Plan Amendment Cases
         url: https://publicinput.com/neighborhoodplanamendmentcases
@@ -451,6 +489,22 @@ organizations:
         name: Fare Increase
         url: https://www.capmetro.org/fare/general-fares-overview/fare-increase
         added: 2026-09-20
+      - slug: capmetro-transit-plan-2035
+        name: Transit Plan 2035
+        url: https://www.capmetro.org/transit-plan-2035
+        docs: english
+        added: 2026-10-04
+        note: >-
+          Final plan approved by the board Oct 2025; the page links the plan,
+          flipbook, route matrix, executive summary, engagement reports and
+          FAQ, each in English and Spanish (docs: english keeps the English).
+      - slug: capmetro-metrobike-open-house
+        name: MetroBike expansion virtual open house
+        url: https://publicinput.com/metrobike
+        added: 2026-10-04
+        note: >-
+          Ten-year MetroBike expansion plan exhibits. Comments closed 16 Jun
+          2024; kept for the plan content and any later rounds.
       - slug: capmetro-board-meetings
         name: Board Meetings
         url: https://www.capmetro.org/public-involvement/board-meetings

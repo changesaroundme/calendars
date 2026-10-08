@@ -134,6 +134,13 @@ BOARDS = [
      "https://www.austintexas.gov/boards-commissions/board/water-and-wastewater-commission",
      "https://www.austintexas.gov/boards-commissions/meetings/52_1",
      "17:30", "Waller Creek Center, 625 E. 10th St., Austin, TX 78701"),
+    # Added 2026-10-07 (Ian). Hears housing-code and dangerous-building
+    # cases; fourth Wednesday, 6:30pm, PDC (room not named on the page).
+    ("Building and Standards Commission",
+     "https://www.austintexas.gov/boards-commissions/board/building-and-standards-commission",
+     "https://www.austintexas.gov/boards-commissions/meetings/17_1",
+     "18:30", ("Permitting and Development Center, "
+               "6310 Wilhelmina Delco Dr., Austin, TX 78752")),
     # Council advisory councils: schedule page under /council/, agendas on a
     # /boards-commissions/meetings/ page. Both pages DO state their time and
     # venue, but as an <h3> + <ul> rather than the <dt>/<dd> accordion that
