@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-09T02:57:06Z",
+ "generated": "2026-10-09T17:26:44Z",
  "sources": {
   "atp-community-advisory-committee": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-02T16:38:33Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:ed4424758bf2a016923a790c106b3c69b2d647ffade2dd63e30889ada79127b6"
@@ -13,325 +13,325 @@
    "hash": "sha256v2:735b2c529f43f1051366b2327fed3b3a721b721f76e494926f9b024b58dd8004"
   },
   "atp-events-ical": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-09T02:57:06Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:7da61b3f6d75b78d876a3c5ca9a054cc86d7a2623f3e7e1abf177b63c56c8d2b"
   },
   "campo-events-ical": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-06T03:01:13Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:fcfe2b0575bec2115700360f01855fb0f35d860dce9ac87ebbd7a7295c49dd67"
   },
   "campo-meeting-agendas": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-09-25T01:00:57Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:4c173332b2dd68c35a012248f42bae36c5e8fb80b3aaa5f4eac8bc542c6bf40d"
   },
   "capmetro-legistar-api": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-07T02:25:31Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:0db3685589369a93b5ed28ae849d6997bba9d8dfda5f839126a53dccef0eba0b"
   },
   "capmetro-legistar-calendar": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-07T02:25:31Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:da22ca1c3d56cbd7ffa89a8d4569eaed47ba08a0cd9e1aa13b752d83310da81c"
   },
   "coa-airport-advisory-commission": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-01T17:22:49Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:d9b831a24668ca6d9dd651af25e5305c5561e4324abe8e3157918bc8b2db261c"
   },
   "coa-airport-advisory-commission-meetings": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-07T17:49:21Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:6f82480b94486e4346d80c201b2d45fb7bfec26b4519a70811d27ece10d1a3a5"
   },
   "coa-bicycle-advisory-council": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-01T17:22:49Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:246fcda25d6403dae00f9b9507a5faa9fc08aee76b4369ba2b84fe7249f80fb3"
   },
   "coa-bicycle-advisory-council-meetings": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-06T17:11:51Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:c023123e40f201876401ca0d379e973086443f08441f7d205c24738249afeac2"
   },
   "coa-bond-oversight-commission": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-07T17:49:21Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:d3579a263cfdd859ad9ae3828b0525c5508073f727f082d8ebc3dbdefb0e8eaf"
   },
   "coa-bond-oversight-commission-meetings": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-07T17:49:21Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:2ed41e8d0be511bd88d02bf49caf70a07f0d7868baa81c7bfec59e3fbc26507c"
   },
   "coa-building-and-standards-commission": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": null,
    "since": "2026-10-08T19:39:55Z",
    "hash": "sha256v3:5d29c8b04a738b0009783ceca5b36c9ab85925ad196d8ac55280766110869f7b"
   },
   "coa-building-and-standards-commission-meetings": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": null,
    "since": "2026-10-08T19:39:55Z",
    "hash": "sha256v3:2807a0849b6d93bffffa385bc14d09509ff6d0dce6943e2eb0568015ba1238cd"
   },
   "coa-council-annual-schedule-pdf": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": null,
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:de166bb297295a4776fb4ada322fb51ec887cca136d9ad3aed49a2755d49fa3c"
   },
   "coa-council-legistar-api": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-08T02:42:42Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:f530c940d467913ef68d94c935b34e9e07d60d38e0a347aa50eda2684a6427aa"
   },
   "coa-council-legistar-calendar": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-08T02:42:42Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:37f890f9d224db488fd959861c53f9062563e583676919d6e0c460bb72a8a05e"
   },
   "coa-design-commission": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-01T17:22:49Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:409c9c437fb8500b36e25c9d94a5081c1685d3b7abb4fcc5240109e8ef84808d"
   },
   "coa-design-commission-meetings": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-08T02:42:42Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:fee067ed21047350d3f1819b76747acc133a261f822a330ac6d9444a5a4169be"
   },
   "coa-electric-utility-commission": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-01T17:22:49Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:9aeba113a7d2367e6ee028917a15580f74731bee7ab2fc1261283fbd6a330c7a"
   },
   "coa-electric-utility-commission-meetings": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-01T17:22:49Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:647dd6c0f5bb45a74a7aba60d18d64132e30c57bd69a0dbaf66d29b9424dfcc0"
   },
   "coa-environmental-commission": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-01T17:22:49Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:8a48a0e99aa8f8b74e455d6c4f67bc5604340818dc13bdeb21481966901b447a"
   },
   "coa-environmental-commission-meetings": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-09T02:57:06Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:bccd048f3ee31c136e7d958b1d444c6e554e43dbe7c825fc86e4d1d587783e41"
   },
   "coa-historic-landmark-commission": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-01T17:22:49Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:709047cd00957834a6c298df42072c188a7ef30ded4bd6b2b3def0cb02777db2"
   },
   "coa-historic-landmark-commission-meetings": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-09T02:57:06Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:98d7b33c2588017b2e76dc683456c33fb201e58109461047afe47a08f9aeba2f"
   },
   "coa-integrated-water-resource-planning-task-force": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-01T17:22:49Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:c344791fcfd65f81f86eae7839af122c7585e9418f6eacbdafae15844289e672"
   },
   "coa-integrated-water-resource-planning-task-force-meetings": {
-   "checked": "2026-10-09T02:57:06Z",
-   "changed": "2026-10-08T02:42:42Z",
+   "checked": "2026-10-09T17:26:44Z",
+   "changed": "2026-10-09T17:26:44Z",
    "since": "2026-09-24T04:43:03Z",
-   "hash": "sha256v3:09d57c81d8c82ed4d4a9cb43ae71398ac2313ce0a58a989541ee3a2b1c4f352c"
+   "hash": "sha256v3:a27068c8f235ac525ff9367b5e3a16ea32fbf1f206b8e796ea64e166776dda5b"
   },
   "coa-pedestrian-advisory-council": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-01T17:22:49Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:b354d2c4f2570e3a81138214400a98abdec43de890660bddf5332b455d4bf386"
   },
   "coa-pedestrian-advisory-council-meetings": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-03T02:00:49Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:6249994de8c006da6d5730aee840a519b405115e8c200dae4557e96a1b615042"
   },
   "coa-planning-commission": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-01T17:22:49Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:463ccd50a68fbba042e89603cdc00f6d353953b15ef0a4bda1f103d45ea348be"
   },
   "coa-planning-commission-meetings": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-09T02:57:06Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:1aa80c89a4e54e1abf1b4efa0215cbce637c7fd0a4b003bc9c8eaa937bc2e2fc"
   },
   "coa-small-area-planning-joint-committee": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-01T17:22:49Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:881cb7f406b29665a11d9398564273a4b4b0a615d658454fc25e99810c77aeaa"
   },
   "coa-small-area-planning-joint-committee-meetings": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-01T17:22:49Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:052d1ced14a2a075111aa08ca7db886b4ff354be643a202c40cd6e482a1a6e32"
   },
   "coa-urban-transportation-commission": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-01T17:22:49Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:9bb5b9eace03fe47c3dbc91c2ffb1a024ac43b419c0c41aee78b13dcd179e524"
   },
   "coa-urban-transportation-commission-meetings": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-08T02:42:42Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:1aac73ad5fdf83594feb8f9e456e97c6a97e3193fb0ffba0bf216cb1a5ffdca0"
   },
   "coa-water-and-wastewater-commission": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-01T17:22:49Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:19abbfdd25d2de7baea83b6e0a73bf3f43abfafd3ab4bc296902b08cd0cc78fd"
   },
   "coa-water-and-wastewater-commission-meetings": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-09T02:57:06Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:ced396d1f7b19a76ea0c334646a8edd196f5d22bd05be7172f04380ce9307b70"
   },
   "ctrma-board-upcoming": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-09-30T16:49:28Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:b8ab1ae6087ff6cba7e414ebc1303714401ab6df5c214654d642ea0d85410009"
   },
   "ercot-board-ical": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": null,
    "since": "2026-09-26T21:43:34Z",
    "hash": "sha256v3:cc4a165212c6794699b0e21a447050c747e92357f4978eca377aebfae821fe15"
   },
   "ercot-llwg-ical": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": null,
    "since": "2026-09-26T21:43:34Z",
    "hash": "sha256v3:042728b7a8e294583720ee78651a2f945887b8e79b5597f54c6b517a0c8af3d4"
   },
   "lcra-board-schedule": {
-   "checked": "2026-10-09T02:57:06Z",
-   "changed": "2026-10-06T17:11:51Z",
+   "checked": "2026-10-09T17:26:44Z",
+   "changed": "2026-10-09T17:26:44Z",
    "since": "2026-09-24T04:43:03Z",
-   "hash": "sha256v3:a392025a18f6f3343c79c9d36f31f6ced1bb12fd56366085851c7c839da80e8f"
+   "hash": "sha256v3:ed606af251a4cb21c0fb7777c545d8335ccdc5e33a751e0479631d41ea8c0de3"
   },
   "lcra-water-public-comment": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-09-24T15:49:22Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:b5317cf04c5207c4ba2085b52367a4623576dbbcc16f61760e1ffc071a80ba40"
   },
   "legislature-house-meetings-upcoming": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-07T17:49:21Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:4d2e5b7bc4a515a20d8a12479695d938bf32d4e5f8d2a3ddf6ec24cc759a6fe7"
   },
   "legislature-senate-events": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-08T02:42:42Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:cd444b9ae05be5124042a9d87a1b7d496f39601e04db1de25fe6febefb18d859"
   },
   "puc-broadcasts": {
-   "checked": "2026-10-09T02:57:06Z",
-   "changed": "2026-10-08T17:52:47Z",
+   "checked": "2026-10-09T17:26:44Z",
+   "changed": "2026-10-09T17:26:44Z",
    "since": "2026-09-24T04:43:03Z",
-   "hash": "sha256v3:70cf95a760ef7d74382721a7a7beebc28853e6d5430d17056332427957672336"
+   "hash": "sha256v3:d37fe815a89aef9ae674ac451689d2d2d26f5e2a9750ebaee90cd0d8ba853702"
   },
   "puc-calendar-rss": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-08T17:52:47Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:3eb55a8a02a91b2ec937c0e1c3d3b46ea658ab608e767a6416449ea23ba3d700"
   },
   "sos-open-meetings": {
-   "checked": "2026-10-09T02:57:06Z",
-   "changed": "2026-10-08T17:52:47Z",
+   "checked": "2026-10-09T17:26:44Z",
+   "changed": "2026-10-09T17:26:44Z",
    "since": "2026-09-24T04:43:03Z",
-   "hash": "sha256v3:5eaee0f691ace34a14fd493a5edfb442e85526569967e38e78970a58a9f192d1"
+   "hash": "sha256v3:9fd9607ad8b80c549cfe428fc1bfcc2370d2913a7a7ce58909bb90462e460a9f"
   },
   "tpsc-wp-pages": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-01T02:11:20Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:0274808811605e0c3d7a1148ee57645c89601454f48858d68adce4f04a98da1a"
   },
   "tpsc-wp-posts": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-09-30T02:08:47Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:1457575f3ff46281a13241217f2bfcdf4848dfccc816b667fabf502ec62c9e06"
   },
   "trailcons-engagement-events": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-09T02:57:06Z",
    "since": "2026-10-02T13:19:58Z",
    "hash": "sha256v3:2eb5d058a034999e56d44afb9fb28e4fefc1f13649163fb4d378958cc8e01142"
   },
   "ttc-meeting-dates": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-03T02:00:49Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:b887fd428dc4253f919f8594782201f1c4eadb2a05c1f92265b179a4b087d62c"
   },
   "txdot-bpac": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-07T17:49:21Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:a3f41fbf234474c1f6dffb71964941b1c1118af833fca45db7159493577459a4"
   },
   "txdot-hearings-meetings": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-08T02:42:42Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:2c61fc199374becf9000808b907a1706f6382cca48918a0e3081e8e96627ad24"
   },
   "txdot-ptac": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": "2026-10-05T19:48:02Z",
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:4bc7206aa6bbe698540284f583ea33ba26a059f12de35258b968f25cc387b68b"
   },
   "txdot-utp-public-involvement": {
-   "checked": "2026-10-09T02:57:06Z",
+   "checked": "2026-10-09T17:26:44Z",
    "changed": null,
    "since": "2026-09-24T04:43:03Z",
    "hash": "sha256v3:51599ae6ffa8418ccc2e1c54d93081b573296fc4b0d19547d16546c0e04981e8"
