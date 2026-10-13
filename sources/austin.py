@@ -946,9 +946,15 @@ def fetch(session) -> list[Event]:
         records = parse_council_pdf(fetch_annual(session))
         council = apply_budget_flags(council, records)
         annual = annual_council_events(records, council)
-        if len(annual) < 5:
+        # Judge the PDF by what it parsed, not by the placeholders that
+        # survive Legistar: by October only the last few council dates are
+        # still placeholders, and that count fell to 4 on 12 Oct 2026 and
+        # turned the build red. A schedule with fewer than 10 council dates
+        # for the year is what a broken parse looks like.
+        council_dates = sum(1 for _, col, _ in records if col == "council")
+        if council_dates < 10:
             _problems.append(
-                f"austin: annual council schedule looks thin ({len(annual)} events)"
+                f"austin: annual council schedule looks thin ({council_dates} council dates parsed)"
             )
     except Exception as exc:
         _problems.append(f"austin: annual council schedule failed: {exc}")

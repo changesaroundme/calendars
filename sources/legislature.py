@@ -203,6 +203,11 @@ def parse_house(html: str) -> list[Event]:
     events: list[Event] = []
     table = soup.find("table", class_="usa-table")
     if table is None:
+        # Between hearings the page drops the table altogether and says so
+        # (8 Oct 2026, after the second called session's committees went
+        # quiet) — an empty docket, not a redesign.
+        if re.search(r"No meetings have been scheduled", html, re.IGNORECASE):
+            return events
         _problems.append(
             "legislature: no usa-table on the House upcoming-meetings page "
             "(page redesign?)")
