@@ -2475,7 +2475,7 @@
   "start": "2026-07-16T10:00:00",
   "end": "2026-07-16T12:00:00",
   "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
-  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4133&GID=684&G=4BED8896-C64D-4912-8005-D624C5197AA5",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1370394&GUID=BAB3B6BA-E165-44A5-9495-F468FB2959DD&Options=info|&Search=",
   "status": "CONFIRMED",
   "kind": "budget",
   "uid": "austin-city-council-20260716T1000@calendars.changesaroundme.com",
@@ -3688,7 +3688,7 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-airport-advisory-commission-20261014@calendars.changesaroundme.com",
-  "description": "Summary Agenda\n\n3 briefings:\n- August 2026 Financial Results\n- October 2026 Air Service Update\n- Journey with AUS Active Projects\n\n3 action items\n\n2 discussion items (all related to recent City Council actions)\n\n\u2014\n\nAgenda: https://services.austintexas.gov/edims/document.cfm?id=482700",
+  "description": "Typical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).",
   "all_day": false
  },
  {
@@ -3701,7 +3701,7 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-water-and-wastewater-commission-20261014@calendars.changesaroundme.com",
-  "description": "Summary Agenda\n\n2 briefings:\n- City of Austin Utilities\u2019 bill payment Customer Assistance Programs and water service disconnections due to non-payment \u2013 Matthew Thomas, Austin Water Assistant Director, Customer Experience; Jerry Galvan, Austin Energy Vice\n- July 23, 2026 Council resolution on large volume water users and related stakeholder engagement \u2013 Marisa Flores Gonzalez, Austin Water Water Resources Team Supervisor; Emlea Chanslor, Austin Water Chief of Staff\n\n16 discussion and action items\n\n\u2014\n\nAgenda: https://services.austintexas.gov/edims/document.cfm?id=482813",
+  "description": "Typical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).",
   "all_day": false
  },
  {
@@ -3728,6 +3728,19 @@
   "kind": "regular",
   "uid": "austin-electric-utility-commission-20261019@calendars.changesaroundme.com",
   "description": "Summary Agenda\n\n4 briefings:\n- Advanced Metering Infrastructure\n- Overview of Electric Vehicle Charging Network\n- Update from the joint RMC/EUC Local Solar + Storage Process Working Group regarding meeting highlights and next steps\n- Update from the joint RMC/EUC Long Duration Storage Working Group regarding meeting highlights and next steps\n\n5 discussion and action items\n\n\u2014\n\nAgenda: https://services.austintexas.gov/edims/document.cfm?id=483159",
+  "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "City Council: Work Session",
+  "start": "2026-10-20T09:00:00",
+  "end": "2026-10-20T11:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4126&GID=684&G=4BED8896-C64D-4912-8005-D624C5197AA5",
+  "status": "CONFIRMED",
+  "kind": "work-session",
+  "uid": "austin-city-council-work-session-20261020T0900@calendars.changesaroundme.com",
+  "description": "Summary Agenda\n\nBriefings:\nB1: A briefing on the Community Wildfire Protection Plan\nB2: A briefing on the state of Austin Capital Delivery Services",
   "all_day": false
  },
  {
