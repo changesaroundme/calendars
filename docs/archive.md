@@ -1,4 +1,4 @@
-*Every saved copy in the web archive, oldest to newest. Each page's **latest** link always points at its newest copy, so it can be cited even after the page itself changes or disappears; the dated links are the individual captures, and the files are the documents the page linked to, saved when first seen. Updated 8 Oct 2026 08:50 — regenerated on every build as `docs/archive.md` in the calendars repo; [[Archive]] is a copy of that file.*
+*Every saved copy in the web archive, oldest to newest. Each page's **latest** link always points at its newest copy, so it can be cited even after the page itself changes or disappears; the dated links are the individual captures, and the files are the documents the page linked to, saved when first seen. Updated 15 Oct 2026 06:31 — regenerated on every build as `docs/archive.md` in the calendars repo; [[Archive]] is a copy of that file.*
 
 ## City of Austin (CoA)
 
@@ -6,7 +6,7 @@
 
 [page](https://www.speakupaustin.org/2908SouthCongress) · [latest copy](https://archive.changesaroundme.com/coa-2908-south-congress/latest.pdf)
 
-Captures: [1 Sep 2026 16:34](https://archive.changesaroundme.com/coa-2908-south-congress/2026-09-01-1634.pdf), [20 Sep 2026 11:08](https://archive.changesaroundme.com/coa-2908-south-congress/2026-09-20-1108.pdf), [24 Sep 2026 06:30](https://archive.changesaroundme.com/coa-2908-south-congress/2026-09-24-0630.pdf), [27 Sep 2026 06:30](https://archive.changesaroundme.com/coa-2908-south-congress/2026-09-27-0630.pdf)
+Captures: [1 Sep 2026 16:34](https://archive.changesaroundme.com/coa-2908-south-congress/2026-09-01-1634.pdf), [20 Sep 2026 11:08](https://archive.changesaroundme.com/coa-2908-south-congress/2026-09-20-1108.pdf), [24 Sep 2026 06:30](https://archive.changesaroundme.com/coa-2908-south-congress/2026-09-24-0630.pdf), [27 Sep 2026 06:30](https://archive.changesaroundme.com/coa-2908-south-congress/2026-09-27-0630.pdf), [9 Oct 2026 08:50](https://archive.changesaroundme.com/coa-2908-south-congress/2026-10-09-0850.pdf)
 
 Files:
 - [Deletta Dean_ Director_ Austin Housing.PDF](https://archive.changesaroundme.com/coa-2908-south-congress/files/2026-09-18-2351/Deletta%20Dean_%20Director_%20Austin%20Housing.PDF) — 18 Sep 2026 23:51, 2.2 MB
@@ -56,23 +56,6 @@ Captures: [1 Sep 2026 16:36](https://archive.changesaroundme.com/coa-barton-spri
 Files:
 - [BSRB BCER Public Release Redacted_Prepared for Accessibility_Updated on 5-15-26.pdf](https://archive.changesaroundme.com/coa-barton-springs-road-bridge/files/2026-09-27-0632/BSRB%20BCER%20Public%20Release%20Redacted_Prepared%20for%20Accessibility_Updated%20on%205-15-26.pdf) — 27 Sep 2026 06:32, 102.7 MB
 
-### Burnet Road corridor project
-
-[page](https://publicinput.com/n73647) · [latest copy](https://archive.changesaroundme.com/coa-burnet-road-corridor/latest.pdf)
-
-Captures: [20 Sep 2026 11:09](https://archive.changesaroundme.com/coa-burnet-road-corridor/2026-09-20-1109.pdf)
-
-Files:
-- [NoLa-Burnet - Appendix - A - Recommended Improvements.pdf](https://archive.changesaroundme.com/coa-burnet-road-corridor/files/2026-09-19-0007/NoLa-Burnet%20-%20Appendix%20-%20A%20-%20Recommended%20Improvements.pdf) — 19 Sep 2026 00:07, 19.8 MB
-- [NoLa-Burnet - Appendix B - Cost_Estimates.pdf](https://archive.changesaroundme.com/coa-burnet-road-corridor/files/2026-09-19-0007/NoLa-Burnet%20-%20Appendix%20B%20-%20Cost_Estimates.pdf) — 19 Sep 2026 00:07, 0.3 MB
-- [NoLa-Burnet - Appendix C - PIP.pdf](https://archive.changesaroundme.com/coa-burnet-road-corridor/files/2026-09-19-0007/NoLa-Burnet%20-%20Appendix%20C%20-%20PIP.pdf) — 19 Sep 2026 00:07, 0.3 MB
-- [NoLa-Burnet - Appendix D - Drainage Improvements.pdf](https://archive.changesaroundme.com/coa-burnet-road-corridor/files/2026-09-19-0007/NoLa-Burnet%20-%20Appendix%20D%20-%20Drainage%20Improvements.pdf) — 19 Sep 2026 00:07, 0.2 MB
-- [NoLa-Burnet - Appendix E - Traffic_Counts.pdf](https://archive.changesaroundme.com/coa-burnet-road-corridor/files/2026-09-19-0007/NoLa-Burnet%20-%20Appendix%20E%20-%20Traffic_Counts.pdf) — 19 Sep 2026 00:07, 1.2 MB
-- [NoLa-Burnet - Appendix F - Traffic_Analysis.pdf](https://archive.changesaroundme.com/coa-burnet-road-corridor/files/2026-09-19-0007/NoLa-Burnet%20-%20Appendix%20F%20-%20Traffic_Analysis.pdf) — 19 Sep 2026 00:07, 0.3 MB
-- [NoLa-Burnet - Executive Summary.pdf](https://archive.changesaroundme.com/coa-burnet-road-corridor/files/2026-09-19-0007/NoLa-Burnet%20-%20Executive%20Summary.pdf) — 19 Sep 2026 00:07, 1.1 MB
-- [North Lamar - Burnet Corridor Report - 2013-12.pdf](https://archive.changesaroundme.com/coa-burnet-road-corridor/files/2026-09-19-0007/North%20Lamar%20-%20Burnet%20Corridor%20Report%20-%202013-12.pdf) — 19 Sep 2026 00:07, 7.8 MB
-- [CDS-Action-Plan-Map.pdf](https://archive.changesaroundme.com/coa-burnet-road-corridor/files/2026-09-27-0633/CDS-Action-Plan-Map.pdf) — 27 Sep 2026 06:33, 89.8 MB
-
 ### C20-2024-004 Citywide Density Bonus Program
 
 [page](https://www.speakupaustin.org/Citywidedb) · [latest copy](https://archive.changesaroundme.com/coa-citywide-density-bonus/latest.pdf)
@@ -96,7 +79,7 @@ Files:
 
 [page](https://www.speakupaustin.org/centralcity) · [latest copy](https://archive.changesaroundme.com/coa-central-city-district-plan/latest.pdf)
 
-Captures: [1 Sep 2026 16:39](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-09-01-1639.pdf), [20 Sep 2026 11:12](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-09-20-1112.pdf), [24 Sep 2026 06:50](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-09-24-0650.pdf), [27 Sep 2026 06:40](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-09-27-0640.pdf), [30 Sep 2026 07:55](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-09-30-0755.pdf)
+Captures: [1 Sep 2026 16:39](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-09-01-1639.pdf), [20 Sep 2026 11:12](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-09-20-1112.pdf), [24 Sep 2026 06:50](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-09-24-0650.pdf), [27 Sep 2026 06:40](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-09-27-0640.pdf), [30 Sep 2026 07:55](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-09-30-0755.pdf), [13 Oct 2026 06:33](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-10-13-0633.pdf)
 
 Files:
 - [20100624-151_ Agenda Backup (Master Plan  - Part 1).PDF](https://archive.changesaroundme.com/coa-central-city-district-plan/files/2026-09-18-2353/20100624-151_%20Agenda%20Backup%20%28Master%20Plan%20%20-%20Part%201%29.PDF) — 18 Sep 2026 23:53, 3.1 MB
@@ -127,6 +110,8 @@ Files:
 - [2016-South-Central-Waterfront-Vision-Framework.pdf](https://archive.changesaroundme.com/coa-central-city-district-plan/files/2026-09-30-0801/2016-South-Central-Waterfront-Vision-Framework.pdf) — 30 Sep 2026 08:01, 25 KB
 - [2016-South-Central-Waterfront-Vision-Framework.pdf](https://archive.changesaroundme.com/coa-central-city-district-plan/files/2026-10-03-0833/2016-South-Central-Waterfront-Vision-Framework.pdf) — 3 Oct 2026 08:33, 25 KB
 - [2016-South-Central-Waterfront-Vision-Framework.pdf](https://archive.changesaroundme.com/coa-central-city-district-plan/files/2026-10-06-0850/2016-South-Central-Waterfront-Vision-Framework.pdf) — 6 Oct 2026 08:50, 25 KB
+- [2016-South-Central-Waterfront-Vision-Framework.pdf](https://archive.changesaroundme.com/coa-central-city-district-plan/files/2026-10-09-0854/2016-South-Central-Waterfront-Vision-Framework.pdf) — 9 Oct 2026 08:54, 25 KB
+- [2016-South-Central-Waterfront-Vision-Framework.pdf](https://archive.changesaroundme.com/coa-central-city-district-plan/files/2026-10-13-0634/2016-South-Central-Waterfront-Vision-Framework.pdf) — 13 Oct 2026 06:34, 25 KB
 
 ### César Chávez Street Renaming
 
@@ -156,6 +141,8 @@ Files:
 - [Street_Naming_Standards.pdf](https://archive.changesaroundme.com/coa-cesar-chavez-renaming-survey/files/2026-09-30-0820/Street_Naming_Standards.pdf) — 30 Sep 2026 08:20, 25 KB
 - [Street_Naming_Standards.pdf](https://archive.changesaroundme.com/coa-cesar-chavez-renaming-survey/files/2026-10-04-0631/Street_Naming_Standards.pdf) — 4 Oct 2026 06:31, 25 KB
 - [Street_Naming_Standards.pdf](https://archive.changesaroundme.com/coa-cesar-chavez-renaming-survey/files/2026-10-07-0638/Street_Naming_Standards.pdf) — 7 Oct 2026 06:38, 25 KB
+- [Street_Naming_Standards.pdf](https://archive.changesaroundme.com/coa-cesar-chavez-renaming-survey/files/2026-10-10-0742/Street_Naming_Standards.pdf) — 10 Oct 2026 07:42, 25 KB
+- [Street_Naming_Standards.pdf](https://archive.changesaroundme.com/coa-cesar-chavez-renaming-survey/files/2026-10-13-0635/Street_Naming_Standards.pdf) — 13 Oct 2026 06:35, 25 KB
 
 ### Development Incentives and Agreements (Housing)
 
@@ -189,6 +176,20 @@ Files:
 - [Lamar-Justin-Regulating-Plan.pdf](https://archive.changesaroundme.com/coa-development-incentives-agreements/files/2026-10-07-0728/Lamar-Justin-Regulating-Plan.pdf) — 7 Oct 2026 07:28, 25 KB
 - [UT-Austin-SMART-Awards-List---2024.pdf](https://archive.changesaroundme.com/coa-development-incentives-agreements/files/2026-10-07-0728/UT-Austin-SMART-Awards-List---2024.pdf) — 7 Oct 2026 07:28, 25 KB
 - [mlk_regplan_revised.pdf](https://archive.changesaroundme.com/coa-development-incentives-agreements/files/2026-10-07-0728/mlk_regplan_revised.pdf) — 7 Oct 2026 07:28, 25 KB
+- [DSD-Smart-Housing-Fee-Waivers---FY26.xls](https://archive.changesaroundme.com/coa-development-incentives-agreements/files/2026-10-10-0914/DSD-Smart-Housing-Fee-Waivers---FY26.xls) — 10 Oct 2026 09:14, 25 KB
+- [Developer_Agreement__Matrix_121813_websiteversion.pdf](https://archive.changesaroundme.com/coa-development-incentives-agreements/files/2026-10-10-0914/Developer_Agreement__Matrix_121813_websiteversion.pdf) — 10 Oct 2026 09:14, 25 KB
+- [Development-Incentive-Matrix__01122026.pdf](https://archive.changesaroundme.com/coa-development-incentives-agreements/files/2026-10-10-0914/Development-Incentive-Matrix__01122026.pdf) — 10 Oct 2026 09:14, 25 KB
+- [ERC_Regulating_Plan_November2024.pdf](https://archive.changesaroundme.com/coa-development-incentives-agreements/files/2026-10-10-0914/ERC_Regulating_Plan_November2024.pdf) — 10 Oct 2026 09:14, 24 KB
+- [Lamar-Justin-Regulating-Plan.pdf](https://archive.changesaroundme.com/coa-development-incentives-agreements/files/2026-10-10-0914/Lamar-Justin-Regulating-Plan.pdf) — 10 Oct 2026 09:14, 25 KB
+- [UT-Austin-SMART-Awards-List---2024.pdf](https://archive.changesaroundme.com/coa-development-incentives-agreements/files/2026-10-10-0914/UT-Austin-SMART-Awards-List---2024.pdf) — 10 Oct 2026 09:14, 25 KB
+- [mlk_regplan_revised.pdf](https://archive.changesaroundme.com/coa-development-incentives-agreements/files/2026-10-10-0914/mlk_regplan_revised.pdf) — 10 Oct 2026 09:14, 25 KB
+- [DSD-Smart-Housing-Fee-Waivers---FY26.xls](https://archive.changesaroundme.com/coa-development-incentives-agreements/files/2026-10-14-0652/DSD-Smart-Housing-Fee-Waivers---FY26.xls) — 14 Oct 2026 06:52, 25 KB
+- [Developer_Agreement__Matrix_121813_websiteversion.pdf](https://archive.changesaroundme.com/coa-development-incentives-agreements/files/2026-10-14-0652/Developer_Agreement__Matrix_121813_websiteversion.pdf) — 14 Oct 2026 06:52, 25 KB
+- [Development-Incentive-Matrix__01122026.pdf](https://archive.changesaroundme.com/coa-development-incentives-agreements/files/2026-10-14-0652/Development-Incentive-Matrix__01122026.pdf) — 14 Oct 2026 06:52, 25 KB
+- [ERC_Regulating_Plan_November2024.pdf](https://archive.changesaroundme.com/coa-development-incentives-agreements/files/2026-10-14-0652/ERC_Regulating_Plan_November2024.pdf) — 14 Oct 2026 06:52, 24 KB
+- [Lamar-Justin-Regulating-Plan.pdf](https://archive.changesaroundme.com/coa-development-incentives-agreements/files/2026-10-14-0652/Lamar-Justin-Regulating-Plan.pdf) — 14 Oct 2026 06:52, 25 KB
+- [UT-Austin-SMART-Awards-List---2024.pdf](https://archive.changesaroundme.com/coa-development-incentives-agreements/files/2026-10-14-0652/UT-Austin-SMART-Awards-List---2024.pdf) — 14 Oct 2026 06:52, 25 KB
+- [mlk_regplan_revised.pdf](https://archive.changesaroundme.com/coa-development-incentives-agreements/files/2026-10-14-0652/mlk_regplan_revised.pdf) — 14 Oct 2026 06:52, 25 KB
 
 ### East Austin Historic Resource Survey
 
@@ -228,7 +229,7 @@ Files:
 
 [page](https://publicinput.com/eilers1) · [latest copy](https://archive.changesaroundme.com/coa-eilers-park-survey-1/latest.pdf)
 
-Captures: [26 Sep 2026 06:39](https://archive.changesaroundme.com/coa-eilers-park-survey-1/2026-09-26-0639.pdf), [2 Oct 2026 06:30](https://archive.changesaroundme.com/coa-eilers-park-survey-1/2026-10-02-0630.pdf), [5 Oct 2026 06:30](https://archive.changesaroundme.com/coa-eilers-park-survey-1/2026-10-05-0630.pdf), [8 Oct 2026 06:35](https://archive.changesaroundme.com/coa-eilers-park-survey-1/2026-10-08-0635.pdf)
+Captures: [26 Sep 2026 06:39](https://archive.changesaroundme.com/coa-eilers-park-survey-1/2026-09-26-0639.pdf), [2 Oct 2026 06:30](https://archive.changesaroundme.com/coa-eilers-park-survey-1/2026-10-02-0630.pdf), [5 Oct 2026 06:30](https://archive.changesaroundme.com/coa-eilers-park-survey-1/2026-10-05-0630.pdf), [8 Oct 2026 06:35](https://archive.changesaroundme.com/coa-eilers-park-survey-1/2026-10-08-0635.pdf), [11 Oct 2026 06:51](https://archive.changesaroundme.com/coa-eilers-park-survey-1/2026-10-11-0651.pdf)
 
 ### Equitable Transit-Oriented Development (ETOD) Overlay Phase 2
 
@@ -278,7 +279,7 @@ Captures: [20 Sep 2026 11:18](https://archive.changesaroundme.com/coa-grove-rive
 
 [page](https://www.austintexas.gov/parks/projects/holly-shores-edward-rendon-sr-park-festival-beach-vision-plan-implementation) · [latest copy](https://archive.changesaroundme.com/coa-holly-shores-vision-plan/latest.pdf)
 
-Captures: [5 Oct 2026 06:32](https://archive.changesaroundme.com/coa-holly-shores-vision-plan/2026-10-05-0632.pdf)
+Captures: [5 Oct 2026 06:32](https://archive.changesaroundme.com/coa-holly-shores-vision-plan/2026-10-05-0632.pdf), [11 Oct 2026 07:50](https://archive.changesaroundme.com/coa-holly-shores-vision-plan/2026-10-11-0750.pdf)
 
 Files:
 - [20060525-082_ Resolution.PDF](https://archive.changesaroundme.com/coa-holly-shores-vision-plan/files/2026-10-05-0632/20060525-082_%20Resolution.PDF) — 5 Oct 2026 06:32, 58 KB
@@ -289,6 +290,12 @@ Files:
 - [2015_Holly-Shores-Master-Plan-low-res.pdf](https://archive.changesaroundme.com/coa-holly-shores-vision-plan/files/2026-10-08-0715/2015_Holly-Shores-Master-Plan-low-res.pdf) — 8 Oct 2026 07:15, 25 KB
 - [ExpoSchool_SitePlan.pdf](https://archive.changesaroundme.com/coa-holly-shores-vision-plan/files/2026-10-08-0715/ExpoSchool_SitePlan.pdf) — 8 Oct 2026 07:15, 25 KB
 - [Sept2009Resolution_Holly_Mater_Plan_Funding.pdf](https://archive.changesaroundme.com/coa-holly-shores-vision-plan/files/2026-10-08-0715/Sept2009Resolution_Holly_Mater_Plan_Funding.pdf) — 8 Oct 2026 07:15, 25 KB
+- [2015_Holly-Shores-Master-Plan-low-res.pdf](https://archive.changesaroundme.com/coa-holly-shores-vision-plan/files/2026-10-11-0801/2015_Holly-Shores-Master-Plan-low-res.pdf) — 11 Oct 2026 08:01, 25 KB
+- [ExpoSchool_SitePlan.pdf](https://archive.changesaroundme.com/coa-holly-shores-vision-plan/files/2026-10-11-0801/ExpoSchool_SitePlan.pdf) — 11 Oct 2026 08:01, 25 KB
+- [Sept2009Resolution_Holly_Mater_Plan_Funding.pdf](https://archive.changesaroundme.com/coa-holly-shores-vision-plan/files/2026-10-11-0801/Sept2009Resolution_Holly_Mater_Plan_Funding.pdf) — 11 Oct 2026 08:01, 25 KB
+- [2015_Holly-Shores-Master-Plan-low-res.pdf](https://archive.changesaroundme.com/coa-holly-shores-vision-plan/files/2026-10-14-0654/2015_Holly-Shores-Master-Plan-low-res.pdf) — 14 Oct 2026 06:54, 25 KB
+- [ExpoSchool_SitePlan.pdf](https://archive.changesaroundme.com/coa-holly-shores-vision-plan/files/2026-10-14-0654/ExpoSchool_SitePlan.pdf) — 14 Oct 2026 06:54, 25 KB
+- [Sept2009Resolution_Holly_Mater_Plan_Funding.pdf](https://archive.changesaroundme.com/coa-holly-shores-vision-plan/files/2026-10-14-0654/Sept2009Resolution_Holly_Mater_Plan_Funding.pdf) — 14 Oct 2026 06:54, 25 KB
 
 ### I-35 Central Small Area Mobility Plan
 
@@ -304,7 +311,7 @@ Files:
 
 [page](https://www.speakupaustin.org/imagineaustin) · [latest copy](https://archive.changesaroundme.com/coa-imagine-austin-update/latest.pdf)
 
-Captures: [1 Sep 2026 16:48](https://archive.changesaroundme.com/coa-imagine-austin-update/2026-09-01-1648.pdf), [20 Sep 2026 11:19](https://archive.changesaroundme.com/coa-imagine-austin-update/2026-09-20-1119.pdf), [27 Sep 2026 06:44](https://archive.changesaroundme.com/coa-imagine-austin-update/2026-09-27-0644.pdf), [30 Sep 2026 09:07](https://archive.changesaroundme.com/coa-imagine-austin-update/2026-09-30-0907.pdf), [3 Oct 2026 09:20](https://archive.changesaroundme.com/coa-imagine-austin-update/2026-10-03-0920.pdf)
+Captures: [1 Sep 2026 16:48](https://archive.changesaroundme.com/coa-imagine-austin-update/2026-09-01-1648.pdf), [20 Sep 2026 11:19](https://archive.changesaroundme.com/coa-imagine-austin-update/2026-09-20-1119.pdf), [27 Sep 2026 06:44](https://archive.changesaroundme.com/coa-imagine-austin-update/2026-09-27-0644.pdf), [30 Sep 2026 09:07](https://archive.changesaroundme.com/coa-imagine-austin-update/2026-09-30-0907.pdf), [3 Oct 2026 09:20](https://archive.changesaroundme.com/coa-imagine-austin-update/2026-10-03-0920.pdf), [9 Oct 2026 08:57](https://archive.changesaroundme.com/coa-imagine-austin-update/2026-10-09-0857.pdf)
 
 Files:
 - [20231212-B001_ Agenda Backup_ Presentation.PDF](https://archive.changesaroundme.com/coa-imagine-austin-update/files/2026-09-18-2359/20231212-B001_%20Agenda%20Backup_%20Presentation.PDF) — 18 Sep 2026 23:59, 2.8 MB
@@ -340,7 +347,7 @@ Captures: [28 Sep 2026 09:25](https://archive.changesaroundme.com/coa-neighborho
 
 [page](https://www.austintexas.gov/planning/neighborhood-plans-and-resources) · [latest copy](https://archive.changesaroundme.com/coa-neighborhood-plans-resources/latest.pdf)
 
-Captures: [27 Sep 2026 19:04](https://archive.changesaroundme.com/coa-neighborhood-plans-resources/2026-09-27-1904.pdf), [4 Oct 2026 06:40](https://archive.changesaroundme.com/coa-neighborhood-plans-resources/2026-10-04-0640.pdf)
+Captures: [27 Sep 2026 19:04](https://archive.changesaroundme.com/coa-neighborhood-plans-resources/2026-09-27-1904.pdf), [4 Oct 2026 06:40](https://archive.changesaroundme.com/coa-neighborhood-plans-resources/2026-10-04-0640.pdf), [14 Oct 2026 06:49](https://archive.changesaroundme.com/coa-neighborhood-plans-resources/2026-10-14-0649.pdf)
 
 Files:
 - [2020_Mobile_Food_Vendor_Regulations_Map.pdf](https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-09-27-1904/2020_Mobile_Food_Vendor_Regulations_Map.pdf) — 27 Sep 2026 19:04, 3.7 MB
@@ -536,6 +543,10 @@ Files:
 - [2026-Restricted-Front-Side-Yard-Parking-Application_Fillable.pdf](https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-10-04-0641/2026-Restricted-Front-Side-Yard-Parking-Application_Fillable.pdf) — 4 Oct 2026 06:41, 24 KB
 - [2026-Mobile-Food-Vendor-Application_Fillable.pdf](https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-10-07-0724/2026-Mobile-Food-Vendor-Application_Fillable.pdf) — 7 Oct 2026 07:24, 24 KB
 - [2026-Restricted-Front-Side-Yard-Parking-Application_Fillable.pdf](https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-10-07-0724/2026-Restricted-Front-Side-Yard-Parking-Application_Fillable.pdf) — 7 Oct 2026 07:24, 24 KB
+- [2026-Mobile-Food-Vendor-Application_Fillable.pdf](https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-10-10-0909/2026-Mobile-Food-Vendor-Application_Fillable.pdf) — 10 Oct 2026 09:09, 24 KB
+- [2026-Restricted-Front-Side-Yard-Parking-Application_Fillable.pdf](https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-10-10-0909/2026-Restricted-Front-Side-Yard-Parking-Application_Fillable.pdf) — 10 Oct 2026 09:09, 24 KB
+- [2026-Mobile-Food-Vendor-Application_Fillable.pdf](https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-10-14-0650/2026-Mobile-Food-Vendor-Application_Fillable.pdf) — 14 Oct 2026 06:50, 24 KB
+- [2026-Restricted-Front-Side-Yard-Parking-Application_Fillable.pdf](https://archive.changesaroundme.com/coa-neighborhood-plans-resources/files/2026-10-14-0650/2026-Restricted-Front-Side-Yard-Parking-Application_Fillable.pdf) — 14 Oct 2026 06:50, 24 KB
 
 ### Northeast District Plan
 
@@ -646,6 +657,40 @@ Files:
 - [Planning_Area_Recommendations-optimized.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-08-0658/Planning_Area_Recommendations-optimized.pdf) — 8 Oct 2026 06:58, 25 KB
 - [Planning_Area_Table_Maps-optimized.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-08-0658/Planning_Area_Table_Maps-optimized.pdf) — 8 Oct 2026 06:58, 25 KB
 - [Summit_3_Presentation_20190726-optimized.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-08-0658/Summit_3_Presentation_20190726-optimized.pdf) — 8 Oct 2026 06:58, 25 KB
+- [3.Statistically_Valid_Survey_Executive_Summary_20190421__ETC_.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-11-0735/3.Statistically_Valid_Survey_Executive_Summary_20190421__ETC_.pdf) — 11 Oct 2026 07:35, 25 KB
+- [Appendix-A_Park-Planning-Area-Recommendations-sm.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-11-0735/Appendix-A_Park-Planning-Area-Recommendations-sm.pdf) — 11 Oct 2026 07:35, 25 KB
+- [Appendix-B_Community-Engagement-Summary-Final-sm-12.27.19.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-11-0735/Appendix-B_Community-Engagement-Summary-Final-sm-12.27.19.pdf) — 11 Oct 2026 07:35, 25 KB
+- [AustinParks_Summit2Boards_33x78_FINAL_web_04302019.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-11-0735/AustinParks_Summit2Boards_33x78_FINAL_web_04302019.pdf) — 11 Oct 2026 07:35, 25 KB
+- [Austin_Benchmarking_TPL_FINAL_04242019.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-11-0735/Austin_Benchmarking_TPL_FINAL_04242019.pdf) — 11 Oct 2026 07:35, 25 KB
+- [Community_Profile_and_Recreation_Trend_PROS_FINAL_1_31_20.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-11-0735/Community_Profile_and_Recreation_Trend_PROS_FINAL_1_31_20.pdf) — 11 Oct 2026 07:35, 25 KB
+- [Community_Survey_Report_20190326.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-11-0735/Community_Survey_Report_20190326.pdf) — 11 Oct 2026 07:35, 25 KB
+- [EXHIBIT-C---Summary_PARD_LRP_Boards-and-Commissions_20091023.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-11-0735/EXHIBIT-C---Summary_PARD_LRP_Boards-and-Commissions_20091023.pdf) — 11 Oct 2026 07:35, 25 KB
+- [EXHIBIT_D_-_Draft_Plan_-_Public_Comments_-_updated_12.19.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-11-0735/EXHIBIT_D_-_Draft_Plan_-_Public_Comments_-_updated_12.19.pdf) — 11 Oct 2026 07:35, 25 KB
+- [LRP_Phase_1_Community_Engagement_Summary_-_FINAL_rev2019-04-18.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-11-0735/LRP_Phase_1_Community_Engagement_Summary_-_FINAL_rev2019-04-18.pdf) — 11 Oct 2026 07:35, 25 KB
+- [MeetingSeries1-feedback_on_boards_11282018.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-11-0735/MeetingSeries1-feedback_on_boards_11282018.pdf) — 11 Oct 2026 07:35, 25 KB
+- [MeetingSeries_1-Boards_110518-reducedsize.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-11-0735/MeetingSeries_1-Boards_110518-reducedsize.pdf) — 11 Oct 2026 07:35, 25 KB
+- [Our-Parks-Our-Future-FINAL-Plan-2019-12-27.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-11-0735/Our-Parks-Our-Future-FINAL-Plan-2019-12-27.pdf) — 11 Oct 2026 07:35, 25 KB
+- [PARD_Long_Range_Plan_Survey_042119_ETC.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-11-0735/PARD_Long_Range_Plan_Survey_042119_ETC.pdf) — 11 Oct 2026 07:35, 25 KB
+- [Planning_Area_Recommendations-optimized.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-11-0735/Planning_Area_Recommendations-optimized.pdf) — 11 Oct 2026 07:35, 25 KB
+- [Planning_Area_Table_Maps-optimized.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-11-0735/Planning_Area_Table_Maps-optimized.pdf) — 11 Oct 2026 07:35, 25 KB
+- [Summit_3_Presentation_20190726-optimized.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-11-0735/Summit_3_Presentation_20190726-optimized.pdf) — 11 Oct 2026 07:35, 25 KB
+- [3.Statistically_Valid_Survey_Executive_Summary_20190421__ETC_.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-14-0653/3.Statistically_Valid_Survey_Executive_Summary_20190421__ETC_.pdf) — 14 Oct 2026 06:53, 25 KB
+- [Appendix-A_Park-Planning-Area-Recommendations-sm.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-14-0653/Appendix-A_Park-Planning-Area-Recommendations-sm.pdf) — 14 Oct 2026 06:53, 25 KB
+- [Appendix-B_Community-Engagement-Summary-Final-sm-12.27.19.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-14-0653/Appendix-B_Community-Engagement-Summary-Final-sm-12.27.19.pdf) — 14 Oct 2026 06:53, 25 KB
+- [AustinParks_Summit2Boards_33x78_FINAL_web_04302019.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-14-0653/AustinParks_Summit2Boards_33x78_FINAL_web_04302019.pdf) — 14 Oct 2026 06:53, 25 KB
+- [Austin_Benchmarking_TPL_FINAL_04242019.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-14-0653/Austin_Benchmarking_TPL_FINAL_04242019.pdf) — 14 Oct 2026 06:53, 25 KB
+- [Community_Profile_and_Recreation_Trend_PROS_FINAL_1_31_20.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-14-0653/Community_Profile_and_Recreation_Trend_PROS_FINAL_1_31_20.pdf) — 14 Oct 2026 06:53, 25 KB
+- [Community_Survey_Report_20190326.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-14-0653/Community_Survey_Report_20190326.pdf) — 14 Oct 2026 06:53, 25 KB
+- [EXHIBIT-C---Summary_PARD_LRP_Boards-and-Commissions_20091023.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-14-0653/EXHIBIT-C---Summary_PARD_LRP_Boards-and-Commissions_20091023.pdf) — 14 Oct 2026 06:53, 25 KB
+- [EXHIBIT_D_-_Draft_Plan_-_Public_Comments_-_updated_12.19.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-14-0653/EXHIBIT_D_-_Draft_Plan_-_Public_Comments_-_updated_12.19.pdf) — 14 Oct 2026 06:53, 25 KB
+- [LRP_Phase_1_Community_Engagement_Summary_-_FINAL_rev2019-04-18.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-14-0653/LRP_Phase_1_Community_Engagement_Summary_-_FINAL_rev2019-04-18.pdf) — 14 Oct 2026 06:53, 25 KB
+- [MeetingSeries1-feedback_on_boards_11282018.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-14-0653/MeetingSeries1-feedback_on_boards_11282018.pdf) — 14 Oct 2026 06:53, 25 KB
+- [MeetingSeries_1-Boards_110518-reducedsize.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-14-0653/MeetingSeries_1-Boards_110518-reducedsize.pdf) — 14 Oct 2026 06:53, 25 KB
+- [Our-Parks-Our-Future-FINAL-Plan-2019-12-27.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-14-0653/Our-Parks-Our-Future-FINAL-Plan-2019-12-27.pdf) — 14 Oct 2026 06:53, 25 KB
+- [PARD_Long_Range_Plan_Survey_042119_ETC.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-14-0653/PARD_Long_Range_Plan_Survey_042119_ETC.pdf) — 14 Oct 2026 06:53, 25 KB
+- [Planning_Area_Recommendations-optimized.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-14-0653/Planning_Area_Recommendations-optimized.pdf) — 14 Oct 2026 06:53, 25 KB
+- [Planning_Area_Table_Maps-optimized.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-14-0653/Planning_Area_Table_Maps-optimized.pdf) — 14 Oct 2026 06:53, 25 KB
+- [Summit_3_Presentation_20190726-optimized.pdf](https://archive.changesaroundme.com/coa-parks-long-range-plan/files/2026-10-14-0653/Summit_3_Presentation_20190726-optimized.pdf) — 14 Oct 2026 06:53, 25 KB
 
 ### Safety and Mobility Improvements on East Oltorf Street
 
@@ -682,13 +727,21 @@ Files:
 - [2025_12_15_ Regular Meeting Backup_ 2026 Bond Election Advisory Task Force.PDF](https://archive.changesaroundme.com/coa-shape-austins-2026-bond/files/2026-10-01-0630/2025_12_15_%20Regular%20Meeting%20Backup_%202026%20Bond%20Election%20Advisory%20Task%20Force.PDF) — 1 Oct 2026 06:30, 0.4 MB
 - [2025_12_15_ Regular Meeting Backup_ 2026 Bond Election Advisory Task Force.PDF](https://archive.changesaroundme.com/coa-shape-austins-2026-bond/files/2026-10-04-0631/2025_12_15_%20Regular%20Meeting%20Backup_%202026%20Bond%20Election%20Advisory%20Task%20Force.PDF) — 4 Oct 2026 06:31, 0.4 MB
 - [2026 Bond Election Guide-Eng.pdf](https://archive.changesaroundme.com/coa-shape-austins-2026-bond/files/2026-10-04-0631/2026%20Bond%20Election%20Guide-Eng.pdf) — 4 Oct 2026 06:31, 18.9 MB
-- [DigitalArabic - 2026 GO BOND Packet.pdf](https://archive.changesaroundme.com/coa-shape-austins-2026-bond/files/2026-10-04-0631/DigitalArabic%20-%202026%20GO%20BOND%20Packet.pdf) — 4 Oct 2026 06:31, 19.1 MB
-- [DigitalChinese - 2026 GO BOND Packet.pdf](https://archive.changesaroundme.com/coa-shape-austins-2026-bond/files/2026-10-04-0631/DigitalChinese%20-%202026%20GO%20BOND%20Packet.pdf) — 4 Oct 2026 06:31, 21.9 MB
-- [DigitalFRENCH - 2026 GO BOND Packet.pdf](https://archive.changesaroundme.com/coa-shape-austins-2026-bond/files/2026-10-04-0631/DigitalFRENCH%20-%202026%20GO%20BOND%20Packet.pdf) — 4 Oct 2026 06:31, 14.8 MB
-- [DigitalHindi - 2026 GO BOND Packet.pdf](https://archive.changesaroundme.com/coa-shape-austins-2026-bond/files/2026-10-04-0631/DigitalHindi%20-%202026%20GO%20BOND%20Packet.pdf) — 4 Oct 2026 06:31, 19.3 MB
-- [DigitalSPANISH - 2026 GO BOND Packet.pdf](https://archive.changesaroundme.com/coa-shape-austins-2026-bond/files/2026-10-04-0631/DigitalSPANISH%20-%202026%20GO%20BOND%20Packet.pdf) — 4 Oct 2026 06:31, 19.0 MB
-- [DigitalVietnamese - 2026 GO BOND Packet.pdf](https://archive.changesaroundme.com/coa-shape-austins-2026-bond/files/2026-10-04-0631/DigitalVietnamese%20-%202026%20GO%20BOND%20Packet.pdf) — 4 Oct 2026 06:31, 19.3 MB
+- [DigitalArabic - 2026 GO BOND Packet.pdf](https://archive.changesaroundme.com/coa-shape-austins-2026-bond/files/2026-10-04-0632/DigitalArabic%20-%202026%20GO%20BOND%20Packet.pdf) — 4 Oct 2026 06:32, 19.1 MB
+- [DigitalChinese - 2026 GO BOND Packet.pdf](https://archive.changesaroundme.com/coa-shape-austins-2026-bond/files/2026-10-04-0632/DigitalChinese%20-%202026%20GO%20BOND%20Packet.pdf) — 4 Oct 2026 06:32, 21.9 MB
+- [DigitalFRENCH - 2026 GO BOND Packet.pdf](https://archive.changesaroundme.com/coa-shape-austins-2026-bond/files/2026-10-04-0632/DigitalFRENCH%20-%202026%20GO%20BOND%20Packet.pdf) — 4 Oct 2026 06:32, 14.8 MB
+- [DigitalHindi - 2026 GO BOND Packet.pdf](https://archive.changesaroundme.com/coa-shape-austins-2026-bond/files/2026-10-04-0632/DigitalHindi%20-%202026%20GO%20BOND%20Packet.pdf) — 4 Oct 2026 06:32, 19.3 MB
+- [DigitalSPANISH - 2026 GO BOND Packet.pdf](https://archive.changesaroundme.com/coa-shape-austins-2026-bond/files/2026-10-04-0632/DigitalSPANISH%20-%202026%20GO%20BOND%20Packet.pdf) — 4 Oct 2026 06:32, 19.0 MB
+- [DigitalVietnamese - 2026 GO BOND Packet.pdf](https://archive.changesaroundme.com/coa-shape-austins-2026-bond/files/2026-10-04-0632/DigitalVietnamese%20-%202026%20GO%20BOND%20Packet.pdf) — 4 Oct 2026 06:32, 19.3 MB
 - [2025_12_15_ Regular Meeting Backup_ 2026 Bond Election Advisory Task Force.PDF](https://archive.changesaroundme.com/coa-shape-austins-2026-bond/files/2026-10-07-0721/2025_12_15_%20Regular%20Meeting%20Backup_%202026%20Bond%20Election%20Advisory%20Task%20Force.PDF) — 7 Oct 2026 07:21, 0.4 MB
+- [2025_12_15_ Regular Meeting Backup_ 2026 Bond Election Advisory Task Force.PDF](https://archive.changesaroundme.com/coa-shape-austins-2026-bond/files/2026-10-10-0844/2025_12_15_%20Regular%20Meeting%20Backup_%202026%20Bond%20Election%20Advisory%20Task%20Force.PDF) — 10 Oct 2026 08:44, 0.4 MB
+- [DigitalArabic - 2026 GO BOND Packet.pdf](https://archive.changesaroundme.com/coa-shape-austins-2026-bond/files/2026-10-10-0844/DigitalArabic%20-%202026%20GO%20BOND%20Packet.pdf) — 10 Oct 2026 08:44, 14.9 MB
+- [DigitalChinese - 2026 GO BOND Packet.pdf](https://archive.changesaroundme.com/coa-shape-austins-2026-bond/files/2026-10-10-0844/DigitalChinese%20-%202026%20GO%20BOND%20Packet.pdf) — 10 Oct 2026 08:44, 17.2 MB
+- [DigitalFRENCH - 2026 GO BOND Packet.pdf](https://archive.changesaroundme.com/coa-shape-austins-2026-bond/files/2026-10-10-0844/DigitalFRENCH%20-%202026%20GO%20BOND%20Packet.pdf) — 10 Oct 2026 08:44, 8.7 MB
+- [DigitalHindi - 2026 GO BOND Packet.pdf](https://archive.changesaroundme.com/coa-shape-austins-2026-bond/files/2026-10-10-0844/DigitalHindi%20-%202026%20GO%20BOND%20Packet.pdf) — 10 Oct 2026 08:44, 15.0 MB
+- [DigitalSPANISH - 2026 GO BOND Packet.pdf](https://archive.changesaroundme.com/coa-shape-austins-2026-bond/files/2026-10-10-0844/DigitalSPANISH%20-%202026%20GO%20BOND%20Packet.pdf) — 10 Oct 2026 08:44, 14.8 MB
+- [DigitalVietnamese - 2026 GO BOND Packet.pdf](https://archive.changesaroundme.com/coa-shape-austins-2026-bond/files/2026-10-10-0844/DigitalVietnamese%20-%202026%20GO%20BOND%20Packet.pdf) — 10 Oct 2026 08:44, 13.1 MB
+- [2025_12_15_ Regular Meeting Backup_ 2026 Bond Election Advisory Task Force.PDF](https://archive.changesaroundme.com/coa-shape-austins-2026-bond/files/2026-10-14-0642/2025_12_15_%20Regular%20Meeting%20Backup_%202026%20Bond%20Election%20Advisory%20Task%20Force.PDF) — 14 Oct 2026 06:42, 0.4 MB
 
 ### Shaping Austin's Economic Development Policy
 
@@ -969,6 +1022,72 @@ Files:
 - [TEP-StJohns.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-07-0723/TEP-StJohns.pdf) — 7 Oct 2026 07:23, 24 KB
 - [TEP-Woodward.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-07-0723/TEP-Woodward.pdf) — 7 Oct 2026 07:23, 24 KB
 - [Transit-Enhancement-Infrastructure-Report_Final.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-07-0723/Transit-Enhancement-Infrastructure-Report_Final.pdf) — 7 Oct 2026 07:23, 25 KB
+- [Appendix1_Toolbox.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-10-0849/Appendix1_Toolbox.pdf) — 10 Oct 2026 08:49, 25 KB
+- [Appendix2_TEPSummary-Round1-03.26.24.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-10-0849/Appendix2_TEPSummary-Round1-03.26.24.pdf) — 10 Oct 2026 08:49, 25 KB
+- [Appendix3_TEPSummary-Round2-03.26.24.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-10-0849/Appendix3_TEPSummary-Round2-03.26.24.pdf) — 10 Oct 2026 08:49, 25 KB
+- [Equity_Analysis_Zones_Final_Report.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-10-0849/Equity_Analysis_Zones_Final_Report.pdf) — 10 Oct 2026 08:49, 25 KB
+- [TEP-51stStreet.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-10-0849/TEP-51stStreet.pdf) — 10 Oct 2026 08:49, 25 KB
+- [TEP-Allandale.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-10-0849/TEP-Allandale.pdf) — 10 Oct 2026 08:49, 25 KB
+- [TEP-BluffSprings.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-10-0849/TEP-BluffSprings.pdf) — 10 Oct 2026 08:49, 25 KB
+- [TEP-Cameron.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-10-0849/TEP-Cameron.pdf) — 10 Oct 2026 08:49, 24 KB
+- [TEP-CesarChavez.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-10-0849/TEP-CesarChavez.pdf) — 10 Oct 2026 08:49, 25 KB
+- [TEP-DeanKeeton.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-10-0849/TEP-DeanKeeton.pdf) — 10 Oct 2026 08:49, 25 KB
+- [TEP-Guadalupe.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-10-0849/TEP-Guadalupe.pdf) — 10 Oct 2026 08:49, 25 KB
+- [TEP-HowardLane.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-10-0849/TEP-HowardLane.pdf) — 10 Oct 2026 08:49, 25 KB
+- [TEP-Jollyville.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-10-0849/TEP-Jollyville.pdf) — 10 Oct 2026 08:49, 25 KB
+- [TEP-LakeAustinBlvd.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-10-0849/TEP-LakeAustinBlvd.pdf) — 10 Oct 2026 08:49, 25 KB
+- [TEP-Lavaca.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-10-0849/TEP-Lavaca.pdf) — 10 Oct 2026 08:49, 24 KB
+- [TEP-Loyola.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-10-0849/TEP-Loyola.pdf) — 10 Oct 2026 08:49, 24 KB
+- [TEP-Manor.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-10-0849/TEP-Manor.pdf) — 10 Oct 2026 08:49, 24 KB
+- [TEP-Manor2.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-10-0849/TEP-Manor2.pdf) — 10 Oct 2026 08:49, 24 KB
+- [TEP-Montopolis.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-10-0849/TEP-Montopolis.pdf) — 10 Oct 2026 08:49, 25 KB
+- [TEP-Oltorf.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-10-0849/TEP-Oltorf.pdf) — 10 Oct 2026 08:49, 24 KB
+- [TEP-PleasantValley.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-10-0849/TEP-PleasantValley.pdf) — 10 Oct 2026 08:49, 25 KB
+- [TEP-RedRiver45th.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-10-0849/TEP-RedRiver45th.pdf) — 10 Oct 2026 08:49, 25 KB
+- [TEP-Rundberg.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-10-0849/TEP-Rundberg.pdf) — 10 Oct 2026 08:49, 24 KB
+- [TEP-Rutherford.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-10-0849/TEP-Rutherford.pdf) — 10 Oct 2026 08:49, 25 KB
+- [TEP-Seventh.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-10-0849/TEP-Seventh.pdf) — 10 Oct 2026 08:49, 24 KB
+- [TEP-ShadyLane.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-10-0849/TEP-ShadyLane.pdf) — 10 Oct 2026 08:49, 25 KB
+- [TEP-SouthFirst.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-10-0849/TEP-SouthFirst.pdf) — 10 Oct 2026 08:49, 25 KB
+- [TEP-SouthFirstBenWhite.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-10-0849/TEP-SouthFirstBenWhite.pdf) — 10 Oct 2026 08:49, 25 KB
+- [TEP-SouthparkMeadows.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-10-0849/TEP-SouthparkMeadows.pdf) — 10 Oct 2026 08:49, 25 KB
+- [TEP-Springdale.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-10-0849/TEP-Springdale.pdf) — 10 Oct 2026 08:49, 25 KB
+- [TEP-StJohns.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-10-0849/TEP-StJohns.pdf) — 10 Oct 2026 08:49, 24 KB
+- [TEP-Woodward.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-10-0849/TEP-Woodward.pdf) — 10 Oct 2026 08:49, 24 KB
+- [Transit-Enhancement-Infrastructure-Report_Final.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-10-0849/Transit-Enhancement-Infrastructure-Report_Final.pdf) — 10 Oct 2026 08:49, 25 KB
+- [Appendix1_Toolbox.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-14-0647/Appendix1_Toolbox.pdf) — 14 Oct 2026 06:47, 25 KB
+- [Appendix2_TEPSummary-Round1-03.26.24.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-14-0647/Appendix2_TEPSummary-Round1-03.26.24.pdf) — 14 Oct 2026 06:47, 25 KB
+- [Appendix3_TEPSummary-Round2-03.26.24.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-14-0647/Appendix3_TEPSummary-Round2-03.26.24.pdf) — 14 Oct 2026 06:47, 25 KB
+- [Equity_Analysis_Zones_Final_Report.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-14-0647/Equity_Analysis_Zones_Final_Report.pdf) — 14 Oct 2026 06:47, 25 KB
+- [TEP-51stStreet.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-14-0647/TEP-51stStreet.pdf) — 14 Oct 2026 06:47, 25 KB
+- [TEP-Allandale.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-14-0647/TEP-Allandale.pdf) — 14 Oct 2026 06:47, 25 KB
+- [TEP-BluffSprings.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-14-0647/TEP-BluffSprings.pdf) — 14 Oct 2026 06:47, 25 KB
+- [TEP-Cameron.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-14-0647/TEP-Cameron.pdf) — 14 Oct 2026 06:47, 24 KB
+- [TEP-CesarChavez.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-14-0647/TEP-CesarChavez.pdf) — 14 Oct 2026 06:47, 25 KB
+- [TEP-DeanKeeton.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-14-0647/TEP-DeanKeeton.pdf) — 14 Oct 2026 06:47, 25 KB
+- [TEP-Guadalupe.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-14-0647/TEP-Guadalupe.pdf) — 14 Oct 2026 06:47, 25 KB
+- [TEP-HowardLane.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-14-0647/TEP-HowardLane.pdf) — 14 Oct 2026 06:47, 25 KB
+- [TEP-Jollyville.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-14-0647/TEP-Jollyville.pdf) — 14 Oct 2026 06:47, 25 KB
+- [TEP-LakeAustinBlvd.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-14-0647/TEP-LakeAustinBlvd.pdf) — 14 Oct 2026 06:47, 25 KB
+- [TEP-Lavaca.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-14-0647/TEP-Lavaca.pdf) — 14 Oct 2026 06:47, 24 KB
+- [TEP-Loyola.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-14-0647/TEP-Loyola.pdf) — 14 Oct 2026 06:47, 24 KB
+- [TEP-Manor.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-14-0647/TEP-Manor.pdf) — 14 Oct 2026 06:47, 24 KB
+- [TEP-Manor2.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-14-0647/TEP-Manor2.pdf) — 14 Oct 2026 06:47, 24 KB
+- [TEP-Montopolis.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-14-0647/TEP-Montopolis.pdf) — 14 Oct 2026 06:47, 25 KB
+- [TEP-Oltorf.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-14-0647/TEP-Oltorf.pdf) — 14 Oct 2026 06:47, 24 KB
+- [TEP-PleasantValley.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-14-0647/TEP-PleasantValley.pdf) — 14 Oct 2026 06:47, 25 KB
+- [TEP-RedRiver45th.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-14-0647/TEP-RedRiver45th.pdf) — 14 Oct 2026 06:47, 25 KB
+- [TEP-Rundberg.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-14-0647/TEP-Rundberg.pdf) — 14 Oct 2026 06:47, 24 KB
+- [TEP-Rutherford.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-14-0647/TEP-Rutherford.pdf) — 14 Oct 2026 06:47, 25 KB
+- [TEP-Seventh.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-14-0647/TEP-Seventh.pdf) — 14 Oct 2026 06:47, 24 KB
+- [TEP-ShadyLane.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-14-0647/TEP-ShadyLane.pdf) — 14 Oct 2026 06:47, 25 KB
+- [TEP-SouthFirst.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-14-0647/TEP-SouthFirst.pdf) — 14 Oct 2026 06:47, 25 KB
+- [TEP-SouthFirstBenWhite.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-14-0647/TEP-SouthFirstBenWhite.pdf) — 14 Oct 2026 06:47, 25 KB
+- [TEP-SouthparkMeadows.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-14-0647/TEP-SouthparkMeadows.pdf) — 14 Oct 2026 06:47, 25 KB
+- [TEP-Springdale.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-14-0647/TEP-Springdale.pdf) — 14 Oct 2026 06:47, 25 KB
+- [TEP-StJohns.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-14-0647/TEP-StJohns.pdf) — 14 Oct 2026 06:47, 24 KB
+- [TEP-Woodward.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-14-0647/TEP-Woodward.pdf) — 14 Oct 2026 06:47, 24 KB
+- [Transit-Enhancement-Infrastructure-Report_Final.pdf](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/files/2026-10-14-0647/Transit-Enhancement-Infrastructure-Report_Final.pdf) — 14 Oct 2026 06:47, 25 KB
 
 ### Urban Trails Plan
 
@@ -1035,6 +1154,20 @@ Files:
 - [2023_Urban_Trails_Plan_Appendix_E.pdf](https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-10-07-0723/2023_Urban_Trails_Plan_Appendix_E.pdf) — 7 Oct 2026 07:23, 25 KB
 - [2023_Urban_Trails_Plan_Appendix_F.pdf](https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-10-07-0723/2023_Urban_Trails_Plan_Appendix_F.pdf) — 7 Oct 2026 07:23, 25 KB
 - [2023_Urban_Trails_Plan_Appendix_G.pdf](https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-10-07-0723/2023_Urban_Trails_Plan_Appendix_G.pdf) — 7 Oct 2026 07:23, 25 KB
+- [2023_Urban_Trails_Plan_Appendix_A.pdf](https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-10-10-0850/2023_Urban_Trails_Plan_Appendix_A.pdf) — 10 Oct 2026 08:50, 25 KB
+- [2023_Urban_Trails_Plan_Appendix_B.pdf](https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-10-10-0850/2023_Urban_Trails_Plan_Appendix_B.pdf) — 10 Oct 2026 08:50, 25 KB
+- [2023_Urban_Trails_Plan_Appendix_C.pdf](https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-10-10-0850/2023_Urban_Trails_Plan_Appendix_C.pdf) — 10 Oct 2026 08:50, 25 KB
+- [2023_Urban_Trails_Plan_Appendix_D.pdf](https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-10-10-0850/2023_Urban_Trails_Plan_Appendix_D.pdf) — 10 Oct 2026 08:50, 25 KB
+- [2023_Urban_Trails_Plan_Appendix_E.pdf](https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-10-10-0850/2023_Urban_Trails_Plan_Appendix_E.pdf) — 10 Oct 2026 08:50, 25 KB
+- [2023_Urban_Trails_Plan_Appendix_F.pdf](https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-10-10-0850/2023_Urban_Trails_Plan_Appendix_F.pdf) — 10 Oct 2026 08:50, 25 KB
+- [2023_Urban_Trails_Plan_Appendix_G.pdf](https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-10-10-0850/2023_Urban_Trails_Plan_Appendix_G.pdf) — 10 Oct 2026 08:50, 25 KB
+- [2023_Urban_Trails_Plan_Appendix_A.pdf](https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-10-14-0648/2023_Urban_Trails_Plan_Appendix_A.pdf) — 14 Oct 2026 06:48, 25 KB
+- [2023_Urban_Trails_Plan_Appendix_B.pdf](https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-10-14-0648/2023_Urban_Trails_Plan_Appendix_B.pdf) — 14 Oct 2026 06:48, 25 KB
+- [2023_Urban_Trails_Plan_Appendix_C.pdf](https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-10-14-0648/2023_Urban_Trails_Plan_Appendix_C.pdf) — 14 Oct 2026 06:48, 25 KB
+- [2023_Urban_Trails_Plan_Appendix_D.pdf](https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-10-14-0648/2023_Urban_Trails_Plan_Appendix_D.pdf) — 14 Oct 2026 06:48, 25 KB
+- [2023_Urban_Trails_Plan_Appendix_E.pdf](https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-10-14-0648/2023_Urban_Trails_Plan_Appendix_E.pdf) — 14 Oct 2026 06:48, 25 KB
+- [2023_Urban_Trails_Plan_Appendix_F.pdf](https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-10-14-0648/2023_Urban_Trails_Plan_Appendix_F.pdf) — 14 Oct 2026 06:48, 25 KB
+- [2023_Urban_Trails_Plan_Appendix_G.pdf](https://archive.changesaroundme.com/coa-urban-trails-plan/files/2026-10-14-0648/2023_Urban_Trails_Plan_Appendix_G.pdf) — 14 Oct 2026 06:48, 25 KB
 
 ### Urban Trails Wayfinding Survey
 
@@ -1155,7 +1288,7 @@ Files:
 
 [page](https://www.atptx.org/board-meeting-calendar-and-information/) · [latest copy](https://archive.changesaroundme.com/atp-board-meeting-info/latest.pdf)
 
-Captures: [25 Sep 2026 06:30](https://archive.changesaroundme.com/atp-board-meeting-info/2026-09-25-0630.pdf)
+Captures: [25 Sep 2026 06:30](https://archive.changesaroundme.com/atp-board-meeting-info/2026-09-25-0630.pdf), [11 Oct 2026 08:37](https://archive.changesaroundme.com/atp-board-meeting-info/2026-10-11-0837.pdf)
 
 ### Final Environmental Impact Statement / Record of Decision
 
@@ -1304,6 +1437,8 @@ Files:
 - [community-involvement-policy_8-2019.pdf](https://archive.changesaroundme.com/capmetro-board-meetings/files/2026-10-02-0635/community-involvement-policy_8-2019.pdf) — 2 Oct 2026 06:35, 0.3 MB
 - [community-involvement-policy_8-2019.pdf](https://archive.changesaroundme.com/capmetro-board-meetings/files/2026-10-05-0637/community-involvement-policy_8-2019.pdf) — 5 Oct 2026 06:37, 0.3 MB
 - [community-involvement-policy_8-2019.pdf](https://archive.changesaroundme.com/capmetro-board-meetings/files/2026-10-08-0827/community-involvement-policy_8-2019.pdf) — 8 Oct 2026 08:27, 0.3 MB
+- [community-involvement-policy_8-2019.pdf](https://archive.changesaroundme.com/capmetro-board-meetings/files/2026-10-11-0853/community-involvement-policy_8-2019.pdf) — 11 Oct 2026 08:53, 0.3 MB
+- [community-involvement-policy_8-2019.pdf](https://archive.changesaroundme.com/capmetro-board-meetings/files/2026-10-14-0700/community-involvement-policy_8-2019.pdf) — 14 Oct 2026 07:00, 0.3 MB
 
 ### Fare Increase
 
@@ -1367,7 +1502,7 @@ Files:
 
 [page](https://storymaps.arcgis.com/stories/476619a08688420b8132a2f3fbb496e2) · [latest copy](https://archive.changesaroundme.com/capmetro-red-line-trail-study/latest.pdf)
 
-Captures: [20 Sep 2026 11:32](https://archive.changesaroundme.com/capmetro-red-line-trail-study/2026-09-20-1132.pdf), [1 Oct 2026 06:38](https://archive.changesaroundme.com/capmetro-red-line-trail-study/2026-10-01-0638.pdf), [4 Oct 2026 06:45](https://archive.changesaroundme.com/capmetro-red-line-trail-study/2026-10-04-0645.pdf), [7 Oct 2026 08:33](https://archive.changesaroundme.com/capmetro-red-line-trail-study/2026-10-07-0833.pdf)
+Captures: [20 Sep 2026 11:32](https://archive.changesaroundme.com/capmetro-red-line-trail-study/2026-09-20-1132.pdf), [1 Oct 2026 06:38](https://archive.changesaroundme.com/capmetro-red-line-trail-study/2026-10-01-0638.pdf), [4 Oct 2026 06:45](https://archive.changesaroundme.com/capmetro-red-line-trail-study/2026-10-04-0645.pdf), [7 Oct 2026 08:33](https://archive.changesaroundme.com/capmetro-red-line-trail-study/2026-10-07-0833.pdf), [10 Oct 2026 09:17](https://archive.changesaroundme.com/capmetro-red-line-trail-study/2026-10-10-0917.pdf), [14 Oct 2026 06:58](https://archive.changesaroundme.com/capmetro-red-line-trail-study/2026-10-14-0658.pdf)
 
 Files:
 - [Design-Guidelines-for-a-Trail-Project-within-CapMetro-Rail-Right-of-Way.pdf](https://archive.changesaroundme.com/capmetro-red-line-trail-study/files/2026-09-19-0023/Design-Guidelines-for-a-Trail-Project-within-CapMetro-Rail-Right-of-Way.pdf) — 19 Sep 2026 00:23, 0.4 MB
@@ -1424,12 +1559,13 @@ Files:
 
 [page](https://290extensionproject.com/openhouse/) · [latest copy](https://archive.changesaroundme.com/ctrma-290-extension-open-house/latest.pdf)
 
-Captures: [30 Sep 2026 12:14](https://archive.changesaroundme.com/ctrma-290-extension-open-house/2026-09-30-1214.pdf), [2 Oct 2026 06:37](https://archive.changesaroundme.com/ctrma-290-extension-open-house/2026-10-02-0637.pdf), [3 Oct 2026 09:35](https://archive.changesaroundme.com/ctrma-290-extension-open-house/2026-10-03-0935.pdf), [6 Oct 2026 09:57](https://archive.changesaroundme.com/ctrma-290-extension-open-house/2026-10-06-0957.pdf)
+Captures: [30 Sep 2026 12:14](https://archive.changesaroundme.com/ctrma-290-extension-open-house/2026-09-30-1214.pdf), [2 Oct 2026 06:37](https://archive.changesaroundme.com/ctrma-290-extension-open-house/2026-10-02-0637.pdf), [3 Oct 2026 09:35](https://archive.changesaroundme.com/ctrma-290-extension-open-house/2026-10-03-0935.pdf), [6 Oct 2026 09:57](https://archive.changesaroundme.com/ctrma-290-extension-open-house/2026-10-06-0957.pdf), [10 Oct 2026 09:21](https://archive.changesaroundme.com/ctrma-290-extension-open-house/2026-10-10-0921.pdf), [13 Oct 2026 06:42](https://archive.changesaroundme.com/ctrma-290-extension-open-house/2026-10-13-0642.pdf)
 
 Files:
 - [second-renewed-nepa-assignment-mou.pdf](https://archive.changesaroundme.com/ctrma-290-extension-open-house/files/2026-09-30-1214/second-renewed-nepa-assignment-mou.pdf) — 30 Sep 2026 12:14, 0.5 MB
 - [20260925_290Ext_OpenHouse_RollPlots_SM-compressed.pdf](https://archive.changesaroundme.com/ctrma-290-extension-open-house/files/2026-10-02-0639/20260925_290Ext_OpenHouse_RollPlots_SM-compressed.pdf) — 2 Oct 2026 06:39, 34.3 MB
 - [20260925_290Ext_OpenHouse_RollPlots-1.pdf](https://archive.changesaroundme.com/ctrma-290-extension-open-house/files/2026-10-06-0958/20260925_290Ext_OpenHouse_RollPlots-1.pdf) — 6 Oct 2026 09:58, 46.0 MB
+- [WEB-ENG-202609-290Ext_Traffic-Noise-Banner.pdf](https://archive.changesaroundme.com/ctrma-290-extension-open-house/files/2026-10-10-0921/WEB-ENG-202609-290Ext_Traffic-Noise-Banner.pdf) — 10 Oct 2026 09:21, 12.4 MB
 
 ### 290 Extension Project
 
@@ -1734,7 +1870,7 @@ Files:
 
 [page](https://thetrailconservancy.org/projects/holly-shores-projects/) · [latest copy](https://archive.changesaroundme.com/trailcons-holly-shores/latest.pdf)
 
-Captures: [1 Oct 2026 06:45](https://archive.changesaroundme.com/trailcons-holly-shores/2026-10-01-0645.pdf)
+Captures: [1 Oct 2026 06:45](https://archive.changesaroundme.com/trailcons-holly-shores/2026-10-01-0645.pdf), [15 Oct 2026 06:30](https://archive.changesaroundme.com/trailcons-holly-shores/2026-10-15-0630.pdf)
 
 Files:
 - [20191205-070_ Agenda Backup_ Draft Ordinance.PDF](https://archive.changesaroundme.com/trailcons-holly-shores/files/2026-10-01-0645/20191205-070_%20Agenda%20Backup_%20Draft%20Ordinance.PDF) — 1 Oct 2026 06:45, 22 KB
@@ -1744,6 +1880,28 @@ Files:
 ## Not in the registry
 
 *Folders in the archive with no page in `sources.yaml` — kept, but not checked or refreshed.*
+
+### Burnet Road corridor project
+
+Captures: [20 Sep 2026 11:09](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/2026-09-20-1109.pdf), [9 Oct 2026 08:51](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/2026-10-09-0851.pdf), [13 Oct 2026 06:31](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/2026-10-13-0631.pdf)
+
+Files:
+- [NoLa-Burnet - Appendix - A - Recommended Improvements.pdf](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/files/2026-09-19-0007/NoLa-Burnet%20-%20Appendix%20-%20A%20-%20Recommended%20Improvements.pdf) — 19 Sep 2026 00:07, 19.8 MB
+- [NoLa-Burnet - Appendix B - Cost_Estimates.pdf](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/files/2026-09-19-0007/NoLa-Burnet%20-%20Appendix%20B%20-%20Cost_Estimates.pdf) — 19 Sep 2026 00:07, 0.3 MB
+- [NoLa-Burnet - Appendix C - PIP.pdf](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/files/2026-09-19-0007/NoLa-Burnet%20-%20Appendix%20C%20-%20PIP.pdf) — 19 Sep 2026 00:07, 0.3 MB
+- [NoLa-Burnet - Appendix D - Drainage Improvements.pdf](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/files/2026-09-19-0007/NoLa-Burnet%20-%20Appendix%20D%20-%20Drainage%20Improvements.pdf) — 19 Sep 2026 00:07, 0.2 MB
+- [NoLa-Burnet - Appendix E - Traffic_Counts.pdf](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/files/2026-09-19-0007/NoLa-Burnet%20-%20Appendix%20E%20-%20Traffic_Counts.pdf) — 19 Sep 2026 00:07, 1.2 MB
+- [NoLa-Burnet - Appendix F - Traffic_Analysis.pdf](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/files/2026-09-19-0007/NoLa-Burnet%20-%20Appendix%20F%20-%20Traffic_Analysis.pdf) — 19 Sep 2026 00:07, 0.3 MB
+- [NoLa-Burnet - Executive Summary.pdf](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/files/2026-09-19-0007/NoLa-Burnet%20-%20Executive%20Summary.pdf) — 19 Sep 2026 00:07, 1.1 MB
+- [North Lamar - Burnet Corridor Report - 2013-12.pdf](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/files/2026-09-19-0007/North%20Lamar%20-%20Burnet%20Corridor%20Report%20-%202013-12.pdf) — 19 Sep 2026 00:07, 7.8 MB
+- [CDS-Action-Plan-Map.pdf](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/files/2026-09-27-0633/CDS-Action-Plan-Map.pdf) — 27 Sep 2026 06:33, 89.8 MB
+- [burnet-and-anderson.png](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/files/2026-10-13-0632/burnet-and-anderson.png) — 13 Oct 2026 06:32, 1.1 MB
+- [burnet-and-greenlawn.png](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/files/2026-10-13-0632/burnet-and-greenlawn.png) — 13 Oct 2026 06:32, 0.9 MB
+- [burnet-and-northcross.png](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/files/2026-10-13-0632/burnet-and-northcross.png) — 13 Oct 2026 06:32, 1.2 MB
+- [burnet-and-rockwood.png](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/files/2026-10-13-0632/burnet-and-rockwood.png) — 13 Oct 2026 06:32, 0.9 MB
+- [burnet-and-steck.png](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/files/2026-10-13-0632/burnet-and-steck.png) — 13 Oct 2026 06:32, 0.8 MB
+- [burnet-and-white-horse-trail.png](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/files/2026-10-13-0632/burnet-and-white-horse-trail.png) — 13 Oct 2026 06:32, 0.9 MB
+- [c1b44c7e-6203-4c54-8349-32a309f7a149.png](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/files/2026-10-13-0632/c1b44c7e-6203-4c54-8349-32a309f7a149.png) — 13 Oct 2026 06:32, 0.3 MB
 
 ### East Riverside Corridor Planning Initiative Survey - Round 2
 

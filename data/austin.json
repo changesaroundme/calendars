@@ -535,19 +535,6 @@
  {
   "source": "austin",
   "summary": "City Council",
-  "start": "2026-01-22",
-  "end": null,
-  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
-  "url": "https://www.austintexas.gov/council/meetings",
-  "status": "CONFIRMED",
-  "kind": "regular",
-  "uid": "austin-city-council-20260122@calendars.changesaroundme.com",
-  "description": "From the published annual council calendar (dates subject to change). Time and agenda appear ~a week ahead: https://www.austintexas.gov/council/meetings",
-  "all_day": true
- },
- {
-  "source": "austin",
-  "summary": "City Council",
   "start": "2026-01-22T10:00:00",
   "end": "2026-01-22T12:00:00",
   "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
@@ -3775,11 +3762,11 @@
   "start": "2026-10-21T09:30:00",
   "end": "2026-10-21T11:30:00",
   "location": "",
-  "url": "https://austintexas.legistar.com/Calendar.aspx",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4194&GID=684&G=4BED8896-C64D-4912-8005-D624C5197AA5",
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-audit-and-finance-committee-20261021T0930@calendars.changesaroundme.com",
-  "description": "",
+  "description": "Summary Agenda\n\n3. Discussion and possible action regarding bylaw amendments for the Hispanic/Latino Quality of Life Resource Advisory Commission and Austin Travis County Food Po\u2026 (26-2658, Discussion and Possible Action)\n4. Discussion and possible action to set the Audit and Finance Committee meeting dates for calendar year 2027. (26-2659, Discussion and Possible Action)\n5. Discussion and possible action on the City Auditor\u2019s calendar year 2027 Audit Plan. (26-2661, Discussion and Possible Action)\n\nBriefings:\n- The City\u2019s redevelopment projects, including Colony Park, the Northeast Service Center, and the St. John\u2019s Redevelopment Project\n- Living Wages Audit, which looks at whether departments are monitoring their contracts to ensure compliance with the living wage requirements\n- Social services strategy that will include issue area, compliance, and policy discussion\n\n\u2014\n\nAgenda: https://austintexas.legistar1.com/austintexas/meetings/2026/10/4194_A_Audit_and_Finance_Committee_26-10-21_Committee_Agenda.pdf",
   "all_day": false
  },
  {
