@@ -134,6 +134,29 @@ def _is_council_container(e: Event) -> bool:
             and e.status != "CANCELLED")
 
 
+def _container_key(e: Event) -> tuple[int, datetime]:
+    if isinstance(e.start, datetime):
+        return (0, e.start.replace(tzinfo=None))
+    return (1, datetime.combine(e.start, datetime.min.time()))
+
+
+def _selftest_condense_mixed() -> None:
+    """The 22 Jan 2026 pair (run #262): an all-day placeholder and a carried
+    timed council meeting on one day must condense, and the timed one wins."""
+    day = date(2026, 1, 22)
+    stub = dict(source="austin", location="", url="", kind="regular", description="")
+    allday = Event(summary="City Council", start=day,
+                   uid="austin-city-council-20260122@calendars.changesaroundme.com", **stub)
+    timed = Event(summary="City Council", start=datetime(2026, 1, 22, 10, 0),
+                  uid="austin-city-council-20260122T1000@calendars.changesaroundme.com", **stub)
+    board = Event(summary=next(iter(NESTED_BODIES)), start=datetime(2026, 1, 22, 9, 0),
+                  uid="austin-board-20260122T0900@calendars.changesaroundme.com", **stub)
+    out = condense_council([allday, timed, board])
+    assert [e.uid for e in out] == [allday.uid, timed.uid], [e.uid for e in out]
+    assert out[1].summary.startswith("City Council +"), out[1].summary
+    assert austin.reconcile_history([allday, timed, board]) == [timed, board]
+
+
 def condense_council(events: list[Event]) -> list[Event]:
     """Fold nested corporation boards into their council meeting.
 
@@ -150,7 +173,11 @@ def condense_council(events: list[Event]) -> list[Event]:
     for e in events:
         if _is_council_container(e):
             d = start_day(e)
-            if d not in containers or e.start < containers[d].start:
+            # Timed beats all-day, then earliest. Keyed rather than `<` on
+            # start: a date and a datetime don't compare (TypeError sank
+            # runs #262–#264 when an all-day placeholder met a carried
+            # timed meeting on the same day — see austin.reconcile_history).
+            if d not in containers or _container_key(e) < _container_key(containers[d]):
                 containers[d] = e
     nested: dict[date, list[Event]] = {}
     out: list[Event] = []
@@ -449,6 +476,7 @@ def main() -> int:
     if offline:
         _selftest_monotone_merge()  # the 2026-08-25 decay incident as a test
         _selftest_network_grace()
+        _selftest_condense_mixed()  # the 2026-10-13 date-vs-datetime crash
     now = datetime.now(timezone.utc)
     session = requests.Session()
     session.headers["User-Agent"] = USER_AGENT
@@ -587,6 +615,16 @@ def main() -> int:
             events = [e for e in events
                       if not (e.stable_uid() in seen_uids
                               or seen_uids.add(e.stable_uid()))]
+            # A source's own view of its merged history (austin: drop a
+            # council placeholder once the carried timed record covers
+            # that day — the 22 Jan 2026 pair that crashed run #262).
+            reconcile = getattr(module, "reconcile_history", None)
+            if reconcile:
+                before = len(events)
+                events = reconcile(events)
+                if len(events) != before:
+                    print(f"[{key}] reconciled {before - len(events)} "
+                          "superseded events out of the merged history")
             events_by_key[key] = events
         except Exception as exc:
             print(f"[{key}] ERROR: fetch failed: {exc}")

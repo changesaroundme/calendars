@@ -34,6 +34,7 @@ from datetime import date, datetime, timedelta
 import pdfplumber
 from bs4 import BeautifulSoup
 
+from caltools.ics import CENTRAL
 from caltools.model import Event, slugify
 from sources.legistar import CANCEL_RE, Legistar
 
@@ -813,15 +814,27 @@ def parse_council_pdf(data: bytes) -> list[tuple[date, str, bool]]:
     return records
 
 
-def annual_council_events(records, legistar_events: list[Event]) -> list[Event]:
-    """All-day placeholders for Council-column dates, yielding to Legistar.
+def annual_council_events(records, legistar_events: list[Event],
+                          today: date | None = None) -> list[Event]:
+    """All-day placeholders for FUTURE Council-column dates, yielding to Legistar.
 
     Once a timed City Council (or budget-meeting) event exists in Legistar
     for a date, the placeholder is skipped — the meeting has "graduated" to
     a timed entry with an agenda. Only the Council Meetings column is
     emitted for now (work sessions / cancelled dates are parsed and could
     be enabled later).
+
+    Past dates never get a placeholder (2026-10-13): Legistar's "All Years"
+    view self-bounds at ~100 rows, so by October the January meetings had
+    rolled off it. Their timed records live on in the snapshot (build.py
+    carries past events forward), but to this function they looked
+    uncovered, so it re-emitted an all-day "City Council" for 22 Jan next
+    to the carried 10:00 one — and build.py's condense_council crashed
+    comparing a date with a datetime (runs #262–#264). A placeholder is a
+    promise about a meeting that hasn't happened; once the date is past,
+    the snapshot already holds whatever record there is.
     """
+    today = today or datetime.now(CENTRAL).date()
     council_day_re = re.compile(
         # (?=T|@) covers both timed and all-day Legistar rows — a row whose
         # time didn't parse (e.g. "Cancelled" in the time column) is all-day
@@ -832,7 +845,7 @@ def annual_council_events(records, legistar_events: list[Event]) -> list[Event]:
                if (m := council_day_re.match(e.stable_uid()))}
     events: list[Event] = []
     for day, col, budget in records:
-        if col != "council":
+        if col != "council" or day < today:
             continue
         d8 = day.strftime("%Y%m%d")
         if d8 in covered:
@@ -854,6 +867,22 @@ def annual_council_events(records, legistar_events: list[Event]) -> list[Event]:
             )
         )
     return events
+
+
+def reconcile_history(events: list[Event]) -> list[Event]:
+    """Drop an all-day council placeholder that shares its day with a timed
+    council record. build.py calls this after merging the snapshot in: the
+    22 Jan 2026 placeholder that run #262 published (see
+    annual_council_events) is a PAST event now, so the carry-forward would
+    keep it beside the real 10:00 meeting forever. Same-day pairs are
+    recognised by uid: `…-city-council-20260122@` vs `…-20260122T1000@`
+    (or the budget-meeting form)."""
+    timed = re.compile(
+        r"^austin-(city-council|budget-meeting-of-the-austin-city-council)-(\d{8})T")
+    covered = {m.group(2) for e in events if (m := timed.match(e.stable_uid()))}
+    placeholder = re.compile(r"^austin-city-council-(\d{8})@")
+    return [e for e in events
+            if not ((m := placeholder.match(e.stable_uid())) and m.group(1) in covered)]
 
 
 def apply_budget_flags(council: list[Event], records) -> list[Event]:
@@ -1022,7 +1051,10 @@ def fetch_offline() -> list[Event]:
     # Mirrors fetch(): the fixture eventitems land on every council row, so
     # identical-digest budget meetings exercise the related-note path here.
     note_related_budget_meetings(council)
-    annual = annual_council_events(records, council)
+    # Fixture dates are frozen; judge them from before the first one so
+    # the placeholder path stays exercised whatever today is.
+    annual = annual_council_events(records, council,
+                                   today=min(d for d, _, _ in records))
     boards = parse_board_page(
         (fixtures / "austin_board.html").read_text(),
         "Planning Commission",
