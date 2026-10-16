@@ -248,6 +248,19 @@
  },
  {
   "source": "puc",
+  "summary": "PUC: Open Meeting",
+  "start": "2026-10-15",
+  "end": null,
+  "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
+  "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1774",
+  "status": "CONFIRMED",
+  "kind": "hearing",
+  "uid": "puc-cal-1774-20261015@calendars.changesaroundme.com",
+  "description": "Watched cases on the posted agenda:\n- Docket 59029: 765-kV Longshore Switch - Drill Hole Switch line (Oncor CCN)\n- Docket 59315: 765-kV Dinosaur Switch - Longshore Switch line (Oncor CCN)\n\nWatch live or archived: http://www.adminmonitor.com/tx/puct/open_meeting/20261015/",
+  "all_day": true
+ },
+ {
+  "source": "puc",
   "summary": "PUC: Project 59086 comments close",
   "start": "2026-10-15",
   "end": null,
@@ -258,19 +271,6 @@
   "uid": "puc-cal-1837-20261015@calendars.changesaroundme.com",
   "description": "Comments are filed via the PUC Interchange: https://interchange.puc.texas.gov/filer\n\nProject filings: https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=59086",
   "all_day": true
- },
- {
-  "source": "puc",
-  "summary": "PUC: Open Meeting",
-  "start": "2026-10-15T09:30:00",
-  "end": "2026-10-15T17:00:00",
-  "location": "Commissioners' Hearing Room 7-100, William B. Travis Building, 1701 N. Congress Ave., Austin, TX 78701",
-  "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1774",
-  "status": "CONFIRMED",
-  "kind": "regular",
-  "uid": "puc-cal-1774-20261015@calendars.changesaroundme.com",
-  "description": "Watch live or archived: http://www.adminmonitor.com/tx/puct/open_meeting/20261015/",
-  "all_day": false
  },
  {
   "source": "puc",
