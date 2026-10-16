@@ -3814,11 +3814,24 @@
   "start": "2026-10-22T10:00:00",
   "end": "2026-10-22T12:00:00",
   "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
-  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4079&GID=684&G=4BED8896-C64D-4912-8005-D624C5197AA5",
+  "url": "https://austintexas.legistar.com/Calendar.aspx",
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-city-council-20261022T1000@calendars.changesaroundme.com",
-  "description": "Summary Agenda\n\n- 37 consent items\n- 6 items from council\n- 2 items from council committee\n- 2 zoning and neighborhood plan amendments items\n- 1 eminent domain  item\n- 1 ahfc meeting item\n- 1 public hearing item\n\n\u2014\n\nAgenda: https://austintexas.legistar1.com/austintexas/meetings/2026/10/4079_A_City_Council_26-10-22_City_Council_Agenda.pdf",
+  "description": "",
+  "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "Austin Housing Finance Corporation",
+  "start": "2026-10-22T10:30:00",
+  "end": "2026-10-22T12:30:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4230&GID=684&G=4BED8896-C64D-4912-8005-D624C5197AA5",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-housing-finance-corporation-20261022T1030@calendars.changesaroundme.com",
+  "description": "Agenda: https://austintexas.legistar1.com/austintexas/meetings/2026/10/4230_A_Austin_Housing_Finance_Corporation_26-10-22_Committee_Agenda.pdf",
   "all_day": false
  },
  {
