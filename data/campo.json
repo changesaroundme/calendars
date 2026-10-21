@@ -183,6 +183,19 @@
  },
  {
   "source": "campo",
+  "summary": "CAMPO: FM 973 Open House (US 290 \u2013 Samsung Highway)",
+  "start": "2026-11-10T17:00:00-06:00",
+  "end": "2026-11-10T19:00:00-06:00",
+  "location": "Manor Rise Academy, 13300 FM 973, Manor, TX, 78653, United States",
+  "url": "https://www.campotexas.org/event/fm-973-open-house-us-290-samsung-highway-2/",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "8069-1794330000-1794337200@www.campotexas.org",
+  "description": "",
+  "all_day": false
+ },
+ {
+  "source": "campo",
   "summary": "CAMPO: Technical Advisory Committee",
   "start": "2026-11-16T14:00:00-06:00",
   "end": "2026-11-16T16:00:00-06:00",
