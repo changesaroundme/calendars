@@ -768,6 +768,19 @@
  },
  {
   "source": "txdotev",
+  "summary": "TxDOT: FM 973 from US 290 in Manor to Samsung Highway",
+  "start": "2026-11-10T17:00:00",
+  "end": "2026-11-10T19:00:00",
+  "location": "on Tuesday, November 10, 2026. Manor Rise Academy 13300 FM 973 Manor, TX 78653",
+  "url": "https://www.txdot.gov/projects/hearings-meetings/austin/2026/fm973-us290-to-samsung-hwy-111026.html",
+  "status": "CONFIRMED",
+  "kind": "engagement",
+  "uid": "txdotev-hm-fm973-us290-to-samsung-hwy-111026-20261110@calendars.changesaroundme.com",
+  "description": "In-person meeting; materials also posted online\nPublic comment deadline: 14 Dec 2026.\n\n\u2014\n\nPurpose: The purpose of the public meeting is to share community feedback received during the first public meeting, show early design plans for review, gather additional feedback, and explain what is being considered as the project moves forward. In-person participants are welcome to come and go any time from 5 -7 p.m. and will be able to review project materials, ask questions of CAMPO and TxDOT staff and/or consultants, and leave written comments. The virtual public meeting will consist of a self-guided virtual meeting room and will include both audio and visual components. The virtual public meeting is not a live broadcast event and can be accessed online starting at 5 p.m. on Tuesday, Nov. 10, 2026, and will remain available for viewing at the web address indicated below through Monday, Dec. 14, 2026.\n\nDescription: The Capital Area Metropolitan Planning Organization (CAMPO) and the Texas Department of Transportation (TxDOT) are working together to identify, evaluate, and propose improvements to FM 973 between US 290 and Samsung Highway in Travis and Williamson counties.",
+  "all_day": false
+ },
+ {
+  "source": "txdotev",
   "summary": "TxDOT: Public Transportation Advisory Committee",
   "start": "2026-11-19T10:00:00",
   "end": "2026-11-19T12:00:00",
