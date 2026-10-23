@@ -3914,6 +3914,19 @@
  },
  {
   "source": "austin",
+  "summary": "CoA: Austin Integrated Water Resource Planning Community Task Force (Special Called)",
+  "start": "2026-10-28T12:00:00",
+  "end": "2026-10-28T15:00:00",
+  "location": "Noon",
+  "url": "https://www.austintexas.gov/boards-commissions/meetings/132_1",
+  "status": "CONFIRMED",
+  "kind": "special",
+  "uid": "austin-austin-integrated-water-resource-planning-community-task-force-20261028@calendars.changesaroundme.com",
+  "description": "Summary Agenda\n\n1 briefing:\n- July 23, 2026, Council resolution on large volume water users. Presentation\n\n\u2014\n\nAgenda: https://services.austintexas.gov/edims/document.cfm?id=483843",
+  "all_day": false
+ },
+ {
+  "source": "austin",
   "summary": "Imagine Austin Update - Place Types Open House (Doss Elementary)",
   "start": "2026-10-28T17:30:00",
   "end": "2026-10-28T20:30:00",
