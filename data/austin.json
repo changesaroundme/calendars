@@ -2592,7 +2592,7 @@
   "start": "2026-07-28T10:00:00",
   "end": "2026-07-28T12:00:00",
   "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
-  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4086&GID=684&G=4BED8896-C64D-4912-8005-D624C5197AA5",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1362322&GUID=F9DB2E42-8BAC-42E8-A72C-689D86CAEA1D&Options=info|&Search=",
   "status": "CONFIRMED",
   "kind": "budget",
   "uid": "austin-city-council-20260728T1000@calendars.changesaroundme.com",
@@ -3883,7 +3883,7 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-design-commission-20261026@calendars.changesaroundme.com",
-  "description": "Summary Agenda\n\n3 discussion and action items:\n\n#2: Approving a recommendation to Council regarding the future roles, name, and mission of the Design Commission\n\n#3: Discussion and possible action to approve the Design Commission annual schedule for 2027\n\n#4: Green Infrastructure Initiative\n\n1 working group update\n\n\u2014\n\nAgenda: https://services.austintexas.gov/edims/document.cfm?id=483705",
+  "description": "Typical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).",
   "all_day": false
  },
  {
