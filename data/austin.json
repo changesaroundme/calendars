@@ -2631,7 +2631,7 @@
   "start": "2026-07-30T10:00:00",
   "end": "2026-07-30T12:00:00",
   "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
-  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4087&GID=684&G=4BED8896-C64D-4912-8005-D624C5197AA5",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1362323&GUID=65AD3639-3AD7-48B4-A946-E47DDB25FCB3&Options=info|&Search=",
   "status": "CONFIRMED",
   "kind": "budget",
   "uid": "austin-city-council-20260730T1000@calendars.changesaroundme.com",
@@ -3901,6 +3901,19 @@
  },
  {
   "source": "austin",
+  "summary": "CoA: Austin Integrated Water Resource Planning Community Task Force (Special Called)",
+  "start": "2026-10-28",
+  "end": null,
+  "location": "Noon",
+  "url": "https://www.austintexas.gov/boards-commissions/meetings/132_1",
+  "status": "CONFIRMED",
+  "kind": "special",
+  "uid": "austin-austin-integrated-water-resource-planning-community-task-force-20261028@calendars.changesaroundme.com",
+  "description": "All-day entry: this board's typical start time isn't configured yet; the agenda posts at the event link ~a week ahead.",
+  "all_day": true
+ },
+ {
+  "source": "austin",
   "summary": "City Council: Climate, Water, Environment, and Parks Committee",
   "start": "2026-10-28T09:30:00",
   "end": "2026-10-28T11:30:00",
@@ -3910,19 +3923,6 @@
   "kind": "regular",
   "uid": "austin-climate-water-environment-and-parks-committee-20261028T0930@calendars.changesaroundme.com",
   "description": "",
-  "all_day": false
- },
- {
-  "source": "austin",
-  "summary": "CoA: Austin Integrated Water Resource Planning Community Task Force (Special Called)",
-  "start": "2026-10-28T12:00:00",
-  "end": "2026-10-28T15:00:00",
-  "location": "Noon",
-  "url": "https://www.austintexas.gov/boards-commissions/meetings/132_1",
-  "status": "CONFIRMED",
-  "kind": "special",
-  "uid": "austin-austin-integrated-water-resource-planning-community-task-force-20261028@calendars.changesaroundme.com",
-  "description": "Summary Agenda\n\n1 briefing:\n- July 23, 2026, Council resolution on large volume water users. Presentation\n\n\u2014\n\nAgenda: https://services.austintexas.gov/edims/document.cfm?id=483843",
   "all_day": false
  },
  {
@@ -3948,7 +3948,7 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-building-and-standards-commission-20261028@calendars.changesaroundme.com",
-  "description": "Summary Agenda\n\n2 briefings:\n- Property 6700 Branchwood Drive, and status of compliance with the Commission\u2019s Order for repair of the primary structure and demolition of the accessory structure, issued at the May 27, 2026 meeting\n- Property 212 Dunlap Street and status of compliance with the Commission\u2019s Order for repair of the residential structure, issued at the June 25, 2025 meeting\n\n1 discussion and action item:\n\n#11: Approval of the 2027 Building and Standards Commission meeting schedule\n\n\u2014\n\nAgenda: https://services.austintexas.gov/edims/document.cfm?id=483688",
+  "description": "Typical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).",
   "all_day": false
  },
  {
