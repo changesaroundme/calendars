@@ -1327,6 +1327,19 @@
  },
  {
   "source": "capmetro",
+  "summary": "CapMetro: Board of Directors Work Session",
+  "start": "2026-10-31T12:00:00",
+  "end": "2026-10-31T14:00:00",
+  "location": "Rosa Parks Boardroom, CapMetro HQ, 2910 E. 5th St., Austin, TX 78702",
+  "url": "https://capmetrotx.legistar.com/Calendar.aspx",
+  "status": "CONFIRMED",
+  "kind": "work-session",
+  "uid": "capmetro-board-of-directors-work-session-20261031T1200@calendars.changesaroundme.com",
+  "description": "",
+  "all_day": false
+ },
+ {
+  "source": "capmetro",
   "summary": "CapMetro: Finance, Audit and Administration Committee",
   "start": "2026-11-16T10:30:00",
   "end": "2026-11-16T12:30:00",
