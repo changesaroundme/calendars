@@ -66,6 +66,19 @@
  },
  {
   "source": "atp",
+  "summary": "ATP: Board of Directors Meeting",
+  "start": "2026-11-18T14:00:00-06:00",
+  "end": "2026-11-18T14:00:00-06:00",
+  "location": "ATP Office, 203 Colorado Street, Austin, Texas, 78701",
+  "url": "https://www.atptx.org/event/atp-board-of-directors-meeting-6/",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "10000155-1795010400-1795010400@www.atptx.org",
+  "description": "",
+  "all_day": false
+ },
+ {
+  "source": "atp",
   "summary": "ATP: Community Advisory Committee Meeting",
   "start": "2026-12-10T17:00:00-06:00",
   "end": "2026-12-10T19:00:00-06:00",
