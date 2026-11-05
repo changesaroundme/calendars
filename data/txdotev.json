@@ -781,6 +781,19 @@
  },
  {
   "source": "txdotev",
+  "summary": "TxDOT: FM 973 at US 79 intersection - Informational meeting",
+  "start": "2026-11-12T17:00:00",
+  "end": "2026-11-12T19:00:00",
+  "location": "Williamson County",
+  "url": "https://www.txdot.gov/projects/hearings-meetings/austin/2026/fm973-at-us79-111226.html",
+  "status": "CONFIRMED",
+  "kind": "engagement",
+  "uid": "txdotev-hm-fm973-at-us79-111226-20261112@calendars.changesaroundme.com",
+  "description": "Purpose: The Texas Department of Transportation (TxDOT) and the Capital Area Metropolitan Planning Organization (CAMPO) are working together to identify and evaluate potential improvements along the FM 973 corridor from US 79 in Taylor to Samsung Highway. This notice advises the public that TxDOT will be hosting an in-person meeting to share information about a design modification at the FM 973 and US 79 intersection.\n\nDescription: To help reduce congestion and improve mobility along the FM 973 corridor, TxDOT and CAMPO are proposing to widen the existing two- to three-lane facility to a six-lane boulevard section within existing right of way to address rapid growth in the area, including proposing an innovative continuous flow intersection at FM 973 and US 79.",
+  "all_day": false
+ },
+ {
+  "source": "txdotev",
   "summary": "TxDOT: Public Transportation Advisory Committee",
   "start": "2026-11-19T10:00:00",
   "end": "2026-11-19T12:00:00",
