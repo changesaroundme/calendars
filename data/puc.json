@@ -352,6 +352,19 @@
  },
  {
   "source": "puc",
+  "summary": "PUC: Public comment deadline",
+  "start": "2026-12-14",
+  "end": null,
+  "location": "",
+  "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1838",
+  "status": "CONFIRMED",
+  "kind": "comment-window",
+  "uid": "puc-cal-1838-20261214@calendars.changesaroundme.com",
+  "description": "Comments are filed via the PUC Interchange: https://interchange.puc.texas.gov/filer",
+  "all_day": true
+ },
+ {
+  "source": "puc",
   "summary": "PUC: Open Meeting",
   "start": "2026-12-17",
   "end": null,
