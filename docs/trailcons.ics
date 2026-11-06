@@ -27,7 +27,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:trailcons-34731@calendars.changesaroundme.com
-DTSTAMP:20261105T184532Z
+DTSTAMP:20261106T032723Z
 DTSTART;TZID=America/Chicago:20251115T090000
 DTEND;TZID=America/Chicago:20251115T103000
 SUMMARY:Trail Cons. - Conversation with the Artist | Eastside Family Garden
@@ -55,7 +55,7 @@ X-CAM-ORG:trailcons
 END:VEVENT
 BEGIN:VEVENT
 UID:trailcons-35769@calendars.changesaroundme.com
-DTSTAMP:20261105T184532Z
+DTSTAMP:20261106T032723Z
 DTSTART;TZID=America/Chicago:20260207T100000
 DTEND;TZID=America/Chicago:20260207T123000
 SUMMARY:Trail Cons. - Wishbone Bridge Ribbon Cutting Celebration
@@ -80,7 +80,7 @@ X-CAM-ORG:trailcons
 END:VEVENT
 BEGIN:VEVENT
 UID:trailcons-37803@calendars.changesaroundme.com
-DTSTAMP:20261105T184532Z
+DTSTAMP:20261106T032723Z
 DTSTART;TZID=America/Chicago:20260826T173000
 DTEND;TZID=America/Chicago:20260826T200000
 SUMMARY:Trail Cons. - Merlin Tuttle Day: Congress Ave. Bat Celebration
@@ -102,7 +102,7 @@ X-CAM-ORG:trailcons
 END:VEVENT
 BEGIN:VEVENT
 UID:trailcons-38238@calendars.changesaroundme.com
-DTSTAMP:20261105T184532Z
+DTSTAMP:20261106T032723Z
 DTSTART;TZID=America/Chicago:20261010T090000
 DTEND;TZID=America/Chicago:20261010T103000
 SUMMARY:Trail Cons. - Open House: Eastside Family Garden Design Concepts
@@ -128,7 +128,7 @@ X-CAM-ORG:trailcons
 END:VEVENT
 BEGIN:VEVENT
 UID:trailcons-38444@calendars.changesaroundme.com
-DTSTAMP:20261105T184532Z
+DTSTAMP:20261106T032723Z
 DTSTART;TZID=America/Chicago:20261107T090000
 DTEND;TZID=America/Chicago:20261107T110000
 SUMMARY:Trail Cons. - Open House: Programming on the Butler Trail & Seaholm
@@ -136,16 +136,19 @@ SUMMARY:Trail Cons. - Open House: Programming on the Butler Trail & Seaholm
 LOCATION:Seaholm Intake Facility\, 801 West Cesar Chavez Street\, Austin\, 
  TX 78701
 URL:https://thetrailconservancy.org/event/open-house-seaholm-waterfront/
-DESCRIPTION:Feedback is the best way to improve and create community progra
- mming that benefits you! We’re starting a new phase of community engagem
- ent focused on improving and shaping our public programming on the Butler 
- Trail\, including the future Seaholm Waterfront. We invite you to join The
-  Trail Conservancy for an open house inside the Seaholm Intake Facility on
-  Saturday\, November 7\, from 9- 11 a.m. to share your input on programmin
- g around the Butler Trail.\nWe still want your feedback! Please take 4 min
- utes to reflect on your Butler Trail experience and complete our Community
-  Programming Survey.\nTake the Survey\n\nDetails: https://thetrailconserva
- ncy.org/event/open-house-seaholm-waterfront/
+DESCRIPTION:Community Programming Open House\nFeedback is the best way to i
+ mprove and create community programming that benefits you! We’re startin
+ g a new phase of community engagement focused on improving and shaping our
+  public programming on the Butler Trail\, including the future Seaholm Wat
+ erfront. We invite you to join The Trail Conservancy for an open house ins
+ ide the Seaholm Intake Facility on Saturday\, November 7\, from 9- 11 a.m.
+  to share your input on programming around the Butler Trail.\nActivities:\
+ n- Visual survey response activity on Trail programming\n- See project boa
+ rds for the future Seaholm Waterfront\n- Make your own circuit flashlight 
+ with Girlstart\n- Circuit kits\, crank generator models\, and paper bucket
+  trucks with Austin Energy\nCAN’T MAKE IT?\nTake Our 4 Minute Survey SUR
+ VEY\nGetting There\n…\n\nDetails: https://thetrailconservancy.org/event/
+ open-house-seaholm-waterfront/
 CATEGORIES:engagement
 X-CAM-ORG:trailcons
 END:VEVENT

@@ -4109,6 +4109,19 @@
  },
  {
   "source": "austin",
+  "summary": "City Council: Mobility Committee",
+  "start": "2026-11-12T13:00:00",
+  "end": "2026-11-12T15:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4208&GID=684&G=4BED8896-C64D-4912-8005-D624C5197AA5",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-mobility-committee-20261112T1300@calendars.changesaroundme.com",
+  "description": "Summary Agenda\n\n3. Discussion and possible action to set the Mobility Committee meeting dates for calendar year 2027. (26-2971, Discussion and Possible Action)\n\nBriefings:\n- Briefing from the Urban Transportation Commission regarding actions taken at the October 6, 2026, and November 10, 2026, meeting and discussion related to a ri\u2026\n- The near-term implementation strategy for the Austin Core Transportation Plan, which is part of the Austin Strategic Mobility Plan (ASMP) that focuses on downt\u2026\n- Report by Austin Transportation and Public Works related to ongoing mobility programs and projects in the Central Texas region, including construction, improve\u2026\n\n\u2014\n\nAgenda: https://austintexas.legistar1.com/austintexas/meetings/2026/11/4208_A_Mobility_Committee_26-11-12_Committee_Agenda.pdf",
+  "all_day": false
+ },
+ {
+  "source": "austin",
   "summary": "CoA: Design Commission",
   "start": "2026-11-16T18:00:00",
   "end": "2026-11-16T21:00:00",

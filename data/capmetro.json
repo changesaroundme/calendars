@@ -1341,13 +1341,13 @@
  {
   "source": "capmetro",
   "summary": "CapMetro: Finance, Audit and Administration Committee",
-  "start": "2026-11-16T10:30:00",
-  "end": "2026-11-16T12:30:00",
+  "start": "2026-11-16T10:00:00",
+  "end": "2026-11-16T12:00:00",
   "location": "Rosa Parks Boardroom, CapMetro HQ, 2910 E. 5th St., Austin, TX 78702",
   "url": "https://capmetrotx.legistar.com/Calendar.aspx",
   "status": "CONFIRMED",
   "kind": "regular",
-  "uid": "capmetro-finance-audit-and-administration-committee-20261116T1030@calendars.changesaroundme.com",
+  "uid": "capmetro-finance-audit-and-administration-committee-20261116T1000@calendars.changesaroundme.com",
   "description": "",
   "all_day": false
  },
