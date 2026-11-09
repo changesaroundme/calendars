@@ -1344,11 +1344,11 @@
   "start": "2026-11-16T10:00:00",
   "end": "2026-11-16T12:00:00",
   "location": "Rosa Parks Boardroom, CapMetro HQ, 2910 E. 5th St., Austin, TX 78702",
-  "url": "https://capmetrotx.legistar.com/Calendar.aspx",
+  "url": "https://capmetrotx.legistar.com/MeetingDetail.aspx?LEGID=3080&GID=848&G=B1EEEA8D-7B10-4460-A710-92D6625C11F7",
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "capmetro-finance-audit-and-administration-committee-20261116T1000@calendars.changesaroundme.com",
-  "description": "",
+  "description": "Agenda: https://capmetrotx.legistar1.com/capmetrotx/meetings/2026/11/3080_A_Finance%2C_Audit_and_Administration_Committee_26-11-16_Agenda.pdf",
   "all_day": false
  },
  {
@@ -1357,11 +1357,11 @@
   "start": "2026-11-16T12:00:00",
   "end": "2026-11-16T14:00:00",
   "location": "Rosa Parks Boardroom, CapMetro HQ, 2910 E. 5th St., Austin, TX 78702",
-  "url": "https://capmetrotx.legistar.com/Calendar.aspx",
+  "url": "https://capmetrotx.legistar.com/MeetingDetail.aspx?LEGID=3061&GID=848&G=B1EEEA8D-7B10-4460-A710-92D6625C11F7",
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "capmetro-board-of-directors-20261116T1200@calendars.changesaroundme.com",
-  "description": "",
+  "description": "Agenda: https://capmetrotx.legistar1.com/capmetrotx/meetings/2026/11/3061_A_Board_of_Directors_26-11-16_Agenda.pdf",
   "all_day": false
  },
  {
