@@ -4109,6 +4109,19 @@
  },
  {
   "source": "austin",
+  "summary": "Development Services - 3-4 Dwelling Unit Technical Code Update Virtual Meeting",
+  "start": "2026-11-12T11:00:00",
+  "end": "2026-11-12T12:00:00",
+  "location": "Virtual (Zoom webinar)",
+  "url": "https://publicinput.com/3-4_dwellingcode",
+  "status": "CONFIRMED",
+  "kind": "engagement",
+  "uid": "austin-development-services-3-4-dwelling-unit-technical-code-update-virtual-meeting-20261112T1100@calendars.changesaroundme.com",
+  "description": "Online meeting, 11am-noon CST, on proposed amendments to the International Residential Code (Appendix BP) that would reduce the plan reviews required for buildings with three or four dwelling units that meet safety provisions: a 6,000 sq ft maximum, fire-resistant separations between units and shared exits, automatic sprinklers, and added fire-safety rules for garages, carports and wooden decks. Staff present the draft and take questions and feedback. Written comments are open through 27 Nov 2026 on the project page. Registration: https://zoom.us/webinar/register/WN_4TNEhSwkSW2xA8N0a1e0Bg",
+  "all_day": false
+ },
+ {
+  "source": "austin",
   "summary": "City Council: Mobility Committee",
   "start": "2026-11-12T13:00:00",
   "end": "2026-11-12T15:00:00",
@@ -4210,6 +4223,19 @@
   "uid": "austin-city-council-20261119T1000@calendars.changesaroundme.com",
   "description": "Summary Agenda\n\n- 66 consent items\n- 6 eminent domain  items\n- 5 public hearing items\n- 4 items from council\n- 4 items from council committee\n- 4 zoning and neighborhood plan amendments items\n- 1 set a public hearing item\n- 1 ahfc meeting item\n- 1 executive session item\n\n\u2014\n\nAgenda: https://austintexas.legistar1.com/austintexas/meetings/2026/11/4081_A_City_Council_26-11-19_City_Council_Agenda.pdf",
   "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "Development Services - 3-4 Dwelling Unit Technical Code Update public comments close",
+  "start": "2026-11-27",
+  "end": "2026-11-28",
+  "location": "",
+  "url": "https://publicinput.com/3-4_dwellingcode",
+  "status": "CONFIRMED",
+  "kind": "comment-window",
+  "uid": "austin-development-services-3-4-dwelling-unit-technical-code-update-public-comments-close-20261127@calendars.changesaroundme.com",
+  "description": "Last day to comment on the proposed International Residential Code amendments (Appendix BP) that would reduce plan reviews for three- and four-unit buildings meeting size, fire-separation and sprinkler requirements. The draft appendix is linked from the project page; a virtual meeting was held 12 Nov 2026. Details and how to comment: https://publicinput.com/3-4_dwellingcode",
+  "all_day": true
  },
  {
   "source": "austin",
