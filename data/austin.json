@@ -2800,7 +2800,7 @@
   "start": "2026-08-12T10:00:00",
   "end": "2026-08-12T12:00:00",
   "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
-  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4140&GID=684&G=4BED8896-C64D-4912-8005-D624C5197AA5",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1370401&GUID=F8CFAD27-F5E5-4453-8B5C-6481548A7DBC&Options=info|&Search=",
   "status": "CONFIRMED",
   "kind": "budget",
   "uid": "austin-city-council-20260812T1000@calendars.changesaroundme.com",
@@ -2813,7 +2813,7 @@
   "start": "2026-08-12T10:30:00",
   "end": "2026-08-12T12:30:00",
   "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
-  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4217&GID=684&G=4BED8896-C64D-4912-8005-D624C5197AA5",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1429636&GUID=82C5EED4-78D6-4C60-A4EE-FF6AC06ACD2A&Options=info|&Search=",
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-housing-finance-corporation-20260812T1030@calendars.changesaroundme.com",
@@ -2826,7 +2826,7 @@
   "start": "2026-08-12T10:30:00",
   "end": "2026-08-12T12:30:00",
   "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
-  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4218&GID=684&G=4BED8896-C64D-4912-8005-D624C5197AA5",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?ID=1429637&GUID=A9EE6D42-A8C8-4AEF-9B89-218CDCFA0CC4&Options=info|&Search=",
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-mueller-local-government-corporation-20260812T1030@calendars.changesaroundme.com",
@@ -4078,7 +4078,7 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-urban-transportation-commission-20261110@calendars.changesaroundme.com",
-  "description": "Summary Agenda\n\n4 discussion and action items\n\n5 updates:\n- Update from Commissioner Chen from the Downtown Commission regarding actions taken at the October 21, 2026, meeting.\n- Update from Commissioner Prasad from the Joint Sustainability Committee regarding actions taken at the October 28, 2026, meeting.\n- Update from Commissioner Schumacher from the Bicycle Advisory Council regarding actions taken at the October 20, 2026, meeting.\n- Update from Commissioner Kavelman from the Pedestrian Advisory Council regarding actions taken at the November 2, 2026, meeting.\n- Update from Chair Somers from the Community Advisory Committee of the Austin Transit Partnership Board regarding actions taken at the October 8, 2026, meeting.\n\n\u2014\n\nAgenda: https://services.austintexas.gov/edims/document.cfm?id=484657",
+  "description": "Typical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).",
   "all_day": false
  },
  {
@@ -4091,7 +4091,7 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-water-and-wastewater-commission-20261110@calendars.changesaroundme.com",
-  "description": "Summary Agenda\n\n4 briefings:\n- Pipeline relocation projects related to TxDOT\u2019s IH-35 Capital Express Central Roadway Project and related Advanced Funding Agreements \u2013 Charles Celauro, Austin Water Assistant Director Engineering and Technical Services, and Kevin Koeller, Austin Water\n- Austin Water Environmental Resource Office and Wildland Conservation Division, which involves the management of the Balcones Canyonland Preserve and the protection of water quality and quantity in the Barton Springs segment of the Edwards Aquifer\u2013\n- Q3 2026 Water Management Strategy Implementation Report Highlights \u2013 Kevin Kluge, Austin Water, Water Conservation Manager\n- 90th Texas Legislative Session Preview \u2013 Emlea Chanslor, Austin Water Chief of Staff, Heather Cooke, Austin Water Chief Administrative Officer, and Eric Anderson, Austin Water Regulatory Policy Analyst\n\n20 discussion and action items\n\n\u2014\n\nAgenda: https://services.austintexas.gov/edims/document.cfm?id=484669",
+  "description": "Typical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).",
   "all_day": false
  },
  {
@@ -4104,7 +4104,7 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-planning-commission-20261110@calendars.changesaroundme.com",
-  "description": "Summary Agenda\n\n13 cases: 4 x Plan Amendment, 7 x Rezoning, 1 x Historic Zoning, 1 x Code\n\n4 permanent committee and 2 working group updates\n\n\u2014\n\nAgenda: https://services.austintexas.gov/edims/document.cfm?id=484646",
+  "description": "Typical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).",
   "all_day": false
  },
  {
@@ -4148,6 +4148,19 @@
  },
  {
   "source": "austin",
+  "summary": "City Council: Work Session",
+  "start": "2026-11-17T09:00:00",
+  "end": "2026-11-17T11:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4129&GID=684&G=4BED8896-C64D-4912-8005-D624C5197AA5",
+  "status": "CONFIRMED",
+  "kind": "work-session",
+  "uid": "austin-city-council-work-session-20261117T0900@calendars.changesaroundme.com",
+  "description": "Summary Agenda\n\nBriefings:\nB1: Proposed amendments to the existing Interlocal Agreement between the City and the University of Texas related to the area generally bounded by Lady Bird Lake (\u2026\n\nE1. Consider matters related to Austin Energy generation, operation, and resources. (Certain public power utility competitive matters - Section 551.086 of the Gove\u2026 (26-3061, Executive Session)\n\n\u2014\n\nAgenda: https://austintexas.legistar1.com/austintexas/meetings/2026/11/4129_A_City_Council_Work_Session_26-11-17_City_Council_Agenda.pdf",
+  "all_day": false
+ },
+ {
+  "source": "austin",
   "summary": "City Council: Austin Energy Utility Oversight Committee",
   "start": "2026-11-17T09:00:00",
   "end": "2026-11-17T11:00:00",
@@ -4157,6 +4170,19 @@
   "kind": "regular",
   "uid": "austin-energy-utility-oversight-committee-20261117T0900@calendars.changesaroundme.com",
   "description": "Summary Agenda\n\n2. Discussion and possible action on setting the Austin Energy Utility Oversight Committee dates for calendar year 2027. (26-3080, Discussion and Possible Action)\n\nBriefings:\n- General Manager\u2019s Report - Upcoming Regulatory Requirements, Winter Weather Preparation, Renewable and Efficiency Program Updates, and Upcoming Events\n- The Fourth Quarter Financial Highlights Report\n- The Fourth Quarter Operations Highlights Report\n\n\u2014\n\nAgenda: https://austintexas.legistar1.com/austintexas/meetings/2026/11/4231_A_Austin_Energy_Utility_Oversight_Committee___26-11-17_Committee_Agenda.pdf",
+  "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "City Council",
+  "start": "2026-11-17T11:00:00",
+  "end": "2026-11-17T13:00:00",
+  "location": "Special Called Meeting",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4235&GID=684&G=4BED8896-C64D-4912-8005-D624C5197AA5",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-city-council-20261117T1100@calendars.changesaroundme.com",
+  "description": "Summary Agenda\n\n1. Approve a resolution canvassing the results of the November 3, 2026, General Obligation Bond Election. (26-3139, Consent)\n2. Approve a resolution canvassing the results of the November 3, 2026, General Election. (26-3140, Consent)\n3. Approve a resolution canvassing the results of the November 3, 2026, Special Charter Election. . (26-3141, Consent)\n4. Approve an ordinance ordering a runoff election to be held in the City of Austin on December 12, 2026, for the purpose of electing a City Council Member for Di\u2026 (26-3142, Consent)\n5. Discussion of legal issues related to the appointment of the City Attorney. (Consultation with Attorney - Section 551.071). (26-3168, Executive Session)\n6. Discussion of personnel matters related to the appointment of the City Attorney. (Personnel Matters - Section 551.074). (26-3169, Executive Session)\n\n\u2014\n\nAgenda: https://austintexas.legistar1.com/austintexas/meetings/2026/11/4235_A_City_Council_26-11-17_City_Council_Agenda.pdf",
   "all_day": false
  },
  {
@@ -4195,7 +4221,7 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-bond-oversight-commission-20261118@calendars.changesaroundme.com",
-  "description": "Typical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).",
+  "description": "Summary Agenda\n\n3 discussion and action items:\n\n#2: Austin Bond Dashboard\n\n#3: 2027 Bond Oversight Commission recommended information for future presenters\n\n#4: Approve the 2027 annual schedule of the Bond Oversight Commission\n\n\u2014\n\nAgenda: https://services.austintexas.gov/edims/document.cfm?id=485027",
   "all_day": false
  },
  {
@@ -4234,7 +4260,7 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-city-council-20261119T1000@calendars.changesaroundme.com",
-  "description": "Summary Agenda\n\n- 65 consent items\n- 6 eminent domain  items\n- 5 public hearing items\n- 4 items from council\n- 4 items from council committee\n- 4 zoning and neighborhood plan amendments items\n- 1 set a public hearing item\n- 1 ahfc meeting item\n- 1 executive session item\n\n\u2014\n\nAgenda: https://austintexas.legistar1.com/austintexas/meetings/2026/11/4081_A_City_Council_26-11-19_City_Council_Agenda.pdf",
+  "description": "Summary Agenda\n\n- 64 consent items\n- 6 eminent domain  items\n- 5 public hearing items\n- 4 items from council\n- 4 items from council committee\n- 4 zoning and neighborhood plan amendments items\n- 1 set a public hearing item\n- 1 ahfc meeting item\n- 1 executive session item\n\n\u2014\n\nAgenda: https://austintexas.legistar1.com/austintexas/meetings/2026/11/4081_A_City_Council_26-11-19_City_Council_Agenda.pdf",
   "all_day": false
  },
  {
@@ -4261,6 +4287,19 @@
   "kind": "regular",
   "uid": "austin-urban-transportation-commission-20261201@calendars.changesaroundme.com",
   "description": "Typical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).",
+  "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "Transportation and Public Works - South Lamar Boulevard Corridor Open House",
+  "start": "2026-12-02T17:00:00",
+  "end": "2026-12-02T19:00:00",
+  "location": "Bluewillow Lounge, Wheatsville Co-op, 4001 S. Lamar Blvd., Austin, TX 78704",
+  "url": "https://www.speakupaustin.org/southlamar",
+  "status": "CONFIRMED",
+  "kind": "engagement",
+  "uid": "austin-transportation-and-public-works-south-lamar-boulevard-corridor-open-house-20261202T1700@calendars.changesaroundme.com",
+  "description": "Drop-in open house, 5-7pm CST, on the 2016 Mobility Bond improvements to South Lamar Boulevard between Barton Springs Road and US 290: the corridor is at final design and split at Montclaire Street, with the southern segment (Montclaire to US 290) bid in Sep 2026 and construction expected in early 2027, and the northern segment to bid closer to 2029. Planned work includes shared-use paths, raised medians, new signals and pedestrian hybrid beacons, drainage and utility upgrades, and a northbound transit-priority lane. Stop by any time to see the latest plans and talk with the project team.",
   "all_day": false
  },
  {
