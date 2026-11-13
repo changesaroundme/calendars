@@ -4282,11 +4282,24 @@
   "start": "2026-11-19T10:00:00",
   "end": "2026-11-19T12:00:00",
   "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
-  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4081&GID=684&G=4BED8896-C64D-4912-8005-D624C5197AA5",
+  "url": "https://austintexas.legistar.com/Calendar.aspx",
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-city-council-20261119T1000@calendars.changesaroundme.com",
-  "description": "Summary Agenda\n\n- 65 consent items\n- 6 eminent domain  items\n- 5 public hearing items\n- 4 items from council\n- 4 items from council committee\n- 4 zoning and neighborhood plan amendments items\n- 1 set a public hearing item\n- 1 ahfc meeting item\n- 1 executive session item\n\n\u2014\n\nAgenda: https://austintexas.legistar1.com/austintexas/meetings/2026/11/4081_A_City_Council_26-11-19_City_Council_Agenda.pdf",
+  "description": "",
+  "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "City Council: Economic Opportunity Committee",
+  "start": "2026-11-20T10:00:00",
+  "end": "2026-11-20T12:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4244&GID=684&G=4BED8896-C64D-4912-8005-D624C5197AA5",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-economic-opportunity-committee-20261120T1000@calendars.changesaroundme.com",
+  "description": "",
   "all_day": false
  },
  {
