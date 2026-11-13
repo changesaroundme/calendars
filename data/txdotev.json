@@ -804,5 +804,18 @@
   "uid": "txdotev-public-transportation-advisory-committee-20261119T1000@calendars.changesaroundme.com",
   "description": "Agenda not yet posted (checked daily).\nPosted location: Hybrid 6230 E Stassney Lane, Austin, TX 78744 Virtual\nVirtual: https://teams.microsoft.com/meet/283251340636123?p=j88336sjBBgKgIWdte",
   "all_day": false
+ },
+ {
+  "source": "txdotev",
+  "summary": "TxDOT: Statewide Transportation Improvement Program - FY 2027-2030",
+  "start": "2026-12-01",
+  "end": null,
+  "location": "",
+  "url": "https://www.txdot.gov/projects/hearings-meetings/transportation-planning/2026/statewide-transportation-improvement-program-120126.html",
+  "status": "CONFIRMED",
+  "kind": "hearing",
+  "uid": "txdotev-hm-statewide-transportation-improvement-program-120126-20261201@calendars.changesaroundme.com",
+  "description": "Virtual meeting - online materials only; no fixed time (no in-person meeting)\nPublic comment deadline: 14 Dec 2026.\n\n\u2014\n\nPurpose: To receive comments on the proposed November 2026 Revision to the Statewide Transportation Improvement Program (STIP) for FY 2027-2030.\n\nDescription: The STIP identifies federally funded transportation projects included in the FY 2027\u20132030 Transportation Improvement Programs (TIPs) for each Metropolitan Planning Organization (MPO) in Texas. It also includes state and federally funded projects in nonattainment areas\u2014Dallas-Fort Worth, El Paso, Houston, and San Antonio\u2014as well as federally funded projects in rural areas outside MPO boundaries and other statewide programs.\nFederal law (Title 23 USC \u00a7\u00a7134 and 135) requires MPOs and states to develop TIPs and STIPs to secure federal transportation funding. These plans must be developed in cooperation with MPOs, transit operators, and local officials, and must include opportunities for public participation and approval by the Governor or designee.\nA copy of the proposed November 2026 Revision to the FY 2027\u20132030 STIP will be available for review at the STIP project page when this notice is published.\n\n\u2014\n\nVirtual meeting: https://teams.microsoft.com/meet/2328640466467019?p=QOjDHM6u7TpS6xx1Z3\n\nProject info: https://www.txdot.gov/inside-txdot/division/transportation-planning/stips.html",
+  "all_day": true
  }
 ]
