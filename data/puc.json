@@ -339,6 +339,19 @@
  },
  {
   "source": "puc",
+  "summary": "PUC: Workshop",
+  "start": "2026-12-08T09:00:00",
+  "end": "2026-12-08T13:00:00",
+  "location": "EOP Workshop",
+  "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1839",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "puc-cal-1839-20261208@calendars.changesaroundme.com",
+  "description": "Watch live or archived: https://www.puc.texas.gov/agency/calendar/broadcasts/",
+  "all_day": false
+ },
+ {
+  "source": "puc",
   "summary": "PUC: Open Meeting",
   "start": "2026-12-11T09:30:00",
   "end": "2026-12-11T17:00:00",
