@@ -515,6 +515,18 @@ organizations:
           Final plan approved by the board Oct 2025; the page links the plan,
           flipbook, route matrix, executive summary, engagement reports and
           FAQ, each in English and Spanish (docs: english keeps the English).
+      - slug: capmetro-service-standards-guidelines
+        name: Service Standards and Guidelines
+        url: https://www.capmetro.org/aboutus/about-capmetro/plans-development/standards-specifications-guidelines
+        docs: english
+        added: 2026-11-14
+        note: >-
+          Hosts the Service Standards and Guidelines PDF (2026 draft, English
+          and Spanish; 2023 adopted edition before it) plus the Pickup
+          guidelines and bus stop amenity manual. Draft adds Pickup and
+          Bikeshare and revises OTP and amenity standards; hearing 14 Dec
+          2026, board adoption planned Jan 2027. The PDF is tracked as this
+          page's attachment: each capture re-checks it and keeps revisions.
       - slug: capmetro-metrobike-open-house
         name: MetroBike expansion virtual open house
         url: https://publicinput.com/metrobike

@@ -763,3 +763,31 @@
     new signals and pedestrian hybrid beacons, drainage and utility
     upgrades, and a northbound transit-priority lane. Stop by any time to
     see the latest plans and talk with the project team.
+
+# --- added 2026-11-14 (CapMetro Service Standards and Guidelines update,
+#     https://www.capmetro.org/aboutus/about-capmetro/plans-development/standards-specifications-guidelines)
+
+- summary: "CapMetro - Board of Directors + Public Hearing on 2026 Service Standards and Guidelines"
+  # uid pinned to the Legistar scraper's noon "Board of Directors" row that
+  # day: the standards page says the hearing is 14 Dec at noon at CapMetro
+  # HQ, which is the December board meeting, and this entry is richer.
+  # Ian: delete this uid line if you'd rather the hearing publish as a
+  # separate entry beside the plain board meeting.
+  uid: capmetro-board-of-directors-20261214T1200@calendars.changesaroundme.com
+  start: 2026-12-14 12:00
+  org: capmetro
+  location: "Rosa Parks Boardroom, CapMetro HQ, 2910 E. 5th St., Austin, TX 78702"
+  url: https://www.capmetro.org/aboutus/about-capmetro/plans-development/standards-specifications-guidelines
+  kind: hearing
+  description: |
+    Public hearing, during the noon board meeting, on CapMetro's draft 2026
+    Service Standards and Guidelines: the update adds Pickup and Bikeshare
+    services, revises bus stop amenity standards (including waste
+    receptacle and real-time sign placement and the amenity distribution
+    process), and realigns on-time performance and productivity metrics
+    with operations (rail OTP standard 7 minutes; the on-time window now
+    starts 30 seconds before scheduled departure). Written comments are
+    taken on the project page; the board is scheduled to adopt the
+    standards in Jan 2027. Served by Routes 2, 4, 300, 800 and Pickup East
+    ATX. Draft (English):
+    https://www.capmetro.org/docs/default-source/plans-and-development-docs/capmetro-service-standards-and-guidelines-2026-english.pdf
