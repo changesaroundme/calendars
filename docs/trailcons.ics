@@ -26,36 +26,8 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:trailcons-34731@calendars.changesaroundme.com
-DTSTAMP:20261116T024552Z
-DTSTART;TZID=America/Chicago:20251115T090000
-DTEND;TZID=America/Chicago:20251115T103000
-SUMMARY:Trail Cons. - Conversation with the Artist | Eastside Family Garden
-  Project
-LOCATION:Lorraine “Grandma” Camacho Activity Center\, 35 Robert T Marti
- nez Jr St\, Austin\, TX 78702
-URL:https://thetrailconservancy.org/event/community-design-workshop-eastsid
- e-family-garden-project/
-DESCRIPTION:Join The Trail Conservancy for a Meet the Artist event for the 
- Eastside Play Area project! Talk with the project’s artist\, Lys Santama
- ria and landscape architect\, Rialto Studio. Together\, we’ll explore ho
- w community stories and creativity can shape the art that makes our park a
-  true reflection of home.\nFree Tacos and Beverages will be provided.\nGet
-  to Know the Artist: Lys Santamaria\nSelected from an open call in July\, 
- Lys is a Colombian-born\, Austin-based artist whose work in glass beads an
- d tile explores joy\, healing\, and storytelling inspired by her identity 
- as a Latina\, woman\, and immigrant.\nAs a public artist\, Lys describes h
- er role as “a translator”—listening to communities\, honoring their 
- stories\, and reflecting them through intentional design. Her current proj
- ects include a commission for the Joan Means Khabele Bathhouse Rehabilitat
- ion.\nAbout the Project\n…\n\nDetails: https://thetrailconservancy.org/e
- vent/community-design-workshop-eastside-family-garden-project/
-CATEGORIES:engagement
-X-CAM-ORG:trailcons
-END:VEVENT
-BEGIN:VEVENT
 UID:trailcons-35769@calendars.changesaroundme.com
-DTSTAMP:20261116T024552Z
+DTSTAMP:20261116T193011Z
 DTSTART;TZID=America/Chicago:20260207T100000
 DTEND;TZID=America/Chicago:20260207T123000
 SUMMARY:Trail Cons. - Wishbone Bridge Ribbon Cutting Celebration
@@ -80,7 +52,7 @@ X-CAM-ORG:trailcons
 END:VEVENT
 BEGIN:VEVENT
 UID:trailcons-37803@calendars.changesaroundme.com
-DTSTAMP:20261116T024552Z
+DTSTAMP:20261116T193011Z
 DTSTART;TZID=America/Chicago:20260826T173000
 DTEND;TZID=America/Chicago:20260826T200000
 SUMMARY:Trail Cons. - Merlin Tuttle Day: Congress Ave. Bat Celebration
@@ -102,7 +74,7 @@ X-CAM-ORG:trailcons
 END:VEVENT
 BEGIN:VEVENT
 UID:trailcons-38238@calendars.changesaroundme.com
-DTSTAMP:20261116T024552Z
+DTSTAMP:20261116T193011Z
 DTSTART;TZID=America/Chicago:20261010T090000
 DTEND;TZID=America/Chicago:20261010T103000
 SUMMARY:Trail Cons. - Open House: Eastside Family Garden Design Concepts
@@ -128,7 +100,7 @@ X-CAM-ORG:trailcons
 END:VEVENT
 BEGIN:VEVENT
 UID:trailcons-38444@calendars.changesaroundme.com
-DTSTAMP:20261116T024552Z
+DTSTAMP:20261116T193011Z
 DTSTART;TZID=America/Chicago:20261107T090000
 DTEND;TZID=America/Chicago:20261107T110000
 SUMMARY:Trail Cons. - Open House: Programming on the Butler Trail & Seaholm
