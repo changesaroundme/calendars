@@ -4143,7 +4143,7 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-design-commission-20261116@calendars.changesaroundme.com",
-  "description": "Typical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).",
+  "description": "Summary Agenda\n\n3 discussion and action items:\n\n#2: Alley access and promoting the use of alley spaces for economic vitality\n\n#3: Green Infrastructure Initiative\n\n#4: Discussion and action to appoint a member of the Design Commission to serve as the Commission\u2019s representative on the Joint Sustainability Committee\n\n1 working group update\n\n\u2014\n\nAgenda: https://services.austintexas.gov/edims/document.cfm?id=484908",
   "all_day": false
  },
  {
@@ -4200,6 +4200,19 @@
  },
  {
   "source": "austin",
+  "summary": "CoA: Bicycle Advisory Council",
+  "start": "2026-11-17T18:00:00",
+  "end": "2026-11-17T21:00:00",
+  "location": "Permitting and Development Center, Room 1401, 6310 Wilhelmina Delco Dr., Austin, TX 78752",
+  "url": "https://www.austintexas.gov/boards-commissions/meetings/110_1",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-bicycle-advisory-council-20261117@calendars.changesaroundme.com",
+  "description": "Summary Agenda\n\n5 discussion and action items\n\n\u2014\n\nAgenda: https://services.austintexas.gov/edims/document.cfm?id=485173",
+  "all_day": false
+ },
+ {
+  "source": "austin",
   "summary": "City Council: Audit and Finance Committee",
   "start": "2026-11-18T09:30:00",
   "end": "2026-11-18T11:30:00",
@@ -4234,7 +4247,7 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-bond-oversight-commission-20261118@calendars.changesaroundme.com",
-  "description": "Typical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).",
+  "description": "Summary Agenda\n\n3 discussion and action items:\n\n#2: Austin Bond Dashboard\n\n#3: 2027 Bond Oversight Commission recommended information for future presenters\n\n#4: Approve the 2027 annual schedule of the Bond Oversight Commission\n\n\u2014\n\nAgenda: https://services.austintexas.gov/edims/document.cfm?id=485027",
   "all_day": false
  },
  {
@@ -4247,7 +4260,7 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-airport-advisory-commission-20261118@calendars.changesaroundme.com",
-  "description": "Typical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).",
+  "description": "Summary Agenda\n\n4 briefings:\n- Fiscal Year 2026 Preliminary Year-End Financial Results\n- November 2026 Air Service Update\n- Journey with AUS Active Projects\n- Reappointment of members to the Austin-Bergstrom Landhost Enterprises, Inc. Board of Directors\n\n5 action items\n\n2 discussion items (all related to recent City Council actions)\n\n\u2014\n\nAgenda: https://services.austintexas.gov/edims/document.cfm?id=485174",
   "all_day": false
  },
  {
@@ -4260,7 +4273,7 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-environmental-commission-20261118@calendars.changesaroundme.com",
-  "description": "Typical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).",
+  "description": "Summary Agenda\n\n1 discussion and action item:\n\n#4: Approve a recommendation to Council on the proposed data center located at 6801 River Place Boulevard to improve environmental site monitoring, wildfire mitigat\u2026\n\n\u2014\n\nTypical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).\n\nAgenda: https://services.austintexas.gov/edims/document.cfm?id=485127",
   "all_day": false
  },
  {
@@ -4382,6 +4395,19 @@
  },
  {
   "source": "austin",
+  "summary": "CoA: Pedestrian Advisory Council",
+  "start": "2026-12-07T18:00:00",
+  "end": "2026-12-07T21:00:00",
+  "location": "Permitting and Development Center, Room 1401, 6310 Wilhelmina Delco Dr., Austin, TX 78752",
+  "url": "https://www.austintexas.gov/boards-commissions/meetings/121_1",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-pedestrian-advisory-council-20261207@calendars.changesaroundme.com",
+  "description": "Typical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).",
+  "all_day": false
+ },
+ {
+  "source": "austin",
   "summary": "CoA: Austin Integrated Water Resource Planning Community Task Force",
   "start": "2026-12-08",
   "end": null,
@@ -4421,6 +4447,19 @@
  },
  {
   "source": "austin",
+  "summary": "CoA: Building and Standards Commission",
+  "start": "2026-12-09T18:30:00",
+  "end": "2026-12-09T21:30:00",
+  "location": "Permitting and Development Center, 6310 Wilhelmina Delco Dr., Austin, TX 78752",
+  "url": "https://www.austintexas.gov/boards-commissions/meetings/17_1",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-building-and-standards-commission-20261209@calendars.changesaroundme.com",
+  "description": "Typical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).",
+  "all_day": false
+ },
+ {
+  "source": "austin",
   "summary": "CoA: Design Commission",
   "start": "2026-12-14T18:00:00",
   "end": "2026-12-14T21:00:00",
@@ -4442,6 +4481,19 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-planning-commission-20261215@calendars.changesaroundme.com",
+  "description": "Typical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).",
+  "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "CoA: Bicycle Advisory Council",
+  "start": "2026-12-15T18:00:00",
+  "end": "2026-12-15T21:00:00",
+  "location": "Permitting and Development Center, Room 1401, 6310 Wilhelmina Delco Dr., Austin, TX 78752",
+  "url": "https://www.austintexas.gov/boards-commissions/meetings/110_1",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-bicycle-advisory-council-20261215@calendars.changesaroundme.com",
   "description": "Typical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).",
   "all_day": false
  },
