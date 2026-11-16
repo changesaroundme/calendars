@@ -1,0 +1,557 @@
+# projects.yaml — what Changes Around Me follows: individual projects, plans
+# and policies, one entry each. An entry states only what is known; the
+# defaults fill in the rest.
+#
+#   slug         permanent short name, lowercase-with-hyphens
+#   name         as it reads on the site
+#   kind         project | plan | policy
+#   tier         focus (Ian has written a page) | watching (the default)
+#   orgs         who runs it: codes from sources.yaml, or `organizations` below
+#   page         the vault page, for a focus project
+#   sources      monitored pages about it (slugs in sources.yaml)
+#   links        other pages worth having: [{name: ..., url: ...}]
+#   also_called  other names it goes by
+#   schedule     what has been said about its timing (see below)
+#   added        YYYY-MM-DD
+#   note         free text, never read by code
+#
+# `schedule` is a list of statements, oldest first. A statement is what one
+# source said at one moment. It is never edited afterwards: when the source
+# says something new, a new statement goes below it. The latest statement is
+# the current schedule, and the earlier ones show how far it has moved.
+#
+#   source     who or what said it
+#   url        where, if anywhere
+#   dated      the date the source carries: YYYY, YYYY-MM or YYYY-MM-DD
+#   retrieved  the day it was read, when the source carries no date
+#   capture    our dated copy in the archive, if there is one
+#   about      what it covers, when not the whole project
+#   note       free text
+#   phases     [{name, said, start, end}]: `said` is the wording as published,
+#              `start` and `end` are how it was read. Only one of them = a milestone.
+#
+# Vague wording is read the same way every time: spring Mar–May, summer
+# Jun–Aug, fall Sep–Nov, winter Dec–Feb; early Jan–Apr, mid May–Aug, late
+# Sep–Dec. The wording stays in `said`, so nobody has to trust the reading.
+#
+# Checked by caltools/projects.py:  python -m caltools.projects
+
+defaults:
+  tier: watching
+  added: 2026-11-16
+
+organizations:            # only those sources.yaml does not already have
+  SGI: Something Good Initiative
+
+projects:
+
+  # ───────────────────────────── Focus ─────────────────────────────
+
+  - slug: i35-capex-central
+    name: I-35 Capital Express Central
+    kind: project
+    tier: focus
+    orgs: [TxDOT]
+    page: Focuses/I-35 Between the Lake and E Cesar Chavez
+    also_called: [CapEx Central, I-35 CapEx]
+    links:
+      - {name: TxDOT project page, url: "https://www.txdot.gov/mymobility35/projects/capex-central.html"}
+    schedule:
+      - source: TxDOT, provided to Ian
+        dated: 2026-03-25
+        about: Noise wall vote, Holly St to E Cesar Chavez
+        phases:
+          - {name: Invitations and information mailed to owners, start: 2026-01-28}
+          - {name: Noise workshop at Sanchez, start: 2026-02-18}
+          - {name: Deadline for votes, start: 2026-03-04}
+          - {name: Re-vote issued, said: "Re-vote issued (not enough responses)", start: 2026-03-18}
+          - {name: Updated deadline, start: 2026-04-15}
+    note: The Focus page covers the stretch between the lake and E Cesar Chavez.
+
+  - slug: red-line-e-5th
+    name: Red Line double tracking and E 5th Street
+    kind: project
+    tier: focus
+    orgs: [CapMetro, CoA]
+    page: Focuses/Red Line Double Tracking and E 5th Street
+    sources: [capmetro-rail-and-trail-improvements, capmetro-rail-trail-navasota-e7th, capmetro-rail-improvements]
+    also_called: [Rail and Trail Improvements, CapMetro Rail Improvements]
+    links:
+      - {name: City of Austin Mobility Bond page, url: "https://storymaps.arcgis.com/stories/0c07fae43ac848358a6aa63a3be27d7a"}
+    schedule:
+      - source: CapMetro Rail Improvements page on PublicInput
+        url: https://publicinput.com/b3355#tab-41279
+        note: The page carries no date. Whether it came before or after the July 2023 presentation is not known.
+        phases:
+          - {name: Construction, said: "Construction is planned to occur in 2025 and be completed by the end of the year.", start: 2025, end: 2025}
+      - source: CapMetro presentation
+        url: https://drive.google.com/file/d/1XJhYF5Q-E9svEzNgFs5LBhyevkaPXQAU/view
+        dated: 2023-07
+        phases:
+          - {name: Construction, said: "construction completion date anticipated in 2026, contingent upon availability of funding", end: 2026}
+      - source: Rail and Trail Improvements page on PublicInput
+        url: https://publicinput.com/railandtrails
+        retrieved: 2026-10-27
+        capture: https://archive.changesaroundme.com/capmetro-rail-and-trail-improvements/2026-10-27-0924.pdf
+        note: Written before fall 2025, and still on the page when it was read.
+        phases:
+          - {name: Design, said: "design is scheduled to complete in fall 2025", end: 2025-11}
+          - {name: Construction, said: "with construction starting in 2026", start: 2026}
+      - source: CapMetro staff, in conversation at the 100% design open house
+        dated: 2026-03-10
+        note: As recorded on the Focus page, which footnotes the start date to this conversation.
+        phases:
+          - {name: Construction, said: "Jan 2027, estimated construction start. Jan 2029, estimated construction completion.", start: 2027-01, end: 2029-01}
+
+  - slug: e-cesar-chavez-pleasant-valley-shady
+    name: E Cesar Chavez, Pleasant Valley to Shady Ln
+    kind: project
+    tier: focus
+    orgs: [CoA]
+    page: "Focuses/E Cesar Chavez, Pleasant Valley–Shady Ln"
+    links:
+      - {name: Speak Up Austin page, url: "https://www.speakupaustin.org/ColoradoRiverTrail"}
+    schedule:
+      - source: Email from the City of Austin's Capital Improvement Program Manager
+        dated: 2026-04-03
+        phases:
+          - {name: Construction, said: "Expected to begin ~Summer 2027 and last anywhere between 12-24 months for construction.", start: 2027-06, end: 2029-08}
+
+  - slug: 765-kv-transmission-lines
+    name: 765 kV transmission lines
+    kind: project
+    tier: focus
+    orgs: [PUC]
+    page: Focuses/765 kV Transmission Lines
+    also_called: [765-kV, 765 kV]
+    links:
+      - {name: PUC docket 59029, url: "https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=59029"}
+      - {name: PUC docket 59315, url: "https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=59315"}
+
+  - slug: east-ave-trail
+    name: East Ave Trail
+    kind: project
+    tier: focus
+    page: Focuses/East Ave Trail
+    note: The Focus page is empty and the organization is not recorded yet.
+
+  # ─────────────────── City of Austin: projects and sites ───────────────────
+
+  - slug: barton-springs-road-bridge
+    name: Barton Springs Road Bridge
+    kind: project
+    orgs: [CoA]
+    sources: [coa-barton-springs-road-bridge]
+    schedule:
+      - source: Project page on PublicInput
+        url: https://publicinput.com/x45024
+        retrieved: 2026-10-30
+        capture: https://archive.changesaroundme.com/_unlisted/Barton%20Springs%20Road%20Bridge%20project/2026-10-30-0630.pdf
+        phases:
+          - {name: Chapter 26 hearings and approvals, said: "Currently targeted for August–October 2027; dates and process are not yet confirmed.", start: 2027-08, end: 2027-10}
+          - {name: NEPA decision, said: "Currently anticipated in late 2027.", start: 2027-09}
+          - {name: Construction, said: "Currently expected to begin in late 2028.", start: 2028-09}
+
+  - slug: burnet-road-corridor
+    name: Burnet Road corridor
+    kind: project
+    orgs: [CoA]
+    sources: [coa-burnet-road-corridor]
+
+  - slug: south-lamar-corridor
+    name: South Lamar Boulevard corridor
+    kind: project
+    orgs: [CoA]
+    sources: [coa-south-lamar-corridor]
+    schedule:
+      - source: Speak Up Austin project page
+        url: https://www.speakupaustin.org/southlamar
+        retrieved: 2026-11-11
+        capture: https://archive.changesaroundme.com/coa-south-lamar-corridor/2026-11-11-0707.pdf
+        about: Southern segment, Montclaire Street to US 290
+        phases:
+          - {name: Bid solicitation, said: "Bid solicitations began in July 2026.", start: 2026-07}
+          - {name: Construction, said: "Construction is anticipated to start in early 2027.", start: 2027-01}
+      - source: Speak Up Austin project page
+        url: https://www.speakupaustin.org/southlamar
+        retrieved: 2026-11-11
+        capture: https://archive.changesaroundme.com/coa-south-lamar-corridor/2026-11-11-0707.pdf
+        about: Northern segment, Barton Springs Road to Montclaire Street
+        phases:
+          - {name: Bid solicitation, said: "This segment is expected to go to bid closer to 2029, as the southern segment nears completion.", start: 2029}
+      - source: Speak Up Austin project page
+        url: https://www.speakupaustin.org/southlamar
+        retrieved: 2026-11-11
+        capture: https://archive.changesaroundme.com/coa-south-lamar-corridor/2026-11-11-0707.pdf
+        about: Del Curto / Bluebonnet roundabout
+        phases:
+          - {name: Construction, said: "Construction is expected to begin in fall 2026.", start: 2026-09}
+
+  - slug: east-oltorf-street
+    name: East Oltorf Street safety and mobility improvements
+    kind: project
+    orgs: [CoA]
+    sources: [coa-east-oltorf-safety-mobility]
+
+  - slug: airport-corridor
+    name: Airport Corridor
+    kind: project
+    orgs: [CoA]
+    sources: [coa-airport-corridor]
+    note: Which corridor this is was not clear from the page name.
+
+  - slug: convention-center
+    name: Convention Center
+    kind: project
+    orgs: [CoA]
+
+  - slug: holly-shores
+    name: Holly Shores
+    kind: project
+    orgs: [CoA, TrailCons]
+    sources: [coa-holly-shores-vision-plan, trailcons-holly-shores]
+    also_called: [Edward Rendon Sr. Park at Festival Beach, Eastside Family Garden and Lakefront Trail Park]
+    schedule:
+      - source: City of Austin parks project page, "Anticipated Schedule"
+        url: https://www.austintexas.gov/parks/projects/holly-shores-edward-rendon-sr-park-festival-beach-vision-plan-implementation
+        retrieved: 2026-11-07
+        capture: https://archive.changesaroundme.com/coa-holly-shores-vision-plan/2026-11-07-0643.pdf
+        phases:
+          - {name: Design, said: "Spring 2026: Design Phase", start: 2026-03}
+          - {name: Permitting, said: "Summer 2026: Permitting Phase", start: 2026-06}
+          - {name: Construction, said: "Spring 2027: Construction Start", start: 2027-03}
+
+  - slug: eilers-park
+    name: Eilers (Deep Eddy) Neighborhood Park concept plan
+    kind: project
+    orgs: [CoA]
+    sources: [coa-eilers-park-survey-1]
+
+  - slug: mokan-trail
+    name: MoKan Trail
+    kind: project
+    orgs: [CoA]
+    sources: [coa-mokan-trail]
+
+  - slug: grove-riverside-site
+    name: Grove–Riverside site
+    kind: project
+    orgs: [CoA]
+    sources: [coa-grove-riverside-site]
+    note: An Austin Housing Finance Corporation site.
+
+  - slug: 2908-south-congress
+    name: 2908 South Congress
+    kind: project
+    orgs: [CoA]
+    sources: [coa-2908-south-congress]
+    schedule:
+      - source: Speak Up Austin project page, "Anticipated Timeline" table
+        url: https://www.speakupaustin.org/2908SouthCongress#tab-83415
+        retrieved: 2026-09-01
+        phases:
+          - {name: Staff preparation for engagement and solicitation, start: 2026-01, end: 2026-07}
+          - {name: Community engagement, start: 2026-07, end: 2026-11}
+          - {name: Solicitation released, said: "Jan. 2027", start: 2027-01}
+          - {name: Solicitation awarded, said: "May 2027", start: 2027-05}
+          - {name: Pre-development, said: "Pre-Development 2027-2028", start: 2027, end: 2028}
+          - {name: Construction, said: "Construction Begins: 2029. Construction Completion: 2031.", start: 2029, end: 2031}
+    note: An Austin Housing Finance Corporation site.
+
+  - slug: alleyway-project
+    name: Alleyway project south of E Cesar Chavez
+    kind: project
+    orgs: [SGI]
+    links:
+      - {name: Project page, url: "https://somethinggoodinitiative.org/alleyway-project"}
+
+  - slug: ihop-downtown-site
+    name: IHOP downtown site
+    kind: project
+    note: From the "Keeping an eye on…" page. No organization or public page recorded yet.
+
+  # ───────────────────────── City of Austin: plans ─────────────────────────
+
+  - slug: central-city-district-plan
+    name: Central City District Plan
+    kind: plan
+    orgs: [CoA]
+    sources: [coa-central-city-district-plan]
+    schedule:
+      - source: Speak Up Austin project page
+        url: https://www.speakupaustin.org/centralcity
+        retrieved: 2026-11-14
+        capture: https://archive.changesaroundme.com/coa-central-city-district-plan/2026-11-14-0839.pdf
+        phases:
+          - {name: Phase I engagement, said: "October 2025 - December 2025", start: 2025-10, end: 2025-12}
+          - {name: Plan adoption, said: "The Central City District Plan is set to be proposed to City Council in late Spring 2027.", start: 2027-05}
+
+  - slug: northeast-district-plan
+    name: Northeast District Plan
+    kind: plan
+    orgs: [CoA]
+    sources: [coa-northeast-district-plan]
+
+  - slug: east-riverside-corridor
+    name: East Riverside Corridor Planning Initiative
+    kind: plan
+    orgs: [CoA]
+    sources: [coa-east-riverside-corridor-planning]
+
+  - slug: imagine-austin-update
+    name: Imagine Austin Update
+    kind: plan
+    orgs: [CoA]
+    sources: [coa-imagine-austin-update]
+
+  - slug: great-streets-plan
+    name: Great Streets Plan Update
+    kind: plan
+    orgs: [CoA]
+    sources: [coa-great-streets-plan-update]
+
+  - slug: urban-trails-plan
+    name: Urban Trails Plan
+    kind: plan
+    orgs: [CoA]
+    sources: [coa-urban-trails-plan, coa-urban-trails-wayfinding-survey]
+
+  - slug: all-ages-abilities-bicycle-network
+    name: All Ages and Abilities Bicycle Priority Network
+    kind: plan
+    orgs: [CoA]
+    sources: [coa-all-ages-abilities-bicycle-network]
+
+  - slug: i35-central-small-area-mobility-plan
+    name: I-35 Central Small Area Mobility Plan
+    kind: plan
+    orgs: [CoA]
+    sources: [coa-i35-central-samp]
+
+  - slug: our-future-35
+    name: Our Future 35
+    kind: plan
+    orgs: [CoA]
+    sources: [coa-our-future-35]
+    also_called: [Cap and Stitch]
+
+  - slug: west-campus-transportation-plan
+    name: West Campus Transportation Plan
+    kind: plan
+    orgs: [CoA]
+    sources: [coa-west-campus-transportation-plan]
+
+  - slug: parks-long-range-plan
+    name: Our Parks, Our Future Long Range Plan
+    kind: plan
+    orgs: [CoA]
+    sources: [coa-parks-long-range-plan]
+
+  - slug: austin-energy-resource-plan-2035
+    name: Austin Energy Resource, Generation and Climate Protection Plan to 2035
+    kind: plan
+    orgs: [CoA]
+    sources: [coa-austin-energy-resource-generation-plan-2035]
+    note: Austin Energy is a City of Austin utility.
+
+  - slug: transit-enhancement-infrastructure-report
+    name: Transit Enhancement Infrastructure Report
+    kind: plan
+    orgs: [CoA]
+    sources: [coa-transit-enhancement-infrastructure-report]
+
+  - slug: east-austin-historic-resource-survey
+    name: East Austin Historic Resource Survey
+    kind: plan
+    orgs: [CoA]
+    sources: [coa-east-austin-historic-resource-survey]
+
+  - slug: lower-colorado-river-wrap
+    name: Lower Colorado River Watershed Restoration and Access Plan
+    kind: plan
+    links:
+      - {name: Survey, url: "https://www.surveymonkey.com/r/lowercoloradowrap"}
+    note: The organization is not recorded yet.
+
+  # ───────────────────────── City of Austin: policy ─────────────────────────
+
+  - slug: citywide-density-bonus
+    name: Citywide Density Bonus Program
+    kind: policy
+    orgs: [CoA]
+    sources: [coa-citywide-density-bonus]
+    also_called: [C20-2024-004]
+
+  - slug: etod-overlay-phase-2
+    name: ETOD Overlay, phase 2
+    kind: policy
+    orgs: [CoA]
+    sources: [coa-etod-overlay-phase-2]
+    also_called: [Equitable Transit-Oriented Development]
+
+  - slug: 3-4-dwelling-unit-code-update
+    name: 3-4 Dwelling Unit Technical Code Update
+    kind: policy
+    orgs: [CoA]
+    sources: [coa-3-4-dwelling-unit-code-update]
+
+  - slug: green-infrastructure-initiative
+    name: Green Infrastructure Initiative
+    kind: policy
+    orgs: [CoA]
+    sources: [coa-green-infrastructure-initiative]
+
+  - slug: 2026-bond
+    name: Shape Austin's 2026 Bond
+    kind: policy
+    orgs: [CoA]
+    sources: [coa-shape-austins-2026-bond]
+
+  - slug: economic-development-policy
+    name: Shaping Austin's Economic Development Policy
+    kind: policy
+    orgs: [CoA]
+    sources: [coa-shaping-economic-development-policy]
+
+  - slug: cesar-chavez-street-renaming
+    name: César Chávez Street renaming
+    kind: policy
+    orgs: [CoA]
+    sources: [coa-cesar-chavez-renaming, coa-cesar-chavez-renaming-survey]
+
+  - slug: east-austin-parking
+    name: East Austin parking
+    kind: policy
+    orgs: [CoA]
+    sources: [coa-east-austin-parking-survey]
+
+  - slug: city-budget
+    name: City budget process
+    kind: policy
+    orgs: [CoA]
+    links:
+      - {name: City budget page, url: "http://austintexas.gov/budget"}
+
+  - slug: dogs-head-annexation
+    name: '"Dog''s head" annexation and development'
+    kind: policy
+    orgs: [CoA]
+    links:
+      - {name: KUT article, url: "https://www.kut.org/austin/2026-05-22/austin-tx-city-council-dogs-head-development"}
+
+  # ─────────────────────── Austin Transit Partnership ───────────────────────
+
+  - slug: austin-light-rail
+    name: Austin Light Rail
+    kind: project
+    orgs: [ATP]
+    sources: [atp-feis-record-of-decision, atp-light-rail-progress-update, atp-environmental-review, atp-milestones]
+    also_called: [Austin Light Rail Phase 1, Project Connect]
+    schedule:
+      - source: Austin Transit Partnership milestones page
+        url: https://www.atptx.org/milestones/
+        retrieved: 2026-11-07
+        capture: https://archive.changesaroundme.com/atp-milestones/2026-11-07-0647.pdf
+        phases:
+          - {name: Construction, said: "marking another major step toward beginning construction in 2027", start: 2027}
+
+  # ──────────────────────────────── CapMetro ────────────────────────────────
+
+  - slug: red-line-trail-study
+    name: Red Line Trail Study
+    kind: plan
+    orgs: [CapMetro]
+    sources: [capmetro-red-line-trail-study]
+
+  - slug: transit-plan-2035
+    name: Transit Plan 2035
+    kind: plan
+    orgs: [CapMetro]
+    sources: [capmetro-transit-plan-2035]
+
+  - slug: capmetro-service-changes
+    name: CapMetro service changes
+    kind: policy
+    orgs: [CapMetro]
+    sources: [capmetro-service-changes, capmetro-service-changes-jan-2027, capmetro-service-changes-aug-2026]
+
+  - slug: capmetro-fare-increase
+    name: CapMetro fare increase, 2027 and 2029
+    kind: policy
+    orgs: [CapMetro]
+    sources: [capmetro-fare-increase]
+    schedule:
+      - source: CapMetro fare increase page
+        url: https://www.capmetro.org/fare/general-fares-overview/fare-increase
+        retrieved: 2026-10-02
+        capture: https://archive.changesaroundme.com/capmetro-fare-increase/2026-10-02-0634.pdf
+        phases:
+          - {name: First increase takes effect, said: "New fares effective January 10, 2027", start: 2027-01-10}
+          - {name: Second increase, said: "There will be a second fare increase in January 2029.", start: 2029-01}
+
+  - slug: capmetro-service-standards
+    name: CapMetro Service Standards and Guidelines 2026
+    kind: policy
+    orgs: [CapMetro]
+    sources: [capmetro-service-standards-guidelines]
+
+  - slug: metrobike-expansion
+    name: MetroBike / Bikeshare expansion
+    kind: project
+    orgs: [CapMetro]
+    sources: [capmetro-metrobike-open-house]
+
+  # ───────────────────────────── CAMPO, CTRMA ─────────────────────────────
+
+  - slug: tip-amendments-2027-2030
+    name: 2027–2030 TIP amendments
+    kind: policy
+    orgs: [CAMPO]
+    sources: [campo-2026-fall-tip-amendments]
+    also_called: [Transportation Improvement Program]
+
+  - slug: 290-extension
+    name: 290 Extension
+    kind: project
+    orgs: [CTRMA]
+    sources: [ctrma-290-extension, ctrma-290-extension-open-house]
+
+  # ───────────────────────────────── TxDOT ─────────────────────────────────
+
+  - slug: i-14-extension
+    name: I-14 extension
+    kind: project
+    orgs: [TxDOT]
+    links:
+      - {name: "Public meetings, August 2026", url: "https://www.txdot.gov/projects/hearings-meetings/waco/2026/i14-extension-080526.html"}
+
+  - slug: texas-triangle-multimodal-plan
+    name: Texas Triangle Multimodal Strategic Plan
+    kind: plan
+    orgs: [TxDOT]
+    links:
+      - {name: TxDOT study page, url: "https://www.txdot.gov/projects/projects-studies/statewide/ttmsp.html"}
+
+  - slug: unified-transportation-program
+    name: Unified Transportation Program
+    kind: policy
+    orgs: [TxDOT]
+    sources: [txdot-utp-public-involvement]
+    also_called: [UTP]
+
+  # ───────────────────────── PUC and utilities ─────────────────────────
+
+  - slug: large-load-demand-management
+    name: Large Load Demand Management Service
+    kind: policy
+    orgs: [PUC]
+    links:
+      - {name: PUC project 58482, url: "https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=58482"}
+
+  - slug: large-water-users
+    name: Large water users
+    kind: policy
+    orgs: [CoA]
+    links:
+      - {name: Austin Water open house notice, url: "https://www.austintexas.gov/water/news/austin-water-invites-community-open-house-large-water-users"}
+    note: Austin Water is a City of Austin utility.

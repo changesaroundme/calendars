@@ -1,10 +1,9 @@
 # calendars
 
 > [!NOTE]
-> I decide what this project does; Claude (Anthropic's AI) writes most of
-> the code. The calendars are best-effort and can be wrong, late or missing
-> an event. Every event links to the posting it came from, so please confirm
-> there before relying on a date.
+> Heads up: this project leans heavily on AI, and not every line has been
+> reviewed by a human. My buddy Claude and I do our best to get things right,
+> but please check the linked source before relying on a date.
 
 Subscribable `.ics` calendars of Central Texas public meetings, rebuilt
 daily by GitHub Actions from official sources and served by GitHub Pages.
@@ -68,6 +67,7 @@ sources/curated.py   loads events/curated.yaml into org feeds
 sources/openmeetings.py  SOS filings watcher (shadow mode)
 caltools/model.py    Event dataclass + stable UIDs
 caltools/ics.py      RFC 5545 emitter (folding, escaping, VTIMEZONE)
+caltools/projects.py projects.yaml: the project list and its checks
 build.py             orchestrates, health-checks, writes docs/ + data/
 ```
 
@@ -137,6 +137,21 @@ replace the scraped copy (dedupe by declared identity — the build warns on
 same-org-same-start near-duplicates but never merges by guessing).
 `python build.py --offline` validates the file locally; a malformed entry
 turns CI red with a message naming it, while valid entries still publish.
+
+## The project list (projects.yaml)
+
+`projects.yaml` lists what Changes Around Me follows — individual projects,
+plans and policies — with who runs each one, the monitored pages about it,
+and what has been said about its schedule. A schedule is a list of dated,
+attributed statements that are added to and never edited, so the list also
+shows how far a project's dates have moved. The file's header describes
+every field.
+
+    python -m caltools.projects                    # check the file
+    python -m caltools.projects --preview=FILE.md  # and write a readable page
+
+Nothing in the build reads it yet; it is the groundwork for project pages,
+timelines and a map.
 
 ## Adding a source
 
