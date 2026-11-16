@@ -1,13 +1,10 @@
 # calendars
 
-> [!WARNING]
-> **Vibe-coded — take with a grain of salt.** This project was built with
-> heavy AI assistance and light human review, and it aggregates public
-> meeting information on a best-effort basis. Entries can be wrong, stale,
-> or missing entirely. Always confirm details against the official source
-> (every event links to its origin) before making plans around it, and do
-> not rely on these calendars for anything safety-critical, legal-deadline,
-> or financial.
+> [!NOTE]
+> I decide what this project does; Claude (Anthropic's AI) writes most of
+> the code. The calendars are best-effort and can be wrong, late or missing
+> an event. Every event links to the posting it came from, so please confirm
+> there before relying on a date.
 
 Subscribable `.ics` calendars of Central Texas public meetings, rebuilt
 daily by GitHub Actions from official sources and served by GitHub Pages.
