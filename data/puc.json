@@ -301,15 +301,15 @@
  {
   "source": "puc",
   "summary": "PUC: Workshop",
-  "start": "2026-11-16T13:30:00",
-  "end": "2026-11-16T15:00:00",
+  "start": "2026-11-16",
+  "end": null,
   "location": "The Public Utility Commission of Texas (PUCT) will host a meeting of the Energy Waste Advisory Committee established by PURA ?18.002.",
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1836",
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "puc-cal-1836-20261116@calendars.changesaroundme.com",
   "description": "Watch live or archived: http://www.adminmonitor.com/tx/puct/energy_efficiency_forum/20261116/",
-  "all_day": false
+  "all_day": true
  },
  {
   "source": "puc",
