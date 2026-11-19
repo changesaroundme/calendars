@@ -4247,7 +4247,7 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-bond-oversight-commission-20261118@calendars.changesaroundme.com",
-  "description": "Summary Agenda\n\n3 discussion and action items:\n\n#2: Austin Bond Dashboard\n\n#3: 2027 Bond Oversight Commission recommended information for future presenters\n\n#4: Approve the 2027 annual schedule of the Bond Oversight Commission\n\n\u2014\n\nAgenda: https://services.austintexas.gov/edims/document.cfm?id=485027",
+  "description": "Typical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).",
   "all_day": false
  },
  {
@@ -4260,7 +4260,7 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-airport-advisory-commission-20261118@calendars.changesaroundme.com",
-  "description": "Summary Agenda\n\n4 briefings:\n- Fiscal Year 2026 Preliminary Year-End Financial Results\n- November 2026 Air Service Update\n- Journey with AUS Active Projects\n- Reappointment of members to the Austin-Bergstrom Landhost Enterprises, Inc. Board of Directors\n\n5 action items\n\n2 discussion items (all related to recent City Council actions)\n\n\u2014\n\nAgenda: https://services.austintexas.gov/edims/document.cfm?id=485174",
+  "description": "Typical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).",
   "all_day": false
  },
  {
@@ -4273,7 +4273,7 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-environmental-commission-20261118@calendars.changesaroundme.com",
-  "description": "Summary Agenda\n\n1 discussion and action item:\n\n#4: Approve a recommendation to Council on the proposed data center located at 6801 River Place Boulevard to improve environmental site monitoring, wildfire mitigat\u2026\n\n\u2014\n\nTypical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).\n\nAgenda: https://services.austintexas.gov/edims/document.cfm?id=485127",
+  "description": "Typical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).",
   "all_day": false
  },
  {
@@ -4408,15 +4408,15 @@
  },
  {
   "source": "austin",
-  "summary": "CoA: Austin Integrated Water Resource Planning Community Task Force",
+  "summary": "CoA: Austin Integrated Water Resource Planning Community Task Force (Cancelled)",
   "start": "2026-12-08",
   "end": null,
   "location": "Noon",
   "url": "https://www.austintexas.gov/boards-commissions/meetings/132_1",
-  "status": "CONFIRMED",
+  "status": "CANCELLED",
   "kind": "regular",
   "uid": "austin-austin-integrated-water-resource-planning-community-task-force-20261208@calendars.changesaroundme.com",
-  "description": "All-day entry: this board's typical start time isn't configured yet; the agenda posts at the event link ~a week ahead.",
+  "description": "",
   "all_day": true
  },
  {
