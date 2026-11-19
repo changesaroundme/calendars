@@ -1,4 +1,4 @@
-*Every saved copy in the web archive, oldest to newest. Each page's **latest** link always points at its newest copy, so it can be cited even after the page itself changes or disappears; the dated links are the individual captures, and the files are the documents the page linked to, saved when first seen. Updated 16 Nov 2026 08:24 — regenerated on every build as `docs/archive.md` in the calendars repo; [[Archive]] is a copy of that file.*
+*Every saved copy in the web archive, oldest to newest. Each page's **latest** link always points at its newest copy, so it can be cited even after the page itself changes or disappears; the dated links are the individual captures, and the files are the documents the page linked to, saved when first seen. Updated 17 Nov 2026 08:01 — regenerated on every build as `docs/archive.md` in the calendars repo; [[Archive]] is a copy of that file.*
 
 ## City of Austin (CoA)
 
@@ -6,11 +6,13 @@
 
 [page](https://www.speakupaustin.org/2908SouthCongress) · [latest copy](https://archive.changesaroundme.com/coa-2908-south-congress/latest.pdf)
 
-Captures: [1 Sep 2026 16:34](https://archive.changesaroundme.com/coa-2908-south-congress/2026-09-01-1634.pdf), [20 Sep 2026 11:08](https://archive.changesaroundme.com/coa-2908-south-congress/2026-09-20-1108.pdf), [24 Sep 2026 06:30](https://archive.changesaroundme.com/coa-2908-south-congress/2026-09-24-0630.pdf), [27 Sep 2026 06:30](https://archive.changesaroundme.com/coa-2908-south-congress/2026-09-27-0630.pdf), [9 Oct 2026 08:50](https://archive.changesaroundme.com/coa-2908-south-congress/2026-10-09-0850.pdf), [2 Nov 2026 06:30](https://archive.changesaroundme.com/coa-2908-south-congress/2026-11-02-0630.pdf), [5 Nov 2026 06:30](https://archive.changesaroundme.com/coa-2908-south-congress/2026-11-05-0630.pdf)
+Captures: [1 Sep 2026 16:34](https://archive.changesaroundme.com/coa-2908-south-congress/2026-09-01-1634.pdf), [20 Sep 2026 11:08](https://archive.changesaroundme.com/coa-2908-south-congress/2026-09-20-1108.pdf), [24 Sep 2026 06:30](https://archive.changesaroundme.com/coa-2908-south-congress/2026-09-24-0630.pdf), [27 Sep 2026 06:30](https://archive.changesaroundme.com/coa-2908-south-congress/2026-09-27-0630.pdf), [9 Oct 2026 08:50](https://archive.changesaroundme.com/coa-2908-south-congress/2026-10-09-0850.pdf), [2 Nov 2026 06:30](https://archive.changesaroundme.com/coa-2908-south-congress/2026-11-02-0630.pdf), [5 Nov 2026 06:30](https://archive.changesaroundme.com/coa-2908-south-congress/2026-11-05-0630.pdf), [17 Nov 2026 06:42](https://archive.changesaroundme.com/coa-2908-south-congress/2026-11-17-0642.pdf)
 
 Files:
 - [Deletta Dean_ Director_ Austin Housing.PDF](https://archive.changesaroundme.com/coa-2908-south-congress/files/2026-09-18-2351/Deletta%20Dean_%20Director_%20Austin%20Housing.PDF) — 18 Sep 2026 23:51, 2.2 MB
 - [AHFC_SouthCongress_CommunityEngagementReport_v2.pdf](https://archive.changesaroundme.com/coa-2908-south-congress/files/2026-11-02-0632/AHFC_SouthCongress_CommunityEngagementReport_v2.pdf) — 2 Nov 2026 06:32, 7.9 MB
+- [AHFC_2908 South Congress Engagement Summary_es.pdf](https://archive.changesaroundme.com/coa-2908-south-congress/files/2026-11-17-0643/AHFC_2908%20South%20Congress%20Engagement%20Summary_es.pdf) — 17 Nov 2026 06:43, 2.3 MB
+- [AHFC_Overview_es.pdf](https://archive.changesaroundme.com/coa-2908-south-congress/files/2026-11-17-0643/AHFC_Overview_es.pdf) — 17 Nov 2026 06:43, 2.6 MB
 
 ### 3-4 Dwelling Unit Technical Code Update
 
@@ -61,7 +63,7 @@ Files:
 
 [page](https://publicinput.com/x45024) · [latest copy](https://archive.changesaroundme.com/coa-barton-springs-road-bridge/latest.pdf)
 
-Captures: [11 Nov 2026 06:37](https://archive.changesaroundme.com/coa-barton-springs-road-bridge/2026-11-11-0637.pdf), [14 Nov 2026 07:20](https://archive.changesaroundme.com/coa-barton-springs-road-bridge/2026-11-14-0720.pdf)
+Captures: [11 Nov 2026 06:37](https://archive.changesaroundme.com/coa-barton-springs-road-bridge/2026-11-11-0637.pdf), [14 Nov 2026 07:20](https://archive.changesaroundme.com/coa-barton-springs-road-bridge/2026-11-14-0720.pdf), [17 Nov 2026 06:43](https://archive.changesaroundme.com/coa-barton-springs-road-bridge/2026-11-17-0643.pdf)
 
 Files:
 - [BSRB BCER Public Release Redacted_Prepared for Accessibility_Updated on 5-15-26.pdf](https://archive.changesaroundme.com/coa-barton-springs-road-bridge/files/2026-11-11-0638/BSRB%20BCER%20Public%20Release%20Redacted_Prepared%20for%20Accessibility_Updated%20on%205-15-26.pdf) — 11 Nov 2026 06:38, 102.7 MB
@@ -89,7 +91,7 @@ Files:
 
 [page](https://www.speakupaustin.org/centralcity) · [latest copy](https://archive.changesaroundme.com/coa-central-city-district-plan/latest.pdf)
 
-Captures: [1 Sep 2026 16:39](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-09-01-1639.pdf), [20 Sep 2026 11:12](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-09-20-1112.pdf), [24 Sep 2026 06:50](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-09-24-0650.pdf), [27 Sep 2026 06:40](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-09-27-0640.pdf), [30 Sep 2026 07:55](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-09-30-0755.pdf), [13 Oct 2026 06:33](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-10-13-0633.pdf), [19 Oct 2026 07:47](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-10-19-0747.pdf), [30 Oct 2026 06:32](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-10-30-0632.pdf), [5 Nov 2026 06:35](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-11-05-0635.pdf), [8 Nov 2026 06:32](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-11-08-0632.pdf), [11 Nov 2026 06:44](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-11-11-0644.pdf), [14 Nov 2026 08:39](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-11-14-0839.pdf)
+Captures: [1 Sep 2026 16:39](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-09-01-1639.pdf), [20 Sep 2026 11:12](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-09-20-1112.pdf), [24 Sep 2026 06:50](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-09-24-0650.pdf), [27 Sep 2026 06:40](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-09-27-0640.pdf), [30 Sep 2026 07:55](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-09-30-0755.pdf), [13 Oct 2026 06:33](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-10-13-0633.pdf), [19 Oct 2026 07:47](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-10-19-0747.pdf), [30 Oct 2026 06:32](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-10-30-0632.pdf), [5 Nov 2026 06:35](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-11-05-0635.pdf), [8 Nov 2026 06:32](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-11-08-0632.pdf), [11 Nov 2026 06:44](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-11-11-0644.pdf), [14 Nov 2026 08:39](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-11-14-0839.pdf), [17 Nov 2026 07:25](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-11-17-0725.pdf)
 
 Files:
 - [20100624-151_ Agenda Backup (Master Plan  - Part 1).PDF](https://archive.changesaroundme.com/coa-central-city-district-plan/files/2026-09-18-2353/20100624-151_%20Agenda%20Backup%20%28Master%20Plan%20%20-%20Part%201%29.PDF) — 18 Sep 2026 23:53, 3.1 MB
@@ -111,6 +113,7 @@ Files:
 - [bouldin-np.pdf](https://archive.changesaroundme.com/coa-central-city-district-plan/files/2026-09-27-0641/bouldin-np.pdf) — 27 Sep 2026 06:41, 15.9 MB
 - [ca-combined-np.pdf](https://archive.changesaroundme.com/coa-central-city-district-plan/files/2026-09-27-0641/ca-combined-np.pdf) — 27 Sep 2026 06:41, 18.1 MB
 - [gsrc-np.pdf](https://archive.changesaroundme.com/coa-central-city-district-plan/files/2026-09-27-0641/gsrc-np.pdf) — 27 Sep 2026 06:41, 11.4 MB
+- [2016 South Central Waterfront Vision Framework.pdf](https://archive.changesaroundme.com/coa-central-city-district-plan/files/2026-11-17-0753/2016%20South%20Central%20Waterfront%20Vision%20Framework.pdf) — 17 Nov 2026 07:53, 14.7 MB
 
 ### César Chávez Street Renaming
 
@@ -171,7 +174,7 @@ Files:
 
 [page](https://publicinput.com/East-Austin-Parking) · [latest copy](https://archive.changesaroundme.com/coa-east-austin-parking-survey/latest.pdf)
 
-Captures: [1 Sep 2026 16:42](https://archive.changesaroundme.com/coa-east-austin-parking-survey/2026-09-01-1642.pdf)
+Captures: [24 Oct 2026 06:34](https://archive.changesaroundme.com/coa-east-austin-parking-survey/2026-10-24-0634.pdf), [26 Oct 2026 08:14](https://archive.changesaroundme.com/coa-east-austin-parking-survey/2026-10-26-0814.pdf), [26 Oct 2026 08:15](https://archive.changesaroundme.com/coa-east-austin-parking-survey/2026-10-26-0815.pdf), [17 Nov 2026 07:54](https://archive.changesaroundme.com/coa-east-austin-parking-survey/2026-11-17-0754.pdf)
 
 ### East Riverside Corridor Planning Initiative
 
@@ -1452,7 +1455,7 @@ Files:
 
 ### Burnet Road corridor project
 
-Captures: [20 Sep 2026 11:09](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/2026-09-20-1109.pdf), [9 Oct 2026 08:51](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/2026-10-09-0851.pdf), [13 Oct 2026 06:31](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/2026-10-13-0631.pdf), [16 Oct 2026 06:34](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/2026-10-16-0634.pdf), [22 Oct 2026 10:20](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/2026-10-22-1020.pdf), [27 Oct 2026 07:05](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/2026-10-27-0705.pdf), [5 Nov 2026 06:34](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/2026-11-05-0634.pdf)
+Captures: [20 Sep 2026 11:09](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/2026-09-20-1109.pdf), [9 Oct 2026 08:51](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/2026-10-09-0851.pdf), [13 Oct 2026 06:31](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/2026-10-13-0631.pdf), [16 Oct 2026 06:34](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/2026-10-16-0634.pdf), [22 Oct 2026 10:20](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/2026-10-22-1020.pdf), [27 Oct 2026 07:05](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/2026-10-27-0705.pdf), [5 Nov 2026 06:34](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/2026-11-05-0634.pdf), [17 Nov 2026 06:50](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/2026-11-17-0650.pdf)
 
 Files:
 - [NoLa-Burnet - Appendix - A - Recommended Improvements.pdf](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/files/2026-09-19-0007/NoLa-Burnet%20-%20Appendix%20-%20A%20-%20Recommended%20Improvements.pdf) — 19 Sep 2026 00:07, 19.8 MB
@@ -1480,16 +1483,16 @@ Files:
 - [burnet-and-gault.jpg](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/files/2026-10-27-0725/burnet-and-gault.jpg) — 27 Oct 2026 07:25, 0.4 MB
 - [burnet-and-kramer.jpg](https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/files/2026-10-27-0725/burnet-and-kramer.jpg) — 27 Oct 2026 07:25, 0.5 MB
 
+### East Austin Parking Community survey questions
+
+Captures: [1 Sep 2026 16:42](https://archive.changesaroundme.com/_unlisted/East%20Austin%20Parking%20Community%20survey%20questions/2026-09-01-1642.pdf)
+
 ### East Riverside Corridor Planning Initiative Survey - Round 2
 
 Captures: [7 Sep 2026 23:51](https://archive.changesaroundme.com/_unlisted/East%20Riverside%20Corridor%20Planning%20Initiative%20Survey%20-%20Round%202/2026-09-07-2351.pdf)
 
 Files:
 - [Resolution No. 20240201-054 (ETOD Overlay).pdf](https://archive.changesaroundme.com/_unlisted/East%20Riverside%20Corridor%20Planning%20Initiative%20Survey%20-%20Round%202/files/2026-09-07-2351/Resolution%20No.%2020240201-054%20%28ETOD%20Overlay%29.pdf) — 7 Sep 2026 23:51, 2.9 MB
-
-### Error
-
-Captures: [24 Oct 2026 06:34](https://archive.changesaroundme.com/_unlisted/Error/2026-10-24-0634.pdf), [26 Oct 2026 08:14](https://archive.changesaroundme.com/_unlisted/Error/2026-10-26-0814.pdf), [26 Oct 2026 08:15](https://archive.changesaroundme.com/_unlisted/Error/2026-10-26-0815.pdf)
 
 ### Project Open House
 
