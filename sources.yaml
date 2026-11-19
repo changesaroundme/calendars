@@ -43,13 +43,28 @@ organizations:
         parse: api
         public: no
         added: 2026-07-25
+      - slug: coa-council-meeting-information-center
+        name: Council Meeting Information Center
+        url: https://www.austintexas.gov/council/meetings
+        calendar: austin
+        added: 2026-11-18
+        note: >-
+          Links each year's council meeting calendar PDF. The build reads the
+          links from here, so next year's calendar is picked up when posted.
       - slug: coa-council-annual-schedule-pdf
-        name: Council annual meeting schedule (EDIMS PDF)
+        name: Council meeting calendar 2026 (EDIMS PDF)
         url: https://services.austintexas.gov/edims/document.cfm?id=462100
         calendar: austin
         expect: every 1 year Jan
         parse: pdf
         added: 2026-07-25
+      - slug: coa-council-annual-schedule-pdf-2027
+        name: Council meeting calendar 2027 (EDIMS PDF)
+        url: https://services.austintexas.gov/edims/document.cfm?id=483052
+        calendar: austin
+        expect: every 1 year Jan
+        parse: pdf
+        added: 2026-11-18
       - slug: coa-airport-advisory-commission
         name: Airport Advisory Commission
         url: https://www.austintexas.gov/boards-commissions/board/airport-advisory-commission

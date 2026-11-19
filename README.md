@@ -24,7 +24,7 @@ combined calendar at
 | TxDOT Commission | HTML scrape | Commission meeting-dates page (full year of dates; agendas ~8 days out) |
 | LCRA | HTML scrape | Annual schedule tables (dates only → all-day events; times post with agendas) |
 | CTRMA | HTML scrape | Upcoming-meeting cards on their board-meetings page (date, time, detail link) |
-| City of Austin | Legistar (shared module) + annual PDF + board pages | Council/committees via `austintexas` Legistar; year schedule from the EDIMS PDF; boards & commissions plus the Bicycle and Pedestrian Advisory Councils from full-year date lists on austintexas.gov |
+| City of Austin | Legistar (shared module) + annual PDF + board pages | Council/committees via `austintexas` Legistar; this year's and next year's meeting calendars from the EDIMS PDFs linked on the Council Meeting Information Center; boards & commissions plus the Bicycle and Pedestrian Advisory Councils from full-year date lists on austintexas.gov |
 | ATP | ICS ingest | Austin Transit Partnership's published Tribe iCal feed (Board + Community Advisory Committee) |
 | TxDOT Events | HTML tables scrape + discovery | Public-involvement pages (UTP): dated events + comment windows; advisory committees (BPAC, PTAC); statewide hearings/meetings index for one-off project meetings, each enriched from its detail page (time range, venue, comment deadline) when unambiguous |
 | Texas Legislature | HTML scrape + self-archive | Senate hearings page (watchlisted committees only; listings run ~2 months out). The page forgets each hearing at end of day, so the adapter folds its own snapshot's past events back in — the one source that keeps its own history |

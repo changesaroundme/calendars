@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-16T14:24:45Z",
+ "generated": "2026-11-17T14:01:18Z",
  "public_url": "https://archive.changesaroundme.com",
  "sources": {
   "_unlisted/404": {
@@ -59,6 +59,12 @@
   },
   "_unlisted/Burnet Road corridor project": {
    "captures": [
+    {
+     "stamp": "2026-11-17-0650",
+     "url": "https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/2026-11-17-0650.pdf",
+     "size": 3313937,
+     "changed_lines": 32
+    },
     {
      "stamp": "2026-11-05-0634",
      "url": "https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/2026-11-05-0634.pdf",
@@ -246,8 +252,20 @@
      "name": "NoLa-Burnet - Appendix - A - Recommended Improvements.pdf"
     }
    ],
-   "latest_key": "_unlisted/Burnet Road corridor project/2026-11-05-0634.pdf",
+   "latest_key": "_unlisted/Burnet Road corridor project/2026-11-17-0650.pdf",
    "latest": "https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/latest.pdf"
+  },
+  "_unlisted/East Austin Parking Community survey questions": {
+   "captures": [
+    {
+     "stamp": "2026-09-01-1642",
+     "url": "https://archive.changesaroundme.com/_unlisted/East%20Austin%20Parking%20Community%20survey%20questions/2026-09-01-1642.pdf",
+     "size": 737653
+    }
+   ],
+   "files": [],
+   "latest_key": "_unlisted/East Austin Parking Community survey questions/2026-09-01-1642.pdf",
+   "latest": "https://archive.changesaroundme.com/_unlisted/East%20Austin%20Parking%20Community%20survey%20questions/latest.pdf"
   },
   "_unlisted/East Riverside Corridor Planning Initiative Survey - Round 2": {
    "captures": [
@@ -267,28 +285,6 @@
    ],
    "latest_key": "_unlisted/East Riverside Corridor Planning Initiative Survey - Round 2/2026-09-07-2351.pdf",
    "latest": "https://archive.changesaroundme.com/_unlisted/East%20Riverside%20Corridor%20Planning%20Initiative%20Survey%20-%20Round%202/latest.pdf"
-  },
-  "_unlisted/Error": {
-   "captures": [
-    {
-     "stamp": "2026-10-26-0815",
-     "url": "https://archive.changesaroundme.com/_unlisted/Error/2026-10-26-0815.pdf",
-     "size": 99413
-    },
-    {
-     "stamp": "2026-10-26-0814",
-     "url": "https://archive.changesaroundme.com/_unlisted/Error/2026-10-26-0814.pdf",
-     "size": 99412
-    },
-    {
-     "stamp": "2026-10-24-0634",
-     "url": "https://archive.changesaroundme.com/_unlisted/Error/2026-10-24-0634.pdf",
-     "size": 99412
-    }
-   ],
-   "files": [],
-   "latest_key": "_unlisted/Error/2026-10-26-0815.pdf",
-   "latest": "https://archive.changesaroundme.com/_unlisted/Error/latest.pdf"
   },
   "_unlisted/Project Open House": {
    "captures": [
@@ -2139,6 +2135,12 @@
   "coa-2908-south-congress": {
    "captures": [
     {
+     "stamp": "2026-11-17-0642",
+     "url": "https://archive.changesaroundme.com/coa-2908-south-congress/2026-11-17-0642.pdf",
+     "size": 4440892,
+     "changed_lines": 2
+    },
+    {
      "stamp": "2026-11-05-0630",
      "url": "https://archive.changesaroundme.com/coa-2908-south-congress/2026-11-05-0630.pdf",
      "size": 2636993,
@@ -2181,6 +2183,18 @@
    ],
    "files": [
     {
+     "stamp": "2026-11-17-0643",
+     "url": "https://archive.changesaroundme.com/coa-2908-south-congress/files/2026-11-17-0643/AHFC_Overview_es.pdf",
+     "size": 2561640,
+     "name": "AHFC_Overview_es.pdf"
+    },
+    {
+     "stamp": "2026-11-17-0643",
+     "url": "https://archive.changesaroundme.com/coa-2908-south-congress/files/2026-11-17-0643/AHFC_2908%20South%20Congress%20Engagement%20Summary_es.pdf",
+     "size": 2322934,
+     "name": "AHFC_2908 South Congress Engagement Summary_es.pdf"
+    },
+    {
      "stamp": "2026-11-02-0632",
      "url": "https://archive.changesaroundme.com/coa-2908-south-congress/files/2026-11-02-0632/AHFC_SouthCongress_CommunityEngagementReport_v2.pdf",
      "size": 7866229,
@@ -2193,7 +2207,7 @@
      "name": "Deletta Dean_ Director_ Austin Housing.PDF"
     }
    ],
-   "latest_key": "coa-2908-south-congress/2026-11-05-0630.pdf",
+   "latest_key": "coa-2908-south-congress/2026-11-17-0642.pdf",
    "latest": "https://archive.changesaroundme.com/coa-2908-south-congress/latest.pdf"
   },
   "coa-3-4-dwelling-unit-code-update": {
@@ -2352,6 +2366,12 @@
   "coa-barton-springs-road-bridge": {
    "captures": [
     {
+     "stamp": "2026-11-17-0643",
+     "url": "https://archive.changesaroundme.com/coa-barton-springs-road-bridge/2026-11-17-0643.pdf",
+     "size": 14264229,
+     "changed_lines": 70
+    },
+    {
      "stamp": "2026-11-14-0720",
      "url": "https://archive.changesaroundme.com/coa-barton-springs-road-bridge/2026-11-14-0720.pdf",
      "size": 17221752,
@@ -2371,11 +2391,17 @@
      "name": "BSRB BCER Public Release Redacted_Prepared for Accessibility_Updated on 5-15-26.pdf"
     }
    ],
-   "latest_key": "coa-barton-springs-road-bridge/2026-11-14-0720.pdf",
+   "latest_key": "coa-barton-springs-road-bridge/2026-11-17-0643.pdf",
    "latest": "https://archive.changesaroundme.com/coa-barton-springs-road-bridge/latest.pdf"
   },
   "coa-central-city-district-plan": {
    "captures": [
+    {
+     "stamp": "2026-11-17-0725",
+     "url": "https://archive.changesaroundme.com/coa-central-city-district-plan/2026-11-17-0725.pdf",
+     "size": 5451099,
+     "changed_lines": 112
+    },
     {
      "stamp": "2026-11-14-0839",
      "url": "https://archive.changesaroundme.com/coa-central-city-district-plan/2026-11-14-0839.pdf",
@@ -2448,6 +2474,12 @@
     }
    ],
    "files": [
+    {
+     "stamp": "2026-11-17-0753",
+     "url": "https://archive.changesaroundme.com/coa-central-city-district-plan/files/2026-11-17-0753/2016%20South%20Central%20Waterfront%20Vision%20Framework.pdf",
+     "size": 14671318,
+     "name": "2016 South Central Waterfront Vision Framework.pdf"
+    },
     {
      "stamp": "2026-09-27-0641",
      "url": "https://archive.changesaroundme.com/coa-central-city-district-plan/files/2026-09-27-0641/gsrc-np.pdf",
@@ -2563,7 +2595,7 @@
      "name": "20100624-151_ Agenda Backup (Master Plan  - Part 1).PDF"
     }
    ],
-   "latest_key": "coa-central-city-district-plan/2026-11-14-0839.pdf",
+   "latest_key": "coa-central-city-district-plan/2026-11-17-0725.pdf",
    "latest": "https://archive.changesaroundme.com/coa-central-city-district-plan/latest.pdf"
   },
   "coa-cesar-chavez-renaming": {
@@ -2897,13 +2929,28 @@
   "coa-east-austin-parking-survey": {
    "captures": [
     {
-     "stamp": "2026-09-01-1642",
-     "url": "https://archive.changesaroundme.com/coa-east-austin-parking-survey/2026-09-01-1642.pdf",
-     "size": 737653
+     "stamp": "2026-11-17-0754",
+     "url": "https://archive.changesaroundme.com/coa-east-austin-parking-survey/2026-11-17-0754.pdf",
+     "size": 99435
+    },
+    {
+     "stamp": "2026-10-26-0815",
+     "url": "https://archive.changesaroundme.com/coa-east-austin-parking-survey/2026-10-26-0815.pdf",
+     "size": 99413
+    },
+    {
+     "stamp": "2026-10-26-0814",
+     "url": "https://archive.changesaroundme.com/coa-east-austin-parking-survey/2026-10-26-0814.pdf",
+     "size": 99412
+    },
+    {
+     "stamp": "2026-10-24-0634",
+     "url": "https://archive.changesaroundme.com/coa-east-austin-parking-survey/2026-10-24-0634.pdf",
+     "size": 99412
     }
    ],
    "files": [],
-   "latest_key": "coa-east-austin-parking-survey/2026-09-01-1642.pdf",
+   "latest_key": "coa-east-austin-parking-survey/2026-11-17-0754.pdf",
    "latest": "https://archive.changesaroundme.com/coa-east-austin-parking-survey/latest.pdf"
   },
   "coa-east-oltorf-safety-mobility": {

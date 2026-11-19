@@ -749,21 +749,39 @@ def enrich_board_agendas(events: list[Event], get_html, get_bytes,
 # columns, so we parse POSITIONALLY: bucket each date by its x-coordinate
 # under the nearest column header. Verified against the real 2026 document.
 #
-# NOTE: the EDIMS document id changes each year — update ANNUAL_PDF_URL when
-# the city posts the next calendar (linked from austintexas.gov/council/
-# meetings). If the live fetch fails, the bundled fixture copy keeps the
-# schedule flowing and a health problem flags the staleness.
+# The 2027 document differs in three small ways, all handled below: the
+# first header reads "Council Work Session", budget dates carry one asterisk
+# instead of two, and a run of days is written "August 11, 12, 13, 2027*".
+#
+# Each year's calendar is a new EDIMS document, linked from the Council
+# Meeting Information Center; next year's appears there in the fall beside
+# the current one. Until 18 Nov 2026 this module held ONE document id, to be
+# updated by hand when the next calendar was posted. It was not, so the feed
+# showed no council meeting after 3 Dec 2026 while the 2027 calendar sat on
+# the page. Now the links are read off that page every build
+# (discover_annual_pdfs) for this year and next. KNOWN_ANNUAL_PDFS is the
+# fallback when the page cannot be read; the bundled copies in fixtures/ are
+# the fallback when EDIMS cannot. Either fallback raises a health problem.
 # ---------------------------------------------------------------------------
-ANNUAL_PDF_URL = "https://services.austintexas.gov/edims/document.cfm?id=462100"
-ANNUAL_PDF_FIXTURE = (
-    pathlib.Path(__file__).parent.parent / "fixtures" / "austin-council-2026.pdf"
-)
 COUNCIL_MEETINGS_URL = "https://www.austintexas.gov/council/meetings"
+KNOWN_ANNUAL_PDFS = {
+    2026: "https://services.austintexas.gov/edims/document.cfm?id=462100",
+    2027: "https://services.austintexas.gov/edims/document.cfm?id=483052",
+}
+FIXTURES = pathlib.Path(__file__).parent.parent / "fixtures"
+ANNUAL_LINK_RE = re.compile(r"\b(20\d\d) City Council Meeting Calendar\b")
+
+
+def annual_fixture(year: int) -> pathlib.Path:
+    return FIXTURES / f"austin-council-{year}.pdf"
 
 MONTHS_FULL = {m: i + 1 for i, m in enumerate(
     ["January", "February", "March", "April", "May", "June", "July", "August",
      "September", "October", "November", "December"])}
-PDF_DATE_RE = re.compile(r"^(\w+) (\d{1,2})(?:-(\d{1,2}))?,? (\d{4})(\*\*)?$")
+# "6," | "12-14," | "13" — one day or a range, with or without the comma.
+PDF_DAY_RE = re.compile(r"^(\d{1,2})(?:-(\d{1,2}))?,?$")
+# "2027" | "2026**" | "2027*" — the asterisks mark a budget-focused meeting.
+PDF_YEAR_RE = re.compile(r"^(\d{4})(\*{1,2})?$")
 
 
 def parse_council_pdf(data: bytes) -> list[tuple[date, str, bool]]:
@@ -785,7 +803,9 @@ def parse_council_pdf(data: bytes) -> list[tuple[date, str, bool]]:
                 if w["text"] == "Work":
                     anchors["work-session"] = w["x0"]
                 elif w["text"] == "Council":
-                    anchors["council"] = w["x0"]
+                    # The rightmost one: 2027's first header is "Council
+                    # Work Session", and that "Council" is not a column.
+                    anchors["council"] = max(w["x0"], anchors.get("council", 0))
                 elif w["text"].startswith("Cancelled"):
                     anchors["cancelled"] = w["x0"]
             if len(anchors) < 3:
@@ -800,15 +820,22 @@ def parse_council_pdf(data: bytes) -> list[tuple[date, str, bool]]:
                 i = 0
                 while i < len(ws):
                     if ws[i]["text"] in MONTHS_FULL:
-                        m = PDF_DATE_RE.match(" ".join(t["text"] for t in ws[i:i + 3]))
+                        # Month, then one or more day tokens, then the year:
+                        # "July 16, 2026**", "August 12-14, 2026**",
+                        # "August 11, 12, 13, 2027*".
+                        days: list[int] = []
+                        j = i + 1
+                        while j < len(ws) and (m := PDF_DAY_RE.match(ws[j]["text"])):
+                            d1 = int(m.group(1))
+                            days.extend(range(d1, int(m.group(2) or d1) + 1))
+                            j += 1
+                        m = PDF_YEAR_RE.match(ws[j]["text"]) if days and j < len(ws) else None
                         if m:
-                            month, d1 = m.group(1), int(m.group(2))
-                            d2 = int(m.group(3)) if m.group(3) else d1
-                            year, budget = int(m.group(4)), bool(m.group(5))
+                            year, budget = int(m.group(1)), bool(m.group(2))
                             col = min(anchors, key=lambda k: abs(anchors[k] - ws[i]["x0"]))
-                            for day in range(d1, d2 + 1):
-                                records.append((date(year, MONTHS_FULL[month], day), col, budget))
-                            i += 3
+                            for day in days:
+                                records.append((date(year, MONTHS_FULL[ws[i]["text"]], day), col, budget))
+                            i = j + 1
                             continue
                     i += 1
     return records
@@ -932,16 +959,64 @@ def note_related_budget_meetings(council: list[Event]) -> None:
                 f"meeting{s})\n", 1)
 
 
-def fetch_annual(session) -> bytes:
+def discover_annual_pdfs(html: str) -> dict[int, str]:
+    """{year: EDIMS url} for every "20XX City Council Meeting Calendar" link
+    on the Council Meeting Information Center page."""
+    found: dict[int, str] = {}
+    for a in BeautifulSoup(html, "html.parser").find_all("a", href=True):
+        m = ANNUAL_LINK_RE.search(" ".join(a.get_text(" ").split()))
+        if m and "edims/document.cfm" in a["href"]:
+            found[int(m.group(1))] = a["href"]
+    return found
+
+
+def fetch_annual(session, today: date | None = None) -> list[tuple[date, str, bool]]:
+    """Records from this year's council calendar and, once posted, next year's."""
+    today = today or datetime.now(CENTRAL).date()
+    urls = dict(KNOWN_ANNUAL_PDFS)
     try:
-        resp = session.get(ANNUAL_PDF_URL, timeout=30)
+        resp = session.get(COUNCIL_MEETINGS_URL, timeout=30)
         resp.raise_for_status()
-        if resp.content[:5] == b"%PDF-":
-            return resp.content
-        raise ValueError("EDIMS response is not a PDF")
+        urls.update(discover_annual_pdfs(resp.text))
     except Exception as exc:
-        _problems.append(f"austin: annual PDF fetch failed, using bundled copy ({exc})")
-        return ANNUAL_PDF_FIXTURE.read_bytes()
+        _problems.append(
+            f"austin: council calendar links not read, using the known ones ({exc})")
+    records: list[tuple[date, str, bool]] = []
+    for year in (today.year, today.year + 1):
+        url, bundled = urls.get(year), annual_fixture(year)
+        if not url:
+            # Next year's is simply not posted yet for most of the year. By
+            # December it should be, and without it the feed goes quiet in
+            # January with nothing to say why.
+            if year == today.year or today.month == 12:
+                _problems.append(
+                    f"austin: no {year} council calendar linked from {COUNCIL_MEETINGS_URL}")
+            continue
+        try:
+            resp = session.get(url, timeout=30)
+            resp.raise_for_status()
+            if resp.content[:5] != b"%PDF-":
+                raise ValueError("EDIMS response is not a PDF")
+            data = resp.content
+        except Exception as exc:
+            if not bundled.exists():
+                _problems.append(f"austin: {year} council calendar fetch failed ({exc})")
+                continue
+            _problems.append(
+                f"austin: {year} council calendar fetch failed, using bundled copy ({exc})")
+            data = bundled.read_bytes()
+        found = parse_council_pdf(data)
+        # Judge the PDF by what it parsed, not by the placeholders that
+        # survive Legistar: by October only the last few council dates are
+        # still placeholders, and that count fell to 4 on 12 Oct 2026 and
+        # turned the build red. A schedule with fewer than 10 council dates
+        # for the year is what a broken parse looks like.
+        council_dates = sum(1 for _, col, _ in found if col == "council")
+        if council_dates < 10:
+            _problems.append(
+                f"austin: {year} council calendar looks thin ({council_dates} council dates parsed)")
+        records.extend(found)
+    return records
 
 
 # Reset by fetch(); read by build.py's health check so a single dead board
@@ -968,23 +1043,41 @@ def fetch_boards(session) -> list[Event]:
     return events
 
 
+def _selftest_annual() -> None:
+    """The two calendar layouts seen so far, and the page that links them."""
+    def by_col(year):
+        recs = parse_council_pdf(annual_fixture(year).read_bytes())
+        return {c: sorted(d for d, col, _ in recs if col == c)
+                for c in ("work-session", "council", "cancelled")}, recs
+    cols, recs = by_col(2026)
+    assert [len(cols[c]) for c in cols] == [18, 29, 30], [len(cols[c]) for c in cols]
+    assert sum(b for *_, b in recs) == 10                       # "**" dates
+    assert date(2026, 8, 13) in cols["council"]                 # "August 12-14, 2026**"
+    cols, recs = by_col(2027)
+    assert [len(cols[c]) for c in cols] == [18, 31, 29], [len(cols[c]) for c in cols]
+    budget = sorted(d for d, col, b in recs if b)
+    assert len(budget) == 11 and all(d in cols["council"] for d in budget)
+    assert cols["council"][0] == date(2027, 1, 6)               # under "Council Meetings",
+    assert date(2027, 1, 7) in cols["cancelled"]                # not "Council Work Session"
+    assert {date(2027, 8, d) for d in (11, 12, 13)} <= set(budget)  # "August 11, 12, 13, 2027*"
+    assert date(2027, 4, 28) in budget                          # one asterisk
+    page = ('<a href="https://services.austintexas.gov/edims/document.cfm?id=462100">'
+            '<strong>2026 City Council Meeting Calendar</strong></a>'
+            '<a href="https://services.austintexas.gov/edims/document.cfm?id=483052">'
+            '<font color="#F70D1A"><strong>New! </strong></font>'
+            '<strong>2027 City Council Meeting Calendar</strong></a>'
+            '<a href="https://services.austintexas.gov/edims/document.cfm?id=455900">'
+            '<strong>Procedures for Council Meetings, Public Hearings, and Appeals</strong></a>')
+    assert discover_annual_pdfs(page) == KNOWN_ANNUAL_PDFS
+
+
 def fetch(session) -> list[Event]:
     _problems.clear()
     council = COUNCIL.fetch(session)
     try:
-        records = parse_council_pdf(fetch_annual(session))
+        records = fetch_annual(session)
         council = apply_budget_flags(council, records)
         annual = annual_council_events(records, council)
-        # Judge the PDF by what it parsed, not by the placeholders that
-        # survive Legistar: by October only the last few council dates are
-        # still placeholders, and that count fell to 4 on 12 Oct 2026 and
-        # turned the build red. A schedule with fewer than 10 council dates
-        # for the year is what a broken parse looks like.
-        council_dates = sum(1 for _, col, _ in records if col == "council")
-        if council_dates < 10:
-            _problems.append(
-                f"austin: annual council schedule looks thin ({council_dates} council dates parsed)"
-            )
     except Exception as exc:
         _problems.append(f"austin: annual council schedule failed: {exc}")
         annual = []
@@ -1030,7 +1123,7 @@ def fetch_offline() -> list[Event]:
     assert not gate("Austin Housing Finance Corporation", "2026-09-10T00:00:00")
     assert not gate("Public Health Committee", "2026-08-26T00:00:00")
 
-    fixtures = ANNUAL_PDF_FIXTURE.parent
+    fixtures = FIXTURES
     council = COUNCIL.finalize(
         COUNCIL.merge_api(
             COUNCIL.parse_calendar_html(
@@ -1046,7 +1139,9 @@ def fetch_offline() -> list[Event]:
             ),
         )
     )
-    records = parse_council_pdf(ANNUAL_PDF_FIXTURE.read_bytes())
+    _selftest_annual()
+    records = (parse_council_pdf(annual_fixture(2026).read_bytes())
+               + parse_council_pdf(annual_fixture(2027).read_bytes()))
     council = apply_budget_flags(council, records)
     # Mirrors fetch(): the fixture eventitems land on every council row, so
     # identical-digest budget meetings exercise the related-note path here.
