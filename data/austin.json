@@ -4343,6 +4343,32 @@
  },
  {
   "source": "austin",
+  "summary": "City Council: Work Session",
+  "start": "2026-12-01T09:00:00",
+  "end": "2026-12-01T11:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4131&GID=684&G=4BED8896-C64D-4912-8005-D624C5197AA5",
+  "status": "CONFIRMED",
+  "kind": "work-session",
+  "uid": "austin-city-council-work-session-20261201T0900@calendars.changesaroundme.com",
+  "description": "Summary Agenda\n\nBriefings:\nB1: Briefing and discussion of the City\u2019s Legislative Priorities for the 90th Texas Legislative Session",
+  "all_day": false
+ },
+ {
+  "source": "austin",
+  "summary": "City Council: Housing and Planning Committee",
+  "start": "2026-12-01T13:00:00",
+  "end": "2026-12-01T15:00:00",
+  "location": "Austin City Hall, 301 W. 2nd St., Austin, TX 78701",
+  "url": "https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4232&GID=684&G=4BED8896-C64D-4912-8005-D624C5197AA5",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "austin-housing-and-planning-committee-20261201T1300@calendars.changesaroundme.com",
+  "description": "Summary Agenda\n\nBriefings:\n- Status and timeline of amendments to City Code Title 25, which is the City\u2019s Land Development Code\n- The Emergency Home Repair Pilot Program, which the City utilizes to connect qualifying low-income homeowners facing serious safety-related code violations with\u2026\n- Updates on the Northeast District plan, which is a collaborative effort between the City and Travis County to address historical inequities and guide equitable\u2026\n- Displacement early warning system, which is a strategy developed by the City in collaboration with the University of Texas, to identify neighborhood change and\u2026\n- The expiration of Low-Income Housing Tax Credit, tracking methods, and potential intervention strategies\n\n\u2014\n\nAgenda: https://austintexas.legistar1.com/austintexas/meetings/2026/12/4232_A_Housing_and_Planning_Committee___26-12-01_Committee_Agenda.pdf",
+  "all_day": false
+ },
+ {
+  "source": "austin",
   "summary": "CoA: Urban Transportation Commission",
   "start": "2026-12-01T17:00:00",
   "end": "2026-12-01T20:00:00",
@@ -4377,7 +4403,7 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "austin-environmental-commission-20261202@calendars.changesaroundme.com",
-  "description": "Typical start time from the board's regular schedule \u2014 confirm on the agenda posted at the event link (~a week ahead).",
+  "description": "Summary Agenda\n\n1 case: 1 x Name: Bolm Riverfront District West - Block 1,\n\n2 briefings:\n- Update on the Riparian Zone Mitigation Fund. Presentation\n- Update on the Walnut Creek Wastewater Treatment Plant Expansion and Modernization project. Presentation\n\n2 discussion items:\n\n#5: An update on the Lower Colorado Watershed Restoration and Access Plan (WRAP)\n\n#6: Update from the Bird-Friendly Design Working Group regarding the meeting on November 20, 2026\n\n\u2014\n\nAgenda: https://services.austintexas.gov/edims/document.cfm?id=486047",
   "all_day": false
  },
  {
