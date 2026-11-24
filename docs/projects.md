@@ -554,17 +554,6 @@ Policy · watching · CoA · also called C20-2024-004
 ### ETOD Overlay, phase 2
 Policy · watching · CoA · also called Equitable Transit-Oriented Development
 
-```mermaid
-gantt
-    title ETOD Overlay, phase 2
-    dateFormat YYYY-MM-DD
-    axisFormat %b %Y
-    tickInterval 2month
-    todayMarker off
-    Goes before City Council :p1, 2026-01-01, 2026-12-31
-    Approved by City Council as the Citywide Density Bonus Program :p2, 2026-01-01, 2026-12-31
-```
-
 - **Read 2026-09-20.** Speak Up Austin project page ([source](https://www.speakupaustin.org/etodoverlayphase2), [our copy](https://archive.changesaroundme.com/coa-etod-overlay-phase-2/2026-09-20-1116.pdf)) *The first wording is under "What is next for the ETOD Overlay?" and the second under "Welcome!", both in the same capture. The Citywide Density Bonus Program has its own entry in this list.*
     - Goes before City Council: “This project is expected to go before Council in 2026.” (read as during 2026)
     - Approved by City Council as the Citywide Density Bonus Program: “was approved by Council in 2026” (read as during 2026)

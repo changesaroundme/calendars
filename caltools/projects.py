@@ -415,19 +415,20 @@ def _axis(first: date, last: date) -> tuple[str, str]:
 def gantt(project: dict) -> str:
     """A Mermaid Gantt chart of the current schedule — the latest statement of
     each group — or "" when there is nothing a time axis can show: no schedule,
-    or a single date. Mermaid's own sections are not used, because it prints
-    their names over the rows: one group is named in the title, and each row
-    of several groups starts with its group's name, cut at the first comma
-    where that still tells the groups apart."""
+    or a single date, however many phases carry it. Mermaid's own sections are
+    not used, because it prints their names over the rows: one group is named
+    in the title, and each row of several groups starts with its group's name,
+    cut at the first comma where that still tells the groups apart."""
     by_group = groups(project)
     short = [about.split(",")[0] for about in by_group]
-    rows, days = [], []
+    rows, days, dates = [], [], set()
     for about, statements in by_group.items():
         lead = ""
         if about and len(by_group) > 1:
             lead = (about if short.count(about.split(",")[0]) > 1 else about.split(",")[0]) + " – "
         for ph in statements[-1]["phases"]:
             name, n = _label(lead + ph["name"]), len(rows) + 1
+            dates.update(when for when in (ph["start"], ph["end"]) if when)
             if ph["start"] and ph["end"]:
                 first, last = period(ph["start"])[0], period(ph["end"])[1]
                 rows.append(f"    {name} :p{n}, {first}, {last}")
@@ -436,7 +437,7 @@ def gantt(project: dict) -> str:
                 day = period(ph["start"])[0] if ph["start"] else period(ph["end"])[1]
                 rows.append(f"    {name} :milestone, p{n}, {day}, 0d")
                 days.append(day)
-    if len(set(days)) < 2:
+    if len(dates) < 2:
         return ""
     only = list(by_group)[0] if len(by_group) == 1 else ""
     title = project["name"] + (f" – {only}" if only else "")
@@ -638,6 +639,8 @@ def selftest() -> None:
     assert "    axisFormat %b %Y" in chart and "    todayMarker off" in chart and "section" not in chart, chart
     assert gantt(dict(rail, schedule=[])) == ""
     assert gantt(one(said("2026", start="2026-05-21"))) == ""              # one date: nothing to chart
+    assert gantt(one(dict(source="s", dated=2026, phases=[
+        dict(name="Goes to Council", start=2026, end=2026), dict(name="Approved", start=2026, end=2026)]))) == ""
     assert "axisFormat %Y\n    tickInterval 12month" in gantt(one(said("2026", start=2026, end=2032)))
     assert "axisFormat %-d %b %Y" in gantt(one(dict(source="s", dated=2026, phases=[
         dict(name="Hearing", start="2026-09-14"), dict(name="Comments close", end="2026-09-21")])))
