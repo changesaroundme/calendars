@@ -3,9 +3,9 @@
 
 # What Changes Around Me follows
 
-[Changes Around Me](https://changesaroundme.com) follows a hand-picked set of public projects, plans and policies, most of them in Austin, Texas. This page lists them, with what their sources have said about timing. It is generated from `projects.yaml`; edits made here are overwritten, so change that file instead.
+[Changes Around Me](https://changesaroundme.com) follows a hand-picked set of public projects, plans and policies, most of them in Austin, Texas. This page lists them, with what their sources have said about timing and the public meetings that name them. It is generated from `projects.yaml` and the meeting calendars; edits made here are overwritten, so change that file instead.
 
-57 on the list: 5 Focus, 52 watching. 40 have a schedule recorded.
+57 on the list: 5 Focus, 52 watching. 40 have a schedule recorded. 20 are named by a meeting on the calendars.
 
 ## How to read this page
 - **Focus** and **watching.** A Focus project is one the site's author has written a page about. The rest are watched: they are on the list and the web pages about them are checked for changes.
@@ -13,11 +13,12 @@
 - **Dated** and **Read.** "Dated" is the date the source itself carries. "Read" is the day the source was read, given when the source carries no date.
 - **How wording is read.** The brackets after a quotation give the dates it is taken to mean; "read as" marks wording that names no exact day. A year or a month means some time in it. Spring is March to May, summer June to August and fall September to November; early in a year is January to April, mid May to August and late September to December. "Winter" can mean either end of a year, so it is read from the rest of the page, and the statement says which way.
 - **Moved.** A phase has moved when the first statement that dates it and the latest one cannot both be right. Where one of them names only a year, the move is given as a range of months.
+- **Meetings.** A meeting on the [calendars](https://changesaroundme.com/calendar) is listed under a project when its title, its agenda or its description uses one of the project's names. Only the wording is compared, so a meeting that discusses a project without naming it is not listed. The two tables at the end of the page show which bodies' agendas are read and every match that was made.
 - **Who.** ATP = Austin Transit Partnership; CAMPO = Capital Area Metropolitan Planning Organization; CapMetro = Capital Metropolitan Transportation Authority; CoA = City of Austin; CTRMA = Central Texas Regional Mobility Authority; PUC = Public Utility Commission of Texas; SGI = Something Good Initiative; TrailCons = The Trail Conservancy; TxDOT = Texas Department of Transportation.
 - **Monitored pages.** How many web pages about a project are checked for changes and archived. They are listed in [sources.md](sources.md).
 
-## Schedules
-Each chart shows the latest statement, or the latest for each part of a project recorded in parts; a schedule with a single date has no chart. Underneath is every statement recorded here, oldest first, and how far each phase has moved between the first and the latest.
+## Schedules and meetings
+Each chart shows the latest statement, or the latest for each part of a project recorded in parts; a schedule with a single date has no chart. Underneath is every statement recorded here, oldest first, and how far each phase has moved between the first and the latest. Last come the meetings that name the project: those still to come, then the most recent ones held, with the agenda item that names it where the agenda has been read.
 
 ### I-35 Capital Express Central
 Project · focus · TxDOT · also called CapEx Central, I-35 CapEx
@@ -106,6 +107,16 @@ gantt
 - **Dated 2026-04-03.** Email from the City of Austin's Capital Improvement Program Manager
     - Construction: “Expected to begin ~Summer 2027 and last anywhere between 12-24 months for construction.” (read as 2027-06 to 2029-08)
 
+### 765 kV transmission lines
+Project · focus · PUC · also called 765-kV, 765 kV
+
+Links: [PUC docket 59029](https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=59029), [PUC docket 59315](https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=59315)
+
+**Past meetings:**
+- 21 Aug 2026 · [PUC: Meeting (inc. 765 kV cases)](https://ftp.puc.texas.gov/public/puct-info/agency/om/082126Final.pdf) · “Longshore – Drill Hole (Docket 59029); discussion and possible action.”; “Dinosaur – Longshore (Docket 59315); discussion and possible action.”
+- 14 Aug 2026 · [PUC: Open Meeting](https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1824) · “Docket 59029: 765-kV Longshore Switch - Drill Hole Switch line (Oncor CCN)”
+- 29 Jul 2026 · [Texas Senate: Business & Commerce - 765-kV lines and grid reliability](https://capitol.texas.gov/tlodocs/89R/schedules/html/C5102026072909001.HTM)
+
 ### Barton Springs Road Bridge
 Project · watching · CoA
 
@@ -169,6 +180,9 @@ gantt
 - **Read 2026-11-11.** Speak Up Austin project page ([source](https://www.speakupaustin.org/southlamar), [our copy](https://archive.changesaroundme.com/coa-south-lamar-corridor/2026-11-11-0707.pdf)) — about: Del Curto / Bluebonnet roundabout
     - Construction: “Construction is expected to begin in fall 2026.” (read as starting 2026-09)
 
+**Upcoming meetings:**
+- 2 Dec 2026 · [Transportation and Public Works - South Lamar Boulevard Corridor Open House](https://www.speakupaustin.org/southlamar)
+
 ### East Oltorf Street safety and mobility improvements
 Project · watching · CoA
 
@@ -231,6 +245,12 @@ gantt
     - Permitting: “Summer 2026: Permitting Phase” (read as starting 2026-06)
     - Construction: “Spring 2027: Construction Start” (read as starting 2027-03)
 
+**Past meetings:**
+- 10 Oct 2026 · [Trail Cons. - Open House: Eastside Family Garden Design Concepts](https://thetrailconservancy.org/event/design-concepts-eastside-family-garden-project/)
+- 15 Nov 2025 · [Trail Cons. - Conversation with the Artist \| Eastside Family Garden Project](https://thetrailconservancy.org/event/community-design-workshop-eastside-family-garden-project/)
+- 22 Apr 2025 · [Trail Cons. - Open House – Holly Shores Projects](https://thetrailconservancy.org/event/open-house-holly-shores-projects-2/)
+- 12 Apr 2025 · [Trail Cons. - Open House – Holly Shores Projects](https://thetrailconservancy.org/event/open-house-holly-shores-projects/)
+
 ### MoKan Trail
 Project · watching · CoA
 
@@ -273,6 +293,9 @@ gantt
     - Open house: “Wednesday November 4, 2026, 6 to 8 pm” (on 2026-11-04)
     - Feedback survey closes: “Survey is open through December 6, 2026.” (by 2026-12-06)
 
+**Past meetings:**
+- 29 Aug 2026 · [East Riverside Open House #2](https://www.speakupaustin.org/Grove-Riverside) · “Second East Riverside open house (10am-1pm CDT): city-led projects shaping the East Riverside Corridor in one room, including the Grove-Riverside Site (125…”
+
 ### 2908 South Congress
 Project · watching · CoA
 
@@ -298,6 +321,10 @@ gantt
     - Solicitation awarded: “May 2027” (read as starting 2027-05)
     - Pre-development: “2027-2028” (read as 2027 to 2028)
     - Construction: “Construction Begins: 2029. Construction Completion: 2031.” (read as 2029 to 2031)
+
+**Past meetings:**
+- 22 Sep 2026 · [AHFC Open Houses - 6200 Menchaca & 2908 South Congress (September)](https://www.speakupaustin.org/2908SouthCongress)
+- 24 Aug 2026 · [AHFC Open Houses - 6200 Menchaca & 2908 South Congress (August)](https://www.speakupaustin.org/6200Menchaca)
 
 ### Central City District Plan
 Plan · watching · CoA
@@ -386,6 +413,13 @@ gantt
     - Community engagement and outreach: “Winter 2026 - Fall 2027” (read as 2026-01 to 2027-11)
     - Draft review: “Fall - Winter 2027” (read as 2027-09 to 2027-12)
     - Plan adoption: “The Imagine Austin Update is anticipated to be ready for adoption in spring 2028.” (read as 2028-03 to 2028-05)
+
+**Past meetings:**
+- 29 Oct 2026 · [Imagine Austin Update - Place Types Virtual Open House](https://publicinput.com/q8361#tab-51953)
+- 28 Oct 2026 · [Imagine Austin Update - Place Types Open House (Doss Elementary)](https://publicinput.com/q8361#tab-51953)
+- 24 Oct 2026 · [Imagine Austin Update - Place Types Open House (Conley-Guerrero)](https://publicinput.com/q8361#tab-51953)
+- 21 Oct 2026 · [Imagine Austin Update - Place Types Open House (Dove Springs)](https://publicinput.com/q8361#tab-51953)
+- 20 Oct 2026 · [Imagine Austin Update - Place Types Open House (Turner Roberts)](https://publicinput.com/q8361#tab-51953)
 
 ### Great Streets Plan Update
 Plan · watching · CoA
@@ -558,6 +592,15 @@ Policy · watching · CoA · also called Equitable Transit-Oriented Development
     - Goes before City Council: “This project is expected to go before Council in 2026.” (read as during 2026)
     - Approved by City Council as the Citywide Density Bonus Program: “was approved by Council in 2026” (read as during 2026)
 
+### 3-4 Dwelling Unit Technical Code Update
+Policy · watching · CoA
+
+**Upcoming meetings:**
+- 27 Nov 2026 · [Development Services - 3-4 Dwelling Unit Technical Code Update public comments close](https://publicinput.com/3-4_dwellingcode)
+
+**Past meetings:**
+- 12 Nov 2026 · [Development Services - 3-4 Dwelling Unit Technical Code Update Virtual Meeting](https://publicinput.com/3-4_dwellingcode)
+
 ### Green Infrastructure Initiative
 Policy · watching · CoA
 
@@ -600,11 +643,26 @@ gantt
     - Election: “a citywide election to take place on Tuesday, November 3, 2026” (on 2026-11-03)
     - Project details on the bond dashboard: “Detailed project information is expected to be available on the Austin Bond Dashboard in early 2027.” (read as starting 2027-01)
 
+**Past meetings:**
+- 23 Jul 2026 · [City Council](https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4074&GID=684&G=4BED8896) · item 2: “Approve an ordinance ordering a General Obligation Bond Election to be held on November 3, 2026, in the City of Austin, Texas on a proposed bond issue for Park…”
+- 21 Jul 2026 · [City Council: Work Session](https://austintexas.legistar.com/MeetingDetail.aspx?LEGID=4085&GID=684&G=4BED8896) · item 2: “Approve an ordinance ordering a General Obligation Bond Election to be held on November 3, 2026, in the City of Austin, Texas on a proposed bond issue for Park…”
+
 ### Shaping Austin's Economic Development Policy
 Policy · watching · CoA
 
 - **Read 2026-11-07.** City of Austin project page ([source](https://www.austintexas.gov/AustinEconomicPolicy), [our copy](https://archive.changesaroundme.com/coa-shaping-economic-development-policy/2026-11-07-0631.pdf))
     - Council directs the City Manager to develop the policy: “On May 7, 2026, Austin City Council directed the City Manager to develop and present a comprehensive Economic Development Policy for Council consideration.” (on 2026-05-07)
+
+**Upcoming meetings:**
+- 14 Jan 2027 · [Austin Economic Development - Economic Development Policy Engagement Session](https://www.eventbrite.com/e/austins-economic-growth-a-community-engagement-session-tickets-2003481938410)
+- 23 Jan 2027 · [Austin Economic Development - Economic Development Policy Engagement Session](https://www.eventbrite.com/e/austins-economic-growth-a-community-engagement-session-tickets-2003482010626)
+- 27 Jan 2027 · [Austin Economic Development - Economic Development Policy Engagement Session (Virtual)](https://www.eventbrite.com/e/austins-economic-growth-a-community-engagement-session-virtual-tickets-1998904693748)
+- 4 Feb 2027 · [Austin Economic Development - Economic Development Policy Engagement Session (Virtual)](https://www.eventbrite.com/e/austins-economic-growth-a-community-engagement-session-virtual-tickets-2003481790969)
+- 10 Feb 2027 · [Austin Economic Development - Economic Development Policy Engagement Session](https://www.eventbrite.com/e/austins-economic-growth-a-community-engagement-session-tickets-1998931021495)
+
+**Past meetings:**
+- 23 Sep 2026 · [Austin Economic Development - Economic Development Policy Engagement Session](https://www.eventbrite.com/e/austins-economic-growth-a-community-engagement-session-tickets-1998248426836)
+- 12 Sep 2026 · [Austin Economic Development - Economic Development Policy Engagement Session](https://www.eventbrite.com/e/austins-economic-growth-a-community-engagement-session-tickets-1998249694628)
 
 ### César Chávez Street renaming
 Policy · watching · CoA
@@ -612,11 +670,46 @@ Policy · watching · CoA
 - **Read 2026-09-20.** Speak Up Austin project page ([source](https://www.speakupaustin.org/renaming-cesar-chavez-project), [our copy](https://archive.changesaroundme.com/coa-cesar-chavez-renaming/2026-09-20-1113.pdf))
     - Process, costs and timeline presented to City Council: “City staff provided a memo and presented the general process, costs, and timeline during the May 26, 2026 City Council Work Session.” (on 2026-05-26)
 
+**Past meetings:**
+- 18 Aug 2026 · [CoA: César Chávez St Renaming](https://www.speakupaustin.org/r31038)
+- 15 Aug 2026 · [CoA: César Chávez St Renaming](https://www.speakupaustin.org/r31038)
+- 11 Aug 2026 · [CoA: César Chávez St Renaming](https://www.speakupaustin.org/r31038)
+
+### City budget process
+Policy · watching · CoA
+
+Links: [City budget page](http://austintexas.gov/budget)
+
+**Upcoming meetings:**
+- 28 Apr 2027 · [City Council: Budget Meeting](https://www.austintexas.gov/council/meetings)
+- 15 Jul 2027 · [City Council: Budget Meeting](https://www.austintexas.gov/council/meetings)
+- 21 Jul 2027 · [City Council: Budget Meeting](https://www.austintexas.gov/council/meetings)
+- 28 Jul 2027 · [City Council: Budget Meeting](https://www.austintexas.gov/council/meetings)
+- 29 Jul 2027 · [City Council: Budget Meeting](https://www.austintexas.gov/council/meetings)
+- 3 Aug 2027 · [City Council: Budget Meeting](https://www.austintexas.gov/council/meetings)
+- 5 Aug 2027 · [City Council: Budget Meeting](https://www.austintexas.gov/council/meetings)
+- 11 Aug 2027 · [City Council: Budget Meeting](https://www.austintexas.gov/council/meetings)
+- 12 Aug 2027 · [City Council: Budget Meeting](https://www.austintexas.gov/council/meetings)
+- 13 Aug 2027 · [City Council: Budget Meeting](https://www.austintexas.gov/council/meetings)
+- 16 Aug 2027 · [City Council: Budget Meeting](https://www.austintexas.gov/council/meetings)
+
+**Past meetings:**
+- 17 Aug 2026 · [City Council: Budget Meeting](https://www.austintexas.gov/council/meetings)
+- 14 Aug 2026 · [City Council: Budget Meeting](https://www.austintexas.gov/council/meetings)
+- 13 Aug 2026 · [City Council: Budget Meeting](https://www.austintexas.gov/council/meetings)
+- 12 Aug 2026 · [City Council: Budget Meeting](https://www.austintexas.gov/council/meetings)
+- 10 Aug 2026 · [CoA: District 3 Budget Community Meeting](https://docs.google.com/forms/d/e/1FAIpQLScJpPoP8OLVrteDQTlahCP9fyRYws22Hy4CGv3PBXzF5Ktpnw/viewform)
+- and 6 earlier
+
 ### Austin Light Rail
 Project · watching · ATP · also called Austin Light Rail Phase 1, Project Connect
 
 - **Read 2026-11-07.** Austin Transit Partnership milestones page ([source](https://www.atptx.org/milestones/), [our copy](https://archive.changesaroundme.com/atp-milestones/2026-11-07-0647.pdf))
     - Construction: “marking another major step toward beginning construction in 2027” (read as starting 2027)
+
+**Past meetings:**
+- 29 Aug 2026 · [East Riverside Open House #2](https://www.speakupaustin.org/Grove-Riverside) · “…including the Grove-Riverside Site (125 acres of City-owned land), Project Connect / Austin Light Rail, and the East Riverside planning and ETOD efforts.…”
+- 13 Aug 2026 · [ATP: Community Advisory Committee Meeting](https://www.atptx.org/event/community-advisory-committee-meeting-6-2025-12/2026-08-13/) · “CoA Project Connect Budget Presentation”
 
 ### Red Line Trail Study
 Plan · watching · CapMetro
@@ -676,11 +769,22 @@ gantt
     - First increase takes effect: “New fares effective January 10, 2027” (on 2027-01-10)
     - Second increase: “There will be a second fare increase in January 2029.” (read as starting 2029-01)
 
+**Past meetings:**
+- 28 Sep 2026 · [CapMetro: Fare increase comments close](https://www.capmetro.org/fare/general-fares-overview/fare-increase)
+- 16 Sep 2026 · [CapMetro: Fare Increase Hearing](https://www.capmetro.org/fare/general-fares-overview/fare-increase)
+- 19 Aug 2026 · [CapMetro: Fare Increase Meeting](https://www.capmetro.org/fare/general-fares-overview/fare-increase)
+- 18 Aug 2026 · [CapMetro: Fare Increase Meeting](https://www.capmetro.org/fare/general-fares-overview/fare-increase)
+- 6 Aug 2026 · [CapMetro: Fare Increase Meeting](https://www.capmetro.org/fare/general-fares-overview/fare-increase)
+- and 1 earlier
+
 ### CapMetro Service Standards and Guidelines 2026
 Policy · watching · CapMetro
 
 - **Read 2026-11-15.** CapMetro "Standards, Specifications and Guidelines" page ([source](https://www.capmetro.org/aboutus/about-capmetro/plans-development/standards-specifications-guidelines), [our copy](https://archive.changesaroundme.com/capmetro-service-standards-guidelines/2026-11-15-0727.pdf)) *The page also gives a "public hearing on December 14 at noon", without a year.*
     - Presented to the CapMetro Board for adoption: “We will include the input from the public before presenting to the CapMetro Board for adoption in January 2027.” (read as starting 2027-01)
+
+**Upcoming meetings:**
+- 14 Dec 2026 · [CapMetro - Board of Directors + Public Hearing on 2026 Service Standards and Guidelines](https://www.capmetro.org/aboutus/about-capmetro/plans-development/standards-specifications-guidelines)
 
 ### MetroBike / Bikeshare expansion
 Project · watching · CapMetro
@@ -748,70 +852,244 @@ gantt
     - Public hearing: “Mid/Late 2027” (read as 2027-05 to 2027-12)
     - Final schematic and environmental decision: “Early 2028” (read as starting 2028-01)
 
+**Past meetings:**
+- 30 Oct 2026 · [CTRMA - 290 Extension public comments close](https://290extensionproject.com/openhouse/)
+- 1 Oct 2026 · [TxDOT: US 290 From SH 130 to SH 95 South](https://www.txdot.gov/projects/hearings-meetings/austin/2026/us290-from-sh130-to-east-of-sh95-south-092926.html)
+- 29 Sep 2026 · [TxDOT: US 290 From SH 130 to SH 95 South](https://www.txdot.gov/projects/hearings-meetings/austin/2026/us290-from-sh130-to-east-of-sh95-south-092926.html)
+
+### I-14 extension
+Project · watching · TxDOT
+
+Links: [Public meetings, August 2026](https://www.txdot.gov/projects/hearings-meetings/waco/2026/i14-extension-080526.html)
+
+**Past meetings:**
+- 6 Aug 2026 · [TxDOT: I-14 Extension Public Meeting (Belton)](https://www.txdot.gov/projects/hearings-meetings/waco/2026/i14-extension-080526.html)
+- 5 Aug 2026 · [TxDOT: I-14 Extension Public Meeting (Temple)](https://www.txdot.gov/projects/hearings-meetings/waco/2026/i14-extension-080526.html)
+
+### Texas Triangle Multimodal Strategic Plan
+Plan · watching · TxDOT
+
+Links: [TxDOT study page](https://www.txdot.gov/projects/projects-studies/statewide/ttmsp.html)
+
+**Past meetings:**
+- 30 Jul 2026 · [TxDOT: Texas Triangle Multimodal Strategic Plan Webinar](https://www.txdot.gov/projects/projects-studies/statewide/ttmsp.html)
+
 ### Unified Transportation Program
 Policy · watching · TxDOT · also called UTP
 
 - **Read 2026-11-19.** TxDOT UTP public involvement page ([source](https://www.txdot.gov/projects/planning/utp/utp-public-involvement.html), [our copy](https://archive.changesaroundme.com/txdot-utp-public-involvement/2026-11-19-0912.pdf)) — about: 2027 UTP
     - Adopted by the Texas Transportation Commission: “The 2027 UTP was adopted by the Texas Transportation Commission on Aug. 26, 2026.” (on 2026-08-26)
 
+**Past meetings:**
+- 29 Jul 2026 · [TxDOT: UTP - Virtual public hearing](https://www.txdot.gov/projects/planning/utp/utp-public-involvement.html)
+- 3 Jul 2026 · [TxDOT: Draft 2027 UTP comment period](https://www.txdot.gov/projects/planning/utp/utp-public-involvement.html)
+- 1 Jul 2026 · [TxDOT: UTP - Virtual public meeting](https://www.txdot.gov/projects/planning/utp/utp-public-involvement.html)
+
+### Large Load Demand Management Service
+Policy · watching · PUC
+
+Links: [PUC project 58482](https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=58482)
+
+**Past meetings:**
+- 4 Sep 2026 · [PUC: Large Load Demand Management Service comments close](https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=58482)
+
+### Large water users
+Policy · watching · CoA
+
+Links: [Austin Water open house notice](https://www.austintexas.gov/water/news/austin-water-invites-community-open-house-large-water-users)
+
+**Past meetings:**
+- 5 Oct 2026 · [Austin Water - Open House on Large Water Users](https://www.austintexas.gov/water/news/austin-water-invites-community-open-house-large-water-users)
+
 ## Everything on the list
 
-| Name | Kind | Tier | Who | Monitored pages | Statements | Links |
-|---|---|---|---|---|---|---|
-| 765 kV transmission lines *(also called 765-kV, 765 kV)* | project | focus | PUC |  |  | [PUC docket 59029](https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=59029), [PUC docket 59315](https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=59315) |
-| E Cesar Chavez, Pleasant Valley to Shady Ln | project | focus | CoA |  | 1 | [Speak Up Austin page](https://www.speakupaustin.org/ColoradoRiverTrail) |
-| East Ave Trail | project | focus | — |  |  |  |
-| I-35 Capital Express Central *(also called CapEx Central, I-35 CapEx)* | project | focus | TxDOT |  | 1 | [TxDOT project page](https://www.txdot.gov/mymobility35/projects/capex-central.html) |
-| Red Line double tracking and E 5th Street *(also called Rail and Trail Improvements, CapMetro Rail Improvements)* | project | focus | CapMetro, CoA | 3 | 5 | [City of Austin Mobility Bond page](https://storymaps.arcgis.com/stories/0c07fae43ac848358a6aa63a3be27d7a) |
-| 2027–2030 TIP amendments *(also called Transportation Improvement Program)* | policy | watching | CAMPO | 1 | 1 |  |
-| 290 Extension | project | watching | CTRMA | 2 | 1 |  |
-| 2908 South Congress | project | watching | CoA | 1 | 1 |  |
-| 3-4 Dwelling Unit Technical Code Update | policy | watching | CoA | 1 |  |  |
-| Airport Boulevard corridor *(also called Airport Corridor)* | project | watching | CoA | 1 | 3 |  |
-| All Ages and Abilities Bicycle Priority Network | plan | watching | CoA | 1 |  |  |
-| Alleyway project south of E Cesar Chavez | project | watching | SGI |  |  | [Project page](https://somethinggoodinitiative.org/alleyway-project) |
-| Austin Energy Resource, Generation and Climate Protection Plan to 2035 | plan | watching | CoA | 1 | 1 |  |
-| Austin Light Rail *(also called Austin Light Rail Phase 1, Project Connect)* | project | watching | ATP | 4 | 1 |  |
-| Barton Springs Road Bridge | project | watching | CoA | 1 | 1 |  |
-| Burnet Road corridor | project | watching | CoA | 1 | 2 |  |
-| CapMetro fare increase, 2027 and 2029 | policy | watching | CapMetro | 1 | 1 |  |
-| CapMetro service changes | policy | watching | CapMetro | 3 | 1 |  |
-| CapMetro Service Standards and Guidelines 2026 | policy | watching | CapMetro | 1 | 1 |  |
-| Central City District Plan | plan | watching | CoA | 1 | 1 |  |
-| César Chávez Street renaming | policy | watching | CoA | 2 | 1 |  |
-| City budget process | policy | watching | CoA |  |  | [City budget page](http://austintexas.gov/budget) |
-| Citywide Density Bonus Program *(also called C20-2024-004)* | policy | watching | CoA | 1 | 1 |  |
-| Convention Center | project | watching | CoA |  |  |  |
-| "Dog's head" annexation and development | policy | watching | CoA |  |  | [KUT article](https://www.kut.org/austin/2026-05-22/austin-tx-city-council-dogs-head-development) |
-| East Austin Historic Resource Survey | plan | watching | CoA | 1 | 1 |  |
-| East Austin parking | policy | watching | CoA | 1 |  |  |
-| East Oltorf Street safety and mobility improvements | project | watching | CoA | 1 | 1 |  |
-| East Riverside Corridor Planning Initiative | plan | watching | CoA | 1 | 1 |  |
-| Eilers (Deep Eddy) Neighborhood Park concept plan | project | watching | CoA | 1 |  |  |
-| ETOD Overlay, phase 2 *(also called Equitable Transit-Oriented Development)* | policy | watching | CoA | 1 | 1 |  |
-| Great Streets Plan Update | plan | watching | CoA | 1 | 1 |  |
-| Green Infrastructure Initiative | policy | watching | CoA | 1 | 1 |  |
-| Grove–Riverside site | project | watching | CoA | 1 | 1 |  |
-| Holly Shores *(also called Edward Rendon Sr. Park at Festival Beach, Eastside Family Garden and Lakefront Trail Park)* | project | watching | CoA, TrailCons | 2 | 1 |  |
-| I-14 extension | project | watching | TxDOT |  |  | [Public meetings, August 2026](https://www.txdot.gov/projects/hearings-meetings/waco/2026/i14-extension-080526.html) |
-| I-35 Central Small Area Mobility Plan | plan | watching | CoA | 1 | 1 |  |
-| IHOP downtown site | project | watching | — |  |  |  |
-| Imagine Austin Update | plan | watching | CoA | 1 | 1 |  |
-| Large Load Demand Management Service | policy | watching | PUC |  |  | [PUC project 58482](https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=58482) |
-| Large water users | policy | watching | CoA |  |  | [Austin Water open house notice](https://www.austintexas.gov/water/news/austin-water-invites-community-open-house-large-water-users) |
-| Lower Colorado River Watershed Restoration and Access Plan | plan | watching | — |  |  | [Survey](https://www.surveymonkey.com/r/lowercoloradowrap) |
-| MetroBike / Bikeshare expansion | project | watching | CapMetro | 1 | 1 |  |
-| MoKan Trail | project | watching | CoA | 1 | 1 |  |
-| Northeast District Plan | plan | watching | CoA | 1 | 1 |  |
-| Our Future 35 *(also called Cap and Stitch)* | plan | watching | CoA | 1 | 1 |  |
-| Our Parks, Our Future Long Range Plan | plan | watching | CoA | 1 | 1 |  |
-| Red Line Trail Study | plan | watching | CapMetro | 1 | 1 |  |
-| Shape Austin's 2026 Bond | policy | watching | CoA | 1 | 1 |  |
-| Shaping Austin's Economic Development Policy | policy | watching | CoA | 1 | 1 |  |
-| South Lamar Boulevard corridor | project | watching | CoA | 1 | 3 |  |
-| Texas Triangle Multimodal Strategic Plan | plan | watching | TxDOT |  |  | [TxDOT study page](https://www.txdot.gov/projects/projects-studies/statewide/ttmsp.html) |
-| Transit Enhancement Infrastructure Report | plan | watching | CoA | 1 | 1 |  |
-| Transit Plan 2035 | plan | watching | CapMetro | 1 | 1 |  |
-| Unified Transportation Program *(also called UTP)* | policy | watching | TxDOT | 1 | 1 |  |
-| Urban Trails Plan | plan | watching | CoA | 2 |  |  |
-| West Campus Transportation Plan | plan | watching | CoA | 1 | 1 |  |
+| Name | Kind | Tier | Who | Monitored pages | Statements | Meetings | Links |
+|---|---|---|---|---|---|---|---|
+| 765 kV transmission lines *(also called 765-kV, 765 kV)* | project | focus | PUC |  |  | 3 | [PUC docket 59029](https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=59029), [PUC docket 59315](https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=59315) |
+| E Cesar Chavez, Pleasant Valley to Shady Ln | project | focus | CoA |  | 1 |  | [Speak Up Austin page](https://www.speakupaustin.org/ColoradoRiverTrail) |
+| East Ave Trail | project | focus | — |  |  |  |  |
+| I-35 Capital Express Central *(also called CapEx Central, I-35 CapEx)* | project | focus | TxDOT |  | 1 |  | [TxDOT project page](https://www.txdot.gov/mymobility35/projects/capex-central.html) |
+| Red Line double tracking and E 5th Street *(also called Rail and Trail Improvements, CapMetro Rail Improvements)* | project | focus | CapMetro, CoA | 3 | 5 |  | [City of Austin Mobility Bond page](https://storymaps.arcgis.com/stories/0c07fae43ac848358a6aa63a3be27d7a) |
+| 2027–2030 TIP amendments *(also called Transportation Improvement Program)* | policy | watching | CAMPO | 1 | 1 |  |  |
+| 290 Extension | project | watching | CTRMA | 2 | 1 | 3 |  |
+| 2908 South Congress | project | watching | CoA | 1 | 1 | 2 |  |
+| 3-4 Dwelling Unit Technical Code Update | policy | watching | CoA | 1 |  | 2 |  |
+| Airport Boulevard corridor *(also called Airport Corridor)* | project | watching | CoA | 1 | 3 |  |  |
+| All Ages and Abilities Bicycle Priority Network | plan | watching | CoA | 1 |  |  |  |
+| Alleyway project south of E Cesar Chavez | project | watching | SGI |  |  |  | [Project page](https://somethinggoodinitiative.org/alleyway-project) |
+| Austin Energy Resource, Generation and Climate Protection Plan to 2035 | plan | watching | CoA | 1 | 1 |  |  |
+| Austin Light Rail *(also called Austin Light Rail Phase 1, Project Connect)* | project | watching | ATP | 4 | 1 | 2 |  |
+| Barton Springs Road Bridge | project | watching | CoA | 1 | 1 |  |  |
+| Burnet Road corridor | project | watching | CoA | 1 | 2 |  |  |
+| CapMetro fare increase, 2027 and 2029 | policy | watching | CapMetro | 1 | 1 | 6 |  |
+| CapMetro service changes | policy | watching | CapMetro | 3 | 1 |  |  |
+| CapMetro Service Standards and Guidelines 2026 | policy | watching | CapMetro | 1 | 1 | 1 |  |
+| Central City District Plan | plan | watching | CoA | 1 | 1 |  |  |
+| César Chávez Street renaming | policy | watching | CoA | 2 | 1 | 3 |  |
+| City budget process | policy | watching | CoA |  |  | 22 | [City budget page](http://austintexas.gov/budget) |
+| Citywide Density Bonus Program *(also called C20-2024-004)* | policy | watching | CoA | 1 | 1 |  |  |
+| Convention Center | project | watching | CoA |  |  |  |  |
+| "Dog's head" annexation and development | policy | watching | CoA |  |  |  | [KUT article](https://www.kut.org/austin/2026-05-22/austin-tx-city-council-dogs-head-development) |
+| East Austin Historic Resource Survey | plan | watching | CoA | 1 | 1 |  |  |
+| East Austin parking | policy | watching | CoA | 1 |  |  |  |
+| East Oltorf Street safety and mobility improvements | project | watching | CoA | 1 | 1 |  |  |
+| East Riverside Corridor Planning Initiative | plan | watching | CoA | 1 | 1 |  |  |
+| Eilers (Deep Eddy) Neighborhood Park concept plan | project | watching | CoA | 1 |  |  |  |
+| ETOD Overlay, phase 2 *(also called Equitable Transit-Oriented Development)* | policy | watching | CoA | 1 | 1 |  |  |
+| Great Streets Plan Update | plan | watching | CoA | 1 | 1 |  |  |
+| Green Infrastructure Initiative | policy | watching | CoA | 1 | 1 |  |  |
+| Grove–Riverside site | project | watching | CoA | 1 | 1 | 1 |  |
+| Holly Shores *(also called Edward Rendon Sr. Park at Festival Beach, Eastside Family Garden and Lakefront Trail Park)* | project | watching | CoA, TrailCons | 2 | 1 | 4 |  |
+| I-14 extension | project | watching | TxDOT |  |  | 2 | [Public meetings, August 2026](https://www.txdot.gov/projects/hearings-meetings/waco/2026/i14-extension-080526.html) |
+| I-35 Central Small Area Mobility Plan | plan | watching | CoA | 1 | 1 |  |  |
+| IHOP downtown site | project | watching | — |  |  |  |  |
+| Imagine Austin Update | plan | watching | CoA | 1 | 1 | 5 |  |
+| Large Load Demand Management Service | policy | watching | PUC |  |  | 1 | [PUC project 58482](https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=58482) |
+| Large water users | policy | watching | CoA |  |  | 1 | [Austin Water open house notice](https://www.austintexas.gov/water/news/austin-water-invites-community-open-house-large-water-users) |
+| Lower Colorado River Watershed Restoration and Access Plan | plan | watching | — |  |  |  | [Survey](https://www.surveymonkey.com/r/lowercoloradowrap) |
+| MetroBike / Bikeshare expansion | project | watching | CapMetro | 1 | 1 |  |  |
+| MoKan Trail | project | watching | CoA | 1 | 1 |  |  |
+| Northeast District Plan | plan | watching | CoA | 1 | 1 |  |  |
+| Our Future 35 *(also called Cap and Stitch)* | plan | watching | CoA | 1 | 1 |  |  |
+| Our Parks, Our Future Long Range Plan | plan | watching | CoA | 1 | 1 |  |  |
+| Red Line Trail Study | plan | watching | CapMetro | 1 | 1 |  |  |
+| Shape Austin's 2026 Bond | policy | watching | CoA | 1 | 1 | 2 |  |
+| Shaping Austin's Economic Development Policy | policy | watching | CoA | 1 | 1 | 7 |  |
+| South Lamar Boulevard corridor | project | watching | CoA | 1 | 3 | 1 |  |
+| Texas Triangle Multimodal Strategic Plan | plan | watching | TxDOT |  |  | 1 | [TxDOT study page](https://www.txdot.gov/projects/projects-studies/statewide/ttmsp.html) |
+| Transit Enhancement Infrastructure Report | plan | watching | CoA | 1 | 1 |  |  |
+| Transit Plan 2035 | plan | watching | CapMetro | 1 | 1 |  |  |
+| Unified Transportation Program *(also called UTP)* | policy | watching | TxDOT | 1 | 1 | 3 |  |
+| Urban Trails Plan | plan | watching | CoA | 2 |  |  |  |
+| West Campus Transportation Plan | plan | watching | CoA | 1 | 1 |  |  |
+
+## Agenda digests by body
+
+A digest is the short agenda the build adds to a meeting when the body posts an agenda it can read. Where that column shows 0, no agenda of the body has been read so far, and its meetings can be tied to a project only by their titles and descriptions.
+
+Each calendar is followed by its meetings grouped by title, which is usually the body's name; a title with fewer than 3 meetings is counted under “other titles”. The counts cover every meeting in the calendar data, past and upcoming. An upcoming meeting usually has no agenda until about a week before, and digests were not kept for meetings held before a body's agendas were first read.
+
+| Calendar and meeting title | Meetings | With an agenda digest | Naming a listed project |
+|---|---:|---:|---:|
+| **City of Austin (CoA)** | **112** | **3** | **46** |
+| City Council | 39 | 1 | 1 |
+| City Council: Budget Meeting | 21 | 0 | 21 |
+| CoA: Urban Transportation Commission | 13 | 1 | 0 |
+| CoA: Planning Commission | 11 | 0 | 0 |
+| Austin Economic Development - Economic Development Policy Engagement Session | 5 | 0 | 5 |
+| CoA: César Chávez St Renaming | 3 | 0 | 3 |
+| 19 other titles | 20 | 1 | 16 |
+| **Austin Transit Partnership (ATP)** | **5** | **1** | **1** |
+| ATP: Community Advisory Committee Meeting | 3 | 1 | 1 |
+| 1 other title | 2 | 0 | 0 |
+| **Capital Metropolitan Transportation Authority (CapMetro)** | **11** | **0** | **7** |
+| CapMetro: Fare Increase Meeting | 4 | 0 | 4 |
+| 6 other titles | 7 | 0 | 3 |
+| **Capital Area Metropolitan Planning Organization (CAMPO)** | **11** | **1** | **0** |
+| CAMPO: Technical Advisory Committee | 6 | 0 | 0 |
+| CAMPO: Transportation Policy Board | 5 | 1 | 0 |
+| **Central Texas Regional Mobility Authority (CTRMA)** | **6** | **0** | **0** |
+| CTRMA: General Meeting of the Board of Directors | 6 | 0 | 0 |
+| **Lower Colorado River Authority (LCRA)** | **13** | **0** | **0** |
+| LCRA: Transmission Services Corp. Board | 5 | 0 | 0 |
+| LCRA: Board & Committee Meetings | 3 | 0 | 0 |
+| 3 other titles | 5 | 0 | 0 |
+| **Texas Department of Transportation (TxDOT)** | **21** | **0** | **9** |
+| TxDOT: Bicycle and Pedestrian Advisory Committee | 4 | 0 | 0 |
+| TxDOT: Public Transportation Advisory Committee | 4 | 0 | 0 |
+| 12 other titles | 13 | 0 | 9 |
+| **Texas Transportation Commission (TTC)** | **4** | **0** | **0** |
+| TTC: Meeting | 4 | 0 | 0 |
+| **Public Utility Commission of Texas (PUC or PUCT)** | **6** | **1** | **3** |
+| PUC: Open Meeting | 4 | 0 | 1 |
+| 2 other titles | 2 | 1 | 2 |
+| **Electric Reliability Council of Texas (ERCOT)** | **15** | **0** | **0** |
+| ERCOT: Board of Directors Meeting | 12 | 0 | 0 |
+| ERCOT: Large Load Working Group Meeting | 3 | 0 | 0 |
+| **The Trail Conservancy (Trail Cons.)** | **7** | **0** | **4** |
+| 6 other titles | 7 | 0 | 4 |
+| **Texas Legislature** | **12** | **2** | **1** |
+| 10 other titles | 12 | 2 | 1 |
+| **Texas Pedestrian Safety Coalition (TPSC)** | **6** | **2** | **0** |
+| TPSC: Coalition Meeting | 3 | 2 | 0 |
+| 3 other titles | 3 | 0 | 0 |
+| **All calendars** | **229** | **10** | **71** |
+
+## Every match
+
+Each meeting tied to a project, and the wording that tied it. To tie more meetings to a project, add the wording agendas use for it to the project's `match` list in `projects.yaml`. To undo a match that is wrong, copy the line from the last column to `wrong_matches` at the end of that file.
+
+| Project | Date | Meeting | Matched on | Line that undoes it |
+|---|---|---|---|---|
+| 765 kV transmission lines | 29 Jul 2026 | Texas Senate: Business & Commerce - 765-kV lines and grid reliability | 765-kV | `- {project: 765-kv-transmission-lines, meeting: legislature-senate-committee-on-business-and-commerce-20260729T0900@calendars.changesaroundme.com}` |
+| 765 kV transmission lines | 14 Aug 2026 | PUC: Open Meeting | Docket 59029 | `- {project: 765-kv-transmission-lines, meeting: puc-cal-1824-20260814@calendars.changesaroundme.com}` |
+| 765 kV transmission lines | 21 Aug 2026 | PUC: Meeting (inc. 765 kV cases) | 765 kV | `- {project: 765-kv-transmission-lines, meeting: puc-cal-1802-20260821@calendars.changesaroundme.com}` |
+| South Lamar Boulevard corridor | 2 Dec 2026 | Transportation and Public Works - South Lamar Boulevard Corridor Open House | South Lamar Boulevard corridor | `- {project: south-lamar-corridor, meeting: austin-transportation-and-public-works-south-lamar-boulevard-corridor-open-house-20261202T1700@calendars.changesaroundme.com}` |
+| Holly Shores | 12 Apr 2025 | Trail Cons. - Open House – Holly Shores Projects | Holly Shores | `- {project: holly-shores, meeting: trailcons-30424@calendars.changesaroundme.com}` |
+| Holly Shores | 22 Apr 2025 | Trail Cons. - Open House – Holly Shores Projects | Holly Shores | `- {project: holly-shores, meeting: trailcons-30437@calendars.changesaroundme.com}` |
+| Holly Shores | 15 Nov 2025 | Trail Cons. - Conversation with the Artist \| Eastside Family Garden Project | Eastside Family Garden | `- {project: holly-shores, meeting: trailcons-34731@calendars.changesaroundme.com}` |
+| Holly Shores | 10 Oct 2026 | Trail Cons. - Open House: Eastside Family Garden Design Concepts | Eastside Family Garden | `- {project: holly-shores, meeting: trailcons-38238@calendars.changesaroundme.com}` |
+| Grove–Riverside site | 29 Aug 2026 | East Riverside Open House #2 | Grove–Riverside site | `- {project: grove-riverside-site, meeting: austin-east-riverside-open-house-2-20260829T1000@calendars.changesaroundme.com}` |
+| 2908 South Congress | 24 Aug 2026 | AHFC Open Houses - 6200 Menchaca & 2908 South Congress (August) | 2908 South Congress | `- {project: 2908-south-congress, meeting: austin-ahfc-open-houses-6200-menchaca-2908-south-congress-august-20260824@calendars.changesaroundme.com}` |
+| 2908 South Congress | 22 Sep 2026 | AHFC Open Houses - 6200 Menchaca & 2908 South Congress (September) | 2908 South Congress | `- {project: 2908-south-congress, meeting: austin-ahfc-open-houses-6200-menchaca-2908-south-congress-september-20260922@calendars.changesaroundme.com}` |
+| Imagine Austin Update | 20 Oct 2026 | Imagine Austin Update - Place Types Open House (Turner Roberts) | Imagine Austin Update | `- {project: imagine-austin-update, meeting: austin-imagine-austin-update-place-types-open-house-turner-roberts-20261020T1730@calendars.changesaroundme.com}` |
+| Imagine Austin Update | 21 Oct 2026 | Imagine Austin Update - Place Types Open House (Dove Springs) | Imagine Austin Update | `- {project: imagine-austin-update, meeting: austin-imagine-austin-update-place-types-open-house-dove-springs-20261021T1730@calendars.changesaroundme.com}` |
+| Imagine Austin Update | 24 Oct 2026 | Imagine Austin Update - Place Types Open House (Conley-Guerrero) | Imagine Austin Update | `- {project: imagine-austin-update, meeting: austin-imagine-austin-update-place-types-open-house-conley-guerrero-20261024T1000@calendars.changesaroundme.com}` |
+| Imagine Austin Update | 28 Oct 2026 | Imagine Austin Update - Place Types Open House (Doss Elementary) | Imagine Austin Update | `- {project: imagine-austin-update, meeting: austin-imagine-austin-update-place-types-open-house-doss-elementary-20261028T1730@calendars.changesaroundme.com}` |
+| Imagine Austin Update | 29 Oct 2026 | Imagine Austin Update - Place Types Virtual Open House | Imagine Austin Update | `- {project: imagine-austin-update, meeting: austin-imagine-austin-update-place-types-virtual-open-house-20261029T1800@calendars.changesaroundme.com}` |
+| 3-4 Dwelling Unit Technical Code Update | 12 Nov 2026 | Development Services - 3-4 Dwelling Unit Technical Code Update Virtual Meeting | 3-4 Dwelling Unit Technical Code Update | `- {project: 3-4-dwelling-unit-code-update, meeting: austin-development-services-3-4-dwelling-unit-technical-code-update-virtual-meeting-20261112T1100@calendars.changesaroundme.com}` |
+| 3-4 Dwelling Unit Technical Code Update | 27 Nov 2026 | Development Services - 3-4 Dwelling Unit Technical Code Update public comments close | 3-4 Dwelling Unit Technical Code Update | `- {project: 3-4-dwelling-unit-code-update, meeting: austin-development-services-3-4-dwelling-unit-technical-code-update-public-comments-close-20261127@calendars.changesaroundme.com}` |
+| Shape Austin's 2026 Bond | 21 Jul 2026 | City Council: Work Session | General Obligation Bond Election to be held on November 3, 2026 | `- {project: 2026-bond, meeting: austin-city-council-work-session-20260721T0900@calendars.changesaroundme.com}` |
+| Shape Austin's 2026 Bond | 23 Jul 2026 | City Council | General Obligation Bond Election to be held on November 3, 2026 | `- {project: 2026-bond, meeting: austin-city-council-20260723T1000@calendars.changesaroundme.com}` |
+| Shaping Austin's Economic Development Policy | 12 Sep 2026 | Austin Economic Development - Economic Development Policy Engagement Session | Economic Development Policy Engagement Session | `- {project: economic-development-policy, meeting: austin-economic-development-economic-development-policy-engagement-session-20260912T1000@calendars.changesaroundme.com}` |
+| Shaping Austin's Economic Development Policy | 23 Sep 2026 | Austin Economic Development - Economic Development Policy Engagement Session | Economic Development Policy Engagement Session | `- {project: economic-development-policy, meeting: austin-economic-development-economic-development-policy-engagement-session-20260923T1800@calendars.changesaroundme.com}` |
+| Shaping Austin's Economic Development Policy | 14 Jan 2027 | Austin Economic Development - Economic Development Policy Engagement Session | Economic Development Policy Engagement Session | `- {project: economic-development-policy, meeting: austin-economic-development-economic-development-policy-engagement-session-20270114T1800@calendars.changesaroundme.com}` |
+| Shaping Austin's Economic Development Policy | 23 Jan 2027 | Austin Economic Development - Economic Development Policy Engagement Session | Economic Development Policy Engagement Session | `- {project: economic-development-policy, meeting: austin-economic-development-economic-development-policy-engagement-session-20270123T1000@calendars.changesaroundme.com}` |
+| Shaping Austin's Economic Development Policy | 27 Jan 2027 | Austin Economic Development - Economic Development Policy Engagement Session (Virtual) | Economic Development Policy Engagement Session | `- {project: economic-development-policy, meeting: austin-economic-development-economic-development-policy-engagement-session-virtual-20270127T1800@calendars.changesaroundme.com}` |
+| Shaping Austin's Economic Development Policy | 4 Feb 2027 | Austin Economic Development - Economic Development Policy Engagement Session (Virtual) | Economic Development Policy Engagement Session | `- {project: economic-development-policy, meeting: austin-economic-development-economic-development-policy-engagement-session-virtual-20270204T1800@calendars.changesaroundme.com}` |
+| Shaping Austin's Economic Development Policy | 10 Feb 2027 | Austin Economic Development - Economic Development Policy Engagement Session | Economic Development Policy Engagement Session | `- {project: economic-development-policy, meeting: austin-economic-development-economic-development-policy-engagement-session-20270210T1800@calendars.changesaroundme.com}` |
+| César Chávez Street renaming | 11 Aug 2026 | CoA: César Chávez St Renaming | César Chávez St Renaming | `- {project: cesar-chavez-street-renaming, meeting: austin-c-sar-ch-vez-street-renaming-community-meeting-20260811T1700@calendars.changesaroundme.com}` |
+| César Chávez Street renaming | 15 Aug 2026 | CoA: César Chávez St Renaming | César Chávez St Renaming | `- {project: cesar-chavez-street-renaming, meeting: austin-c-sar-ch-vez-street-renaming-community-meeting-20260815T1400@calendars.changesaroundme.com}` |
+| César Chávez Street renaming | 18 Aug 2026 | CoA: César Chávez St Renaming | César Chávez St Renaming | `- {project: cesar-chavez-street-renaming, meeting: austin-c-sar-ch-vez-street-renaming-virtual-community-meeting-20260818T1800@calendars.changesaroundme.com}` |
+| City budget process | 16 Jul 2026 | City Council: Budget Meeting | City Council: Budget Meeting | `- {project: city-budget, meeting: austin-city-council-20260716@calendars.changesaroundme.com}` |
+| City budget process | 22 Jul 2026 | City Council: Budget Meeting | City Council: Budget Meeting | `- {project: city-budget, meeting: austin-city-council-20260722@calendars.changesaroundme.com}` |
+| City budget process | 28 Jul 2026 | City Council: Budget Meeting | City Council: Budget Meeting | `- {project: city-budget, meeting: austin-budget-meeting-of-the-austin-city-council-20260728T1000@calendars.changesaroundme.com}` |
+| City budget process | 30 Jul 2026 | City Council: Budget Meeting | City Council: Budget Meeting | `- {project: city-budget, meeting: austin-city-council-20260730@calendars.changesaroundme.com}` |
+| City budget process | 4 Aug 2026 | City Council: Budget Meeting | City Council: Budget Meeting | `- {project: city-budget, meeting: austin-city-council-20260804@calendars.changesaroundme.com}` |
+| City budget process | 6 Aug 2026 | City Council: Budget Meeting | City Council: Budget Meeting | `- {project: city-budget, meeting: austin-city-council-20260806@calendars.changesaroundme.com}` |
+| City budget process | 10 Aug 2026 | CoA: District 3 Budget Community Meeting | Budget Community Meeting | `- {project: city-budget, meeting: austin-district-3-budget-community-meeting-20260810T1730@calendars.changesaroundme.com}` |
+| City budget process | 12 Aug 2026 | City Council: Budget Meeting | City Council: Budget Meeting | `- {project: city-budget, meeting: austin-city-council-20260812@calendars.changesaroundme.com}` |
+| City budget process | 13 Aug 2026 | City Council: Budget Meeting | City Council: Budget Meeting | `- {project: city-budget, meeting: austin-city-council-20260813@calendars.changesaroundme.com}` |
+| City budget process | 14 Aug 2026 | City Council: Budget Meeting | City Council: Budget Meeting | `- {project: city-budget, meeting: austin-city-council-20260814@calendars.changesaroundme.com}` |
+| City budget process | 17 Aug 2026 | City Council: Budget Meeting | City Council: Budget Meeting | `- {project: city-budget, meeting: austin-city-council-20260817@calendars.changesaroundme.com}` |
+| City budget process | 28 Apr 2027 | City Council: Budget Meeting | City Council: Budget Meeting | `- {project: city-budget, meeting: austin-city-council-20270428@calendars.changesaroundme.com}` |
+| City budget process | 15 Jul 2027 | City Council: Budget Meeting | City Council: Budget Meeting | `- {project: city-budget, meeting: austin-city-council-20270715@calendars.changesaroundme.com}` |
+| City budget process | 21 Jul 2027 | City Council: Budget Meeting | City Council: Budget Meeting | `- {project: city-budget, meeting: austin-city-council-20270721@calendars.changesaroundme.com}` |
+| City budget process | 28 Jul 2027 | City Council: Budget Meeting | City Council: Budget Meeting | `- {project: city-budget, meeting: austin-city-council-20270728@calendars.changesaroundme.com}` |
+| City budget process | 29 Jul 2027 | City Council: Budget Meeting | City Council: Budget Meeting | `- {project: city-budget, meeting: austin-city-council-20270729@calendars.changesaroundme.com}` |
+| City budget process | 3 Aug 2027 | City Council: Budget Meeting | City Council: Budget Meeting | `- {project: city-budget, meeting: austin-city-council-20270803@calendars.changesaroundme.com}` |
+| City budget process | 5 Aug 2027 | City Council: Budget Meeting | City Council: Budget Meeting | `- {project: city-budget, meeting: austin-city-council-20270805@calendars.changesaroundme.com}` |
+| City budget process | 11 Aug 2027 | City Council: Budget Meeting | City Council: Budget Meeting | `- {project: city-budget, meeting: austin-city-council-20270811@calendars.changesaroundme.com}` |
+| City budget process | 12 Aug 2027 | City Council: Budget Meeting | City Council: Budget Meeting | `- {project: city-budget, meeting: austin-city-council-20270812@calendars.changesaroundme.com}` |
+| City budget process | 13 Aug 2027 | City Council: Budget Meeting | City Council: Budget Meeting | `- {project: city-budget, meeting: austin-city-council-20270813@calendars.changesaroundme.com}` |
+| City budget process | 16 Aug 2027 | City Council: Budget Meeting | City Council: Budget Meeting | `- {project: city-budget, meeting: austin-city-council-20270816@calendars.changesaroundme.com}` |
+| Austin Light Rail | 13 Aug 2026 | ATP: Community Advisory Committee Meeting | Project Connect | `- {project: austin-light-rail, meeting: 10000097-1786640400-1786647600@www.atptx.org}` |
+| Austin Light Rail | 29 Aug 2026 | East Riverside Open House #2 | Project Connect | `- {project: austin-light-rail, meeting: austin-east-riverside-open-house-2-20260829T1000@calendars.changesaroundme.com}` |
+| CapMetro fare increase, 2027 and 2029 | 30 Jul 2026 | CapMetro: Fare Increase Meeting | CapMetro: Fare Increase | `- {project: capmetro-fare-increase, meeting: capmetro-fare-increase-public-meeting-20260730T1700@calendars.changesaroundme.com}` |
+| CapMetro fare increase, 2027 and 2029 | 6 Aug 2026 | CapMetro: Fare Increase Meeting | CapMetro: Fare Increase | `- {project: capmetro-fare-increase, meeting: capmetro-fare-increase-public-meeting-20260806T1700@calendars.changesaroundme.com}` |
+| CapMetro fare increase, 2027 and 2029 | 18 Aug 2026 | CapMetro: Fare Increase Meeting | CapMetro: Fare Increase | `- {project: capmetro-fare-increase, meeting: capmetro-fare-increase-public-meeting-20260818T1700@calendars.changesaroundme.com}` |
+| CapMetro fare increase, 2027 and 2029 | 19 Aug 2026 | CapMetro: Fare Increase Meeting | CapMetro: Fare Increase | `- {project: capmetro-fare-increase, meeting: capmetro-fare-increase-public-meeting-20260819T1700@calendars.changesaroundme.com}` |
+| CapMetro fare increase, 2027 and 2029 | 16 Sep 2026 | CapMetro: Fare Increase Hearing | CapMetro: Fare Increase | `- {project: capmetro-fare-increase, meeting: capmetro-board-of-directors-20260916T1200@calendars.changesaroundme.com}` |
+| CapMetro fare increase, 2027 and 2029 | 28 Sep 2026 | CapMetro: Fare increase comments close | CapMetro: Fare Increase | `- {project: capmetro-fare-increase, meeting: capmetro-fare-increase-public-comments-close-20260928@calendars.changesaroundme.com}` |
+| CapMetro Service Standards and Guidelines 2026 | 14 Dec 2026 | CapMetro - Board of Directors + Public Hearing on 2026 Service Standards and Guidelines | Service Standards and Guidelines | `- {project: capmetro-service-standards, meeting: capmetro-board-of-directors-20261214T1200@calendars.changesaroundme.com}` |
+| 290 Extension | 29 Sep 2026 | TxDOT: US 290 From SH 130 to SH 95 South | US 290 from SH 130 to SH 95 South | `- {project: 290-extension, meeting: txdotev-hm-us290-from-sh130-to-east-of-sh95-south-092926-20260929@calendars.changesaroundme.com}` |
+| 290 Extension | 1 Oct 2026 | TxDOT: US 290 From SH 130 to SH 95 South | US 290 from SH 130 to SH 95 South | `- {project: 290-extension, meeting: txdotev-hm-us290-from-sh130-to-east-of-sh95-south-092926-20261001@calendars.changesaroundme.com}` |
+| 290 Extension | 30 Oct 2026 | CTRMA - 290 Extension public comments close | 290 Extension | `- {project: 290-extension, meeting: txdotev-ctrma-290-extension-public-comments-close-20261030@calendars.changesaroundme.com}` |
+| I-14 extension | 5 Aug 2026 | TxDOT: I-14 Extension Public Meeting (Temple) | I-14 extension | `- {project: i-14-extension, meeting: txdotev-txdot-i-14-extension-public-meeting-temple-20260805T1700@calendars.changesaroundme.com}` |
+| I-14 extension | 6 Aug 2026 | TxDOT: I-14 Extension Public Meeting (Belton) | I-14 extension | `- {project: i-14-extension, meeting: txdotev-txdot-i-14-extension-public-meeting-belton-20260806T1700@calendars.changesaroundme.com}` |
+| Texas Triangle Multimodal Strategic Plan | 30 Jul 2026 | TxDOT: Texas Triangle Multimodal Strategic Plan Webinar | Texas Triangle Multimodal Strategic Plan | `- {project: texas-triangle-multimodal-plan, meeting: txdotev-txdot-texas-triangle-multimodal-strategic-plan-webinar-20260730T1200@calendars.changesaroundme.com}` |
+| Unified Transportation Program | 1 Jul 2026 | TxDOT: UTP - Virtual public meeting | UTP | `- {project: unified-transportation-program, meeting: txdotev-utp-virtual-public-meeting-20260701@calendars.changesaroundme.com}` |
+| Unified Transportation Program | 3 Jul 2026 | TxDOT: Draft 2027 UTP comment period | UTP | `- {project: unified-transportation-program, meeting: txdotev-draft-2027-utp-comment-period-20260703@calendars.changesaroundme.com}` |
+| Unified Transportation Program | 29 Jul 2026 | TxDOT: UTP - Virtual public hearing | UTP | `- {project: unified-transportation-program, meeting: txdotev-utp-virtual-public-hearing-20260729@calendars.changesaroundme.com}` |
+| Large Load Demand Management Service | 4 Sep 2026 | PUC: Large Load Demand Management Service comments close | Large Load Demand Management Service | `- {project: large-load-demand-management, meeting: puc-cal-1809-20260904@calendars.changesaroundme.com}` |
+| Large water users | 5 Oct 2026 | Austin Water - Open House on Large Water Users | Large water users | `- {project: large-water-users, meeting: austin-water-open-house-on-large-water-users-20261005T1730@calendars.changesaroundme.com}` |
