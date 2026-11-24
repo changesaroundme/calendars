@@ -32,7 +32,7 @@ from datetime import date, datetime, timedelta, timezone
 
 import requests
 
-from caltools import registry, sourcespage
+from caltools import projects, registry, sourcespage
 from caltools.ics import CENTRAL, emit
 from caltools.model import Event
 from sources import (atp, austin, campo, capmetro, ctrma, curated, lcra,
@@ -529,6 +529,20 @@ def main() -> int:
         unhealthy.append(f"sources.yaml {prob}")
     if reg_problems and offline:
         return 1
+    # projects.yaml (the project list) is hand-edited too and gets the same
+    # treatment: fatal offline, a soft alarm live. A slip in the list must
+    # not stop the feeds publishing; it only stops docs/projects.md updating.
+    if offline:
+        projects.selftest()
+    try:
+        project_list, org_names = projects.load()
+    except ValueError as e:
+        project_list, org_names = [], {}
+        for prob in str(e).splitlines():
+            print(f"[projects] {prob}")
+            unhealthy.append(f"projects.yaml {prob}")
+        if offline:
+            return 1
     # Every live response passes through here; docs/status.json is written
     # at the end of the build with per-slug checked/changed stamps.
     tracker = registry.Tracker(reg_rows)
@@ -774,6 +788,10 @@ def main() -> int:
     archive = sourcespage.load_archive(DOCS / "archive.json")
     if archive:
         (docs / "archive.md").write_text(sourcespage.render_archive_markdown(reg_rows, archive))
+    # The project list as a readable page. Undated on purpose, so it changes
+    # only when projects.yaml does and not with every build.
+    if project_list:
+        (docs / "projects.md").write_text(projects.preview(project_list, org_names), encoding="utf-8")
 
     if not offline:
         unhealthy, warnings = grace_network_failures(unhealthy, data / "health.json", now)

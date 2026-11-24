@@ -148,10 +148,15 @@ shows how far a project's dates have moved. The file's header describes
 every field.
 
     python -m caltools.projects                    # check the file
-    python -m caltools.projects --preview=FILE.md  # and write a readable page
+    python -m caltools.projects --preview=FILE.md  # and write a page for the vault
 
-Nothing in the build reads it yet; it is the groundwork for project pages,
-timelines and a map.
+Every build checks the file (a mistake fails the offline build and raises an
+alarm on the live one, without stopping the calendars) and writes it out as
+[`docs/projects.md`](docs/projects.md): a chart of each project's current
+schedule, every statement behind it, and how far its dates have moved. It is
+the groundwork for project pages and a map.
+
+Pull requests run the offline build as a check (`.github/workflows/check.yml`).
 
 ## Adding a source
 

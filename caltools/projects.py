@@ -41,12 +41,17 @@ statement is the current schedule; the earlier ones show how far it has moved
 `said` is the wording as published. `start` and `end` are how it was read, as
 YYYY, YYYY-MM or YYYY-MM-DD, each meaning "some time in that period"; a phase
 with only one of them is a milestone. Vague wording is read the same way
-every time: spring Mar–May, summer Jun–Aug, fall Sep–Nov, winter Dec–Feb;
-early Jan–Apr, mid May–Aug, late Sep–Dec. A statement may turn out wrong —
+every time: spring Mar–May, summer Jun–Aug, fall Sep–Nov; early Jan–Apr, mid
+May–Aug, late Sep–Dec. "Winter 2027" is the exception: sources use it for
+either end of the year, so it is read from the order the source lists things
+in, and the statement's note says which way. A statement may turn out wrong —
 agencies slip — and that is fine as long as it says who said it and when.
 
     python -m caltools.projects                    # check the file
-    python -m caltools.projects --preview=FILE.md  # and write a readable page
+    python -m caltools.projects --preview=FILE.md  # and write a page for the vault
+
+The build runs the same checks (fatal offline, an alarm live) and writes the
+list as docs/projects.md.
 
 parse() returns problems as strings naming the project by slug, so a bad
 edit is findable without opening the file.
@@ -220,6 +225,8 @@ def parse(doc, org_codes, source_slugs) -> tuple[list[dict], dict[str, str], lis
                 phase = {k: _text(ph.get(k)) for k in PHASE_KEYS}
                 if not phase["name"]:
                     sbad("a phase has no name")
+                elif phase["name"] in {done["name"] for done in s["phases"]}:
+                    sbad(f"phase {phase['name']!r} appears twice — phases are matched by name")
                 try:
                     start = phase["start"] and period(phase["start"])[0]
                     end = phase["end"] and period(phase["end"])[1]
@@ -341,14 +348,17 @@ def _read_as(phase: dict) -> str:
     return f"starting {phase['start']}" if phase["start"] else f"by the end of {phase['end']}"
 
 
-def preview(projects: list[dict], org_names: dict[str, str], today: date) -> str:
-    """The list as a page Ian can read in Obsidian: open questions, then every
-    project with a schedule (chart, statements, slippage), then a table of all."""
+def preview(projects: list[dict], org_names: dict[str, str], vault: bool = False,
+            today: date | None = None) -> str:
+    """The list as a readable page: open questions, then every project with a
+    schedule (chart, statements, slippage), then a table of all. The same
+    Markdown serves GitHub (docs/projects.md) and Obsidian; `vault` adds links
+    to Ian's pages, which only resolve inside the vault."""
     scheduled = [p for p in projects if p["schedule"]]
-    out = ["> [!info] Generated page",
-           f"> Made from `projects.yaml` in the `calendars` repo on {today.isoformat()} by "
-           "`python -m caltools.projects --preview=…`. Edits made here are overwritten: "
-           "change the file, or tell Claude what to change.", "",
+    out = ["> [!NOTE]",
+           "> Generated from `projects.yaml`" + (f" on {today.isoformat()}" if today else "")
+           + ". Edits made here are overwritten; change that file instead.", "",
+           "# What Changes Around Me follows", "",
            f"{len(projects)} on the list: {sum(p['tier'] == 'focus' for p in projects)} Focus, "
            f"{sum(p['tier'] == 'watching' for p in projects)} watching. "
            f"{len(scheduled)} have a schedule recorded.", ""]
@@ -360,7 +370,7 @@ def preview(projects: list[dict], org_names: dict[str, str], today: date) -> str
     for p in scheduled:
         who = ", ".join(p["orgs"]) or "organization not recorded"
         out += [f"### {p['name']}", f"{p['kind'].capitalize()} · {p['tier']} · {who}"
-                + (f" · [[{p['page']}|page]]" if p["page"] else ""), "", gantt(p), ""]
+                + (f" · [[{p['page']}|page]]" if p["page"] and vault else ""), "", gantt(p), ""]
         for st in p["schedule"]:
             where = [f"[source]({st['url']})"] if st["url"] else []
             where += [f"[our copy]({st['capture']})"] if st["capture"] else []
@@ -428,7 +438,9 @@ def selftest() -> None:
     assert "    Construction :p1, 2027-01-01, 2029-01-31" in chart, chart
     assert "    Opening :milestone, p2, 2029-02-01, 0d" in chart, chart
     assert gantt(dict(rail, schedule=[])) == ""
-    assert "37 months later" in preview(projects, {"CapMetro": "CapMetro"}, date(2026, 11, 16))
+    page = preview(projects, {"CapMetro": "CapMetro"})
+    assert "37 months later" in page and "[[" not in page and "2026-11-16" not in page
+    assert "[[Focuses/Rail|page]]" in preview(projects, {}, vault=True, today=date(2026, 11, 16))
 
     for changes, expect in [
             (dict(slug="Rail Line"), "slug must be"), (dict(kind="study"), "kind must be"),
@@ -442,6 +454,8 @@ def selftest() -> None:
             (dict(schedule=[dict(source="s", dated=2026, phases=[dict(name="C")])]), "neither start nor end"),
             (dict(schedule=[dict(source="s", dated=2026, phases=[dict(name="C", start=2028, end=2027)])]), "ends before"),
             (dict(schedule=[dict(source="s", dated=2026, phases=[dict(name="C", start="early 2027")])]), "is not YYYY"),
+            (dict(schedule=[dict(source="s", dated=2026, phases=[dict(name="C", start=2027),
+                                                                  dict(name="C", start=2028)])]), "appears twice"),
             (dict(schedule=[dict(source="s", dated=2026, phases=[dict(name="C", start=2027)]),
                             dict(source="t", dated=2025, phases=[dict(name="C", start=2028)])]), "oldest first")]:
         found = problems(**changes)
@@ -467,7 +481,7 @@ def main(argv: list[str] | None = None) -> int:
     for arg in argv:
         if arg.startswith("--preview="):
             out = pathlib.Path(arg.split("=", 1)[1]).expanduser()
-            out.write_text(preview(projects, org_names, date.today()), encoding="utf-8")
+            out.write_text(preview(projects, org_names, vault=True, today=date.today()), encoding="utf-8")
             print(f"wrote {out}")
     print(f"projects.yaml: {len(projects)} entries, {sum(bool(p['schedule']) for p in projects)} with a schedule"
           + ("" if vault.is_dir() else " (vault not here: pages not checked)"))
