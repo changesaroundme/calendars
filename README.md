@@ -6,8 +6,8 @@
 > but please check the linked source before relying on a date.
 
 Subscribable `.ics` calendars of Central Texas public meetings, rebuilt
-daily by GitHub Actions from official sources and served by GitHub Pages.
-The build runs every morning at 6:17 AM Central and on every push.
+twice a day by GitHub Actions from official sources and served by GitHub
+Pages. The build runs at 11:17 and 23:17 UTC and on every push to `main`.
 
 **Subscribe: <https://changesaroundme.com/calendar>** — the canonical feed
 directory. The data itself is served from
@@ -34,7 +34,8 @@ combined calendar at
 
 **Outputs** (in `docs/`, served by Pages)
 
-- `campo.ics`, `capmetro.ics`, `txdot.ics`, `lcra.ics`, `ctrma.ics`, `austin.ics`, `atp.ics`, `txdotev.ics`, `legislature.ics` — one calendar per organization
+- `campo.ics`, `capmetro.ics`, `txdot.ics`, `lcra.ics`, `ctrma.ics`, `austin.ics`, `atp.ics`, `txdotev.ics`, `legislature.ics`, `puc.ics`, `tpsc.ics`, `ercot.ics`, `trailcons.ics` — one calendar per organization
+- `projects.md` — the project list as a page (see "The project list" below)
 - `all.ics` — everything combined (never filtered; existing subscribers rely on it)
 - `meetings.ics` — everything except `ENGAGEMENT_KINDS`; `engagement.ics` — only those.
   The two are disjoint and their union is `all.ics`. Widen the set in
@@ -52,8 +53,8 @@ python build.py             # live fetch (from your machine)
 
 An `--offline` build writes to `dist-offline/` (gitignored) and never
 touches the published `docs/` or the `data/` health baselines — so a dev
-run can't accidentally commit fixture data over the live calendars. CI
-runs the offline build after every publish as a parser-regression check.
+run can't accidentally commit fixture data over the live calendars. Every
+pull request runs the offline build as a parser-regression check.
 
 `data/*.json` are normalized snapshots committed on every build, so `git log`
 doubles as a change history of the underlying schedules — you can see exactly
@@ -167,7 +168,5 @@ roughly in order: audit every source for past-event retention (Legistar
 orgs and the legislature keep their own history; CTRMA, the feeds, and
 the committee tables are unverified), promote the SOS open-meetings
 watcher from shadow mode to enrichment (times/addresses/agendas/
-cancellations onto existing events), un-park the ERCOT adapter (branch
-`add-ercot`, awaiting a committee filter), PUCT (needs a content filter
-first), and a custom domain (`calendars.changesaroundme.com`) before the
-URLs spread widely.
+cancellations onto existing events), and a custom domain
+(`calendars.changesaroundme.com`) before the URLs spread widely.
