@@ -31,8 +31,10 @@
 #              `start` and `end` are how it was read. Only one of them = a milestone.
 #
 # Vague wording is read the same way every time: spring Mar–May, summer
-# Jun–Aug, fall Sep–Nov, winter Dec–Feb; early Jan–Apr, mid May–Aug, late
-# Sep–Dec. The wording stays in `said`, so nobody has to trust the reading.
+# Jun–Aug, fall Sep–Nov; early Jan–Apr, mid May–Aug, late Sep–Dec. "Winter
+# 2027" is the exception: sources use it for either end of the year, so it is
+# read from the order the source lists things in, and the note says which way.
+# The wording stays in `said`, so nobody has to trust the reading.
 #
 # Checked by caltools/projects.py:  python -m caltools.projects
 
@@ -157,6 +159,21 @@ projects:
     kind: project
     orgs: [CoA]
     sources: [coa-burnet-road-corridor]
+    schedule:
+      - source: Project page on PublicInput
+        url: https://publicinput.com/n73647
+        retrieved: 2026-09-20
+        capture: https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/2026-09-20-1109.pdf
+        about: Koenig Lane to US 183
+        phases:
+          - {name: Construction, said: "Construction started in March 2026", start: 2026-03}
+      - source: Project page on PublicInput
+        url: https://publicinput.com/n73647
+        retrieved: 2026-09-20
+        capture: https://archive.changesaroundme.com/_unlisted/Burnet%20Road%20corridor%20project/2026-09-20-1109.pdf
+        about: Bright Verde Way to MoPac Expressway
+        phases:
+          - {name: Construction, said: "Construction began in June 2026", start: 2026-06}
 
   - slug: south-lamar-corridor
     name: South Lamar Boulevard corridor
@@ -192,13 +209,43 @@ projects:
     kind: project
     orgs: [CoA]
     sources: [coa-east-oltorf-safety-mobility]
+    schedule:
+      - source: Speak Up Austin project page
+        url: https://www.speakupaustin.org/eastoltorf
+        retrieved: 2026-11-04
+        capture: https://archive.changesaroundme.com/coa-east-oltorf-safety-mobility/2026-11-04-0636.pdf
+        phases:
+          - {name: Street resurfacing, said: "As part of street resurfacing planned for 2027", start: 2027, end: 2027}
+          - {name: Corridor study, said: "The study is expected to begin in early 2028.", start: 2028-01}
 
   - slug: airport-corridor
-    name: Airport Corridor
+    name: Airport Boulevard corridor
     kind: project
     orgs: [CoA]
     sources: [coa-airport-corridor]
-    note: Which corridor this is was not clear from the page name.
+    also_called: [Airport Corridor]
+    schedule:
+      - source: City of Austin Airport Boulevard corridor page, construction update of 15 September 2025
+        url: https://experience.arcgis.com/experience/e937439aa3ce44b6b95172e2ae119cb7/page/Home
+        dated: 2025-09-15
+        capture: https://archive.changesaroundme.com/coa-airport-corridor/2026-09-20-1524.pdf
+        about: 55th Street to 45th Street
+        phases:
+          - {name: Substantial completion of phase 1, said: "Substantial completion is expected in mid- to late-October 2025.", end: 2025-10}
+      - source: City of Austin Airport Boulevard corridor page, construction update of 15 September 2025
+        url: https://experience.arcgis.com/experience/e937439aa3ce44b6b95172e2ae119cb7/page/Home
+        dated: 2025-09-15
+        capture: https://archive.changesaroundme.com/coa-airport-corridor/2026-09-20-1524.pdf
+        about: MLK Jr. Boulevard to MoKan Trail Bridge
+        phases:
+          - {name: Construction, said: "Construction is expected to begin by the end of October 2025, pending TxDOT approval.", start: 2025-10}
+      - source: City of Austin Airport Boulevard corridor page, construction update of 15 September 2025
+        url: https://experience.arcgis.com/experience/e937439aa3ce44b6b95172e2ae119cb7/page/Home
+        dated: 2025-09-15
+        capture: https://archive.changesaroundme.com/coa-airport-corridor/2026-09-20-1524.pdf
+        about: Signal improvements
+        phases:
+          - {name: Phase 2 construction, said: "construction anticipated to begin fall 2025", start: 2025-09}
 
   - slug: convention-center
     name: Convention Center
@@ -232,6 +279,15 @@ projects:
     kind: project
     orgs: [CoA]
     sources: [coa-mokan-trail]
+    schedule:
+      - source: City of Austin MoKan Trail page
+        url: https://data.austintexas.gov/stories/s/MoKan-Trail/9h7i-xcr8/
+        retrieved: 2026-09-02
+        capture: https://archive.changesaroundme.com/coa-mokan-trail/2026-09-02-1548.pdf
+        note: The page also says construction on phase 5 "began in January 2026" and "is expected to take approximately 10 months to complete".
+        phases:
+          - {name: Phase 3B, said: "Phase 3B: Fall 2026", start: 2026-09, end: 2026-11}
+          - {name: "Phase 5, Boggy Creek Bridge", said: "Phase 5: Winter 2026 - Fall 2026*", start: 2026-01, end: 2026-11}
 
   - slug: grove-riverside-site
     name: Grove–Riverside site
@@ -297,18 +353,51 @@ projects:
     kind: plan
     orgs: [CoA]
     sources: [coa-east-riverside-corridor-planning]
+    schedule:
+      - source: Speak Up Austin project page
+        url: https://www.speakupaustin.org/ERCPlanning
+        retrieved: 2026-11-20
+        capture: https://archive.changesaroundme.com/coa-east-riverside-corridor-planning/2026-11-20-0827.pdf
+        note: '"Winter 2026" and "Winter 2027" are read as the start of those years, from the order the page lists them in.'
+        phases:
+          - {name: Round 1 of community engagement, said: "Winter 2026", start: 2026-01, end: 2026-02}
+          - {name: Round 2 of community engagement, said: "Summer 2026", start: 2026-06, end: 2026-08}
+          - {name: Round 3 of community engagement, said: "Winter 2027", start: 2027-01, end: 2027-02}
+          - {name: Public review of plans, said: "Public Review Plans: Spring 2027", start: 2027-03, end: 2027-05}
+          - {name: Adoption process, said: "Adoption Process: Spring 2027", start: 2027-03, end: 2027-05}
 
   - slug: imagine-austin-update
     name: Imagine Austin Update
     kind: plan
     orgs: [CoA]
     sources: [coa-imagine-austin-update]
+    schedule:
+      - source: Speak Up Austin project page
+        url: https://www.speakupaustin.org/imagineaustin
+        retrieved: 2026-11-09
+        capture: https://archive.changesaroundme.com/coa-imagine-austin-update/2026-11-09-0711.pdf
+        note: '"Winter 2026" is read as the start of 2026 and "Winter 2027" as the end of 2027, from the order the page lists them in.'
+        phases:
+          - {name: Community engagement and outreach, said: "Winter 2026 - Fall 2027", start: 2026-01, end: 2027-11}
+          - {name: Draft review, said: "Fall - Winter 2027", start: 2027-09, end: 2027-12}
+          - {name: Plan adoption, said: "The Imagine Austin Update is anticipated to be ready for adoption in spring 2028.", start: 2028-03, end: 2028-05}
 
   - slug: great-streets-plan
     name: Great Streets Plan Update
     kind: plan
     orgs: [CoA]
     sources: [coa-great-streets-plan-update]
+    schedule:
+      - source: Speak Up Austin project page
+        url: https://www.speakupaustin.org/GreatStreetsUpdate
+        retrieved: 2026-11-15
+        capture: https://archive.changesaroundme.com/coa-great-streets-plan-update/2026-11-15-0645.pdf
+        note: '"Winter 2026" is read as the start of 2026, since it follows 2025 dates.'
+        phases:
+          - {name: Community outreach, said: "Summer 2025 - Winter 2026", start: 2025-06, end: 2026-02}
+          - {name: Feedback, said: "Fall 2025 - Winter 2026", start: 2025-09, end: 2026-02}
+          - {name: Production, said: "Fall 2025 - Winter 2026", start: 2025-09, end: 2026-02}
+          - {name: Review and approval, said: "Fall 2025 - Fall 2027", start: 2025-09, end: 2027-11}
 
   - slug: urban-trails-plan
     name: Urban Trails Plan
@@ -327,6 +416,13 @@ projects:
     kind: plan
     orgs: [CoA]
     sources: [coa-i35-central-samp]
+    schedule:
+      - source: Speak Up Austin project page
+        url: https://www.speakupaustin.org/i35samp
+        retrieved: 2026-09-20
+        capture: https://archive.changesaroundme.com/coa-i35-central-samp/2026-09-20-1119.pdf
+        phases:
+          - {name: Comments on the final draft, said: "Please review the draft and recommended projects, and share your comments by August 31, 2026.", end: 2026-08-31}
 
   - slug: our-future-35
     name: Our Future 35
@@ -334,6 +430,14 @@ projects:
     orgs: [CoA]
     sources: [coa-our-future-35]
     also_called: [Cap and Stitch]
+    schedule:
+      - source: Speak Up Austin project page, "What is the timeline for construction?"
+        url: https://www.speakupaustin.org/of35
+        retrieved: 2026-10-27
+        capture: https://archive.changesaroundme.com/coa-our-future-35/2026-10-27-0901.pdf
+        phases:
+          - {name: Caps and stitches construction, said: "Caps and stitches will be constructed along with TxDOT’s highway expansion from 2026 to 2032.", start: 2026, end: 2032}
+          - {name: Community amenities, said: "Community amenities will be added after the highway project is complete, starting around 2031 or 2032.", start: 2031}
 
   - slug: west-campus-transportation-plan
     name: West Campus Transportation Plan
@@ -365,6 +469,14 @@ projects:
     kind: plan
     orgs: [CoA]
     sources: [coa-east-austin-historic-resource-survey]
+    schedule:
+      - source: Speak Up Austin project page
+        url: https://www.speakupaustin.org/eastaustinsurvey
+        retrieved: 2026-10-30
+        capture: https://archive.changesaroundme.com/coa-east-austin-historic-resource-survey/2026-10-30-0636.pdf
+        phases:
+          - {name: Draft recommendations for public feedback, said: "A draft of the survey recommendations will be shared for public feedback in summer 2027.", start: 2027-06, end: 2027-08}
+          - {name: Survey completed, said: "The survey will be completed in the spring of 2028.", end: 2028-05}
 
   - slug: lower-colorado-river-wrap
     name: Lower Colorado River Watershed Restoration and Access Plan
@@ -381,6 +493,13 @@ projects:
     orgs: [CoA]
     sources: [coa-citywide-density-bonus]
     also_called: [C20-2024-004]
+    schedule:
+      - source: Speak Up Austin project page
+        url: https://www.speakupaustin.org/Citywidedb
+        retrieved: 2026-10-27
+        capture: https://archive.changesaroundme.com/coa-citywide-density-bonus/2026-10-27-0737.pdf
+        phases:
+          - {name: Approved by City Council, said: "The Citywide Density Bonus Program was approved by City Council on May 21, 2026.", start: 2026-05-21}
 
   - slug: etod-overlay-phase-2
     name: ETOD Overlay, phase 2
@@ -400,12 +519,31 @@ projects:
     kind: policy
     orgs: [CoA]
     sources: [coa-green-infrastructure-initiative]
+    schedule:
+      - source: Speak Up Austin project page
+        url: https://www.speakupaustin.org/greeninfrastructure
+        retrieved: 2026-11-12
+        capture: https://archive.changesaroundme.com/coa-green-infrastructure-initiative/2026-11-12-0632.pdf
+        phases:
+          - {name: Initial recommendations on permitting and maintenance, said: "Staff currently anticipate sharing initial recommendations related to permitting and maintenance approaches in January 2027", start: 2027-01}
+          - {name: Further implementation and process recommendations, said: "followed by additional implementation and process recommendations in Spring 2027", start: 2027-03, end: 2027-05}
+          - {name: Recommendations to the TARP and implementation, said: "Staff currently anticipate sharing initial recommendations to the TARP in Spring 2027, with continued implementation through 2028.", start: 2027-03, end: 2028}
 
   - slug: 2026-bond
     name: Shape Austin's 2026 Bond
     kind: policy
     orgs: [CoA]
     sources: [coa-shape-austins-2026-bond]
+    schedule:
+      - source: Speak Up Austin project page
+        url: https://speakupaustin.org/bond2026
+        retrieved: 2026-11-06
+        capture: https://archive.changesaroundme.com/coa-shape-austins-2026-bond/2026-11-06-0638.pdf
+        phases:
+          - {name: Task force recommendations to Council, said: "May 2026: BEATF will present formal recommendations to Council.", start: 2026-05}
+          - {name: Council defines the bond package, said: "July 2026: Council defines bond package", start: 2026-07}
+          - {name: Election, said: "a citywide election to take place on Tuesday, November 3, 2026", start: 2026-11-03}
+          - {name: Project details on the bond dashboard, said: "Detailed project information is expected to be available on the Austin Bond Dashboard in early 2027.", start: 2027-01}
 
   - slug: economic-development-policy
     name: Shaping Austin's Economic Development Policy
@@ -474,6 +612,14 @@ projects:
     kind: policy
     orgs: [CapMetro]
     sources: [capmetro-service-changes, capmetro-service-changes-jan-2027, capmetro-service-changes-aug-2026]
+    schedule:
+      - source: CapMetro proposed January 2027 service changes page
+        url: https://www.capmetro.org/servicechange/proposed-january-2027-service-changes
+        retrieved: 2026-11-01
+        capture: https://archive.changesaroundme.com/capmetro-service-changes-jan-2027/2026-11-01-0644.pdf
+        about: January 2027 service change
+        phases:
+          - {name: Changes take effect, said: "The following schedule changes begin Sunday, January 10, 2027.", start: 2027-01-10}
 
   - slug: capmetro-fare-increase
     name: CapMetro fare increase, 2027 and 2029
@@ -509,12 +655,35 @@ projects:
     orgs: [CAMPO]
     sources: [campo-2026-fall-tip-amendments]
     also_called: [Transportation Improvement Program]
+    schedule:
+      - source: CAMPO open house page
+        url: https://www.campotexas.org/open-house/2027-2030-tip-amendments-open-house-fall-2026/
+        retrieved: 2026-09-21
+        capture: https://archive.changesaroundme.com/campo-2026-fall-tip-amendments/2026-09-21-2259.pdf
+        about: Fall 2026 amendments
+        phases:
+          - {name: Public hearing, said: "CAMPO’s TPB will hold a public hearing at the September 14, 2026", start: 2026-09-14}
+          - {name: Comment period closes, said: "The comment period is open through September 21, 2026.", end: 2026-09-21}
+          - {name: Action by the Transportation Policy Board, said: "anticipated to take action on the amendments at the October 4, 2026 meeting", start: 2026-10-04}
 
   - slug: 290-extension
     name: 290 Extension
     kind: project
     orgs: [CTRMA]
     sources: [ctrma-290-extension, ctrma-290-extension-open-house]
+    schedule:
+      - source: 290 Extension open house page, "Project Schedule"
+        url: https://290extensionproject.com/openhouse/
+        retrieved: 2026-11-20
+        capture: https://archive.changesaroundme.com/ctrma-290-extension-open-house/2026-11-20-0830.pdf
+        phases:
+          - {name: Project kickoff, said: "April 2025", start: 2025-04}
+          - {name: Community listening sessions, said: "September 2025", start: 2025-09}
+          - {name: Project design began, said: "Early 2026", start: 2026-01}
+          - {name: Preliminary schematic layouts open house, said: "September and October 2026", start: 2026-09, end: 2026-10}
+          - {name: Draft environmental document, said: "Mid 2027", start: 2027-05}
+          - {name: Public hearing, said: "Mid/Late 2027", start: 2027-05, end: 2027-12}
+          - {name: Final schematic and environmental decision, said: "Early 2028", start: 2028-01}
 
   # ───────────────────────────────── TxDOT ─────────────────────────────────
 
@@ -538,6 +707,14 @@ projects:
     orgs: [TxDOT]
     sources: [txdot-utp-public-involvement]
     also_called: [UTP]
+    schedule:
+      - source: TxDOT UTP public involvement page
+        url: https://www.txdot.gov/projects/planning/utp/utp-public-involvement.html
+        retrieved: 2026-11-19
+        capture: https://archive.changesaroundme.com/txdot-utp-public-involvement/2026-11-19-0912.pdf
+        about: 2027 UTP
+        phases:
+          - {name: Adopted by the Texas Transportation Commission, said: "The 2027 UTP was adopted by the Texas Transportation Commission on Aug. 26, 2026.", start: 2026-08-26}
 
   # ───────────────────────── PUC and utilities ─────────────────────────
 
