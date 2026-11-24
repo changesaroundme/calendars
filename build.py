@@ -32,7 +32,7 @@ from datetime import date, datetime, timedelta, timezone
 
 import requests
 
-from caltools import projects, registry, sourcespage
+from caltools import meetings, projects, registry, sourcespage
 from caltools.ics import CENTRAL, emit
 from caltools.model import Event
 from sources import (atp, austin, campo, capmetro, ctrma, curated, lcra,
@@ -537,6 +537,7 @@ def main() -> int:
     # only an alarm; offline it is raised as it is, to be seen and fixed.
     if offline:
         projects.selftest()
+        meetings.selftest()
     try:
         project_list, org_names = projects.load()
     except Exception as e:
@@ -549,6 +550,65 @@ def main() -> int:
             unhealthy.append(prob if prob.startswith("projects.yaml") else f"projects.yaml {prob}")
         if offline:
             return 1
+    if offline:
+        meetings.selftest_list(project_list)
+    # A `wrong_matches` line for a meeting the calendars no longer have is a
+    # problem like any other in the file (fatal offline, an alarm live), but
+    # live it does not cost the list: a meeting that is moved gets a new id,
+    # so this can happen without anyone touching projects.yaml.
+    if project_list:
+        try:
+            gone = projects.unknown_meetings(project_list)
+        except Exception as exc:
+            if offline:
+                raise
+            gone = [f"wrong_matches could not be checked ({type(exc).__name__}: {exc})"]
+        for prob in gone:
+            print(f"[projects] {prob}")
+            unhealthy.append(f"projects.yaml {prob}")
+        if gone and offline:
+            return 1
+    # Which meetings name which listed project (caltools/meetings.py): each
+    # calendar's events are noted as the loop below reaches them. This is an
+    # extra on top of the calendars and never a condition for them. Without
+    # a list there is nothing to match; if the matching itself fails, that is
+    # raised offline and an alarm live, and from then on the calendars are
+    # written as the sources gave them, without the line naming a project.
+    tied: meetings.Tied | None = None
+
+    def matching_failed(exc: Exception) -> None:
+        nonlocal tied
+        if offline:
+            raise exc
+        print(f"[projects] matching meetings to projects failed ({type(exc).__name__}: {exc})")
+        unhealthy.append(f"projects.yaml matching meetings to projects failed ({type(exc).__name__}: {exc}); "
+                         "calendars published without the line naming a project")
+        tied = None
+
+    if project_list:
+        try:
+            tied = meetings.Tied(project_list, today, projects.calendar_names())
+        except Exception as exc:
+            matching_failed(exc)
+
+    def note_meetings(key: str, events: list[Event]) -> None:
+        """Have `tied` look through one calendar's events."""
+        if tied is not None:
+            try:
+                tied.add(key, events)
+            except Exception as exc:
+                matching_failed(exc)
+
+    def naming_projects(events: list[Event]) -> list[Event]:
+        """The events as a calendar file carries them: a copy with one more
+        line for each that names a listed project (the events themselves, and
+        so the snapshots, stay as the source gave them)."""
+        if tied is not None:
+            try:
+                return tied.published(events)
+            except Exception as exc:
+                matching_failed(exc)
+        return events
     # Every live response passes through here; docs/status.json is written
     # at the end of the build with per-slug checked/changed stamps.
     tracker = registry.Tracker(reg_rows)
@@ -652,7 +712,9 @@ def main() -> int:
             # Per-org .ics goes stale-but-present (never rewritten); give
             # all.ics the same courtesy by backfilling from the last-good
             # snapshot, so combined-feed subscribers don't lose the org.
-            stale = [e for e in snapshot_events(snapshot_path) if in_window(e)]
+            last_good = snapshot_events(snapshot_path)
+            note_meetings(key, last_good)
+            stale = [e for e in last_good if in_window(e)]
             if stale:
                 print(f"[{key}] backfilling all.ics with {len(stale)} snapshot events")
                 all_events.extend(stale)
@@ -703,10 +765,11 @@ def main() -> int:
         # inside the horizon isn't dropped for ending just past it.
         cutoff, horizon = today - PUBLISH_HISTORY, publish_horizon(today)
         publishable = [e for e in events if in_window(e)]
+        note_meetings(key, events)
         if publishable:
             # Always publish what we got (stale beats absent)...
             (docs / f"{key}.ics").write_text(
-                emit(publishable, calname, now, color=color), newline=""
+                emit(naming_projects(publishable), calname, now, color=color), newline=""
             )
             all_events.extend(publishable)
             # ...and advance the snapshot from the MERGED events unless the
@@ -731,6 +794,7 @@ def main() -> int:
             stale = [e for e in snapshot_events(snapshot_path) if in_window(e)]
             if stale:
                 print(f"[{key}] backfilling all.ics with {len(stale)} snapshot events")
+                note_meetings(key, stale)
                 all_events.extend(stale)
         old_n = sum(1 for e in events if event_day(e) < cutoff)
         far_n = sum(1 for e in events if start_day(e) > horizon)
@@ -758,6 +822,10 @@ def main() -> int:
         if folded:
             print(f"[all] folded {folded} corporation-board meetings into "
                   "their council events")
+        # After the folding, which rewrites the council descriptions: the
+        # line naming a project has to stay the last one. (A folded board
+        # meeting that names a project keeps its own line on austin.ics.)
+        combined = naming_projects(combined)
         (docs / "all.ics").write_text(
             emit(combined, "CAM - All", now, color=ALL_COLOR), newline=""
         )
@@ -794,12 +862,18 @@ def main() -> int:
     archive = sourcespage.load_archive(DOCS / "archive.json")
     if archive:
         (docs / "archive.md").write_text(sourcespage.render_archive_markdown(reg_rows, archive))
-    # The project list as a readable page. Undated on purpose, so it changes
-    # only when projects.yaml does and not with every build. Failing to write
-    # it is handled like failing to load the list: raised offline, an alarm live.
-    if project_list:
+    # The project list as a readable page, with each project's meetings.
+    # Undated on purpose, so it changes only when projects.yaml or one of
+    # those meetings does (or a meeting passes from upcoming to past), and
+    # not with every build. Left as it was when the matching failed. Failing
+    # to write it is handled like failing to load the list: raised offline,
+    # an alarm live.
+    if project_list and tied is not None:
         try:
-            (docs / "projects.md").write_text(projects.preview(project_list, org_names), encoding="utf-8")
+            (docs / "projects.md").write_text(projects.preview(project_list, org_names, tied=tied), encoding="utf-8")
+            found = tied.mentions
+            print(f"[projects] {len({m.event.stable_uid() for m in found})} meetings name "
+                  f"{len({m.project['slug'] for m in found})} of {len(project_list)} listed projects")
         except Exception as e:
             if offline:
                 raise

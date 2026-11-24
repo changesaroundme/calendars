@@ -69,6 +69,7 @@ sources/openmeetings.py  SOS filings watcher (shadow mode)
 caltools/model.py    Event dataclass + stable UIDs
 caltools/ics.py      RFC 5545 emitter (folding, escaping, VTIMEZONE)
 caltools/projects.py projects.yaml: the project list and its checks
+caltools/meetings.py which meetings name which project on the list
 build.py             orchestrates, health-checks, writes docs/ + data/
 ```
 
@@ -154,8 +155,30 @@ every field.
 Every build checks the file (a mistake fails the offline build and raises an
 alarm on the live one, without stopping the calendars) and writes it out as
 [`docs/projects.md`](docs/projects.md): a chart of each project's current
-schedule, every statement behind it, and how far its dates have moved. It is
-the groundwork for project pages and a map.
+schedule, every statement behind it, how far its dates have moved, and the
+meetings that name it. It is the groundwork for project pages and a map.
+
+**Meetings.** A meeting is listed under a project when its title, its agenda
+or its description uses one of the project's names. The build only compares
+wording; it never guesses and fetches nothing. A calendar entry that names a
+project gains a last line saying so ("Changes Around Me follows: ..."), and
+`docs/projects.md` ends with two tables: which bodies' agendas are being
+read, and every match with the wording that made it.
+
+- **To add a name a project goes by**, add the wording to that project's
+  `match` list in `projects.yaml`, one line each, with a note of where it was
+  seen: `- Plaza Saltillo Rail Station expansion   # CapMetro Board agenda, 16 Nov 2026`.
+  Add it only if every meeting that uses the wording is about the project.
+- **To reject a wrong match**, find it in the "Every match" table and copy the
+  line in its last column to `wrong_matches` at the end of `projects.yaml`.
+  If the trouble is a longer wording that only contains a project's name, one
+  line rejects that wording everywhere:
+  `- {project: tip-amendments-2027-2030, wording: Statewide Transportation Improvement Program}`.
+
+Either change shows after the next build. To see it at once, run the
+`--preview` command above; it reads the calendars as the last build saved
+them. If a rejected meeting is later moved, it gets a new id and the build
+raises an alarm asking for its line to be copied again.
 
 Pull requests run the offline build as a check (`.github/workflows/check.yml`).
 

@@ -18,8 +18,12 @@ place, and the author's own writing stays in the vault page an entry points to.
         sources: [capmetro-rail-and-trail-improvements]           # sources.yaml slugs
         links: [{name: ..., url: ...}]
         also_called: [Rail and Trail Improvements]
+        match: [Plaza Saltillo Rail Station expansion]   # wording agendas use for it
         schedule: [...]            # see below
         note: free text, never read by code
+    wrong_matches:                 # matches that were wrong
+      - {project: red-line-e-5th, meeting: capmetro-board-of-directors-20260928T1200@...}
+      - {project: tip-amendments-2027-2030, wording: Statewide Transportation Improvement Program}
 
 A schedule is a list of statements, oldest first. A statement records what
 one source said about timing at one moment and is never edited afterwards:
@@ -60,8 +64,18 @@ as long as it says who said it and when.
     python -m caltools.projects                    # check the file
     python -m caltools.projects --preview FILE.md  # and write a page for the vault
 
+A meeting is tied to a project when its title, agenda or description uses
+one of the project's names: `name`, `also_called` and `match`.
+caltools/meetings.py does the comparing and says how; this module checks the
+three lists and `wrong_matches`, which takes one meeting away from a project
+(by its id) or stops one wording counting as a mention of it. A `note` on a
+`wrong_matches` line says why, for whoever reads it next. A meeting that is
+moved gets a new id, so its line stops applying; unknown_meetings() reports
+that separately, because it is nobody's mistake and the list is still good.
+
 The build runs the same checks (fatal offline, an alarm live) and writes the
-list as docs/projects.md.
+list as docs/projects.md, with each project's meetings, a table of which
+bodies' agendas are read, and every match with the line that undoes it.
 
 load() and parse() report problems as plain strings that name the line of
 the file or the project by slug, so a bad edit is findable without reading a
@@ -70,6 +84,7 @@ traceback.
 from __future__ import annotations
 
 import calendar
+import json
 import os
 import pathlib
 import re
@@ -77,15 +92,19 @@ import sys
 import unicodedata
 from datetime import date, datetime
 
+from caltools import meetings
+
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PROJECTS = ROOT / "projects.yaml"
+DATA = ROOT / "data"
 
 KIND = {"project", "plan", "policy"}
 TIER = {"focus", "watching"}
-TOP_KEYS = {"defaults", "organizations", "projects"}
+TOP_KEYS = {"defaults", "organizations", "projects", "wrong_matches"}
 DEFAULT_KEYS = {"tier", "added"}
 PROJECT_KEYS = {"slug", "name", "kind", "tier", "orgs", "page", "sources", "links",
-                "also_called", "schedule", "added", "note"}
+                "also_called", "match", "schedule", "added", "note"}
+WRONG_MATCH_KEYS = {"project", "meeting", "wording", "note"}
 STATEMENT_KEYS = {"source", "url", "dated", "retrieved", "capture", "about", "from_notes", "note", "phases"}
 PHASE_KEYS = {"name", "said", "start", "end"}
 SLUG_RE = re.compile(r"[a-z0-9]+(-[a-z0-9]+)*")
@@ -128,7 +147,9 @@ def parse(doc, org_codes, source_slugs) -> tuple[list[dict], dict[str, str], lis
     """projects.yaml -> (projects, the organizations it adds, problems). Every
     project comes back with every field present — strings and lists (and one
     yes/no, `from_notes`), never None — and defaults applied, so nothing
-    downstream has to ask."""
+    downstream has to ask. Each one also carries what `wrong_matches` says
+    about it, as `not_meetings` and `not_wording`. Whether a meeting named
+    there is still on the calendars is for unknown_meetings() to say."""
     if not isinstance(doc, dict):
         return [], {}, ["projects.yaml: top level must be a mapping"]
     problems = [f"projects.yaml: unknown top-level key {k!r}" for k in sorted(set(doc) - TOP_KEYS, key=str)]
@@ -177,7 +198,9 @@ def parse(doc, org_codes, source_slugs) -> tuple[list[dict], dict[str, str], lis
                  tier=_text(raw.get("tier") or defaults.get("tier")), page=_text(raw.get("page")),
                  added=_text(raw.get("added") or defaults.get("added")), note=_text(raw.get("note")),
                  orgs=[_text(o) for o in items("orgs")], sources=[_text(s) for s in items("sources")],
-                 also_called=[_text(a) for a in items("also_called")], links=[], schedule=[])
+                 also_called=[_text(a) for a in items("also_called")],
+                 match=[_text(m) for m in items("match")], not_meetings=[], not_wording=[],
+                 links=[], schedule=[])
         if not SLUG_RE.fullmatch(slug):
             bad("slug must be lowercase letters, digits and hyphens")
         elif slug in slugs:
@@ -188,6 +211,12 @@ def parse(doc, org_codes, source_slugs) -> tuple[list[dict], dict[str, str], lis
         elif p["name"].lower() in names:
             bad(f"name {p['name']!r} is used twice")
         names.add(p["name"].lower())
+        for key in ("also_called", "match"):
+            if "" in p[key]:
+                bad(f"{key} has an empty entry")
+            for entry in items(key):
+                if isinstance(entry, (dict, list)):
+                    bad(f"{key}: {entry!r} is not plain text (a wording with a colon in it needs quotes around it)")
         if p["kind"] not in KIND:
             bad(f"kind must be one of {', '.join(sorted(KIND))}")
         if p["tier"] not in TIER:
@@ -277,6 +306,43 @@ def parse(doc, org_codes, source_slugs) -> tuple[list[dict], dict[str, str], lis
         projects.append(p)
     if not projects:
         problems.append("projects.yaml: no projects")
+
+    # A meeting is listed under every project one of whose names it uses, so a
+    # name two projects share would list it under both. (Two projects with the
+    # same `name` are already reported above.)
+    claimed: dict[str, tuple[dict, bool]] = {}
+    for p in projects:
+        for n, phrase in enumerate(dict.fromkeys([p["name"], *p["also_called"], *p["match"]])):
+            key = meetings.phrase_key(phrase)
+            first, first_is_name = claimed.setdefault(key, (p, n == 0))
+            if key and first is not p and first["slug"] != p["slug"] and not (n == 0 and first_is_name):
+                problems.append(f"{p['slug'] or p['name']}: {phrase!r} is also a name for {first['slug']} — "
+                                "a meeting that uses it would be listed under both")
+
+    by_slug = {p["slug"]: p for p in projects}
+    for n, raw in enumerate(shaped("wrong_matches", list, "a list of lines, each {project: ..., meeting: ...} "
+                                                         "or {project: ..., wording: ...}"), 1):
+        here = f"wrong_matches #{n}"
+        if not isinstance(raw, dict):
+            problems.append(f"{here}: not a mapping")
+            continue
+        problems += [f"{here}: unknown key {k!r}" for k in sorted(set(raw) - WRONG_MATCH_KEYS, key=str)]
+        slug, meeting, wording = (_text(raw.get(k)) for k in ("project", "meeting", "wording"))
+        p = by_slug.get(slug)
+        if p is None:
+            problems.append(f"{here}: no project has the slug {slug!r}")
+        if bool(meeting) == bool(wording):
+            problems.append(f"{here}: give either `meeting` (its id) or `wording`")
+        elif meeting:
+            if p:
+                p["not_meetings"].append(meeting)
+        elif p:
+            names = [meetings.phrase_key(x) for x in (p["name"], *p["also_called"], *p["match"]) if x]
+            if not any(name in meetings.phrase_key(wording) for name in names):
+                problems.append(f"{here}: {wording!r} contains none of the names {slug} is matched on, "
+                                "so it would change nothing")
+            else:
+                p["not_wording"].append(wording)
     return projects, extra, problems
 
 
@@ -324,6 +390,30 @@ def load(path: pathlib.Path = PROJECTS) -> tuple[list[dict], dict[str, str]]:
     if problems:
         raise ValueError("\n".join(problems))
     return projects, {**known, **extra}
+
+
+def unknown_meetings(projects: list[dict], data: pathlib.Path = DATA) -> list[str]:
+    """Problems with `wrong_matches` lines whose meeting is not on the
+    calendars as the last build saved them in `data`. Apart from parse()
+    because nobody has to edit the file for this to happen: a meeting that is
+    moved gets a new id. The line then does nothing and needs copying again,
+    but the rest of the list is as good as it was."""
+    ids = {ev.stable_uid() for events in meetings.saved(data).values() for ev in events}
+    return [f"wrong_matches: no meeting on the calendars has the id {uid!r} (given for {p['slug']}). A meeting "
+            "that is moved gets a new id: copy the line again from “Every match” in docs/projects.md, or remove it"
+            for p in projects for uid in p["not_meetings"] if uid not in ids]
+
+
+def calendar_names() -> dict[str, str]:
+    """Calendar (austin, capmetro, ...) -> the organization it belongs to, in
+    the order sources.yaml lists the organizations."""
+    from caltools import registry
+    orgs = registry.orgs()
+    names: dict[str, str] = {}
+    for row in registry.rows():
+        if row.get("calendar"):
+            names.setdefault(row["calendar"], orgs.get(row["org"], {}).get("name") or row["org"])
+    return names
 
 
 def missing_pages(projects: list[dict], vault: pathlib.Path) -> list[str]:
@@ -490,24 +580,31 @@ HEADS_UP = ("Heads up: this project leans heavily on AI, and not every line has 
 
 
 def preview(projects: list[dict], org_names: dict[str, str], vault: bool = False,
-            today: date | None = None) -> str:
+            today: date | None = None, tied: meetings.Tied | None = None) -> str:
     """The list as a readable page: what it is and how to read it, then every
-    project with a schedule (chart, statements, slippage), then a table of
-    all. The same Markdown serves GitHub (docs/projects.md) and Obsidian.
-    `vault` is for the author's own copy: it adds the open questions and the
-    links to vault pages, which only resolve inside the vault."""
+    project with a schedule (chart, statements, slippage) or a meeting, then a
+    table of all. The same Markdown serves GitHub (docs/projects.md) and
+    Obsidian. `vault` is for the author's own copy: it adds the open questions
+    and the links to vault pages, which only resolve inside the vault. `tied`
+    is which meetings name which project (caltools.meetings.tie); with it the
+    page lists each project's meetings and ends with the table of agenda
+    digests and the table of every match."""
     scheduled = [p for p in projects if p["schedule"]]
+    met = {p["slug"]: meetings.project_section(tied, p) for p in projects} if tied else {}
     codes = sorted({o for p in projects for o in p["orgs"]}, key=str.lower)
     who = "; ".join(f"{c} = {re.sub(r' *[(][^()]*[)]$', '', org_names.get(c, c))}" for c in codes)
     out = ["> [!NOTE]", f"> {HEADS_UP}", "",
            "# What Changes Around Me follows", "",
            "[Changes Around Me](https://changesaroundme.com) follows a hand-picked set of public projects, plans "
            "and policies, most of them in Austin, Texas. This page lists them, with what their sources have said "
-           "about timing. It is generated from `projects.yaml`" + (f" on {today.isoformat()}" if today else "")
+           "about timing" + (" and the public meetings that name them" if tied else "")
+           + ". It is generated from `projects.yaml`" + (" and the meeting calendars" if tied else "")
+           + (f" on {today.isoformat()}" if today else "")
            + "; edits made here are overwritten, so change that file instead.", "",
            f"{len(projects)} on the list: {sum(p['tier'] == 'focus' for p in projects)} Focus, "
            f"{sum(p['tier'] == 'watching' for p in projects)} watching. "
-           f"{len(scheduled)} have a schedule recorded.", "",
+           f"{len(scheduled)} have a schedule recorded."
+           + (f" {sum(map(bool, met.values()))} are named by a meeting on the calendars." if tied else ""), "",
            "## How to read this page",
            "- **Focus** and **watching.** A Focus project is one the site's author has written a page about. "
            "The rest are watched: they are on the list and the web pages about them are checked for changes.",
@@ -524,16 +621,26 @@ def preview(projects: list[dict], org_names: dict[str, str], vault: bool = False
            "of a year, so it is read from the rest of the page, and the statement says which way.",
            "- **Moved.** A phase has moved when the first statement that dates it and the latest one cannot "
            "both be right. Where one of them names only a year, the move is given as a range of months.",
+           *(["- **Meetings.** A meeting on the [calendars](https://changesaroundme.com/calendar) is listed under "
+              "a project when its title, its agenda or its description uses one of the project's names. Only the "
+              "wording is compared, so a meeting that discusses a project without naming it is not listed. The two "
+              "tables at the end of the page show which bodies' agendas are read and every match that was made."]
+             if tied else []),
            f"- **Who.** {who}.",
            "- **Monitored pages.** How many web pages about a project are checked for changes and archived. "
            f"They are listed in {'[[Links]]' if vault else '[sources.md](sources.md)'}.", ""]
     questions = gaps(projects) if vault else []
     if questions:
         out += ["## Open questions", *[f"- {q}" for q in questions], ""]
-    out += ["## Schedules", "Each chart shows the latest statement, or the latest for each part of a project "
+    out += ["## Schedules and meetings" if tied else "## Schedules",
+            "Each chart shows the latest statement, or the latest for each part of a project "
             "recorded in parts; a schedule with a single date has no chart. Underneath is every statement "
-            "recorded here, oldest first, and how far each phase has moved between the first and the latest.", ""]
-    for p in scheduled:
+            "recorded here, oldest first, and how far each phase has moved between the first and the latest."
+            + (" Last come the meetings that name the project: those still to come, then the most recent ones "
+               "held, with the agenda item that names it where the agenda has been read." if tied else ""), ""]
+    for p in projects:
+        if not (p["schedule"] or met.get(p["slug"])):
+            continue
         facts = [p["kind"].capitalize(), p["tier"], ", ".join(p["orgs"])]
         facts += [f"also called {', '.join(p['also_called'])}"] if p["also_called"] else []
         facts += [f"[[{p['page']}|page]]"] if p["page"] and vault else []
@@ -560,20 +667,28 @@ def preview(projects: list[dict], org_names: dict[str, str], vault: bool = False
                 out.append(f"- {m['phase']}{' (' + m['about'] + ')' if m['about'] else ''}, {m['edge']}: "
                            f"{_how_far(m)}. {m['first']} ({m['first_source']}, {m['first_when']}) → "
                            f"{m['latest']} ({m['latest_source']}, {m['latest_when']}).")
-        out.append("")
+        if p["schedule"]:
+            out.append("")
+        out += met.get(p["slug"], [])
     out += ["## Everything on the list", "",
-            "| Name | Kind | Tier | Who | Monitored pages | Statements | Links |", "|---|---|---|---|---|---|---|"]
+            "| Name | Kind | Tier | Who | Monitored pages | Statements |" + (" Meetings |" if tied else "") + " Links |",
+            "|---|---|---|---|---|---|---|" + ("---|" if tied else "")]
     for p in sorted(projects, key=lambda p: (p["tier"] != "focus", _sort_key(p["name"]))):
         name = p["name"] + (f" *(also called {', '.join(p['also_called'])})*" if p["also_called"] else "")
         links = ", ".join(f"[{link['name']}]({link['url']})" for link in p["links"])
         out.append(f"| {_cell(name)} | {p['kind']} | {p['tier']} | {', '.join(p['orgs']) or '—'} | "
-                   f"{len(p['sources']) or ''} | {len(p['schedule']) or ''} | {_cell(links)} |")
-    return "\n".join(out) + "\n"
+                   f"{len(p['sources']) or ''} | {len(p['schedule']) or ''} | "
+                   + (f"{sum(map(len, meetings.meeting_lines(tied, p))) or ''} | " if tied else "")
+                   + f"{_cell(links)} |")
+    if tied:
+        out += ["", *meetings.coverage_section(tied), *meetings.matches_section(tied)]
+    return "\n".join(out).rstrip("\n") + "\n"
 
 
 def selftest() -> None:
-    """Prove the checks catch what a hand edit most plausibly breaks, and that
-    slippage, the chart and the page read a schedule the way the docstring says."""
+    """Prove the checks catch what a hand edit most plausibly breaks, that
+    slippage, the chart and the page read a schedule the way the docstring
+    says, and that the page lists a project's meetings."""
     import tempfile
     assert period("2027") == (date(2027, 1, 1), date(2027, 12, 31))
     assert period("2028-02") == (date(2028, 2, 1), date(2028, 2, 29))
@@ -734,6 +849,80 @@ def selftest() -> None:
         assert parse(_read(path), {"CapMetro"}, set())[2] == [
             "rail: schedule #1: dated: '2026-02-31' is not a date that exists"]
 
+    # Names for matching meetings, and the lines that undo a match.
+    board = "capmetro-board-of-directors-20261116T1200@calendars.changesaroundme.com"
+
+    def matching(wrong=(), **second):
+        """Two projects checked, the second with `second`, and `wrong` as wrong_matches."""
+        d = doc(match=["Plaza Saltillo Rail Station expansion"], also_called=["Rail and Trail Improvements"])
+        d["projects"].append(dict(slug="trail", name="Red Line Trail Study", kind="plan", tier="watching",
+                                  orgs=["CapMetro"], **second))
+        d["wrong_matches"] = list(wrong)
+        return parse(d, {"CapMetro"}, {"capmetro-rail"})
+
+    listed, _, none = matching([dict(project="rail", meeting=board, note="a contract for buses"),
+                                dict(project="rail", wording="Rail and Trail Improvements Newsletter")])
+    assert none == [] and listed[0]["match"] == ["Plaza Saltillo Rail Station expansion"], none
+    assert listed[0]["not_meetings"] == [board] and listed[1]["not_meetings"] == []
+    assert listed[0]["not_wording"] == ["Rail and Trail Improvements Newsletter"]
+    for wrong, second, expect in [
+            ([dict(project="rial", meeting=board)], {}, "wrong_matches #1: no project has the slug 'rial'"),
+            ([dict(project="rail")], {}, "give either `meeting` (its id) or `wording`"),
+            ([dict(project="rail", meeting=board, wording="Rail")], {}, "give either `meeting` (its id) or `wording`"),
+            ([dict(project="rail", wording="Bus stop improvements")], {}, "contains none of the names rail is matched on"),
+            ([dict(project="rail", meeting=board, because="x")], {}, "wrong_matches #1: unknown key 'because'"),
+            (["rail"], {}, "wrong_matches #1: not a mapping"),
+            ([], dict(match=[""]), "trail: match has an empty entry"),
+            ([], dict(match=[{"City Council": "Budget Meeting"}]), "is not plain text (a wording with a colon"),
+            ([], dict(also_called=[None]), "trail: also_called has an empty entry"),
+            ([], dict(match="Trail Study"), "trail: match must be a list"),
+            ([], dict(match=["plaza saltillo  rail station expansion"]), "is also a name for rail"),
+            ([], dict(match=["Rail & Trail Improvements"]), "is also a name for rail"),
+            ([], dict(also_called=["Rail"]), "trail: 'Rail' is also a name for rail")]:
+        found = matching(wrong, **second)[2]
+        assert any(expect in p for p in found), (wrong, second, found)
+    found = parse(dict(doc(), wrong_matches="rail"), {"CapMetro"}, {"capmetro-rail"})[2]
+    assert len(found) == 1 and found[0].startswith("wrong_matches: must be a list"), found
+    # A rejected meeting the calendars no longer have (it was moved, or the id is mistyped) is reported
+    # apart from the rest, so that it never costs the list.
+    with tempfile.TemporaryDirectory() as tmp:
+        saved = pathlib.Path(tmp)
+        (saved / "capmetro.json").write_text(json.dumps([dict(source="capmetro", summary="Board of Directors",
+                                                              start="2026-11-16T12:00:00", uid=board)]))
+        (saved / "health.json").write_text("{}")
+        assert unknown_meetings(listed, saved) == []
+        moved = matching([dict(project="rail", meeting="capmetro-board-of-directors-20261117T1200@x")])
+        assert moved[2] == [] and len(unknown_meetings(moved[0], saved)) == 1
+        assert unknown_meetings(moved[0], saved)[0].startswith(
+            "wrong_matches: no meeting on the calendars has the id 'capmetro-board-of-directors-20261117T1200@x' "
+            "(given for rail).")
+
+    # The page with meetings: a project with no schedule gets a section once a meeting names it.
+    from caltools.model import Event
+    listed = matching()[0]
+    events = [Event(source="capmetro", summary="CapMetro: Board of Directors", start=date(2026, 11, 16), uid=board,
+                    url="https://example.org/board",
+                    description="Summary Agenda\n\nAction Items:\n- Construction of the Plaza Saltillo Rail Station "
+                                "expansion\n\nMemos:\n- Red Line Trail Study update"),
+              Event(source="capmetro", summary="CapMetro: Red Line Trail Study open house", start=date(2026, 12, 9))]
+    tied = meetings.tie(listed, {"capmetro": events}, date(2026, 12, 1), {"capmetro": "CapMetro"})
+    page = preview(listed, {"CapMetro": "CapMetro"}, tied=tied)
+    assert "## Schedules and meetings" in page and "2 are named by a meeting on the calendars." in page
+    assert ("**Past meetings:**\n- 16 Nov 2026 · [CapMetro: Board of Directors](https://example.org/board) · "
+            "“Construction of the Plaza Saltillo Rail Station expansion”\n\n### Red Line Trail Study\n"
+            "Plan · watching · CapMetro\n\n**Upcoming meetings:**\n- 9 Dec 2026 · CapMetro: Red Line Trail Study "
+            "open house\n\n**Past meetings:**\n- 16 Nov 2026 ·") in page, page
+    assert "| Name | Kind | Tier | Who | Monitored pages | Statements | Meetings | Links |\n|---|---|---|---|---|---|---|---|" in page
+    assert "| Rail *(also called Rail and Trail Improvements)* | project | focus | CapMetro | 1 | 3 | 1 |  |" in page
+    assert "| Red Line Trail Study | plan | watching | CapMetro |  |  | 2 |  |" in page
+    assert "| **CapMetro** | **2** | **1** | **2** |" in page
+    assert f"| Rail | 16 Nov 2026 | CapMetro: Board of Directors | Plaza Saltillo Rail Station expansion | " \
+           f"`- {{project: rail, meeting: {board}}}` |" in page and page.endswith("|\n") and "\n\n\n" not in page
+    assert "[[" not in page and "Open questions" not in page and "- **Meetings.**" in page
+    assert "eeting" not in preview(listed, {"CapMetro": "CapMetro"})
+    rejected = matching([dict(project="trail", meeting=board)])[0]
+    assert len(meetings.tie(rejected, {"capmetro": events}, date(2026, 12, 1)).of(rejected[1])) == 1
+
     assert _options([]) == "" and _options(["--preview", "a b.md"]) == _options(["--preview=a b.md"]) == "a b.md"
     for wrong in (["--preview"], ["--preview="], ["--vault"]):
         try:
@@ -772,14 +961,17 @@ def main(argv: list[str] | None = None) -> int:
         print(e)
         return 1
     vault = pathlib.Path(os.environ.get("CAM_VAULT_ROOT") or pathlib.Path.home() / "Obsidian Sync" / "Changes Around Me")
-    problems = missing_pages(projects, vault) if vault.is_dir() else []
+    problems = unknown_meetings(projects) + (missing_pages(projects, vault) if vault.is_dir() else [])
     for problem in problems:
         print(problem)
+    # Meetings are matched against the calendars as the last build saved them.
+    tied = meetings.tie(projects, meetings.saved(DATA), date.today(), calendar_names())
     if out:
         out = pathlib.Path(out).expanduser()
-        out.write_text(preview(projects, org_names, vault=True, today=date.today()), encoding="utf-8")
+        out.write_text(preview(projects, org_names, vault=True, today=date.today(), tied=tied), encoding="utf-8")
         print(f"wrote {out}")
-    print(f"projects.yaml: {len(projects)} entries, {sum(bool(p['schedule']) for p in projects)} with a schedule"
+    print(f"projects.yaml: {len(projects)} entries, {sum(bool(p['schedule']) for p in projects)} with a schedule, "
+          f"{len({m.project['slug'] for m in tied.mentions})} named by a meeting"
           + ("" if vault.is_dir() else " (vault not here: pages not checked)"))
     return 1 if problems else 0
 

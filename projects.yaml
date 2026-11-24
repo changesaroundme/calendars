@@ -11,6 +11,7 @@
 #   sources      monitored pages about it (slugs in sources.yaml)
 #   links        other pages worth having: [{name: ..., url: ...}]
 #   also_called  other names it goes by
+#   match        other wording that means it on an agenda (see "Meetings" below)
 #   schedule     what has been said about its timing (see below)
 #   added        YYYY-MM-DD
 #   note         free text, never read by code
@@ -43,6 +44,29 @@
 # things in or from what else the page says, and the note says which way.
 # The wording stays in `said`, so nobody has to trust the reading.
 #
+# Meetings. A meeting on the calendars is listed under a project when its
+# title, its agenda or its description uses one of the project's names:
+# `name`, `also_called` or `match`. Only whole words count ("290 Extension" is
+# not found in "1290 Extensions"). Capital letters, accents and the kind of
+# dash make no difference, and "&" is the same as "and"; but a name written
+# all in capitals (UTP) has to be in capitals on the agenda too.
+#
+#   To tie more meetings to a project, add the wording to its `match` list,
+#   one line each, with a note of where the wording was seen:
+#       match:
+#         - Plaza Saltillo Rail Station expansion   # CapMetro Board agenda, 16 Nov 2026
+#   A wording goes in only if every meeting that uses it is about the project.
+#   A wording with a colon in it needs quotes: - "City Council: Budget Meeting"
+#
+#   To undo a wrong match, add one line to `wrong_matches` at the end of this
+#   file. docs/projects.md lists every match with that line ready to copy.
+#       - {project: SLUG, meeting: ID}        takes that one meeting away
+#       - {project: SLUG, wording: WORDS}     a longer wording that has the
+#                                             name in it but means something
+#                                             else, wherever it appears
+#   Either line can also carry `note: why`. A meeting that is moved gets a new
+#   ID, so its line has to be copied again; the build says when that happens.
+#
 # Checked by caltools/projects.py:  python -m caltools.projects
 
 defaults:
@@ -63,6 +87,8 @@ projects:
     orgs: [TxDOT]
     page: Focuses/I-35 Between the Lake and E Cesar Chavez
     also_called: [CapEx Central, I-35 CapEx]
+    match:
+      - IH-35 Capital Express Central   # the name with the highway written IH-35; no agenda seen yet
     links:
       - {name: TxDOT project page, url: "https://www.txdot.gov/mymobility35/projects/capex-central.html"}
     schedule:
@@ -86,6 +112,8 @@ projects:
     page: Focuses/Red Line Double Tracking and E 5th Street
     sources: [capmetro-rail-and-trail-improvements, capmetro-rail-trail-navasota-e7th, capmetro-rail-improvements]
     also_called: [Rail and Trail Improvements, CapMetro Rail Improvements]
+    match:
+      - Plaza Saltillo Rail Station expansion   # CapMetro Board agenda, 16 Nov 2026
     links:
       - {name: City of Austin Mobility Bond page, url: "https://storymaps.arcgis.com/stories/0c07fae43ac848358a6aa63a3be27d7a"}
     schedule:
@@ -148,6 +176,9 @@ projects:
     orgs: [PUC]
     page: Focuses/765 kV Transmission Lines
     also_called: [765-kV, 765 kV]
+    match:
+      - Docket 59029   # the two PUC cases linked below
+      - Docket 59315
     links:
       - {name: PUC docket 59029, url: "https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=59029"}
       - {name: PUC docket 59315, url: "https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=59315"}
@@ -157,6 +188,8 @@ projects:
     kind: project
     tier: focus
     page: Focuses/East Ave Trail
+    match:
+      - East Avenue Trail   # the name with Avenue spelled out; no agenda seen yet
 
   # ─────────────────── City of Austin: projects and sites ───────────────────
 
@@ -280,6 +313,8 @@ projects:
     orgs: [CoA, TrailCons]
     sources: [coa-holly-shores-vision-plan, trailcons-holly-shores]
     also_called: [Edward Rendon Sr. Park at Festival Beach, Eastside Family Garden and Lakefront Trail Park]
+    match:
+      - Eastside Family Garden   # Trail Conservancy event titles, Nov 2025 and Oct 2026
     schedule:
       - source: City of Austin parks project page, "Anticipated Schedule"
         url: https://www.austintexas.gov/parks/projects/holly-shores-edward-rendon-sr-park-festival-beach-vision-plan-implementation
@@ -334,6 +369,8 @@ projects:
     kind: project
     orgs: [CoA]
     sources: [coa-2908-south-congress]
+    match:
+      - 2908 S. Congress   # the name with South shortened; no agenda seen yet
     schedule:
       - source: Speak Up Austin project page, "Anticipated Timeline" table
         url: https://www.speakupaustin.org/2908SouthCongress#tab-83415
@@ -417,6 +454,8 @@ projects:
     kind: plan
     orgs: [CoA]
     sources: [coa-imagine-austin-update]
+    match:
+      - Imagine Austin Comprehensive Plan Update   # the open houses' descriptions, Oct 2026
     schedule:
       - source: Speak Up Austin project page
         url: https://www.speakupaustin.org/imagineaustin
@@ -433,6 +472,8 @@ projects:
     kind: plan
     orgs: [CoA]
     sources: [coa-great-streets-plan-update]
+    match:
+      - Great Streets Update   # titles of the advisory group's meeting notes; no agenda seen yet
     schedule:
       - source: Speak Up Austin project page
         url: https://www.speakupaustin.org/GreatStreetsUpdate
@@ -509,6 +550,8 @@ projects:
     kind: plan
     orgs: [CoA]
     sources: [coa-parks-long-range-plan]
+    match:
+      - Our Parks, Our Future   # the start of the name; no agenda seen yet
     schedule:
       - source: City of Austin parks page
         url: https://www.austintexas.gov/parks/our-parks-our-future-long-range-plan
@@ -524,6 +567,8 @@ projects:
     kind: plan
     orgs: [CoA]
     sources: [coa-austin-energy-resource-generation-plan-2035]
+    match:
+      - Resource, Generation and Climate Protection Plan to 2035   # the name without "Austin Energy"; no agenda seen yet
     schedule:
       - source: Austin Energy plan page on PublicInput
         url: https://publicinput.com/generation
@@ -566,6 +611,8 @@ projects:
   - slug: lower-colorado-river-wrap
     name: Lower Colorado River Watershed Restoration and Access Plan
     kind: plan
+    match:
+      - Lower Colorado Watershed Restoration and Access Plan   # Environmental Commission agenda, 2 Dec 2026
     links:
       - {name: Survey, url: "https://www.surveymonkey.com/r/lowercoloradowrap"}
 
@@ -591,6 +638,8 @@ projects:
     orgs: [CoA]
     sources: [coa-etod-overlay-phase-2]
     also_called: [Equitable Transit-Oriented Development]
+    match:
+      - ETOD Overlay Phase 2   # the name without the comma; no agenda seen yet
     schedule:
       - source: Speak Up Austin project page
         url: https://www.speakupaustin.org/etodoverlayphase2
@@ -628,6 +677,10 @@ projects:
     kind: policy
     orgs: [CoA]
     sources: [coa-shape-austins-2026-bond]
+    match:
+      - November 2026 bond election                                       # City Council budget meeting agenda, 4 Aug 2026
+      - General Obligation Bond Election to be held on November 3, 2026   # City Council budget meeting agenda, 6 Aug 2026
+      - November 3, 2026, General Obligation Bond Election                # City Council agenda, 17 Nov 2026
     schedule:
       - source: Speak Up Austin project page
         url: https://speakupaustin.org/bond2026
@@ -644,6 +697,9 @@ projects:
     kind: policy
     orgs: [CoA]
     sources: [coa-shaping-economic-development-policy]
+    match:
+      - Economic Development Policy Engagement Session   # the City's titles for its sessions
+      - comprehensive Economic Development Policy        # how the sessions describe it
     schedule:
       - source: City of Austin project page
         url: https://www.austintexas.gov/AustinEconomicPolicy
@@ -657,6 +713,9 @@ projects:
     kind: policy
     orgs: [CoA]
     sources: [coa-cesar-chavez-renaming, coa-cesar-chavez-renaming-survey]
+    match:
+      - César Chávez St Renaming       # community meeting titles, Aug 2026
+      - renaming César Chávez Street   # the same meetings' descriptions
     schedule:
       - source: Speak Up Austin project page
         url: https://www.speakupaustin.org/renaming-cesar-chavez-project
@@ -675,6 +734,9 @@ projects:
     name: City budget process
     kind: policy
     orgs: [CoA]
+    match:
+      - "City Council: Budget Meeting"   # every Council budget meeting
+      - Budget Community Meeting         # a council district's meeting on the budget
     links:
       - {name: City budget page, url: "http://austintexas.gov/budget"}
 
@@ -682,6 +744,8 @@ projects:
     name: '"Dog''s head" annexation and development'
     kind: policy
     orgs: [CoA]
+    match:
+      - Dog's Head   # Planning Commission agenda, 11 Aug 2026
     links:
       - {name: KUT article, url: "https://www.kut.org/austin/2026-05-22/austin-tx-city-council-dogs-head-development"}
 
@@ -740,6 +804,8 @@ projects:
     kind: policy
     orgs: [CapMetro]
     sources: [capmetro-service-changes, capmetro-service-changes-jan-2027, capmetro-service-changes-aug-2026]
+    match:
+      - January 2027 Service Changes   # CapMetro Board agenda, 28 Sep 2026 (no digest of it is on the calendar)
     schedule:
       - source: CapMetro approved January 2027 service changes page
         url: https://www.capmetro.org/servicechange/proposed-january-2027-service-changes
@@ -754,6 +820,8 @@ projects:
     kind: policy
     orgs: [CapMetro]
     sources: [capmetro-fare-increase]
+    match:
+      - "CapMetro: Fare Increase"   # meeting, hearing and comment-deadline titles
     schedule:
       - source: CapMetro fare increase page
         url: https://www.capmetro.org/fare/general-fares-overview/fare-increase
@@ -768,6 +836,8 @@ projects:
     kind: policy
     orgs: [CapMetro]
     sources: [capmetro-service-standards-guidelines]
+    match:
+      - Service Standards and Guidelines   # CapMetro hearing, 14 Dec 2026; ATP committee agenda, 12 Nov 2026
     schedule:
       - source: 'CapMetro "Standards, Specifications and Guidelines" page'
         url: https://www.capmetro.org/aboutus/about-capmetro/plans-development/standards-specifications-guidelines
@@ -799,6 +869,10 @@ projects:
     orgs: [CAMPO]
     sources: [campo-2026-fall-tip-amendments]
     also_called: [Transportation Improvement Program]
+    match:
+      - 2027-2030 TIP                                            # CAMPO open house titles
+      - TIP and RTP Amendments                                   # Transportation Policy Board agendas
+      - Amendments to the 2027-2030 Transportation Improvement   # Technical Advisory Committee agenda, cut short there
     schedule:
       - source: CAMPO open house page
         url: https://www.campotexas.org/open-house/2027-2030-tip-amendments-open-house-fall-2026/
@@ -816,6 +890,9 @@ projects:
     kind: project
     orgs: [CTRMA]
     sources: [ctrma-290-extension, ctrma-290-extension-open-house]
+    match:
+      - US 290 from SH 130 to SH 95 South   # TxDOT's title for the project's meetings, 2025 and 2026
+      - extension of the 290 Toll           # TxDOT's notices of the 2026 meetings
     schedule:
       - source: 290 Extension open house page, "Project Schedule"
         url: https://290extensionproject.com/openhouse/
@@ -867,6 +944,8 @@ projects:
     name: Large Load Demand Management Service
     kind: policy
     orgs: [PUC]
+    match:
+      - Project No. 58482   # the PUC rulemaking linked below; in the notice of its comment deadline
     links:
       - {name: PUC project 58482, url: "https://interchange.puc.texas.gov/search/filings/?UtilityType=A&ControlNumber=58482"}
 
@@ -877,3 +956,9 @@ projects:
     links:
       - {name: Austin Water open house notice, url: "https://www.austintexas.gov/water/news/austin-water-invites-community-open-house-large-water-users"}
     note: Austin Water is a City of Austin utility.
+
+# Matches that were wrong. See "Meetings" at the top of this file.
+wrong_matches:
+  # TxDOT's own programs carry the name CAMPO's goes by. Their hearings are not about CAMPO's amendments.
+  - {project: tip-amendments-2027-2030, wording: Statewide Transportation Improvement Program}
+  - {project: tip-amendments-2027-2030, wording: Rural Transportation Improvement Program}
