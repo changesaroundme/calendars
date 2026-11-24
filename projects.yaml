@@ -26,7 +26,10 @@
 #   retrieved  the day it was read, when the source carries no date
 #   capture    our dated copy in the archive, if there is one
 #   about      what it covers, when not the whole project
-#   note       free text
+#   from_notes yes when the statement is the author's own record of what the
+#              author was told (a conversation, a timeline handed over) rather
+#              than a document: `said` is then that note, not a quotation
+#   note       free text, shown beside the statement
 #   phases     [{name, said, start, end}]: `said` is the wording as published,
 #              `start` and `end` are how it was read. Only one of them = a
 #              milestone: `start` for something that happens or begins then,
@@ -66,11 +69,12 @@ projects:
       - source: Timeline provided by TxDOT to the site's author
         dated: 2026-03-25
         about: Noise wall vote, Holly St to E Cesar Chavez
+        from_notes: yes
         phases:
           - {name: Invitations and information mailed to owners, start: 2026-01-28}
           - {name: Noise workshop at Sanchez Elementary School, start: 2026-02-18}
           - {name: Deadline for votes, end: 2026-03-04}
-          - {name: Re-vote issued, said: "Re-vote issued (not enough responses)", start: 2026-03-18}
+          - {name: Re-vote issued (not enough responses), start: 2026-03-18}
           - {name: Updated deadline for votes, end: 2026-04-15}
     note: The Focus page covers the stretch between the lake and E Cesar Chavez.
 
@@ -107,7 +111,8 @@ projects:
           - {name: Construction, said: "with construction starting in 2026", start: 2026}
       - source: CapMetro staff, in conversation at the 100% design open house
         dated: 2026-03-10
-        note: As recorded on the Focus page, which footnotes the start date to this conversation.
+        from_notes: yes
+        note: The site's page on this project gives both dates and footnotes the start date to this conversation.
         phases:
           - {name: Construction, said: "Jan 2027, estimated construction start. Jan 2029, estimated construction completion.", start: 2027-01, end: 2029-01}
       - source: 'Schedule chart titled "Saltillo Station Expansion, Double-Tracking & Shared Use Path – Onion St. to Austin Wye", sent to the site''s author by email'

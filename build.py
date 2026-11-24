@@ -532,15 +532,21 @@ def main() -> int:
     # projects.yaml (the project list) is hand-edited too and gets the same
     # treatment: fatal offline, a soft alarm live. A slip in the list must
     # not stop the feeds publishing; it only stops docs/projects.md updating.
+    # load() reports a mistake in the file as a ValueError, one line each.
+    # Anything else it raises is a fault in the checker: live, that too is
+    # only an alarm; offline it is raised as it is, to be seen and fixed.
     if offline:
         projects.selftest()
     try:
         project_list, org_names = projects.load()
-    except ValueError as e:
+    except Exception as e:
+        if offline and not isinstance(e, ValueError):
+            raise
         project_list, org_names = [], {}
-        for prob in str(e).splitlines():
+        found = str(e) if isinstance(e, ValueError) else f"could not be checked ({type(e).__name__}: {e})"
+        for prob in found.splitlines():
             print(f"[projects] {prob}")
-            unhealthy.append(f"projects.yaml {prob}")
+            unhealthy.append(prob if prob.startswith("projects.yaml") else f"projects.yaml {prob}")
         if offline:
             return 1
     # Every live response passes through here; docs/status.json is written
@@ -789,9 +795,16 @@ def main() -> int:
     if archive:
         (docs / "archive.md").write_text(sourcespage.render_archive_markdown(reg_rows, archive))
     # The project list as a readable page. Undated on purpose, so it changes
-    # only when projects.yaml does and not with every build.
+    # only when projects.yaml does and not with every build. Failing to write
+    # it is handled like failing to load the list: raised offline, an alarm live.
     if project_list:
-        (docs / "projects.md").write_text(projects.preview(project_list, org_names), encoding="utf-8")
+        try:
+            (docs / "projects.md").write_text(projects.preview(project_list, org_names), encoding="utf-8")
+        except Exception as e:
+            if offline:
+                raise
+            print(f"[projects] page not written ({type(e).__name__}: {e})")
+            unhealthy.append(f"projects.yaml page not written ({type(e).__name__}: {e})")
 
     if not offline:
         unhealthy, warnings = grace_network_failures(unhealthy, data / "health.json", now)
