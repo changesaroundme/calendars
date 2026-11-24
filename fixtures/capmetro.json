@@ -28,5 +28,16 @@
   "EventInSiteURL": "https://capmetrotx.legistar.com/MeetingDetail.aspx?ID=1240001",
   "EventAgendaStatusName": "Final",
   "EventMinutesStatusName": "Final"
+ },
+ {
+  "EventId": 3061,
+  "EventBodyName": "Board of Directors",
+  "EventDate": "2026-11-16T00:00:00",
+  "EventTime": "12:00 PM",
+  "EventLocation": "Rosa Parks Boardroom",
+  "EventAgendaFile": "https://capmetrotx.legistar1.com/capmetrotx/meetings/2026/11/3061_A_Board_of_Directors_26-11-16_Agenda.pdf",
+  "EventInSiteURL": "https://capmetrotx.legistar.com/MeetingDetail.aspx?LEGID=3061&GID=848&G=B1EEEA8D-7B10-4460-A710-92D6625C11F7",
+  "EventAgendaStatusName": "Final",
+  "EventMinutesStatusName": "Draft"
  }
 ]

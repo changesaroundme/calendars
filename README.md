@@ -20,7 +20,7 @@ combined calendar at
 | Source | Adapter type | Where the data comes from |
 |---|---|---|
 | CAMPO | ICS ingest | Their published Tribe Events iCal feed |
-| CapMetro | HTML scrape + API merge | Legistar `Calendar.aspx` (early dates) + Legistar Web API (agenda links) |
+| CapMetro | HTML scrape + API merge | Legistar `Calendar.aspx` (early dates) + Legistar Web API (agenda links, agenda summaries for Board and committee meetings) |
 | TxDOT Commission | HTML scrape | Commission meeting-dates page (full year of dates; agendas ~8 days out) |
 | LCRA | HTML scrape | Annual schedule tables (dates only → all-day events; times post with agendas) |
 | CTRMA | HTML scrape | Upcoming-meeting cards on their board-meetings page (date, time, detail link) |

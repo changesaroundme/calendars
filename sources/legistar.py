@@ -194,6 +194,10 @@ class Legistar:
     # agenda ITEMS fetched and summarized into the description (one extra
     # API call per matching future event with a published agenda).
     agenda_detail: object = None
+    # Optional formatter (list of API event items -> digest text, "" for
+    # none) for an org whose agendas are laid out differently from Austin's;
+    # agenda_block is used when this is not set.
+    agenda_digest: object = None
 
     @property
     def calendar_url(self) -> str:
@@ -341,7 +345,7 @@ class Legistar:
                           f"failed for event {row.get('EventId')}: {exc}")
                     items = None
                 if items:
-                    block = agenda_block(items)
+                    block = (self.agenda_digest or agenda_block)(items)
                     if block:
                         # Standardized shape (Ian, 2026-08-09): summary on
                         # top, then a — rule, then the link lines that were

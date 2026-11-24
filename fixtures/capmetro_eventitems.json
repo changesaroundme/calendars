@@ -1,0 +1,712 @@
+[
+ {
+  "EventItemId": 28535,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 1,
+  "EventItemAgendaNumber": null,
+  "EventItemTitle": "This meeting will be livestreamed at capmetrotx.legistar.com",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": null,
+  "EventItemMatterType": null
+ },
+ {
+  "EventItemId": 28536,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 2,
+  "EventItemAgendaNumber": "I.",
+  "EventItemTitle": "Call to Order",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": null,
+  "EventItemMatterType": null
+ },
+ {
+  "EventItemId": 28537,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 3,
+  "EventItemAgendaNumber": "II.",
+  "EventItemTitle": "Safety Briefing:",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": null,
+  "EventItemMatterType": null
+ },
+ {
+  "EventItemId": 28538,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 4,
+  "EventItemAgendaNumber": "III.",
+  "EventItemTitle": "Public Comment:",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": null,
+  "EventItemMatterType": null
+ },
+ {
+  "EventItemId": 28539,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 5,
+  "EventItemAgendaNumber": "IV.",
+  "EventItemTitle": "Advisory Committee Updates:",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": null,
+  "EventItemMatterType": null
+ },
+ {
+  "EventItemId": 28540,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 6,
+  "EventItemAgendaNumber": "1.",
+  "EventItemTitle": "Customer Satisfaction Advisory Committee (CSAC)",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2021-189",
+  "EventItemMatterType": "Committee Updates"
+ },
+ {
+  "EventItemId": 28541,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 7,
+  "EventItemAgendaNumber": "2.",
+  "EventItemTitle": "Access Advisory Committee",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2021-190",
+  "EventItemMatterType": "Committee Updates"
+ },
+ {
+  "EventItemId": 28542,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 8,
+  "EventItemAgendaNumber": "3.",
+  "EventItemTitle": "Public Safety Advisory Committee (PSAC)",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2022-329",
+  "EventItemMatterType": "Committee Updates"
+ },
+ {
+  "EventItemId": 28543,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 9,
+  "EventItemAgendaNumber": "V.",
+  "EventItemTitle": "Board Committee Updates:",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": null,
+  "EventItemMatterType": null
+ },
+ {
+  "EventItemId": 28544,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 10,
+  "EventItemAgendaNumber": "1.",
+  "EventItemTitle": "Operations, Planning and Safety Committee",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": null,
+  "EventItemMatterType": null
+ },
+ {
+  "EventItemId": 28545,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 11,
+  "EventItemAgendaNumber": "2.",
+  "EventItemTitle": "Finance, Audit and Administration Committee",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": null,
+  "EventItemMatterType": null
+ },
+ {
+  "EventItemId": 28546,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 12,
+  "EventItemAgendaNumber": "3.",
+  "EventItemTitle": "CAMPO update",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": null,
+  "EventItemMatterType": null
+ },
+ {
+  "EventItemId": 28547,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 13,
+  "EventItemAgendaNumber": "4.",
+  "EventItemTitle": "Austin Transit Partnership Update",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": null,
+  "EventItemMatterType": null
+ },
+ {
+  "EventItemId": 28548,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 14,
+  "EventItemAgendaNumber": "VI.",
+  "EventItemTitle": "Consent Items:",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": null,
+  "EventItemMatterType": null
+ },
+ {
+  "EventItemId": 28549,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 25,
+  "EventItemAgendaNumber": "VII.",
+  "EventItemTitle": "Action Items:",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": null,
+  "EventItemMatterType": null
+ },
+ {
+  "EventItemId": 28562,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 26,
+  "EventItemAgendaNumber": "1.",
+  "EventItemTitle": "Approval of a resolution adopting the Fiscal Year 2027 Operating and Capital Budget and Five-Year Capital Improvement Plan.",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2026-1912",
+  "EventItemMatterType": "Resolution"
+ },
+ {
+  "EventItemId": 28563,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 28,
+  "EventItemAgendaNumber": "2.",
+  "EventItemTitle": "Approval of a resolution adopting amendments to CapMetro\u2019s Fare Policy and Fare Structure, approving the Title VI Fare Equity Analysis related to increasing fares in January 2027 and January 2029, expanding CapMetro\u2019s Reduced Fare ID Card program, and retiring the Equifare program and Ticket Vending Machines (TVMs).",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2026-1916",
+  "EventItemMatterType": "Resolution"
+ },
+ {
+  "EventItemId": 28564,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 31,
+  "EventItemAgendaNumber": "5.",
+  "EventItemTitle": "Approval of a resolution authorizing the President & CEO, or her designee, to finalize and execute an Interlocal Agreement with the Austin Transit Partnership for ATP to provide funding for CapMetro design support services for Austin Light Rail for an initial term of two years ending September 30, 2028, with up to two one-year renewal terms.",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2026-1919",
+  "EventItemMatterType": "Resolution"
+ },
+ {
+  "EventItemId": 28566,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 32,
+  "EventItemAgendaNumber": "6.",
+  "EventItemTitle": "Approval of a resolution authorizing the President & CEO, or her designee, to finalize and execute an amendment to the Interlocal Agreement with Austin Transit Partnership for Capital Reimbursement of the Expo Center and Pleasant Valley Rapid Projects for the Project Connect System Plan, extending the term of the Agreement through March 31, 2027.",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2026-1925",
+  "EventItemMatterType": "Resolution"
+ },
+ {
+  "EventItemId": 28573,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 33,
+  "EventItemAgendaNumber": "VIII.",
+  "EventItemTitle": "Report:",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": null,
+  "EventItemMatterType": null
+ },
+ {
+  "EventItemId": 28575,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 35,
+  "EventItemAgendaNumber": "X.",
+  "EventItemTitle": "Items for Future Discussion:",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": null,
+  "EventItemMatterType": null
+ },
+ {
+  "EventItemId": 28576,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 36,
+  "EventItemAgendaNumber": "XI.",
+  "EventItemTitle": "Adjournment",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": null,
+  "EventItemMatterType": null
+ },
+ {
+  "EventItemId": 28577,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 37,
+  "EventItemAgendaNumber": null,
+  "EventItemTitle": "ADA Compliance",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": null,
+  "EventItemMatterType": null
+ },
+ {
+  "EventItemId": 28578,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 38,
+  "EventItemAgendaNumber": null,
+  "EventItemTitle": "Reasonable modifications and equal access to communications are provided upon request. Please call (512) 369-6040 or email boardofdirectors@capmetro.org if you need more information.\r\n\r\nBOARD OF DIRECTORS: Jeffrey Travillion, Chair; Paige Ellis, Vice Chair; Becki Ross, Secretary; Matt Harriss, Dianne Bangle, Chito Vela, Zo Qadri and Stephen Chang\r\n\r\nThe Board of Directors may go into closed session under the Texas Open Meetings Act. In accordance with Texas Government Code, Section 551.071, consultation with attorney for any legal issues, under Section 551.072 for real property issues; under Section 551.074 for personnel matters, or under Section 551.076, for deliberation regarding the deployment or implementation of security personnel or devices; arising regarding any item listed on this agenda.",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": null,
+  "EventItemMatterType": null
+ },
+ {
+  "EventItemId": 28582,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 16,
+  "EventItemAgendaNumber": "2.",
+  "EventItemTitle": "Approval of a resolution adopting the CapMetro Investment Policy.",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2026-1911",
+  "EventItemMatterType": "Resolution"
+ },
+ {
+  "EventItemId": 28584,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 17,
+  "EventItemAgendaNumber": "3.",
+  "EventItemTitle": "Approval of a resolution authorizing the President & CEO, or her designee, to finalize and execute a one-year Interlocal Agreement (ILA) with Travis County for transit services in urbanized areas in unincorporated areas of the county and for continued implementation of the Travis County Transit Development Plan (TDP) in an amount not to exceed $356,533 in FTA Section 5307 Funds and $1,469,463 in local funds from Travis County in FY2027.",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2026-1871",
+  "EventItemMatterType": "Resolution"
+ },
+ {
+  "EventItemId": 28585,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 18,
+  "EventItemAgendaNumber": "4.",
+  "EventItemTitle": "Approval of a resolution authorizing the President & CEO, or her designee, to finalize and execute an Interlocal Agreement with the City of Round Rock for the provision of transit services for an amount not to exceed $3,321,940.",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2026-1872",
+  "EventItemMatterType": "Resolution"
+ },
+ {
+  "EventItemId": 28586,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 19,
+  "EventItemAgendaNumber": "5.",
+  "EventItemTitle": "Approval of a resolution authorizing the President & CEO, or her designee, to finalize and execute an Interlocal Agreement with the Austin Community College \u201cACC\u201d for the provision of transit services for an amount not to exceed $179,779.",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2026-1873",
+  "EventItemMatterType": "Resolution"
+ },
+ {
+  "EventItemId": 28587,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 20,
+  "EventItemAgendaNumber": "6.",
+  "EventItemTitle": "Approval of a resolution authorizing the President & CEO, or her designee, to finalize and execute Amendment No. 9 to CARTS Supplement No. 8 to the Master Regional Mobility Agreement with Capital Area Rural Transportation Services (CARTS) for the provision of transit services to the Manor area in an amount not to exceed $1,544,037.",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2026-1874",
+  "EventItemMatterType": "Resolution"
+ },
+ {
+  "EventItemId": 28588,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 21,
+  "EventItemAgendaNumber": "7.",
+  "EventItemTitle": "Approval of a resolution authorizing the President & CEO, or her designee, to finalize and execute Amendment No. 8 to the Contracted Service Supplement No. 2 with Capital Area Rural Transportation System (CARTS) for the operation of Route 214 Northwest Feeder for fiscal year 2027 in an amount not to exceed $785,996.",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2026-1882",
+  "EventItemMatterType": "Resolution"
+ },
+ {
+  "EventItemId": 28589,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 22,
+  "EventItemAgendaNumber": "8.",
+  "EventItemTitle": "Approval of a resolution authorizing the President & CEO, or her designee, to finalize and execute Amendment No. 8 to Contracted Services Supplement No. 4 to the Master Regional Mobility Agreement with Capital Area Rural Transportation Services (CARTS) for the provision of Route 990 - Manor Express for fiscal year 2027 in an amount not to exceed $196,211.",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2026-1883",
+  "EventItemMatterType": "Resolution"
+ },
+ {
+  "EventItemId": 28590,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 23,
+  "EventItemAgendaNumber": "9.",
+  "EventItemTitle": "Approval of a resolution authorizing the President & CEO, or her designee, to modify an existing contract with AT&T Wireless for telecommunication services, to provide additional funding in an amount of $1,545,000, of which, $500,000 is contingency, for a revised contract total not to exceed amount of $3,195,000.",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2026-1909",
+  "EventItemMatterType": "Resolution"
+ },
+ {
+  "EventItemId": 28591,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 24,
+  "EventItemAgendaNumber": "10.",
+  "EventItemTitle": "Approval of a resolution authorizing the President & CEO, or her designee, to finalize and execute a contract with Yellowstone Landscape Central Inc., to provide landscaping services for a base period of one (1) year and three (3) one-year options for an amount not to exceed $2,155,163.",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2026-1917",
+  "EventItemMatterType": "Resolution"
+ },
+ {
+  "EventItemId": 28592,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 29,
+  "EventItemAgendaNumber": "3.",
+  "EventItemTitle": "Approval of a resolution authorizing the President & CEO, or her designee, to implement the January 2027 Service Changes, and accepting the results of the Title VI Analysis. ",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2026-1924",
+  "EventItemMatterType": "Resolution"
+ },
+ {
+  "EventItemId": 28593,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 30,
+  "EventItemAgendaNumber": null,
+  "EventItemTitle": "Memo: Updates on the Proposed January 2027 Service Changes - September 21, 2026",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2026-1938",
+  "EventItemMatterType": "Memo"
+ },
+ {
+  "EventItemId": 28594,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 34,
+  "EventItemAgendaNumber": "1.",
+  "EventItemTitle": "President & CEO Monthly Update - September 2026.",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2026-1943",
+  "EventItemMatterType": "Presentations"
+ },
+ {
+  "EventItemId": 28595,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 15,
+  "EventItemAgendaNumber": "1.",
+  "EventItemTitle": "Approval of the minutes from the August 24, 2026 Board of Directors meeting.",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2026-1941",
+  "EventItemMatterType": "Minutes"
+ },
+ {
+  "EventItemId": 28596,
+  "EventItemEventId": 3059,
+  "EventItemAgendaSequence": 27,
+  "EventItemAgendaNumber": null,
+  "EventItemTitle": "Memo: Response to Project Connect Community Advisory Committee CapMetro Budget Recommendations - September 24, 2026.",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2026-1947",
+  "EventItemMatterType": "Memo"
+ },
+ {
+  "EventItemId": 28741,
+  "EventItemEventId": 3061,
+  "EventItemAgendaSequence": 1,
+  "EventItemAgendaNumber": null,
+  "EventItemTitle": "This meeting will be livestreamed at capmetrotx.legistar.com",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": null,
+  "EventItemMatterType": null
+ },
+ {
+  "EventItemId": 28742,
+  "EventItemEventId": 3061,
+  "EventItemAgendaSequence": 2,
+  "EventItemAgendaNumber": "I.",
+  "EventItemTitle": "Call to Order",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": null,
+  "EventItemMatterType": null
+ },
+ {
+  "EventItemId": 28743,
+  "EventItemEventId": 3061,
+  "EventItemAgendaSequence": 3,
+  "EventItemAgendaNumber": "II.",
+  "EventItemTitle": "Safety Briefing:",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": null,
+  "EventItemMatterType": null
+ },
+ {
+  "EventItemId": 28744,
+  "EventItemEventId": 3061,
+  "EventItemAgendaSequence": 4,
+  "EventItemAgendaNumber": "III.",
+  "EventItemTitle": "Public Comment:",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": null,
+  "EventItemMatterType": null
+ },
+ {
+  "EventItemId": 28745,
+  "EventItemEventId": 3061,
+  "EventItemAgendaSequence": 6,
+  "EventItemAgendaNumber": "V.",
+  "EventItemTitle": "Advisory Committee Updates:",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": null,
+  "EventItemMatterType": null
+ },
+ {
+  "EventItemId": 28746,
+  "EventItemEventId": 3061,
+  "EventItemAgendaSequence": 8,
+  "EventItemAgendaNumber": "VI.",
+  "EventItemTitle": "Board Committee Updates:",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": null,
+  "EventItemMatterType": null
+ },
+ {
+  "EventItemId": 28748,
+  "EventItemEventId": 3061,
+  "EventItemAgendaSequence": 9,
+  "EventItemAgendaNumber": "1.",
+  "EventItemTitle": "Finance, Audit and Administration Committee",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": null,
+  "EventItemMatterType": null
+ },
+ {
+  "EventItemId": 28749,
+  "EventItemEventId": 3061,
+  "EventItemAgendaSequence": 10,
+  "EventItemAgendaNumber": "2.",
+  "EventItemTitle": "CAMPO update",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": null,
+  "EventItemMatterType": null
+ },
+ {
+  "EventItemId": 28750,
+  "EventItemEventId": 3061,
+  "EventItemAgendaSequence": 11,
+  "EventItemAgendaNumber": "3.",
+  "EventItemTitle": "Austin Transit Partnership Update",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": null,
+  "EventItemMatterType": null
+ },
+ {
+  "EventItemId": 28753,
+  "EventItemEventId": 3061,
+  "EventItemAgendaSequence": 12,
+  "EventItemAgendaNumber": "VII.",
+  "EventItemTitle": "Action Items:",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": null,
+  "EventItemMatterType": null
+ },
+ {
+  "EventItemId": 28758,
+  "EventItemEventId": 3061,
+  "EventItemAgendaSequence": 14,
+  "EventItemAgendaNumber": "2.",
+  "EventItemTitle": "Approval of a resolution authorizing the President & CEO, or her designee, to finalize and execute a contract with Doggett Freightliner of South Texas, LLC, for purchase of one (1) heavy-duty tow truck in a total amount not to exceed $552,205.",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2026-1937",
+  "EventItemMatterType": "Resolution"
+ },
+ {
+  "EventItemId": 28759,
+  "EventItemEventId": 3061,
+  "EventItemAgendaSequence": 19,
+  "EventItemAgendaNumber": "7.",
+  "EventItemTitle": "Approval of a resolution by the CapMetro Board of Directors that President & CEO Dottie Watkins hereby receives a performance rating of ____ for Fiscal Year 2026 and is awarded an adjustment to base pay equal to ___% of her annual salary and a one-time performance achievement bonus equal to ___% of base pay for a total compensation of $_______. The adjustments are retroactive to October 1, 2026 in accordance with the Employment Agreement.",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2026-1942",
+  "EventItemMatterType": "Resolution"
+ },
+ {
+  "EventItemId": 28761,
+  "EventItemEventId": 3061,
+  "EventItemAgendaSequence": 15,
+  "EventItemAgendaNumber": "3.",
+  "EventItemTitle": "Approval of a resolution authorizing the President & CEO, or her designee, to finalize and execute a construction contract with Jay-Reese Contractors, Inc. for the construction of the Plaza Saltillo Rail Station expansion, double tracking, and shared use path project, for $44,451,967, plus a 15 percent contingency, for a total amount not to exceed $51,119,762.",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2026-1970",
+  "EventItemMatterType": "Resolution"
+ },
+ {
+  "EventItemId": 28763,
+  "EventItemEventId": 3061,
+  "EventItemAgendaSequence": 16,
+  "EventItemAgendaNumber": "4.",
+  "EventItemTitle": "Approval of a resolution approving the CapMetro Public Transportation Agency Safety Plan (PTASP), authorizing the President & CEO, or her designee, to finalize and execute the Plan, and setting a program to provide relevant and useful information to the Board of Directors.",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2026-1973",
+  "EventItemMatterType": "Resolution"
+ },
+ {
+  "EventItemId": 28765,
+  "EventItemEventId": 3061,
+  "EventItemAgendaSequence": 17,
+  "EventItemAgendaNumber": "5.",
+  "EventItemTitle": "Approval of a resolution appointing Anna Frieze to the CapMetro Access Advisory Committee as Board Member Stephen Chang\u2019s appointee.",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2026-1976",
+  "EventItemMatterType": "Resolution"
+ },
+ {
+  "EventItemId": 28767,
+  "EventItemEventId": 3061,
+  "EventItemAgendaSequence": 18,
+  "EventItemAgendaNumber": "6.",
+  "EventItemTitle": "Approval of a resolution authorizing the President & CEO, or her designee, to finalize and execute an Interlocal Agreement (\u201cILA\u201d) with the University of Texas at Austin (\u201cUniversity\u201d), for participation in the University\u2019s IC2 Institute Readiness Training Program (RTP) for a base term of one-year for $39,000.00 to beginning December 1, 2026 through November 30, 2027, and with a one-year renewal option, for a total amount not to exceed $78,000.00.",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2026-1979",
+  "EventItemMatterType": "Resolution"
+ },
+ {
+  "EventItemId": 28769,
+  "EventItemEventId": 3061,
+  "EventItemAgendaSequence": 20,
+  "EventItemAgendaNumber": "VIII.",
+  "EventItemTitle": "Discussion Items:",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": null,
+  "EventItemMatterType": null
+ },
+ {
+  "EventItemId": 28770,
+  "EventItemEventId": 3061,
+  "EventItemAgendaSequence": 21,
+  "EventItemAgendaNumber": "1.",
+  "EventItemTitle": "FY2027 Long Range Financial Plan Update",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2026-1958",
+  "EventItemMatterType": "Presentations"
+ },
+ {
+  "EventItemId": 28771,
+  "EventItemEventId": 3061,
+  "EventItemAgendaSequence": 22,
+  "EventItemAgendaNumber": "2.",
+  "EventItemTitle": "Presentation of the CapMetro Strategic Plan 2030 Annual Progress Report",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2026-1962",
+  "EventItemMatterType": "Presentations"
+ },
+ {
+  "EventItemId": 28774,
+  "EventItemEventId": 3061,
+  "EventItemAgendaSequence": 23,
+  "EventItemAgendaNumber": "IX.",
+  "EventItemTitle": "Executive Session under Chapter 551 of the Texas Government Code:",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": null,
+  "EventItemMatterType": null
+ },
+ {
+  "EventItemId": 28775,
+  "EventItemEventId": 3061,
+  "EventItemAgendaSequence": 30,
+  "EventItemAgendaNumber": "XI.",
+  "EventItemTitle": "Items for Future Discussion:",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": null,
+  "EventItemMatterType": null
+ },
+ {
+  "EventItemId": 28776,
+  "EventItemEventId": 3061,
+  "EventItemAgendaSequence": 31,
+  "EventItemAgendaNumber": "XII.",
+  "EventItemTitle": "Adjournment",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": null,
+  "EventItemMatterType": null
+ },
+ {
+  "EventItemId": 28777,
+  "EventItemEventId": 3061,
+  "EventItemAgendaSequence": 32,
+  "EventItemAgendaNumber": null,
+  "EventItemTitle": "ADA Compliance",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": null,
+  "EventItemMatterType": null
+ },
+ {
+  "EventItemId": 28778,
+  "EventItemEventId": 3061,
+  "EventItemAgendaSequence": 33,
+  "EventItemAgendaNumber": null,
+  "EventItemTitle": "Reasonable modifications and equal access to communications are provided upon request. Please call (512) 369-6040 or email boardofdirectors@capmetro.org if you need more information.\r\n\r\nBOARD OF DIRECTORS: Jeffrey Travillion, Chair; Paige Ellis, Vice Chair; Becki Ross, Secretary; Matt Harriss, Dianne Bangle, Chito Vela, Zo Qadri and Stephen Chang\r\n\r\nThe Board of Directors may go into closed session under the Texas Open Meetings Act. In accordance with Texas Government Code, Section 551.071, consultation with attorney for any legal issues, under Section 551.072 for real property issues; under Section 551.074 for personnel matters, or under Section 551.076, for deliberation regarding the deployment or implementation of security personnel or devices; arising regarding any item listed on this agenda.",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": null,
+  "EventItemMatterType": null
+ },
+ {
+  "EventItemId": 28873,
+  "EventItemEventId": 3061,
+  "EventItemAgendaSequence": 25,
+  "EventItemAgendaNumber": "X.",
+  "EventItemTitle": "Memos:",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": null,
+  "EventItemMatterType": null
+ },
+ {
+  "EventItemId": 28874,
+  "EventItemEventId": 3061,
+  "EventItemAgendaSequence": 24,
+  "EventItemAgendaNumber": "1.",
+  "EventItemTitle": "Executive Session under Chapter 551 of the Texas Government Code, Section 551.074 for Personnel Matters related to President & CEO annual performance evaluation and compensation.",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2026-1978",
+  "EventItemMatterType": "Executive Session"
+ },
+ {
+  "EventItemId": 28897,
+  "EventItemEventId": 3061,
+  "EventItemAgendaSequence": 29,
+  "EventItemAgendaNumber": "4.",
+  "EventItemTitle": "Memo - Proposed Updates to the Service Standards and Guidelines - October 30, 2026",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2026-1994",
+  "EventItemMatterType": "Memo"
+ },
+ {
+  "EventItemId": 28899,
+  "EventItemEventId": 3061,
+  "EventItemAgendaSequence": 28,
+  "EventItemAgendaNumber": "3.",
+  "EventItemTitle": "Memo - Fare Strategy Implementation Update - October 30, 2026",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2026-1993",
+  "EventItemMatterType": "Memo"
+ },
+ {
+  "EventItemId": 28906,
+  "EventItemEventId": 3061,
+  "EventItemAgendaSequence": 26,
+  "EventItemAgendaNumber": "1.",
+  "EventItemTitle": "Memo: Fiscal Year 2026 Performance Update - November 9, 2026",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2026-1963",
+  "EventItemMatterType": "Memo"
+ },
+ {
+  "EventItemId": 28907,
+  "EventItemEventId": 3061,
+  "EventItemAgendaSequence": 27,
+  "EventItemAgendaNumber": "2.",
+  "EventItemTitle": "Memo - Bus Stop and Transit Amenity Standard Details and Specifications Manual - November 9, 2026",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2026-2001",
+  "EventItemMatterType": "Memo"
+ },
+ {
+  "EventItemId": 28912,
+  "EventItemEventId": 3061,
+  "EventItemAgendaSequence": 7,
+  "EventItemAgendaNumber": "1.",
+  "EventItemTitle": "Joint Access and Customer Satisfaction Advisory Committee (CSAC)",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2026-2004",
+  "EventItemMatterType": "Committee Updates"
+ },
+ {
+  "EventItemId": 28916,
+  "EventItemEventId": 3061,
+  "EventItemAgendaSequence": 13,
+  "EventItemAgendaNumber": "1.",
+  "EventItemTitle": "Approval of the minutes from the October 26, 2026 meeting of the CapMetro Board of Directors.",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": "AI-2026-2009",
+  "EventItemMatterType": "Minutes"
+ },
+ {
+  "EventItemId": 28917,
+  "EventItemEventId": 3061,
+  "EventItemAgendaSequence": 5,
+  "EventItemAgendaNumber": "IV.",
+  "EventItemTitle": "Recognition of Local Transit Roadeo Winners",
+  "EventItemConsent": 0,
+  "EventItemMatterFile": null,
+  "EventItemMatterType": null
+ }
+]
