@@ -95,7 +95,7 @@ projects:
         capture: https://archive.changesaroundme.com/capmetro-rail-improvements/2026-09-24-0706.pdf
         note: The page carries no date, and this wording was still on it when it was read. Whether it was written before or after the July 2023 presentation is not known.
         phases:
-          - {name: Construction, said: "Construction is planned to occur in 2025 and be completed by the end of the year.", start: 2025, end: 2025}
+          - {name: Construction, said: "Construction is planned to occur in 2025 and be completed by the end of the year.", start: 2025, end: 2025-12}
       - source: CapMetro presentation
         url: https://drive.google.com/file/d/1XJhYF5Q-E9svEzNgFs5LBhyevkaPXQAU/view
         dated: 2023-07

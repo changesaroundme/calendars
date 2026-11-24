@@ -67,7 +67,7 @@ gantt
 ```
 
 - **Read 2026-09-24.** CapMetro Rail Improvements page on PublicInput ([source](https://publicinput.com/b3355#tab-41279), [our copy](https://archive.changesaroundme.com/capmetro-rail-improvements/2026-09-24-0706.pdf)) *The page carries no date, and this wording was still on it when it was read. Whether it was written before or after the July 2023 presentation is not known.*
-    - Construction: “Construction is planned to occur in 2025 and be completed by the end of the year.” (read as during 2025)
+    - Construction: “Construction is planned to occur in 2025 and be completed by the end of the year.” (read as 2025 to 2025-12)
 - **Dated 2023-07.** CapMetro presentation ([source](https://drive.google.com/file/d/1XJhYF5Q-E9svEzNgFs5LBhyevkaPXQAU/view))
     - Construction: “construction completion date anticipated in 2026, contingent upon availability of funding” (read as by the end of 2026)
 - **Read 2026-10-27.** Rail and Trail Improvements page on PublicInput ([source](https://publicinput.com/railandtrails), [our copy](https://archive.changesaroundme.com/capmetro-rail-and-trail-improvements/2026-10-27-0924.pdf)) *Written before fall 2025, and still on the page when it was read.*
@@ -86,7 +86,7 @@ gantt
 
 **Moved:**
 - Construction, start: 13 to 24 months later. 2025 (CapMetro Rail Improvements page on PublicInput, read 2026-09-24) → 2027-01 (CapMetro staff, in conversation at the 100% design open house, dated 2026-03-10).
-- Construction, end: 37 to 48 months later. 2025 (CapMetro Rail Improvements page on PublicInput, read 2026-09-24) → 2029-01 (CapMetro staff, in conversation at the 100% design open house, dated 2026-03-10).
+- Construction, end: 37 months later. 2025-12 (CapMetro Rail Improvements page on PublicInput, read 2026-09-24) → 2029-01 (CapMetro staff, in conversation at the 100% design open house, dated 2026-03-10).
 
 ### E Cesar Chavez, Pleasant Valley to Shady Ln
 Project · focus · CoA
