@@ -28,12 +28,16 @@
 #   about      what it covers, when not the whole project
 #   note       free text
 #   phases     [{name, said, start, end}]: `said` is the wording as published,
-#              `start` and `end` are how it was read. Only one of them = a milestone.
+#              `start` and `end` are how it was read. Only one of them = a
+#              milestone: `start` for something that happens or begins then,
+#              `end` for a deadline or a completion.
 #
 # Vague wording is read the same way every time: spring Mar–May, summer
-# Jun–Aug, fall Sep–Nov; early Jan–Apr, mid May–Aug, late Sep–Dec. "Winter
+# Jun–Aug, fall Sep–Nov; early Jan–Apr, mid May–Aug, late Sep–Dec; early or
+# late in a season is its first or last month ("late spring" is May). "Winter
 # 2027" is the exception: sources use it for either end of the year, so it is
-# read from the order the source lists things in, and the note says which way.
+# read as January–February or as December from the order the source lists
+# things in or from what else the page says, and the note says which way.
 # The wording stays in `said`, so nobody has to trust the reading.
 #
 # Checked by caltools/projects.py:  python -m caltools.projects
@@ -59,15 +63,15 @@ projects:
     links:
       - {name: TxDOT project page, url: "https://www.txdot.gov/mymobility35/projects/capex-central.html"}
     schedule:
-      - source: TxDOT, provided to Ian
+      - source: Timeline provided by TxDOT to the site's author
         dated: 2026-03-25
         about: Noise wall vote, Holly St to E Cesar Chavez
         phases:
           - {name: Invitations and information mailed to owners, start: 2026-01-28}
-          - {name: Noise workshop at Sanchez, start: 2026-02-18}
-          - {name: Deadline for votes, start: 2026-03-04}
+          - {name: Noise workshop at Sanchez Elementary School, start: 2026-02-18}
+          - {name: Deadline for votes, end: 2026-03-04}
           - {name: Re-vote issued, said: "Re-vote issued (not enough responses)", start: 2026-03-18}
-          - {name: Updated deadline, start: 2026-04-15}
+          - {name: Updated deadline for votes, end: 2026-04-15}
     note: The Focus page covers the stretch between the lake and E Cesar Chavez.
 
   - slug: red-line-e-5th
@@ -83,7 +87,9 @@ projects:
     schedule:
       - source: CapMetro Rail Improvements page on PublicInput
         url: https://publicinput.com/b3355#tab-41279
-        note: The page carries no date. Whether it came before or after the July 2023 presentation is not known.
+        retrieved: 2026-09-24
+        capture: https://archive.changesaroundme.com/capmetro-rail-improvements/2026-09-24-0706.pdf
+        note: The page carries no date, and this wording was still on it when it was read. Whether it was written before or after the July 2023 presentation is not known.
         phases:
           - {name: Construction, said: "Construction is planned to occur in 2025 and be completed by the end of the year.", start: 2025, end: 2025}
       - source: CapMetro presentation
@@ -104,6 +110,17 @@ projects:
         note: As recorded on the Focus page, which footnotes the start date to this conversation.
         phases:
           - {name: Construction, said: "Jan 2027, estimated construction start. Jan 2029, estimated construction completion.", start: 2027-01, end: 2029-01}
+      - source: 'Schedule chart titled "Saltillo Station Expansion, Double-Tracking & Shared Use Path – Onion St. to Austin Wye", sent to the site''s author by email'
+        retrieved: 2026-11-24
+        note: The chart prints no dates. Each period is read off its bar against the chart's month columns, to the nearest month. The chart ends with an unlabelled star in late May 2028. News reports of the 16 Nov 2026 board meeting give a spring 2029 finish, which the chart does not show.
+        phases:
+          - {name: Board award, said: "Board Award", start: 2026-11}
+          - {name: Utility relocation, said: "Utility Relocation", start: 2027-01, end: 2027-06}
+          - {name: Trackwork and station platforms, said: "Trackwork, Station Platforms", start: 2027-04, end: 2028-03}
+          - {name: Shared use path, said: "Shared Use Path", start: 2027-08, end: 2028-01}
+          - {name: Signal system, said: "Signal System", start: 2027-10, end: 2028-03}
+          - {name: Testing, said: "Testing", start: 2028-03, end: 2028-05}
+          - {name: Rail customer impact window, said: "Rail Customer Impact Window During TXDOT I-35/4th Street Bridge Construction", start: 2027-08, end: 2028-06}
 
   - slug: e-cesar-chavez-pleasant-valley-shady
     name: E Cesar Chavez, Pleasant Valley to Shady Ln
@@ -135,7 +152,6 @@ projects:
     kind: project
     tier: focus
     page: Focuses/East Ave Trail
-    note: The Focus page is empty and the organization is not recorded yet.
 
   # ─────────────────── City of Austin: projects and sites ───────────────────
 
@@ -215,6 +231,7 @@ projects:
         retrieved: 2026-11-04
         capture: https://archive.changesaroundme.com/coa-east-oltorf-safety-mobility/2026-11-04-0636.pdf
         phases:
+          - {name: City shares feedback summary and next steps, said: "Late 2026", start: 2026-09, end: 2026-12}
           - {name: Street resurfacing, said: "As part of street resurfacing planned for 2027", start: 2027, end: 2027}
           - {name: Corridor study, said: "The study is expected to begin in early 2028.", start: 2028-01}
 
@@ -284,7 +301,7 @@ projects:
         url: https://data.austintexas.gov/stories/s/MoKan-Trail/9h7i-xcr8/
         retrieved: 2026-09-02
         capture: https://archive.changesaroundme.com/coa-mokan-trail/2026-09-02-1548.pdf
-        note: The page also says construction on phase 5 "began in January 2026" and "is expected to take approximately 10 months to complete".
+        note: '"Winter 2026" is read as the start of 2026, because the page also says construction on phase 5 "began in January 2026" and "is expected to take approximately 10 months to complete".'
         phases:
           - {name: Phase 3B, said: "Phase 3B: Fall 2026", start: 2026-09, end: 2026-11}
           - {name: "Phase 5, Boggy Creek Bridge", said: "Phase 5: Winter 2026 - Fall 2026*", start: 2026-01, end: 2026-11}
@@ -294,6 +311,17 @@ projects:
     kind: project
     orgs: [CoA]
     sources: [coa-grove-riverside-site]
+    schedule:
+      - source: Speak Up Austin project page
+        url: https://www.speakupaustin.org/Grove-Riverside
+        retrieved: 2026-11-22
+        capture: https://archive.changesaroundme.com/coa-grove-riverside-site/2026-11-22-0658.pdf
+        phases:
+          - {name: Early site analysis, said: "This work was completed in late 2025.", end: 2025-12}
+          - {name: Community engagement begins, said: "Beginning in November 2025", start: 2025-11}
+          - {name: Community survey, said: "A survey was made available from January through October 2026", start: 2026-01, end: 2026-10}
+          - {name: Open house, said: "Wednesday November 4, 2026, 6 to 8 pm", start: 2026-11-04}
+          - {name: Feedback survey closes, said: "Survey is open through December 6, 2026.", end: 2026-12-06}
     note: An Austin Housing Finance Corporation site.
 
   - slug: 2908-south-congress
@@ -305,12 +333,13 @@ projects:
       - source: Speak Up Austin project page, "Anticipated Timeline" table
         url: https://www.speakupaustin.org/2908SouthCongress#tab-83415
         retrieved: 2026-09-01
+        capture: https://archive.changesaroundme.com/coa-2908-south-congress/2026-09-01-1634.pdf
         phases:
-          - {name: Staff preparation for engagement and solicitation, start: 2026-01, end: 2026-07}
-          - {name: Community engagement, start: 2026-07, end: 2026-11}
+          - {name: Staff preparation for engagement and solicitation, said: "Jan. - July 2026", start: 2026-01, end: 2026-07}
+          - {name: Community engagement, said: "July – Nov. 2026", start: 2026-07, end: 2026-11}
           - {name: Solicitation released, said: "Jan. 2027", start: 2027-01}
           - {name: Solicitation awarded, said: "May 2027", start: 2027-05}
-          - {name: Pre-development, said: "Pre-Development 2027-2028", start: 2027, end: 2028}
+          - {name: Pre-development, said: "2027-2028", start: 2027, end: 2028}
           - {name: Construction, said: "Construction Begins: 2029. Construction Completion: 2031.", start: 2029, end: 2031}
     note: An Austin Housing Finance Corporation site.
 
@@ -324,7 +353,6 @@ projects:
   - slug: ihop-downtown-site
     name: IHOP downtown site
     kind: project
-    note: From the "Keeping an eye on…" page. No organization or public page recorded yet.
 
   # ───────────────────────── City of Austin: plans ─────────────────────────
 
@@ -340,6 +368,8 @@ projects:
         capture: https://archive.changesaroundme.com/coa-central-city-district-plan/2026-11-14-0839.pdf
         phases:
           - {name: Phase I engagement, said: "October 2025 - December 2025", start: 2025-10, end: 2025-12}
+          - {name: Phase II engagement, said: "February 2026 - December 2026", start: 2026-02, end: 2026-12}
+          - {name: Phase III engagement, said: "January 2027 - May 2027", start: 2027-01, end: 2027-05}
           - {name: Plan adoption, said: "The Central City District Plan is set to be proposed to City Council in late Spring 2027.", start: 2027-05}
 
   - slug: northeast-district-plan
@@ -347,6 +377,17 @@ projects:
     kind: plan
     orgs: [CoA]
     sources: [coa-northeast-district-plan]
+    schedule:
+      - source: Speak Up Austin project page
+        url: https://www.speakupaustin.org/northeastdistrict
+        retrieved: 2026-11-19
+        capture: https://archive.changesaroundme.com/coa-northeast-district-plan/2026-11-19-0705.pdf
+        note: The page also says applications for the Community Advisory Committee are open "through November 23rd", without a year.
+        phases:
+          - {name: City and County resolutions, said: "In 2023, Austin City Council and Travis County Commissioner's Court passed resolutions", start: 2023, end: 2023}
+          - {name: Interlocal agreement, said: "followed in March 2024 by an Interlocal Agreement", start: 2024-03}
+          - {name: Update to the Housing and Planning Committee, said: "Date: Tuesday, December 3, 2024", start: 2024-12-03}
+          - {name: Comments on the Existing Conditions Summary Report close, said: "The public comment period closed on July 6, 2026.", end: 2026-07-06}
 
   - slug: east-riverside-corridor
     name: East Riverside Corridor Planning Initiative
@@ -392,11 +433,11 @@ projects:
         url: https://www.speakupaustin.org/GreatStreetsUpdate
         retrieved: 2026-11-15
         capture: https://archive.changesaroundme.com/coa-great-streets-plan-update/2026-11-15-0645.pdf
-        note: '"Winter 2026" is read as the start of 2026, since it follows 2025 dates.'
+        note: 'The page''s "Winter 2026" is ambiguous, because winter falls at both ends of a year. It is read as December 2026: the page, read on 15 November 2026, still marks Community Outreach as "Live" and the Feedback and Production steps as "Planned".'
         phases:
-          - {name: Community outreach, said: "Summer 2025 - Winter 2026", start: 2025-06, end: 2026-02}
-          - {name: Feedback, said: "Fall 2025 - Winter 2026", start: 2025-09, end: 2026-02}
-          - {name: Production, said: "Fall 2025 - Winter 2026", start: 2025-09, end: 2026-02}
+          - {name: Community outreach, said: "Summer 2025 - Winter 2026", start: 2025-06, end: 2026-12}
+          - {name: Feedback, said: "Fall 2025 - Winter 2026", start: 2025-09, end: 2026-12}
+          - {name: Production, said: "Fall 2025 - Winter 2026", start: 2025-09, end: 2026-12}
           - {name: Review and approval, said: "Fall 2025 - Fall 2027", start: 2025-09, end: 2027-11}
 
   - slug: urban-trails-plan
@@ -423,6 +464,7 @@ projects:
         capture: https://archive.changesaroundme.com/coa-i35-central-samp/2026-09-20-1119.pdf
         phases:
           - {name: Comments on the final draft, said: "Please review the draft and recommended projects, and share your comments by August 31, 2026.", end: 2026-08-31}
+          - {name: Final report published, said: "Final report published: Sept. 14, 2026", start: 2026-09-14}
 
   - slug: our-future-35
     name: Our Future 35
@@ -444,18 +486,48 @@ projects:
     kind: plan
     orgs: [CoA]
     sources: [coa-west-campus-transportation-plan]
+    schedule:
+      - source: Speak Up Austin project page
+        url: https://www.speakupaustin.org/WestCampus
+        retrieved: 2026-11-04
+        capture: https://archive.changesaroundme.com/coa-west-campus-transportation-plan/2026-11-04-0637.pdf
+        phases:
+          - {name: "Phase 1, initiation and preparation", said: "July–September 2026", start: 2026-07, end: 2026-09}
+          - {name: "Phase 2, listening and learning", said: "September–December 2026", start: 2026-09, end: 2026-12}
+          - {name: "Phase 3, identifying", said: "December 2026–April 2027", start: 2026-12, end: 2027-04}
+          - {name: "Phase 4, prioritizing", said: "April–July 2027", start: 2027-04, end: 2027-07}
+          - {name: "Phase 5, draft plan", said: "July–October 2027", start: 2027-07, end: 2027-10}
+          - {name: "Phase 6, final plan", said: "September–December 2027", start: 2027-09, end: 2027-12}
 
   - slug: parks-long-range-plan
     name: Our Parks, Our Future Long Range Plan
     kind: plan
     orgs: [CoA]
     sources: [coa-parks-long-range-plan]
+    schedule:
+      - source: City of Austin parks page
+        url: https://www.austintexas.gov/parks/our-parks-our-future-long-range-plan
+        retrieved: 2026-11-07
+        capture: https://archive.changesaroundme.com/coa-parks-long-range-plan/2026-11-07-0642.pdf
+        phases:
+          - {name: Community survey, said: "Open from November 28, 2018 to January 28, 2019", start: 2018-11-28, end: 2019-01-28}
+          - {name: Statistically valid survey, said: "Conducted by ETC from January 2019 to March 2019", start: 2019-01, end: 2019-03}
+          - {name: Adopted by City Council, said: "adopting the Parks and Recreation Long Range Plan for Land, Facilities and Programs on November 14, 2019", start: 2019-11-14}
 
   - slug: austin-energy-resource-plan-2035
     name: Austin Energy Resource, Generation and Climate Protection Plan to 2035
     kind: plan
     orgs: [CoA]
     sources: [coa-austin-energy-resource-generation-plan-2035]
+    schedule:
+      - source: Austin Energy plan page on PublicInput
+        url: https://publicinput.com/generation
+        retrieved: 2026-09-20
+        capture: https://archive.changesaroundme.com/coa-austin-energy-resource-generation-plan-2035/2026-09-20-1127.pdf
+        note: The page also mentions "the Austin City Council’s May 21 approval" of new energy contracts, without a year.
+        phases:
+          - {name: Resource Generation Plan survey, said: "In August 2023, Austin Energy invited customers to provide feedback on energy generation options and priorities.", start: 2023-08}
+          - {name: Energy Reliability Workshops, said: "In April 2026, Austin Energy hosted a series of Energy Reliability Workshops across Austin.", start: 2026-04}
     note: Austin Energy is a City of Austin utility.
 
   - slug: transit-enhancement-infrastructure-report
@@ -463,6 +535,14 @@ projects:
     kind: plan
     orgs: [CoA]
     sources: [coa-transit-enhancement-infrastructure-report]
+    schedule:
+      - source: City of Austin Transit Enhancement Infrastructure Report page
+        url: https://www.austintexas.gov/transportation-public-works/transit-enhancement-infrastructure-report
+        dated: 2024-04
+        capture: https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/2026-11-07-0632.pdf
+        phases:
+          - {name: Report published, said: "Published April 2024", start: 2024-04}
+          - {name: Bond-funded projects completed, said: "Projects using bond funds should be completed by 2028.", end: 2028}
 
   - slug: east-austin-historic-resource-survey
     name: East Austin Historic Resource Survey
@@ -483,7 +563,6 @@ projects:
     kind: plan
     links:
       - {name: Survey, url: "https://www.surveymonkey.com/r/lowercoloradowrap"}
-    note: The organization is not recorded yet.
 
   # ───────────────────────── City of Austin: policy ─────────────────────────
 
@@ -507,6 +586,15 @@ projects:
     orgs: [CoA]
     sources: [coa-etod-overlay-phase-2]
     also_called: [Equitable Transit-Oriented Development]
+    schedule:
+      - source: Speak Up Austin project page
+        url: https://www.speakupaustin.org/etodoverlayphase2
+        retrieved: 2026-09-20
+        capture: https://archive.changesaroundme.com/coa-etod-overlay-phase-2/2026-09-20-1116.pdf
+        note: 'The first wording is under "What is next for the ETOD Overlay?" and the second under "Welcome!", both in the same capture. The Citywide Density Bonus Program has its own entry in this list.'
+        phases:
+          - {name: Goes before City Council, said: "This project is expected to go before Council in 2026.", start: 2026, end: 2026}
+          - {name: Approved by City Council as the Citywide Density Bonus Program, said: "was approved by Council in 2026", start: 2026, end: 2026}
 
   - slug: 3-4-dwelling-unit-code-update
     name: 3-4 Dwelling Unit Technical Code Update
@@ -524,10 +612,11 @@ projects:
         url: https://www.speakupaustin.org/greeninfrastructure
         retrieved: 2026-11-12
         capture: https://archive.changesaroundme.com/coa-green-infrastructure-initiative/2026-11-12-0632.pdf
+        note: TARP is the City's Technical Advisory Review Panel. The page calls phase 1 "License Agreements for Street Trees" and phase 2 "Criteria Manual and Code Updates".
         phases:
-          - {name: Initial recommendations on permitting and maintenance, said: "Staff currently anticipate sharing initial recommendations related to permitting and maintenance approaches in January 2027", start: 2027-01}
-          - {name: Further implementation and process recommendations, said: "followed by additional implementation and process recommendations in Spring 2027", start: 2027-03, end: 2027-05}
-          - {name: Recommendations to the TARP and implementation, said: "Staff currently anticipate sharing initial recommendations to the TARP in Spring 2027, with continued implementation through 2028.", start: 2027-03, end: 2028}
+          - {name: "Phase 1, initial recommendations on permitting and maintenance", said: "Staff currently anticipate sharing initial recommendations related to permitting and maintenance approaches in January 2027", start: 2027-01}
+          - {name: "Phase 1, further implementation and process recommendations", said: "followed by additional implementation and process recommendations in Spring 2027", start: 2027-03, end: 2027-05}
+          - {name: "Phase 2, recommendations to the TARP and implementation", said: "Staff currently anticipate sharing initial recommendations to the TARP in Spring 2027, with continued implementation through 2028.", start: 2027-03, end: 2028}
 
   - slug: 2026-bond
     name: Shape Austin's 2026 Bond
@@ -550,12 +639,26 @@ projects:
     kind: policy
     orgs: [CoA]
     sources: [coa-shaping-economic-development-policy]
+    schedule:
+      - source: City of Austin project page
+        url: https://www.austintexas.gov/AustinEconomicPolicy
+        retrieved: 2026-11-07
+        capture: https://archive.changesaroundme.com/coa-shaping-economic-development-policy/2026-11-07-0631.pdf
+        phases:
+          - {name: Council directs the City Manager to develop the policy, said: "On May 7, 2026, Austin City Council directed the City Manager to develop and present a comprehensive Economic Development Policy for Council consideration.", start: 2026-05-07}
 
   - slug: cesar-chavez-street-renaming
     name: César Chávez Street renaming
     kind: policy
     orgs: [CoA]
     sources: [coa-cesar-chavez-renaming, coa-cesar-chavez-renaming-survey]
+    schedule:
+      - source: Speak Up Austin project page
+        url: https://www.speakupaustin.org/renaming-cesar-chavez-project
+        retrieved: 2026-09-20
+        capture: https://archive.changesaroundme.com/coa-cesar-chavez-renaming/2026-09-20-1113.pdf
+        phases:
+          - {name: "Process, costs and timeline presented to City Council", said: "City staff provided a memo and presented the general process, costs, and timeline during the May 26, 2026 City Council Work Session.", start: 2026-05-26}
 
   - slug: east-austin-parking
     name: East Austin parking
@@ -600,12 +703,32 @@ projects:
     kind: plan
     orgs: [CapMetro]
     sources: [capmetro-red-line-trail-study]
+    schedule:
+      - source: 'CapMetro Red Line Trail Study story map, "Virtual Open House: Preliminary Trail Possibilities"'
+        url: https://storymaps.arcgis.com/stories/476619a08688420b8132a2f3fbb496e2
+        dated: 2024-05
+        capture: https://archive.changesaroundme.com/capmetro-red-line-trail-study/2026-11-10-0824.pdf
+        phases:
+          - {name: Study launched, said: "launched the Red Line Trail Study in February 2023", start: 2023-02}
+          - {name: Stakeholder collaboration and visioning, said: "March 2023 - May 2023", start: 2023-03, end: 2023-05}
+          - {name: Case studies and plan review, said: "March 2023 - May 2023", start: 2023-03, end: 2023-05}
+          - {name: Existing conditions and needs assessment, said: "April 2023 - January 2024", start: 2023-04, end: 2024-01}
+          - {name: Development of processes and guidelines, said: "September 2023 - February 2024", start: 2023-09, end: 2024-02}
+          - {name: Preliminary trail possibilities, said: "Spring 2024", start: 2024-03, end: 2024-05}
+          - {name: Final report with trail recommendations and cost opinions, said: "Summer 2024", start: 2024-06, end: 2024-08}
 
   - slug: transit-plan-2035
     name: Transit Plan 2035
     kind: plan
     orgs: [CapMetro]
     sources: [capmetro-transit-plan-2035]
+    schedule:
+      - source: CapMetro Transit Plan 2035 page
+        url: https://www.capmetro.org/transit-plan-2035
+        retrieved: 2026-10-05
+        capture: https://archive.changesaroundme.com/capmetro-transit-plan-2035/2026-10-05-0635.pdf
+        phases:
+          - {name: Approved by the CapMetro Board, said: "The final plan was presented and approved by the Board of Directors in October 2025.", start: 2025-10}
 
   - slug: capmetro-service-changes
     name: CapMetro service changes
@@ -613,7 +736,7 @@ projects:
     orgs: [CapMetro]
     sources: [capmetro-service-changes, capmetro-service-changes-jan-2027, capmetro-service-changes-aug-2026]
     schedule:
-      - source: CapMetro proposed January 2027 service changes page
+      - source: CapMetro approved January 2027 service changes page
         url: https://www.capmetro.org/servicechange/proposed-january-2027-service-changes
         retrieved: 2026-11-01
         capture: https://archive.changesaroundme.com/capmetro-service-changes-jan-2027/2026-11-01-0644.pdf
@@ -640,12 +763,28 @@ projects:
     kind: policy
     orgs: [CapMetro]
     sources: [capmetro-service-standards-guidelines]
+    schedule:
+      - source: 'CapMetro "Standards, Specifications and Guidelines" page'
+        url: https://www.capmetro.org/aboutus/about-capmetro/plans-development/standards-specifications-guidelines
+        retrieved: 2026-11-15
+        capture: https://archive.changesaroundme.com/capmetro-service-standards-guidelines/2026-11-15-0727.pdf
+        note: The page also gives a "public hearing on December 14 at noon", without a year.
+        phases:
+          - {name: Presented to the CapMetro Board for adoption, said: "We will include the input from the public before presenting to the CapMetro Board for adoption in January 2027.", start: 2027-01}
 
   - slug: metrobike-expansion
     name: MetroBike / Bikeshare expansion
     kind: project
     orgs: [CapMetro]
     sources: [capmetro-metrobike-open-house]
+    schedule:
+      - source: MetroBike virtual open house page on PublicInput
+        url: https://publicinput.com/metrobike
+        retrieved: 2026-10-05
+        capture: https://archive.changesaroundme.com/capmetro-metrobike-open-house/2026-10-05-0637.pdf
+        phases:
+          - {name: Open house, said: "the in-person MetroBike open house held on Saturday, May 18th, 2024", start: 2024-05-18}
+          - {name: Comments close, said: "Comments will be collected through Sunday, June 16th, 2024.", end: 2024-06-16}
 
   # ───────────────────────────── CAMPO, CTRMA ─────────────────────────────
 
@@ -661,6 +800,7 @@ projects:
         retrieved: 2026-09-21
         capture: https://archive.changesaroundme.com/campo-2026-fall-tip-amendments/2026-09-21-2259.pdf
         about: Fall 2026 amendments
+        note: 4 October 2026 was a Sunday. CAMPO's calendar lists the Transportation Policy Board meeting on Monday, 5 October 2026.
         phases:
           - {name: Public hearing, said: "CAMPO’s TPB will hold a public hearing at the September 14, 2026", start: 2026-09-14}
           - {name: Comment period closes, said: "The comment period is open through September 21, 2026.", end: 2026-09-21}

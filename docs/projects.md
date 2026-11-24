@@ -3,7 +3,7 @@
 
 # What Changes Around Me follows
 
-57 on the list: 5 Focus, 52 watching. 27 have a schedule recorded.
+57 on the list: 5 Focus, 52 watching. 40 have a schedule recorded.
 
 ## Open questions
 - **765 kV transmission lines**: a Focus project with no schedule recorded.
@@ -27,18 +27,18 @@ gantt
     axisFormat %Y
     section Noise wall vote, Holly St to E Cesar Chavez
     Invitations and information mailed to owners :milestone, p1, 2026-01-28, 0d
-    Noise workshop at Sanchez :milestone, p2, 2026-02-18, 0d
+    Noise workshop at Sanchez Elementary School :milestone, p2, 2026-02-18, 0d
     Deadline for votes :milestone, p3, 2026-03-04, 0d
     Re-vote issued :milestone, p4, 2026-03-18, 0d
-    Updated deadline :milestone, p5, 2026-04-15, 0d
+    Updated deadline for votes :milestone, p5, 2026-04-15, 0d
 ```
 
-- **Dated 2026-03-25.** TxDOT, provided to Ian — about: Noise wall vote, Holly St to E Cesar Chavez
+- **Dated 2026-03-25.** Timeline provided by TxDOT to the site's author — about: Noise wall vote, Holly St to E Cesar Chavez
     - Invitations and information mailed to owners: (read as starting 2026-01-28)
-    - Noise workshop at Sanchez: (read as starting 2026-02-18)
-    - Deadline for votes: (read as starting 2026-03-04)
+    - Noise workshop at Sanchez Elementary School: (read as starting 2026-02-18)
+    - Deadline for votes: (read as by the end of 2026-03-04)
     - Re-vote issued: “Re-vote issued (not enough responses)” (read as starting 2026-03-18)
-    - Updated deadline: (read as starting 2026-04-15)
+    - Updated deadline for votes: (read as by the end of 2026-04-15)
 
 ### Red Line double tracking and E 5th Street
 Project · focus · CapMetro, CoA
@@ -48,10 +48,16 @@ gantt
     title Red Line double tracking and E 5th Street
     dateFormat YYYY-MM-DD
     axisFormat %Y
-    Construction :p1, 2027-01-01, 2029-01-31
+    Board award :milestone, p1, 2026-11-01, 0d
+    Utility relocation :p2, 2027-01-01, 2027-06-30
+    Trackwork and station platforms :p3, 2027-04-01, 2028-03-31
+    Shared use path :p4, 2027-08-01, 2028-01-31
+    Signal system :p5, 2027-10-01, 2028-03-31
+    Testing :p6, 2028-03-01, 2028-05-31
+    Rail customer impact window :p7, 2027-08-01, 2028-06-30
 ```
 
-- **Undated.** CapMetro Rail Improvements page on PublicInput ([source](https://publicinput.com/b3355#tab-41279)) *The page carries no date. Whether it came before or after the July 2023 presentation is not known.*
+- **Read 2026-09-24.** CapMetro Rail Improvements page on PublicInput ([source](https://publicinput.com/b3355#tab-41279), [our copy](https://archive.changesaroundme.com/capmetro-rail-improvements/2026-09-24-0706.pdf)) *The page carries no date, and this wording was still on it when it was read. Whether it was written before or after the July 2023 presentation is not known.*
     - Construction: “Construction is planned to occur in 2025 and be completed by the end of the year.” (read as during 2025)
 - **Dated 2023-07.** CapMetro presentation ([source](https://drive.google.com/file/d/1XJhYF5Q-E9svEzNgFs5LBhyevkaPXQAU/view))
     - Construction: “construction completion date anticipated in 2026, contingent upon availability of funding” (read as by the end of 2026)
@@ -60,6 +66,14 @@ gantt
     - Construction: “with construction starting in 2026” (read as starting 2026)
 - **Dated 2026-03-10.** CapMetro staff, in conversation at the 100% design open house *As recorded on the Focus page, which footnotes the start date to this conversation.*
     - Construction: “Jan 2027, estimated construction start. Jan 2029, estimated construction completion.” (read as 2027-01 to 2029-01)
+- **Read 2026-11-24.** Schedule chart titled "Saltillo Station Expansion, Double-Tracking & Shared Use Path – Onion St. to Austin Wye", sent to the site's author by email *The chart prints no dates. Each period is read off its bar against the chart's month columns, to the nearest month. The chart ends with an unlabelled star in late May 2028. News reports of the 16 Nov 2026 board meeting give a spring 2029 finish, which the chart does not show.*
+    - Board award: “Board Award” (read as starting 2026-11)
+    - Utility relocation: “Utility Relocation” (read as 2027-01 to 2027-06)
+    - Trackwork and station platforms: “Trackwork, Station Platforms” (read as 2027-04 to 2028-03)
+    - Shared use path: “Shared Use Path” (read as 2027-08 to 2028-01)
+    - Signal system: “Signal System” (read as 2027-10 to 2028-03)
+    - Testing: “Testing” (read as 2028-03 to 2028-05)
+    - Rail customer impact window: “Rail Customer Impact Window During TXDOT I-35/4th Street Bridge Construction” (read as 2027-08 to 2028-06)
 
 **Moved:**
 - Construction, start: 2025 → 2027-01, 24 months later.
@@ -149,11 +163,13 @@ gantt
     title East Oltorf Street safety and mobility improvements
     dateFormat YYYY-MM-DD
     axisFormat %Y
-    Street resurfacing :p1, 2027-01-01, 2027-12-31
-    Corridor study :milestone, p2, 2028-01-01, 0d
+    City shares feedback summary and next steps :p1, 2026-09-01, 2026-12-31
+    Street resurfacing :p2, 2027-01-01, 2027-12-31
+    Corridor study :milestone, p3, 2028-01-01, 0d
 ```
 
 - **Read 2026-11-04.** Speak Up Austin project page ([source](https://www.speakupaustin.org/eastoltorf), [our copy](https://archive.changesaroundme.com/coa-east-oltorf-safety-mobility/2026-11-04-0636.pdf))
+    - City shares feedback summary and next steps: “Late 2026” (read as 2026-09 to 2026-12)
     - Street resurfacing: “As part of street resurfacing planned for 2027” (read as during 2027)
     - Corridor study: “The study is expected to begin in early 2028.” (read as starting 2028-01)
 
@@ -210,9 +226,31 @@ gantt
     Phase 5, Boggy Creek Bridge :p2, 2026-01-01, 2026-11-30
 ```
 
-- **Read 2026-09-02.** City of Austin MoKan Trail page ([source](https://data.austintexas.gov/stories/s/MoKan-Trail/9h7i-xcr8/), [our copy](https://archive.changesaroundme.com/coa-mokan-trail/2026-09-02-1548.pdf)) *The page also says construction on phase 5 "began in January 2026" and "is expected to take approximately 10 months to complete".*
+- **Read 2026-09-02.** City of Austin MoKan Trail page ([source](https://data.austintexas.gov/stories/s/MoKan-Trail/9h7i-xcr8/), [our copy](https://archive.changesaroundme.com/coa-mokan-trail/2026-09-02-1548.pdf)) *"Winter 2026" is read as the start of 2026, because the page also says construction on phase 5 "began in January 2026" and "is expected to take approximately 10 months to complete".*
     - Phase 3B: “Phase 3B: Fall 2026” (read as 2026-09 to 2026-11)
     - Phase 5, Boggy Creek Bridge: “Phase 5: Winter 2026 - Fall 2026*” (read as 2026-01 to 2026-11)
+
+### Grove–Riverside site
+Project · watching · CoA
+
+```mermaid
+gantt
+    title Grove–Riverside site
+    dateFormat YYYY-MM-DD
+    axisFormat %Y
+    Early site analysis :milestone, p1, 2025-12-31, 0d
+    Community engagement begins :milestone, p2, 2025-11-01, 0d
+    Community survey :p3, 2026-01-01, 2026-10-31
+    Open house :milestone, p4, 2026-11-04, 0d
+    Feedback survey closes :milestone, p5, 2026-12-06, 0d
+```
+
+- **Read 2026-11-22.** Speak Up Austin project page ([source](https://www.speakupaustin.org/Grove-Riverside), [our copy](https://archive.changesaroundme.com/coa-grove-riverside-site/2026-11-22-0658.pdf))
+    - Early site analysis: “This work was completed in late 2025.” (read as by the end of 2025-12)
+    - Community engagement begins: “Beginning in November 2025” (read as starting 2025-11)
+    - Community survey: “A survey was made available from January through October 2026” (read as 2026-01 to 2026-10)
+    - Open house: “Wednesday November 4, 2026, 6 to 8 pm” (read as starting 2026-11-04)
+    - Feedback survey closes: “Survey is open through December 6, 2026.” (read as by the end of 2026-12-06)
 
 ### 2908 South Congress
 Project · watching · CoA
@@ -230,12 +268,12 @@ gantt
     Construction :p6, 2029-01-01, 2031-12-31
 ```
 
-- **Read 2026-09-01.** Speak Up Austin project page, "Anticipated Timeline" table ([source](https://www.speakupaustin.org/2908SouthCongress#tab-83415))
-    - Staff preparation for engagement and solicitation: (read as 2026-01 to 2026-07)
-    - Community engagement: (read as 2026-07 to 2026-11)
+- **Read 2026-09-01.** Speak Up Austin project page, "Anticipated Timeline" table ([source](https://www.speakupaustin.org/2908SouthCongress#tab-83415), [our copy](https://archive.changesaroundme.com/coa-2908-south-congress/2026-09-01-1634.pdf))
+    - Staff preparation for engagement and solicitation: “Jan. - July 2026” (read as 2026-01 to 2026-07)
+    - Community engagement: “July – Nov. 2026” (read as 2026-07 to 2026-11)
     - Solicitation released: “Jan. 2027” (read as starting 2027-01)
     - Solicitation awarded: “May 2027” (read as starting 2027-05)
-    - Pre-development: “Pre-Development 2027-2028” (read as 2027 to 2028)
+    - Pre-development: “2027-2028” (read as 2027 to 2028)
     - Construction: “Construction Begins: 2029. Construction Completion: 2031.” (read as 2029 to 2031)
 
 ### Central City District Plan
@@ -247,12 +285,36 @@ gantt
     dateFormat YYYY-MM-DD
     axisFormat %Y
     Phase I engagement :p1, 2025-10-01, 2025-12-31
-    Plan adoption :milestone, p2, 2027-05-01, 0d
+    Phase II engagement :p2, 2026-02-01, 2026-12-31
+    Phase III engagement :p3, 2027-01-01, 2027-05-31
+    Plan adoption :milestone, p4, 2027-05-01, 0d
 ```
 
 - **Read 2026-11-14.** Speak Up Austin project page ([source](https://www.speakupaustin.org/centralcity), [our copy](https://archive.changesaroundme.com/coa-central-city-district-plan/2026-11-14-0839.pdf))
     - Phase I engagement: “October 2025 - December 2025” (read as 2025-10 to 2025-12)
+    - Phase II engagement: “February 2026 - December 2026” (read as 2026-02 to 2026-12)
+    - Phase III engagement: “January 2027 - May 2027” (read as 2027-01 to 2027-05)
     - Plan adoption: “The Central City District Plan is set to be proposed to City Council in late Spring 2027.” (read as starting 2027-05)
+
+### Northeast District Plan
+Plan · watching · CoA
+
+```mermaid
+gantt
+    title Northeast District Plan
+    dateFormat YYYY-MM-DD
+    axisFormat %Y
+    City and County resolutions :p1, 2023-01-01, 2023-12-31
+    Interlocal agreement :milestone, p2, 2024-03-01, 0d
+    Update to the Housing and Planning Committee :milestone, p3, 2024-12-03, 0d
+    Comments on the Existing Conditions Summary Report close :milestone, p4, 2026-07-06, 0d
+```
+
+- **Read 2026-11-19.** Speak Up Austin project page ([source](https://www.speakupaustin.org/northeastdistrict), [our copy](https://archive.changesaroundme.com/coa-northeast-district-plan/2026-11-19-0705.pdf)) *The page also says applications for the Community Advisory Committee are open "through November 23rd", without a year.*
+    - City and County resolutions: “In 2023, Austin City Council and Travis County Commissioner's Court passed resolutions” (read as during 2023)
+    - Interlocal agreement: “followed in March 2024 by an Interlocal Agreement” (read as starting 2024-03)
+    - Update to the Housing and Planning Committee: “Date: Tuesday, December 3, 2024” (read as starting 2024-12-03)
+    - Comments on the Existing Conditions Summary Report close: “The public comment period closed on July 6, 2026.” (read as by the end of 2026-07-06)
 
 ### East Riverside Corridor Planning Initiative
 Plan · watching · CoA
@@ -302,16 +364,16 @@ gantt
     title Great Streets Plan Update
     dateFormat YYYY-MM-DD
     axisFormat %Y
-    Community outreach :p1, 2025-06-01, 2026-02-28
-    Feedback :p2, 2025-09-01, 2026-02-28
-    Production :p3, 2025-09-01, 2026-02-28
+    Community outreach :p1, 2025-06-01, 2026-12-31
+    Feedback :p2, 2025-09-01, 2026-12-31
+    Production :p3, 2025-09-01, 2026-12-31
     Review and approval :p4, 2025-09-01, 2027-11-30
 ```
 
-- **Read 2026-11-15.** Speak Up Austin project page ([source](https://www.speakupaustin.org/GreatStreetsUpdate), [our copy](https://archive.changesaroundme.com/coa-great-streets-plan-update/2026-11-15-0645.pdf)) *"Winter 2026" is read as the start of 2026, since it follows 2025 dates.*
-    - Community outreach: “Summer 2025 - Winter 2026” (read as 2025-06 to 2026-02)
-    - Feedback: “Fall 2025 - Winter 2026” (read as 2025-09 to 2026-02)
-    - Production: “Fall 2025 - Winter 2026” (read as 2025-09 to 2026-02)
+- **Read 2026-11-15.** Speak Up Austin project page ([source](https://www.speakupaustin.org/GreatStreetsUpdate), [our copy](https://archive.changesaroundme.com/coa-great-streets-plan-update/2026-11-15-0645.pdf)) *The page's "Winter 2026" is ambiguous, because winter falls at both ends of a year. It is read as December 2026: the page, read on 15 November 2026, still marks Community Outreach as "Live" and the Feedback and Production steps as "Planned".*
+    - Community outreach: “Summer 2025 - Winter 2026” (read as 2025-06 to 2026-12)
+    - Feedback: “Fall 2025 - Winter 2026” (read as 2025-09 to 2026-12)
+    - Production: “Fall 2025 - Winter 2026” (read as 2025-09 to 2026-12)
     - Review and approval: “Fall 2025 - Fall 2027” (read as 2025-09 to 2027-11)
 
 ### I-35 Central Small Area Mobility Plan
@@ -323,10 +385,12 @@ gantt
     dateFormat YYYY-MM-DD
     axisFormat %Y
     Comments on the final draft :milestone, p1, 2026-08-31, 0d
+    Final report published :milestone, p2, 2026-09-14, 0d
 ```
 
 - **Read 2026-09-20.** Speak Up Austin project page ([source](https://www.speakupaustin.org/i35samp), [our copy](https://archive.changesaroundme.com/coa-i35-central-samp/2026-09-20-1119.pdf))
     - Comments on the final draft: “Please review the draft and recommended projects, and share your comments by August 31, 2026.” (read as by the end of 2026-08-31)
+    - Final report published: “Final report published: Sept. 14, 2026” (read as starting 2026-09-14)
 
 ### Our Future 35
 Plan · watching · CoA
@@ -343,6 +407,80 @@ gantt
 - **Read 2026-10-27.** Speak Up Austin project page, "What is the timeline for construction?" ([source](https://www.speakupaustin.org/of35), [our copy](https://archive.changesaroundme.com/coa-our-future-35/2026-10-27-0901.pdf))
     - Caps and stitches construction: “Caps and stitches will be constructed along with TxDOT’s highway expansion from 2026 to 2032.” (read as 2026 to 2032)
     - Community amenities: “Community amenities will be added after the highway project is complete, starting around 2031 or 2032.” (read as starting 2031)
+
+### West Campus Transportation Plan
+Plan · watching · CoA
+
+```mermaid
+gantt
+    title West Campus Transportation Plan
+    dateFormat YYYY-MM-DD
+    axisFormat %Y
+    Phase 1, initiation and preparation :p1, 2026-07-01, 2026-09-30
+    Phase 2, listening and learning :p2, 2026-09-01, 2026-12-31
+    Phase 3, identifying :p3, 2026-12-01, 2027-04-30
+    Phase 4, prioritizing :p4, 2027-04-01, 2027-07-31
+    Phase 5, draft plan :p5, 2027-07-01, 2027-10-31
+    Phase 6, final plan :p6, 2027-09-01, 2027-12-31
+```
+
+- **Read 2026-11-04.** Speak Up Austin project page ([source](https://www.speakupaustin.org/WestCampus), [our copy](https://archive.changesaroundme.com/coa-west-campus-transportation-plan/2026-11-04-0637.pdf))
+    - Phase 1, initiation and preparation: “July–September 2026” (read as 2026-07 to 2026-09)
+    - Phase 2, listening and learning: “September–December 2026” (read as 2026-09 to 2026-12)
+    - Phase 3, identifying: “December 2026–April 2027” (read as 2026-12 to 2027-04)
+    - Phase 4, prioritizing: “April–July 2027” (read as 2027-04 to 2027-07)
+    - Phase 5, draft plan: “July–October 2027” (read as 2027-07 to 2027-10)
+    - Phase 6, final plan: “September–December 2027” (read as 2027-09 to 2027-12)
+
+### Our Parks, Our Future Long Range Plan
+Plan · watching · CoA
+
+```mermaid
+gantt
+    title Our Parks, Our Future Long Range Plan
+    dateFormat YYYY-MM-DD
+    axisFormat %Y
+    Community survey :p1, 2018-11-28, 2019-01-28
+    Statistically valid survey :p2, 2019-01-01, 2019-03-31
+    Adopted by City Council :milestone, p3, 2019-11-14, 0d
+```
+
+- **Read 2026-11-07.** City of Austin parks page ([source](https://www.austintexas.gov/parks/our-parks-our-future-long-range-plan), [our copy](https://archive.changesaroundme.com/coa-parks-long-range-plan/2026-11-07-0642.pdf))
+    - Community survey: “Open from November 28, 2018 to January 28, 2019” (read as 2018-11-28 to 2019-01-28)
+    - Statistically valid survey: “Conducted by ETC from January 2019 to March 2019” (read as 2019-01 to 2019-03)
+    - Adopted by City Council: “adopting the Parks and Recreation Long Range Plan for Land, Facilities and Programs on November 14, 2019” (read as starting 2019-11-14)
+
+### Austin Energy Resource, Generation and Climate Protection Plan to 2035
+Plan · watching · CoA
+
+```mermaid
+gantt
+    title Austin Energy Resource, Generation and Climate Protection Plan to 2035
+    dateFormat YYYY-MM-DD
+    axisFormat %Y
+    Resource Generation Plan survey :milestone, p1, 2023-08-01, 0d
+    Energy Reliability Workshops :milestone, p2, 2026-04-01, 0d
+```
+
+- **Read 2026-09-20.** Austin Energy plan page on PublicInput ([source](https://publicinput.com/generation), [our copy](https://archive.changesaroundme.com/coa-austin-energy-resource-generation-plan-2035/2026-09-20-1127.pdf)) *The page also mentions "the Austin City Council’s May 21 approval" of new energy contracts, without a year.*
+    - Resource Generation Plan survey: “In August 2023, Austin Energy invited customers to provide feedback on energy generation options and priorities.” (read as starting 2023-08)
+    - Energy Reliability Workshops: “In April 2026, Austin Energy hosted a series of Energy Reliability Workshops across Austin.” (read as starting 2026-04)
+
+### Transit Enhancement Infrastructure Report
+Plan · watching · CoA
+
+```mermaid
+gantt
+    title Transit Enhancement Infrastructure Report
+    dateFormat YYYY-MM-DD
+    axisFormat %Y
+    Report published :milestone, p1, 2024-04-01, 0d
+    Bond-funded projects completed :milestone, p2, 2028-12-31, 0d
+```
+
+- **Dated 2024-04.** City of Austin Transit Enhancement Infrastructure Report page ([source](https://www.austintexas.gov/transportation-public-works/transit-enhancement-infrastructure-report), [our copy](https://archive.changesaroundme.com/coa-transit-enhancement-infrastructure-report/2026-11-07-0632.pdf))
+    - Report published: “Published April 2024” (read as starting 2024-04)
+    - Bond-funded projects completed: “Projects using bond funds should be completed by 2028.” (read as by the end of 2028)
 
 ### East Austin Historic Resource Survey
 Plan · watching · CoA
@@ -374,6 +512,22 @@ gantt
 - **Read 2026-10-27.** Speak Up Austin project page ([source](https://www.speakupaustin.org/Citywidedb), [our copy](https://archive.changesaroundme.com/coa-citywide-density-bonus/2026-10-27-0737.pdf))
     - Approved by City Council: “The Citywide Density Bonus Program was approved by City Council on May 21, 2026.” (read as starting 2026-05-21)
 
+### ETOD Overlay, phase 2
+Policy · watching · CoA
+
+```mermaid
+gantt
+    title ETOD Overlay, phase 2
+    dateFormat YYYY-MM-DD
+    axisFormat %Y
+    Goes before City Council :p1, 2026-01-01, 2026-12-31
+    Approved by City Council as the Citywide Density Bonus Program :p2, 2026-01-01, 2026-12-31
+```
+
+- **Read 2026-09-20.** Speak Up Austin project page ([source](https://www.speakupaustin.org/etodoverlayphase2), [our copy](https://archive.changesaroundme.com/coa-etod-overlay-phase-2/2026-09-20-1116.pdf)) *The first wording is under "What is next for the ETOD Overlay?" and the second under "Welcome!", both in the same capture. The Citywide Density Bonus Program has its own entry in this list.*
+    - Goes before City Council: “This project is expected to go before Council in 2026.” (read as during 2026)
+    - Approved by City Council as the Citywide Density Bonus Program: “was approved by Council in 2026” (read as during 2026)
+
 ### Green Infrastructure Initiative
 Policy · watching · CoA
 
@@ -382,15 +536,15 @@ gantt
     title Green Infrastructure Initiative
     dateFormat YYYY-MM-DD
     axisFormat %Y
-    Initial recommendations on permitting and maintenance :milestone, p1, 2027-01-01, 0d
-    Further implementation and process recommendations :p2, 2027-03-01, 2027-05-31
-    Recommendations to the TARP and implementation :p3, 2027-03-01, 2028-12-31
+    Phase 1, initial recommendations on permitting and maintenance :milestone, p1, 2027-01-01, 0d
+    Phase 1, further implementation and process recommendations :p2, 2027-03-01, 2027-05-31
+    Phase 2, recommendations to the TARP and implementation :p3, 2027-03-01, 2028-12-31
 ```
 
-- **Read 2026-11-12.** Speak Up Austin project page ([source](https://www.speakupaustin.org/greeninfrastructure), [our copy](https://archive.changesaroundme.com/coa-green-infrastructure-initiative/2026-11-12-0632.pdf))
-    - Initial recommendations on permitting and maintenance: “Staff currently anticipate sharing initial recommendations related to permitting and maintenance approaches in January 2027” (read as starting 2027-01)
-    - Further implementation and process recommendations: “followed by additional implementation and process recommendations in Spring 2027” (read as 2027-03 to 2027-05)
-    - Recommendations to the TARP and implementation: “Staff currently anticipate sharing initial recommendations to the TARP in Spring 2027, with continued implementation through 2028.” (read as 2027-03 to 2028)
+- **Read 2026-11-12.** Speak Up Austin project page ([source](https://www.speakupaustin.org/greeninfrastructure), [our copy](https://archive.changesaroundme.com/coa-green-infrastructure-initiative/2026-11-12-0632.pdf)) *TARP is the City's Technical Advisory Review Panel. The page calls phase 1 "License Agreements for Street Trees" and phase 2 "Criteria Manual and Code Updates".*
+    - Phase 1, initial recommendations on permitting and maintenance: “Staff currently anticipate sharing initial recommendations related to permitting and maintenance approaches in January 2027” (read as starting 2027-01)
+    - Phase 1, further implementation and process recommendations: “followed by additional implementation and process recommendations in Spring 2027” (read as 2027-03 to 2027-05)
+    - Phase 2, recommendations to the TARP and implementation: “Staff currently anticipate sharing initial recommendations to the TARP in Spring 2027, with continued implementation through 2028.” (read as 2027-03 to 2028)
 
 ### Shape Austin's 2026 Bond
 Policy · watching · CoA
@@ -412,6 +566,34 @@ gantt
     - Election: “a citywide election to take place on Tuesday, November 3, 2026” (read as starting 2026-11-03)
     - Project details on the bond dashboard: “Detailed project information is expected to be available on the Austin Bond Dashboard in early 2027.” (read as starting 2027-01)
 
+### Shaping Austin's Economic Development Policy
+Policy · watching · CoA
+
+```mermaid
+gantt
+    title Shaping Austin's Economic Development Policy
+    dateFormat YYYY-MM-DD
+    axisFormat %Y
+    Council directs the City Manager to develop the policy :milestone, p1, 2026-05-07, 0d
+```
+
+- **Read 2026-11-07.** City of Austin project page ([source](https://www.austintexas.gov/AustinEconomicPolicy), [our copy](https://archive.changesaroundme.com/coa-shaping-economic-development-policy/2026-11-07-0631.pdf))
+    - Council directs the City Manager to develop the policy: “On May 7, 2026, Austin City Council directed the City Manager to develop and present a comprehensive Economic Development Policy for Council consideration.” (read as starting 2026-05-07)
+
+### César Chávez Street renaming
+Policy · watching · CoA
+
+```mermaid
+gantt
+    title César Chávez Street renaming
+    dateFormat YYYY-MM-DD
+    axisFormat %Y
+    Process, costs and timeline presented to City Council :milestone, p1, 2026-05-26, 0d
+```
+
+- **Read 2026-09-20.** Speak Up Austin project page ([source](https://www.speakupaustin.org/renaming-cesar-chavez-project), [our copy](https://archive.changesaroundme.com/coa-cesar-chavez-renaming/2026-09-20-1113.pdf))
+    - Process, costs and timeline presented to City Council: “City staff provided a memo and presented the general process, costs, and timeline during the May 26, 2026 City Council Work Session.” (read as starting 2026-05-26)
+
 ### Austin Light Rail
 Project · watching · ATP
 
@@ -426,6 +608,46 @@ gantt
 - **Read 2026-11-07.** Austin Transit Partnership milestones page ([source](https://www.atptx.org/milestones/), [our copy](https://archive.changesaroundme.com/atp-milestones/2026-11-07-0647.pdf))
     - Construction: “marking another major step toward beginning construction in 2027” (read as starting 2027)
 
+### Red Line Trail Study
+Plan · watching · CapMetro
+
+```mermaid
+gantt
+    title Red Line Trail Study
+    dateFormat YYYY-MM-DD
+    axisFormat %Y
+    Study launched :milestone, p1, 2023-02-01, 0d
+    Stakeholder collaboration and visioning :p2, 2023-03-01, 2023-05-31
+    Case studies and plan review :p3, 2023-03-01, 2023-05-31
+    Existing conditions and needs assessment :p4, 2023-04-01, 2024-01-31
+    Development of processes and guidelines :p5, 2023-09-01, 2024-02-29
+    Preliminary trail possibilities :p6, 2024-03-01, 2024-05-31
+    Final report with trail recommendations and cost opinions :p7, 2024-06-01, 2024-08-31
+```
+
+- **Dated 2024-05.** CapMetro Red Line Trail Study story map, "Virtual Open House: Preliminary Trail Possibilities" ([source](https://storymaps.arcgis.com/stories/476619a08688420b8132a2f3fbb496e2), [our copy](https://archive.changesaroundme.com/capmetro-red-line-trail-study/2026-11-10-0824.pdf))
+    - Study launched: “launched the Red Line Trail Study in February 2023” (read as starting 2023-02)
+    - Stakeholder collaboration and visioning: “March 2023 - May 2023” (read as 2023-03 to 2023-05)
+    - Case studies and plan review: “March 2023 - May 2023” (read as 2023-03 to 2023-05)
+    - Existing conditions and needs assessment: “April 2023 - January 2024” (read as 2023-04 to 2024-01)
+    - Development of processes and guidelines: “September 2023 - February 2024” (read as 2023-09 to 2024-02)
+    - Preliminary trail possibilities: “Spring 2024” (read as 2024-03 to 2024-05)
+    - Final report with trail recommendations and cost opinions: “Summer 2024” (read as 2024-06 to 2024-08)
+
+### Transit Plan 2035
+Plan · watching · CapMetro
+
+```mermaid
+gantt
+    title Transit Plan 2035
+    dateFormat YYYY-MM-DD
+    axisFormat %Y
+    Approved by the CapMetro Board :milestone, p1, 2025-10-01, 0d
+```
+
+- **Read 2026-10-05.** CapMetro Transit Plan 2035 page ([source](https://www.capmetro.org/transit-plan-2035), [our copy](https://archive.changesaroundme.com/capmetro-transit-plan-2035/2026-10-05-0635.pdf))
+    - Approved by the CapMetro Board: “The final plan was presented and approved by the Board of Directors in October 2025.” (read as starting 2025-10)
+
 ### CapMetro service changes
 Policy · watching · CapMetro
 
@@ -438,7 +660,7 @@ gantt
     Changes take effect :milestone, p1, 2027-01-10, 0d
 ```
 
-- **Read 2026-11-01.** CapMetro proposed January 2027 service changes page ([source](https://www.capmetro.org/servicechange/proposed-january-2027-service-changes), [our copy](https://archive.changesaroundme.com/capmetro-service-changes-jan-2027/2026-11-01-0644.pdf)) — about: January 2027 service change
+- **Read 2026-11-01.** CapMetro approved January 2027 service changes page ([source](https://www.capmetro.org/servicechange/proposed-january-2027-service-changes), [our copy](https://archive.changesaroundme.com/capmetro-service-changes-jan-2027/2026-11-01-0644.pdf)) — about: January 2027 service change
     - Changes take effect: “The following schedule changes begin Sunday, January 10, 2027.” (read as starting 2027-01-10)
 
 ### CapMetro fare increase, 2027 and 2029
@@ -457,6 +679,36 @@ gantt
     - First increase takes effect: “New fares effective January 10, 2027” (read as starting 2027-01-10)
     - Second increase: “There will be a second fare increase in January 2029.” (read as starting 2029-01)
 
+### CapMetro Service Standards and Guidelines 2026
+Policy · watching · CapMetro
+
+```mermaid
+gantt
+    title CapMetro Service Standards and Guidelines 2026
+    dateFormat YYYY-MM-DD
+    axisFormat %Y
+    Presented to the CapMetro Board for adoption :milestone, p1, 2027-01-01, 0d
+```
+
+- **Read 2026-11-15.** CapMetro "Standards, Specifications and Guidelines" page ([source](https://www.capmetro.org/aboutus/about-capmetro/plans-development/standards-specifications-guidelines), [our copy](https://archive.changesaroundme.com/capmetro-service-standards-guidelines/2026-11-15-0727.pdf)) *The page also gives a "public hearing on December 14 at noon", without a year.*
+    - Presented to the CapMetro Board for adoption: “We will include the input from the public before presenting to the CapMetro Board for adoption in January 2027.” (read as starting 2027-01)
+
+### MetroBike / Bikeshare expansion
+Project · watching · CapMetro
+
+```mermaid
+gantt
+    title MetroBike / Bikeshare expansion
+    dateFormat YYYY-MM-DD
+    axisFormat %Y
+    Open house :milestone, p1, 2024-05-18, 0d
+    Comments close :milestone, p2, 2024-06-16, 0d
+```
+
+- **Read 2026-10-05.** MetroBike virtual open house page on PublicInput ([source](https://publicinput.com/metrobike), [our copy](https://archive.changesaroundme.com/capmetro-metrobike-open-house/2026-10-05-0637.pdf))
+    - Open house: “the in-person MetroBike open house held on Saturday, May 18th, 2024” (read as starting 2024-05-18)
+    - Comments close: “Comments will be collected through Sunday, June 16th, 2024.” (read as by the end of 2024-06-16)
+
 ### 2027–2030 TIP amendments
 Policy · watching · CAMPO
 
@@ -471,7 +723,7 @@ gantt
     Action by the Transportation Policy Board :milestone, p3, 2026-10-04, 0d
 ```
 
-- **Read 2026-09-21.** CAMPO open house page ([source](https://www.campotexas.org/open-house/2027-2030-tip-amendments-open-house-fall-2026/), [our copy](https://archive.changesaroundme.com/campo-2026-fall-tip-amendments/2026-09-21-2259.pdf)) — about: Fall 2026 amendments
+- **Read 2026-09-21.** CAMPO open house page ([source](https://www.campotexas.org/open-house/2027-2030-tip-amendments-open-house-fall-2026/), [our copy](https://archive.changesaroundme.com/campo-2026-fall-tip-amendments/2026-09-21-2259.pdf)) — about: Fall 2026 amendments *4 October 2026 was a Sunday. CAMPO's calendar lists the Transportation Policy Board meeting on Monday, 5 October 2026.*
     - Public hearing: “CAMPO’s TPB will hold a public hearing at the September 14, 2026” (read as starting 2026-09-14)
     - Comment period closes: “The comment period is open through September 21, 2026.” (read as by the end of 2026-09-21)
     - Action by the Transportation Policy Board: “anticipated to take action on the amendments at the October 4, 2026 meeting” (read as starting 2026-10-04)
@@ -525,7 +777,7 @@ gantt
 | E Cesar Chavez, Pleasant Valley to Shady Ln | project | focus | CoA |  | 1 |
 | East Ave Trail | project | focus | ? |  |  |
 | I-35 Capital Express Central | project | focus | TxDOT |  | 1 |
-| Red Line double tracking and E 5th Street | project | focus | CapMetro, CoA | 3 | 4 |
+| Red Line double tracking and E 5th Street | project | focus | CapMetro, CoA | 3 | 5 |
 | "Dog's head" annexation and development | policy | watching | CoA |  |  |
 | 2027–2030 TIP amendments | policy | watching | CAMPO | 1 | 1 |
 | 290 Extension | project | watching | CTRMA | 2 | 1 |
@@ -534,27 +786,27 @@ gantt
 | Airport Boulevard corridor | project | watching | CoA | 1 | 3 |
 | All Ages and Abilities Bicycle Priority Network | plan | watching | CoA | 1 |  |
 | Alleyway project south of E Cesar Chavez | project | watching | SGI |  |  |
-| Austin Energy Resource, Generation and Climate Protection Plan to 2035 | plan | watching | CoA | 1 |  |
+| Austin Energy Resource, Generation and Climate Protection Plan to 2035 | plan | watching | CoA | 1 | 1 |
 | Austin Light Rail | project | watching | ATP | 4 | 1 |
 | Barton Springs Road Bridge | project | watching | CoA | 1 | 1 |
 | Burnet Road corridor | project | watching | CoA | 1 | 2 |
 | CapMetro fare increase, 2027 and 2029 | policy | watching | CapMetro | 1 | 1 |
 | CapMetro service changes | policy | watching | CapMetro | 3 | 1 |
-| CapMetro Service Standards and Guidelines 2026 | policy | watching | CapMetro | 1 |  |
+| CapMetro Service Standards and Guidelines 2026 | policy | watching | CapMetro | 1 | 1 |
 | Central City District Plan | plan | watching | CoA | 1 | 1 |
 | City budget process | policy | watching | CoA |  |  |
 | Citywide Density Bonus Program | policy | watching | CoA | 1 | 1 |
 | Convention Center | project | watching | CoA |  |  |
-| César Chávez Street renaming | policy | watching | CoA | 2 |  |
+| César Chávez Street renaming | policy | watching | CoA | 2 | 1 |
 | East Austin Historic Resource Survey | plan | watching | CoA | 1 | 1 |
 | East Austin parking | policy | watching | CoA | 1 |  |
 | East Oltorf Street safety and mobility improvements | project | watching | CoA | 1 | 1 |
 | East Riverside Corridor Planning Initiative | plan | watching | CoA | 1 | 1 |
 | Eilers (Deep Eddy) Neighborhood Park concept plan | project | watching | CoA | 1 |  |
-| ETOD Overlay, phase 2 | policy | watching | CoA | 1 |  |
+| ETOD Overlay, phase 2 | policy | watching | CoA | 1 | 1 |
 | Great Streets Plan Update | plan | watching | CoA | 1 | 1 |
 | Green Infrastructure Initiative | policy | watching | CoA | 1 | 1 |
-| Grove–Riverside site | project | watching | CoA | 1 |  |
+| Grove–Riverside site | project | watching | CoA | 1 | 1 |
 | Holly Shores | project | watching | CoA, TrailCons | 2 | 1 |
 | I-14 extension | project | watching | TxDOT |  |  |
 | I-35 Central Small Area Mobility Plan | plan | watching | CoA | 1 | 1 |
@@ -563,20 +815,20 @@ gantt
 | Large Load Demand Management Service | policy | watching | PUC |  |  |
 | Large water users | policy | watching | CoA |  |  |
 | Lower Colorado River Watershed Restoration and Access Plan | plan | watching | ? |  |  |
-| MetroBike / Bikeshare expansion | project | watching | CapMetro | 1 |  |
+| MetroBike / Bikeshare expansion | project | watching | CapMetro | 1 | 1 |
 | MoKan Trail | project | watching | CoA | 1 | 1 |
-| Northeast District Plan | plan | watching | CoA | 1 |  |
+| Northeast District Plan | plan | watching | CoA | 1 | 1 |
 | Our Future 35 | plan | watching | CoA | 1 | 1 |
-| Our Parks, Our Future Long Range Plan | plan | watching | CoA | 1 |  |
-| Red Line Trail Study | plan | watching | CapMetro | 1 |  |
+| Our Parks, Our Future Long Range Plan | plan | watching | CoA | 1 | 1 |
+| Red Line Trail Study | plan | watching | CapMetro | 1 | 1 |
 | Shape Austin's 2026 Bond | policy | watching | CoA | 1 | 1 |
-| Shaping Austin's Economic Development Policy | policy | watching | CoA | 1 |  |
+| Shaping Austin's Economic Development Policy | policy | watching | CoA | 1 | 1 |
 | South Lamar Boulevard corridor | project | watching | CoA | 1 | 3 |
 | Texas Triangle Multimodal Strategic Plan | plan | watching | TxDOT |  |  |
-| Transit Enhancement Infrastructure Report | plan | watching | CoA | 1 |  |
-| Transit Plan 2035 | plan | watching | CapMetro | 1 |  |
+| Transit Enhancement Infrastructure Report | plan | watching | CoA | 1 | 1 |
+| Transit Plan 2035 | plan | watching | CapMetro | 1 | 1 |
 | Unified Transportation Program | policy | watching | TxDOT | 1 | 1 |
 | Urban Trails Plan | plan | watching | CoA | 2 |  |
-| West Campus Transportation Plan | plan | watching | CoA | 1 |  |
+| West Campus Transportation Plan | plan | watching | CoA | 1 | 1 |
 
 Who: ATP = Austin Transit Partnership (ATP); CAMPO = Capital Area Metropolitan Planning Organization (CAMPO); CTRMA = Central Texas Regional Mobility Authority (CTRMA); CapMetro = Capital Metropolitan Transportation Authority (CapMetro); CoA = City of Austin (CoA); PUC = Public Utility Commission of Texas (PUC or PUCT); SGI = Something Good Initiative; TrailCons = The Trail Conservancy (Trail Cons.); TxDOT = Texas Department of Transportation (TxDOT).
