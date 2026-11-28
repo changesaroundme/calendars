@@ -340,15 +340,15 @@
  {
   "source": "puc",
   "summary": "PUC: Office Closed",
-  "start": "2026-11-27T00:00:00",
-  "end": "2026-11-28T00:00:00",
+  "start": "2026-11-27",
+  "end": null,
   "location": "( Closed To Public )",
   "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1841",
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "puc-cal-1841-20261127@calendars.changesaroundme.com",
   "description": "Watch live or archived: https://www.puc.texas.gov/agency/calendar/broadcasts/",
-  "all_day": false
+  "all_day": true
  },
  {
   "source": "puc",
@@ -362,19 +362,6 @@
   "uid": "puc-cal-1777-20261203@calendars.changesaroundme.com",
   "description": "Watch live or archived: http://www.adminmonitor.com/tx/puct/open_meeting/20261203/",
   "all_day": false
- },
- {
-  "source": "puc",
-  "summary": "PUC: Open Meeting ERCOT",
-  "start": "2026-12-07",
-  "end": null,
-  "location": "( Closed To Public ) JW Marriott Austin, Lone Star Ballroom, 110 East 2nd Street, Austin, Texas 78701",
-  "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1858",
-  "status": "CONFIRMED",
-  "kind": "regular",
-  "uid": "puc-cal-1858-20261207@calendars.changesaroundme.com",
-  "description": "Watch live or archived: https://www.puc.texas.gov/agency/calendar/broadcasts/",
-  "all_day": true
  },
  {
   "source": "puc",
@@ -425,6 +412,19 @@
   "status": "CONFIRMED",
   "kind": "regular",
   "uid": "puc-cal-1856-20261207@calendars.changesaroundme.com",
+  "description": "Watch live or archived: https://www.puc.texas.gov/agency/calendar/broadcasts/",
+  "all_day": false
+ },
+ {
+  "source": "puc",
+  "summary": "PUC: Open Meeting ERCOT",
+  "start": "2026-12-07T17:30:00",
+  "end": "2026-12-07T18:00:00",
+  "location": "( Closed To Public ) JW Marriott Austin, Lone Star Ballroom, 110 East 2nd Street, Austin, Texas 78701",
+  "url": "https://www.puc.texas.gov/agency/calendar/AppointmentDetail.aspx?ID=1858",
+  "status": "CONFIRMED",
+  "kind": "regular",
+  "uid": "puc-cal-1858-20261207@calendars.changesaroundme.com",
   "description": "Watch live or archived: https://www.puc.texas.gov/agency/calendar/broadcasts/",
   "all_day": false
  },
